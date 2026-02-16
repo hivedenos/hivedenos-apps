@@ -31,8 +31,12 @@ chmod +x scripts/run-sync.sh scripts/lib/*.sh scripts/pipeline/*.sh scripts/sour
 ## App directory behavior
 
 - Canonical app files are written to `apps/<app-id>`
+- App images are synced from `getumbrel/umbrel-apps-gallery` into `apps/<app-id>/imgs/`
+- Screenshot files are normalized to `apps/<app-id>/imgs/1.<ext>`, `2.<ext>`, etc.
+- Icons are normalized to `apps/<app-id>/imgs/icon.<ext>`
 - If multiple sources provide the same app id, later sources are written to `apps/<app-id>--<source-id>`
 - Each catalog item includes `repository_path` to locate the app files in this repo
+- Each catalog item also includes `tagline`, `description`, `icon_url`, and `image_urls`
 
 ## Extending with new sources
 

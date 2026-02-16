@@ -2,6 +2,13 @@
   "catalog_version": "1.0.0",
   "strict_validation": true,
   "default_schedule_utc": "0 2 * * *",
+  "assets": {
+    "gallery": {
+      "enabled": true,
+      "repo_url": "https://github.com/getumbrel/umbrel-apps-gallery.git",
+      "branch": "master"
+    }
+  },
   "output": {
     "apps_root": "apps",
     "catalog": "data/apps.json",

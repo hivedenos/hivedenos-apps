@@ -25,6 +25,38 @@ yaml_scalar() {
   ' "$file"
 }
 
+yaml_text() {
+  local key="$1"
+  local file="$2"
+  awk -v k="$key" '
+    function trim_quotes(s) {
+      gsub(/^"|"$/, "", s)
+      gsub(/^\047|\047$/, "", s)
+      return s
+    }
+    {
+      if (!found && $0 ~ "^" k ":[[:space:]]*") {
+        found=1
+        line=$0
+        sub("^" k ":[[:space:]]*", "", line)
+        if (line ~ /^(\||>)/) {
+          block=1
+          next
+        }
+        print trim_quotes(line)
+        exit
+      }
+      if (block) {
+        if ($0 ~ /^[^[:space:]]/) {
+          exit
+        }
+        sub(/^  /, "", $0)
+        print $0
+      }
+    }
+  ' "$file"
+}
+
 tmp_ndjson="$(mktemp)"
 
 while IFS= read -r app_dir; do
@@ -38,6 +70,7 @@ while IFS= read -r app_dir; do
   name="$(yaml_scalar name "$manifest")"
   version="$(yaml_scalar version "$manifest")"
   tagline="$(yaml_scalar tagline "$manifest")"
+  description="$(yaml_text description "$manifest")"
   developer="$(yaml_scalar developer "$manifest")"
   category="$(yaml_scalar category "$manifest")"
 
@@ -47,12 +80,16 @@ while IFS= read -r app_dir; do
   if [[ -z "$version" ]]; then
     version="unknown"
   fi
+  if [[ -z "$description" ]]; then
+    description="$tagline"
+  fi
 
   jq -nc \
     --arg id "$app_id" \
     --arg name "$name" \
     --arg version "$version" \
-    --arg description "$tagline" \
+    --arg tagline "$tagline" \
+    --arg description "$description" \
     --arg developer "$developer" \
     --arg category "$category" \
     --arg source_id "$source_id" \
@@ -67,6 +104,7 @@ while IFS= read -r app_dir; do
       id: $id,
       name: $name,
       version: $version,
+      tagline: $tagline,
       description: $description,
       developer: $developer,
       repository_path: ("apps/" + $id),

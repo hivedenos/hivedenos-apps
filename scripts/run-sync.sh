@@ -23,13 +23,22 @@ fi
 
 apps_root_rel="$(jq -r '.output.apps_root // "apps"' "$ROOT_DIR/config/pipeline.json")"
 apps_root="$ROOT_DIR/$apps_root_rel"
-rm -rf "$apps_root"
-mkdir -p "$apps_root"
-
 sources_root_rel="$(jq -r '.output.sources_root // "data/sources"' "$ROOT_DIR/config/pipeline.json")"
 sources_root="$ROOT_DIR/$sources_root_rel"
+catalog_rel="$(jq -r '.output.catalog // "data/apps.json"' "$ROOT_DIR/config/pipeline.json")"
+metadata_rel="$(jq -r '.output.metadata // "data/metadata.json"' "$ROOT_DIR/config/pipeline.json")"
+catalog_path="$ROOT_DIR/$catalog_rel"
+metadata_path="$ROOT_DIR/$metadata_rel"
+catalog_dir="$(dirname "$catalog_path")"
+metadata_dir="$(dirname "$metadata_path")"
+
+# Always start from a clean slate for generated outputs.
+rm -rf "$apps_root"
 rm -rf "$sources_root"
 mkdir -p "$sources_root"
+mkdir -p "$apps_root"
+mkdir -p "$catalog_dir" "$metadata_dir"
+rm -f "$catalog_path" "$metadata_path"
 
 for source_id in "${source_ids[@]}"; do
   source_cfg="$(jq -c --arg id "$source_id" '.sources[] | select(.id == $id)' "$sources_file")"
@@ -59,11 +68,16 @@ for source_id in "${source_ids[@]}"; do
 
 done
 
+gallery_work_dir="$work_base/gallery-assets"
+mkdir -p "$gallery_work_dir"
+"$ROOT_DIR/scripts/assets/umbrel-gallery/sync.sh" "$ROOT_DIR" "$gallery_work_dir"
+bash "$ROOT_DIR/scripts/pipeline/enrich-assets.sh" "$ROOT_DIR"
+
 merged_json="$work_base/merged.json"
 mkdir -p "$ROOT_DIR/data"
 
 "$ROOT_DIR/scripts/pipeline/merge-sources.sh" "$ROOT_DIR" "$merged_json"
-"$ROOT_DIR/scripts/pipeline/build-catalog.sh" "$ROOT_DIR" "$merged_json" "$ROOT_DIR/data/apps.json" "$ROOT_DIR/data/metadata.json"
+"$ROOT_DIR/scripts/pipeline/build-catalog.sh" "$ROOT_DIR" "$merged_json" "$catalog_path" "$metadata_path"
 "$ROOT_DIR/scripts/pipeline/validate.sh" "$ROOT_DIR"
 
 log_info "Sync pipeline completed successfully"

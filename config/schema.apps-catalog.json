@@ -11,14 +11,20 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["id", "name", "version", "description", "repository_path", "source", "install", "search", "updated_at"],
+        "required": ["id", "name", "version", "tagline", "description", "repository_path", "icon_url", "image_urls", "source", "install", "search", "updated_at"],
         "properties": {
           "id": { "type": "string", "minLength": 1 },
           "name": { "type": "string", "minLength": 1 },
           "version": { "type": "string", "minLength": 1 },
+          "tagline": { "type": "string" },
           "description": { "type": "string" },
           "developer": { "type": "string" },
           "repository_path": { "type": "string", "minLength": 1 },
+          "icon_url": { "type": ["string", "null"] },
+          "image_urls": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
           "source": {
             "type": "object",
             "required": ["id", "repo", "commit", "path"],
