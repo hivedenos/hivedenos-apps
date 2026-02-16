@@ -1,0 +1,11 @@
+{
+  "catalog_version": "1.0.0",
+  "strict_validation": true,
+  "default_schedule_utc": "0 2 * * *",
+  "output": {
+    "apps_root": "apps",
+    "catalog": "data/apps.json",
+    "metadata": "data/metadata.json",
+    "sources_root": "data/sources"
+  }
+}

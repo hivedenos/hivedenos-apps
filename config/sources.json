@@ -1,0 +1,18 @@
+{
+  "sources": [
+    {
+      "id": "umbrel",
+      "enabled": true,
+      "type": "umbrel",
+      "repo_url": "https://github.com/getumbrel/umbrel-apps.git",
+      "branch": "master",
+      "priority": 10,
+      "options": {
+        "app_root": "",
+        "required_files": [
+          "docker-compose.yml"
+        ]
+      }
+    }
+  ]
+}

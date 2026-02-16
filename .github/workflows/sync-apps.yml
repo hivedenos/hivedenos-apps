@@ -1,0 +1,40 @@
+name: Sync Apps Catalog
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Ensure scripts executable
+        run: chmod +x scripts/run-sync.sh scripts/lib/*.sh scripts/pipeline/*.sh scripts/sources/umbrel/*.sh
+
+      - name: Run sync pipeline
+        run: ./scripts/run-sync.sh
+
+      - name: Commit and push changes
+        env:
+          GIT_AUTHOR_NAME: hiveden-bot
+          GIT_AUTHOR_EMAIL: bot@hiveden.local
+          GIT_COMMITTER_NAME: hiveden-bot
+          GIT_COMMITTER_EMAIL: bot@hiveden.local
+        run: |
+          if [[ -z "$(git status --porcelain -- data/apps.json data/metadata.json apps/)" ]]; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git add data/apps.json data/metadata.json apps/
+          git commit -m "chore(apps): nightly sync from configured sources [skip ci]"
+          git push
