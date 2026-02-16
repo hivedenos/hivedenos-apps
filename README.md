@@ -37,6 +37,7 @@ chmod +x scripts/run-sync.sh scripts/lib/*.sh scripts/pipeline/*.sh scripts/sour
 - If multiple sources provide the same app id, later sources are written to `apps/<app-id>--<source-id>`
 - Each catalog item includes `repository_path` to locate the app files in this repo
 - Each catalog item also includes `tagline`, `description`, `icon_url`, and `image_urls`
+- Each catalog item includes `dependencies` resolved from `docker-compose.yml` (`depends_on`), mapping generic service names like `db` to their container image names (for example `postgres`, `mariadb`) when available
 
 ## Extending with new sources
 

@@ -57,6 +57,121 @@ yaml_text() {
   ' "$file"
 }
 
+normalize_image_name() {
+  local image="$1"
+  image="${image#\"}"
+  image="${image%\"}"
+  image="${image#\'}"
+  image="${image%\'}"
+  image="${image%%@*}"
+  image="${image%%:*}"
+  image="${image##*/}"
+  printf '%s\n' "$image"
+}
+
+compose_service_images_json() {
+  local compose_file="$1"
+  local tmp_map
+  tmp_map="$(mktemp)"
+
+  awk '
+    BEGIN { in_services=0; service="" }
+    /^services:[[:space:]]*$/ { in_services=1; next }
+    in_services && /^[^[:space:]]/ { in_services=0; service=""; next }
+    !in_services { next }
+
+    /^  [A-Za-z0-9_.-]+:[[:space:]]*$/ {
+      service=$0
+      sub(/^  /, "", service)
+      sub(/:[[:space:]]*$/, "", service)
+      next
+    }
+
+    service != "" && /^    image:[[:space:]]*/ {
+      img=$0
+      sub(/^    image:[[:space:]]*/, "", img)
+      sub(/[[:space:]]+#.*/, "", img)
+      print service "\t" img
+    }
+  ' "$compose_file" >"$tmp_map"
+
+  {
+    while IFS=$'\t' read -r service image; do
+      [[ -z "$service" || -z "$image" ]] && continue
+      normalized_image="$(normalize_image_name "$image")"
+      [[ -z "$normalized_image" ]] && continue
+      printf '{"service":"%s","image":"%s"}\n' "$service" "$normalized_image"
+    done <"$tmp_map"
+  } | jq -cs 'map({(.service): .image}) | add // {}'
+
+  rm -f "$tmp_map"
+}
+
+compose_dep_services_json() {
+  local compose_file="$1"
+  awk '
+    BEGIN { in_services=0; service=""; in_dep=0 }
+    /^services:[[:space:]]*$/ { in_services=1; next }
+    in_services && /^[^[:space:]]/ { in_services=0; service=""; in_dep=0; next }
+    !in_services { next }
+
+    /^  [A-Za-z0-9_.-]+:[[:space:]]*$/ {
+      service=$0
+      sub(/^  /, "", service)
+      sub(/:[[:space:]]*$/, "", service)
+      in_dep=0
+      next
+    }
+
+    service != "" && /^    depends_on:[[:space:]]*$/ {
+      in_dep=1
+      next
+    }
+
+    in_dep && /^    [A-Za-z0-9_.-]+:[[:space:]]*$/ {
+      in_dep=0
+      next
+    }
+
+    in_dep && /^      - [A-Za-z0-9_.-]+[[:space:]]*$/ {
+      dep=$0
+      sub(/^      - /, "", dep)
+      sub(/[[:space:]]*$/, "", dep)
+      print dep
+      next
+    }
+
+    in_dep && /^      [A-Za-z0-9_.-]+:[[:space:]]*$/ {
+      dep=$0
+      sub(/^      /, "", dep)
+      sub(/:[[:space:]]*$/, "", dep)
+      print dep
+      next
+    }
+
+    in_dep && !/^      / {
+      in_dep=0
+    }
+  ' "$compose_file" | sort -u | jq -Rsc 'split("\n") | map(select(length > 0))'
+}
+
+compose_resolved_dependencies_json() {
+  local compose_file="$1"
+  local dep_services_json
+  local service_images_json
+  dep_services_json="$(compose_dep_services_json "$compose_file")"
+  service_images_json="$(compose_service_images_json "$compose_file")"
+
+  jq -n \
+    --argjson deps "$dep_services_json" \
+    --argjson images "$service_images_json" \
+    '$deps
+      | map((. as $dep | ($images[$dep] // $dep)))
+      | map(select(length > 0))
+      | unique
+      | sort'
+}
+
 tmp_ndjson="$(mktemp)"
 
 while IFS= read -r app_dir; do
@@ -83,6 +198,7 @@ while IFS= read -r app_dir; do
   if [[ -z "$description" ]]; then
     description="$tagline"
   fi
+  dependencies_json="$(compose_resolved_dependencies_json "$compose")"
 
   jq -nc \
     --arg id "$app_id" \
@@ -98,6 +214,7 @@ while IFS= read -r app_dir; do
     --arg path "$rel_path" \
     --arg updated_at "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
     --argjson priority "$priority" \
+    --argjson dependencies "$dependencies_json" \
     --arg compose_rel "${compose#"$REPO_DIR"/}" \
     --arg manifest_rel "${manifest#"$REPO_DIR"/}" \
     '{
@@ -123,6 +240,7 @@ while IFS= read -r app_dir; do
         keywords: [$id, $name, $developer, $category] | map(select(length > 0)),
         categories: [$category] | map(select(length > 0))
       },
+      dependencies: $dependencies,
       updated_at: $updated_at
     }' >>"$tmp_ndjson"
 done <"$APPS_LIST_FILE"
