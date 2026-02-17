@@ -1,0 +1,28 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: node-red_web_1
+      APP_PORT: 1880
+      # Used to allow (HTTP In) flows to be publicly exposed
+      PROXY_AUTH_WHITELIST: "/public/*"
+  
+  web:
+    image: nodered/node-red:4.1.5@sha256:7dfe40efdd7b9f21916f083802bfe60a762bc020969d95553ffa020c97a72eb9
+    restart: on-failure
+    stop_grace_period: 1m
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+      - ${APP_LIGHTNING_NODE_DATA_DIR}:/lnd:ro
+    environment:
+      PORT: 1880
+      BITCOIN_NETWORK: $APP_BITCOIN_NETWORK
+      BITCOIN_IP: $APP_BITCOIN_NODE_IP
+      BITCOIN_RPC_PORT: $APP_BITCOIN_RPC_PORT
+      BITCOIN_RPC_USER: $APP_BITCOIN_RPC_USER
+      BITCOIN_RPC_PASS: $APP_BITCOIN_RPC_PASS
+      LND_IP: $APP_LIGHTNING_NODE_IP
+      LND_GRPC_PORT: $APP_LIGHTNING_NODE_GRPC_PORT
+      ELECTRUM_IP: $APP_ELECTRS_NODE_IP
+      ELECTRUM_PORT: $APP_ELECTRS_NODE_PORT

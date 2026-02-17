@@ -1,0 +1,57 @@
+manifestVersion: 1
+id: open-webui
+name: Open WebUI
+tagline: Chat with Ollama models like DeepSeek-R1 and LLama, or use an OpenAI API key
+category: ai
+version: "0.8.2"
+port: 2876
+description: >-
+  Open WebUI lets you chat with advanced AI models running locally on your own device or connect to online models using an API key.
+
+
+  **Getting Started with Local AI Models:**
+
+
+  🦙 Install Ollama: Start by installing the Ollama app from the Umbrel App Store. Ollama enables you to download and run large language models like Llama 3 and DeepSeek-R1 directly on your device.
+
+
+  ⬇️ Download a Model: In the Open WebUI app, type the name of the model you want in the search bar and click "Pull from Ollama.com." A full list of models is available at https://ollama.com/.
+
+
+  🤖 Example - Running DeepSeek-R1 1.5B: To use the DeepSeek-R1 model with 1.5 billion parameters, type deepseek-r1:1.5b in the search bar and start the download. Once it's ready, you can chat with the model directly in Open WebUI.
+
+
+  ⚠️ Warning: Before running a model, make sure your device has enough free RAM to support it. Attempting to run a model that exceeds your available memory could cause your device to crash or become unresponsive. Always check the model requirements before downloading or starting it.
+developer: Open WebUI
+website: https://openwebui.com/
+submitter: al-lac
+submission: https://github.com/getumbrel/umbrel-apps/pull/1977
+repo: https://github.com/open-webui/open-webui
+support: https://github.com/open-webui/open-webui/issues
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+defaultUsername: ""
+defaultPassword: ""
+dependencies:
+  - ollama
+releaseNotes: >-
+  ⚠️ This release includes database changes that require adequate downtime for migration, especially for larger deployments with extensive chat histories. Make sure you have a backup before updating.
+
+
+  Key highlights in this release include:
+    - Skills now inject full content when user-selected, while model-attached skills show only name and description for flexibility
+    - Chat toggles now control built-in tools, allowing users to disable web search, image generation, and code execution per conversation
+    - Image preview in file management modal makes it easier to identify and manage uploaded images
+    - Batch tag operations and faster group list loading significantly improve performance
+    - Skills sharing permissions now available for administrators to control per-group access
+    - Fixed OAuth session error handling to gracefully clean up corrupted sessions
+    - Fixed tool call message preservation to prevent models from hallucinating tool outputs
+    - Fixed external tool servers to initialize automatically on startup for proper containerized deployments
+    - Fixed resource handle cleanup to prevent file handle leaks during audio transcription
+    - Fixed keyboard shortcut conflict where Ctrl+Shift+S would strike through text instead of toggling sidebar
+
+
+  Full release notes are found at https://github.com/open-webui/open-webui/releases
+path: ""
