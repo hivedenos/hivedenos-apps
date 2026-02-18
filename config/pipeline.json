@@ -1,7 +1,43 @@
 {
-  "catalog_version": "1.0.0",
+  "catalog_version": "2.0.0",
   "strict_validation": true,
   "default_schedule_utc": "0 2 * * *",
+  "channels": {
+    "default": "stable",
+    "ingest_source_channel": "incubator",
+    "order": [
+      "stable",
+      "beta",
+      "edge",
+      "incubator"
+    ],
+    "definitions": {
+      "stable": {
+        "label": "Official",
+        "risk_level": "low",
+        "support_tier": "official",
+        "warning": null
+      },
+      "beta": {
+        "label": "Beta",
+        "risk_level": "medium",
+        "support_tier": "official",
+        "warning": "Generally safe, but minor behavior may change."
+      },
+      "edge": {
+        "label": "Edge",
+        "risk_level": "high",
+        "support_tier": "experimental",
+        "warning": "Experimental builds. APIs and behavior may change without notice."
+      },
+      "incubator": {
+        "label": "Incubator",
+        "risk_level": "high",
+        "support_tier": "candidate",
+        "warning": "Candidate apps from external sources under evaluation."
+      }
+    }
+  },
   "assets": {
     "gallery": {
       "enabled": true,

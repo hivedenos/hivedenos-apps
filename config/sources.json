@@ -4,6 +4,7 @@
       "id": "umbrel",
       "enabled": true,
       "type": "umbrel",
+      "channel": "incubator",
       "repo_url": "https://github.com/getumbrel/umbrel-apps.git",
       "branch": "master",
       "priority": 10,

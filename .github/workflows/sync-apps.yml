@@ -18,7 +18,7 @@ jobs:
           fetch-depth: 0
 
       - name: Ensure scripts executable
-        run: chmod +x scripts/run-sync.sh scripts/lib/*.sh scripts/pipeline/*.sh scripts/sources/umbrel/*.sh scripts/assets/umbrel-gallery/*.sh
+        run: chmod +x scripts/run-sync.sh scripts/lib/*.sh scripts/pipeline/*.sh scripts/sources/umbrel/*.sh scripts/assets/umbrel-gallery/*.sh scripts/channels/*.sh
 
       - name: Run sync pipeline
         run: ./scripts/run-sync.sh

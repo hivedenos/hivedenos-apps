@@ -2,69 +2,126 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Hiveden Apps Catalog",
   "type": "object",
-  "required": ["version", "generated_at", "total_apps", "apps"],
+  "required": [
+    "version",
+    "generated_at",
+    "default_channel",
+    "total_apps",
+    "total_apps_all_channels",
+    "channels",
+    "apps",
+    "apps_by_channel"
+  ],
+  "$defs": {
+    "app": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "version",
+        "tagline",
+        "description",
+        "channel",
+        "channel_label",
+        "risk_level",
+        "support_tier",
+        "promotion_status",
+        "repository_path",
+        "icon_url",
+        "image_urls",
+        "source",
+        "install",
+        "search",
+        "dependencies",
+        "updated_at"
+      ],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "version": { "type": "string", "minLength": 1 },
+        "tagline": { "type": "string" },
+        "description": { "type": "string" },
+        "developer": { "type": "string" },
+        "channel": { "type": "string", "minLength": 1 },
+        "channel_label": { "type": "string", "minLength": 1 },
+        "risk_level": { "type": "string", "minLength": 1 },
+        "support_tier": { "type": "string", "minLength": 1 },
+        "promotion_status": { "type": "string", "minLength": 1 },
+        "repository_path": { "type": "string", "minLength": 1 },
+        "icon_url": { "type": ["string", "null"] },
+        "image_urls": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "source": {
+          "type": "object",
+          "required": ["id", "repo", "commit", "path"],
+          "properties": {
+            "id": { "type": "string" },
+            "repo": { "type": "string" },
+            "commit": { "type": "string" },
+            "path": { "type": "string" }
+          },
+          "additionalProperties": true
+        },
+        "install": {
+          "type": "object",
+          "required": ["method", "files"],
+          "properties": {
+            "method": { "type": "string" },
+            "files": {
+              "type": "array",
+              "items": { "type": "string" },
+              "minItems": 1
+            }
+          },
+          "additionalProperties": true
+        },
+        "search": {
+          "type": "object",
+          "required": ["keywords", "categories"],
+          "properties": {
+            "keywords": { "type": "array", "items": { "type": "string" } },
+            "categories": { "type": "array", "items": { "type": "string" } }
+          },
+          "additionalProperties": true
+        },
+        "dependencies": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "updated_at": { "type": "string" }
+      },
+      "additionalProperties": true
+    }
+  },
   "properties": {
     "version": { "type": "string" },
     "generated_at": { "type": "string" },
+    "default_channel": { "type": "string", "minLength": 1 },
     "total_apps": { "type": "integer", "minimum": 0 },
-    "apps": {
-      "type": "array",
-      "items": {
+    "total_apps_all_channels": { "type": "integer", "minimum": 0 },
+    "channels": {
+      "type": "object",
+      "additionalProperties": {
         "type": "object",
-        "required": ["id", "name", "version", "tagline", "description", "repository_path", "icon_url", "image_urls", "source", "install", "search", "dependencies", "updated_at"],
+        "required": ["total_apps", "warning"],
         "properties": {
-          "id": { "type": "string", "minLength": 1 },
-          "name": { "type": "string", "minLength": 1 },
-          "version": { "type": "string", "minLength": 1 },
-          "tagline": { "type": "string" },
-          "description": { "type": "string" },
-          "developer": { "type": "string" },
-          "repository_path": { "type": "string", "minLength": 1 },
-          "icon_url": { "type": ["string", "null"] },
-          "image_urls": {
-            "type": "array",
-            "items": { "type": "string" }
-          },
-          "source": {
-            "type": "object",
-            "required": ["id", "repo", "commit", "path"],
-            "properties": {
-              "id": { "type": "string" },
-              "repo": { "type": "string" },
-              "commit": { "type": "string" },
-              "path": { "type": "string" }
-            },
-            "additionalProperties": true
-          },
-          "install": {
-            "type": "object",
-            "required": ["method", "files"],
-            "properties": {
-              "method": { "type": "string" },
-              "files": {
-                "type": "array",
-                "items": { "type": "string" },
-                "minItems": 1
-              }
-            },
-            "additionalProperties": true
-          },
-          "search": {
-            "type": "object",
-            "required": ["keywords", "categories"],
-            "properties": {
-              "keywords": { "type": "array", "items": { "type": "string" } },
-              "categories": { "type": "array", "items": { "type": "string" } }
-            },
-            "additionalProperties": true
-          },
-          "dependencies": {
-            "type": "array",
-            "items": { "type": "string" }
-          },
-          "updated_at": { "type": "string" }
+          "total_apps": { "type": "integer", "minimum": 0 },
+          "warning": { "type": ["string", "null"] }
         },
         "additionalProperties": true
+      }
+    },
+    "apps": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/app" }
+    },
+    "apps_by_channel": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": { "$ref": "#/$defs/app" }
       }
     }
   },

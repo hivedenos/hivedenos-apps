@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Hiveden Channel Overrides",
+  "type": "object",
+  "required": ["version", "overrides"],
+  "properties": {
+    "version": { "type": "string", "minLength": 1 },
+    "overrides": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "channel"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "source_id": { "type": "string", "minLength": 1 },
+          "from_channel": {
+            "type": "string",
+            "enum": ["stable", "beta", "edge", "incubator"]
+          },
+          "channel": {
+            "type": "string",
+            "enum": ["stable", "beta", "edge", "incubator"]
+          },
+          "promotion_status": { "type": "string", "minLength": 1 },
+          "updated_at": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

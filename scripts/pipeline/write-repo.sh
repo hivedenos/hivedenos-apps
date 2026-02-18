@@ -24,12 +24,21 @@ mapping_ndjson="$(mktemp)"
 while IFS= read -r app_dir; do
   [[ -z "$app_dir" ]] && continue
   app_name="$(basename "$app_dir")"
+  app_channel="$(jq -r --arg id "$app_name" '.[] | select(.id == $id) | .channel // "incubator"' "$NORMALIZED_JSON" | head -n 1)"
+  if [[ -z "$app_channel" || "$app_channel" == "null" ]]; then
+    app_channel="incubator"
+  fi
+
   rsync -a --delete "$app_dir/" "$apps_out/$app_name/"
 
-  target_rel="$apps_root_rel/$app_name"
+  if [[ "$app_channel" == "incubator" ]]; then
+    target_rel="$apps_root_rel/incubator/$SOURCE_ID/$app_name"
+  else
+    target_rel="$apps_root_rel/$app_channel/$app_name"
+  fi
   target_abs="$ROOT_DIR/$target_rel"
   if [[ -e "$target_abs" ]]; then
-    target_rel="$apps_root_rel/${app_name}--$SOURCE_ID"
+    target_rel="${target_rel}--$SOURCE_ID"
     target_abs="$ROOT_DIR/$target_rel"
   fi
 

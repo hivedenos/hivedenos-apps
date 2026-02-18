@@ -8,11 +8,15 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["id", "enabled", "type", "repo_url", "branch", "priority", "options"],
+        "required": ["id", "enabled", "type", "channel", "repo_url", "branch", "priority", "options"],
         "properties": {
           "id": { "type": "string", "minLength": 1 },
           "enabled": { "type": "boolean" },
           "type": { "type": "string", "minLength": 1 },
+          "channel": {
+            "type": "string",
+            "enum": ["stable", "beta", "edge", "incubator"]
+          },
           "repo_url": { "type": "string", "minLength": 1 },
           "branch": { "type": "string", "minLength": 1 },
           "priority": { "type": "integer", "minimum": 0 },

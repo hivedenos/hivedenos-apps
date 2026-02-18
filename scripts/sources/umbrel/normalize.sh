@@ -10,6 +10,76 @@ OUT_JSON="$5"
 source_id="$(printf '%s' "$SOURCE_CONFIG_JSON" | jq -r '.id')"
 repo_url="$(printf '%s' "$SOURCE_CONFIG_JSON" | jq -r '.repo_url')"
 priority="$(printf '%s' "$SOURCE_CONFIG_JSON" | jq -r '.priority')"
+source_channel="$(printf '%s' "$SOURCE_CONFIG_JSON" | jq -r '.channel // "incubator"')"
+
+normalize_channel() {
+  local channel="$1"
+  case "$channel" in
+    stable|beta|edge|incubator)
+      printf '%s\n' "$channel"
+      ;;
+    *)
+      printf 'incubator\n'
+      ;;
+  esac
+}
+
+channel_label() {
+  local channel="$1"
+  case "$channel" in
+    stable)
+      printf 'Official\n'
+      ;;
+    beta)
+      printf 'Beta\n'
+      ;;
+    edge)
+      printf 'Edge\n'
+      ;;
+    incubator)
+      printf 'Incubator\n'
+      ;;
+    *)
+      printf 'Official\n'
+      ;;
+  esac
+}
+
+risk_level() {
+  local channel="$1"
+  case "$channel" in
+    stable)
+      printf 'low\n'
+      ;;
+    beta)
+      printf 'medium\n'
+      ;;
+    edge|incubator)
+      printf 'high\n'
+      ;;
+    *)
+      printf 'low\n'
+      ;;
+  esac
+}
+
+support_tier() {
+  local channel="$1"
+  case "$channel" in
+    stable|beta)
+      printf 'official\n'
+      ;;
+    edge)
+      printf 'experimental\n'
+      ;;
+    incubator)
+      printf 'candidate\n'
+      ;;
+    *)
+      printf 'official\n'
+      ;;
+  esac
+}
 
 yaml_scalar() {
   local key="$1"
@@ -198,6 +268,12 @@ while IFS= read -r app_dir; do
   if [[ -z "$description" ]]; then
     description="$tagline"
   fi
+
+  channel="$(normalize_channel "$source_channel")"
+  channel_label_value="$(channel_label "$channel")"
+  risk_level_value="$(risk_level "$channel")"
+  support_tier_value="$(support_tier "$channel")"
+
   dependencies_json="$(compose_resolved_dependencies_json "$compose")"
 
   jq -nc \
@@ -208,6 +284,10 @@ while IFS= read -r app_dir; do
     --arg description "$description" \
     --arg developer "$developer" \
     --arg category "$category" \
+    --arg channel "$channel" \
+    --arg channel_label "$channel_label_value" \
+    --arg risk_level "$risk_level_value" \
+    --arg support_tier "$support_tier_value" \
     --arg source_id "$source_id" \
     --arg repo "$repo_url" \
     --arg commit "$COMMIT_SHA" \
@@ -224,7 +304,19 @@ while IFS= read -r app_dir; do
       tagline: $tagline,
       description: $description,
       developer: $developer,
-      repository_path: ("apps/" + $id),
+      channel: $channel,
+      channel_label: $channel_label,
+      risk_level: $risk_level,
+      support_tier: $support_tier,
+      origin_channel: $channel,
+      promotion_status: "none",
+      repository_path: (
+        if $channel == "incubator" then
+          "apps/incubator/" + $source_id + "/" + $id
+        else
+          "apps/" + $channel + "/" + $id
+        end
+      ),
       source: {
         id: $source_id,
         repo: $repo,

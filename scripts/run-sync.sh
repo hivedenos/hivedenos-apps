@@ -11,8 +11,14 @@ source "$ROOT_DIR/scripts/lib/json.sh"
 require_jq
 
 sources_file="$ROOT_DIR/config/sources.json"
+channel_overrides_file="$ROOT_DIR/config/channel-overrides.json"
+ingest_source_channel="$(jq -r '.channels.ingest_source_channel // "incubator"' "$ROOT_DIR/config/pipeline.json")"
 work_base="$(mktemp -d)"
 trap 'rm -rf "$work_base"' EXIT
+
+if [[ ! -f "$channel_overrides_file" ]]; then
+  jq -n '{version: "1.0.0", overrides: []}' >"$channel_overrides_file"
+fi
 
 log_info "Starting app sync pipeline"
 
@@ -33,6 +39,7 @@ catalog_dir="$(dirname "$catalog_path")"
 metadata_dir="$(dirname "$metadata_path")"
 
 # Always start from a clean slate for generated outputs.
+log_info "Cleaning generated app directories"
 rm -rf "$apps_root"
 rm -rf "$sources_root"
 mkdir -p "$sources_root"
@@ -42,6 +49,7 @@ rm -f "$catalog_path" "$metadata_path"
 
 for source_id in "${source_ids[@]}"; do
   source_cfg="$(jq -c --arg id "$source_id" '.sources[] | select(.id == $id)' "$sources_file")"
+  source_cfg="$(printf '%s' "$source_cfg" | jq -c --arg channel "$ingest_source_channel" '. + {channel: $channel}')"
   source_type="$(printf '%s' "$source_cfg" | jq -r '.type')"
 
   source_work_dir="$work_base/$source_id"
@@ -58,6 +66,7 @@ for source_id in "${source_ids[@]}"; do
 
       "$ROOT_DIR/scripts/sources/umbrel/discover.sh" "$repo_dir" "$apps_list_file"
       "$ROOT_DIR/scripts/sources/umbrel/normalize.sh" "$repo_dir" "$source_cfg" "$apps_list_file" "$commit_sha" "$normalized_json"
+      "$ROOT_DIR/scripts/pipeline/apply-channel-overrides.sh" "$ROOT_DIR" "$source_id" "$normalized_json"
       "$ROOT_DIR/scripts/pipeline/write-repo.sh" "$ROOT_DIR" "$source_id" "$repo_dir" "$apps_list_file" "$normalized_json" "$commit_sha"
       ;;
     *)
