@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: file-browser_server_1
+      APP_PORT: 80
+
+  server:
+    image: filebrowser/filebrowser:v2.59.0@sha256:6e950e90bae0c53c27f4be6eeeb88e4b9cffc1f9be05ca2a0c09e74663ae595d
+    user: "1000:1000"
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/data:/database/
+      - ${APP_DATA_DIR}/data:/config/
+      - ${UMBREL_ROOT}/data/storage:/data
+    environment:
+      - FB_PORT=80
+      - FB_DATABASE=/database/filebrowser.db
+      - FB_ROOT=/data
+      - FB_NOAUTH=true

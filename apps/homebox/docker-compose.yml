@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+
+  app_proxy:
+    environment:
+      APP_HOST: homebox_web_1
+      APP_PORT: 7745
+    
+  web:
+    image: ghcr.io/sysadminsmedia/homebox:0.23.1@sha256:facd9b795952602d5c54eacfcd0f3533040e6b556f461e423a2d2445ed8736f9
+    restart: on-failure
+    user: 1000:1000
+    environment:
+      - HBOX_LOG_LEVEL=info
+      - HBOX_LOG_FORMAT=text
+      - HBOX_WEB_MAX_UPLOAD_SIZE=10
+    volumes:
+      - ${APP_DATA_DIR}/data:/data/

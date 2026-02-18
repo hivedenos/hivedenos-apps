@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  server:
+    image: adguard/adguardhome:v0.107.71@sha256:92929135ced2554aaf94706f766a98ad348f211df61b0704e2db7e8498cc00b7
+    # override the default command to set the web address to port 8095 to avoid conflict with Thunderhub
+    # command from Dockerfile: https://github.com/AdguardTeam/AdGuardHome/blob/master/docker/Dockerfile
+    command: ["--no-check-update", "-c", "/opt/adguardhome/conf/AdGuardHome.yaml", "-w", "/opt/adguardhome/work", "--web-addr", "0.0.0.0:8095"]
+    restart: on-failure
+    network_mode: host
+    volumes:
+      - ${APP_DATA_DIR}/data/work:/opt/adguardhome/work
+      - ${APP_DATA_DIR}/data/conf:/opt/adguardhome/conf
+    cap_add:
+      - NET_ADMIN

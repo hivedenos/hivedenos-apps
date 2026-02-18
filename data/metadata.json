@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-02-18T04:09:37Z",
+  "total_apps": 299,
+  "catalog_sha256": "ca1156cb2c407553dd5d1dd2c1fcfd2d88bf870db20a5d665007372a0fcf1300",
+  "sources": [
+    {
+      "id": "umbrel",
+      "repo": "https://github.com/getumbrel/umbrel-apps.git",
+      "commit": "e7ff92ddfaf848e33c4cbc4afcb60c8fd99fc050",
+      "total_apps": 299,
+      "generated_at": "2026-02-18T04:09:13Z"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: ordinals_ord_1
+      APP_PORT: 80
+      PROXY_AUTH_ADD: "false"
+
+  ord:
+    image: nmfretz/ord:0.23.3@sha256:97c1d62ca3701fbdabd3fe0c29663f20b529183f41494ccaa2d444b9684fc472
+    # This needs to run as root
+    # user: "1000:1000"
+    restart: on-failure
+    stop_grace_period: 15m30s
+    command: "ord server --http"
+    volumes:
+      - ${APP_DATA_DIR}/data/ord:/var/lib/ord
+      - ${APP_BITCOIN_DATA_DIR}:/var/lib/bitcoind:ro
+    environment:
+      ORD_DATA_DIR: "/var/lib/ord"
+      ORD_BITCOIN_DATA_DIR: "/var/lib/bitcoind"
+      ORD_COOKIE_FILE: "/var/lib/bitcoind/.cookie"
+      ORD_BITCOIN_RPC_USERNAME: "${APP_BITCOIN_RPC_USER}"
+      ORD_BITCOIN_RPC_PASSWORD: "${APP_BITCOIN_RPC_PASS}"
+      ORD_BITCOIN_RPC_URL: "${APP_BITCOIN_NODE_IP}:${APP_BITCOIN_RPC_PORT}"
+      ORD_CHAIN: "${APP_BITCOIN_NETWORK}"
+      ORD_INDEX_RUNES: "true"
+      # TODO: consider index-sats
