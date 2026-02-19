@@ -39,11 +39,12 @@ catalog_dir="$(dirname "$catalog_path")"
 metadata_dir="$(dirname "$metadata_path")"
 
 # Always start from a clean slate for generated outputs.
-log_info "Cleaning generated app directories"
-rm -rf "$apps_root"
+incubator_apps_root="$apps_root/incubator"
+log_info "Cleaning generated incubator app directory"
+rm -rf "$incubator_apps_root"
 rm -rf "$sources_root"
 mkdir -p "$sources_root"
-mkdir -p "$apps_root"
+mkdir -p "$incubator_apps_root"
 mkdir -p "$catalog_dir" "$metadata_dir"
 rm -f "$catalog_path" "$metadata_path"
 
