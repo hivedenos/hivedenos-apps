@@ -2,10 +2,14 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-pipeline_file="$ROOT_DIR/config/pipeline.json"
+# shellcheck source=lib.sh
+source "$ROOT_DIR/scripts/channels/lib.sh"
+init_channel_context "$ROOT_DIR"
+
+pipeline_file="$CHANNELS_PIPELINE_FILE"
 overrides_file="$ROOT_DIR/config/channel-overrides.json"
-apps_root_rel="$(jq -r '.output.apps_root // "apps"' "$pipeline_file")"
-apps_root="$ROOT_DIR/$apps_root_rel"
+apps_root_rel="$CHANNELS_APPS_ROOT_REL"
+apps_root="$CHANNELS_APPS_ROOT"
 
 usage() {
   echo "Usage: $0 <app-id> <from-channel> <to-channel> [source-id]" >&2
@@ -32,79 +36,17 @@ if [[ "$from_channel" == "$to_channel" ]]; then
   exit 1
 fi
 
-validate_channel() {
-  local channel="$1"
-  if ! jq -e --arg channel "$channel" '.channels.definitions | has($channel)' "$pipeline_file" >/dev/null; then
-    echo "Invalid channel: $channel" >&2
-    echo "Allowed channels:" >&2
-    jq -r '.channels.order[]' "$pipeline_file" >&2
-    exit 1
-  fi
-}
-
-validate_channel "$from_channel"
-validate_channel "$to_channel"
-
-resolve_source_id_from_incubator() {
-  local id="$1"
-  local allow_none="${2:-false}"
-  mapfile -t matches < <(find "$apps_root/incubator" -mindepth 2 -maxdepth 2 -type d -name "$id" | sort)
-
-  if [[ ${#matches[@]} -eq 0 ]]; then
-    if [[ "$allow_none" == "true" ]]; then
-      printf '\n'
-      return 0
-    fi
-    echo "No incubator app directory found for app: $id" >&2
-    exit 1
-  fi
-
-  if [[ ${#matches[@]} -gt 1 ]]; then
-    echo "Multiple incubator app directories found for app: $id" >&2
-    echo "Please provide [source-id] explicitly." >&2
-    printf '%s\n' "${matches[@]#$apps_root/}" >&2
-    exit 1
-  fi
-
-  basename "$(dirname "${matches[0]}")"
-}
-
-normalize_image_dir() {
-  local app_dir="$1"
-  local img_dir="$app_dir/img"
-  local legacy_imgs_dir="$app_dir/imgs"
-
-  if [[ ! -d "$legacy_imgs_dir" ]]; then
-    return 0
-  fi
-
-  if [[ -d "$img_dir" ]]; then
-    while IFS= read -r legacy_file; do
-      base_name="$(basename "$legacy_file")"
-      if [[ ! -e "$img_dir/$base_name" ]]; then
-        mv "$legacy_file" "$img_dir/$base_name"
-      fi
-    done < <(find "$legacy_imgs_dir" -mindepth 1 -maxdepth 1 -type f | sort)
-    rm -rf "$legacy_imgs_dir"
-  else
-    mv "$legacy_imgs_dir" "$img_dir"
-  fi
-}
+validate_channel_name "$from_channel" "$pipeline_file"
+validate_channel_name "$to_channel" "$pipeline_file"
 
 resolved_source_id="$source_id"
 
 if [[ "$from_channel" == "incubator" && "$resolved_source_id" == "*" ]]; then
-  resolved_source_id="$(resolve_source_id_from_incubator "$app_id")"
+  resolved_source_id="$(resolve_incubator_source_id "$app_id" false "$apps_root")"
 fi
 
 if [[ "$to_channel" == "incubator" && "$resolved_source_id" == "*" ]]; then
-  resolved_source_id="$(resolve_source_id_from_incubator "$app_id" true)"
-fi
-
-if [[ "$from_channel" == "incubator" ]]; then
-  src_rel="$apps_root_rel/incubator/$resolved_source_id/$app_id"
-else
-  src_rel="$apps_root_rel/$from_channel/$app_id"
+  resolved_source_id="$(resolve_incubator_source_id "$app_id" true "$apps_root")"
 fi
 
 if [[ "$to_channel" == "incubator" ]]; then
@@ -112,10 +54,10 @@ if [[ "$to_channel" == "incubator" ]]; then
     echo "A concrete source-id is required when promoting into incubator if no incubator source copy exists." >&2
     exit 1
   fi
-  dst_rel="$apps_root_rel/incubator/$resolved_source_id/$app_id"
-else
-  dst_rel="$apps_root_rel/$to_channel/$app_id"
 fi
+
+src_rel="$(channel_app_rel_path "$from_channel" "$app_id" "$resolved_source_id" "$apps_root_rel")"
+dst_rel="$(channel_app_rel_path "$to_channel" "$app_id" "$resolved_source_id" "$apps_root_rel")"
 
 src_abs="$ROOT_DIR/$src_rel"
 dst_abs="$ROOT_DIR/$dst_rel"
@@ -140,7 +82,8 @@ else
   action="Moved"
 fi
 
-normalize_image_dir "$dst_abs"
+normalize_app_image_dir "$dst_abs"
+customize_app_dir_for_hiveden "$dst_abs"
 
 if [[ ! -f "$overrides_file" ]]; then
   jq -n '{version: "1.0.0", overrides: []}' >"$overrides_file"
@@ -172,7 +115,8 @@ jq \
   ' "$overrides_file" >"$tmp_file"
 
 mv "$tmp_file" "$overrides_file"
+bash "$ROOT_DIR/scripts/channels/rebuild-catalog.sh" "$ROOT_DIR"
 
 echo "$action app directory: $src_rel -> $dst_rel"
 echo "Recorded promotion override: $app_id $from_channel -> $to_channel (source: $resolved_source_id)"
-echo "Run ./scripts/run-sync.sh to regenerate data/apps.json from channel directories."
+echo "Updated catalog outputs: data/apps.json and data/metadata.json"

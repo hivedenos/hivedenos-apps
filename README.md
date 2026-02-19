@@ -81,9 +81,33 @@ Promotion behavior:
 
 - If `from-channel` is `incubator`, the app directory is copied to the destination channel
 - Otherwise, the app directory is moved to the destination channel
+- Promoted app metadata and docs are rebranded from Umbrel to Hiveden in the destination app directory
 - An audit record is written to `config/channel-overrides.json`
+- `data/apps.json` and `data/metadata.json` are regenerated automatically
 
-Then run `./scripts/run-sync.sh` to regenerate `data/apps.json` and `data/metadata.json`.
+When catalog entries are emitted for non-incubator channels, user-facing branding fields are also rewritten from Umbrel to Hiveden.
+
+## Demote apps from a channel
+
+Use the demotion helper to remove an app directory from a specific channel:
+
+```bash
+./scripts/channels/demote-app.sh <app-id> <channel> [source-id]
+```
+
+Examples:
+
+```bash
+./scripts/channels/demote-app.sh nostr-relay beta
+./scripts/channels/demote-app.sh nostr-relay incubator umbrel
+```
+
+Demotion behavior:
+
+- Deletes only the app directory for the specified channel
+- For `incubator`, resolves source automatically when unique, or requires `[source-id]` when ambiguous
+- Does not affect the same app in other channels
+- `data/apps.json` and `data/metadata.json` are regenerated automatically
 
 ## Extending with new sources
 

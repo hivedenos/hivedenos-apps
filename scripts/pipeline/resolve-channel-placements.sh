@@ -59,6 +59,27 @@ while IFS= read -r app_json; do
         --arg base_promotion "$base_promotion" \
         --argjson channel_defs "$channel_defs_json" \
         '
+        def brandify($value):
+          if ($value | type) != "string" then
+            $value
+          else
+            $value
+            | gsub("umbrelOS"; "hivedenOS")
+            | gsub("UmbrelOS"; "HivedenOS")
+            | gsub("Umbrel App Store"; "Hiveden App Store")
+            | gsub("umbrel app store"; "hiveden app store")
+            | gsub("umbrel\\.local"; "hiveden.local")
+            | gsub("Umbrel"; "Hiveden")
+            | gsub("umbrel"; "hiveden")
+          end;
+
+        def maybe_brandify($value):
+          if $channel == "incubator" then
+            $value
+          else
+            brandify($value)
+          end;
+
         def remap_icon_url($url):
           if $url == null then
             null
@@ -79,6 +100,10 @@ while IFS= read -r app_json; do
 
         ($channel_defs[$channel] // {}) as $meta
         | $app + {
+            name: maybe_brandify($app.name),
+            tagline: maybe_brandify($app.tagline),
+            description: maybe_brandify($app.description),
+            developer: maybe_brandify($app.developer),
             channel: $channel,
             channel_label: ($meta.label // $channel),
             risk_level: ($meta.risk_level // "unknown"),
@@ -86,6 +111,18 @@ while IFS= read -r app_json; do
             repository_path: $repository_path,
             icon_url: remap_icon_url($app.icon_url),
             image_urls: remap_image_urls(($app.image_urls // [])),
+            search: (
+              ($app.search // {})
+              + {
+                  keywords: (
+                    (($app.search.keywords // []) | map(maybe_brandify(.)))
+                    + (if $channel == "incubator" then [] else ["hiveden"] end)
+                    | map(select((. | type) == "string" and (length > 0)))
+                    | unique
+                  ),
+                  categories: (($app.search.categories // []) | map(select((. | type) == "string" and (length > 0))))
+                }
+            ),
             promotion_status: (if $channel == $origin_channel then $base_promotion else "promoted" end)
           }
         ' >>"$tmp_ndjson"
