@@ -1,4 +1,13 @@
 {
   "version": "1.0.0",
-  "overrides": []
+  "overrides": [
+    {
+      "id": "pi-hole",
+      "source_id": "umbrel",
+      "from_channel": "incubator",
+      "channel": "stable",
+      "promotion_status": "promoted",
+      "updated_at": "2026-02-19T17:54:42Z"
+    }
+  ]
 }

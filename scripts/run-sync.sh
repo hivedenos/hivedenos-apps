@@ -67,7 +67,6 @@ for source_id in "${source_ids[@]}"; do
 
       "$ROOT_DIR/scripts/sources/umbrel/discover.sh" "$repo_dir" "$apps_list_file"
       "$ROOT_DIR/scripts/sources/umbrel/normalize.sh" "$repo_dir" "$source_cfg" "$apps_list_file" "$commit_sha" "$normalized_json"
-      "$ROOT_DIR/scripts/pipeline/apply-channel-overrides.sh" "$ROOT_DIR" "$source_id" "$normalized_json"
       "$ROOT_DIR/scripts/pipeline/write-repo.sh" "$ROOT_DIR" "$source_id" "$repo_dir" "$apps_list_file" "$normalized_json" "$commit_sha"
       ;;
     *)
@@ -84,10 +83,12 @@ mkdir -p "$gallery_work_dir"
 bash "$ROOT_DIR/scripts/pipeline/enrich-assets.sh" "$ROOT_DIR"
 
 merged_json="$work_base/merged.json"
+resolved_json="$work_base/resolved-channel-placements.json"
 mkdir -p "$ROOT_DIR/data"
 
 "$ROOT_DIR/scripts/pipeline/merge-sources.sh" "$ROOT_DIR" "$merged_json"
-"$ROOT_DIR/scripts/pipeline/build-catalog.sh" "$ROOT_DIR" "$merged_json" "$catalog_path" "$metadata_path"
+bash "$ROOT_DIR/scripts/pipeline/resolve-channel-placements.sh" "$ROOT_DIR" "$merged_json" "$resolved_json"
+"$ROOT_DIR/scripts/pipeline/build-catalog.sh" "$ROOT_DIR" "$resolved_json" "$catalog_path" "$metadata_path"
 "$ROOT_DIR/scripts/pipeline/validate.sh" "$ROOT_DIR"
 
 log_info "Sync pipeline completed successfully"

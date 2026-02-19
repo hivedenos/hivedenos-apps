@@ -22,22 +22,33 @@ for normalized_file in "${normalized_files[@]}"; do
       repository_path="$apps_root_rel/$app_id"
     fi
 
-    imgs_dir="$ROOT_DIR/$repository_path/imgs"
+    img_dir="$ROOT_DIR/$repository_path/img"
+    legacy_imgs_dir="$ROOT_DIR/$repository_path/imgs"
+    assets_dir=""
+    assets_rel=""
     icon_url='null'
     image_urls='[]'
 
-    if [[ -d "$imgs_dir" ]]; then
-      icon_file="$(find "$imgs_dir" -maxdepth 1 -type f \( -iname 'icon.svg' -o -iname 'icon.png' -o -iname 'icon.jpg' -o -iname 'icon.jpeg' -o -iname 'icon.webp' \) | sort | head -n 1 || true)"
+    if [[ -d "$img_dir" ]]; then
+      assets_dir="$img_dir"
+      assets_rel="img"
+    elif [[ -d "$legacy_imgs_dir" ]]; then
+      assets_dir="$legacy_imgs_dir"
+      assets_rel="imgs"
+    fi
+
+    if [[ -n "$assets_dir" ]]; then
+      icon_file="$(find "$assets_dir" -maxdepth 1 -type f \( -iname 'icon.svg' -o -iname 'icon.png' -o -iname 'icon.jpg' -o -iname 'icon.jpeg' -o -iname 'icon.webp' \) | sort | head -n 1 || true)"
       if [[ -n "$icon_file" ]]; then
-        icon_url="${repository_path}/imgs/$(basename "$icon_file")"
+        icon_url="${repository_path}/${assets_rel}/$(basename "$icon_file")"
       fi
 
-      image_urls="$(find "$imgs_dir" -maxdepth 1 -type f | sort | while IFS= read -r img; do
+      image_urls="$(find "$assets_dir" -maxdepth 1 -type f | sort | while IFS= read -r img; do
         base="$(basename "$img")"
         if [[ "$base" =~ ^icon\.[a-zA-Z0-9]+$ ]]; then
           continue
         fi
-        printf '%s\n' "${repository_path}/imgs/${base}"
+        printf '%s\n' "${repository_path}/${assets_rel}/${base}"
       done | jq -Rsc 'split("\n") | map(select(length > 0))')"
     fi
 

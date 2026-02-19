@@ -52,7 +52,32 @@ first_existing_dir() {
   return 1
 }
 
-for app_dir in "$apps_root"/*; do
+emit_app_dirs() {
+  local channel_dir
+  local source_dir
+  local app_dir
+
+  for channel_dir in "$apps_root"/*; do
+    [[ -d "$channel_dir" ]] || continue
+
+    if [[ "$(basename "$channel_dir")" == "incubator" ]]; then
+      for source_dir in "$channel_dir"/*; do
+        [[ -d "$source_dir" ]] || continue
+        for app_dir in "$source_dir"/*; do
+          [[ -d "$app_dir" ]] || continue
+          printf '%s\n' "$app_dir"
+        done
+      done
+    else
+      for app_dir in "$channel_dir"/*; do
+        [[ -d "$app_dir" ]] || continue
+        printf '%s\n' "$app_dir"
+      done
+    fi
+  done
+}
+
+while IFS= read -r app_dir; do
   [[ -d "$app_dir" ]] || continue
 
   app_id="$(basename "$app_dir")"
@@ -74,9 +99,9 @@ for app_dir in "$apps_root"/*; do
     "$gallery_app_dir/images" \
     "$gallery_app_dir/screenshots")"
 
-  imgs_dir="$app_dir/imgs"
-  rm -rf "$imgs_dir"
-  mkdir -p "$imgs_dir"
+  img_dir="$app_dir/img"
+  rm -rf "$img_dir" "$app_dir/imgs"
+  mkdir -p "$img_dir"
 
   icon_src=""
   while IFS= read -r icon_candidate; do
@@ -87,7 +112,7 @@ for app_dir in "$apps_root"/*; do
   if [[ -n "$icon_src" ]]; then
     icon_ext="${icon_src##*.}"
     icon_ext="$(printf '%s' "$icon_ext" | tr '[:upper:]' '[:lower:]')"
-    cp "$icon_src" "$imgs_dir/icon.$icon_ext"
+    cp "$icon_src" "$img_dir/icon.$icon_ext"
   fi
 
   screenshot_index=1
@@ -106,13 +131,13 @@ for app_dir in "$apps_root"/*; do
       ext="jpg"
     fi
 
-    cp "$image_file" "$imgs_dir/$screenshot_index.$ext"
+    cp "$image_file" "$img_dir/$screenshot_index.$ext"
     screenshot_index=$((screenshot_index + 1))
   done < <(find "$src_assets_dir" -maxdepth 1 -type f | sort)
 
-  # Remove empty imgs directory when no icon/screenshots are available.
-  if [[ -z "$(find "$imgs_dir" -mindepth 1 -maxdepth 1 -type f -print -quit)" ]]; then
-    rmdir "$imgs_dir"
+  # Remove empty img directory when no icon/screenshots are available.
+  if [[ -z "$(find "$img_dir" -mindepth 1 -maxdepth 1 -type f -print -quit)" ]]; then
+    rmdir "$img_dir"
   fi
 
-done
+done < <(emit_app_dirs)
