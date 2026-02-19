@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: autobrr_web_1
+      APP_PORT: 7474
+      PROXY_AUTH_ADD: "false"
+
+  web:
+    image: ghcr.io/autobrr/autobrr:v1.73.0@sha256:6b0e57048087e5b7b626b0f02d39e91c8287d32691c26c709b3957227df12f7c
+    restart: on-failure
+    stop_grace_period: 1m
+    user: "1000:1000"
+    volumes:
+      - ${APP_DATA_DIR}/data:/config

@@ -1,0 +1,54 @@
+manifestVersion: 1
+id: bazarr
+category: media
+name: Bazarr
+version: "1.5.5"
+tagline: Manage and download subtitles for Sonarr and Radarr
+description: >-
+  Bazarr is a companion application to Sonarr and Radarr that manages and downloads subtitles based on your requirements.
+  You define your preferences by TV show or movie and Bazarr takes care of everything for you.
+
+
+  Bazarr does not scan your disk to detect series and movies. It only takes care of the series and movies that are indexed in Sonarr and Radarr.
+
+
+  🛠️ SET-UP INSTRUCTIONS
+  
+  During initial set-up, you will need to input your Umbrel device's IP address to connect to Sonarr and/or Radarr.
+  You can find your device's IP address by visiting your router's admin dashboard or by using an IP scanning tool like Angry IP Scanner.
+  You will also need to input your API key for Sonarr and/or Radarr. You can find your API keys in the settings of the Sonarr and Radarr apps.
+releaseNotes: >-
+  Key improvements in this release include:
+    - Removed OpenSubtitles.org provider and associated functionality
+    - Added Subtis.io subtitles provider
+    - Improved jobs manager to allow concurrent execution with reordering and force starting pending jobs
+    - Fixed path traversal security vulnerability (CVE-2024-40348)
+    - Improved thread safety in jobs manager with added locks and refactored job execution logic
+    - Enhanced release group matching logic for improved accuracy
+    - Added retry logic to NapiProjekt provider for improved resilience
+    - Fixed subtitles uploading formats validation
+    - Improved opensubtitles.com search parameters and added option to allow machine translated subtitles
+    - Fixed episodes synchronization with Sonarr v3
+    - Fixed custom path not taken into account when translating or modding subtitles
+    - Improved subsource to fallback to title search if IMDB returns empty result
+    - Fixed whisperai provider audio stream language mapping
+    - Python 3.13 is now officially supported
+
+
+  Full release notes are found at https://github.com/morpheus65535/bazarr/releases
+developer: morpheus65535
+website: https://www.bazarr.media/
+dependencies: []
+repo: https://github.com/morpheus65535/bazarr
+support: https://github.com/morpheus65535/bazarr/issues
+port: 6767
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false
+submitter: Umbrel
+submission: https://github.com/getumbrel/umbrel-apps/pull/610

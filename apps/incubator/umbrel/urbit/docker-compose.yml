@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  app_proxy:
+    environment:
+      APP_HOST: urbit_manager_1
+      APP_PORT: 8090
+      PROXY_AUTH_ADD: "false"
+  
+  manager:
+    image: mopfelwinrux/urbit-umbrel:v4.2@sha256:2e9fc9faa12ca39f591b63c30619142d2164419418907ab8efb48239f40e7efa
+    ports:
+      - "34343:34343"
+    volumes:
+      - ${APP_DATA_DIR}/piers:/data/piers
+      - ${APP_DATA_DIR}/keys:/data/keys
+    environment:
+      APP_PASSWORD: ${APP_PASSWORD}

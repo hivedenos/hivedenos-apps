@@ -1,0 +1,45 @@
+manifestVersion: 1
+id: ghostfolio
+category: finance
+name: Ghostfolio
+version: "2.239.0"
+tagline: Manage your wealth like a boss
+description: >-
+  Ghostfolio is a privacy-first, open source dashboard for your personal finances.
+  
+
+  Break down your asset allocation, know your net worth and make solid, data-driven
+  investment decisions.
+
+
+  Protect your assets. Refine your personal investment strategy.
+
+  
+  Ghostfolio empowers busy people to keep track of stocks, ETFs or cryptocurrencies
+  without being tracked.
+backupIgnore:
+  - data/redis/*
+developer: Ghostfolio
+website: https://ghostfol.io/
+dependencies: []
+repo: https://github.com/ghostfolio/ghostfolio
+support: https://github.com/ghostfolio/ghostfolio/discussions
+port: 3334
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+deterministicPassword: false
+torOnly: false
+releaseNotes: >-
+  This release includes improvements and bug fixes:
+    - Added a new portfolio analysis rule based on total investment volume (Fee Ratio)
+    - Extended the Self-Hosting section on the FAQ page with information on derived currencies
+    - Fixed the investment value by including currency effects in the portfolio summary
+    - Improved the language localization for German
+
+
+  Full release notes are found at https://github.com/ghostfolio/ghostfolio/releases
+submitter: BeauAgst
+submission: https://github.com/getumbrel/umbrel-apps/pull/396
