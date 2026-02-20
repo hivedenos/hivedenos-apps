@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-02-20T04:04:39Z",
+  "generated_at": "2026-02-20T15:40:55Z",
   "total_apps": 300,
-  "catalog_sha256": "66f7bec3f68a5e82cff62c26f8976aca4b677d4aa3fcce7a13f75fd2482003c9",
+  "catalog_sha256": "d3c8984b1e04c526012abb8dfcc299ef57ff7e67ca7938e4e04a7be04f5622b2",
   "channels": {
     "stable": {
       "total_apps": 1,
@@ -26,7 +26,7 @@
       "repo": "https://github.com/getumbrel/umbrel-apps.git",
       "commit": "117abfddaf18acf86a064d847dd7dc171e4ce12f",
       "total_apps": 299,
-      "generated_at": "2026-02-20T04:04:09Z"
+      "generated_at": "2026-02-19T18:16:36Z"
     }
   ]
 }

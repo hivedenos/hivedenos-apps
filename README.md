@@ -81,7 +81,7 @@ Promotion behavior:
 
 - If `from-channel` is `incubator`, the app directory is copied to the destination channel
 - Otherwise, the app directory is moved to the destination channel
-- Promoted app metadata and docs are rebranded from Umbrel to Hiveden in the destination app directory
+- Promoted app metadata and docs are rebranded from Umbrel to Hiveden in the destination app directory, and `umbrel-app.yml`/`umbrel-app.yaml` are renamed to `hiveden-app.yml`/`hiveden-app.yaml`
 - An audit record is written to `config/channel-overrides.json`
 - `data/apps.json` and `data/metadata.json` are regenerated automatically
 

@@ -98,6 +98,25 @@ while IFS= read -r app_json; do
             ($urls | map($repository_path + "/" + $asset_subdir + "/" + (split("/") | last)))
           end;
 
+        def remap_install_files($files):
+          if ($files | type) != "array" then
+            []
+          elif $channel == "incubator" then
+            $files
+          else
+            ($files
+              | map(
+                  if (. | type) != "string" then
+                    .
+                  else
+                    .
+                    | sub("umbrel-app\\.yaml$"; "hiveden-app.yaml")
+                    | sub("umbrel-app\\.yml$"; "hiveden-app.yml")
+                  end
+                )
+            )
+          end;
+
         ($channel_defs[$channel] // {}) as $meta
         | $app + {
             name: maybe_brandify($app.name),
@@ -111,6 +130,7 @@ while IFS= read -r app_json; do
             repository_path: $repository_path,
             icon_url: remap_icon_url($app.icon_url),
             image_urls: remap_image_urls(($app.image_urls // [])),
+            install: (($app.install // {}) + {files: remap_install_files(($app.install.files // []))}),
             search: (
               ($app.search // {})
               + {

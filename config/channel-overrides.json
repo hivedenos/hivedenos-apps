@@ -5,9 +5,9 @@
       "id": "pi-hole",
       "source_id": "umbrel",
       "from_channel": "incubator",
-      "channel": "beta",
+      "channel": "stable",
       "promotion_status": "promoted",
-      "updated_at": "2026-02-19T21:36:58Z"
+      "updated_at": "2026-02-20T15:40:49Z"
     }
   ]
 }

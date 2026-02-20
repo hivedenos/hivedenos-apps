@@ -6,7 +6,7 @@ version: "2026.02.0"
 tagline: Block ads on your entire network
 description: >-
   Instead of browser plugins or other software on each computer,
-  install Pi-hole® on your Umbrel and your entire network is protected.
+  install Pi-hole® on your Hiveden and your entire network is protected.
   Network-level blocking allows you to block ads in non-traditional places such
   as mobile apps and smart TVs, regardless of hardware or OS. Since
   advertisements are blocked before they are downloaded, network performance is
@@ -16,7 +16,7 @@ description: >-
   In addition to blocking advertisements, Pi-hole® has an informative Web interface that shows stats on all the domains being queried on your network. Pi-hole® works fine with an existing DHCP server, but you can use Pi-hole®'s to keep your network management in one place.
 
 
-  Pi-hole® and the Pi-hole® logo are registered trademarks of Pi-hole. Umbrel is not sponsored, endorsed by, or associated with Pi-hole®.
+  Pi-hole® and the Pi-hole® logo are registered trademarks of Pi-hole. Hiveden is not sponsored, endorsed by, or associated with Pi-hole®.
 developer: Pi-hole®
 website: https://pi-hole.net
 dependencies: []
@@ -32,7 +32,7 @@ defaultUsername: ""
 deterministicPassword: true
 torOnly: false
 releaseNotes: >-
-  ⚠️ If you have set up your router to use Pi-hole as its only DNS server, umbrelOS may be unable to resolve domain names during the update, preventing it from downloading the update files.
+  ⚠️ If you have set up your router to use Pi-hole as its only DNS server, hivedenOS may be unable to resolve domain names during the update, preventing it from downloading the update files.
   To avoid issues, temporarily set a backup DNS server (e.g., 1.1.1.1) on your router before updating— or configure a permanent fallback DNS to prevent future issues.
 
 
@@ -49,5 +49,5 @@ releaseNotes: >-
 
 
   Full release notes can be found at https://github.com/pi-hole/docker-pi-hole/releases/tag/2026.02.0
-submitter: Umbrel
-submission: https://github.com/getumbrel/umbrel/commit/9ca55a25e043dcd50d5cb92c6ec756d368bb4794
+submitter: Hiveden
+submission: https://github.com/gethiveden/hiveden/commit/9ca55a25e043dcd50d5cb92c6ec756d368bb4794
