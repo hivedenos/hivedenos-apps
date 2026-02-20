@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "generated_at": "2026-02-19T21:37:10Z",
+  "generated_at": "2026-02-20T04:04:39Z",
   "default_channel": "stable",
   "total_apps": 1,
   "total_apps_all_channels": 300,
@@ -64,7 +64,7 @@
         ]
       },
       "dependencies": [],
-      "updated_at": "2026-02-19T18:15:53Z",
+      "updated_at": "2026-02-20T04:03:35Z",
       "icon_url": "apps/stable/pi-hole/img/icon.svg",
       "image_urls": [
         "apps/stable/pi-hole/img/1.jpg",
@@ -116,7 +116,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/stable/pi-hole/img/icon.svg",
         "image_urls": [
           "apps/stable/pi-hole/img/1.jpg",
@@ -170,7 +170,7 @@
           "postgres",
           "redis"
         ],
-        "updated_at": "2026-02-19T18:15:45Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/activepieces/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/activepieces/img/1.jpg",
@@ -218,7 +218,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:45Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/adguard-home/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/adguard-home/img/1.jpg",
@@ -270,7 +270,7 @@
           "adventurelog-backend",
           "postgis"
         ],
-        "updated_at": "2026-02-19T18:15:45Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/adventurelog/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/adventurelog/img/1.jpg",
@@ -322,7 +322,7 @@
           "postgres",
           "redis"
         ],
-        "updated_at": "2026-02-19T18:15:45Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/affine/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/affine/img/1.jpg",
@@ -373,7 +373,7 @@
           "agora",
           "filebrowser"
         ],
-        "updated_at": "2026-02-19T18:15:45Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/agora/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/agora/img/1.jpg",
@@ -423,7 +423,7 @@
         "dependencies": [
           "mariadb"
         ],
-        "updated_at": "2026-02-19T18:15:45Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/akaunting/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/akaunting/img/1.jpg",
@@ -473,7 +473,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:45Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/alby-nostr-wallet-connect/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/alby-nostr-wallet-connect/img/1.jpg",
@@ -521,7 +521,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:45Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/albyhub/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/albyhub/img/1.jpg",
@@ -569,7 +569,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:45Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/appsmith/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/appsmith/img/1.jpg",
@@ -619,7 +619,7 @@
         "dependencies": [
           "docker"
         ],
-        "updated_at": "2026-02-19T18:15:45Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/arcane/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/arcane/img/1.jpg",
@@ -669,7 +669,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:45Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/audiobookshelf/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/audiobookshelf/img/1.jpg",
@@ -715,7 +715,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/autobrr/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/autobrr/img/1.jpg",
@@ -763,7 +763,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/back-that-mac-up/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/back-that-mac-up/img/1.jpg",
@@ -811,7 +811,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/baikal/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/baikal/img/1.jpg",
@@ -862,7 +862,7 @@
           "alpine",
           "bassin-ui"
         ],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/bassin/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/bassin/img/1.jpg",
@@ -910,7 +910,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/bazarr/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/bazarr/img/1.jpg",
@@ -957,7 +957,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/bentopdf/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/bentopdf/img/1.jpg",
@@ -1008,7 +1008,7 @@
         "dependencies": [
           "bitaxe-sentry"
         ],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/bitaxe-sentry/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/bitaxe-sentry/img/1.jpg",
@@ -1055,7 +1055,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/bitcoin/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/bitcoin/img/1.jpg",
@@ -1105,7 +1105,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/bitcoin-knots/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/bitcoin-knots/img/1.jpg",
@@ -1153,7 +1153,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/bitfeed/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/bitfeed/img/1.jpg",
@@ -1201,7 +1201,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/bitwatch/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/bitwatch/img/1.jpg",
@@ -1251,7 +1251,7 @@
         "dependencies": [
           "postgres"
         ],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/bleskomat-server/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/bleskomat-server/img/1.jpg",
@@ -1300,7 +1300,7 @@
         "dependencies": [
           "postgres"
         ],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/blinko/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/blinko/img/1.jpg",
@@ -1353,7 +1353,7 @@
           "pinserver_web",
           "tor"
         ],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/blockstream-blind-oracle/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/blockstream-blind-oracle/img/1.jpg",
@@ -1401,7 +1401,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:29Z",
         "icon_url": "apps/incubator/umbrel/bluewallet/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/bluewallet/img/1.jpg",
@@ -1450,7 +1450,7 @@
         "dependencies": [
           "mariadb"
         ],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/booklore/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/booklore/img/1.jpg",
@@ -1501,7 +1501,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/btc-rpc-explorer/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/btc-rpc-explorer/img/1.jpg",
@@ -1549,7 +1549,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/btcpay-server/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/btcpay-server/img/1.jpg",
@@ -1597,7 +1597,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/btctracker/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/btctracker/img/1.jpg",
@@ -1647,7 +1647,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/budibase/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/budibase/img/1.jpg",
@@ -1695,7 +1695,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/calibre-web/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/calibre-web/img/1.jpg",
@@ -1745,7 +1745,7 @@
         "dependencies": [
           "canary-backend"
         ],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/canary/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/canary/img/1.jpg",
@@ -1793,7 +1793,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/cashu-me/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/cashu-me/img/1.jpg",
@@ -1841,7 +1841,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/chantools/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/chantools/img/1.jpg",
@@ -1889,7 +1889,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:46Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/chatbot-ui/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/chatbot-ui/img/1.jpg",
@@ -1937,7 +1937,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/chatpad-ai/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/chatpad-ai/img/1.jpg",
@@ -1985,7 +1985,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/chromium/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/chromium/img/1.jpg",
@@ -2033,7 +2033,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/circuitbreaker/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/circuitbreaker/img/1.jpg",
@@ -2083,7 +2083,7 @@
         "dependencies": [
           "umbrel-cloudflared-connector"
         ],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/cloudflared/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/cloudflared/img/1.jpg",
@@ -2130,7 +2130,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/cobalt/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/cobalt/img/1.jpg",
@@ -2179,7 +2179,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/code-server/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/code-server/img/1.jpg",
@@ -2227,7 +2227,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/convertx/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/convertx/img/1.jpg",
@@ -2274,7 +2274,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/copyparty/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/copyparty/img/1.jpg",
@@ -2323,7 +2323,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/core-lightning/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/core-lightning/img/1.jpg",
@@ -2371,7 +2371,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/core-lightning-rtl/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/core-lightning-rtl/img/1.jpg",
@@ -2419,7 +2419,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/databag/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/databag/img/1.jpg",
@@ -2467,7 +2467,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/datum/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/datum/img/1.jpg",
@@ -2515,7 +2515,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/deepsea/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/deepsea/img/1.jpg",
@@ -2564,7 +2564,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/dockge/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/dockge/img/1.jpg",
@@ -2615,7 +2615,7 @@
           "postgres",
           "redis"
         ],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/docmost/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/docmost/img/1.jpg",
@@ -2668,7 +2668,7 @@
         "dependencies": [
           "postgres"
         ],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/docuseal/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/docuseal/img/1.jpg",
@@ -2719,7 +2719,7 @@
         "dependencies": [
           "postgres"
         ],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/domain-locker/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/domain-locker/img/1.jpg",
@@ -2768,7 +2768,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/donetick/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/donetick/img/1.jpg",
@@ -2818,7 +2818,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/downtify/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/downtify/img/1.jpg",
@@ -2866,7 +2866,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/dumbpad/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/dumbpad/img/1.jpg",
@@ -2913,7 +2913,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/duplicati/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/duplicati/img/1.jpg",
@@ -2963,7 +2963,7 @@
         "dependencies": [
           "electrs"
         ],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/electrs/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/electrs/img/1.jpg",
@@ -3014,7 +3014,7 @@
         "dependencies": [
           "electrumx"
         ],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/electrumx/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/electrumx/img/1.jpg",
@@ -3062,7 +3062,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:47Z",
+        "updated_at": "2026-02-20T04:03:30Z",
         "icon_url": "apps/incubator/umbrel/element/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/element/img/1.jpg",
@@ -3112,7 +3112,7 @@
         "dependencies": [
           "elements"
         ],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/elements/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/elements/img/1.jpg",
@@ -3160,7 +3160,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/emby/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/emby/img/1.jpg",
@@ -3212,7 +3212,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/enclosed/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/enclosed/img/1.jpg",
@@ -3262,7 +3262,7 @@
         "dependencies": [
           "postgres"
         ],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/endurain/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/endurain/img/1.jpg",
@@ -3309,7 +3309,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/esphome/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/esphome/img/1.jpg",
@@ -3359,7 +3359,7 @@
         "dependencies": [
           "postgres"
         ],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/etherpad/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/etherpad/img/1.jpg",
@@ -3407,7 +3407,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/excalidraw/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/excalidraw/img/1.jpg",
@@ -3455,7 +3455,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/fedimintd/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/fedimintd/img/1.jpg",
@@ -3502,7 +3502,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/file-browser/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/file-browser/img/1.jpg",
@@ -3550,7 +3550,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/file-drop/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/file-drop/img/1.jpg",
@@ -3597,7 +3597,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/firefly-iii/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/firefly-iii/img/1.jpg",
@@ -3645,7 +3645,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/firefly-iii-importer/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/firefly-iii-importer/img/1.jpg",
@@ -3693,7 +3693,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/firefox/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/firefox/img/1.jpg",
@@ -3740,7 +3740,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/flatnotes/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/flatnotes/img/1.jpg",
@@ -3790,7 +3790,7 @@
         "dependencies": [
           "postgres"
         ],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/forgejo/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/forgejo/img/1.jpg",
@@ -3838,7 +3838,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/formicaio/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/formicaio/img/1.jpg",
@@ -3886,7 +3886,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/fossflow/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/fossflow/img/1.jpg",
@@ -3934,7 +3934,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/freshrss/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/freshrss/img/1.jpg",
@@ -3982,7 +3982,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/frigate/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/frigate/img/1.jpg",
@@ -4032,7 +4032,7 @@
         "dependencies": [
           "fulcrum"
         ],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/fulcrum/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/fulcrum/img/1.jpg",
@@ -4080,7 +4080,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/ghost/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/ghost/img/1.jpg",
@@ -4131,7 +4131,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/ghostfolio/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/ghostfolio/img/1.jpg",
@@ -4178,7 +4178,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/gitea/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/gitea/img/1.jpg",
@@ -4226,7 +4226,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/gitingest/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/gitingest/img/1.jpg",
@@ -4273,7 +4273,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:48Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/gitlab/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/gitlab/img/1.jpg",
@@ -4321,7 +4321,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/grafana/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/grafana/img/1.jpg",
@@ -4371,7 +4371,7 @@
         "dependencies": [
           "mongo"
         ],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/habitica/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/habitica/img/1.jpg",
@@ -4422,7 +4422,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/heimdall/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/heimdall/img/1.jpg",
@@ -4470,7 +4470,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/helipad/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/helipad/img/1.jpg",
@@ -4518,7 +4518,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/homarr/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/homarr/img/1.jpg",
@@ -4567,7 +4567,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/home-assistant/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/home-assistant/img/1.jpg",
@@ -4615,7 +4615,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/home-assistant-fusion-ui/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/home-assistant-fusion-ui/img/1.jpg",
@@ -4663,7 +4663,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/homebox/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/homebox/img/1.jpg",
@@ -4710,7 +4710,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:31Z",
         "icon_url": "apps/incubator/umbrel/homebridge/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/homebridge/img/1.jpg",
@@ -4758,7 +4758,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/homehub/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/homehub/img/1.jpg",
@@ -4810,7 +4810,7 @@
         "dependencies": [
           "mariadb"
         ],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/hortusfox/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/hortusfox/img/1.jpg",
@@ -4863,7 +4863,7 @@
           "postgres",
           "valkey"
         ],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/immich/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/immich/img/1.jpg",
@@ -4913,7 +4913,7 @@
         "dependencies": [
           "influxdb"
         ],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/influxdb/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/influxdb/img/1.jpg",
@@ -4961,7 +4961,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/influxdb2/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/influxdb2/img/1.jpg",
@@ -5011,7 +5011,7 @@
         "dependencies": [
           "postgres"
         ],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/invidious/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/invidious/img/1.jpg",
@@ -5061,7 +5061,7 @@
         "dependencies": [
           "invio-backend"
         ],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/invio/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/invio/img/1.jpg",
@@ -5113,7 +5113,7 @@
           "mariadb",
           "redis"
         ],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/invoice-ninja/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/invoice-ninja/img/1.jpg",
@@ -5161,7 +5161,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/ipfs-podcasting/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/ipfs-podcasting/img/1.jpg",
@@ -5209,7 +5209,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/itchysats/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/itchysats/img/1.jpg",
@@ -5257,7 +5257,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/ittools/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/ittools/img/1.jpg",
@@ -5307,7 +5307,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/jackett/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/jackett/img/1.jpg",
@@ -5355,7 +5355,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/jam/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/jam/img/1.jpg",
@@ -5402,7 +5402,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/jellyfin/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/jellyfin/img/1.jpg",
@@ -5450,7 +5450,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/jellyseerr/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/jellyseerr/img/1.jpg",
@@ -5498,7 +5498,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:49Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/jotty/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/jotty/img/1.jpg",
@@ -5546,7 +5546,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/jupyterlab/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/jupyterlab/img/1.jpg",
@@ -5594,7 +5594,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/just-download/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/just-download/img/1.jpg",
@@ -5643,7 +5643,7 @@
         "dependencies": [
           "postgres"
         ],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/kan/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/kan/img/1.jpg",
@@ -5694,7 +5694,7 @@
           "alpine-chrome",
           "meilisearch"
         ],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/karakeep/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/karakeep/img/1.jpg",
@@ -5745,7 +5745,7 @@
         "dependencies": [
           "mariadb"
         ],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/kimai/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/kimai/img/1.jpg",
@@ -5795,7 +5795,7 @@
         "dependencies": [
           "postgres"
         ],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/kitchenowl/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/kitchenowl/img/1.jpg",
@@ -5846,7 +5846,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/kokoro/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/kokoro/img/1.jpg",
@@ -5893,7 +5893,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/kollider/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/kollider/img/1.jpg",
@@ -5944,7 +5944,7 @@
           "ferretdb",
           "postgres-documentdb"
         ],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/komodo/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/komodo/img/1.jpg",
@@ -5996,7 +5996,7 @@
         "dependencies": [
           "bitcoin-s-oracle-server"
         ],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/krystal-bull/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/krystal-bull/img/1.jpg",
@@ -6044,7 +6044,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/libre-relay/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/libre-relay/img/1.jpg",
@@ -6096,7 +6096,7 @@
           "mongo",
           "pgvector"
         ],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/librechat/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/librechat/img/1.jpg",
@@ -6144,7 +6144,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/libreddit/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/libreddit/img/1.jpg",
@@ -6192,7 +6192,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/libreoffice/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/libreoffice/img/1.jpg",
@@ -6244,7 +6244,7 @@
           "librephotos-frontend",
           "pgautoupgrade"
         ],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/librephotos/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/librephotos/img/1.jpg",
@@ -6293,7 +6293,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/librespeed/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/librespeed/img/1.jpg",
@@ -6341,7 +6341,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:32Z",
         "icon_url": "apps/incubator/umbrel/libretranslate/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/libretranslate/img/1.jpg",
@@ -6388,7 +6388,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/lidarr/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/lidarr/img/1.jpg",
@@ -6436,7 +6436,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/lightning/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/lightning/img/1.jpg",
@@ -6486,7 +6486,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/lightning-shell/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/lightning-shell/img/1.jpg",
@@ -6534,7 +6534,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/lightning-terminal/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/lightning-terminal/img/1.jpg",
@@ -6583,7 +6583,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/linkstack/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/linkstack/img/1.jpg",
@@ -6634,7 +6634,7 @@
         "dependencies": [
           "postgres"
         ],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/linkwarden/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/linkwarden/img/1.jpg",
@@ -6682,7 +6682,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:50Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/llama-gpt/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/llama-gpt/img/1.jpg",
@@ -6730,7 +6730,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/ln-visualizer/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/ln-visualizer/img/1.jpg",
@@ -6777,7 +6777,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/lnbits/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/lnbits/img/1.jpg",
@@ -6825,7 +6825,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/lnbits-holesail-proxy/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/lnbits-holesail-proxy/img/1.jpg",
@@ -6873,7 +6873,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/lndboss/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/lndboss/img/1.jpg",
@@ -6921,7 +6921,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/lndg/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/lndg/img/1.jpg",
@@ -6968,7 +6968,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/lnmarkets/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/lnmarkets/img/1.jpg",
@@ -7015,7 +7015,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/lnplus/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/lnplus/img/1.jpg",
@@ -7063,7 +7063,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/lobe-chat/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/lobe-chat/img/1.jpg",
@@ -7111,7 +7111,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/localai/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/localai/img/1.jpg",
@@ -7160,7 +7160,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/lunalytics/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/lunalytics/img/1.jpg",
@@ -7210,7 +7210,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/mainsail/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/mainsail/img/1.jpg",
@@ -7258,7 +7258,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/matter-server/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/matter-server/img/1.jpg",
@@ -7307,7 +7307,7 @@
         "dependencies": [
           "mattermost-db"
         ],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/mattermost/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/mattermost/img/1.jpg",
@@ -7357,7 +7357,7 @@
           "postgres",
           "redis"
         ],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/maybe/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/maybe/img/1.jpg",
@@ -7405,7 +7405,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/mazanoke/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/mazanoke/img/1.jpg",
@@ -7453,7 +7453,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/mealie/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/mealie/img/1.jpg",
@@ -7500,7 +7500,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/memos/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/memos/img/1.jpg",
@@ -7547,7 +7547,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/mempool/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/mempool/img/1.jpg",
@@ -7596,7 +7596,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/metube/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/metube/img/1.jpg",
@@ -7644,7 +7644,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/minio/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/minio/img/1.jpg",
@@ -7692,7 +7692,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/monero/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/monero/img/1.jpg",
@@ -7740,7 +7740,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/morphos/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/morphos/img/1.jpg",
@@ -7788,7 +7788,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/mosquitto/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/mosquitto/img/1.jpg",
@@ -7836,7 +7836,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/mqttx-web/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/mqttx-web/img/1.jpg",
@@ -7884,7 +7884,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:51Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/mstream/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/mstream/img/1.jpg",
@@ -7934,7 +7934,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/myspeed/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/myspeed/img/1.jpg",
@@ -7980,7 +7980,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:33Z",
         "icon_url": "apps/incubator/umbrel/n8n/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/n8n/img/1.jpg",
@@ -8027,7 +8027,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/navidrome/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/navidrome/img/1.jpg",
@@ -8075,7 +8075,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/neko/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/neko/img/1.jpg",
@@ -8123,7 +8123,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/networkingtoolbox/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/networkingtoolbox/img/1.jpg",
@@ -8177,7 +8177,7 @@
           "mariadb",
           "redis"
         ],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/nextcloud/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/nextcloud/img/1.jpg",
@@ -8225,7 +8225,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/nginx-proxy-manager/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/nginx-proxy-manager/img/1.jpg",
@@ -8275,7 +8275,7 @@
         "dependencies": [
           "redis"
         ],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/nitter/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/nitter/img/1.jpg",
@@ -8323,7 +8323,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/node-red/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/node-red/img/1.jpg",
@@ -8371,7 +8371,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/node-red-standalone/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/node-red-standalone/img/1.jpg",
@@ -8417,7 +8417,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/nolooking/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/nolooking/img/1.jpg",
@@ -8467,7 +8467,7 @@
         "dependencies": [
           "nostr-rs-relay"
         ],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/nostr-relay/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/nostr-relay/img/1.jpg",
@@ -8517,7 +8517,7 @@
         "dependencies": [
           "docker-cors-anywhere"
         ],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/nostrudel/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/nostrudel/img/1.jpg",
@@ -8564,7 +8564,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/ntfy/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/ntfy/img/1.jpg",
@@ -8612,7 +8612,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/nutstash-wallet/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/nutstash-wallet/img/1.jpg",
@@ -8660,7 +8660,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/oak-node/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/oak-node/img/1.jpg",
@@ -8707,7 +8707,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/obsidian/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/obsidian/img/1.jpg",
@@ -8754,7 +8754,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/octoprint/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/octoprint/img/1.jpg",
@@ -8801,7 +8801,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/ollama/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/ollama/img/1.jpg",
@@ -8849,7 +8849,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/omnitools/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/omnitools/img/1.jpg",
@@ -8899,7 +8899,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/onlyoffice-nextcloud/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/onlyoffice-nextcloud/img/1.jpg",
@@ -8948,7 +8948,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/open-webui/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/open-webui/img/1.jpg",
@@ -8995,7 +8995,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/openclaw/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/openclaw/img/1.jpg",
@@ -9043,7 +9043,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/openhands/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/openhands/img/1.jpg",
@@ -9093,7 +9093,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/openreader/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/openreader/img/1.jpg",
@@ -9142,7 +9142,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:52Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/openresty-manager/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/openresty-manager/img/1.jpg",
@@ -9190,7 +9190,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/ordinals/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/ordinals/img/1.jpg",
@@ -9238,7 +9238,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/overseerr/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/overseerr/img/1.jpg",
@@ -9289,7 +9289,7 @@
           "mariadb",
           "redis"
         ],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/owncloud/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/owncloud/img/1.jpg",
@@ -9338,7 +9338,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/palmr/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/palmr/img/1.jpg",
@@ -9392,7 +9392,7 @@
           "redis",
           "tika"
         ],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/paperless/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/paperless/img/1.jpg",
@@ -9439,7 +9439,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/papra/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/papra/img/1.jpg",
@@ -9487,7 +9487,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/passky-client/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/passky-client/img/1.jpg",
@@ -9537,7 +9537,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/passky-server/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/passky-server/img/1.jpg",
@@ -9587,7 +9587,7 @@
         "dependencies": [
           "mariadb"
         ],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/pastefy/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/pastefy/img/1.jpg",
@@ -9637,7 +9637,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:34Z",
         "icon_url": "apps/incubator/umbrel/peerswap/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/peerswap/img/1.jpg",
@@ -9689,7 +9689,7 @@
           "postgres",
           "valkey"
         ],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/penpot/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/penpot/img/1.jpg",
@@ -9737,7 +9737,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/perplexica/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/perplexica/img/1.jpg",
@@ -9785,7 +9785,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/photoprism/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/photoprism/img/1.jpg",
@@ -9833,7 +9833,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/pi-hole/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/pi-hole/img/1.jpg",
@@ -9883,7 +9883,7 @@
         "dependencies": [
           "postgres"
         ],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/picsur/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/picsur/img/1.jpg",
@@ -9933,7 +9933,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/pinchflat/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/pinchflat/img/1.jpg",
@@ -9981,7 +9981,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/pingvin-share/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/pingvin-share/img/1.jpg",
@@ -10032,7 +10032,7 @@
           "clickhouse-server",
           "postgres"
         ],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/plausible/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/plausible/img/1.jpg",
@@ -10079,7 +10079,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/plex/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/plex/img/1.jpg",
@@ -10126,7 +10126,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/pocketbase/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/pocketbase/img/1.jpg",
@@ -10174,7 +10174,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/portainer/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/portainer/img/1.jpg",
@@ -10222,7 +10222,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/privatebin/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/privatebin/img/1.jpg",
@@ -10270,7 +10270,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:53Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/prowlarr/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/prowlarr/img/1.jpg",
@@ -10321,7 +10321,7 @@
           "public-pool",
           "public-pool-ui"
         ],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/public-pool/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/public-pool/img/1.jpg",
@@ -10373,7 +10373,7 @@
           "public-pool-web",
           "redis"
         ],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/public-pool-web/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/public-pool-web/img/1.jpg",
@@ -10420,7 +10420,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/qbittorrent/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/qbittorrent/img/1.jpg",
@@ -10467,7 +10467,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/radarr/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/radarr/img/1.jpg",
@@ -10514,7 +10514,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/readarr/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/readarr/img/1.jpg",
@@ -10564,7 +10564,7 @@
         "dependencies": [
           "postgres"
         ],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/readur/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/readur/img/1.jpg",
@@ -10613,7 +10613,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/remmina/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/remmina/img/1.jpg",
@@ -10661,7 +10661,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/restreamer/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/restreamer/img/1.jpg",
@@ -10711,7 +10711,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/ride-the-lightning/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/ride-the-lightning/img/1.jpg",
@@ -10758,7 +10758,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/robosats/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/robosats/img/1.jpg",
@@ -10810,7 +10810,7 @@
         "dependencies": [
           "mariadb"
         ],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/romm/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/romm/img/1.jpg",
@@ -10857,7 +10857,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/rotki/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/rotki/img/1.jpg",
@@ -10908,7 +10908,7 @@
         "dependencies": [
           "rustdesk-server"
         ],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/rustdesk-server/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/rustdesk-server/img/1.jpg",
@@ -10959,7 +10959,7 @@
           "kaspa-api",
           "rusty-kaspad"
         ],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/rusty-kaspad/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/rusty-kaspad/img/1.jpg",
@@ -11005,7 +11005,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/sabnzbd/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/sabnzbd/img/1.jpg",
@@ -11056,7 +11056,7 @@
           "redis",
           "saifa-be"
         ],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/saifa/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/saifa/img/1.jpg",
@@ -11104,7 +11104,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/samba/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/samba/img/1.jpg",
@@ -11155,7 +11155,7 @@
           "dojo-db",
           "dojo-nodejs"
         ],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/samourai-server/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/samourai-server/img/1.jpg",
@@ -11203,7 +11203,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/satsale/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/satsale/img/1.jpg",
@@ -11253,7 +11253,7 @@
         "dependencies": [
           "postgres"
         ],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/satwatch/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/satwatch/img/1.jpg",
@@ -11300,7 +11300,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:35Z",
         "icon_url": "apps/incubator/umbrel/scanservjs/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/scanservjs/img/1.jpg",
@@ -11350,7 +11350,7 @@
           "mariadb",
           "memcached"
         ],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/seafile/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/seafile/img/1.jpg",
@@ -11397,7 +11397,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/searxng/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/searxng/img/1.jpg",
@@ -11447,7 +11447,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:54Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/shopstr/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/shopstr/img/1.jpg",
@@ -11495,7 +11495,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/simple-torrent/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/simple-torrent/img/1.jpg",
@@ -11543,7 +11543,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/slink/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/slink/img/1.jpg",
@@ -11592,7 +11592,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/snapdrop/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/snapdrop/img/1.jpg",
@@ -11639,7 +11639,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/snort/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/snort/img/1.jpg",
@@ -11687,7 +11687,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/snowflake/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/snowflake/img/1.jpg",
@@ -11736,7 +11736,7 @@
         "dependencies": [
           "postgres"
         ],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/solidtime/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/solidtime/img/1.jpg",
@@ -11784,7 +11784,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/sonarr/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/sonarr/img/1.jpg",
@@ -11832,7 +11832,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/sparkkiosk/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/sparkkiosk/img/1.jpg",
@@ -11880,7 +11880,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/specter-desktop/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/specter-desktop/img/1.jpg",
@@ -11928,7 +11928,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/sphinx-relay/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/sphinx-relay/img/1.jpg",
@@ -11976,7 +11976,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/sqlitebrowser/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/sqlitebrowser/img/1.jpg",
@@ -12024,7 +12024,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/squeaknode/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/squeaknode/img/1.jpg",
@@ -12072,7 +12072,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/squeakroad/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/squeakroad/img/1.jpg",
@@ -12120,7 +12120,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/stalwart/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/stalwart/img/1.jpg",
@@ -12170,7 +12170,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/stirling-pdf/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/stirling-pdf/img/1.jpg",
@@ -12218,7 +12218,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/super-productivity/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/super-productivity/img/1.jpg",
@@ -12269,7 +12269,7 @@
         "dependencies": [
           "bitcoin-s-server"
         ],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/suredbits-wallet/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/suredbits-wallet/img/1.jpg",
@@ -12317,7 +12317,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/swingmusic/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/swingmusic/img/1.jpg",
@@ -12365,7 +12365,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/synapse/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/synapse/img/1.jpg",
@@ -12413,7 +12413,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/syncthing/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/syncthing/img/1.jpg",
@@ -12461,7 +12461,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/tailscale/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/tailscale/img/1.jpg",
@@ -12509,7 +12509,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/tallycoin-connect/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/tallycoin-connect/img/1.jpg",
@@ -12556,7 +12556,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/tautulli/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/tautulli/img/1.jpg",
@@ -12606,7 +12606,7 @@
         "dependencies": [
           "oceand"
         ],
-        "updated_at": "2026-02-19T18:15:55Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/tdex/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/tdex/img/1.jpg",
@@ -12654,7 +12654,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/teamspeak/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/teamspeak/img/1.jpg",
@@ -12702,7 +12702,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/technitium-dns/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/technitium-dns/img/1.jpg",
@@ -12750,7 +12750,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/termix/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/termix/img/1.jpg",
@@ -12800,7 +12800,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/thelounge/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/thelounge/img/1.jpg",
@@ -12848,7 +12848,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/thinkdashboard/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/thinkdashboard/img/1.jpg",
@@ -12897,7 +12897,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/threema/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/threema/img/1.jpg",
@@ -12945,7 +12945,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:36Z",
         "icon_url": "apps/incubator/umbrel/thunderhub/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/thunderhub/img/1.jpg",
@@ -12993,7 +12993,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/torbrowser/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/torbrowser/img/1.jpg",
@@ -13040,7 +13040,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/torq/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/torq/img/1.jpg",
@@ -13092,7 +13092,7 @@
           "mongo",
           "toshi-moto-api"
         ],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/toshi-moto/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/toshi-moto/img/1.jpg",
@@ -13139,7 +13139,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/transmission/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/transmission/img/1.jpg",
@@ -13187,7 +13187,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/trilium-notes/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/trilium-notes/img/1.jpg",
@@ -13236,7 +13236,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/trip/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/trip/img/1.jpg",
@@ -13288,7 +13288,7 @@
           "elasticsearch",
           "redis"
         ],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/tubearchivist/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/tubearchivist/img/1.jpg",
@@ -13340,7 +13340,7 @@
           "redis",
           "twenty"
         ],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/twenty/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/twenty/img/1.jpg",
@@ -13390,7 +13390,7 @@
         "dependencies": [
           "postgres"
         ],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/umami/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/umami/img/1.jpg",
@@ -13438,7 +13438,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/uptime-kuma/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/uptime-kuma/img/1.jpg",
@@ -13486,7 +13486,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/urbit/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/urbit/img/1.jpg",
@@ -13534,7 +13534,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/urbit-bitcoin-connector/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/urbit-bitcoin-connector/img/1.jpg",
@@ -13583,7 +13583,7 @@
         "dependencies": [
           "usocial"
         ],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/usocial/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/usocial/img/1.jpg",
@@ -13631,7 +13631,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/vaultwarden/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/vaultwarden/img/1.jpg",
@@ -13678,7 +13678,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/vert/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/vert/img/1.jpg",
@@ -13727,7 +13727,7 @@
         "dependencies": [
           "mariadb"
         ],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/vikunja/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/vikunja/img/1.jpg",
@@ -13778,7 +13778,7 @@
           "meilisearch",
           "wanderer-db"
         ],
-        "updated_at": "2026-02-19T18:15:56Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/wanderer/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/wanderer/img/1.jpg",
@@ -13830,7 +13830,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:57Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/watch-your-lan/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/watch-your-lan/img/1.jpg",
@@ -13880,7 +13880,7 @@
         "dependencies": [
           "mariadb"
         ],
-        "updated_at": "2026-02-19T18:15:57Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/wavelog/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/wavelog/img/1.jpg",
@@ -13928,7 +13928,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:57Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/webcheck/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/webcheck/img/1.jpg",
@@ -13981,7 +13981,7 @@
           "redis",
           "server"
         ],
-        "updated_at": "2026-02-19T18:15:57Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/wger/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/wger/img/1.jpg",
@@ -14032,7 +14032,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:57Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/whoogle-search/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/whoogle-search/img/1.jpg",
@@ -14081,7 +14081,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:57Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/wikijs/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/wikijs/img/1.jpg",
@@ -14129,7 +14129,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:57Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/wingfit/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/wingfit/img/1.jpg",
@@ -14179,7 +14179,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:57Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/wireguard/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/wireguard/img/1.jpg",
@@ -14226,7 +14226,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:57Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/wizarr/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/wizarr/img/1.jpg",
@@ -14277,7 +14277,7 @@
         "dependencies": [
           "mongo"
         ],
-        "updated_at": "2026-02-19T18:15:57Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/woofbot/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/woofbot/img/1.jpg",
@@ -14327,7 +14327,7 @@
         "dependencies": [
           "mongo"
         ],
-        "updated_at": "2026-02-19T18:15:57Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/woofbot-lnd/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/woofbot-lnd/img/1.jpg",
@@ -14376,7 +14376,7 @@
         "dependencies": [
           "mariadb"
         ],
-        "updated_at": "2026-02-19T18:15:57Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/wordpress/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/wordpress/img/1.jpg",
@@ -14426,7 +14426,7 @@
         "dependencies": [
           "redis"
         ],
-        "updated_at": "2026-02-19T18:15:57Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/yamtrack/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/yamtrack/img/1.jpg",
@@ -14477,7 +14477,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:57Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/yucca/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/yucca/img/1.jpg",
@@ -14530,7 +14530,7 @@
           "postgres",
           "zabbix-server-pgsql"
         ],
-        "updated_at": "2026-02-19T18:15:57Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/zabbix/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/zabbix/img/1.jpg",
@@ -14578,7 +14578,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:57Z",
+        "updated_at": "2026-02-20T04:03:37Z",
         "icon_url": "apps/incubator/umbrel/zen/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/zen/img/1.jpg",
@@ -14628,7 +14628,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:57Z",
+        "updated_at": "2026-02-20T04:03:38Z",
         "icon_url": "apps/incubator/umbrel/zeronote/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/zeronote/img/1.jpg",
@@ -14677,7 +14677,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:57Z",
+        "updated_at": "2026-02-20T04:03:38Z",
         "icon_url": "apps/incubator/umbrel/zigbee2mqtt/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/zigbee2mqtt/img/1.jpg",
@@ -14725,7 +14725,7 @@
           ]
         },
         "dependencies": [],
-        "updated_at": "2026-02-19T18:15:57Z",
+        "updated_at": "2026-02-20T04:03:38Z",
         "icon_url": "apps/incubator/umbrel/zoraxy/img/icon.svg",
         "image_urls": [
           "apps/incubator/umbrel/zoraxy/img/1.jpg",
