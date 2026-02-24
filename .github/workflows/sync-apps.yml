@@ -17,8 +17,16 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: python -m pip install --upgrade pip pyyaml
+
       - name: Ensure scripts executable
-        run: chmod +x scripts/run-sync.sh scripts/lib/*.sh scripts/pipeline/*.sh scripts/sources/umbrel/*.sh scripts/assets/umbrel-gallery/*.sh scripts/channels/*.sh
+        run: chmod +x scripts/run-sync.sh scripts/lib/*.sh scripts/pipeline/*.sh scripts/sources/umbrel/*.sh scripts/sources/awesome-docker-compose/*.sh scripts/assets/umbrel-gallery/*.sh scripts/channels/*.sh
 
       - name: Run sync pipeline
         run: ./scripts/run-sync.sh
