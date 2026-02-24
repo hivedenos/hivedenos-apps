@@ -1,3 +1,4 @@
 data/sources/
 data/apps.json
 data/metadata.json
+__pycache__

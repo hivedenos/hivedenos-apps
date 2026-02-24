@@ -15,6 +15,7 @@ Script-first apps ingestion pipeline for Hiveden OS.
 ## Current source
 
 - Umbrel apps: `https://github.com/getumbrel/umbrel-apps.git`
+- Awesome Docker Compose apps: `https://awesome-docker-compose.com`
 
 ## Channels
 
@@ -35,6 +36,7 @@ By default, source ingestion writes apps to `incubator` (`channels.ingest_source
 
 ```bash
 chmod +x scripts/run-sync.sh scripts/lib/*.sh scripts/pipeline/*.sh scripts/sources/umbrel/*.sh scripts/channels/*.sh
+chmod +x scripts/sources/awesome-docker-compose/*.sh
 ./scripts/run-sync.sh
 ```
 
