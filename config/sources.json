@@ -14,6 +14,22 @@
           "docker-compose.yml"
         ]
       }
+    },
+    {
+      "id": "awesome-docker-compose",
+      "enabled": true,
+      "type": "awesome",
+      "channel": "incubator",
+      "repo_url": "https://awesome-docker-compose.com",
+      "branch": "production",
+      "priority": 20,
+      "options": {
+        "app_root": "",
+        "required_files": [
+          "docker-compose.yml",
+          "hiveden-app.yml"
+        ]
+      }
     }
   ]
 }

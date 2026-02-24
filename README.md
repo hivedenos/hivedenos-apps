@@ -109,6 +109,28 @@ Demotion behavior:
 - Does not affect the same app in other channels
 - `data/apps.json` and `data/metadata.json` are regenerated automatically
 
+## Create app scaffold in a channel
+
+Use the create helper to scaffold a new app directory in a target channel:
+
+```bash
+./scripts/channels/create-app.sh <app-id> <channel> [source-id]
+```
+
+Examples:
+
+```bash
+./scripts/channels/create-app.sh my-app beta
+./scripts/channels/create-app.sh my-app incubator custom-source
+```
+
+Create behavior:
+
+- Asks interactive questions to generate `hiveden-app.yml`
+- Creates required files: `docker-compose.yml`, `hiveden-app.yml`, and `img/`
+- Validates required manifest keys exist
+- Regenerates `data/apps.json` and `data/metadata.json` automatically
+
 ## Extending with new sources
 
 1. Add source config to `config/sources.json`

@@ -20,6 +20,21 @@ rm -rf "$apps_out"
 mkdir -p "$apps_out"
 
 mapping_ndjson="$(mktemp)"
+declare -A planned_targets=()
+
+source_marker_filename=".hivedenos-source-id"
+
+target_has_source_marker() {
+  local dir="$1"
+  local expected_source="$2"
+  local marker_file="$dir/$source_marker_filename"
+
+  [[ -f "$marker_file" ]] || return 1
+
+  local marker_value
+  marker_value="$(tr -d '\r\n' <"$marker_file")"
+  [[ "$marker_value" == "$expected_source" ]]
+}
 
 while IFS= read -r app_dir; do
   [[ -z "$app_dir" ]] && continue
@@ -38,17 +53,51 @@ while IFS= read -r app_dir; do
   fi
   target_abs="$ROOT_DIR/$target_rel"
   if [[ -e "$target_abs" ]]; then
-    target_rel="${target_rel}--$SOURCE_ID"
-    target_abs="$ROOT_DIR/$target_rel"
+    if target_has_source_marker "$target_abs" "$SOURCE_ID"; then
+      :
+    else
+      candidate_rel="${target_rel}--$SOURCE_ID"
+      candidate_abs="$ROOT_DIR/$candidate_rel"
+
+      if [[ -e "$candidate_abs" ]] && target_has_source_marker "$candidate_abs" "$SOURCE_ID"; then
+        target_rel="$candidate_rel"
+        target_abs="$candidate_abs"
+      elif [[ -e "$candidate_abs" ]]; then
+        suffix_index=2
+        while [[ -e "$ROOT_DIR/${candidate_rel}-${suffix_index}" ]]; do
+          suffix_index=$((suffix_index + 1))
+        done
+        target_rel="${candidate_rel}-${suffix_index}"
+        target_abs="$ROOT_DIR/$target_rel"
+      else
+        target_rel="$candidate_rel"
+        target_abs="$candidate_abs"
+      fi
+    fi
   fi
 
   rm -rf "$target_abs"
   mkdir -p "$target_abs"
   rsync -a --delete "$app_dir/" "$target_abs/"
+  printf '%s\n' "$SOURCE_ID" >"$target_abs/$source_marker_filename"
+  planned_targets["$target_abs"]=1
 
   jq -nc --arg id "$app_name" --arg repository_path "$target_rel" \
     '{id: $id, repository_path: $repository_path}' >>"$mapping_ndjson"
 done <"$APPS_LIST_FILE"
+
+# Prune stale app placements for this source when channel or naming changes.
+while IFS= read -r marker_file; do
+  app_dir="$(dirname "$marker_file")"
+  marker_value="$(tr -d '\r\n' <"$marker_file")"
+  [[ "$marker_value" == "$SOURCE_ID" ]] || continue
+
+  if [[ -n "${planned_targets[$app_dir]+x}" ]]; then
+    continue
+  fi
+
+  rm -rf "$app_dir"
+done < <(find "$apps_root" -type f -name "$source_marker_filename" 2>/dev/null)
 
 mapping_obj="$(jq -s 'map({(.id): .repository_path}) | add // {}' "$mapping_ndjson")"
 jq --argjson path_map "$mapping_obj" \

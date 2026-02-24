@@ -111,11 +111,41 @@ rewrite_branding_to_hiveden() {
   ' "$file"
 }
 
+rename_app_manifest_for_hiveden() {
+  local app_dir="$1"
+  local source_file
+  local target_file
+
+  while IFS= read -r source_file; do
+    [[ -f "$source_file" ]] || continue
+
+    if [[ "$source_file" == *.yaml ]]; then
+      target_file="${source_file%/*}/hiveden-app.yaml"
+    else
+      target_file="${source_file%/*}/hiveden-app.yml"
+    fi
+
+    if [[ "$source_file" == "$target_file" ]]; then
+      continue
+    fi
+
+    if [[ -e "$target_file" ]]; then
+      rm -f "$source_file"
+    else
+      mv "$source_file" "$target_file"
+    fi
+  done < <(find "$app_dir" -mindepth 1 -maxdepth 2 -type f \( -iname 'umbrel-app.yml' -o -iname 'umbrel-app.yaml' \) | sort)
+}
+
 customize_app_dir_for_hiveden() {
   local app_dir="$1"
   local file
 
-  rewrite_branding_to_hiveden "$app_dir/umbrel-app.yml"
+  rename_app_manifest_for_hiveden "$app_dir"
+
+  while IFS= read -r file; do
+    rewrite_branding_to_hiveden "$file"
+  done < <(find "$app_dir" -mindepth 1 -maxdepth 2 -type f \( -iname 'hiveden-app.yml' -o -iname 'hiveden-app.yaml' -o -iname 'umbrel-app.yml' -o -iname 'umbrel-app.yaml' \) | sort)
 
   while IFS= read -r file; do
     rewrite_branding_to_hiveden "$file"

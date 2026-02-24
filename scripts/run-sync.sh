@@ -50,7 +50,7 @@ rm -f "$catalog_path" "$metadata_path"
 
 for source_id in "${source_ids[@]}"; do
   source_cfg="$(jq -c --arg id "$source_id" '.sources[] | select(.id == $id)' "$sources_file")"
-  source_cfg="$(printf '%s' "$source_cfg" | jq -c --arg channel "$ingest_source_channel" '. + {channel: $channel}')"
+  source_cfg="$(printf '%s' "$source_cfg" | jq -c --arg channel "$ingest_source_channel" '. + {channel: (.channel // $channel)}')"
   source_type="$(printf '%s' "$source_cfg" | jq -r '.type')"
 
   source_work_dir="$work_base/$source_id"
@@ -67,6 +67,18 @@ for source_id in "${source_ids[@]}"; do
 
       "$ROOT_DIR/scripts/sources/umbrel/discover.sh" "$repo_dir" "$apps_list_file"
       "$ROOT_DIR/scripts/sources/umbrel/normalize.sh" "$repo_dir" "$source_cfg" "$apps_list_file" "$commit_sha" "$normalized_json"
+      "$ROOT_DIR/scripts/pipeline/write-repo.sh" "$ROOT_DIR" "$source_id" "$repo_dir" "$apps_list_file" "$normalized_json" "$commit_sha"
+      ;;
+    awesome)
+      log_info "Syncing source: $source_id"
+      repo_dir="$($ROOT_DIR/scripts/sources/awesome-docker-compose/fetch.sh "$ROOT_DIR" "$source_cfg" "$source_work_dir" | tail -n 1)"
+      commit_sha="$(cat "$source_work_dir/source_commit.txt")"
+
+      apps_list_file="$source_work_dir/apps.list"
+      normalized_json="$source_work_dir/normalized.json"
+
+      "$ROOT_DIR/scripts/sources/awesome-docker-compose/discover.sh" "$repo_dir" "$apps_list_file"
+      "$ROOT_DIR/scripts/sources/awesome-docker-compose/normalize.sh" "$repo_dir" "$source_cfg" "$apps_list_file" "$commit_sha" "$normalized_json"
       "$ROOT_DIR/scripts/pipeline/write-repo.sh" "$ROOT_DIR" "$source_id" "$repo_dir" "$apps_list_file" "$normalized_json" "$commit_sha"
       ;;
     *)
