@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-02-23T04:11:52Z",
-  "total_apps": 300,
-  "catalog_sha256": "c80c7ffb47c6eace2322d275936ce4653b00328d55c07c8a92cdfe9d57240a88",
+  "generated_at": "2026-02-24T04:07:23Z",
+  "total_apps": 301,
+  "catalog_sha256": "c87c5d58e58196684757dbe51f2986a6b92acf4e98b2733d98dfa4a52c2e6e2f",
   "channels": {
     "stable": {
       "total_apps": 1,
@@ -16,7 +16,7 @@
       "warning": "Experimental builds. APIs and behavior may change without notice."
     },
     "incubator": {
-      "total_apps": 299,
+      "total_apps": 300,
       "warning": "Candidate apps from external sources under evaluation."
     }
   },
@@ -24,9 +24,9 @@
     {
       "id": "umbrel",
       "repo": "https://github.com/getumbrel/umbrel-apps.git",
-      "commit": "50999867f651e0fb37e574878f9b626a25eb4650",
-      "total_apps": 299,
-      "generated_at": "2026-02-23T04:11:19Z"
+      "commit": "654e7fedbb8d62b9c81320833552f3ba8856eb24",
+      "total_apps": 300,
+      "generated_at": "2026-02-24T04:06:50Z"
     }
   ]
 }
