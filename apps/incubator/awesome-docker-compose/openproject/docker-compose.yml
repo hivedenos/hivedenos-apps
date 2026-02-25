@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  openproject:
+    image: openproject/openproject:${TAG:-14-slim}
+    restart: unless-stopped

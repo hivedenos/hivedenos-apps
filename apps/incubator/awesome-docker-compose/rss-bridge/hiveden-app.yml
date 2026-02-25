@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: rss-bridge
+category: rss
+name: RSS-Bridge
+version: latest
+tagline: "Generate RSS/ATOM feeds for websites which don\xE2\x80\x99t have one."
+description: "Generate RSS/ATOM feeds for websites which don\xE2\x80\x99t have one."
+developer: RSS-Bridge
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://rss-bridge.org/bridge01/
+repo: https://github.com/RSS-Bridge/rss-bridge
+support: https://github.com/RSS-Bridge/rss-bridge#install-from-docker-hub

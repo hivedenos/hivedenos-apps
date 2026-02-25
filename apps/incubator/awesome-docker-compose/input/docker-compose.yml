@@ -1,0 +1,16 @@
+version: '3.2'
+ 
+services:
+    input:
+      image: ghcr.io/deck9/input:main
+      volumes:
+        - input-data:/var/www/html/storage
+      ports:
+        - 8080:8080
+      restart: unless-stopped
+      environment:
+        - 
+        - 
+        - 
+        - 
+        - 

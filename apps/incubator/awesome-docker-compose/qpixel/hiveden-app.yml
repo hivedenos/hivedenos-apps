@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: qpixel
+category: social-networks-and-forums
+name: qpixel
+version: latest
+tagline: Q&A-based community knowledge-sharing software.
+description: Q&A-based community knowledge-sharing software.
+developer: codidact
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://codidact.com/
+repo: https://github.com/codidact/qpixel
+support: https://github.com/codidact/qpixel/tree/develop/docker

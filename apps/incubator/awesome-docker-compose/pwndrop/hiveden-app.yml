@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: pwndrop
+category: file-transfer-single-click-drag-n-drop-upload
+name: pwndrop
+version: latest
+tagline: Self-deployable file hosting service for red teamers, allowing to easily
+  upload and share payloads over HTTP and WebDAV.
+description: Self-deployable file hosting service for red teamers, allowing to easily
+  upload and share payloads over HTTP and WebDAV.
+developer: kgretzky
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://breakdev.org/pwndrop/
+repo: https://github.com/kgretzky/pwndrop
+support: https://github.com/linuxserver/docker-pwndrop

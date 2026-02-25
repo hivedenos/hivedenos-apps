@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: erugo
+category: file-transfer-single-click-drag-n-drop-upload
+name: Erugo
+version: latest
+tagline: Erugo is a powerful, self-hosted file-sharing platform built with PHP and
+  Laravel with a Vue.js frontend.
+description: Erugo is a powerful, self-hosted file-sharing platform built with PHP
+  and Laravel with a Vue.js frontend. It offers secure, customizable file-transfer
+  capabilities through an elegant user interface.
+developer: ErugoOSS
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://erugo.app/
+repo: https://github.com/ErugoOSS/Erugo
+support: https://github.com/ErugoOSS/Erugo#quick-start

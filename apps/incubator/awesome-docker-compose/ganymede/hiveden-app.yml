@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: ganymede
+category: archiving
+name: Ganymede
+version: latest
+tagline: Twitch VOD and Live Stream archiving platform.
+description: Twitch VOD and Live Stream archiving platform. Includes a rendered chat
+  for each archive.
+developer: Zibbp
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/archiving/ganymede
+repo: https://github.com/Zibbp/ganymede
+support: https://github.com/Zibbp/ganymede#Installation

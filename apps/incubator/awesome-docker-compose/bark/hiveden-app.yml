@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: bark
+category: notification
+name: Bark
+version: latest
+tagline: Bark is an iOS App which allows you to push customed notifications to your
+  iPhone.
+description: Bark is an iOS App which allows you to push customed notifications to
+  your iPhone.
+developer: Finb
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://bark.day.app/
+repo: https://github.com/Finb/bark-server
+support: https://github.com/Finb/bark-server#installation

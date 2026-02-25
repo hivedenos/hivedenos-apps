@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: sidequests
+category: task-management
+name: SideQuests
+version: latest
+tagline: SideQuests provides an intuitive and mobile friendly web-interface for managing
+  tasks and objectives.
+description: SideQuests provides an intuitive and mobile friendly web-interface for
+  managing tasks and objectives.
+developer: need4swede
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/task-management/sidequests
+repo: https://github.com/need4swede/SideQuests
+support: https://github.com/need4swede/SideQuests#docker-compose

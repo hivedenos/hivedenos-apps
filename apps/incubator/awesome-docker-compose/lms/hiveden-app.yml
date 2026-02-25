@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: lms
+category: music-server
+name: Lms
+version: latest
+tagline: Access your self-hosted music using a web interface.
+description: Access your self-hosted music using a web interface.
+developer: epoupon
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://lms-demo.poupon.dev/
+repo: https://github.com/epoupon/lms
+support: https://github.com/epoupon/lms/blob/master/INSTALL.md

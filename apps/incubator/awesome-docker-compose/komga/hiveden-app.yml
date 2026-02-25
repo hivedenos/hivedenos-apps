@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: komga
+category: e-books
+name: Komga
+version: latest
+tagline: Media server for comics/mangas/BDs with API and OPDS support, a modern web
+  interface for exploring your libraries, as w...
+description: Media server for comics/mangas/BDs with API and OPDS support, a modern
+  web interface for exploring your libraries, as well as a web reader.
+developer: gotson
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://komga.org/
+repo: https://github.com/gotson/komga
+support: https://komga.org/docs/installation/docker

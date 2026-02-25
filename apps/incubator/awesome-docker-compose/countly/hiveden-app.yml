@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: countly
+category: analytics
+name: Countly Community Edition
+version: latest
+tagline: Real time mobile and web analytics, crash reporting and push notifications
+  platform.
+description: Real time mobile and web analytics, crash reporting and push notifications
+  platform.
+developer: Countly
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://countly.com/
+repo: https://github.com/Countly/countly-server
+support: https://support.countly.com/hc/en-us/articles/360037814511-Docker-and-Kubernetes-Overview

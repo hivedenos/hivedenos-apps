@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: forgejo
+category: git-server
+name: Forgejo
+version: '8'
+tagline: A lightweight software forge focused on scaling, federation, and privacy
+  (fork of Gitea).
+description: A lightweight software forge focused on scaling, federation, and privacy
+  (fork of Gitea).
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://forgejo.org/
+repo: https://forgejo.org/docs/latest/admin/installation-docker/
+support: https://forgejo.org/docs/latest/admin/installation-docker/

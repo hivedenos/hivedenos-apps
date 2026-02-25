@@ -1,0 +1,23 @@
+version: '3.9'
+ 
+services:
+  maloja:
+    # from dockerhub
+    image: 
+    # or built locally
+    #build:
+    #  context: .
+    #  dockerfile: ./Containerfile
+    ports:
+    - 
+    # different directories for configuration, state and logs
+    volumes:
+    - 
+    - 
+    - 
+    #you can also have everything together instead:
+    #volumes:
+
+    #environment:
+
+    restart: unless-stopped

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: cyborgbackup
+category: backup
+name: CyBorgBackup
+version: latest
+tagline: CyBorgBackup is a Web and API Interface to manage BorgBackup solution on
+  multiple servers.
+description: CyBorgBackup is a Web and API Interface to manage BorgBackup solution
+  on multiple servers.
+developer: cyborgbackup
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://cyborgbackup.readthedocs.io/
+repo: https://github.com/cyborgbackup/cyborgbackup
+support: https://cyborgbackup.readthedocs.io/en/latest/user/install.html#docker-install

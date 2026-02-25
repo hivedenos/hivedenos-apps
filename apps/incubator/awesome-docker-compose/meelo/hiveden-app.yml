@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: meelo
+category: media-server
+name: Meelo
+version: latest
+tagline: Personal Music Server, designed for collectors and music maniacs.
+description: Personal Music Server, designed for collectors and music maniacs.
+developer: Arthi-chaud
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://arthi-chaud.github.io/Meelo/
+repo: https://github.com/Arthi-chaud/Meelo
+support: https://arthi-chaud.github.io/Meelo/setup/tldr/

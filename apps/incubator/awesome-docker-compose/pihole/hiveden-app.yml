@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: pihole
+category: dns
+name: Pi-hole
+version: 2024.07.0
+tagline: A blackhole for Internet advertisements with a GUI for management and monitoring.
+description: A blackhole for Internet advertisements with a GUI for management and
+  monitoring.
+developer: pi-hole
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://pi-hole.net/
+repo: https://github.com/pi-hole/pi-hole
+support: https://github.com/pi-hole/docker-pi-hole

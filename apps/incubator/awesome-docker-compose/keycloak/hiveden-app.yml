@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: keycloak
+category: single-sign-on-sso
+name: Keycloak
+version: latest
+tagline: Open Source Identity and Access Management For Modern Applications and Services.
+description: Open Source Identity and Access Management For Modern Applications and
+  Services.
+developer: keycloak
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.keycloak.org/
+repo: https://github.com/keycloak/keycloak
+support: https://www.keycloak.org/server/containers

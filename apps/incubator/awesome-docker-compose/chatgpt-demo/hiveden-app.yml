@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: chatgpt-demo
+category: chatbot-ui-chatgpt-ui
+name: ChatGPT Demo
+version: latest
+tagline: Minimal web UI for ChatGPT.
+description: Minimal web UI for ChatGPT.
+developer: anse-app
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://chatgpt.ddiu.me/
+repo: https://github.com/anse-app/chatgpt-demo
+support: https://github.com/anse-app/chatgpt-demo#deploy-with-docker

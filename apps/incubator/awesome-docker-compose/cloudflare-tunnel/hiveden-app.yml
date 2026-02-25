@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: cloudflare-tunnel
+category: reverse-proxy
+name: Cloudflare Tunnel
+version: latest
+tagline: Client for Cloudflare Tunnel, a daemon that exposes private services through
+  the Cloudflare edge.
+description: Client for Cloudflare Tunnel, a daemon that exposes private services
+  through the Cloudflare edge.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/reverse-proxy/cloudflare-tunnel
+repo: https://awesome-docker-compose.com/apps/reverse-proxy/cloudflare-tunnel
+support: https://awesome-docker-compose.com/apps/reverse-proxy/cloudflare-tunnel

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: firezone
+category: vpn-mesh-networking
+name: Firezone
+version: latest
+tagline: WireGuard based VPN Server and Firewall.
+description: WireGuard based VPN Server and Firewall.
+developer: firezone
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.firezone.dev/
+repo: https://github.com/firezone/firezone
+support: https://www.firezone.dev/docs/deploy/docker

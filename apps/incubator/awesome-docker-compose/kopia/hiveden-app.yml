@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: kopia
+category: backup
+name: Kopia
+version: latest
+tagline: "Kopia\xE2\x81\_ is a cross-platform tool for managing encrypted backups\
+  \ in the cloud."
+description: "Kopia\xE2\x81\_ is a cross-platform tool for managing encrypted backups\
+  \ in the cloud. It provides fast, incremental backups, secure, client-side end-to-end\
+  \ encryption, compression and data deduplication."
+developer: kopia
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://kopia.io/
+repo: https://github.com/kopia/kopia
+support: https://kopia.io/docs/installation/#docker-images

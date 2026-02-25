@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: authentik
+category: single-sign-on-sso
+name: Authentik
+version: 16-alpine
+tagline: Authentik is an open-source Identity Provider that emphasizes flexibility
+  and versatility, with support for a wide set...
+description: Authentik is an open-source Identity Provider that emphasizes flexibility
+  and versatility, with support for a wide set of protocols.
+developer: goauthentik
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://goauthentik.io/
+repo: https://github.com/goauthentik/authentik
+support: https://docs.goauthentik.io/docs/installation/docker-compose

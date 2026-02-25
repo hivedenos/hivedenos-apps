@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: dailytxt
+category: note-taking-and-editors
+name: Dailytxt
+version: latest
+tagline: Encrypted diary Web application to save your personal memories of each day.
+description: Encrypted diary Web application to save your personal memories of each
+  day. Includes a search function and encrypted file upload.
+developer: PhiTux
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/note-taking-and-editors/dailytxt
+repo: https://github.com/PhiTux/DailyTxT
+support: https://github.com/PhiTux/DailyTxT#installation

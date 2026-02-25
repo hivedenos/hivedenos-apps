@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  corecontrol:
+    image: haedlessdev/corecontrol:latest
+    restart: unless-stopped

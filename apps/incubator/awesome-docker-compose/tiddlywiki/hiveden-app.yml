@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: tiddlywiki
+category: wikis
+name: TiddlyWiki
+version: latest
+tagline: Reusable non-linear personal web notebook.
+description: Reusable non-linear personal web notebook.
+developer: TiddlyWiki
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://tiddlywiki.com/
+repo: https://github.com/TiddlyWiki/TiddlyWiki5
+support: https://github.com/TiddlyWiki/TiddlyWiki5

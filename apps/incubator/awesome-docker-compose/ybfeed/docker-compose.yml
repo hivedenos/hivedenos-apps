@@ -1,0 +1,9 @@
+version: 
+services:
+  ybfeed:
+    image: ghcr.io/ybizeul/ybfeed:latest
+    ports:
+      - 8080:8080
+    volumes:
+      - $(pwd)/data:/data
+    restart: always

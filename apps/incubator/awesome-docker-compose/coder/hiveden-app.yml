@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: coder
+category: ide-and-tools
+name: Coder
+version: -latest}
+tagline: Remote development machines on your own infrastructure.
+description: Remote development machines on your own infrastructure.
+developer: coder
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://coder.com/
+repo: https://github.com/coder/coder
+support: https://coder.com/docs/install/docker

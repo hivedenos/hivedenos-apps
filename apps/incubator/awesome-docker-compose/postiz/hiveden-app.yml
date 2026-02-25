@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: postiz
+category: miscellaneous
+name: Postiz
+version: latest
+tagline: "\uD83D\uDCE8 Schedule social media posts, measure them, exchange with other\
+  \ members and get a lot of help from AI \uD83D\uDE80."
+description: "\uD83D\uDCE8 Schedule social media posts, measure them, exchange with\
+  \ other members and get a lot of help from AI \uD83D\uDE80."
+developer: gitroomhq
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://postiz.com/
+repo: https://github.com/gitroomhq/postiz-app
+support: https://docs.postiz.com/installation/docker-compose

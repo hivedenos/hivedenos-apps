@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: drone
+category: ci-and-cd
+name: Drone
+version: '2'
+tagline: Drone is a Continuous Delivery platform built on Docker, written in Go.
+description: Drone is a Continuous Delivery platform built on Docker, written in Go.
+developer: harness
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.drone.io/
+repo: https://github.com/harness/gitness
+support: https://docs.drone.io/server/provider/github/

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: metatube
+category: video-downloader
+name: Metatube
+version: latest
+tagline: Python web ui to download videos from YouTube and add metadata on top of
+  it.
+description: Python web ui to download videos from YouTube and add metadata on top
+  of it.
+developer: JVT038
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/video-downloader/metatube
+repo: https://github.com/JVT038/MetaTube
+support: https://github.com/JVT038/MetaTube#checkered_flag-starting

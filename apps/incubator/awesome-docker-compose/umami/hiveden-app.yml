@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: umami
+category: analytics
+name: Umami
+version: postgresql-latest
+tagline: Umami is a simple, fast, privacy-focused alternative to Google Analytics.
+description: Umami is a simple, fast, privacy-focused alternative to Google Analytics.
+developer: umami-software
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://umami.is/
+repo: https://github.com/umami-software/umami
+support: https://github.com/umami-software/umami/blob/master/docker-compose.yml

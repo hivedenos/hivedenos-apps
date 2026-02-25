@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: open-streaming-platform
+category: video-streaming
+name: Open Streaming Platform
+version: latest
+tagline: Live and on-demand video streaming (alternative to Twitch and Youtube Live).
+description: Live and on-demand video streaming (alternative to Twitch and Youtube
+  Live).
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://openstreamingplatform.com/
+repo: https://open-streaming-platform.readthedocs.io/en/latest/install/install.html#docker-install
+support: https://open-streaming-platform.readthedocs.io/en/latest/install/install.html#docker-install

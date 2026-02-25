@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: sqlpage
+category: low-code
+name: SQLPage
+version: latest
+tagline: SQL-only dynamic website builder.
+description: SQL-only dynamic website builder.
+developer: lovasoa
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://sql.datapage.app/
+repo: https://github.com/lovasoa/SQLPage
+support: https://github.com/lovasoa/SQLPage#with-docker

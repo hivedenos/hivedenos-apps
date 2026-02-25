@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: cloudflare-ddns
+category: dns
+name: CloudFlare DDNS
+version: latest
+tagline: some Cloudflare DDNS updaters.
+description: some Cloudflare DDNS updaters.
+developer: favonia
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/dns/cloudflare-ddns
+repo: https://github.com/favonia/cloudflare-ddns
+support: https://github.com/favonia/cloudflare-ddns#%EF%B8%8F-quick-start

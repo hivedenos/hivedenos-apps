@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: overseerr
+category: media-server
+name: Overseerr
+version: latest
+tagline: Request management and media discovery tool for the Plex ecosystem.
+description: Request management and media discovery tool for the Plex ecosystem.
+developer: sct
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://overseerr.dev/
+repo: https://github.com/sct/overseerr
+support: https://github.com/linuxserver/docker-overseerr

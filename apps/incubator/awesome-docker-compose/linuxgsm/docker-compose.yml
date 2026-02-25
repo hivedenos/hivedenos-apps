@@ -1,0 +1,14 @@
+version: '3.4'
+services:
+  linuxgsm-csgo:
+    image: gameservermanagers/gameserver:csgo
+    # image: ghcr.io/gameservermanagers/gameserver:csgo
+    container_name: csgoserver
+    volumes:
+      - /path/to/csgoserver:/data
+    ports:
+      - 
+      - 
+      - 
+      - 
+    restart: unless-stopped

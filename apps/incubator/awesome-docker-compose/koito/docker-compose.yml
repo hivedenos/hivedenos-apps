@@ -1,0 +1,25 @@
+services:
+  koito:
+    image: gabehf/koito:latest
+    container_name: koito
+    depends_on:
+      - db
+    environment:
+      - KOITO_DATABASE_URL=postgres://postgres:secret_password@db:5432/koitodb
+      - KOITO_ALLOWED_HOSTS=koito.example.com,192.168.0.100:4110 # Update with your domain/IP
+    ports:
+      - 
+    volumes:
+      - ./koito-data:/etc/koito
+    restart: unless-stopped
+ 
+  db:
+    image: postgres:16
+    container_name: psql
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: koitodb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: secret_password # Change this!
+    volumes:
+      - ./db-data:/var/lib/postgresql/data

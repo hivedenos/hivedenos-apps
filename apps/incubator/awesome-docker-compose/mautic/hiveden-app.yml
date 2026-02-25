@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: mautic
+category: email-mailing-lists-and-newsletters
+name: Mautic
+version: latest
+tagline: Mautic is marketing automation software (email, social and more).
+description: Mautic is marketing automation software (email, social and more).
+developer: mautic
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.mautic.org/
+repo: https://github.com/mautic/mautic
+support: https://github.com/mautic/mautic

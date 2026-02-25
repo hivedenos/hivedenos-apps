@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: files-sharing
+category: file-transfer-single-click-drag-n-drop-upload
+name: Files Sharing
+version: latest
+tagline: Open Source and self-hosted files sharing application based on unique and
+  temporary links.
+description: Open Source and self-hosted files sharing application based on unique
+  and temporary links.
+developer: axeloz
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://filesharing.box.webinno.fr/
+repo: https://github.com/axeloz/filesharing
+support: https://github.com/axeloz/filesharing#installation

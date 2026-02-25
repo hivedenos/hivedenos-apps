@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: linuxgsm
+category: games
+name: Linuxgsm
+version: csgo
+tagline: 'CLI tool for deployment and management of dedicated game servers on Linux:
+  more than 120 games are supported.'
+description: 'CLI tool for deployment and management of dedicated game servers on
+  Linux: more than 120 games are supported.'
+developer: GameServerManagers
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://linuxgsm.com/
+repo: https://github.com/GameServerManagers/LinuxGSM
+support: https://github.com/GameServerManagers/docker-gameserver

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: part-db
+category: inventory-management
+name: Part Db
+version: latest
+tagline: An inventory management system for your electronic components.
+description: An inventory management system for your electronic components.
+developer: Part-DB
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://docs.part-db.de/
+repo: https://github.com/Part-DB/Part-DB-server
+support: https://docs.part-db.de/installation/installation_docker.html

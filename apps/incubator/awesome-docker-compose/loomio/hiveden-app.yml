@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: loomio
+category: social-networks-and-forums
+name: Loomio
+version: alpine
+tagline: Loomio is a collaborative decision-making tool that makes it easy for anyone
+  to participate in decisions which affect t...
+description: Loomio is a collaborative decision-making tool that makes it easy for
+  anyone to participate in decisions which affect them.
+developer: loomio
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.loomio.com/
+repo: https://github.com/loomio/loomio
+support: https://github.com/loomio/loomio-deploy

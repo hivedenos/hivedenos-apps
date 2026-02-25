@@ -1,0 +1,22 @@
+manifestVersion: 1.1
+id: mistborn
+category: self-hosting-solutions
+name: Mistborn
+version: latest
+tagline: Mistborn is your own virtual private cloud platform and WebUI that manages
+  self hosted services, and secures them with...
+description: Mistborn is your own virtual private cloud platform and WebUI that manages
+  self hosted services, and secures them with firewall, Wireguard VPN w/ PiHole-DNSCrypt,
+  and IP filtering. Optional SIEM+IDS. Supports 2FA, Nextcloud, Jitsi, Home Assistant,
+  +
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/self-hosting-solutions/mistborn
+repo: https://gitlab.com/cyber5k/mistborn
+support: https://gitlab.com/cyber5k/mistborn#installation

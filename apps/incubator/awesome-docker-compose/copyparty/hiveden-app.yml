@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: copyparty
+category: file-transfer-web-based-file-managers
+name: Copyparty
+version: latest
+tagline: Portable file server with accelerated resumable uploads, deduplication, WebDAV,
+  FTP, zeroconf, media indexer, video thu...
+description: Portable file server with accelerated resumable uploads, deduplication,
+  WebDAV, FTP, zeroconf, media indexer, video thumbnails, audio transcoding, and write-only
+  folders, in a single file with no mandatory dependencies.
+developer: '9001'
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://a.ocv.me/pub/demo/
+repo: https://github.com/9001/copyparty
+support: https://github.com/9001/copyparty/tree/hovudstraum/scripts/docker

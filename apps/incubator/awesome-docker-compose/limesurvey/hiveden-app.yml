@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: limesurvey
+category: polls-and-events
+name: LimeSurvey
+version: 6.6.3
+tagline: Feature-rich Open Source web based polling software.
+description: Feature-rich Open Source web based polling software. Supports extensive
+  survey logic.
+developer: LimeSurvey
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.limesurvey.org/
+repo: https://github.com/LimeSurvey/LimeSurvey
+support: https://github.com/adamzammit/limesurvey-docker

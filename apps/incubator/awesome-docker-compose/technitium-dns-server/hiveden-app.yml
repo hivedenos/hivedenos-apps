@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: technitium-dns-server
+category: dns
+name: Technitium DNS Server
+version: latest
+tagline: Authoritative/recursive DNS server with ad blocking functionality.
+description: Authoritative/recursive DNS server with ad blocking functionality.
+developer: TechnitiumSoftware
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://technitium.com/dns/
+repo: https://github.com/TechnitiumSoftware/DnsServer
+support: https://blog.technitium.com/2017/11/running-dns-server-on-ubuntu-linux.html

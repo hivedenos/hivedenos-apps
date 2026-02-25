@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: bitwarden
+category: password-managers
+name: Bitwarden
+version: beta
+tagline: Password manager with webapp, browser extension, and mobile app.
+description: Password manager with webapp, browser extension, and mobile app.
+developer: bitwarden
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://bitwarden.com/
+repo: https://github.com/bitwarden/server
+support: https://bitwarden.com/help/install-and-deploy-unified-beta/

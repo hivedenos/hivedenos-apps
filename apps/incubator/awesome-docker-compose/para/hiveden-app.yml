@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: para
+category: api-management
+name: Para
+version: latest_stable
+tagline: Flexible and modular backend framework/server for object persistence, API
+  development and authentication.
+description: Flexible and modular backend framework/server for object persistence,
+  API development and authentication.
+developer: erudika
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://paraio.org/
+repo: https://github.com/erudika/para
+support: https://github.com/erudika/para#docker

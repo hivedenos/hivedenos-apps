@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: squidex
+category: cms
+name: Squidex
+version: latest
+tagline: Headless CMS, based on MongoDB, CQRS and Event Sourcing.
+description: Headless CMS, based on MongoDB, CQRS and Event Sourcing.
+developer: Squidex
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://squidex.io/
+repo: https://github.com/Squidex/squidex
+support: https://docs.squidex.io/id-01-getting-started/installation/platforms/install-on-docker

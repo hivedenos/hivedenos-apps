@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  linkding:
+    container_name: 
+    image: sissbruecker/linkding:latest
+    ports:
+      - 
+    volumes:
+      - 
+    env_file:
+      - .env
+    restart: unless-stopped

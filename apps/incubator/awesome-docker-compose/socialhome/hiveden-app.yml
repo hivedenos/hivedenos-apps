@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: socialhome
+category: social-networks-and-forums
+name: Socialhome
+version: latest
+tagline: Federated and decentralized profile builder and social network engine.
+description: Federated and decentralized profile builder and social network engine.
+developer: jaywink
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://socialhome.network/
+repo: https://github.com/jaywink/socialhome
+support: https://socialhome.readthedocs.io/en/latest/installation/docker.html

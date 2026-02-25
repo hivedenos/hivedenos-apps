@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: kan
+category: task-management
+name: Kan
+version: latest
+tagline: Kan is an open-source Trello alternative for board visibility, workspace
+  members, Trello imports, and more.
+description: Kan is an open-source Trello alternative for board visibility, workspace
+  members, Trello imports, and more.
+developer: kanbn
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://kan.bn/
+repo: https://github.com/kanbn/kan
+support: https://github.com/kanbn/kan#environment-variables-%F0%9F%94%90

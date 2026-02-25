@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: openspeedtest
+category: speedtest
+name: OpenSpeedTest
+version: latest
+tagline: Free & Open-Source HTML5 Network Performance Estimation Tool.
+description: Free & Open-Source HTML5 Network Performance Estimation Tool.
+developer: openspeedtest
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/speedtest/openspeedtest
+repo: https://github.com/openspeedtest/Speed-Test
+support: https://github.com/openspeedtest/Speed-Test#self-hosted-on-premise--docker-imagesource-code

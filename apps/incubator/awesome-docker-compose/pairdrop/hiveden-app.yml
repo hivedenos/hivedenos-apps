@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: pairdrop
+category: file-transfer-single-click-drag-n-drop-upload
+name: Pairdrop
+version: latest
+tagline: "Local file sharing in your browser, inspired by Apple\xE2\x80\x99s AirDrop\
+  \ (fork of Snapdrop)."
+description: "Local file sharing in your browser, inspired by Apple\xE2\x80\x99s AirDrop\
+  \ (fork of Snapdrop)."
+developer: schlagmichdoch
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://pairdrop.net/
+repo: https://github.com/schlagmichdoch/pairdrop
+support: https://github.com/linuxserver/docker-pairdrop

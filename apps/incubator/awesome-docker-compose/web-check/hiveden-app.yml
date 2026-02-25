@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: web-check
+category: ip-and-domain
+name: Web-Check
+version: latest
+tagline: 'Get an insight into the inner-workings of a given website: uncover potential
+  attack vectors, analyse server architectur...'
+description: 'Get an insight into the inner-workings of a given website: uncover potential
+  attack vectors, analyse server architecture, view security configurations, and learn
+  what technologies a site is using.'
+developer: lissy93
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://web-check.xyz/
+repo: https://github.com/lissy93/web-check
+support: https://github.com/lissy93/web-check#configuring

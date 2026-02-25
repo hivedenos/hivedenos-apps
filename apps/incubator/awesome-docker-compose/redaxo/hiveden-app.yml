@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: redaxo
+category: cms
+name: REDAXO
+version: '8'
+tagline: Simple, flexible and useful content management system (documentation only
+  available in German).
+description: Simple, flexible and useful content management system (documentation
+  only available in German).
+developer: redaxo
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://redaxo.org/
+repo: https://github.com/redaxo/redaxo
+support: https://redaxo.org/doku/main/installation#docker

@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: keepassxc
+category: password-managers
+name: KeePassXC
+version: latest
+tagline: KeePassXC is a free and open-source password manager.
+description: KeePassXC is a free and open-source password manager. It started as a
+  community fork of KeePassX (itself a cross-platform port of KeePass).
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://keepassxc.org/
+repo: https://github.com/linuxserver/docker-keepassxc
+support: https://github.com/linuxserver/docker-keepassxc

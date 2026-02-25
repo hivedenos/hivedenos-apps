@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  notifo:
+    image: mongo:5
+    restart: unless-stopped

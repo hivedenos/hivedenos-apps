@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: dokuwiki
+category: wikis
+name: Dokuwiki
+version: latest
+tagline: Easy to use, lightweight, standards-compliant wiki engine with a simple syntax
+  allowing reading the data outside the wi...
+description: Easy to use, lightweight, standards-compliant wiki engine with a simple
+  syntax allowing reading the data outside the wiki. All data is stored in plain text
+  files, therefore no database is required.
+developer: dokuwiki
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.dokuwiki.org/
+repo: https://github.com/dokuwiki/dokuwiki
+support: https://github.com/dokuwiki/dokuwiki

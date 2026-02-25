@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: wekan
+category: task-management
+name: WeKan
+version: latest
+tagline: Open-source Trello-like kanban.
+description: Open-source Trello-like kanban.
+developer: wekan
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://wekan.github.io/
+repo: https://github.com/wekan/wekan
+support: https://github.com/wekan/wekan/blob/main/docker-compose.yml

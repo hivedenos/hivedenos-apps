@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: manticoresearch
+category: search-engine-solution
+name: Manticore Search
+version: latest
+tagline: Full-text search and data analytics, with fast response time for small, medium
+  and big data (alternative to Elasticsear...
+description: Full-text search and data analytics, with fast response time for small,
+  medium and big data (alternative to Elasticsearch).
+developer: manticoresoftware
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://manticoresearch.com/
+repo: https://github.com/manticoresoftware/manticoresearch
+support: https://github.com/manticoresoftware/docker

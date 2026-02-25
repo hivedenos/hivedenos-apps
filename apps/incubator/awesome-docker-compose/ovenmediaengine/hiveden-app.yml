@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: ovenmediaengine
+category: video-streaming
+name: OvenMediaEngine
+version: 0.16.8
+tagline: OvenMediaEngine is a selfhostable Open-Source Streaming Server with Sub-Second
+  Latency.
+description: OvenMediaEngine is a selfhostable Open-Source Streaming Server with Sub-Second
+  Latency.
+developer: AirenSoft
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://space.ovenplayer.com/
+repo: https://github.com/AirenSoft/OvenMediaEngine
+support: https://airensoft.gitbook.io/ovenmediaengine/getting-started/getting-started-with-docker

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: apache
+category: web-servers
+name: Apache HTTP Server
+version: latest
+tagline: Secure, efficient and extensible server that provides HTTP services in sync
+  with the current HTTP standards.
+description: Secure, efficient and extensible server that provides HTTP services in
+  sync with the current HTTP standards.
+developer: apache
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://httpd.apache.org/
+repo: https://github.com/apache/httpd
+support: https://github.com/apache/httpd

@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  stackstorm:
+    image: ${ST2_IMAGE_REPO:-stackstorm/}st2web:${ST2_VERSION:-latest}
+    restart: unless-stopped

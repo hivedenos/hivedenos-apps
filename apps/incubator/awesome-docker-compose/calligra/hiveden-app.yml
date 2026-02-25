@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: calligra
+category: office-suites
+name: Calligra
+version: latest
+tagline: "Calligra\xE2\x81\_ is an office and graphic art suite by KDE."
+description: "Calligra\xE2\x81\_ is an office and graphic art suite by KDE. It is\
+  \ available for desktop PCs, tablet computers, and smartphones. It contains applications\
+  \ for word processing, spreadsheets, presentation, vector graphics, and editing\
+  \ databases."
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://calligra.org/
+repo: https://github.com/linuxserver/docker-calligra
+support: https://github.com/linuxserver/docker-calligra

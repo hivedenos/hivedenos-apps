@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: rgit
+category: git-server
+name: rgit
+version: main
+tagline: An ultra-fast & lightweight cgit clone.
+description: An ultra-fast & lightweight cgit clone.
+developer: w4
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/git-server/rgit
+repo: https://github.com/w4/rgit
+support: https://github.com/w4/rgit#docker

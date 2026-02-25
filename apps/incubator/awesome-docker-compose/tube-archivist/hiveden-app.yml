@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: tube-archivist
+category: video-downloader
+name: Tube Archivist
+version: latest
+tagline: Organize, search, and enjoy your YouTube collection.
+description: Organize, search, and enjoy your YouTube collection. Subscribe, download,
+  and track viewed content with metadata indexing and a user-friendly interface.
+developer: tubearchivist
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://tubearchivist.com/
+repo: https://github.com/tubearchivist/tubearchivist
+support: https://github.com/tubearchivist/tubearchivist#installing

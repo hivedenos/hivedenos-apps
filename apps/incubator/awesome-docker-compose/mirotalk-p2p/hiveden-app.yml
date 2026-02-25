@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: mirotalk-p2p
+category: video-conferencing
+name: MiroTalk P2P
+version: latest
+tagline: Simple, secure, fast real-time video conferences up to 4k and 60fps, compatible
+  with all browsers and platforms.
+description: Simple, secure, fast real-time video conferences up to 4k and 60fps,
+  compatible with all browsers and platforms.
+developer: miroslavpejic85
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://p2p.mirotalk.com/
+repo: https://github.com/miroslavpejic85/mirotalk
+support: https://docs.mirotalk.com/mirotalk-p2p/self-hosting/

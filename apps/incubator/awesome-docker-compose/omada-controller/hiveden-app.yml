@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: omada-controller
+category: internet-of-things-iot
+name: Omada Controller
+version: '5.14'
+tagline: Omada Controller
+description: Omada Controller
+developer: mbentley
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.tp-link.com/us/support/download/omada-software-controller/
+repo: https://github.com/mbentley/docker-omada-controller
+support: https://github.com/mbentley/docker-omada-controller#using-docker-compose

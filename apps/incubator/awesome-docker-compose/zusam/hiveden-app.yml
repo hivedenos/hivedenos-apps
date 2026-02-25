@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: zusam
+category: social-networks-and-forums
+name: Zusam
+version: 0.5.5
+tagline: Free and open-source way to self-host private forums for groups of friends
+  or family.
+description: Free and open-source way to self-host private forums for groups of friends
+  or family.
+developer: zusam
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://zusam.org/
+repo: https://github.com/zusam/zusam
+support: https://github.com/zusam/zusam/blob/master/documentation/docker.md

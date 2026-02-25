@@ -1,0 +1,16 @@
+version: '3.8'
+ 
+services:
+  backend:
+    image: athlon1600/notepad:latest
+    environment:
+      NODE_ENV: production
+#    build:
+
+
+    volumes:
+      - ./backend/storage:/app/backend/storage
+      - ./backend/public:/app/backend/public
+    ports:
+      - 
+    restart: unless-stopped

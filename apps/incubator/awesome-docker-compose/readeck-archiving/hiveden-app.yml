@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: readeck-archiving
+category: archiving
+name: Readeck
+version: latest
+tagline: Readeck is a simple web application that lets you save the precious readable
+  content of web pages you like and want to...
+description: Readeck is a simple web application that lets you save the precious readable
+  content of web pages you like and want to keep forever. See it as a bookmark manager
+  and a read later tool.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://readeck.org/
+repo: https://codeberg.org/readeck/readeck#how-to-test-or-install
+support: https://codeberg.org/readeck/readeck#how-to-test-or-install

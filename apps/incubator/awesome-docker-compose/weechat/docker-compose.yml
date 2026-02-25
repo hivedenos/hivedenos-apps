@@ -1,0 +1,10 @@
+version: 
+services:
+  weechat:
+    image: weechat/weechat
+    stdin_open: true
+    tty: true
+    volumes:
+      - $HOME/.weechat-container:/home/user/.weechat
+    command: weechat -d /home/user/.weechat
+    restart: always

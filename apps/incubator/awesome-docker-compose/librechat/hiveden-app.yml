@@ -1,0 +1,22 @@
+manifestVersion: 1.1
+id: librechat
+category: chatbot-ui
+name: LibreChat
+version: latest
+tagline: 'Enhanced ChatGPT Clone: Features Anthropic, AWS, OpenAI, Assistants API,
+  Azure, Groq, o1, GPT-4o, Mistral, OpenRouter,...'
+description: 'Enhanced ChatGPT Clone: Features Anthropic, AWS, OpenAI, Assistants
+  API, Azure, Groq, o1, GPT-4o, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts,
+  AI model switching, message search, langchain, DALL-E-3, ChatGPT Plugins, OpenAI
+  Functions, Secure Multi-User System, Presets, completely open-source for self-hosting.'
+developer: danny-avila
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.librechat.ai/
+repo: https://github.com/danny-avila/LibreChat
+support: https://www.librechat.ai/docs/local/docker

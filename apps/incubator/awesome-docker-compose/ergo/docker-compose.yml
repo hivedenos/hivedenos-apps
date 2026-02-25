@@ -1,0 +1,19 @@
+version: 
+ 
+services:
+  ergo:
+    init: true
+    image: ghcr.io/ergochat/ergo:stable
+    ports:
+      - 
+      - 
+    volumes:
+      - ./data:/ircd
+    deploy:
+      placement:
+        constraints:
+          - 
+      restart_policy:
+        condition: on-failure
+      replicas: 1
+    restart: unless-stopped

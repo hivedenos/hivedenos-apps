@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: kalmia
+category: documentation
+name: Kalmia
+version: '15'
+tagline: A documentation CMS written in go.
+description: A documentation CMS written in go.
+developer: DifuseHQ
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://kalmia.difuse.io/
+repo: https://github.com/DifuseHQ/Kalmia
+support: https://kalmia.difuse.io/doc/guides/getting-started/quick-start-guide.html

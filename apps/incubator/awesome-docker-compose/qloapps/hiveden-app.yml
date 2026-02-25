@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: qloapps
+category: booking-and-scheduling
+name: QloApps
+version: latest
+tagline: An open-source, customizable and intuitive web-based hotel reservation system
+  and a booking engine.
+description: An open-source, customizable and intuitive web-based hotel reservation
+  system and a booking engine.
+developer: Qloapps
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://qloapps.com/
+repo: https://github.com/Qloapps/QloApps
+support: https://github.com/Qloapps/QloApps

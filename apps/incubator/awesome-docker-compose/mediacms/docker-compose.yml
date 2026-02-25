@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  mediacms:
+    image: mediacms/mediacms:latest
+    restart: unless-stopped

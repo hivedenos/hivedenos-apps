@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: healthchecks
+category: automation
+name: Healthchecks
+version: latest
+tagline: Django app which listens for pings and sends alerts when pings are late.
+description: Django app which listens for pings and sends alerts when pings are late.
+developer: healthchecks
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://healthchecks.io/
+repo: https://github.com/healthchecks/healthchecks
+support: https://github.com/healthchecks/healthchecks#docker-image

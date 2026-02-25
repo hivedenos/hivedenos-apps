@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  docker-compose-anywhere:
+    image: traefik:v3.1.2
+    restart: unless-stopped

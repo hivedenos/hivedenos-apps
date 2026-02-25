@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: loggifly
+category: container-management
+name: LoggiFly
+version: latest
+tagline: Monitor Docker Logs and send Notifications.
+description: Monitor Docker Logs and send Notifications.
+developer: clemcer
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/container-management/loggifly
+repo: https://github.com/clemcer/loggifly
+support: https://github.com/clemcer/loggifly#%EF%B8%8F-quick-start

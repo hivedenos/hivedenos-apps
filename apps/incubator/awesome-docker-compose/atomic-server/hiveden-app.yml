@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: atomic-server
+category: knowledge-management-tools
+name: Atomic Server
+version: latest
+tagline: Knowledge graph database with documents (similar to Notion), tables, search,
+  and a powerful linked data API.
+description: Knowledge graph database with documents (similar to Notion), tables,
+  search, and a powerful linked data API. Lightweight, very fast and no runtime dependencies.
+developer: atomicdata-dev
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://atomicserver.eu/
+repo: https://github.com/atomicdata-dev/atomic-server
+support: https://docs.atomicdata.dev/atomicserver/installation

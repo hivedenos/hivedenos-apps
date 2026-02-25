@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: answer
+category: social-networks-and-forums
+name: Answer
+version: latest
+tagline: An open-source knowledge-based community software.
+description: An open-source knowledge-based community software. You can use it to
+  quickly build your Q&A community for product technical support, customer support,
+  user communication, and more.
+developer: apache
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://answer.apache.org/
+repo: https://github.com/apache/incubator-answer
+support: https://answer.apache.org/docs/installation/

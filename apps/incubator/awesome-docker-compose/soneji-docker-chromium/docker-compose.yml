@@ -1,0 +1,14 @@
+version: '3'
+ 
+services:
+  chrome:
+    image: overclockedllama/docker-chromium
+    ports:
+      - 
+
+    volumes:
+      - 
+    environment:
+      - VNC_PASSWORD=badpassword
+    shm_size: '2gb'
+    restart: always

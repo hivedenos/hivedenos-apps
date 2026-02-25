@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: borg-ui
+category: backup
+name: Borg-UI
+version: latest
+tagline: Borg-UI is a beautiful web interface for Borg Backup.
+description: Borg-UI is a beautiful web interface for Borg Backup. It allows you to
+  create, schedule, and restore backups with just a few clicks, replacing complex
+  terminal commands.
+developer: karanhudia
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://karanhudia.github.io/borg-ui/
+repo: https://github.com/karanhudia/borg-ui
+support: https://karanhudia.github.io/borg-ui/configuration

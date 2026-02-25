@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: excalidash
+category: diagraming-and-canvas
+name: ExcaliDash
+version: latest
+tagline: ExcaliDash is a self-hosted dashboard and organizer for Excalidraw with live
+  collaboration.
+description: ExcaliDash is a self-hosted dashboard and organizer for Excalidraw with
+  live collaboration.
+developer: ZimengXiong
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/diagraming-and-canvas/excalidash
+repo: https://github.com/ZimengXiong/ExcaliDash
+support: https://github.com/ZimengXiong/ExcaliDash#installation

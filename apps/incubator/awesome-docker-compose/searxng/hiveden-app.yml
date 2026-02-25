@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: searxng
+category: internet-tools
+name: SearXNG
+version: 2-alpine
+tagline: Internet metasearch engine which aggregates results from various search services
+  and databases (Fork of Searx).
+description: Internet metasearch engine which aggregates results from various search
+  services and databases (Fork of Searx).
+developer: searxng
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://docs.searxng.org/
+repo: https://github.com/searxng/searxng
+support: https://github.com/searxng/searxng-docker

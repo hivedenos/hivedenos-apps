@@ -1,0 +1,16 @@
+version: 
+ 
+services:
+  localstack:
+    container_name: 
+    image: localstack/localstack
+    ports:
+      -             # LocalStack Gateway
+      -   # external services port range
+    environment:
+      # LocalStack configuration: https://docs.localstack.cloud/references/configuration/
+      - DEBUG=${DEBUG:-0}
+    volumes:
+      - 
+      - 
+    restart: unless-stopped

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: sist2
+category: search-engine-solution
+name: sist2
+version: 7.17.9
+tagline: Lightning-fast file system indexer and search tool.
+description: Lightning-fast file system indexer and search tool.
+developer: simon987
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/search-engine-solution/sist2
+repo: https://github.com/simon987/sist2
+support: https://github.com/simon987/sist2#getting-started

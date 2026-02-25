@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: chatgpt-next-web
+category: chatbot-ui
+name: ChatGPT Next Web
+version: latest
+tagline: A cross-platform ChatGPT/Gemini UI (Web / PWA / Linux / Win / MacOS).
+description: A cross-platform ChatGPT/Gemini UI (Web / PWA / Linux / Win / MacOS).
+developer: ChatGPTNextWeb
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://app.nextchat.dev/
+repo: https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web
+support: https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web#deployment

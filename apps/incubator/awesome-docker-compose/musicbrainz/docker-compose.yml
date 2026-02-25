@@ -1,0 +1,19 @@
+version: 
+ 
+services:
+  musicbrainz:
+    image: ghcr.io/linuxserver/musicbrainz
+    container_name: musicbrainz
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+      - BRAINZCODE=<code from MusicBrainz>
+      - WEBADDRESS=<ip of host>
+      - NPROC=<parameter> #optional
+    volumes:
+      - </path/to/appdata/config>:/config
+      - </path/to/appdata/config>:/data
+    ports:
+      - 5000:5000
+    restart: unless-stopped

@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  viseron:
+    image: roflcoopter/viseron:latest
+    restart: unless-stopped

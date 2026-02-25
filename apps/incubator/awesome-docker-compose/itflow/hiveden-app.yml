@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: itflow
+category: ticketing
+name: ITFlow
+version: 10.6.11
+tagline: Client IT Documentation, Ticketing, Invoicing and Accounting Web Application
+  for MSPs (Managed Service Providers).
+description: Client IT Documentation, Ticketing, Invoicing and Accounting Web Application
+  for MSPs (Managed Service Providers).
+developer: itflow-org
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://itflow.org/
+repo: https://github.com/itflow-org/itflow
+support: https://github.com/itflow-org/itflow-docker

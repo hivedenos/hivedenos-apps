@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: mindustry
+category: games
+name: Mindustry
+version: latest
+tagline: A sandbox tower defense game.
+description: A sandbox tower defense game.
+developer: Anuken
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://mindustrygame.github.io/
+repo: https://github.com/Anuken/Mindustry
+support: https://github.com/Anuken/Mindustry

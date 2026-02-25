@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: caprover
+category: paas
+name: Caprover
+version: latest
+tagline: Build your own PaaS in a few minutes.
+description: Build your own PaaS in a few minutes.
+developer: caprover
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://caprover.com/
+repo: https://github.com/caprover/caprover
+support: https://caprover.com/docs/get-started.html

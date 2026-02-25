@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: automysqlbackup
+category: database-backup-mysql-backup
+name: Docker AutoMySQLBackup
+version: '8.0'
+tagline: A lightweight image for creating and managing scheduled MySQL backups.
+description: A lightweight image for creating and managing scheduled MySQL backups.
+developer: selim13
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/database-backup/mysql-backup/automysqlbackup
+repo: https://github.com/selim13/docker-automysqlbackup
+support: https://github.com/selim13/docker-automysqlbackup#image-usage

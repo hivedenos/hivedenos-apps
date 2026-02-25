@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: traefik
+category: web-servers
+name: Traefik
+version: v3.1
+tagline: HTTP reverse proxy and load balancer that makes deploying microservices easy.
+description: HTTP reverse proxy and load balancer that makes deploying microservices
+  easy.
+developer: traefik
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://traefik.io/traefik/
+repo: https://github.com/traefik/traefik
+support: https://doc.traefik.io/traefik/getting-started/install-traefik/

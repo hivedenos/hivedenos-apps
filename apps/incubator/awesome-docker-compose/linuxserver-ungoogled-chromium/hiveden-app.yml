@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: linuxserver-ungoogled-chromium
+category: virtual-browser-chromium
+name: linuxserver/ungoogled-chromium
+version: latest
+tagline: linuxserver/ungoogled-chromium
+description: linuxserver/ungoogled-chromium
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/virtual-browser/Chromium/linuxserver-ungoogled-chromium
+repo: https://github.com/linuxserver/docker-ungoogled-chromium
+support: https://github.com/linuxserver/docker-ungoogled-chromium

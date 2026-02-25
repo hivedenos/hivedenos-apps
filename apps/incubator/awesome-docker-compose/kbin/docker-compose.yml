@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  kbin:
+    image: kbin
+    restart: unless-stopped

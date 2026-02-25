@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: onedev
+category: git-server
+name: OneDev
+version: latest
+tagline: All-In-One DevOps Platform.
+description: All-In-One DevOps Platform. With Git Management, Issue Tracking, and
+  CI/CD. Simple yet Powerful.
+developer: theonedev
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://onedev.io/
+repo: https://github.com/theonedev/onedev
+support: https://docs.onedev.io/

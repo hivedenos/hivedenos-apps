@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: tianji
+category: system-monitoring
+name: Tianji
+version: latest
+tagline: 'Tianji: Insight into everything, Website Analytics + Uptime Monitor + Server
+  Status.'
+description: 'Tianji: Insight into everything, Website Analytics + Uptime Monitor
+  + Server Status. not only another GA alternatives.'
+developer: msgbyte
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://tianji.msgbyte.com/
+repo: https://github.com/msgbyte/tianji
+support: https://tianji.msgbyte.com/docs/intro

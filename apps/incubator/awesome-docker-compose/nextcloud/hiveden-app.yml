@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: nextcloud
+category: cloud-storage
+name: Nextcloud
+version: latest
+tagline: Access and share your files, calendars, contacts, mail and more from any
+  device, on your terms.
+description: Access and share your files, calendars, contacts, mail and more from
+  any device, on your terms.
+developer: nextcloud
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/cloud-storage/nextcloud
+repo: https://github.com/nextcloud/server
+support: https://github.com/nextcloud/all-in-one

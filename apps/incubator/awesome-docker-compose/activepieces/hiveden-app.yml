@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: activepieces
+category: automation
+name: Activepieces
+version: 0.33.0
+tagline: No-code business automation tool like Zapier or Tray.
+description: No-code business automation tool like Zapier or Tray. For example, you
+  can send a Slack notification for each new Trello card.
+developer: activepieces
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.activepieces.com/
+repo: https://github.com/activepieces/activepieces
+support: https://www.activepieces.com/docs/install/options/docker-compose

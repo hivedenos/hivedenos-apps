@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: dockur-windows
+category: virtual-system
+name: Dockurr/Windows
+version: latest
+tagline: Windows inside a Docker container.
+description: Windows inside a Docker container.
+developer: dockur
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/virtual-system/dockur-windows
+repo: https://github.com/dockur/windows
+support: https://github.com/dockur/windows#usage-

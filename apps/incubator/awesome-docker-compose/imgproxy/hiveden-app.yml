@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: imgproxy
+category: proxy
+name: Imgproxy
+version: latest
+tagline: Fast and secure standalone server for resizing and converting remote images.
+description: Fast and secure standalone server for resizing and converting remote
+  images. It works great when you need to resize multiple images on the fly without
+  preparing a ton of cached resized images or re-doing it every time the design changes.
+developer: imgproxy
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://imgproxy.net/
+repo: https://github.com/imgproxy/imgproxy
+support: https://docs.imgproxy.net/installation

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: openitcockpit
+category: system-monitoring
+name: openITCOCKPIT
+version: latest
+tagline: openITCOCKPIT is an Open Source system monitoring tool built for different
+  monitoring engines like Nagios, Naemon and P...
+description: openITCOCKPIT is an Open Source system monitoring tool built for different
+  monitoring engines like Nagios, Naemon and Prometheus.
+developer: it-novum
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://openitcockpit.io/
+repo: https://github.com/it-novum/openITCOCKPIT
+support: https://docs.openitcockpit.io/en/installation/docker/

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: traggo
+category: time-tracking
+name: Traggo
+version: latest
+tagline: Traggo is a tag-based time tracking tool.
+description: Traggo is a tag-based time tracking tool.
+developer: traggo
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://traggo.net/
+repo: https://github.com/traggo/server
+support: https://traggo.net/install/

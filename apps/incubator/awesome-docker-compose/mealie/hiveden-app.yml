@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: mealie
+category: recipe-management
+name: Mealie
+version: v1.12.0
+tagline: Material design inspired recipe manager with category and tag management,
+  shopping-lists, meal-planner, and site custom...
+description: Material design inspired recipe manager with category and tag management,
+  shopping-lists, meal-planner, and site customizations. Mealie is focused on simple
+  user interactions to keep the whole family using the app.
+developer: hay-kot
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://mealie.io/
+repo: https://github.com/hay-kot/mealie
+support: https://docs.mealie.io/documentation/getting-started/installation/installation-checklist/

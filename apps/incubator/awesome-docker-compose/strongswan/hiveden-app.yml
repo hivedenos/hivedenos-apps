@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: strongswan
+category: vpn
+name: StrongSwan
+version: 5.8.4
+tagline: Complete IPsec implementation for Linux.
+description: Complete IPsec implementation for Linux.
+developer: strongswan
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.strongswan.org/
+repo: https://github.com/strongswan/strongswan
+support: https://github.com/strongswan/strongswan

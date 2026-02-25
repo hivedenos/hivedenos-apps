@@ -1,0 +1,6 @@
+version: 
+services:
+  kiwix-tools:
+    stdin_open: true
+    tty: true
+    image: ghcr.io/kiwix/kiwix-tools:3.1.2

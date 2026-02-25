@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: duplicati
+category: backup
+name: Duplicati
+version: latest
+tagline: Backup client that securely stores encrypted, incremental, compressed backups
+  on cloud storage services and remote file...
+description: Backup client that securely stores encrypted, incremental, compressed
+  backups on cloud storage services and remote file servers.
+developer: duplicati
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://duplicati.com/
+repo: https://github.com/duplicati/duplicati
+support: https://github.com/linuxserver/docker-duplicati

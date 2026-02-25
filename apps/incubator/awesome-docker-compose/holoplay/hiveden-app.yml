@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: holoplay
+category: music-server
+name: Holoplay
+version: latest
+tagline: Web app using Invidious API for listening to Youtube audio sources.
+description: Web app using Invidious API for listening to Youtube audio sources.
+developer: stephane-r
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://app.holoplay.io/
+repo: https://github.com/stephane-r/holoplay-pwa
+support: https://github.com/stephane-r/holoplay-pwa#docker

@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: booksonic-air
+category: audio-server
+name: Booksonic Air
+version: latest
+tagline: A new Booksonic server based on Airsonic.
+description: "A new Booksonic server based on Airsonic. - OBS: The code here might\
+  \ not be ready for release. Feel free to compile it yourself but if so I recommend\
+  \ searching for the latest commit with the description \xE2\x80\x9CPrepare for release\xE2\
+  \x80\x9D"
+developer: popeen
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://booksonic.org/
+repo: https://github.com/popeen/Booksonic-Air
+support: https://github.com/linuxserver/docker-booksonic-air

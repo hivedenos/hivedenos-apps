@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: opengist
+category: pastebins
+name: Opengist
+version: '1'
+tagline: Self-hosted pastebin powered by Git.
+description: Self-hosted pastebin powered by Git.
+developer: thomiceli
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://opengist.io/
+repo: https://github.com/thomiceli/opengist
+support: https://opengist.io/docs/installation/docker.html

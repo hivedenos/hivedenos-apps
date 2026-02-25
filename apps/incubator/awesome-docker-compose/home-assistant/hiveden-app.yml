@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: home-assistant
+category: internet-of-things-iot
+name: Home Assistant
+version: latest
+tagline: Open-source home automation platform.
+description: Open-source home automation platform.
+developer: home-assistant
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.home-assistant.io/
+repo: https://github.com/home-assistant/core
+support: https://www.home-assistant.io/installation/

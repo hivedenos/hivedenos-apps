@@ -1,0 +1,15 @@
+version: 
+services:
+  web:
+    image: passit/passit:stable
+    command: bin/start.sh
+    ports:
+      - 
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@YOUR_HOST:5432/postgres
+      SECRET_KEY: change_me
+      IS_DEBUG: 'False'
+      EMAIL_URL: consolemail://
+      DEFAULT_FROM_EMAIL: 
+      EMAIL_CONFIRMATION_HOST: 
+    restart: unless-stopped

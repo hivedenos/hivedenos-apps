@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: quickshare
+category: file-transfer-single-click-drag-n-drop-upload
+name: QuickShare
+version: latest
+tagline: Quick and simple file sharing between different devices.
+description: Quick and simple file sharing between different devices.
+developer: ihexxa
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://ihexxa.github.io/quickshare.site/
+repo: https://github.com/ihexxa/quickshare
+support: https://github.com/ihexxa/quickshare#quick-start

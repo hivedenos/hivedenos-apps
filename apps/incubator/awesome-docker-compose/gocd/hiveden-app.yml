@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: gocd
+category: ci-and-cd
+name: GoCD
+version: v24.3.0
+tagline: Continuous delivery server.
+description: Continuous delivery server.
+developer: gocd
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.gocd.org/
+repo: https://github.com/gocd/gocd
+support: https://github.com/gocd/docker-gocd-server

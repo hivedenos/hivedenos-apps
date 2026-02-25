@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: perlite
+category: knowledge-management-tools-obsidian
+name: Perlite
+version: latest
+tagline: A web-based markdown viewer optimized for Obsidian.
+description: A web-based markdown viewer optimized for Obsidian.
+developer: secure-77
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://perlite.secure77.de/
+repo: https://github.com/secure-77/Perlite
+support: https://github.com/secure-77/Perlite/wiki/02---Setup-Docker

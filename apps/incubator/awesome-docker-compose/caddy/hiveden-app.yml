@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: caddy
+category: web-servers
+name: Caddy
+version: latest
+tagline: Powerful, enterprise-ready, open source web server with automatic HTTPS.
+description: Powerful, enterprise-ready, open source web server with automatic HTTPS.
+developer: caddyserver
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://caddyserver.com/
+repo: https://github.com/caddyserver/caddy
+support: https://github.com/caddyserver/caddy-docker

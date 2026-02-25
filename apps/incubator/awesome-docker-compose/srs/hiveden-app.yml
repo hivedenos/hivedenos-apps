@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: srs
+category: video-streaming
+name: SRS
+version: '5'
+tagline: A simple, high efficiency and real-time video server, supports RTMP, WebRTC,
+  HLS, HTTP-FLV and SRT.
+description: A simple, high efficiency and real-time video server, supports RTMP,
+  WebRTC, HLS, HTTP-FLV and SRT.
+developer: ossrs
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://ossrs.io/
+repo: https://github.com/ossrs/srs
+support: https://ossrs.io/lts/en-us/docs/v6/doc/getting-started

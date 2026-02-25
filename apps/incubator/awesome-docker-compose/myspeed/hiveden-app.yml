@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: myspeed
+category: speedtest
+name: MySpeed
+version: latest
+tagline: A speed test analysis software that shows your internet speed for up to 30
+  days.
+description: A speed test analysis software that shows your internet speed for up
+  to 30 days.
+developer: gnmyt
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/speedtest/myspeed
+repo: https://github.com/gnmyt/myspeed
+support: https://docs.myspeed.dev/setup/linux/

@@ -1,0 +1,31 @@
+services:
+  backend:
+    image: zimengxiong/excalidash-backend:latest
+    container_name: excalidash-backend
+    environment:
+      - DATABASE_URL=file:/app/prisma/dev.db
+      - PORT=8000
+      - NODE_ENV=production
+    volumes:
+      - backend-data:/app/prisma
+    networks:
+      - excalidash-network
+    restart: unless-stopped
+ 
+  frontend:
+    image: zimengxiong/excalidash-frontend:latest
+    container_name: excalidash-frontend
+    ports:
+      - 
+    depends_on:
+      - backend
+    networks:
+      - excalidash-network
+    restart: unless-stopped
+ 
+networks:
+  excalidash-network:
+    driver: bridge
+ 
+volumes:
+  backend-data:

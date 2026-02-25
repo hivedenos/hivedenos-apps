@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: linuxserver-chromium
+category: virtual-browser-chromium
+name: linuxserver/chromium
+version: latest
+tagline: "Chromium\xE2\x81\_ is an open-source browser project that aims to build\
+  \ a safer, faster, and more stable way for all users to..."
+description: "Chromium\xE2\x81\_ is an open-source browser project that aims to build\
+  \ a safer, faster, and more stable way for all users to experience the web."
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/virtual-browser/Chromium/linuxserver-chromium
+repo: https://github.com/linuxserver/docker-chromium
+support: https://github.com/linuxserver/docker-chromium

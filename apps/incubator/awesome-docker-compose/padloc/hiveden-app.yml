@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: padloc
+category: password-managers
+name: Padloc
+version: latest
+tagline: A modern, open source password manager for individuals and teams.
+description: A modern, open source password manager for individuals and teams.
+developer: padloc
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://padloc.app/
+repo: https://github.com/padloc/padloc
+support: https://github.com/padloc/padloc/tree/main/docs/examples/hosting/docker

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: statusnook
+category: network-monitoring
+name: Statusnook
+version: v1.26.3
+tagline: Effortlessly deploy a status page and start monitoring endpoints in minutes.
+description: Effortlessly deploy a status page and start monitoring endpoints in minutes.
+developer: goksan
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://statusnook.com/
+repo: https://github.com/goksan/statusnook
+support: https://github.com/goksan/statusnook#docker

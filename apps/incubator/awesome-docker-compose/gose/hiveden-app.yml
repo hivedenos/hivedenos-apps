@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: gose
+category: file-transfer-single-click-drag-n-drop-upload
+name: "GoS\xC6\x90"
+version: RELEASE.2022-06-03T01-40-53Z.fips
+tagline: "GoS\xC6\x90 is a modern file-uploader focusing on scalability and simplicity."
+description: "GoS\xC6\x90 is a modern file-uploader focusing on scalability and simplicity.\
+  \ It only depends on a S3 storage backend and hence scales horizontally without\
+  \ the need for additional databases or caches."
+developer: stv0g
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://gose.0l.de/
+repo: https://github.com/stv0g/gose
+support: https://github.com/stv0g/gose#docker

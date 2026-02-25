@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: projectsend
+category: file-transfer-single-click-drag-n-drop-upload
+name: Projectsend
+version: latest
+tagline: Upload files and assign them to specific clients you create.
+description: Upload files and assign them to specific clients you create. Give access
+  to those files to your clients.
+developer: projectsend
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.projectsend.org/
+repo: https://github.com/projectsend/projectsend
+support: https://github.com/linuxserver/docker-projectsend

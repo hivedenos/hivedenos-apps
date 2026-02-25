@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: claper
+category: polls-and-events
+name: Claper
+version: '15'
+tagline: The ultimate tool to interact with your audience (alternative to Slido, AhaSlides
+  and Mentimeter).
+description: The ultimate tool to interact with your audience (alternative to Slido,
+  AhaSlides and Mentimeter).
+developer: ClaperCo
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://claper.co/
+repo: https://github.com/ClaperCo/Claper
+support: https://docs.claper.co/self-hosting/quick-start.html

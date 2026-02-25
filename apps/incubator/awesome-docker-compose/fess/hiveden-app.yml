@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: fess
+category: search-engine-solution
+name: Fess
+version: 2.17.0
+tagline: Fess is very powerful and easily deployable Enterprise Search Server.
+description: Fess is very powerful and easily deployable Enterprise Search Server.
+developer: codelibs
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://fess.codelibs.org/
+repo: https://github.com/codelibs/fess
+support: https://github.com/codelibs/docker-fess

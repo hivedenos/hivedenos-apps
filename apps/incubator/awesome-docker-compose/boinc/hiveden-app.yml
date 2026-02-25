@@ -1,0 +1,22 @@
+manifestVersion: 1.1
+id: boinc
+category: miscellaneous
+name: BOINC
+version: latest
+tagline: "BOINC\xE2\x81\_ is a platform for high-throughput computing on a large scale\
+  \ (thousands or millions of computers)."
+description: "BOINC\xE2\x81\_ is a platform for high-throughput computing on a large\
+  \ scale (thousands or millions of computers). It can be used for volunteer computing\
+  \ (using consumer devices) or grid computing (using organizational resources). It\
+  \ supports virtualized, parallel, and GPU-based applications."
+developer: BOINC
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://boinc.berkeley.edu/
+repo: https://github.com/BOINC/boinc
+support: https://github.com/linuxserver/docker-boinc

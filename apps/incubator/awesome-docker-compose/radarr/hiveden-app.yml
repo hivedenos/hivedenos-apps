@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: radarr
+category: arr
+name: Radarr
+version: latest
+tagline: Movie organizer/manager for usenet and torrent users.
+description: Movie organizer/manager for usenet and torrent users.
+developer: Radarr
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://radarr.video/
+repo: https://github.com/Radarr/Radarr
+support: https://github.com/linuxserver/docker-radarr

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: kimai
+category: time-tracking
+name: Kimai
+version: '8.3'
+tagline: Kimai is a web-based multi-user time-tracking application.
+description: Kimai is a web-based multi-user time-tracking application.
+developer: kimai
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.kimai.org/
+repo: https://github.com/kimai/kimai
+support: https://www.kimai.org/documentation/docker-compose.html

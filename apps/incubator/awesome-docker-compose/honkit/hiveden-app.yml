@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: honkit
+category: documentation
+name: HonKit
+version: latest
+tagline: "\uD83D\uDCD6 HonKit is building beautiful books using Markdown - Fork of\
+  \ GitBook."
+description: "\uD83D\uDCD6 HonKit is building beautiful books using Markdown - Fork\
+  \ of GitBook."
+developer: honkit
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://honkit.netlify.app/
+repo: https://github.com/honkit/honkit
+support: https://github.com/honkit/honkit/tree/master/docker

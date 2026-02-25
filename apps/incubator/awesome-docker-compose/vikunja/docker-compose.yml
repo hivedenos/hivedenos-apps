@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  vikunja:
+    image: vikunja/vikunja
+    restart: unless-stopped

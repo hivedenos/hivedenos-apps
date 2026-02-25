@@ -1,0 +1,10 @@
+version: '3'
+services:
+  dufs:
+    image: sigoden/dufs
+    ports:
+    - 5000:5000
+    volumes:
+    - .:/data
+    command: /data -A
+    restart: unless-stopped

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: tubetube
+category: video-downloader
+name: TubeTube
+version: latest
+tagline: TubeTube is a simple YouTube downloader.
+description: TubeTube is a simple YouTube downloader.
+developer: MattBlackOnly
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/video-downloader/tubetube
+repo: https://github.com/MattBlackOnly/TubeTube
+support: https://github.com/MattBlackOnly/TubeTube#docker-compose-configuration

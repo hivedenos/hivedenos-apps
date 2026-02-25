@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: webarchive
+category: archiving
+name: Webarchive
+version: latest
+tagline: Aimed to be a simple, fast and easy-to-use webarchive for personal or home-net
+  usage.
+description: Aimed to be a simple, fast and easy-to-use webarchive for personal or
+  home-net usage.
+developer: derfenix
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/archiving/webarchive
+repo: https://github.com/derfenix/webarchive
+support: https://github.com/derfenix/webarchive

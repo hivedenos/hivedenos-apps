@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: solidtime
+category: time-tracking
+name: solidtime
+version: '15'
+tagline: solidtime is a modern open-source time tracking application for Freelancers
+  and Agencies.
+description: solidtime is a modern open-source time tracking application for Freelancers
+  and Agencies.
+developer: solidtime-io
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.solidtime.io/
+repo: https://github.com/solidtime-io/solidtime
+support: https://docs.solidtime.io/self-hosting/guides/docker

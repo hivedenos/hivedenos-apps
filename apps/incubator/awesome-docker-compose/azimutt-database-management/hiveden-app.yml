@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: azimutt-database-management
+category: database-management
+name: Azimutt
+version: latest
+tagline: Visual database exploration made for real world databases (big and messy).
+description: Visual database exploration made for real world databases (big and messy).
+  Explore your database schema as well as data, document them, extend them and even
+  get analysis and guidelines.
+developer: azimuttapp
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://azimutt.app/
+repo: https://github.com/azimuttapp/azimutt
+support: https://github.com/azimuttapp/azimutt/blob/main/INSTALL.md

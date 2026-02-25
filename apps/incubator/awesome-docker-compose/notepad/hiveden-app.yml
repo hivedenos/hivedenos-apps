@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: notepad
+category: pastebins
+name: Notepad.mx
+version: latest
+tagline: "\uD83D\uDCC4 Web-based application for storing notes securely."
+description: "\uD83D\uDCC4 Web-based application for storing notes securely. Built\
+  \ with Vue + Node.js + Express."
+developer: Athlon1600
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://notepad.mx/
+repo: https://github.com/Athlon1600/notepad
+support: https://github.com/Athlon1600/notepad#whale2-deploy-using-docker

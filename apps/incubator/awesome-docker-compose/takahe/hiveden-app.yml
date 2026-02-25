@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: takahe
+category: social-networks-and-forums
+name: Takahe
+version: latest
+tagline: Federated microblogging server.
+description: Federated microblogging server. Mastodon, & ActivityPub compatible.
+developer: jointakahe
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://jointakahe.org/
+repo: https://github.com/jointakahe/takahe
+support: https://docs.jointakahe.org/en/latest/installation/

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: universal-media-server
+category: media-server
+name: Universal Media Server
+version: latest
+tagline: Universal Media Server is a DLNA, UPnP and HTTP/S Media Server.
+description: Universal Media Server is a DLNA, UPnP and HTTP/S Media Server.
+developer: UniversalMediaServer
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.universalmediaserver.com/
+repo: https://github.com/UniversalMediaServer/UniversalMediaServer
+support: https://support.universalmediaserver.com/installation/docker

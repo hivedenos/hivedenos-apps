@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: cadvisor
+category: container-management
+name: Cadvisor
+version: v0.50.0
+tagline: Analyzes resource usage and performance characteristics of running containers.
+description: Analyzes resource usage and performance characteristics of running containers.
+developer: google
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/container-management/cadvisor
+repo: https://github.com/google/cadvisor
+support: https://github.com/google/cadvisor#quick-start-running-cadvisor-in-a-docker-container

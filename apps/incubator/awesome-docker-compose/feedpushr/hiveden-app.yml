@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: feedpushr
+category: rss
+name: Feedpushr
+version: latest
+tagline: Powerful RSS aggregator, able to transform and send articles to many outputs.
+description: Powerful RSS aggregator, able to transform and send articles to many
+  outputs. Single binary, extensible with plugins.
+developer: ncarlier
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/rss/feedpushr
+repo: https://github.com/ncarlier/feedpushr
+support: https://github.com/ncarlier/feedpushr#installation

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: anonaddy
+category: email-servers
+name: Anonaddy
+version: '10'
+tagline: Open source email forwarding service for creating aliases.
+description: Open source email forwarding service for creating aliases.
+developer: anonaddy
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://addy.io/
+repo: https://github.com/anonaddy/anonaddy
+support: https://github.com/anonaddy/docker

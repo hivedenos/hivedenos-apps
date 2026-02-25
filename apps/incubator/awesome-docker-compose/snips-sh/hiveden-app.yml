@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: snips-sh
+category: pastebins
+name: Snips
+version: latest
+tagline: "\xE2\x9C\x82\xEF\xB8\x8F passwordless, anonymous SSH-powered pastebin with\
+  \ a human-friendly TUI and web UI."
+description: "\xE2\x9C\x82\xEF\xB8\x8F passwordless, anonymous SSH-powered pastebin\
+  \ with a human-friendly TUI and web UI."
+developer: robherley
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://snips.sh/
+repo: https://github.com/robherley/snips.sh
+support: https://github.com/robherley/snips.sh/blob/main/docs/self-hosting.md

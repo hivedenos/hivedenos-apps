@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: flashpaper
+category: pastebins
+name: FlashPaper
+version: v2
+tagline: A one-time encrypted zero-knowledge password/secret sharing application focused
+  on simplicity and security.
+description: A one-time encrypted zero-knowledge password/secret sharing application
+  focused on simplicity and security. No database or complicated set-up required.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/pastebins/flashpaper
+repo: https://github.com/AndrewPaglusch/FlashPaper#installation
+support: https://github.com/AndrewPaglusch/FlashPaper#installation

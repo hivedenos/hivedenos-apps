@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: wikmd
+category: wikis
+name: Wikmd
+version: latest
+tagline: Modern and simple file based wiki that uses Markdown and Git.
+description: Modern and simple file based wiki that uses Markdown and Git.
+developer: Linbreux
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://linbreux.github.io/wikmd/
+repo: https://github.com/Linbreux/wikmd
+support: https://linbreux.github.io/wikmd/installation/docker.html

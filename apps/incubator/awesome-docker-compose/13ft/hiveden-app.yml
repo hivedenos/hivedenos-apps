@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: 13ft
+category: internet-tools
+name: 13 Feet Ladder
+version: latest
+tagline: "A site similar to 12ft.io but is self hosted and works with websites that\
+  \ 12ft.io doesn\xE2\x80\x99t work with."
+description: "A site similar to 12ft.io but is self hosted and works with websites\
+  \ that 12ft.io doesn\xE2\x80\x99t work with."
+developer: wasi-master
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/internet-tools/13ft
+repo: https://github.com/wasi-master/13ft
+support: https://github.com/wasi-master/13ft#using-docker

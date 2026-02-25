@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: warpgate
+category: remote-access
+name: Warpgate
+version: latest
+tagline: Smart SSH and HTTPS bastion that works with any SSH client.
+description: Smart SSH and HTTPS bastion that works with any SSH client.
+developer: warp-tech
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/remote-access/warpgate
+repo: https://github.com/warp-tech/warpgate
+support: https://github.com/warp-tech/warpgate/wiki/Getting-started-on-Docker

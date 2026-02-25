@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: bazarr
+category: arr
+name: Bazarr
+version: latest
+tagline: "Bazarr\xE2\x81\_ is a companion application to Sonarr and Radarr."
+description: "Bazarr\xE2\x81\_ is a companion application to Sonarr and Radarr. It\
+  \ can manage and download subtitles based on your requirements. You define your\
+  \ preferences by TV show or movie and Bazarr takes care of everything for you."
+developer: morpheus65535
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.bazarr.media/
+repo: https://github.com/morpheus65535/bazarr
+support: https://github.com/linuxserver/docker-bazarr

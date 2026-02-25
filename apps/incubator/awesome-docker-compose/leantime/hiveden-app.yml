@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: leantime
+category: project-management
+name: Leantime
+version: '8.4'
+tagline: Leantime is a goals focused project management system for non-project managers.
+description: Leantime is a goals focused project management system for non-project
+  managers. Building with ADHD, Autism, and dyslexia in mind.
+developer: leantime
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://leantime.io/
+repo: https://github.com/leantime/leantime
+support: https://github.com/leantime/leantime#production-installation-via-docker

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: traduora
+category: localization
+name: Traduora
+version: latest
+tagline: Translation management platform for teams.
+description: Translation management platform for teams.
+developer: ever-co
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://traduora.co/
+repo: https://github.com/ever-co/ever-traduora
+support: https://docs.traduora.co/docs/deployment

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: ghost
+category: blogging-platforms
+name: Ghost
+version: 5-alpine
+tagline: Just a blogging platform.
+description: Just a blogging platform.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://ghost.org/
+repo: https://awesome-docker-compose.com/apps/blogging-platforms/ghost
+support: https://awesome-docker-compose.com/apps/blogging-platforms/ghost

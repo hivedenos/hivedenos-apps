@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: fossflow
+category: diagraming-and-canvas
+name: FossFLOW
+version: latest
+tagline: FossFLOW is an open-source tool for making beautiful isometric infrastructure
+  diagrams.
+description: FossFLOW is an open-source tool for making beautiful isometric infrastructure
+  diagrams.
+developer: stan-smith
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://stan-smith.github.io/FossFLOW/
+repo: https://github.com/stan-smith/FossFLOW
+support: https://github.com/stan-smith/FossFLOW#%F0%9F%90%B3-quick-deploy-with-docker

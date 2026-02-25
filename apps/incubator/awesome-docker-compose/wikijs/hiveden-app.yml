@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: wikijs
+category: wikis
+name: Wiki.js
+version: 15-alpine
+tagline: Modern, lightweight and powerful wiki app using Git and Markdown.
+description: Modern, lightweight and powerful wiki app using Git and Markdown.
+developer: Requarks
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://js.wiki/
+repo: https://github.com/Requarks/wiki
+support: https://github.com/Requarks/wiki

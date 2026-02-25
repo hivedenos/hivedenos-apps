@@ -1,0 +1,28 @@
+version: '2.1'
+services: 
+  nocodb: 
+    depends_on: 
+      root_db: 
+        condition: service_healthy
+    environment: 
+      NC_DB: 
+    image: 
+    ports: 
+      - 
+    restart: always
+    volumes: 
+      - 
+  root_db: 
+    environment: 
+      POSTGRES_DB: root_db
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
+    healthcheck: 
+      interval: 10s
+      retries: 10
+      test: $$POSTGRES_USER -d $$POSTGRES_DB
+      timeout: 2s
+    image: postgres
+    restart: always
+    volumes: 
+      - 

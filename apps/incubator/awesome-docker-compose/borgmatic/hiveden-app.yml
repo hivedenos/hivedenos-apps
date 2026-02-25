@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: borgmatic
+category: backup
+name: Borgmatic
+version: latest
+tagline: Simple, configuration-driven backup software for servers and workstations.
+description: Simple, configuration-driven backup software for servers and workstations.
+developer: borgmatic-collective
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://torsion.org/borgmatic/
+repo: https://github.com/borgmatic-collective/borgmatic
+support: https://github.com/borgmatic-collective/docker-borgmatic

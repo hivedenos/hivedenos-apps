@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: snikket
+category: xmpp
+name: Snikket
+version: stable
+tagline: All-in-one Dockerized easy XMPP solution, including web admin and clients.
+description: All-in-one Dockerized easy XMPP solution, including web admin and clients.
+developer: snikket-im
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://snikket.org/
+repo: https://github.com/snikket-im/snikket-server
+support: https://snikket.org/service/quickstart/

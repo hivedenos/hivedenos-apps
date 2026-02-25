@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: input
+category: polls-and-events
+name: Input
+version: main
+tagline: A privacy-focused, no-code, open-source form builder designed for simplicity
+  and brand consistency.
+description: A privacy-focused, no-code, open-source form builder designed for simplicity
+  and brand consistency.
+developer: deck9
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://getinput.co/
+repo: https://github.com/deck9/input
+support: https://github.com/deck9/input#production-deployment

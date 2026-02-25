@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: guacamole
+category: remote-access
+name: Guacamole
+version: 15.2-alpine
+tagline: Guacamole is a clientless remote desktop gateway.
+description: Guacamole is a clientless remote desktop gateway. It supports standard
+  protocols like VNC and RDP.
+developer: apache
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://guacamole.apache.org/
+repo: https://github.com/apache/guacamole-server
+support: https://guacamole.incubator.apache.org/doc/gug/guacamole-docker.html

@@ -1,0 +1,39 @@
+version: 
+services:
+  photostructure:
+    # You can run alpha, beta, or stable builds. See
+    # <https://forum.photostructure.com/t/274> for details.
+    image: photostructure/server:alpha
+    container_name: photostructure
+    restart: unless-stopped
+    stop_grace_period: 2m
+    volumes:
+      - type: bind
+        source: /mnt/media/PhotoStructure # < CHANGE THIS LINE
+        target: /ps/library
+ 
+      # Example additional directories to import into your library:
+      - type: bind
+        source:  # < CHANGE THIS LINE
+        target: /photos-backup
+ 
+    ports:
+      - 1787:1787/tcp
+ 
+    environment:
+      -  # < CHANGE THIS LINE
+      -  # < CHANGE THIS LINE: replace 1000 with the result of `id -u`
+      -  # < CHANGE THIS LINE: replace 1000 with the result of `id -g`
+    labels:
+      - 
+ 
+  # The rest of this file enables automatic PhotoStructure upgrades, and is optional
+  watchtower:
+    image: containrrr/watchtower
+    restart: always
+    container_name: watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --interval 10800
+    environment:
+      - 

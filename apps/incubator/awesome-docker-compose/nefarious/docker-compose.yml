@@ -1,0 +1,65 @@
+version: '2.4'
+ 
+services:
+ 
+  # nefarious main application
+  nefarious:
+    extends:
+      service: nefarious-app-base
+      file: docker-compose.base.yml
+    depends_on:
+      - redis
+      - jackett
+      - celery
+ 
+  # nefarious background task queue
+  celery:
+    extends:
+      service: celery-worker
+      file: docker-compose.base.yml
+    depends_on:
+      - redis
+ 
+  # nefarious background task queue scheduler
+  celery-scheduler:
+    extends:
+      service: celery-scheduler
+      file: docker-compose.base.yml
+    depends_on:
+      - redis
+ 
+  # database for task queue
+  redis:
+    image: redis
+    restart: always
+    mem_limit: 200m
+
+    #ports:
+
+    expose:
+      - 6379
+ 
+  # torrent indexer service
+  jackett:
+    extends:
+      service: jackett-base
+      file: docker-compose.base.yml
+    ports:
+      - 
+ 
+  # torrent server
+  transmission:
+    extends:
+      service: transmission-base
+      file: docker-compose.base.yml
+    image: linuxserver/transmission
+ 
+  # auto update service
+  watchtower:
+    extends:
+      service: watchtower-base
+      file: docker-compose.base.yml
+ 
+volumes:
+  nefarious-db:
+  jackett-config:

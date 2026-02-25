@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: lobe-chat
+category: chatbot-ui
+name: Lobe Chat
+version: latest
+tagline: "\uD83E\uDD2F Lobe Chat - an open-source, modern-design AI chat framework."
+description: "\uD83E\uDD2F Lobe Chat - an open-source, modern-design AI chat framework.\
+  \ Supports Multi AI Providers( OpenAI / Claude 3 / Gemini / Ollama / Azure / DeepSeek),\
+  \ Knowledge Base (file upload / knowledge management / RAG ), Multi-Modals (Vision/TTS)\
+  \ and plugin system. One-click FREE deployment of your private ChatGPT/ Claude application."
+developer: lobehub
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://lobehub.com/
+repo: https://github.com/lobehub/lobe-chat
+support: https://lobehub.com/docs/self-hosting/platform/docker

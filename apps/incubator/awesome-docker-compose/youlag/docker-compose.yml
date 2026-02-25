@@ -1,0 +1,12 @@
+services:
+  freshrss:
+    image: freshrss/freshrss:latest
+    container_name: freshrss
+    restart: unless-stopped
+    ports:
+      - 
+    volumes:
+      - ./data:/var/www/FreshRSS/data
+      - ./extensions:/var/www/FreshRSS/extensions # Mount the extensions folder
+    environment:
+      - TZ=Europe/Paris

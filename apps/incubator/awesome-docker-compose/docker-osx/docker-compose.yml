@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  docker-osx:
+    image: sickcodes/docker-osx:latest
+    restart: unless-stopped

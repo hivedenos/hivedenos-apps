@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: mindwendel
+category: project-management
+name: mindwendel
+version: latest
+tagline: mindwendel helps you to easily brainstorm and upvote ideas and thoughts within
+  your team.
+description: mindwendel helps you to easily brainstorm and upvote ideas and thoughts
+  within your team.
+developer: b310-digital
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.mindwendel.com/
+repo: https://github.com/b310-digital/mindwendel
+support: https://github.com/b310-digital/mindwendel/blob/master/docs/installing_mindwendel.md

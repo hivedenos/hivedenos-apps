@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: defguard
+category: vpn
+name: DefGuard
+version: 15-alpine
+tagline: True enterprise WireGuard with MFA/2FA and SSO.
+description: True enterprise WireGuard with MFA/2FA and SSO.
+developer: DefGuard
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://defguard.net/
+repo: https://github.com/DefGuard/defguard
+support: https://defguard.gitbook.io/defguard/admin-and-features/setting-up-your-instance/docker-compose

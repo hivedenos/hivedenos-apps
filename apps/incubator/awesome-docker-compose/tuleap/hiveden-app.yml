@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: tuleap
+category: project-management
+name: Tuleap
+version: latest
+tagline: Modern open source project time tracking for freelancers and small teams.
+description: Modern open source project time tracking for freelancers and small teams.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.tuleap.org/
+repo: https://docs.tuleap.org/installation-guide/docker/introduction.html
+support: https://docs.tuleap.org/installation-guide/docker/introduction.html

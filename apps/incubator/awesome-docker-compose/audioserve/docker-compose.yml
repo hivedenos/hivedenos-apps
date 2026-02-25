@@ -1,0 +1,15 @@
+version: 
+ 
+services:
+  audioserve:
+    image: izderadicka/audioserve
+    restart: unless-stopped
+    command: --tags /audiobooks
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - 
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - 
+      - 

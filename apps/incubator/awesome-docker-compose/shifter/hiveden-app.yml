@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: shifter
+category: file-transfer-single-click-drag-n-drop-upload
+name: Shifter
+version: 0.3.0
+tagline: A simple, self-hosted file-sharing web app, powered by Django.
+description: A simple, self-hosted file-sharing web app, powered by Django.
+developer: TobySuch
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/file-transfer---single-click--drag-n-drop-upload/shifter
+repo: https://github.com/TobySuch/Shifter
+support: https://github.com/TobySuch/Shifter#running-in-production

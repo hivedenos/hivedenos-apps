@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: otter-wiki
+category: wikis
+name: Otter Wiki
+version: '2'
+tagline: Simple, easy to use wiki software using markdown.
+description: Simple, easy to use wiki software using markdown.
+developer: redimp
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://otterwiki.com/
+repo: https://github.com/redimp/otterwiki
+support: https://otterwiki.com/Installation

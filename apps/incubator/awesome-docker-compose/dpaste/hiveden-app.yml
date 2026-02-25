@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: dpaste
+category: pastebins
+name: Dpaste
+version: latest
+tagline: Simple pastebin with multiple text and code option, with short url result
+  easy to remember.
+description: Simple pastebin with multiple text and code option, with short url result
+  easy to remember.
+developer: DarrenOfficial
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://dpaste.org/
+repo: https://github.com/DarrenOfficial/dpaste
+support: https://docs.dpaste.org/installation/

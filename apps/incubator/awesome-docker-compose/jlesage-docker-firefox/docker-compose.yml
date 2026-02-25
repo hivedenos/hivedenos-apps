@@ -1,0 +1,10 @@
+version: '3'
+ 
+services:
+  firefox:
+    image: jlesage/firefox
+    ports:
+      - 
+    volumes:
+      - 
+  restart: 

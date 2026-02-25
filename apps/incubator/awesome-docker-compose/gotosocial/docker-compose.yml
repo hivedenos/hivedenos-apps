@@ -1,0 +1,33 @@
+version: 
+ 
+services:
+  gotosocial:
+    image: superseriousbusiness/gotosocial:latest
+    container_name: gotosocial
+    user: 1000:1000
+    networks:
+      - gotosocial
+    environment:
+      GTS_HOST: example.org
+      GTS_DB_TYPE: sqlite
+      GTS_DB_ADDRESS: /gotosocial/storage/sqlite.db
+      GTS_LETSENCRYPT_ENABLED: 
+      GTS_LETSENCRYPT_EMAIL_ADDRESS: 
+      ## For reverse proxy setups:
+
+      ## Set the timezone of your server:
+      #TZ: UTC
+    ports:
+      - 
+      ## For letsencrypt:
+
+      ## For reverse proxy setups:
+
+    volumes:
+      - ~/gotosocial/data:/gotosocial/storage
+    restart: 
+ 
+networks:
+  gotosocial:
+    ipam:
+      driver: default

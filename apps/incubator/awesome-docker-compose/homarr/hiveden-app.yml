@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: homarr
+category: personal-dashboards
+name: Homarr
+version: latest
+tagline: Sleek, modern dashboard with many integrations and web-based config.
+description: Sleek, modern dashboard with many integrations and web-based config.
+developer: ajnart
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://homarr.dev/
+repo: https://github.com/ajnart/homarr
+support: https://homarr.dev/docs/getting-started/installation

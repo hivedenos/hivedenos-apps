@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: obsidian-livesync
+category: knowledge-management-tools-obsidian
+name: Obsidian LiveSync
+version: latest
+tagline: Self-hosted LiveSync is a community-implemented synchronization plugin, available
+  on every obsidian-compatible platform...
+description: Self-hosted LiveSync is a community-implemented synchronization plugin,
+  available on every obsidian-compatible platform and using CouchDB or Object Storage
+  (e.g., MinIO, S3, R2, etc.) as the server.
+developer: vrtmrz
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/knowledge-management-tools/Obsidian/obsidian-livesync
+repo: https://github.com/vrtmrz/obsidian-livesync
+support: https://github.com/vrtmrz/obsidian-livesync/blob/main/docs/setup_own_server.md

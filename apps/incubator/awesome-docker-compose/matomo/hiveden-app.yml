@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: matomo
+category: analytics
+name: Matomo
+version: '10.11'
+tagline: "Google Analytics alternative that protects your data and your customers\xE2\
+  \x80\x99 privacy."
+description: "Google Analytics alternative that protects your data and your customers\xE2\
+  \x80\x99 privacy."
+developer: matomo-org
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://matomo.org/
+repo: https://github.com/matomo-org/matomo
+support: https://github.com/matomo-org/docker

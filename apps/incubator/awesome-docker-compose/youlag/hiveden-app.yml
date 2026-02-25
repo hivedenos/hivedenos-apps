@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: youlag
+category: rss
+name: Youlag
+version: latest
+tagline: To use Youlag, you need to mount it into your FreshRSS extensions folder.
+description: To use Youlag, you need to mount it into your FreshRSS extensions folder.
+developer: civilblur
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/rss/youlag
+repo: https://github.com/civilblur/youlag
+support: https://github.com/civilblur/youlag

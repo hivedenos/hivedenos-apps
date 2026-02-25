@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: docspell
+category: document-management
+name: Docspell
+version: latest
+tagline: Auto-tagging document organizer and archive.
+description: Auto-tagging document organizer and archive.
+developer: eikek
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://docspell.org/
+repo: https://github.com/eikek/docspell
+support: https://docspell.org/docs/install/docker/

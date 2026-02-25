@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: anycable
+category: custom-communication-systems
+name: AnyCable
+version: latest
+tagline: Realtime server for reliable two-way communication over WebSockets, Server-sent
+  events, etc.
+description: Realtime server for reliable two-way communication over WebSockets, Server-sent
+  events, etc.
+developer: anycable
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://anycable.io/
+repo: https://github.com/anycable/anycable-go
+support: https://docs.anycable.io/deployment/docker

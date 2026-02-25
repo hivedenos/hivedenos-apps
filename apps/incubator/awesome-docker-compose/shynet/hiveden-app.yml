@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: shynet
+category: analytics
+name: Shynet
+version: latest
+tagline: Modern, privacy-friendly, and detailed web analytics that works without cookies
+  or JS.
+description: Modern, privacy-friendly, and detailed web analytics that works without
+  cookies or JS.
+developer: milesmcc
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/analytics/shynet
+repo: https://github.com/milesmcc/shynet
+support: https://github.com/milesmcc/shynet/blob/master/GUIDE.md#basic-installation-with-docker-compose

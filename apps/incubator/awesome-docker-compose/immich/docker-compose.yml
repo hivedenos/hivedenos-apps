@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  immich:
+    image: ghcr.io/immich-app/immich-server:${IMMICH_VERSION:-release}
+    restart: unless-stopped

@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: audacity
+category: miscellaneous
+name: Audacity
+version: latest
+tagline: "Audacity\xE2\x81\_ is an easy-to-use, multi-track audio editor and recorder."
+description: "Audacity\xE2\x81\_ is an easy-to-use, multi-track audio editor and recorder.\
+  \ Developed by a group of volunteers as open source."
+developer: audacity
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.audacityteam.org/
+repo: https://github.com/audacity
+support: https://github.com/linuxserver/docker-audacity

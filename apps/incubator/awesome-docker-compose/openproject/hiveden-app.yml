@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: openproject
+category: project-management
+name: Openproject
+version: -14-slim}
+tagline: OpenProject is the leading open source project management software.
+description: OpenProject is the leading open source project management software.
+developer: opf
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.openproject.org/
+repo: https://github.com/opf/openproject
+support: https://github.com/opf/openproject-deploy

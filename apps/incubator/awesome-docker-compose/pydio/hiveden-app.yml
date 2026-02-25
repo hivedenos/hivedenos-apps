@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: pydio
+category: cloud-storage
+name: Pydio
+version: latest
+tagline: Turn any web server into a powerful file management system and an alternative
+  to mainstream cloud storage providers.
+description: Turn any web server into a powerful file management system and an alternative
+  to mainstream cloud storage providers.
+developer: pydio
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://pydio.com/
+repo: https://github.com/pydio/cells
+support: https://pydio.com/en/docs/cells/v4/docker

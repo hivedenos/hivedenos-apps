@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: ardour
+category: miscellaneous
+name: Ardour
+version: latest
+tagline: "Ardour\xE2\x81\_ is an open source, collaborative effort of a worldwide\
+  \ team including musicians, programmers, and professiona..."
+description: "Ardour\xE2\x81\_ is an open source, collaborative effort of a worldwide\
+  \ team including musicians, programmers, and professional recording engineers."
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://ardour.org/
+repo: https://github.com/linuxserver/docker-ardour
+support: https://github.com/linuxserver/docker-ardour

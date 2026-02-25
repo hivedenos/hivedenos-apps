@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: miniserve
+category: file-transfer-web-based-file-managers
+name: miniserve
+version: latest
+tagline: CLI tool to serve files and dirs over HTTP.
+description: CLI tool to serve files and dirs over HTTP.
+developer: svenstaro
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/file-transfer---web-based-file-managers/miniserve
+repo: https://github.com/svenstaro/miniserve
+support: https://github.com/svenstaro/miniserve#how-to-install

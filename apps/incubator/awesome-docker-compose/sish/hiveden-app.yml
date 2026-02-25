@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: sish
+category: proxy
+name: sish
+version: latest
+tagline: HTTP(S)/WS(S)/TCP tunnels to localhost using only SSH (serveo/ngrok alternative).
+description: HTTP(S)/WS(S)/TCP tunnels to localhost using only SSH (serveo/ngrok alternative).
+developer: antoniomika
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://docs.ssi.sh/
+repo: https://github.com/antoniomika/sish
+support: https://docs.ssi.sh/getting-started

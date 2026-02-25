@@ -1,0 +1,20 @@
+version: '3'
+ 
+services:
+  crafty:
+    container_name: crafty_container
+    image: registry.gitlab.com/crafty-controller/crafty-4:latest
+    restart: always
+    environment:
+        - TZ=Etc/UTC
+    ports:
+        -  # HTTPS
+        -  # DYNMAP
+        -  # BEDROCK
+        -  # MC SERV PORT RANGE
+    volumes:
+        - ./docker/backups:/crafty/backups
+        - ./docker/logs:/crafty/logs
+        - ./docker/servers:/crafty/servers
+        - ./docker/config:/crafty/app/config
+        - ./docker/import:/crafty/import

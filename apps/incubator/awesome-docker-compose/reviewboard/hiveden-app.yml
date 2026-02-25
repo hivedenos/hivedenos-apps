@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: reviewboard
+category: git-server
+name: Review Board
+version: 13-alpine
+tagline: Extensible and friendly code review tool for projects and companies of all
+  sizes.
+description: Extensible and friendly code review tool for projects and companies of
+  all sizes.
+developer: reviewboard
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.reviewboard.org/
+repo: https://github.com/reviewboard/reviewboard
+support: https://www.reviewboard.org/docs/manual/latest/admin/installation/docker/

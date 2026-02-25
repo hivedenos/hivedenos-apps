@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: bookstack
+category: wikis
+name: BookStack
+version: latest
+tagline: BookStack is a simple, self-hosted, easy-to-use platform for organizing and
+  storing information.
+description: BookStack is a simple, self-hosted, easy-to-use platform for organizing
+  and storing information. It allows for documentation to be stored in a book like
+  fashion.
+developer: BookStackApp
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.bookstackapp.com/
+repo: https://github.com/BookStackApp/BookStack
+support: https://github.com/BookStackApp/BookStack

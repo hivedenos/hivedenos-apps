@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: picoshare
+category: file-transfer-single-click-drag-n-drop-upload
+name: PicoShare
+version: latest
+tagline: A minimalist, easy-to-host service for sharing images and other files.
+description: A minimalist, easy-to-host service for sharing images and other files.
+developer: mtlynch
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://demo.pico.rocks/
+repo: https://github.com/mtlynch/picoshare
+support: https://github.com/mtlynch/picoshare#run-picoshare

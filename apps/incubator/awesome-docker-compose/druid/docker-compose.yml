@@ -1,0 +1,116 @@
+version: 
+ 
+volumes:
+  metadata_data: {}
+  middle_var: {}
+  historical_var: {}
+  broker_var: {}
+  coordinator_var: {}
+  router_var: {}
+  druid_shared: {}
+ 
+ 
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:latest
+    ports:
+      - 
+    volumes:
+      - metadata_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=FoolishPassword
+      - POSTGRES_USER=druid
+      - POSTGRES_DB=druid
+ 
+  # Need 3.5 or later for container nodes
+  zookeeper:
+    container_name: zookeeper
+    image: zookeeper:3.5.10
+    ports:
+      - 
+    environment:
+      - ZOO_MY_ID=1
+ 
+  coordinator:
+    image: apache/druid:30.0.0
+    container_name: coordinator
+    volumes:
+      - druid_shared:/opt/shared
+      - coordinator_var:/opt/druid/var
+    depends_on:
+      - zookeeper
+      - postgres
+    ports:
+      - 
+    command:
+      - coordinator
+    env_file:
+      - environment
+ 
+  broker:
+    image: apache/druid:30.0.0
+    container_name: broker
+    volumes:
+      - broker_var:/opt/druid/var
+    depends_on:
+      - zookeeper
+      - postgres
+      - coordinator
+    ports:
+      - 
+    command:
+      - broker
+    env_file:
+      - environment
+ 
+  historical:
+    image: apache/druid:30.0.0
+    container_name: historical
+    volumes:
+      - druid_shared:/opt/shared
+      - historical_var:/opt/druid/var
+    depends_on: 
+      - zookeeper
+      - postgres
+      - coordinator
+    ports:
+      - 
+    command:
+      - historical
+    env_file:
+      - environment
+ 
+  middlemanager:
+    image: apache/druid:30.0.0
+    container_name: middlemanager
+    volumes:
+      - druid_shared:/opt/shared
+      - middle_var:/opt/druid/var
+    depends_on: 
+      - zookeeper
+      - postgres
+      - coordinator
+    ports:
+      - 
+      - 
+    command:
+      - middleManager
+    env_file:
+      - environment
+ 
+  router:
+    image: apache/druid:30.0.0
+    container_name: router
+    volumes:
+      - router_var:/opt/druid/var
+    depends_on:
+      - zookeeper
+      - postgres
+      - coordinator
+    ports:
+      - 
+    command:
+      - router
+    env_file:
+      - environment

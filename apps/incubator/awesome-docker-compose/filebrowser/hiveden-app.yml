@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: filebrowser
+category: file-transfer-web-based-file-managers
+name: File Browser
+version: latest
+tagline: Web File Browser with a Material Design web interface.
+description: Web File Browser with a Material Design web interface.
+developer: filebrowser
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://filebrowser.org/
+repo: https://github.com/filebrowser/filebrowser
+support: https://filebrowser.org/installation

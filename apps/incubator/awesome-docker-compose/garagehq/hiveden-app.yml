@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: garagehq
+category: object-storage-and-file-servers
+name: GarageHQ
+version: v1.0.0
+tagline: An open-source geo-distributed storage service you can self-host to fulfill
+  many needs - S3 compatible.
+description: An open-source geo-distributed storage service you can self-host to fulfill
+  many needs - S3 compatible.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://garagehq.deuxfleurs.fr/
+repo: https://garagehq.deuxfleurs.fr/documentation/cookbook/real-world/
+support: https://garagehq.deuxfleurs.fr/documentation/cookbook/real-world/

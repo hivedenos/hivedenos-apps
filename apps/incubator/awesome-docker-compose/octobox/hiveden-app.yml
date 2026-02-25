@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: octobox
+category: git-server
+name: Octobox
+version: latest
+tagline: Take back control of your GitHub Notifications.
+description: Take back control of your GitHub Notifications.
+developer: octobox
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://octobox.io/
+repo: https://github.com/octobox/octobox
+support: https://github.com/octobox/octobox/blob/master/docs/INSTALLATION.md#using-docker-and-docker-compose

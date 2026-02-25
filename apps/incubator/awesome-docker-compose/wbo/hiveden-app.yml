@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: wbo
+category: diagraming-and-canvas
+name: WBO
+version: latest
+tagline: Online collaborative Whiteboard that is simple, free, easy to use and to
+  deploy.
+description: Online collaborative Whiteboard that is simple, free, easy to use and
+  to deploy.
+developer: lovasoa
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://wbo.ophir.dev/
+repo: https://github.com/lovasoa/whitebophir
+support: https://github.com/lovasoa/whitebophir#running-your-own-instance-of-wbo

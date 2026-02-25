@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: trudesk
+category: ticketing
+name: Trudesk
+version: '1'
+tagline: Trudesk is an open-source help desk/ticketing solution.
+description: Trudesk is an open-source help desk/ticketing solution.
+developer: polonel
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://trudesk.io/
+repo: https://github.com/polonel/trudesk
+support: https://docs.trudesk.io/v1.2/getting-started/deployment/docker-deployment

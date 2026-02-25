@@ -1,0 +1,11 @@
+version: 
+ 
+services:
+  azimutt:
+    image: ghcr.io/azimuttapp/azimutt:main
+    container_name: azimutt
+    env_file:
+      - <path_to_your_env_file>
+    ports:
+      - 4000:4000
+    restart: unless-stopped

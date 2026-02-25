@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: piwigo
+category: photo-server
+name: Piwigo
+version: latest
+tagline: Photo gallery software for the web, built by an active community of users
+  and developers.
+description: Photo gallery software for the web, built by an active community of users
+  and developers.
+developer: Piwigo
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://piwigo.org/
+repo: https://github.com/Piwigo/Piwigo
+support: https://github.com/linuxserver/docker-piwigo

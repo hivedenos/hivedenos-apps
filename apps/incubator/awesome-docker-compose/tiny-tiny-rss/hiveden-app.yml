@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: tiny-tiny-rss
+category: rss
+name: Tiny Tiny RSS
+version: 15-alpine
+tagline: Open source web-based news feed (RSS/Atom) reader and aggregator.
+description: Open source web-based news feed (RSS/Atom) reader and aggregator.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://tt-rss.org/
+repo: https://tt-rss.org/wiki/InstallationNotes/
+support: https://tt-rss.org/wiki/InstallationNotes/

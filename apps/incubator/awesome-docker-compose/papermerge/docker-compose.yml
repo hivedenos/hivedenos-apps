@@ -1,0 +1,25 @@
+version: 
+ 
+x-backend: &common
+  image: papermerge/papermerge:3.2
+  environment:
+      PAPERMERGE__SECURITY__SECRET_KEY: 12345
+      PAPERMERGE__AUTH__USERNAME: admin
+      PAPERMERGE__AUTH__PASSWORD: admin
+      PAPERMERGE__REDIS__URL: redis://redis:6379/0
+  volumes:
+      - ./data:/db
+      - ./index_db:/core_app/index_db
+      - ./media:/core_app/media
+services:
+  web:
+    <<: *common
+    ports:
+     - 
+    depends_on:
+      - redis
+  worker:
+    <<: *common
+    command: worker
+  redis:
+    image: redis:6

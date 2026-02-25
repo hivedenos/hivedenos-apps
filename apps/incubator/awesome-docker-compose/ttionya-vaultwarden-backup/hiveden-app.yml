@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: ttionya-vaultwarden-backup
+category: password-managers
+name: Ttionya/Vaultwarden-backup
+version: latest
+tagline: Backup vaultwarden (bitwarden_rs) SQLite3/PostgreSQL/MySQL/MariaDB database
+  by rclone.
+description: Backup vaultwarden (bitwarden_rs) SQLite3/PostgreSQL/MySQL/MariaDB database
+  by rclone.
+developer: ttionya
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/password-managers/ttionya-vaultwarden-backup
+repo: https://github.com/ttionya/vaultwarden-backup
+support: https://github.com/ttionya/vaultwarden-backup#usage

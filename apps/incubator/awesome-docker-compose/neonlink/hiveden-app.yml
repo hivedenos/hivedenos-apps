@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: neonlink
+category: bookmarks-managers
+name: NeonLink
+version: latest
+tagline: Simple self-hosted bookmark service.
+description: Simple self-hosted bookmark service.
+developer: AlexSciFier
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/bookmarks-managers/neonlink
+repo: https://github.com/AlexSciFier/neonlink
+support: https://github.com/AlexSciFier/neonlink#installation

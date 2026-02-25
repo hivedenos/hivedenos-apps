@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: portnote
+category: network-monitoring
+name: PortNote
+version: latest
+tagline: Keep track of used ports.
+description: Keep track of used ports.
+developer: crocofied
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/network-monitoring/portnote
+repo: https://github.com/crocofied/PortNote
+support: https://github.com/crocofied/PortNote#deployment

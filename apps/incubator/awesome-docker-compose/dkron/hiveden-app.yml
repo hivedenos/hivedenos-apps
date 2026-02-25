@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: dkron
+category: automation
+name: Dkron
+version: latest
+tagline: Dkron is a system service that runs scheduled jobs at given intervals or
+  times, just like the cron unix service but dis...
+description: Dkron is a system service that runs scheduled jobs at given intervals
+  or times, just like the cron unix service but distributed in several machines in
+  a cluster.
+developer: distribworks
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://dkron.io/
+repo: https://github.com/distribworks/dkron
+support: https://dkron.io/docs/basics/installation/

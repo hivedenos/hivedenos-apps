@@ -1,0 +1,10 @@
+version: 
+ 
+services:
+  docassemble:
+    image: jhpyle/docassemble
+    ports:
+      - 80:80
+      - 443:443
+    restart: always
+    stop_grace_period: 

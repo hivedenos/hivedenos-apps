@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: maddy
+category: email-servers
+name: Maddy
+version: '0.6'
+tagline: All-in-one mail server that implements SMTP (both MTA and MX) and IMAP.
+description: All-in-one mail server that implements SMTP (both MTA and MX) and IMAP.
+  Replaces Postfix, Dovecot, OpenDKIM, OpenSPF, OpenDMARC with single daemon.
+developer: foxcpp
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://maddy.email/
+repo: https://github.com/foxcpp/maddy
+support: https://maddy.email/docker/

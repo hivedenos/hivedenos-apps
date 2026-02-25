@@ -1,0 +1,30 @@
+version: '3.9'
+ 
+services:
+  cloudflare-ddns:
+    image: favonia/cloudflare-ddns:latest
+    # Choose the appropriate tag based on your need:
+
+    #   in the future and break things)
+
+
+    network_mode: host
+    # This bypasses network isolation and makes IPv6 easier (optional; see below)
+    restart: always
+    # Restart the updater after reboot
+    user: 
+    # Run the updater with specific user and group IDs (in that order).
+    # You can change the two numbers based on your need.
+    read_only: true
+    # Make the container filesystem read-only (optional but recommended)
+    cap_drop: [all]
+    # Drop all Linux capabilities (optional but recommended)
+    security_opt: [no-new-privileges:true]
+    # Another protection to restrict superuser privileges (optional but recommended)
+    environment:
+      - CF_API_TOKEN=YOUR-CLOUDFLARE-API-TOKEN
+        # Your Cloudflare API token
+      - DOMAINS=example.org,www.example.org,example.io
+        # Your domains (separated by commas)
+      - PROXIED=true
+        # Tell Cloudflare to cache webpages and hide your IP (optional)

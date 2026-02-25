@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: koel
+category: music-server
+name: Koel
+version: '13'
+tagline: Personal music streaming server that works.
+description: Personal music streaming server that works.
+developer: koel
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://koel.dev/
+repo: https://github.com/koel/koel
+support: https://github.com/koel/docker

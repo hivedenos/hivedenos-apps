@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  docker-android:
+    image: budtmo/docker-android:emulator_11.0
+    restart: unless-stopped

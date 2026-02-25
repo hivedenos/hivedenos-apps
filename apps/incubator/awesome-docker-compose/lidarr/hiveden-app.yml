@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: lidarr
+category: arr
+name: Lidarr
+version: latest
+tagline: Looks and smells like Sonarr but made for music.
+description: Looks and smells like Sonarr but made for music.
+developer: Lidarr
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://lidarr.audio/
+repo: https://github.com/Lidarr/Lidarr
+support: https://github.com/linuxserver/docker-lidarr

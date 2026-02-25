@@ -1,0 +1,15 @@
+version: '3.0'
+services:
+  mytb:
+    restart: always
+    image: 
+    ports:
+      - 
+      - 
+      - 
+      - 
+    environment:
+      TB_QUEUE_TYPE: in-memory
+    volumes:
+      - ~/.mytb-data:/data
+      - ~/.mytb-logs:/var/log/thingsboard

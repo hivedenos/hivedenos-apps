@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: pg-back-web
+category: database-backup-postgres-backup
+name: PG Back Web
+version: latest
+tagline: "\uD83D\uDC18 Effortless PostgreSQL backups with a user-friendly web interface!"
+description: "\uD83D\uDC18 Effortless PostgreSQL backups with a user-friendly web\
+  \ interface! \uD83C\uDF10\uD83D\uDCBE"
+developer: eduardolat
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/database-backup/postgres-backup/pg-back-web
+repo: https://github.com/eduardolat/pgbackweb
+support: https://github.com/eduardolat/pgbackweb#installation

@@ -1,0 +1,54 @@
+version: '3.9'
+ 
+name: flarum
+ 
+services:
+  db:
+    image: mariadb:10
+    container_name: flarum_db
+    command:
+      - 
+      - 
+      - 
+    volumes:
+      - 
+    environment:
+      - 
+      - 
+      - 
+      - 
+      - 
+    restart: always
+ 
+  msmtpd:
+    image: crazymax/msmtpd:latest
+    container_name: flarum_msmtpd
+    env_file:
+      - 
+    environment:
+      - 
+    restart: always
+ 
+  flarum:
+    image: crazymax/flarum:latest
+    container_name: flarum
+    ports:
+      - target: 8000
+        published: 8000
+        protocol: tcp
+    depends_on:
+      - db
+      - msmtpd
+    volumes:
+      - 
+    environment:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+    env_file:
+      - 
+    restart: always

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: librenms
+category: system-monitoring
+name: LibreNMS
+version: '10'
+tagline: Community-based GPL-licensed network monitoring system.
+description: Community-based GPL-licensed network monitoring system.
+developer: librenms
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.librenms.org/
+repo: https://github.com/librenms/docker
+support: https://docs.librenms.org/Installation/Docker/

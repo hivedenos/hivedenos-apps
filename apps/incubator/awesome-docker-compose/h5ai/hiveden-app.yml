@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: h5ai
+category: file-transfer-web-based-file-managers
+name: h5ai
+version: latest
+tagline: HTTP web server index for Apache httpd, lighttpd and nginx.
+description: HTTP web server index for Apache httpd, lighttpd and nginx.
+developer: lrsjng
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://larsjung.de/h5ai/
+repo: https://github.com/lrsjng/h5ai
+support: https://github.com/awesometic/docker-h5ai

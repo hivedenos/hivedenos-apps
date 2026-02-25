@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: zot-oci-registry
+category: object-storage-and-file-servers
+name: Zot OCI Registry
+version: latest
+tagline: A production-ready vendor-neutral OCI-native container image registry.
+description: A production-ready vendor-neutral OCI-native container image registry.
+developer: project-zot
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://zotregistry.dev/
+repo: https://github.com/project-zot/zot
+support: https://zotregistry.dev/v2.1.0/admin-guide/admin-getting-started/

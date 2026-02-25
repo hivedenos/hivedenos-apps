@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: portainer
+category: container-management
+name: Portainer
+version: latest
+tagline: Simple management UI for Docker.
+description: Simple management UI for Docker.
+developer: portainer
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.portainer.io/
+repo: https://github.com/portainer/portainer
+support: https://docs.portainer.io/start/install-ce/server/docker/linux

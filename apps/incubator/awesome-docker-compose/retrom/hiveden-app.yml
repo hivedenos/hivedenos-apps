@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: retrom
+category: games-emulation
+name: Retrom
+version: latest
+tagline: A centralized game library/collection management service with a focus on
+  emulation.
+description: A centralized game library/collection management service with a focus
+  on emulation.
+developer: jmberesford
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/games/emulation/retrom
+repo: https://github.com/jmberesford/retrom
+support: https://github.com/jmberesford/retrom#docker-recommended

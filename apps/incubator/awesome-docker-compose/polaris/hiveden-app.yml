@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: polaris
+category: music-server
+name: Polaris
+version: latest
+tagline: Music browsing and streaming application optimized for large music collections,
+  ease of use and high performance.
+description: Music browsing and streaming application optimized for large music collections,
+  ease of use and high performance.
+developer: agersant
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://demo.polaris.stream/
+repo: https://github.com/agersant/polaris
+support: https://github.com/ogarcia/docker-polaris

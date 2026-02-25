@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: exbin
+category: pastebins
+name: Exbin
+version: latest
+tagline: A pastebin with public/private snippets and netcat server.
+description: A pastebin with public/private snippets and netcat server.
+developer: m1dnight
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/pastebins/exbin
+repo: https://github.com/m1dnight/exbin
+support: https://github.com/m1dnight/exbin#installation

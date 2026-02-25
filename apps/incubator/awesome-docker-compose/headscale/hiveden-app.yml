@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: headscale
+category: vpn-mesh-networking
+name: Headscale
+version: 0.22.3
+tagline: Self-hostable fork of Tailscale, cross-platform clients, simple to use, built-in
+  (currently experimental) monitoring to...
+description: Self-hostable fork of Tailscale, cross-platform clients, simple to use,
+  built-in (currently experimental) monitoring tools.
+developer: juanfont
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://headscale.net/
+repo: https://github.com/juanfont/headscale
+support: https://headscale.net/running-headscale-container/

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: specifically-clementines
+category: inventory-management
+name: Specifically Clementines
+version: latest
+tagline: Grocery shopping app (previously Groceries), providing reliable sync with
+  multiple users/devices (web/Android/iOS), rec...
+description: Grocery shopping app (previously Groceries), providing reliable sync
+  with multiple users/devices (web/Android/iOS), recipes and integration with Tandoor.
+developer: davideshay
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://davideshay.github.io/groceries/
+repo: https://github.com/davideshay/groceries
+support: https://davideshay.github.io/groceries/installation/docker-setup/

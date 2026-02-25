@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: pigallery-2
+category: photo-server
+name: Pigallery 2
+version: latest
+tagline: A directory-first photo gallery website, with a rich UI, optimised for running
+  on low resource servers.
+description: A directory-first photo gallery website, with a rich UI, optimised for
+  running on low resource servers.
+developer: bpatrik
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://bpatrik.github.io/pigallery2/
+repo: https://github.com/bpatrik/pigallery2
+support: https://github.com/bpatrik/pigallery2/blob/master/docker/README.md

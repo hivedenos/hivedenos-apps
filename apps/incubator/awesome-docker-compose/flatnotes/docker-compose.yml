@@ -1,0 +1,20 @@
+version: 
+ 
+services:
+  flatnotes:
+    container_name: flatnotes
+    image: dullage/flatnotes:latest
+    environment:
+      PUID: 1000
+      PGID: 1000
+      FLATNOTES_AUTH_TYPE: 
+      FLATNOTES_USERNAME: 
+      FLATNOTES_PASSWORD: 
+      FLATNOTES_SECRET_KEY: 
+    volumes:
+      - 
+      # Optional. Allows you to save the search index in a different location: 
+
+    ports:
+      - 
+    restart: unless-stopped

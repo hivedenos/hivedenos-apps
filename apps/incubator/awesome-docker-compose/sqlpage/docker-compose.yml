@@ -1,0 +1,52 @@
+version: '3.9'
+ 
+# You can easily switch between different databases by changing the value of COMPOSE_PROFILES in the .env file.
+services:
+  web:
+    build: { context:  }
+    ports:
+      - 
+    volumes:
+      - .:/var/www
+    depends_on:
+      # mssql: { condition: service_healthy }
+      [  ]
+    environment:
+      DATABASE_URL: ${COMPOSE_PROFILES-postgres}://root:Password123!@${COMPOSE_PROFILES:-postgres}/sqlpage${DATABASE_URL_PARAMS:-}
+      RUST_LOG: sqlpage=trace
+  postgres:
+    profiles: []
+    ports: []
+    build: { context:  }
+    shm_size: 128mb
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_DB: sqlpage
+      POSTGRES_PASSWORD: Password123!
+    healthcheck:
+      test: pg_isready -U root -d sqlpage
+ 
+  mysql:
+    profiles: []
+    ports: []
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: Password123!
+      MYSQL_DATABASE: sqlpage
+  mssql:
+    profiles: []
+    ports: []
+    build: { context:  }
+    healthcheck:
+      test: 
+      interval: 10s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+  mariadb:
+    profiles: []
+    ports: []
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: Password123!
+      MYSQL_DATABASE: sqlpage

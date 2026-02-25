@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: litecart
+category: e-commerce
+name: Litecart
+version: latest
+tagline: Shopping cart in 1 file (with support for payment by card or cryptocurrency).
+description: Shopping cart in 1 file (with support for payment by card or cryptocurrency).
+developer: shurco
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/e-commerce/litecart
+repo: https://github.com/shurco/litecart
+support: https://github.com/shurco/litecart#run-using-docker

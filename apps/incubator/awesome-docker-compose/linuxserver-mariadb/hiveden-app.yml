@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: linuxserver-mariadb
+category: databases-mariadb
+name: "LinuxServer.io\xE2\x81\_ MariaDB Image"
+version: latest
+tagline: 'Configuration: See the Docker Hub page'
+description: 'Configuration: See the Docker Hub page'
+developer: linuxserver
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/databases/mariadb/linuxserver-mariadb
+repo: https://github.com/linuxserver/docker-mariadb
+support: https://github.com/linuxserver/docker-mariadb

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: openttd
+category: games
+name: Openttd
+version: latest
+tagline: Open source transport tycoon simulation game.
+description: Open source transport tycoon simulation game.
+developer: OpenTTD
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.openttd.org/
+repo: https://github.com/OpenTTD/OpenTTD
+support: https://github.com/OpenTTD/OpenTTD

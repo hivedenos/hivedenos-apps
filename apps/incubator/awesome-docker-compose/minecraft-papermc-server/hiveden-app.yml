@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: minecraft-papermc-server
+category: games
+name: Minecraft PaperMC Server
+version: latest
+tagline: Docker Minecraft PaperMC server for AMD64 and ARM64 platforms.
+description: Docker Minecraft PaperMC server for AMD64 and ARM64 platforms. Works
+  on Synology, Raspberry Pi or any other systems that support docker.
+developer: mtoensing
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/games/minecraft-papermc-server
+repo: https://github.com/mtoensing/Docker-Minecraft-PaperMC-Server
+support: https://github.com/mtoensing/Docker-Minecraft-PaperMC-Server#quick-start

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: devicehive
+category: internet-of-things-iot
+name: Devicehive
+version: '3.8'
+tagline: Open Source IoT Platform with a wide range of integration options.
+description: Open Source IoT Platform with a wide range of integration options.
+developer: devicehive
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.devicehive.com/
+repo: https://github.com/devicehive/devicehive-java-server
+support: https://github.com/devicehive/devicehive-docker/tree/master/rdbms-image

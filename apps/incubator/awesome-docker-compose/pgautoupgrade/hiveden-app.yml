@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: pgautoupgrade
+category: databases-postgresql
+name: pgautoupgrade
+version: latest
+tagline: A PostgreSQL Docker container that automatically upgrades your database.
+description: A PostgreSQL Docker container that automatically upgrades your database.
+developer: pgautoupgrade
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/databases/postgresql/pgautoupgrade
+repo: https://github.com/pgautoupgrade/docker-pgautoupgrade
+support: https://github.com/pgautoupgrade/docker-pgautoupgrade#how-to-use-this-image

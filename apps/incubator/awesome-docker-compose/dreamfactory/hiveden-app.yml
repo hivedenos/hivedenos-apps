@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: dreamfactory
+category: api-management
+name: Dreamfactory
+version: '5.7'
+tagline: Turns any SQL/NoSQL/Structured data into Restful API.
+description: Turns any SQL/NoSQL/Structured data into Restful API.
+developer: dreamfactorysoftware
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.dreamfactory.com/
+repo: https://github.com/dreamfactorysoftware/dreamfactory
+support: https://github.com/dreamfactorysoftware/df-docker

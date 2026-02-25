@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: karaoke-eternal
+category: media-server
+name: Karaoke Eternal
+version: latest
+tagline: "Host awesome karaoke parties where everyone can easily find and queue songs\
+  \ from their phone\xE2\x80\x99s browser."
+description: "Host awesome karaoke parties where everyone can easily find and queue\
+  \ songs from their phone\xE2\x80\x99s browser. The player is also fully browser-based\
+  \ with support for MP3+G, MP4 and WebGL visualizations."
+developer: bhj
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.karaoke-eternal.com/
+repo: https://github.com/bhj/KaraokeEternal
+support: https://www.karaoke-eternal.com/docs/karaoke-eternal-server/

@@ -1,0 +1,17 @@
+version: 
+ 
+services:
+  webarchive:
+    image: ghcr.io/derfenix/webarchive:latest
+#    build:
+#      dockerfile: ./Dockerfile
+#      context: .
+    environment:
+      LOGGING_DEBUG: 
+      API_ADDRESS: 
+      PDF_DPI: 
+      DB_PATH: 
+    volumes:
+      - ./db:/db
+    ports:
+      - 

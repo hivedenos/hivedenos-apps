@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  kyoo:
+    image: ghcr.io/zoriya/kyoo_transcoder:4.7
+    restart: unless-stopped

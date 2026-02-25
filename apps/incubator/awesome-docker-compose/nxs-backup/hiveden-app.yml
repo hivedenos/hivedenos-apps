@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: nxs-backup
+category: backup
+name: nxs-backup
+version: latest
+tagline: The tool for creating, delivering and rotating backups for GNU/Linux distributions.
+description: The tool for creating, delivering and rotating backups for GNU/Linux
+  distributions.
+developer: nixys
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://nxs-backup.io/
+repo: https://github.com/nixys/nxs-backup
+support: https://github.com/nixys/nxs-backup#docker-compose

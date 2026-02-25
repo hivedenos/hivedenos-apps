@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: bracket
+category: polls-and-events
+name: Bracket
+version: latest
+tagline: Flexible tournament system to build a tournament setup, add teams, schedule
+  matches, keep track of scores and present r...
+description: Flexible tournament system to build a tournament setup, add teams, schedule
+  matches, keep track of scores and present ranking live to the public.
+developer: evroon
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://docs.bracketapp.nl/
+repo: https://github.com/evroon/bracket
+support: https://docs.bracketapp.nl/docs/deployment/docker

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: squirrel-servers-manager
+category: system-monitoring
+name: Squirrel Servers Manager
+version: latest
+tagline: A user friendly, UI/UX focus server & configuration management tool.
+description: A user friendly, UI/UX focus server & configuration management tool.
+developer: SquirrelCorporation
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://squirrelserversmanager.io/
+repo: https://github.com/SquirrelCorporation/SquirrelServersManager
+support: https://github.com/SquirrelCorporation/SquirrelServersManager/blob/master/docker-compose.yml

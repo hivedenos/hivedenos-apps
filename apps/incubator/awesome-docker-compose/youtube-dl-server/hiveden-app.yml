@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: youtube-dl-server
+category: video-downloader
+name: youtube-dl-server
+version: latest
+tagline: Web and REST interface for downloading videos onto a server.
+description: Web and REST interface for downloading videos onto a server.
+developer: nbr23
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/video-downloader/youtube-dl-server
+repo: https://github.com/nbr23/youtube-dl-server
+support: https://github.com/nbr23/youtube-dl-server#running

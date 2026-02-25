@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: budge
+category: budgeting
+name: BudgE
+version: latest
+tagline: "BudgE is an open source \xE2\x80\x9Cbudgeting with envelopes\xE2\x80\x9D\
+  \ personal finance app."
+description: "BudgE is an open source \xE2\x80\x9Cbudgeting with envelopes\xE2\x80\
+  \x9D personal finance app."
+developer: linuxserver
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/budgeting/budge
+repo: https://github.com/linuxserver/budge
+support: https://github.com/linuxserver/docker-budge

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: gitea
+category: git-server
+name: Gitea
+version: 1.22.2-rootless
+tagline: Community managed, lightweight code hosting solution (fork of Gogs).
+description: Community managed, lightweight code hosting solution (fork of Gogs).
+developer: go-gitea
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://about.gitea.com/
+repo: https://github.com/go-gitea/gitea
+support: https://docs.gitea.com/installation/install-with-docker-rootless/

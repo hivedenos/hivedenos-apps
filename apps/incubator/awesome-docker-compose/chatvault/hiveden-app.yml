@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: chatvault
+category: backup
+name: Chatvault
+version: latest
+tagline: WhatsApp convo backups..
+description: WhatsApp convo backups.. Features directory import, auto email backup,
+  and a user-friendly frontend. View messages effortlessly.
+developer: vitormarcal
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/backup/chatvault
+repo: https://github.com/vitormarcal/chatvault
+support: https://github.com/vitormarcal/chatvault#docker

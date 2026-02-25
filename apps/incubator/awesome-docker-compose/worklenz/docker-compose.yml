@@ -1,0 +1,100 @@
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: worklenz-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_NAME:-worklenz_db}
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - worklenz-network
+ 
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: worklenz-redis
+    restart: unless-stopped
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD:-worklenz_redis_pass}
+    volumes:
+      - redis_data:/data
+    networks:
+      - worklenz-network
+ 
+  # MinIO Object Storage
+  minio:
+    image: minio/minio:latest
+    container_name: worklenz-minio
+    restart: unless-stopped
+    command: 
+    environment:
+      MINIO_ROOT_USER: ${AWS_ACCESS_KEY_ID:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${AWS_SECRET_ACCESS_KEY:-minioadmin}
+    volumes:
+      - minio_data:/data
+    networks:
+      - worklenz-network
+ 
+  # Backend API
+  backend:
+    image: chamikajaycey/worklenz-backend:latest
+    container_name: worklenz-backend
+    restart: unless-stopped
+    depends_on:
+      - postgres
+      - redis
+      - minio
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      SESSION_SECRET: ${SESSION_SECRET}
+      JWT_SECRET: ${JWT_SECRET}
+      DB_HOST: postgres
+      DB_NAME: ${DB_NAME:-worklenz_db}
+      DB_USER: ${DB_USER:-postgres}
+      DB_PASSWORD: ${DB_PASSWORD}
+      REDIS_HOST: redis
+      REDIS_PASSWORD: ${REDIS_PASSWORD:-worklenz_redis_pass}
+      S3_URL: http://minio:9000
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID:-minioadmin}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY:-minioadmin}
+      AWS_BUCKET: ${AWS_BUCKET:-worklenz-bucket}
+    networks:
+      - worklenz-network
+ 
+  # Frontend Application
+  frontend:
+    image: chamikajaycey/worklenz-frontend:latest
+    container_name: worklenz-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    environment:
+      VITE_API_URL: ${VITE_API_URL}
+    networks:
+      - worklenz-network
+ 
+  # Nginx Reverse Proxy
+  nginx:
+    image: nginx:alpine
+    container_name: worklenz-nginx
+    restart: unless-stopped
+    depends_on:
+      - frontend
+      - backend
+    ports:
+      - 
+    networks:
+      - worklenz-network
+ 
+networks:
+  worklenz-network:
+    driver: bridge
+ 
+volumes:
+  postgres_data:
+  redis_data:
+  minio_data:

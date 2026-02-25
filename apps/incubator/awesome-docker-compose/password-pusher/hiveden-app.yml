@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: password-pusher
+category: pastebins
+name: Password Pusher
+version: '15'
+tagline: A dead-simple application to securely communicate passwords (or text) over
+  the web.
+description: A dead-simple application to securely communicate passwords (or text)
+  over the web. Passwords automatically expire after a certain number of views and/or
+  time has passed.
+developer: pglombardo
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://pwpush.com/
+repo: https://github.com/pglombardo/PasswordPusher
+support: https://docs.pwpush.com/docs/installation/

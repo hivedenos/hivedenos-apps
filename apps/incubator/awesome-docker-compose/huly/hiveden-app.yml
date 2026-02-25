@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: huly
+category: project-management
+name: Huly
+version: ${HULY_VERSION}
+tagline: "Huly \xE2\x80\x94 All-in-One Project Management Platform (alternative to\
+  \ Linear, Jira, Slack, Notion, Motion)."
+description: "Huly \xE2\x80\x94 All-in-One Project Management Platform (alternative\
+  \ to Linear, Jira, Slack, Notion, Motion)."
+developer: hcengineering
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://huly.io/
+repo: https://github.com/hcengineering/platform
+support: https://github.com/hcengineering/huly-selfhost

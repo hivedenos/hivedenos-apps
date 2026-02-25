@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: xwiki
+category: wikis
+name: XWiki
+version: latest
+tagline: Second generation wiki that allows the user to extend its functionalities
+  with a powerful extension-based architecture.
+description: Second generation wiki that allows the user to extend its functionalities
+  with a powerful extension-based architecture.
+developer: xwiki
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.xwiki.org/
+repo: https://github.com/xwiki/xwiki-platform
+support: https://github.com/xwiki/xwiki-docker

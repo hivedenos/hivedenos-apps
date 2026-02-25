@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: icinga
+category: system-monitoring
+name: Icinga
+version: latest
+tagline: The core of our monitoring platform with a powerful configuration language
+  and REST API.
+description: The core of our monitoring platform with a powerful configuration language
+  and REST API.
+developer: Icinga
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://icinga.com/
+repo: https://github.com/Icinga/icinga2
+support: https://icinga.com/docs/icinga-db/latest/doc/03-Configuration/

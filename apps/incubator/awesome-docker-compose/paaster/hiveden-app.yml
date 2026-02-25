@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: paaster
+category: pastebins
+name: Paaster
+version: latest
+tagline: Paaster is a secure by default end-to-end encrypted pastebin built with the
+  objective of simplicity.
+description: Paaster is a secure by default end-to-end encrypted pastebin built with
+  the objective of simplicity.
+developer: WardPearce
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://paaster.io/
+repo: https://github.com/WardPearce/paaster
+support: https://github.com/WardPearce/paaster#setup

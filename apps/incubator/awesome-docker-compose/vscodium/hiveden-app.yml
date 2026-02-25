@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: vscodium
+category: ide-and-tools
+name: VSCodium
+version: latest
+tagline: Binary releases of VS Code without MS branding/telemetry/licensing.
+description: Binary releases of VS Code without MS branding/telemetry/licensing.
+developer: VSCodium
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://vscodium.com/
+repo: https://github.com/VSCodium/vscodium
+support: https://github.com/linuxserver/docker-vscodium

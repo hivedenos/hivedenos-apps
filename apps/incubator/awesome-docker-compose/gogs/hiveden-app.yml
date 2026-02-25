@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: gogs
+category: git-server
+name: Gogs
+version: latest
+tagline: Painless self-hosted Git Service written in Go.
+description: Painless self-hosted Git Service written in Go.
+developer: gogs
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://gogs.io/
+repo: https://github.com/gogs/gogs
+support: https://github.com/gogs/gogs/tree/main/docker

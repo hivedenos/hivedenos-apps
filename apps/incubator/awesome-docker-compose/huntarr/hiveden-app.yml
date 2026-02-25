@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: huntarr
+category: arr
+name: Huntarr
+version: latest
+tagline: Huntarr is an automatic missing content hunter for Sonarr, Radarr, Lidarr,
+  Readarr, and Whisparr.
+description: Huntarr is an automatic missing content hunter for Sonarr, Radarr, Lidarr,
+  Readarr, and Whisparr.
+developer: plexguide
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://huntarr.io/
+repo: https://github.com/plexguide/Huntarr.io
+support: https://plexguide.github.io/Huntarr.io/getting-started/installation.html

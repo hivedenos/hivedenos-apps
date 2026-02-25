@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  dpaste:
+    container_name: dpaste
+    image: darrenofficial/dpaste:latest
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: sqlite:////db/dpaste.sqlite
+      PORT: 8000
+    volumes:
+      - ./db:/db
+    ports:
+      - 8001:8000

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: nginx
+category: web-servers
+name: Nginx
+version: latest
+tagline: HTTP and reverse proxy server, mail proxy server, and generic TCP/UDP proxy
+  server.
+description: HTTP and reverse proxy server, mail proxy server, and generic TCP/UDP
+  proxy server.
+developer: nginx
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://nginx.org/
+repo: https://github.com/nginx/nginx
+support: https://github.com/nginxinc/docker-nginx

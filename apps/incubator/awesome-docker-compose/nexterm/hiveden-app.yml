@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: nexterm
+category: remote-access
+name: Nexterm
+version: 1.0.2-OPEN-PREVIEW
+tagline: The open source server management software for SSH, VNC & RDP.
+description: The open source server management software for SSH, VNC & RDP.
+developer: gnmyt
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://docs.nexterm.dev/
+repo: https://github.com/gnmyt/Nexterm
+support: https://docs.nexterm.dev/preview

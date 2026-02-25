@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: rclone
+category: backup
+name: Rclone
+version: latest
+tagline: "Rclone (\xE2\x80\x9Crsync for cloud storage\xE2\x80\x9D) is a command-line\
+  \ program to sync files and directories to and from different cl..."
+description: "Rclone (\xE2\x80\x9Crsync for cloud storage\xE2\x80\x9D) is a command-line\
+  \ program to sync files and directories to and from different cloud storage providers."
+developer: rclone
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://rclone.org/
+repo: https://github.com/rclone/rclone
+support: https://rclone.org/install/#docker

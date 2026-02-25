@@ -1,0 +1,22 @@
+version: '3.4'
+ 
+services:
+  just-short-it:
+    container_name: JustShortIt
+    image: miawinter/just-short-it:latest
+    ports:
+      - 
+    environment:
+      - 
+      - 
+      - 
+      - 
+    depends_on:
+      - redis
+  redis:
+    container_name: Redis
+    image: redis:alpine
+    environment:
+      - 
+    volumes:
+      - ./redis:/data

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: meilisearch
+category: search-engine-solution
+name: MeiliSearch
+version: v1.10
+tagline: Ultra relevant, instant and typo-tolerant full-text search API.
+description: Ultra relevant, instant and typo-tolerant full-text search API.
+developer: meilisearch
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.meilisearch.com/
+repo: https://github.com/meilisearch/meilisearch
+support: https://www.meilisearch.com/docs/guides/misc/docker

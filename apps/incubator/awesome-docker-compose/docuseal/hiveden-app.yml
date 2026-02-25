@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: docuseal
+category: document-management
+name: DocuSeal
+version: latest
+tagline: Create, fill, and sign digital documents (alternative to DocuSign).
+description: Create, fill, and sign digital documents (alternative to DocuSign).
+developer: docusealco
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.docuseal.co/
+repo: https://github.com/docusealco/docuseal
+support: https://github.com/docusealco/docuseal#deploy

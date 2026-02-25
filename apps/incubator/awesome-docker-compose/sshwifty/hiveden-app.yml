@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: sshwifty
+category: remote-access
+name: Sshwifty
+version: latest
+tagline: Sshwifty is a SSH and Telnet connector made for the Web.
+description: Sshwifty is a SSH and Telnet connector made for the Web.
+developer: nirui
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://sshwifty-demo.nirui.org/
+repo: https://github.com/nirui/sshwifty
+support: https://github.com/nirui/sshwifty#docker-image-recommended

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: yt-dlp-web-ui
+category: video-downloader
+name: yt-dlp-web-ui
+version: latest
+tagline: Web GUI for yt-dlp.
+description: Web GUI for yt-dlp.
+developer: marcopeocchi
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/video-downloader/yt-dlp-web-ui
+repo: https://github.com/marcopeocchi/yt-dlp-web-ui
+support: https://github.com/marcopeocchi/yt-dlp-web-ui#docker-run

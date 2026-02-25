@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: satisfactory-server
+category: games
+name: Satisfactory Server
+version: latest
+tagline: A Dockerized version of the Satisfactory dedicated server.
+description: A Dockerized version of the Satisfactory dedicated server.
+developer: wolveix
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/games/satisfactory-server
+repo: https://github.com/wolveix/satisfactory-server
+support: https://github.com/wolveix/satisfactory-server#setup

@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: posteio
+category: email-servers
+name: Poste.io
+version: latest
+tagline: Free version of full mail server solution.
+description: Free version of full mail server solution. POP3, SMTP, IMAP, Spamassassin,
+  WebMail, WebAdmin.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://poste.io/
+repo: https://poste.io/doc/
+support: https://poste.io/doc/

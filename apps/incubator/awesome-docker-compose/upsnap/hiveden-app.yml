@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: upsnap
+category: automation
+name: UpSnap
+version: '4'
+tagline: A simple wake on lan web app written with SvelteKit, Go and PocketBase.
+description: A simple wake on lan web app written with SvelteKit, Go and PocketBase.
+developer: seriousm4x
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/automation/upsnap
+repo: https://github.com/seriousm4x/UpSnap
+support: https://github.com/seriousm4x/UpSnap#-run-in-docker

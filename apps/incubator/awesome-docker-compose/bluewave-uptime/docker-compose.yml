@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  bluewave-uptime:
+    image: bluewaveuptime/uptime_client:latest
+    restart: unless-stopped

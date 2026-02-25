@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: mcdash
+category: games
+name: MCDash
+version: latest
+tagline: MCDash is a simple dashboard for your Minecraft server.
+description: MCDash is a simple dashboard for your Minecraft server. It contains a
+  http server that allows the dashboard to manage the server.
+developer: gnmyt
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://mcdash.gnmyt.dev/
+repo: https://github.com/gnmyt/MCDash
+support: https://mcdash.gnmyt.dev/docs/wrapper/docker

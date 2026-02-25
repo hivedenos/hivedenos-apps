@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: lazytainer
+category: container-management
+name: Lazytainer
+version: master
+tagline: Docker container lazy loading.
+description: Docker container lazy loading.
+developer: vmorganp
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/container-management/lazytainer
+repo: https://github.com/vmorganp/Lazytainer
+support: https://github.com/vmorganp/Lazytainer/blob/master/docker-compose.yaml

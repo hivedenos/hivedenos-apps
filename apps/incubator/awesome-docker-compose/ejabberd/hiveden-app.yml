@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: ejabberd
+category: xmpp
+name: ejabberd
+version: latest
+tagline: XMPP instant messaging server.
+description: XMPP instant messaging server.
+developer: processone
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.ejabberd.im/
+repo: https://github.com/processone/ejabberd
+support: https://docs.ejabberd.im/admin/install/container/

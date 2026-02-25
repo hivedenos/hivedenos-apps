@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: organizr
+category: personal-dashboards
+name: Organizr
+version: latest
+tagline: Organizr aims to be your one stop shop for your Servers Frontend.
+description: Organizr aims to be your one stop shop for your Servers Frontend.
+developer: causefx
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/personal-dashboards/organizr
+repo: https://github.com/causefx/Organizr
+support: https://github.com/causefx/Organizr

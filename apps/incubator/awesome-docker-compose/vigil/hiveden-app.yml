@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: vigil
+category: network-monitoring
+name: Vigil
+version: v1.26.3
+tagline: Microservices Status Page.
+description: Microservices Status Page. Monitors a distributed infrastructure and
+  sends alerts (Slack, SMS, etc.).
+developer: valeriansaliou
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/network-monitoring/vigil
+repo: https://github.com/valeriansaliou/vigil
+support: https://github.com/valeriansaliou/vigil#installation

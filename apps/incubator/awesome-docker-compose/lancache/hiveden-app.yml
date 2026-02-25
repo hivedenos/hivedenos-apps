@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: lancache
+category: games
+name: Lancache
+version: latest
+tagline: LAN Party game caching made easy.
+description: LAN Party game caching made easy.
+developer: lancachenet
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://lancache.net/
+repo: https://github.com/lancachenet/monolithic
+support: https://github.com/lancachenet/docker-compose

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: cops
+category: e-books
+name: Cops
+version: latest
+tagline: "Cops\xE2\x81\_ by S\xE9bastien Lucas, now maintained by MikesPub, stands\
+  \ for Calibre OPDS (and HTML) Php Server."
+description: "Cops\xE2\x81\_ by S\xE9bastien Lucas, now maintained by MikesPub, stands\
+  \ for Calibre OPDS (and HTML) Php Server."
+developer: mikespub-org
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://blog.slucas.fr/projects/calibre-opds-php-server/
+repo: https://github.com/mikespub-org/seblucas-cops
+support: https://github.com/linuxserver/docker-cops

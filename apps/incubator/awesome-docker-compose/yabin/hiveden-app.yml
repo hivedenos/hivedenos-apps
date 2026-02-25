@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: yabin
+category: pastebins
+name: YABin
+version: latest
+tagline: A pastebin that contains plentiful features while remaining simple.
+description: A pastebin that contains plentiful features while remaining simple. Supports
+  optional E2E encryption, a client-side CLI app, syntax highlighting, minimalistic
+  UI, APIs, keyboard shortcuts, and more. It can even be run in serverless environments.
+developer: Yureien
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://bin.sohamsen.me/
+repo: https://github.com/Yureien/YABin
+support: https://github.com/Yureien/YABin#how-to-host

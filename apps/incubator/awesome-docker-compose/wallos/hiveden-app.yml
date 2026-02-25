@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: wallos
+category: budgeting
+name: Wallos
+version: latest
+tagline: 'Wallos: Open-Source Personal Subscription Tracker.'
+description: 'Wallos: Open-Source Personal Subscription Tracker.'
+developer: ellite
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/budgeting/wallos
+repo: https://github.com/ellite/Wallos
+support: https://github.com/ellite/Wallos#docker-1

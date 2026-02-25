@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: spacebin
+category: pastebins
+name: Spacebin
+version: latest
+tagline: Modern Pastebin server written in Go with a JS-free web UI and tons of features.
+description: Modern Pastebin server written in Go with a JS-free web UI and tons of
+  features.
+developer: lukewhrit
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://spaceb.in/
+repo: https://github.com/lukewhrit/spacebin
+support: https://github.com/lukewhrit/spacebin#documentation

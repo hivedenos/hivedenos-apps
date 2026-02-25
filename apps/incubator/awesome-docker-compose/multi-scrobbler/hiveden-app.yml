@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: multi-scrobbler
+category: music-server
+name: Multi Scrobbler
+version: latest
+tagline: Scrobble plays from multiple sources to multiple scrobbling services.
+description: Scrobble plays from multiple sources to multiple scrobbling services.
+developer: FoxxMD
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://foxxmd.github.io/multi-scrobbler/
+repo: https://github.com/FoxxMD/multi-scrobbler
+support: https://foxxmd.github.io/multi-scrobbler/docs/installation/#docker

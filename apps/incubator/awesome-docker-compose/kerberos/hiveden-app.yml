@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: kerberos
+category: video-surveillance
+name: Kerberos.io
+version: latest
+tagline: Kerberos.io is a video surveillance solution, which works with any camera
+  and on every Linux based machine (Raspberry P...
+description: Kerberos.io is a video surveillance solution, which works with any camera
+  and on every Linux based machine (Raspberry Pi, Docker, Kubernetes cluster).
+developer: kerberos-io
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://kerberos.io/
+repo: https://github.com/kerberos-io/agent
+support: https://github.com/kerberos-io/agent/tree/master/deployments/docker

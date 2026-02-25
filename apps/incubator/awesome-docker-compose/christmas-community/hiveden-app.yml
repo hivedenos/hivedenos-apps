@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: christmas-community
+category: polls-and-events
+name: Christmas Community
+version: latest
+tagline: Create a simple place for your entire family to use to find gifts that people
+  want, and to avoid double-gifting.
+description: Create a simple place for your entire family to use to find gifts that
+  people want, and to avoid double-gifting.
+developer: Wingysam
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/polls-and-events/christmas-community
+repo: https://github.com/Wingysam/Christmas-Community
+support: https://github.com/Wingysam/Christmas-Community#docker-compose

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: cypht
+category: email-webmail-clients
+name: Cypht
+version: '10'
+tagline: Feed reader for your email accounts.
+description: Feed reader for your email accounts.
+developer: cypht-org
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.cypht.org/
+repo: https://github.com/cypht-org/cypht
+support: https://github.com/cypht-org/cypht/blob/master/docker/DOCKERHUB-README.md

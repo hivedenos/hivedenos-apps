@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: homegallery
+category: photo-server
+name: HomeGallery
+version: latest
+tagline: Self-hosted open-source web gallery to browse personal photos and videos
+  featuring tagging, mobile-friendly, and AI pow...
+description: Self-hosted open-source web gallery to browse personal photos and videos
+  featuring tagging, mobile-friendly, and AI powered image discovery.
+developer: xemle
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://home-gallery.org/
+repo: https://github.com/xemle/home-gallery
+support: https://docs.home-gallery.org/install/index.html

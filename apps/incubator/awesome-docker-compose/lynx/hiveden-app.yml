@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: lynx
+category: url-shorteners
+name: Lynx
+version: '1'
+tagline: URL shortener with many functions such as multiple accounts, ShareX support
+  and an attractive but simple interface.
+description: URL shortener with many functions such as multiple accounts, ShareX support
+  and an attractive but simple interface.
+developer: Lynx-Shortener
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://getlynx.dev/
+repo: https://github.com/Lynx-Shortener/Lynx
+support: https://docs.getlynx.dev/installation/installation/docker

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: the-lounge
+category: irc
+name: The Lounge
+version: latest
+tagline: Self-hosted web IRC client.
+description: Self-hosted web IRC client.
+developer: thelounge
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://thelounge.chat/
+repo: https://github.com/thelounge/thelounge
+support: https://thelounge.chat/docs/install-and-upgrade#docker

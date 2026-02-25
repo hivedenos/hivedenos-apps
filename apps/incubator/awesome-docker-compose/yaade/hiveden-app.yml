@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: yaade
+category: api-management
+name: Yaade
+version: latest
+tagline: Yaade is an open-source, self-hosted, collaborative API development environment.
+description: Yaade is an open-source, self-hosted, collaborative API development environment.
+developer: EsperoTech
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://docs.yaade.io/
+repo: https://github.com/EsperoTech/yaade
+support: https://github.com/EsperoTech/yaade#-install

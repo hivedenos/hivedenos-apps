@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: homer
+category: personal-dashboards
+name: Homer
+version: latest
+tagline: A dead simple static homepage to expose your server services, with an easy
+  yaml configuration and connectivity check.
+description: A dead simple static homepage to expose your server services, with an
+  easy yaml configuration and connectivity check.
+developer: bastienwirtz
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://homer-demo.netlify.app/
+repo: https://github.com/bastienwirtz/homer
+support: https://github.com/bastienwirtz/homer#getting-started

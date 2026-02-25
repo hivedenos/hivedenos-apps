@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: official-postgresql
+category: databases-postgresql
+name: Official PostgreSQL Image
+version: latest
+tagline: 'Configuration: See the Docker Hub page'
+description: 'Configuration: See the Docker Hub page'
+developer: docker-library
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/databases/postgresql/official-postgresql
+repo: https://github.com/docker-library/postgres
+support: https://github.com/docker-library/postgres

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: adguardian
+category: dns
+name: AdGuardian
+version: latest
+tagline: "\uD83D\uDEE1\xEF\xB8\x8F Terminal-based, real-time traffic monitoring and\
+  \ statistics for your AdGuard Home instance."
+description: "\uD83D\uDEE1\xEF\xB8\x8F Terminal-based, real-time traffic monitoring\
+  \ and statistics for your AdGuard Home instance."
+developer: lissy93
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://adguardian.as93.net/
+repo: https://github.com/lissy93/AdGuardian-Term
+support: https://github.com/lissy93/AdGuardian-Term#docker

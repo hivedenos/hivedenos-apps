@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: alerta
+category: system-monitoring
+name: Alerta
+version: latest
+tagline: Alerta monitoring system.
+description: Alerta monitoring system.
+developer: alerta
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://alerta.io/
+repo: https://github.com/alerta/alerta
+support: https://github.com/alerta/docker-alerta

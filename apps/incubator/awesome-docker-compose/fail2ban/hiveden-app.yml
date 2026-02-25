@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: fail2ban
+category: firewall
+name: fail2ban
+version: latest
+tagline: Daemon to ban hosts that cause multiple authentication errors.
+description: Daemon to ban hosts that cause multiple authentication errors.
+developer: fail2ban
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.fail2ban.org/
+repo: https://github.com/fail2ban/fail2ban
+support: https://github.com/fail2ban/fail2ban

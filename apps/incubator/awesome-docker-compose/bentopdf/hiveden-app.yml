@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: bentopdf
+category: office-suites
+name: BentoPDF
+version: latest
+tagline: BentoPDF is a privacy-first, open-source PDF toolkit that allows you to perform
+  various PDF operations locally in your...
+description: BentoPDF is a privacy-first, open-source PDF toolkit that allows you
+  to perform various PDF operations locally in your browser or self-hosted environment.
+developer: alam00000
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://bentopdf.com/
+repo: https://github.com/alam00000/bentopdf
+support: https://bentopdf.com/docs/self-hosting/docker

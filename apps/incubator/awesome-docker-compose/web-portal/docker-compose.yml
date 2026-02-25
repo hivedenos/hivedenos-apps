@@ -1,0 +1,20 @@
+version: 
+ 
+services:
+  web-portal:
+    container_name: web-portal
+    image: ghcr.io/enchant97/web-portal:2
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+      # Uncomment if you want custom plugins
+      # - ./plugins:/app/plugins
+    ports:
+      # Change only left side
+      - 8000:8000
+    environment:
+      # This config is built into the Docker image
+
+      - 
+      # This must be secure
+      - 

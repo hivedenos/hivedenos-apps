@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: morphic
+category: ai-search-engine
+name: Morphic
+version: alpine
+tagline: An AI-powered search engine with a generative UI.
+description: An AI-powered search engine with a generative UI.
+developer: miurla
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.morphic.sh/
+repo: https://github.com/miurla/morphic
+support: https://github.com/miurla/morphic#-quickstart

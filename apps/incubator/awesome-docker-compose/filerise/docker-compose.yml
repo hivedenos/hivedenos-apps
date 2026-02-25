@@ -1,0 +1,18 @@
+services:
+  filerise:
+    image: error311/filerise-docker:latest
+    container_name: filerise
+    ports:
+      - 
+    environment:
+      TIMEZONE: 
+      TOTAL_UPLOAD_SIZE: 
+      SECURE: 
+      PERSISTENT_TOKENS_KEY: 
+      SCAN_ON_START: 
+      CHOWN_ON_START: 
+    volumes:
+      - ./uploads:/var/www/uploads
+      - ./users:/var/www/users
+      - ./metadata:/var/www/metadata
+    restart: unless-stopped

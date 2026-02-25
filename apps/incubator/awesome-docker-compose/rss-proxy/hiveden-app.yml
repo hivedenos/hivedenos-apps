@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: rss-proxy
+category: rss
+name: RSS-proxy
+version: puppeteer-0.1
+tagline: RSS-proxy allows you to do create an RSS or ATOM feed of almost any website,
+  just by analyzing just the static HTML str...
+description: RSS-proxy allows you to do create an RSS or ATOM feed of almost any website,
+  just by analyzing just the static HTML structure.
+developer: damoeb
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://rssproxy.migor.org/
+repo: https://github.com/damoeb/rss-proxy
+support: https://github.com/damoeb/rss-proxy#quickstart-using-docker

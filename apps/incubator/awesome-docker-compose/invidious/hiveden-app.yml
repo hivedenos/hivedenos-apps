@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: invidious
+category: video-streaming
+name: Invidious
+version: latest
+tagline: Alternative YouTube front-end.
+description: Alternative YouTube front-end.
+developer: iv-org
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://invidious.io/
+repo: https://github.com/iv-org/invidious
+support: https://docs.invidious.io/installation/

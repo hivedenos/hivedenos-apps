@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: yopass
+category: pastebins
+name: Yopass
+version: latest
+tagline: Secure sharing of secrets, passwords and files.
+description: Secure sharing of secrets, passwords and files.
+developer: jhaals
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://yopass.se/
+repo: https://github.com/jhaals/yopass
+support: https://github.com/jhaals/yopass#installation--configuration

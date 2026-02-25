@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: zipline
+category: file-transfer-single-click-drag-n-drop-upload
+name: Zipline
+version: '15'
+tagline: A lightweight, fast and reliable file sharing server that is commonly used
+  with ShareX, offering a react-based Web UI a...
+description: A lightweight, fast and reliable file sharing server that is commonly
+  used with ShareX, offering a react-based Web UI and fast API.
+developer: diced
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://zipline.diced.sh/
+repo: https://github.com/diced/zipline
+support: https://github.com/diced/zipline#usage

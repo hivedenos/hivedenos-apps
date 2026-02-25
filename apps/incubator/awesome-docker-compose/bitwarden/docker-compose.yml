@@ -1,0 +1,25 @@
+version: 
+ 
+services:
+  bitwarden:
+    depends_on:
+      - db
+    env_file:
+      - settings.env
+    image: bitwarden/self-host:beta
+    restart: always
+    ports:
+      - 
+    volumes:
+      - ./bitwarden:/etc/bitwarden
+ 
+  db:
+    environment:
+      MARIADB_USER: 
+      MARIADB_PASSWORD: 
+      MARIADB_DATABASE: 
+      MARIADB_RANDOM_ROOT_PASSWORD: 
+    image: mariadb:10
+    restart: always
+    volumes:
+      - ./data:/var/lib/mysql

@@ -1,0 +1,46 @@
+version: 
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: svix/svix-server
+    environment:
+      WAIT_FOR:   # We want to wait for the default services
+      SVIX_REDIS_DSN: 
+      SVIX_DB_DSN: 
+
+    ports:
+      - 
+    depends_on:
+    - pgbouncer
+    - redis
+ 
+  postgres:
+    image: 
+    volumes:
+      - 
+    environment:
+      POSTGRES_PASSWORD: postgres
+ 
+  pgbouncer:
+    image: 
+    healthcheck:
+      test: 
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    environment:
+      DB_HOST: 
+      DB_USER: 
+      DB_PASSWORD: 
+      MAX_CLIENT_CONN: 500
+    depends_on:
+    - postgres
+ 
+  redis:
+    image: 
+    # Enable persistence
+    command: 
+    volumes:
+      - 

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: livestreamdvr
+category: archiving
+name: LiveStreamDVR
+version: master
+tagline: An automatic Twitch recorder capable of capturing live streams, chat messages
+  and stream metadata.
+description: An automatic Twitch recorder capable of capturing live streams, chat
+  messages and stream metadata.
+developer: MrBrax
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/archiving/livestreamdvr
+repo: https://github.com/MrBrax/LiveStreamDVR
+support: https://github.com/MrBrax/LiveStreamDVR#docker-setup

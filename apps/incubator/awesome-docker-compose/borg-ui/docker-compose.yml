@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  borg-ui:
+    image: ainullcode/borg-ui:latest
+    container_name: borg-web-ui
+    restart: unless-stopped
+    ports:
+      - 
+    volumes:
+      - borg_data:/data
+      - borg_cache:/home/borg/.cache/borg
+      # Mount directories you want to backup
+      - /path/to/backup:/local:rw
+    environment:
+      - TZ=America/Chicago
+      - PUID=1000
+      - PGID=1000
+ 
+volumes:
+  borg_data:
+  borg_cache:

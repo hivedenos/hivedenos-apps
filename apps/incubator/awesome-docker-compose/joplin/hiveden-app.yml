@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: joplin
+category: note-taking-and-editors
+name: Joplin
+version: latest
+tagline: Joplin is a note taking application with Markdown editor and encryption support
+  for mobile and desktop platforms.
+description: Joplin is a note taking application with Markdown editor and encryption
+  support for mobile and desktop platforms. Runs client-side and syncs through self
+  hosted Nextcloud or similar (alternative to Evernote).
+developer: laurent22
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://joplinapp.org/
+repo: https://github.com/laurent22/joplin
+support: https://github.com/laurent22/joplin

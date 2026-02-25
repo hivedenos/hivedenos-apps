@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  eda:
+    image: jortilles/eda:latest
+    restart: unless-stopped

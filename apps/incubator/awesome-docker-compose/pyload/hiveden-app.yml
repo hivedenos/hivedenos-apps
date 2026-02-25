@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: pyload
+category: file-downloader
+name: Pyload
+version: latest
+tagline: The free and open-source Download Manager written in pure Python.
+description: The free and open-source Download Manager written in pure Python.
+developer: pyload
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://pyload.net/
+repo: https://github.com/pyload/pyload
+support: https://github.com/linuxserver/docker-pyload-ng

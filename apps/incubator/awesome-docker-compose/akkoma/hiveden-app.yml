@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: akkoma
+category: social-networks-and-forums
+name: Akkoma
+version: latest
+tagline: Federated microblogging server with Mastodon, GNU social, and ActivityPub
+  compatibility.
+description: Federated microblogging server with Mastodon, GNU social, and ActivityPub
+  compatibility.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://akkoma.social/
+repo: https://docs.akkoma.dev/stable/installation/docker_en/
+support: https://docs.akkoma.dev/stable/installation/docker_en/

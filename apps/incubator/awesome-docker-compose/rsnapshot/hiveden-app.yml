@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: rsnapshot
+category: backup
+name: rsnapshot
+version: latest
+tagline: A tool for backing up your data using rsync.
+description: A tool for backing up your data using rsync.
+developer: rsnapshot
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://rsnapshot.org/
+repo: https://github.com/rsnapshot/rsnapshot
+support: https://github.com/linuxserver/docker-rsnapshot

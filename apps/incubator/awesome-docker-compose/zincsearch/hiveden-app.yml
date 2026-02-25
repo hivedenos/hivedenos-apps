@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: zincsearch
+category: search-engine-solution
+name: ZincSearch
+version: latest
+tagline: Search engine that requires minimal resources (alternative to Elasticsearch).
+description: Search engine that requires minimal resources (alternative to Elasticsearch).
+developer: zincsearch
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://zincsearch-docs.zinc.dev/
+repo: https://github.com/zincsearch/zincsearch
+support: https://zincsearch-docs.zinc.dev/installation/

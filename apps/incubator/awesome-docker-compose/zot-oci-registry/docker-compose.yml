@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  zot-oci-registry:
+    image: ghcr.io/project-zot/zot-linux-amd64:latest
+    restart: unless-stopped

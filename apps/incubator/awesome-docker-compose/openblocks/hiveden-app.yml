@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: openblocks
+category: low-code
+name: Openblocks
+version: latest
+tagline: "\uD83D\uDD25 \uD83D\uDD25 \uD83D\uDD25 The Open Source Retool Alternative."
+description: "\uD83D\uDD25 \uD83D\uDD25 \uD83D\uDD25 The Open Source Retool Alternative."
+developer: openblocks-dev
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://openblocks.dev/
+repo: https://github.com/openblocks-dev/openblocks
+support: https://github.com/openblocks-dev/openblocks/tree/develop/deploy/docker

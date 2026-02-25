@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: firefly-pico
+category: budgeting
+name: Firefly-Pico
+version: latest
+tagline: Firefly-Pico is a Firefly III companion web app, which is optimised for mobile
+  and focuses on making expense tracking f...
+description: Firefly-Pico is a Firefly III companion web app, which is optimised for
+  mobile and focuses on making expense tracking fast.
+developer: cioraneanu
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/budgeting/firefly-pico
+repo: https://github.com/cioraneanu/firefly-pico
+support: https://github.com/cioraneanu/firefly-pico/blob/main/docs/installation.md

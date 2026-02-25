@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: chibisafe
+category: file-transfer-single-click-drag-n-drop-upload
+name: Chibisafe
+version: latest
+tagline: File uploader service that aims to to be easy to use and set up.
+description: File uploader service that aims to to be easy to use and set up. It accepts
+  files, photos, documents, anything you imagine and gives you back a shareable link
+  for you to send to others.
+developer: chibisafe
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://chibisafe.app/
+repo: https://github.com/chibisafe/chibisafe
+support: https://chibisafe.app/guides/running-with-docker

@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: adguardhome-sync
+category: dns
+name: AdGuardHome Sync
+version: latest
+tagline: Adguardhome-sync is a tool to synchronize AdGuardHome config to replica instances.
+description: Adguardhome-sync is a tool to synchronize AdGuardHome config to replica
+  instances.
+developer: bakito
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/dns/adguardhome-sync
+repo: https://github.com/bakito/adguardhome-sync
+support: https://github.com/linuxserver/docker-adguardhome-sync

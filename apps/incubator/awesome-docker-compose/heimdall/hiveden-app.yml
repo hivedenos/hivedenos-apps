@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: heimdall
+category: personal-dashboards
+name: Heimdall
+version: latest
+tagline: Heimdall is an elegant solution to organise all your web applications.
+description: Heimdall is an elegant solution to organise all your web applications.
+developer: linuxserver
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/personal-dashboards/heimdall
+repo: https://github.com/linuxserver/Heimdall
+support: https://github.com/linuxserver/Heimdall

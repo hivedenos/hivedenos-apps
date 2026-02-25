@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: maloja
+category: music-server
+name: Maloja
+version: latest
+tagline: Self-hosted music scrobble database (alternative to Last.fm).
+description: Self-hosted music scrobble database (alternative to Last.fm).
+developer: krateng
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://maloja.krateng.ch/
+repo: https://github.com/krateng/maloja
+support: https://github.com/krateng/maloja#how-to-install

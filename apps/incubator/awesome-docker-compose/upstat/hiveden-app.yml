@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: upstat
+category: network-monitoring
+name: Upstat
+version: v1.26.3
+tagline: "\uD83D\uDFE2 a simple open-source, self-hosted status monitoring tool."
+description: "\uD83D\uDFE2 a simple open-source, self-hosted status monitoring tool."
+developer: chamanbravo
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://upstat.vercel.app/
+repo: https://github.com/chamanbravo/upstat
+support: https://github.com/chamanbravo/upstat#-how-to-install

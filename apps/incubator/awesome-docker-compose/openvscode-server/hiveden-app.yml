@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: openvscode-server
+category: ide-and-tools
+name: OpenVSCode Server
+version: latest
+tagline: OpenVSCode Server runs on a remote machine and allows access through a modern
+  web browser.
+description: OpenVSCode Server runs on a remote machine and allows access through
+  a modern web browser.
+developer: gitpod-io
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.gitpod.io/
+repo: https://github.com/gitpod-io/openvscode-server
+support: https://github.com/gitpod-io/openvscode-server#docker

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: ulogger
+category: maps-and-gps
+name: "\xCE\xBClogger"
+version: latest
+tagline: Collect geolocation from users in real-time and display their GPS tracks
+  on a website.
+description: Collect geolocation from users in real-time and display their GPS tracks
+  on a website.
+developer: bfabiszewski
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/maps-and-gps/ulogger
+repo: https://github.com/bfabiszewski/ulogger-server
+support: https://github.com/bfabiszewski/ulogger-server#docker

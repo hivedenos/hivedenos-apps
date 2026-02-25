@@ -1,0 +1,8 @@
+version: 
+services:
+  agent:
+    container_name: mycamera
+    image: kerberos/agent:latest
+    ports:
+      - 80:80
+    restart: always

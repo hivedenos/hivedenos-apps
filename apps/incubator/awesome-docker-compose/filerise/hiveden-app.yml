@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: filerise
+category: file-transfer-web-based-file-managers
+name: FileRise
+version: latest
+tagline: FileRise is a lightweight, self-hosted file manager with granular ACLs, shared
+  uploads, encrypted folders, WebDAV & SSO.
+description: FileRise is a lightweight, self-hosted file manager with granular ACLs,
+  shared uploads, encrypted folders, WebDAV & SSO.
+developer: error311
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://filerise.net/
+repo: https://github.com/error311/FileRise
+support: https://github.com/error311/FileRise/wiki

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: algernon
+category: web-servers
+name: Algernon
+version: latest
+tagline: Small self-contained pure-Go web server with Lua, Markdown, HTTP/2, QUIC,
+  Redis and PostgreSQL support.
+description: Small self-contained pure-Go web server with Lua, Markdown, HTTP/2, QUIC,
+  Redis and PostgreSQL support.
+developer: xyproto
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://algernon.roboticoverlords.org/
+repo: https://github.com/xyproto/algernon
+support: https://github.com/xyproto/algernon#docker

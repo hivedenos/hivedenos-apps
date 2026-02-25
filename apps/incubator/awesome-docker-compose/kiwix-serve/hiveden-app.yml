@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: kiwix-serve
+category: note-taking-and-editors
+name: Kiwix Serve
+version: 3.1.2
+tagline: HTTP daemon for serving wikis from ZIM files.
+description: HTTP daemon for serving wikis from ZIM files.
+developer: kiwix
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://kiwix.org/en/applications/
+repo: https://github.com/kiwix/kiwix-tools
+support: https://github.com/kiwix/kiwix-tools/tree/main/docker

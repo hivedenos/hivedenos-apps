@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: teedy
+category: document-management
+name: Teedy
+version: v1.10
+tagline: Lightweight document management system packed with all the features you can
+  expect from big expensive solutions (Ex Sis...
+description: Lightweight document management system packed with all the features you
+  can expect from big expensive solutions (Ex SismicsDocs).
+developer: sismics
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://teedy.io/
+repo: https://github.com/sismics/docs
+support: https://github.com/sismics/docs#install-with-docker

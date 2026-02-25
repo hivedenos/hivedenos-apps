@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: utask
+category: automation
+name: "\xB5Task"
+version: 14-alpine
+tagline: Automation engine that models and executes business processes declared in
+  yaml.
+description: Automation engine that models and executes business processes declared
+  in yaml.
+developer: ovh
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/automation/utask
+repo: https://github.com/ovh/utask
+support: https://github.com/ovh/utask#running-with-docker-compose

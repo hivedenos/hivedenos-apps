@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: statping-ng
+category: network-monitoring
+name: StatPing.ng
+version: latest
+tagline: An easy to use Status Page for your websites and applications.
+description: An easy to use Status Page for your websites and applications. Statping
+  will automatically fetch the application and render a beautiful status page with
+  tons of features for you to build an even better status page.
+developer: statping-ng
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://statping-ng.github.io/
+repo: https://github.com/statping-ng/statping-ng
+support: https://github.com/statping-ng/statping-ng/wiki/Docker

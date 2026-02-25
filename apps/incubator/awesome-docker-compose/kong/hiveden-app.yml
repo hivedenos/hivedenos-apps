@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: kong
+category: api-management
+name: Kong
+version: latest
+tagline: "The World\xE2\x80\x99s Most Popular Open Source Microservice API Gateway\
+  \ and Platform."
+description: "The World\xE2\x80\x99s Most Popular Open Source Microservice API Gateway\
+  \ and Platform."
+developer: Kong
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://konghq.com/products/kong-gateway
+repo: https://github.com/Kong/kong
+support: https://github.com/Kong/kong

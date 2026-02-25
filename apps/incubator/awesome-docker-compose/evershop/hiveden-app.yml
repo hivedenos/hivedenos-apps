@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: evershop
+category: e-commerce
+name: EverShop
+version: latest
+tagline: E-commerce platform with essential commerce features.
+description: E-commerce platform with essential commerce features. Modular architecture
+  and fully customizable.
+developer: evershopcommerce
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://evershop.io/
+repo: https://github.com/evershopcommerce/evershop
+support: https://evershop.io/docs/development/getting-started/installation-guide

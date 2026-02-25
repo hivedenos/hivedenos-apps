@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: svix
+category: api-management
+name: Svix
+version: latest
+tagline: Open-source webhooks as a service that makes it super easy for API providers
+  to send webhooks.
+description: Open-source webhooks as a service that makes it super easy for API providers
+  to send webhooks.
+developer: svix
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.svix.com/
+repo: https://github.com/svix/svix-webhooks
+support: https://github.com/svix/svix-webhooks#docker

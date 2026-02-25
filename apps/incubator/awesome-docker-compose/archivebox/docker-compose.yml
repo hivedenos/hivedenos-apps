@@ -1,0 +1,74 @@
+version: 
+services:
+    archivebox:
+        image: archivebox/archivebox:latest
+        ports:
+            - 8000:8000
+        volumes:
+            - ./data:/data
+        environment:
+            # - ADMIN_USERNAME=admin            # create an admin user on first run with the given user/pass combo
+            # - ADMIN_PASSWORD=SomeSecretPassword
+            - ALLOWED_HOSTS=*                   # restrict this to only accept incoming traffic via specific domain name
+            - PUBLIC_INDEX=True                 # set to False to prevent anonymous users from viewing snapshot list
+            - PUBLIC_SNAPSHOTS=True             # set to False to prevent anonymous users from viewing snapshot content
+            - PUBLIC_ADD_VIEW=False             # set to True to allow anonymous users to submit new URLs to archive
+            - SEARCH_BACKEND_ENGINE=sonic       # tells ArchiveBox to use sonic container below for fast full-text search
+            - SEARCH_BACKEND_HOST_NAME=sonic
+            - SEARCH_BACKEND_PASSWORD=SomeSecretPassword
+            # - PUID=911                        # set to your host user's UID & GID if you encounter permissions issues
+            # - PGID=911                        # UID/GIDs <500 may clash with existing users and are not recommended
+            # - MEDIA_MAX_SIZE=750m             # increase this filesize limit to allow archiving larger audio/video files
+            # - TIMEOUT=60                      # increase this number to 120+ seconds if you see many slow downloads timing out
+            # - CHECK_SSL_VALIDITY=True         # set to False to disable strict SSL checking (allows saving URLs w/ broken certs)
+            # - SAVE_ARCHIVE_DOT_ORG=True       # set to False to disable submitting all URLs to Archive.org when archiving
+            # ...
+            # add further configuration options from archivebox/config.py as needed (to apply them only to this container)
+            # or set using `docker compose run archivebox config --set SOME_KEY=someval` (to persist config across all containers)
+        # For ad-blocking during archiving, uncomment this section and pihole service section below
+        # networks:
+        #   - dns
+        # dns:
+        #   - 172.20.0.53
+ 
+    archivebox_scheduler:
+        image: archivebox/archivebox:latest
+        command: schedule --foreground --update --every=day
+        environment:
+            - TIMEOUT=120                       # use a higher timeout than the main container to give slow tasks more time when retrying
+            # - PUID=502                        # set to your host user's UID & GID if you encounter permissions issues
+            # - PGID=20
+        volumes:
+            - ./data:/data
+        # cpus: 2                               # uncomment / edit these values to limit scheduler container resource consumption
+        # mem_limit: 2048m
+        # restart: always
+ 
+    sonic:
+        image: valeriansaliou/sonic:latest
+        build:
+            # custom build just auto-downloads archivebox's default sonic.cfg as a convenience
+            # not needed after first run / if you have already have ./etc/sonic.cfg present
+            dockerfile_inline: |
+                FROM quay.io/curl/curl:latest AS config_downloader
+                RUN curl -fsSL 'https://raw.githubusercontent.com/ArchiveBox/ArchiveBox/stable/etc/sonic.cfg' > /tmp/sonic.cfg
+                FROM valeriansaliou/sonic:latest
+                COPY --from=config_downloader /tmp/sonic.cfg /etc/sonic.cfg
+        expose:
+            - 1491
+        environment:
+            - SEARCH_BACKEND_PASSWORD=SomeSecretPassword
+        volumes:
+            - ./sonic.cfg:/etc/sonic.cfg
+            - ./data/sonic:/var/lib/sonic/store
+ 
+    novnc:
+        image: theasp/novnc:latest
+        environment:
+            - DISPLAY_WIDTH=1920
+            - DISPLAY_HEIGHT=1080
+            - RUN_XTERM=no
+        ports:
+            # to view/control ArchiveBox's browser, visit: http://127.0.0.1:8080/vnc.html
+            # restricted to access from localhost by default because it has no authentication
+            - 8080:8080

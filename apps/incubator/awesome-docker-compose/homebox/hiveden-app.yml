@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: homebox
+category: inventory-management
+name: Homebox
+version: latest
+tagline: Homebox is the inventory and organization system built for the Home User.
+description: Homebox is the inventory and organization system built for the Home User.
+developer: hay-kot
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://hay-kot.github.io/homebox/
+repo: https://github.com/hay-kot/homebox
+support: https://hay-kot.github.io/homebox/quick-start/

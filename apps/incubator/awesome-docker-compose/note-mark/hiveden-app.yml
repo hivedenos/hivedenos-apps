@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: note-mark
+category: note-taking-and-editors
+name: Note Mark
+version: 0.13.1
+tagline: A minimal web-based Markdown notes app.
+description: A minimal web-based Markdown notes app.
+developer: enchant97
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://notemark.docs.enchantedcode.co.uk/
+repo: https://github.com/enchant97/note-mark
+support: https://notemark.docs.enchantedcode.co.uk/docs/setup/install/

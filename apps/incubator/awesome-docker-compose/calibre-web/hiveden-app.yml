@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: calibre-web
+category: e-books
+name: Calibre Web
+version: latest
+tagline: Web app providing a clean interface for browsing, reading and downloading
+  eBooks using an existing Calibre database.
+description: Web app providing a clean interface for browsing, reading and downloading
+  eBooks using an existing Calibre database.
+developer: janeczku
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/e-books/calibre-web
+repo: https://github.com/janeczku/calibre-web
+support: https://github.com/linuxserver/docker-calibre-web

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: kutt
+category: url-shorteners
+name: Kutt
+version: latest
+tagline: Free Modern URL Shortener.
+description: Free Modern URL Shortener.
+developer: thedevs-network
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://kutt.it/
+repo: https://github.com/thedevs-network/kutt
+support: https://github.com/thedevs-network/kutt#docker

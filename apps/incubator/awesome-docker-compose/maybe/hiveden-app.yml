@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: maybe
+category: budgeting
+name: Maybe
+version: latest
+tagline: The OS for your personal finances.
+description: The OS for your personal finances.
+developer: maybe-finance
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://maybe.co/
+repo: https://github.com/maybe-finance/maybe
+support: https://github.com/maybe-finance/maybe/blob/main/docs/hosting/docker.md

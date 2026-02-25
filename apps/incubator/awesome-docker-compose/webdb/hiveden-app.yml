@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: webdb
+category: database-management
+name: WebDB
+version: latest
+tagline: Efficient database IDE.
+description: Efficient database IDE.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://webdb.app/
+repo: https://docs.webdb.app/installation/standalone
+support: https://docs.webdb.app/installation/standalone

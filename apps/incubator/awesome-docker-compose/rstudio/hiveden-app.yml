@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: rstudio
+category: ide-and-tools
+name: Rstudio
+version: latest
+tagline: R configurations for Docker.
+description: R configurations for Docker.
+developer: rocker-org
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://rocker-project.org/
+repo: https://github.com/rocker-org
+support: https://rocker-project.org/images/

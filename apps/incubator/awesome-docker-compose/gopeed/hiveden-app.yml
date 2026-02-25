@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: gopeed
+category: file-downloader
+name: Gopeed
+version: latest
+tagline: A modern download manager that supports all platforms.
+description: A modern download manager that supports all platforms. Built with Golang
+  and Flutter.
+developer: GopeedLab
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://gopeed.com/
+repo: https://github.com/GopeedLab/gopeed
+support: https://github.com/GopeedLab/gopeed

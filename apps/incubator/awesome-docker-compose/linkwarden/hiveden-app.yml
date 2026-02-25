@@ -1,0 +1,22 @@
+manifestVersion: 1.1
+id: linkwarden
+category: bookmarks-managers
+name: Linkwarden
+version: 16-alpine
+tagline: "\xE2\x9A\xA1\xEF\xB8\x8F\xE2\x9A\xA1\xEF\xB8\x8F\xE2\x9A\xA1\xEF\xB8\x8F\
+  Self-hosted collaborative bookmark manager to collect, organize, and preserve webpages,\
+  \ articles, and..."
+description: "\xE2\x9A\xA1\xEF\xB8\x8F\xE2\x9A\xA1\xEF\xB8\x8F\xE2\x9A\xA1\xEF\xB8\
+  \x8FSelf-hosted collaborative bookmark manager to collect, organize, and preserve\
+  \ webpages, articles, and more\xE2\x80\xA6"
+developer: linkwarden
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/bookmarks-managers/linkwarden
+repo: https://github.com/linkwarden/linkwarden
+support: https://docs.linkwarden.app/self-hosting/installation

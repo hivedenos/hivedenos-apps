@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: calibre-web-automated-book-downloader
+category: e-books
+name: Calibre Web Automated Book Downloader
+version: latest
+tagline: An intuitive web interface for searching and requesting book downloads, designed
+  to work seamlessly with Calibre-Web-Au...
+description: An intuitive web interface for searching and requesting book downloads,
+  designed to work seamlessly with Calibre-Web-Automated.
+developer: calibrain
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/e-books/calibre-web-automated-book-downloader
+repo: https://github.com/calibrain/calibre-web-automated-book-downloader
+support: https://github.com/calibrain/calibre-web-automated-book-downloader#%EF%B8%8F-configuration

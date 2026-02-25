@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: fireflyiii
+category: budgeting
+name: Firefly III
+version: latest
+tagline: Firefly III is a modern financial manager.
+description: Firefly III is a modern financial manager. It helps you to keep track
+  of your money and make budget forecasts. It supports credit cards, has an advanced
+  rule engine and can import data from many banks.
+developer: firefly-iii
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://firefly-iii.org/
+repo: https://github.com/firefly-iii/firefly-iii
+support: https://docs.firefly-iii.org/how-to/firefly-iii/installation/docker/

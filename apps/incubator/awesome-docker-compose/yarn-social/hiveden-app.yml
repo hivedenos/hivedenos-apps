@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: yarn-social
+category: social-networks-and-forums
+name: Yarn.social
+version: latest
+tagline: "Self-Hosted, Twitter\xE2\x84\xA2-like Decentralised micro-logging platform."
+description: "Self-Hosted, Twitter\xE2\x84\xA2-like Decentralised micro-logging platform.\
+  \ No ads, no tracking, your content, your data."
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://yarn.social/
+repo: https://git.mills.io/yarnsocial/yarn#deploy-with-docker
+support: https://git.mills.io/yarnsocial/yarn#deploy-with-docker

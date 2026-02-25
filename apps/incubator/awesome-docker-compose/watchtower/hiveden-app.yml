@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: watchtower
+category: container-management
+name: Watchtower
+version: latest
+tagline: A process for automating Docker container base image updates.
+description: A process for automating Docker container base image updates.
+developer: containrrr
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://containrrr.dev/watchtower/
+repo: https://github.com/containrrr/watchtower
+support: https://github.com/containrrr/watchtower#quick-start

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: pleroma
+category: social-networks-and-forums
+name: Pleroma
+version: 12.1-alpine
+tagline: Federated microblogging server, Mastodon, GNU social, & ActivityPub compatible.
+description: Federated microblogging server, Mastodon, GNU social, & ActivityPub compatible.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://pleroma.social/
+repo: https://github.com/angristan/docker-pleroma
+support: https://github.com/angristan/docker-pleroma

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: jump
+category: personal-dashboards
+name: Jump
+version: latest
+tagline: Yet another self-hosted startpage for your server designed to be simple,
+  stylish, fast and secure.
+description: Yet another self-hosted startpage for your server designed to be simple,
+  stylish, fast and secure.
+developer: daledavies
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://jumpdemo.daledavies.co.uk/
+repo: https://github.com/daledavies/jump
+support: https://github.com/daledavies/jump#installation

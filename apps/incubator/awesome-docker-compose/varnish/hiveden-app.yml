@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: varnish
+category: web-servers
+name: Varnish
+version: latest
+tagline: Web application accelerator/caching HTTP reverse proxy.
+description: Web application accelerator/caching HTTP reverse proxy.
+developer: varnishcache
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://varnish-cache.org/
+repo: https://github.com/varnishcache/varnish-cache
+support: https://github.com/wodby/varnish

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: just-short-it
+category: url-shorteners
+name: Just Short It!
+version: latest
+tagline: A KISS, single-user URL shortener that runs in just one container.
+description: A KISS, single-user URL shortener that runs in just one container.
+developer: miawinter98
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/url-shorteners/just-short-it
+repo: https://github.com/miawinter98/just-short-it
+support: https://github.com/miawinter98/just-short-it#in-docker-compose

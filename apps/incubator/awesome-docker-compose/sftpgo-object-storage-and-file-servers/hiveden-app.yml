@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: sftpgo-object-storage-and-file-servers
+category: object-storage-and-file-servers
+name: SFTPGo
+version: edge
+tagline: Flexible, fully featured and highly configurable SFTP server with optional
+  FTP/S and WebDAV support.
+description: Flexible, fully featured and highly configurable SFTP server with optional
+  FTP/S and WebDAV support.
+developer: drakkan
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://sftpgo.com/
+repo: https://github.com/drakkan/sftpgo
+support: https://docs.sftpgo.com/latest/docker/

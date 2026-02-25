@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: isaiah
+category: container-management
+name: Isaiah
+version: latest
+tagline: Self-hostable clone of lazydocker for the web.
+description: Self-hostable clone of lazydocker for the web. Manage your Docker fleet
+  with ease.
+developer: will-moss
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/container-management/isaiah
+repo: https://github.com/will-moss/isaiah
+support: https://github.com/will-moss/isaiah#deploy-with-docker

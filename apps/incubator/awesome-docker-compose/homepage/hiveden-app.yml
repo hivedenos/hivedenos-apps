@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: homepage
+category: personal-dashboards
+name: Homepage
+version: latest
+tagline: A highly customizable homepage (or startpage / application dashboard) with
+  Docker and service API integrations.
+description: A highly customizable homepage (or startpage / application dashboard)
+  with Docker and service API integrations.
+developer: gethomepage
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://gethomepage.dev/
+repo: https://github.com/gethomepage/homepage
+support: https://gethomepage.dev/latest/installation/docker/

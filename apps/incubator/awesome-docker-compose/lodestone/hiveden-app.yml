@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: lodestone
+category: games
+name: Lodestone
+version: latest
+tagline: A free, open source server hosting tool for Minecraft and other multiplayers.
+description: A free, open source server hosting tool for Minecraft and other multiplayers.
+developer: Lodestone-Team
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.lodestone.cc/
+repo: https://github.com/Lodestone-Team/lodestone
+support: https://github.com/Lodestone-Team/lodestone/wiki/Docker-Support

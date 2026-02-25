@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: stackstorm
+category: automation
+name: StackStorm
+version: -latest}
+tagline: StackStorm (aka IFTTT for Ops) is event-driven automation for auto-remediation,
+  security responses, troubleshooting, de...
+description: StackStorm (aka IFTTT for Ops) is event-driven automation for auto-remediation,
+  security responses, troubleshooting, deployments, and more. Includes rules engine,
+  workflow, 160 integration packs with 6000+ actions and ChatOps.
+developer: StackStorm
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://stackstorm.com/
+repo: https://github.com/StackStorm/st2
+support: https://github.com/stackstorm/st2-docker

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: watchyourlan
+category: ip-and-domain
+name: WatchYourLAN
+version: v2
+tagline: A lightweight network IP scanner with web GUI.
+description: A lightweight network IP scanner with web GUI.
+developer: aceberg
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/ip-and-domain/watchyourlan
+repo: https://github.com/aceberg/WatchYourLAN
+support: https://github.com/aceberg/WatchYourLAN#quick-start

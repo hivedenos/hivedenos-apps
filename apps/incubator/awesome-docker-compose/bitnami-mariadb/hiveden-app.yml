@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: bitnami-mariadb
+category: databases-mariadb
+name: Bitnami MariaDB Image
+version: latest
+tagline: 'Configuration: See the Docker Hub page'
+description: 'Configuration: See the Docker Hub page'
+developer: bitnami
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/databases/mariadb/bitnami-mariadb
+repo: https://github.com/bitnami/containers/tree/main/bitnami/mariadb
+support: https://github.com/bitnami/containers/tree/main/bitnami/mariadb

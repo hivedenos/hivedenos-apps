@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: openrouteservice
+category: maps-and-gps
+name: OpenRouteService
+version: v8.0.0
+tagline: Selfhosted route service with directions, isochrones, time-distance matrix,
+  route optimization, etc.
+description: Selfhosted route service with directions, isochrones, time-distance matrix,
+  route optimization, etc.
+developer: GIScience
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://openrouteservice.org/
+repo: https://github.com/GIScience/openrouteservice
+support: https://giscience.github.io/openrouteservice/run-instance/running-with-docker

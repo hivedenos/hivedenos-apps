@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: commafeed
+category: rss
+name: CommaFeed
+version: latest-postgresql
+tagline: Google Reader inspired self-hosted RSS reader.
+description: Google Reader inspired self-hosted RSS reader.
+developer: Athou
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.commafeed.com/
+repo: https://github.com/Athou/commafeed
+support: https://github.com/Athou/commafeed

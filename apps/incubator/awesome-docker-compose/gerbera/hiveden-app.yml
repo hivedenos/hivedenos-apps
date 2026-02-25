@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: gerbera
+category: media-server
+name: Gerbera
+version: latest
+tagline: Gerbera is an UPnP Media Server.
+description: Gerbera is an UPnP Media Server. It allows you to stream your digital
+  media throughout your home network and listen to/watch it on a variety of UPnP compatible
+  devices.
+developer: gerbera
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://gerbera.io/
+repo: https://github.com/gerbera/gerbera
+support: https://github.com/gerbera/gerbera/blob/master/README.Docker.md

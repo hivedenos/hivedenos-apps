@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: keila
+category: email-mailing-lists-and-newsletters
+name: Keila
+version: latest
+tagline: Self-hosted reliable and easy-to-use newsletter tool (alternative to Mailchimp
+  or Sendinblue).
+description: Self-hosted reliable and easy-to-use newsletter tool (alternative to
+  Mailchimp or Sendinblue).
+developer: pentacent
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.keila.io/
+repo: https://github.com/pentacent/keila
+support: https://www.keila.io/docs/installation

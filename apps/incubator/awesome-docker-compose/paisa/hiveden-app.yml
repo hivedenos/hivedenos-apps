@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: paisa
+category: budgeting
+name: Paisa
+version: latest
+tagline: Paisa is a Personal finance manager.
+description: Paisa is a Personal finance manager. It builds on top of the ledger double
+  entry accounting tool.
+developer: ananthakumaran
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://paisa.fyi/
+repo: https://github.com/ananthakumaran/paisa
+support: https://paisa.fyi/getting-started/installation/

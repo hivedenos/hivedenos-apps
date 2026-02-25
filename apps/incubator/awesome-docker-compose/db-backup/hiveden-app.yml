@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: db-backup
+category: database-backup
+name: db-backup
+version: '10.11'
+tagline: Backup multiple database types on a scheduled basis with many customizable
+  options.
+description: Backup multiple database types on a scheduled basis with many customizable
+  options.
+developer: tiredofit
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/database-backup/db-backup
+repo: https://github.com/tiredofit/docker-db-backup
+support: https://github.com/tiredofit/docker-db-backup#configuration

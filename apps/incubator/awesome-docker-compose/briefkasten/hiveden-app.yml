@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: briefkasten
+category: bookmarks-managers
+name: Briefkasten
+version: latest
+tagline: Self-hosted bookmarking application.
+description: Self-hosted bookmarking application. Works with any Prisma compatible
+  database (MySQL, Postgres, SQLite, etc.)
+developer: ndom91
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://briefkastenhq.com/
+repo: https://github.com/ndom91/briefkasten
+support: https://docs.briefkastenhq.com/docs/self-hosting

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: chatpad
+category: chatbot-ui-chatgpt-ui
+name: Chatpad
+version: latest
+tagline: A free, open-source, and slick UI for ChatGPT.
+description: A free, open-source, and slick UI for ChatGPT.
+developer: deiucanta
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://chatpad.ai/
+repo: https://github.com/deiucanta/chatpad
+support: https://github.com/deiucanta/chatpad#self-host-using-docker

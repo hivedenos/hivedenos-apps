@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: synclounge
+category: media-server
+name: SyncLounge
+version: latest
+tagline: SyncLounge (Previously PlexTogether) is a tool to sync Plex content across
+  multiple players in multiple locations.
+description: SyncLounge (Previously PlexTogether) is a tool to sync Plex content across
+  multiple players in multiple locations.
+developer: synclounge
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/media-server/synclounge
+repo: https://github.com/synclounge/synclounge
+support: https://github.com/linuxserver/docker-synclounge

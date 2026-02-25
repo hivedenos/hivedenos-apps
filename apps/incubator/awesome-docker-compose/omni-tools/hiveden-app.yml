@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: omni-tools
+category: miscellaneous
+name: OmniTools
+version: latest
+tagline: Self-hosted collection of powerful web-based tools for everyday tasks.
+description: Self-hosted collection of powerful web-based tools for everyday tasks.
+developer: iib0011
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://omnitools.app/
+repo: https://github.com/iib0011/omni-tools
+support: https://github.com/iib0011/omni-tools#self-hostrun

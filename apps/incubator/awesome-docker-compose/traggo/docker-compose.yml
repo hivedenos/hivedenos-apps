@@ -1,0 +1,11 @@
+version: 
+services:
+  traggo:
+    image: traggo/server:latest
+    ports:
+      - 3030:3030
+    environment:
+      TRAGGO_DEFAULT_USER_NAME: 
+      TRAGGO_DEFAULT_USER_PASS: 
+    volumes:
+      - ./traggodata:/opt/traggo/data

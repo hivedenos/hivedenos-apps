@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: kinto
+category: file-synchronization
+name: Kinto
+version: '14'
+tagline: Kinto is a minimalist JSON storage service with synchronisation and sharing
+  abilities.
+description: Kinto is a minimalist JSON storage service with synchronisation and sharing
+  abilities.
+developer: Kinto
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://docs.kinto-storage.org/
+repo: https://github.com/Kinto/kinto
+support: https://docs.kinto-storage.org/en/stable/tutorials/install.html#using-docker

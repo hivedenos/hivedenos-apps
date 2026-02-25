@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: photoview
+category: photo-server
+name: Photoview
+version: '2'
+tagline: A simple and user-friendly Photo Gallery for personal servers.
+description: A simple and user-friendly Photo Gallery for personal servers. It is
+  made for photographers and aims to provide an easy and fast way to navigate directories,
+  with thousands of high resolution photos.
+developer: photoview
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://photoview.github.io/
+repo: https://github.com/photoview/photoview
+support: https://photoview.github.io/en/docs/getting-started/

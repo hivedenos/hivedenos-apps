@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: aria2-webui
+category: file-downloader
+name: Aria2 WebUI
+version: latest
+tagline: Aria2 downloader and AriaNg webui Docker image based on Alpine Linux.
+description: Aria2 downloader and AriaNg webui Docker image based on Alpine Linux.
+developer: abcminiuser
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/file-downloader/aria2-webui
+repo: https://github.com/abcminiuser/docker-aria2-with-webui
+support: https://github.com/abcminiuser/docker-aria2-with-webui#tags

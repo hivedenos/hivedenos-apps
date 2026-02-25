@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  palmr:
+    image: kyantech/palmr-api:latest
+    restart: unless-stopped

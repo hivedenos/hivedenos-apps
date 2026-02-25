@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  mixpost:
+    image: inovector/mixpost:latest
+    restart: unless-stopped

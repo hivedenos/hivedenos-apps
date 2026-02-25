@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: memos
+category: note-taking-and-editors
+name: Memos
+version: latest
+tagline: An open source, self-hosted knowledge base that works with a SQLite db file.
+description: An open source, self-hosted knowledge base that works with a SQLite db
+  file.
+developer: usememos
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.usememos.com/
+repo: https://github.com/usememos/memos
+support: https://www.usememos.com/docs/install/container-install

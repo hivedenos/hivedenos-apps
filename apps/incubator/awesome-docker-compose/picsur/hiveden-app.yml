@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: picsur
+category: image-hosting
+name: Picsur
+version: latest
+tagline: A simple imaging hosting platform that allows you to easily host, edit, and
+  share images.
+description: A simple imaging hosting platform that allows you to easily host, edit,
+  and share images.
+developer: CaramelFur
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://picsur.org/
+repo: https://github.com/CaramelFur/Picsur
+support: https://github.com/CaramelFur/Picsur#running-your-own-instance

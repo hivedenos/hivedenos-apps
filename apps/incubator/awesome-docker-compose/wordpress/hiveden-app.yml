@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: wordpress
+category: blogging-platforms
+name: WordPress
+version: '8.0'
+tagline: "World\xE2\x80\x99s most-used blogging and CMS engine."
+description: "World\xE2\x80\x99s most-used blogging and CMS engine."
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://wordpress.org/
+repo: https://awesome-docker-compose.com/apps/blogging-platforms/wordpress
+support: https://awesome-docker-compose.com/apps/blogging-platforms/wordpress

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: cherry
+category: bookmarks-managers
+name: Cherry
+version: latest
+tagline: An open source self-hostable bookmark service.
+description: An open source self-hostable bookmark service.
+developer: haishanh
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://cherry.haishan.me/
+repo: https://github.com/haishanh/cherry
+support: https://cherry.haishan.me/docs/deploy

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: chhoto-url
+category: url-shorteners
+name: Chhoto URL
+version: latest
+tagline: Simple, lightning-fast URL shortener with no bloat (fork of simply-shorten).
+description: Simple, lightning-fast URL shortener with no bloat (fork of simply-shorten).
+developer: SinTan1729
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/url-shorteners/chhoto-url
+repo: https://github.com/SinTan1729/chhoto-url
+support: https://github.com/SinTan1729/chhoto-url#usage

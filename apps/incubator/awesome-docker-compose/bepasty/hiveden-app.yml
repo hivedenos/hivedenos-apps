@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: bepasty
+category: pastebins
+name: Bepasty
+version: latest
+tagline: A pastebin for all kinds of files.
+description: A pastebin for all kinds of files.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/pastebins/bepasty
+repo: https://github.com/asmaps/bepasty-docker
+support: https://github.com/asmaps/bepasty-docker

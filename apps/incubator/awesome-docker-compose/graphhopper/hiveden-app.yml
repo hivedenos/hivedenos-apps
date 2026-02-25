@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: graphhopper
+category: maps-and-gps
+name: GraphHopper
+version: latest
+tagline: Fast routing library and server using OpenStreetMap.
+description: Fast routing library and server using OpenStreetMap.
+developer: graphhopper
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.graphhopper.com/
+repo: https://github.com/graphhopper/graphhopper
+support: https://github.com/IsraelHikingMap/graphhopper-docker-image-push

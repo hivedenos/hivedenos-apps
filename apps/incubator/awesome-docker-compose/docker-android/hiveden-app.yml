@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: docker-android
+category: virtual-system
+name: Docker-Android
+version: emulator_11.0
+tagline: Android in docker solution with noVNC supported and video recording.
+description: Android in docker solution with noVNC supported and video recording.
+developer: budtmo
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/virtual-system/docker-android
+repo: https://github.com/budtmo/docker-android
+support: https://github.com/budtmo/docker-android#quick-start

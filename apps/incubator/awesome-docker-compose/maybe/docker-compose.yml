@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  maybe:
+    image: ghcr.io/maybe-finance/maybe:latest
+    restart: unless-stopped

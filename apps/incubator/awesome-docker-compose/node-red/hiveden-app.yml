@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: node-red
+category: internet-of-things-iot
+name: Node Red
+version: latest
+tagline: Browser-based flow editor that helps you wiring hardware devices, APIs and
+  online services to create IoT solutions.
+description: Browser-based flow editor that helps you wiring hardware devices, APIs
+  and online services to create IoT solutions.
+developer: node-red
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://nodered.org/
+repo: https://github.com/node-red/node-red
+support: https://nodered.org/docs/getting-started/docker

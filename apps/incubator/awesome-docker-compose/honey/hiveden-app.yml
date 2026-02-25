@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: honey
+category: personal-dashboards
+name: Honey
+version: latest
+tagline: Nice and sweet place for all your self-hosted services.
+description: Nice and sweet place for all your self-hosted services.
+developer: dani3l0
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://honeyy.vercel.app/
+repo: https://github.com/dani3l0/honey
+support: https://github.com/dani3l0/honey#-via-docker

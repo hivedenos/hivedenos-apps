@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: samba-docker
+category: file-synchronization
+name: Samba Docker
+version: latest
+tagline: Samba is the standard Windows interoperability suite of programs for Linux
+  and Unix.
+description: Samba is the standard Windows interoperability suite of programs for
+  Linux and Unix.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.samba.org/
+repo: https://github.com/crazy-max/docker-samba
+support: https://github.com/crazy-max/docker-samba

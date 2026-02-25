@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: geo2tz
+category: maps-and-gps
+name: Geo2Tz
+version: latest
+tagline: Get the timezone from geo coordinates (lat, lon).
+description: Get the timezone from geo coordinates (lat, lon).
+developer: noandrea
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/maps-and-gps/geo2tz
+repo: https://github.com/noandrea/geo2tz
+support: https://github.com/noandrea/geo2tz#docker

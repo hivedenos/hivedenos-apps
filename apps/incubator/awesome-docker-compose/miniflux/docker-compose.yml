@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  miniflux:
+    image: miniflux/miniflux:latest
+    restart: unless-stopped

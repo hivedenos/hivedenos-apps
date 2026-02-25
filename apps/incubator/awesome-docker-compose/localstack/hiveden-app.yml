@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: localstack
+category: paas
+name: LocalStack
+version: latest
+tagline: LocalStack is a fully functional local AWS cloud stack.
+description: LocalStack is a fully functional local AWS cloud stack. This includes
+  Lambda for serverless computation.
+developer: localstack
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://localstack.cloud/
+repo: https://github.com/localstack/localstack
+support: https://docs.localstack.cloud/getting-started/installation/#docker-compose

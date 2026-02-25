@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: mdbook
+category: documentation
+name: Mdbook
+version: latest
+tagline: mdBook is a command line tool to create books with Markdown.
+description: mdBook is a command line tool to create books with Markdown.
+developer: rust-lang
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://rust-lang.github.io/mdBook/
+repo: https://github.com/rust-lang/mdBook
+support: https://github.com/allfunc/docker-mdbook

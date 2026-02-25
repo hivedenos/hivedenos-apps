@@ -1,0 +1,8 @@
+services:
+  app:
+    image: wardy784/erugo:latest
+    restart: unless-stopped
+    volumes:
+      - ./erugo-storage:/var/www/html/storage
+    ports:
+      - 

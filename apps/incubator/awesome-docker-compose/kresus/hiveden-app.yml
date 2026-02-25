@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: kresus
+category: budgeting
+name: Kresus
+version: latest
+tagline: Open source personal finance manager.
+description: Open source personal finance manager.
+developer: kresusapp
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://kresus.org/
+repo: https://github.com/kresusapp/kresus
+support: https://kresus.org/install-docker.html

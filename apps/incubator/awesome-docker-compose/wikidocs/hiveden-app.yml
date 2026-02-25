@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: wikidocs
+category: wikis
+name: WikiDocs
+version: latest
+tagline: A databaseless markdown flat-file wiki engine.
+description: A databaseless markdown flat-file wiki engine.
+developer: Zavy86
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://wikidocs.it/
+repo: https://github.com/Zavy86/WikiDocs
+support: https://wikidocs.it/setup

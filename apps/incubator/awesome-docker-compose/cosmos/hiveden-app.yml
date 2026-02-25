@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: cosmos
+category: self-hosting-solutions
+name: Cosmos
+version: latest
+tagline: Secure and Easy Self-hosted platform.
+description: "Secure and Easy Self-hosted platform. Take control of your data and\
+  \ privacy without sacrificing security and stability (Authentication, anti-DDOS,\
+  \ anti-bot, \xE2\x80\xA6)"
+developer: azukaar
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://cosmos-cloud.io/
+repo: https://github.com/azukaar/cosmos-server
+support: https://cosmos-cloud.io/doc/1%20index/

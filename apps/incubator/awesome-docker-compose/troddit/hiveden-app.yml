@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: troddit
+category: internet-tools
+name: Troddit
+version: latest
+tagline: A web client for Reddit with authenticated logins and a variety of browsing
+  options.
+description: A web client for Reddit with authenticated logins and a variety of browsing
+  options.
+developer: burhan-syed
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.troddit.com/
+repo: https://github.com/burhan-syed/troddit
+support: https://github.com/burhan-syed/troddit#docker

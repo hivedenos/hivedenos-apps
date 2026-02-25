@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: mylar3
+category: video-downloader
+name: Mylar3
+version: latest
+tagline: Automated Comic Book (cbr/cbz) downloader program for use with NZB and torrents.
+description: Automated Comic Book (cbr/cbz) downloader program for use with NZB and
+  torrents.
+developer: mylar3
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://mylarcomics.com/
+repo: https://github.com/mylar3/mylar3
+support: https://github.com/linuxserver/docker-mylar3

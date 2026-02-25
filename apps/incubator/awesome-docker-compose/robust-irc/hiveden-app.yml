@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: robust-irc
+category: irc
+name: Robust IRC
+version: latest
+tagline: RobustIRC is IRC without netsplits.
+description: RobustIRC is IRC without netsplits. Distributed IRC server, based on
+  RobustSession protocol.
+developer: robustirc
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://robustirc.net/
+repo: https://github.com/robustirc/robustirc
+support: https://robustirc.net/docs/adminguide.html#_server_deployment

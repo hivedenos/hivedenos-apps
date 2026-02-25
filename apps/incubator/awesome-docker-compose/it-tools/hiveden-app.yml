@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: it-tools
+category: miscellaneous
+name: IT-Tools
+version: latest
+tagline: Collection of handy online tools for developers, with great UX.
+description: Collection of handy online tools for developers, with great UX.
+developer: CorentinTh
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/miscellaneous/it-tools
+repo: https://github.com/CorentinTh/it-tools
+support: https://github.com/CorentinTh/it-tools#self-host

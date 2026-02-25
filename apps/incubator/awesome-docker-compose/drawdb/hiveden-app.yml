@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: drawdb
+category: database-management
+name: drawDB
+version: latest
+tagline: Free, simple, and intuitive online database design tool and SQL generator.
+description: Free, simple, and intuitive online database design tool and SQL generator.
+developer: drawdb-io
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.drawdb.app/
+repo: https://github.com/drawdb-io/drawdb
+support: https://github.com/drawdb-io/drawdb

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: bar-assistant
+category: recipe-management
+name: Bar Assistant
+version: v1.6
+tagline: Bar assistant is a self hosted application for managing your home bar.
+description: Bar assistant is a self hosted application for managing your home bar.
+  It allows you to add your ingredients, search for cocktails and create custom cocktail
+  recipes.
+developer: karlomikus
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://barassistant.app/
+repo: https://github.com/karlomikus/bar-assistant
+support: https://docs.barassistant.app/setup/

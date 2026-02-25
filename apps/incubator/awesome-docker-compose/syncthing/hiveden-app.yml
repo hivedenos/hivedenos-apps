@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: syncthing
+category: file-synchronization
+name: Syncthing
+version: latest
+tagline: Syncthing is an open source peer-to-peer file synchronisation tool.
+description: Syncthing is an open source peer-to-peer file synchronisation tool.
+developer: syncthing
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://syncthing.net/
+repo: https://github.com/syncthing/syncthing
+support: https://github.com/syncthing/syncthing/blob/main/README-Docker.md

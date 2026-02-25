@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: shiori
+category: bookmarks-managers
+name: Shiori
+version: '15'
+tagline: Simple bookmark manager built with Go.
+description: Simple bookmark manager built with Go.
+developer: go-shiori
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/bookmarks-managers/shiori
+repo: https://github.com/go-shiori/shiori
+support: https://github.com/go-shiori/shiori/blob/master/docker-compose.yaml

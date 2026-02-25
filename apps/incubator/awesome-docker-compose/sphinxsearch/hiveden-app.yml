@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: sphinxsearch
+category: search-engine-solution
+name: Sphinx Search
+version: 3.4.1
+tagline: Sphinx is an open source full text search server, designed with performance,
+  relevance (search quality), and integratio...
+description: Sphinx is an open source full text search server, designed with performance,
+  relevance (search quality), and integration simplicity in mind.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://sphinxsearch.com/
+repo: https://awesome-docker-compose.com/apps/search-engine-solution/sphinxsearch
+support: https://awesome-docker-compose.com/apps/search-engine-solution/sphinxsearch

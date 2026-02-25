@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: grocy
+category: inventory-management
+name: Grocy
+version: latest
+tagline: ERP beyond your fridge - grocy is a web-based self-hosted groceries & household
+  management solution for your home.
+description: ERP beyond your fridge - grocy is a web-based self-hosted groceries &
+  household management solution for your home.
+developer: grocy
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://grocy.info/
+repo: https://github.com/grocy/grocy
+support: https://github.com/grocy/grocy-docker

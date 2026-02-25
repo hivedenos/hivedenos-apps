@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: saleor
+category: e-commerce
+name: Saleor
+version: '3.20'
+tagline: Django based open-sourced e-commerce storefront.
+description: Django based open-sourced e-commerce storefront.
+developer: saleor
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://saleor.io/
+repo: https://github.com/saleor/saleor-platform
+support: https://docs.saleor.io/quickstart/running-locally

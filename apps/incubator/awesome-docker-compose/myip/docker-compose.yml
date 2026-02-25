@@ -1,0 +1,8 @@
+version: '3'
+services:
+    myip:
+        container_name: myip
+        image: jason5ng32/myip:latest 
+        restart: always
+        ports:
+            - 

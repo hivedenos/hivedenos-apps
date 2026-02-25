@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: mistserver
+category: media-server
+name: Mistserver
+version: latest
+tagline: Public domain streaming media server that works with any device and any format.
+description: Public domain streaming media server that works with any device and any
+  format.
+developer: DDVTECH
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://mistserver.org/
+repo: https://github.com/DDVTECH/mistserver
+support: https://docs.mistserver.org/mistserver/installation/docker

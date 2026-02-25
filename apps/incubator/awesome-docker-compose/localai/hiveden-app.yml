@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: localai
+category: chatbot-ui
+name: LocalAI
+version: latest-aio-cpu
+tagline: "\uD83E\uDD16 The free, Open Source alternative to OpenAI, Claude and others."
+description: "\uD83E\uDD16 The free, Open Source alternative to OpenAI, Claude and\
+  \ others."
+developer: mudler
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://localai.io/
+repo: https://github.com/mudler/LocalAI
+support: https://localai.io/basics/container/

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: nodebb
+category: social-networks-and-forums
+name: NodeBB
+version: ${SOFTWARE_VERSION_TAG}
+tagline: Forum software built for the modern web.
+description: Forum software built for the modern web.
+developer: NodeBB
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://nodebb.org/
+repo: https://github.com/NodeBB/NodeBB
+support: https://github.com/NodeBB/NodeBB

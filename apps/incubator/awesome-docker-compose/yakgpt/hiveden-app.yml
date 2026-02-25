@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: yakgpt
+category: chatbot-ui-chatgpt-ui
+name: YakGPT
+version: latest
+tagline: Locally running, hands-free ChatGPT UI.
+description: Locally running, hands-free ChatGPT UI.
+developer: yakGPT
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://yakgpt.vercel.app/
+repo: https://github.com/yakGPT/yakGPT
+support: https://github.com/yakGPT/yakGPT#-docker

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: gomanagedocker
+category: container-management
+name: goManageDocker
+version: latest
+tagline: "TUI tool to manage your docker images, containers and volumes \uD83D\uDE80\
+  ."
+description: "TUI tool to manage your docker images, containers and volumes \uD83D\
+  \uDE80."
+developer: ajayd-san
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/container-management/gomanagedocker
+repo: https://github.com/ajayd-san/gomanagedocker
+support: https://github.com/ajayd-san/gomanagedocker#docker

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: jenkins
+category: ci-and-cd
+name: Jenkins
+version: dind
+tagline: Continuous Integration Server.
+description: Continuous Integration Server.
+developer: jenkinsci
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.jenkins.io/
+repo: https://github.com/jenkinsci/jenkins
+support: https://www.jenkins.io/doc/book/installing/docker/

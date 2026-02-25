@@ -1,0 +1,36 @@
+version: 
+ 
+services:
+  ##
+  ## Start Openblocks (all-in-one)
+  ##
+  openblocks-api-service:
+    image: openblocksdev/openblocks-ce:latest
+    container_name: openblocks
+    ports:
+      - 
+    environment:
+      # enable services
+      REDIS_ENABLED: 
+      MONGODB_ENABLED: 
+      API_SERVICE_ENABLED: 
+      NODE_SERVICE_ENABLED: 
+      FRONTEND_ENABLED: 
+      # generic parameters
+      PUID: 
+      PGID: 
+      # api-service parameters
+
+      MONGODB_URI: 
+      REDIS_URL: 
+      JS_EXECUTOR_URI: 
+      ENABLE_USER_SIGN_UP: 
+      ENCRYPTION_PASSWORD: 
+      ENCRYPTION_SALT: 
+      CORS_ALLOWED_DOMAINS: 
+      # api and node service parameters
+      OPENBLOCKS_API_SERVICE_URL: 
+      OPENBLOCKS_NODE_SERVICE_URL: 
+    volumes:
+      - ./openblocks-stacks:/openblocks-stacks
+    restart: unless-stopped

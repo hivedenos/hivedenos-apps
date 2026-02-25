@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  mathesar:
+    image: mathesar/mathesar-prod:latest
+    restart: unless-stopped

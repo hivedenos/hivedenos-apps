@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: gollum
+category: wikis
+name: Gollum
+version: master
+tagline: Simple, Git-powered wiki with a sweet API and local frontend.
+description: Simple, Git-powered wiki with a sweet API and local frontend.
+developer: gollum
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/wikis/gollum
+repo: https://github.com/gollum/gollum
+support: https://github.com/gollum/gollum/wiki/Gollum-via-Docker

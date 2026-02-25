@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: recipesage
+category: recipe-management
+name: RecipeSage
+version: v4.0.0
+tagline: A recipe keeper, meal plan organizer, and shopping list manager that can
+  import recipes directly from any URL.
+description: A recipe keeper, meal plan organizer, and shopping list manager that
+  can import recipes directly from any URL.
+developer: julianpoy
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://recipesage.com/
+repo: https://github.com/julianpoy/recipesage
+support: https://github.com/julianpoy/recipesage-selfhost

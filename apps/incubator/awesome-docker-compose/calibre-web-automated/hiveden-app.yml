@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: calibre-web-automated
+category: e-books
+name: Calibre-Web Automated
+version: latest
+tagline: Calibre-Web but automated and with Calibre features, Fully automate and simplify
+  your eBook set up.
+description: Calibre-Web but automated and with Calibre features, Fully automate and
+  simplify your eBook set up.
+developer: crocodilestick
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/e-books/calibre-web-automated
+repo: https://github.com/crocodilestick/Calibre-Web-Automated
+support: https://github.com/crocodilestick/Calibre-Web-Automated#using-docker-compose-recommended

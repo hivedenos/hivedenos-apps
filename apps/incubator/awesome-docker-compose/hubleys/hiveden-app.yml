@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: hubleys
+category: personal-dashboards
+name: Hubleys
+version: latest
+tagline: Self-hosted personal dashboards to organize links for multiple users via
+  a central yaml config.
+description: Self-hosted personal dashboards to organize links for multiple users
+  via a central yaml config.
+developer: knrdl
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/personal-dashboards/hubleys
+repo: https://github.com/knrdl/hubleys-dashboard
+support: https://github.com/knrdl/hubleys-dashboard#setup

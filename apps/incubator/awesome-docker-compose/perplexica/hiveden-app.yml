@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: perplexica
+category: ai-search-engine
+name: Perplexica
+version: latest
+tagline: Perplexica is an AI-powered search engine.
+description: Perplexica is an AI-powered search engine. It is an Open source alternative
+  to Perplexity AI.
+developer: ItzCrazyKns
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/ai-search-engine/perplexica
+repo: https://github.com/ItzCrazyKns/Perplexica
+support: https://github.com/ItzCrazyKns/Perplexica#getting-started-with-docker-recommended

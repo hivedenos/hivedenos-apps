@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: chanify
+category: notification
+name: Chanify
+version: latest
+tagline: Chanify is a safe and simple notification tools.
+description: Chanify is a safe and simple notification tools.
+developer: chanify
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.chanify.net/
+repo: https://github.com/chanify/chanify
+support: https://github.com/chanify/chanify#docker

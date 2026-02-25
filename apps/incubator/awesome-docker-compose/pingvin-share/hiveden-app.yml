@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: pingvin-share
+category: file-transfer-single-click-drag-n-drop-upload
+name: Pingvin Share
+version: latest
+tagline: A self-hosted file sharing platform that combines lightness and beauty, perfect
+  for seamless and efficient file sharing.
+description: A self-hosted file sharing platform that combines lightness and beauty,
+  perfect for seamless and efficient file sharing.
+developer: stonith404
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://pingvin-share.dev.eliasschneider.com/
+repo: https://github.com/stonith404/pingvin-share
+support: https://stonith404.github.io/pingvin-share/setup/installation

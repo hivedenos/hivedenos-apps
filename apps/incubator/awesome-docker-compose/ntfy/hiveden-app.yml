@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: ntfy
+category: notification
+name: ntfy
+version: latest
+tagline: Push notifications to phone or desktop using HTTP PUT/POST, with Android
+  app, CLI and web app, similar to Pushover and...
+description: Push notifications to phone or desktop using HTTP PUT/POST, with Android
+  app, CLI and web app, similar to Pushover and Gotify.
+developer: binwiederhier
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://ntfy.sh/
+repo: https://github.com/binwiederhier/ntfy
+support: https://docs.ntfy.sh/install/#docker

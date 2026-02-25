@@ -1,0 +1,12 @@
+version: 
+services:
+  kapowarr:
+    container_name: kapowarr
+    image: mrcas/kapowarr:latest
+    volumes:
+      - 
+      - 
+      - 
+    ports:
+      - 5656:5656
+    restart: unless-stopped

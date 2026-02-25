@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: pinedocs
+category: documentation
+name: PineDocs
+version: 1.2.5
+tagline: A fast and lightweight site for viewing files (markdown, html, code, images,
+  gif, audio and video).
+description: A fast and lightweight site for viewing files (markdown, html, code,
+  images, gif, audio and video).
+developer: xy2z
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/documentation/pinedocs
+repo: https://github.com/xy2z/PineDocs
+support: https://github.com/xy2z/PineDocs#docker

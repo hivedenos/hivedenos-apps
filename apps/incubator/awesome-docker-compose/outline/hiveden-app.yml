@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: outline
+category: wikis
+name: Outline
+version: latest
+tagline: An open, extensible, wiki for your team.
+description: An open, extensible, wiki for your team.
+developer: outline
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.getoutline.com/
+repo: https://github.com/outline/outline
+support: https://docs.getoutline.com/s/hosting/doc/docker-7pfeLP5a8t

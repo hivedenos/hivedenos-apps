@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: glances
+category: system-monitoring
+name: Glances
+version: latest-full
+tagline: Glances an Eye on your system.
+description: Glances an Eye on your system. A top/htop alternative for GNU/Linux,
+  BSD, Mac OS and Windows operating systems.
+developer: nicolargo
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://nicolargo.github.io/glances/
+repo: https://github.com/nicolargo/glances
+support: https://github.com/nicolargo/glances#docker-the-cloudy-way

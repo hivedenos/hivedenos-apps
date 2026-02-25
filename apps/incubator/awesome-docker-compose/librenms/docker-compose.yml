@@ -1,0 +1,160 @@
+version: '3.9'
+ 
+name: librenms
+ 
+services:
+  db:
+    image: mariadb:10
+    container_name: librenms_db
+    command:
+      - 
+      - 
+      - 
+      - 
+      - 
+    volumes:
+      - 
+    environment:
+      - 
+      - 
+      - 
+      - 
+      - 
+    restart: always
+ 
+  redis:
+    image: redis:7.2-alpine
+    container_name: librenms_redis
+    environment:
+      - 
+    restart: always
+ 
+  msmtpd:
+    image: crazymax/msmtpd:latest
+    container_name: librenms_msmtpd
+    env_file:
+      - 
+    restart: always
+ 
+  librenms:
+    image: librenms/librenms:latest
+    container_name: librenms
+    hostname: librenms
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    ports:
+      - target: 8000
+        published: 8000
+        protocol: tcp
+    depends_on:
+      - db
+      - redis
+      - msmtpd
+    volumes:
+      - 
+    env_file:
+      - 
+    environment:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+    restart: always
+ 
+  dispatcher:
+    image: librenms/librenms:latest
+    container_name: librenms_dispatcher
+    hostname: librenms-dispatcher
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    depends_on:
+      - librenms
+      - redis
+    volumes:
+      - 
+    env_file:
+      - 
+    environment:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+    restart: always
+ 
+  syslogng:
+    image: librenms/librenms:latest
+    container_name: librenms_syslogng
+    hostname: librenms-syslogng
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    depends_on:
+      - librenms
+      - redis
+    ports:
+      - target: 514
+        published: 514
+        protocol: tcp
+      - target: 514
+        published: 514
+        protocol: udp
+    volumes:
+      - 
+    env_file:
+      - 
+    environment:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+    restart: always
+ 
+  snmptrapd:
+    image: librenms/librenms:latest
+    container_name: librenms_snmptrapd
+    hostname: librenms-snmptrapd
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    depends_on:
+      - librenms
+      - redis
+    ports:
+      - target: 162
+        published: 162
+        protocol: tcp
+      - target: 162
+        published: 162
+        protocol: udp
+    volumes:
+      - 
+    env_file:
+      - 
+    environment:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+    restart: always

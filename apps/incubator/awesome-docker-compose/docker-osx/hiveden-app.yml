@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: docker-osx
+category: virtual-system
+name: Docker-OSX
+version: latest
+tagline: Run macOS VM in a Docker!
+description: Run macOS VM in a Docker! Run near native OSX-KVM in Docker! X11 Forwarding!
+  CI/CD for OS X Security Research! Docker mac Containers.
+developer: sickcodes
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/virtual-system/docker-osx
+repo: https://github.com/sickcodes/Docker-OSX
+support: https://github.com/sickcodes/Docker-OSX#quick-start-docker-osx

@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: apache-solr
+category: search-engine-solution
+name: Apache Solr
+version: latest
+tagline: Enterprise search platform featuring full-text search, hit highlighting,
+  faceted search, real-time indexing, dynamic cl...
+description: Enterprise search platform featuring full-text search, hit highlighting,
+  faceted search, real-time indexing, dynamic clustering, and rich document (e.g.,
+  Word, PDF) handling.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://solr.apache.org/
+repo: https://hub.docker.com/_/solr
+support: https://solr.apache.org/guide/solr/latest/deployment-guide/solr-in-docker.html

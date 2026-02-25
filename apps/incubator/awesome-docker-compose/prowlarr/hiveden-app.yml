@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: prowlarr
+category: arr
+name: Prowlarr
+version: latest
+tagline: Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs
+  base stack to integrate with your various P...
+description: Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs
+  base stack to integrate with your various PVR apps, supporting management of both
+  Torrent Trackers and Usenet Indexers.
+developer: Prowlarr
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://prowlarr.com/
+repo: https://github.com/Prowlarr/Prowlarr
+support: https://github.com/linuxserver/docker-prowlarr

@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  keila:
+    image: pentacent/keila:latest
+    restart: unless-stopped

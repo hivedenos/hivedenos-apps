@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: ackee
+category: analytics
+name: Ackee
+version: latest
+tagline: Self-hosted, Node.js based analytics tool for those who care about privacy.
+description: Self-hosted, Node.js based analytics tool for those who care about privacy.
+developer: electerious
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://ackee.electerious.com/
+repo: https://github.com/electerious/Ackee
+support: https://github.com/electerious/Ackee

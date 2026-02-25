@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: directus
+category: database-management
+name: Directus
+version: 11.0.0
+tagline: An Instant App & API for your SQL Database.
+description: An Instant App & API for your SQL Database. Directus wraps your new or
+  existing SQL database with a realtime GraphQL+REST API for developers, and an intuitive
+  admin app for non-technical users.
+developer: directus
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://directus.io/
+repo: https://github.com/directus/directus
+support: https://docs.directus.io/self-hosted/docker-guide.html

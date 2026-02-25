@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  clearflask:
+    image: ghcr.io/clearflask/clearflask-connect:latest
+    restart: unless-stopped

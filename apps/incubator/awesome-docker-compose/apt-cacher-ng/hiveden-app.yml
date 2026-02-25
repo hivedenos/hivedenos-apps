@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: apt-cacher-ng
+category: proxy
+name: Apt-Cacher NG
+version: latest
+tagline: 'Website:'
+description: 'Website:'
+developer: sameersbn
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/proxy/apt-cacher-ng
+repo: https://github.com/sameersbn/docker-apt-cacher-ng
+support: https://github.com/sameersbn/docker-apt-cacher-ng

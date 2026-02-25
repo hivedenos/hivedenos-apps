@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: myip
+category: ip-and-domain
+name: MyIP
+version: latest
+tagline: MyIP - A Better IP Toolbox.
+description: MyIP - A Better IP Toolbox.
+developer: jason5ng32
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://ipcheck.ing/
+repo: https://github.com/jason5ng32/MyIP
+support: https://github.com/jason5ng32/MyIP#using-docker

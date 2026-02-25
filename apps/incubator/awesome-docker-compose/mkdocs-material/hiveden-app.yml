@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: mkdocs-material
+category: documentation
+name: Mkdocs Material
+version: latest
+tagline: Documentation that simply works.
+description: Documentation that simply works.
+developer: squidfunk
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://squidfunk.github.io/mkdocs-material/
+repo: https://github.com/squidfunk/mkdocs-material
+support: https://github.com/squidfunk/mkdocs-material

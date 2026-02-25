@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: psitransfer
+category: file-transfer-single-click-drag-n-drop-upload
+name: PsiTransfer
+version: latest
+tagline: Simple open source self-hosted file sharing solution with robust up-/download-resume
+  and password protection.
+description: Simple open source self-hosted file sharing solution with robust up-/download-resume
+  and password protection.
+developer: psi-4ward
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://psi.cx/2017/psitransfer/
+repo: https://github.com/psi-4ward/psitransfer
+support: https://github.com/psi-4ward/psitransfer#quickstart

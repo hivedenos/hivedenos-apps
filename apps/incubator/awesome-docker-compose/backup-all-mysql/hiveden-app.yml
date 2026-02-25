@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: backup-all-mysql
+category: database-backup-mysql-backup
+name: backup-all-mysql
+version: latest
+tagline: Docker image to do automatic backups of a mysql DB.
+description: Docker image to do automatic backups of a mysql DB.
+developer: dsteinkopf
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/database-backup/mysql-backup/backup-all-mysql
+repo: https://github.com/dsteinkopf/backup-all-mysql
+support: https://github.com/dsteinkopf/backup-all-mysql#setup

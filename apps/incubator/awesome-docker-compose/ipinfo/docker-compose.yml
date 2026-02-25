@@ -1,0 +1,9 @@
+version: 
+ 
+services:
+  ipinfo.tw:
+    container_name: ipinfo.tw
+    image: peterdavehello/ipinfo.tw:latest
+    ports:
+      - 
+    restart: unless-stopped

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: hedgedoc
+category: note-taking-and-editors
+name: Hedgedoc
+version: latest
+tagline: Realtime collaborative markdown notes on all platforms, formerly known as
+  CodiMD and HackMD CE.
+description: Realtime collaborative markdown notes on all platforms, formerly known
+  as CodiMD and HackMD CE.
+developer: hedgedoc
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://hedgedoc.org/
+repo: https://github.com/hedgedoc/hedgedoc
+support: https://github.com/linuxserver/docker-hedgedoc

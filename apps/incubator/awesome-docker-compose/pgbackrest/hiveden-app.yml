@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: pgbackrest
+category: database-backup-postgres-backup
+name: pgBackRest
+version: latest
+tagline: pgBackRest is a reliable backup and restore solution for PostgreSQL that
+  seamlessly scales up to the largest databases...
+description: pgBackRest is a reliable backup and restore solution for PostgreSQL that
+  seamlessly scales up to the largest databases and workloads.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://pgbackrest.org/
+repo: https://github.com/woblerr/docker-pgbackrest
+support: https://github.com/woblerr/docker-pgbackrest

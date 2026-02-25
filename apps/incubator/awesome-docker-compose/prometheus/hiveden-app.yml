@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: prometheus
+category: system-monitoring
+name: Prometheus
+version: latest
+tagline: The Prometheus monitoring system and time series database.
+description: The Prometheus monitoring system and time series database.
+developer: prometheus
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://prometheus.io/
+repo: https://github.com/prometheus/prometheus
+support: https://prometheus.io/docs/prometheus/latest/installation/

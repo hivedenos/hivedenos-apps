@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: druid
+category: analytics
+name: Druid
+version: latest
+tagline: Distributed, column-oriented, real-time analytics data store.
+description: Distributed, column-oriented, real-time analytics data store.
+developer: apache
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://druid.apache.org/
+repo: https://github.com/apache/druid
+support: https://druid.apache.org/docs/latest/tutorials/docker/

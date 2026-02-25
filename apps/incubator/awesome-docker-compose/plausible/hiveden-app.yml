@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: plausible
+category: analytics
+name: Plausible
+version: 16-alpine
+tagline: Simple, open source, lightweight (< 1 KB) and privacy-friendly web analytics
+  alternative to Google Analytics.
+description: Simple, open source, lightweight (< 1 KB) and privacy-friendly web analytics
+  alternative to Google Analytics.
+developer: plausible
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://plausible.io/
+repo: https://github.com/plausible/analytics
+support: https://github.com/plausible/community-edition

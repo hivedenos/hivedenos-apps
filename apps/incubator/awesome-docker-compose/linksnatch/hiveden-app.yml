@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: linksnatch
+category: bookmarks-managers
+name: LinkSnatch
+version: latest
+tagline: An effortlessly simple bookmarks app that lets you save the links on your
+  device on the go.
+description: An effortlessly simple bookmarks app that lets you save the links on
+  your device on the go.
+developer: amitmerchant1990
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://linksnatch.pages.dev/
+repo: https://github.com/amitmerchant1990/linksnatch
+support: https://github.com/varunsridharan/docker-linksnatch

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: stringer
+category: rss
+name: Stringer
+version: latest
+tagline: Work-in-progress self-hosted, anti-social RSS reader.
+description: Work-in-progress self-hosted, anti-social RSS reader.
+developer: stringer-rss
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/rss/stringer
+repo: https://github.com/stringer-rss/stringer
+support: https://github.com/stringer-rss/stringer/blob/main/docs/Docker.md

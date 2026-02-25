@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: librephotos
+category: photo-server
+name: LibrePhotos
+version: ${tag}
+tagline: Self hosted wannabe Google Photos clone, with a slight focus on cool graphs.
+description: Self hosted wannabe Google Photos clone, with a slight focus on cool
+  graphs.
+developer: LibrePhotos
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://docs.librephotos.com/
+repo: https://github.com/LibrePhotos/librephotos-docker
+support: https://docs.librephotos.com/docs/installation/standard-install/

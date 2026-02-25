@@ -1,0 +1,9 @@
+services:
+  fossflow:
+    image: stnsmith/fossflow:latest
+    container_name: fossflow
+    ports:
+      - 
+    volumes:
+      - ./diagrams:/data/diagrams
+    restart: unless-stopped

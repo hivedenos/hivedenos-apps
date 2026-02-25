@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: tracks
+category: task-management
+name: Tracks
+version: '5.7'
+tagline: "Web-based application to help you implement David Allen\xE2\x80\x99s Getting\
+  \ Things Done\xE2\x84\xA2 methodology."
+description: "Web-based application to help you implement David Allen\xE2\x80\x99\
+  s Getting Things Done\xE2\x84\xA2 methodology."
+developer: TracksApp
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.getontracks.org/
+repo: https://github.com/TracksApp/tracks
+support: https://github.com/TracksApp/tracks/blob/v2.7.1/doc/installation.md

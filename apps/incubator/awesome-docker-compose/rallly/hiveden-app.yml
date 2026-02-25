@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: rallly
+category: booking-and-scheduling
+name: Rallly
+version: '14.2'
+tagline: Create polls to vote on dates and times (alternative to Doodle).
+description: Create polls to vote on dates and times (alternative to Doodle).
+developer: lukevella
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://rallly.co/
+repo: https://github.com/lukevella/rallly
+support: https://support.rallly.co/self-hosting/docker-compose

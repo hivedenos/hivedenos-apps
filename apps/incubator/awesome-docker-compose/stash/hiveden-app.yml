@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: stash
+category: media-server
+name: Stash
+version: latest
+tagline: A web-based library organizer and player for your adult media stash, with
+  auto-tagging and metadata scraping support.
+description: A web-based library organizer and player for your adult media stash,
+  with auto-tagging and metadata scraping support.
+developer: stashapp
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://stashapp.cc/
+repo: https://github.com/stashapp/stash
+support: https://docs.stashapp.cc/getting-started/installation/docker/

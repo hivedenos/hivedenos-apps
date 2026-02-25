@@ -1,0 +1,9 @@
+version: 
+ 
+services:
+  cockpit:
+    container_name: cockpit
+    ports:
+      - 8080:80
+    image: cockpithq/cockpit:pro-latest
+    restart: unless-stopped

@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: shlink
+category: url-shorteners
+name: Shlink
+version: stable
+tagline: URL shortener with REST API and command line interface.
+description: URL shortener with REST API and command line interface. Includes official
+  progressive web application and docker images.
+developer: shlinkio
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://shlink.io/
+repo: https://github.com/shlinkio/shlink
+support: https://shlink.io/documentation/install-docker-image/

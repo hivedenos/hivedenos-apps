@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: sonarr
+category: arr
+name: Sonarr
+version: latest
+tagline: Smart PVR for newsgroup and bittorrent users.
+description: Smart PVR for newsgroup and bittorrent users.
+developer: Sonarr
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://sonarr.tv/
+repo: https://github.com/Sonarr/Sonarr
+support: https://github.com/linuxserver/docker-sonarr

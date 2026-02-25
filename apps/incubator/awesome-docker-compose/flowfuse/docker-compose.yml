@@ -1,0 +1,103 @@
+version: '3.9'
+services:
+  nginx:
+    image: nginxproxy/nginx-proxy:1.6.0
+    networks:
+      - flowforge 
+    restart: always
+    volumes:
+      - 
+      - 
+      - 
+      - 
+
+    ports:
+      - 
+
+    # environment:
+
+  # acme:
+  #   image: nginxproxy/acme-companion:2.4.0
+  #   restart: always
+  #   volumes:
+
+
+  #   volumes_from:
+  #     - nginx:rw
+  #   environment:
+
+  #   depends_on:
+
+  postgres:
+    image: postgres:14
+    networks: 
+      - flowforge
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: secret
+      POSTGRES_USER: root
+    volumes:
+      - 
+      - 
+      - 
+  flowforge-broker:
+    image: 
+    networks:
+      - flowforge
+    restart: always
+    ulimits:
+      nofile: 2048
+    environment:
+      - 
+      - 
+      - 
+    volumes:
+      - 
+  forge:
+    build:
+      context: 
+    image: 
+    networks: 
+      - flowforge
+    restart: always
+    environment:
+      - 
+      - 
+    volumes:
+      - 
+      - 
+      - 
+    depends_on:
+      - 
+      - 
+      - 
+ 
+  file-server:
+    build:
+      context: 
+    image: 
+    networks:
+      - flowforge
+    restart: always
+    volumes:
+      - 
+      - 
+    depends_on:
+      - 
+ 
+  # npm:
+
+  #   networks:
+  #     - flowforge
+  #   restart: always
+  #   environment:
+
+
+  #   volumes:
+
+
+  #   depends_on:
+  #     - nginx
+ 
+networks:
+  flowforge:

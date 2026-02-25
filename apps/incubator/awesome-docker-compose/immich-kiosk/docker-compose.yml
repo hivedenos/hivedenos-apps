@@ -1,0 +1,13 @@
+version: '3.9'
+ 
+services:
+  immich-kiosk:
+    image: damongolding/immich-kiosk:latest
+    container_name: immich-kiosk
+    environment:
+      TZ: 
+    volumes:
+      - ./config.yaml:/config.yaml
+    restart: on-failure
+    ports:
+      - 3000:3000

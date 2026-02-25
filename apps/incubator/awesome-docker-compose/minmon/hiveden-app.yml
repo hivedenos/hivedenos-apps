@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: minmon
+category: network-monitoring
+name: MinMon
+version: latest
+tagline: MinMon - an opinionated minimal monitoring and alarming tool.
+description: MinMon - an opinionated minimal monitoring and alarming tool.
+developer: flo-at
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/network-monitoring/minmon
+repo: https://github.com/flo-at/minmon
+support: https://github.com/flo-at/minmon#docker-image

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: rustdesk
+category: remote-access
+name: RustDesk
+version: latest
+tagline: Remote Desktop Access software that works out-of-the-box (alternative to
+  TeamViewer).
+description: Remote Desktop Access software that works out-of-the-box (alternative
+  to TeamViewer).
+developer: rustdesk
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://rustdesk.com/
+repo: https://github.com/rustdesk/rustdesk-server
+support: https://github.com/rustdesk/rustdesk-server#docker-images

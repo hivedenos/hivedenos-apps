@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: remotely
+category: remote-access
+name: Remotely
+version: latest
+tagline: A remote desktop control and remote scripting solution, enterprise level
+  remote support solution with admin web interfa...
+description: A remote desktop control and remote scripting solution, enterprise level
+  remote support solution with admin web interface and remote control via browser.
+developer: immense
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/remote-access/remotely
+repo: https://github.com/immense/Remotely
+support: https://github.com/immense/Remotely#quickstart

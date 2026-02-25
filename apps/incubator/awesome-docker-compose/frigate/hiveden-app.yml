@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: frigate
+category: video-surveillance
+name: Frigate
+version: stable
+tagline: Monitor your security cameras with locally processed AI.
+description: Monitor your security cameras with locally processed AI.
+developer: blakeblackshear
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://frigate.video/
+repo: https://github.com/blakeblackshear/frigate
+support: https://docs.frigate.video/frigate/installation#docker

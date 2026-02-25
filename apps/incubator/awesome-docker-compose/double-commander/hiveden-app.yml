@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: double-commander
+category: file-transfer-web-based-file-managers
+name: Double Commander
+version: latest
+tagline: Double Commander is a free cross platform open source file manager with two
+  panels side by side.
+description: Double Commander is a free cross platform open source file manager with
+  two panels side by side.
+developer: doublecmd
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://doublecmd.sourceforge.io/
+repo: https://github.com/doublecmd/doublecmd
+support: https://github.com/linuxserver/docker-doublecommander

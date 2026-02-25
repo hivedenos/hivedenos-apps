@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: teampass
+category: password-managers
+name: Teampass
+version: alpine
+tagline: Password manager dedicated for managing passwords in a collaborative way.
+description: Password manager dedicated for managing passwords in a collaborative
+  way. One symmetric key is used to encrypt all shared/team passwords and stored server
+  side in a file and the database. works on any server Apache, MySQL and PHP.
+developer: nilsteampassnet
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://teampass.net/
+repo: https://github.com/nilsteampassnet/TeamPass
+support: https://github.com/nilsteampassnet/TeamPass#documentation

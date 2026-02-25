@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: dozzle
+category: container-management
+name: Dozzle
+version: latest
+tagline: Real-time logging and monitoring for Docker in the browser.
+description: Real-time logging and monitoring for Docker in the browser.
+developer: amir20
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://dozzle.dev/
+repo: https://github.com/amir20/dozzle
+support: https://dozzle.dev/guide/getting-started

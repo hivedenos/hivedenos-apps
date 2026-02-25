@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: dockge
+category: container-management
+name: Dockge
+version: '1'
+tagline: A fancy, easy-to-use and reactive self-hosted docker compose.yaml stack-oriented
+  manager.
+description: A fancy, easy-to-use and reactive self-hosted docker compose.yaml stack-oriented
+  manager.
+developer: louislam
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://dockge.kuma.pet/
+repo: https://github.com/louislam/dockge
+support: https://github.com/louislam/dockge#-how-to-install

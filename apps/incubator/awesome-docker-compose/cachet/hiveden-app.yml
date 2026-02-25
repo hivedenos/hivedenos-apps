@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: cachet
+category: network-monitoring
+name: Cachet
+version: 12-alpine
+tagline: An open source status page system, for everyone.
+description: An open source status page system, for everyone.
+developer: cachethq
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://cachethq.io/
+repo: https://github.com/cachethq/cachet
+support: https://docs.cachethq.io/installation/docker.html

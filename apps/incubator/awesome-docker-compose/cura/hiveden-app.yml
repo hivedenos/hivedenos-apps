@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: cura
+category: miscellaneous
+name: Cura
+version: latest
+tagline: "UltiMaker Cura\xE2\x81\_ is free, easy-to-use 3D printing software trusted\
+  \ by millions of users."
+description: "UltiMaker Cura\xE2\x81\_ is free, easy-to-use 3D printing software trusted\
+  \ by millions of users. Fine-tune your 3D model with 400+ settings for the best\
+  \ slicing and printing results."
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://ultimaker.com/software/ultimaker-cura/
+repo: https://github.com/linuxserver/docker-cura
+support: https://github.com/linuxserver/docker-cura

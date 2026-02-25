@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: tinymediamanager
+category: media-server
+name: tinyMediaManager
+version: latest
+tagline: tinyMediaManager ia a full featured media manager to organize and clean up
+  your media library.
+description: tinyMediaManager ia a full featured media manager to organize and clean
+  up your media library.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.tinymediamanager.org/
+repo: https://gitlab.com/tinyMediaManager/tinyMediaManager
+support: https://www.tinymediamanager.org/docs/docker

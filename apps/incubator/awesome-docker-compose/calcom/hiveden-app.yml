@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: calcom
+category: booking-and-scheduling
+name: Cal.com
+version: latest
+tagline: The open-source online appointment scheduling system.
+description: The open-source online appointment scheduling system.
+developer: calcom
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://cal.com/
+repo: https://github.com/calcom/cal.com
+support: https://cal.com/docs/introduction/quick-start/self-hosting/docker

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: bluewave-uptime
+category: network-monitoring
+name: BlueWave Uptime
+version: latest
+tagline: BlueWave Uptime is an open source server monitoring application used to track
+  the operational status and performance of...
+description: BlueWave Uptime is an open source server monitoring application used
+  to track the operational status and performance of servers and websites.
+developer: bluewave-labs
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://uptime-demo.bluewavelabs.ca/
+repo: https://github.com/bluewave-labs/bluewave-uptime
+support: https://bluewavelabs.gitbook.io/uptime-manager/users-guide/quickstart

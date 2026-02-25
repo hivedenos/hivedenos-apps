@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: gaseous
+category: games-emulation
+name: Gaseous
+version: latest
+tagline: A game ROM manager, with a built in web based emulator using multiple sources
+  to identify and provide metadata.
+description: A game ROM manager, with a built in web based emulator using multiple
+  sources to identify and provide metadata.
+developer: gaseous-project
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/games/emulation/gaseous
+repo: https://github.com/gaseous-project/gaseous-server
+support: https://github.com/gaseous-project/gaseous-server/wiki/Installation

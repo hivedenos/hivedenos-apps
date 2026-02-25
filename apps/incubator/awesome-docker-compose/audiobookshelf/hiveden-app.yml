@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: audiobookshelf
+category: audio-server
+name: Audiobookshelf
+version: latest
+tagline: Fully open-source self-hosted audiobook and podcast server.
+description: Fully open-source self-hosted audiobook and podcast server. It streams
+  all audio formats, keeps and syncs progress across devices. Comes with open-source
+  apps for Android and iOS.
+developer: advplyr
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.audiobookshelf.org/
+repo: https://github.com/advplyr/audiobookshelf
+support: https://www.audiobookshelf.org/docs/#docker-compose-install

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: pocketbase
+category: low-code
+name: PocketBase
+version: latest
+tagline: Open Source backend for your next SaaS and Mobile app in 1 file.
+description: Open Source backend for your next SaaS and Mobile app in 1 file.
+developer: pocketbase
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://pocketbase.io/
+repo: https://github.com/pocketbase/pocketbase
+support: https://github.com/pocketbase/pocketbase

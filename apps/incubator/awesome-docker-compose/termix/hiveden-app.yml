@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: termix
+category: remote-access
+name: Termix
+version: latest
+tagline: Termix is an open-source, web-based server management platform with SSH terminal,
+  tunneling, and file editing capabilit...
+description: Termix is an open-source, web-based server management platform with SSH
+  terminal, tunneling, and file editing capabilities.
+developer: Termix-SSH
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://termix.site/
+repo: https://github.com/Termix-SSH/Termix
+support: https://docs.termix.site/install

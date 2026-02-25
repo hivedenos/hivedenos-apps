@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: teammapper
+category: knowledge-management-tools
+name: Teammapper
+version: latest
+tagline: Host and create your own mindmaps.
+description: Host and create your own mindmaps. Share your mindmap sessions with your
+  team and collaborate live on mindmaps.
+developer: b310-digital
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.teammapper.org/
+repo: https://github.com/b310-digital/teammapper
+support: https://github.com/b310-digital/teammapper#getting-started

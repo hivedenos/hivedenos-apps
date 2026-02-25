@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: docpht
+category: note-taking-and-editors
+name: Docpht
+version: v1.3.2
+tagline: With DocPHT you can take notes and quickly document anything and without
+  the use of any database.
+description: With DocPHT you can take notes and quickly document anything and without
+  the use of any database.
+developer: docpht
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://docpht.org/
+repo: https://github.com/docpht/docpht
+support: https://github.com/docpht/docpht#docker

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: hemmelig
+category: pastebins
+name: Hemmelig
+version: v5.19.17
+tagline: Share encrypted secrets cross organizations, or as private persons.
+description: Share encrypted secrets cross organizations, or as private persons.
+developer: HemmeligOrg
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://hemmelig.app/
+repo: https://github.com/HemmeligOrg/Hemmelig.app
+support: https://github.com/HemmeligOrg/Hemmelig.app#docker-image

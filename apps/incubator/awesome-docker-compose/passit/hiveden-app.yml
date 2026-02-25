@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: passit
+category: password-managers
+name: PassIt
+version: stable
+tagline: Simple password manage with sharing features by group and user, but no administration
+  interface.
+description: Simple password manage with sharing features by group and user, but no
+  administration interface.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://passit.io/
+repo: https://passit.io/install/
+support: https://passit.io/install/

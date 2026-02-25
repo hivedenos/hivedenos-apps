@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: roundcube
+category: email-webmail-clients
+name: Roundcube
+version: latest
+tagline: Browser-based IMAP client with an application-like user interface.
+description: Browser-based IMAP client with an application-like user interface.
+developer: roundcube
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://roundcube.net/
+repo: https://github.com/roundcube/roundcubemail
+support: https://github.com/eilandert/dockerized/blob/master/roundcube/docker-compose.yml

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: librewolf
+category: virtual-browser
+name: Librewolf
+version: latest
+tagline: Librewolf
+description: Librewolf
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://librewolf.net/
+repo: https://github.com/linuxserver/docker-librewolf
+support: https://github.com/linuxserver/docker-librewolf

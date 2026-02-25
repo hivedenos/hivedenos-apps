@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: seafile
+category: cloud-storage
+name: Seafile
+version: latest
+tagline: File hosting and sharing solution primary for teams and organizations.
+description: File hosting and sharing solution primary for teams and organizations.
+developer: haiwen
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.seafile.com/
+repo: https://github.com/haiwen/seafile
+support: https://github.com/haiwen/seafile

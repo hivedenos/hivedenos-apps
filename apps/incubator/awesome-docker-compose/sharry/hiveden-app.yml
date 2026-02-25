@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: sharry
+category: file-transfer-single-click-drag-n-drop-upload
+name: Sharry
+version: latest
+tagline: Share files easily over the internet between authenticated and anonymous
+  users (both ways) with resumable up- and downl...
+description: Share files easily over the internet between authenticated and anonymous
+  users (both ways) with resumable up- and downloads.
+developer: eikek
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://eikek.github.io/sharry/
+repo: https://github.com/eikek/sharry
+support: https://eikek.github.io/sharry/doc/quickstart#quickstart-with-docker

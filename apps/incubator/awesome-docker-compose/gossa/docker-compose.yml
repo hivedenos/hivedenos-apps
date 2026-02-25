@@ -1,0 +1,9 @@
+version: 
+services:
+  gossa:
+    image: pldubouilh/gossa
+    volumes:
+      - ~/LocalDirToShare:/shared
+    ports:
+      - 8001:8001
+    restart: unless-stopped  

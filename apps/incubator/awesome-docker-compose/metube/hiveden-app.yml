@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: metube
+category: video-downloader
+name: MeTube
+version: latest
+tagline: Self-hosted YouTube downloader (web UI for youtube-dl / yt-dlp).
+description: Self-hosted YouTube downloader (web UI for youtube-dl / yt-dlp).
+developer: alexta69
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/video-downloader/metube
+repo: https://github.com/alexta69/metube
+support: https://github.com/alexta69/metube#run-using-docker

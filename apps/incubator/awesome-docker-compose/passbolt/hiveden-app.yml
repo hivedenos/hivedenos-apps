@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: passbolt
+category: password-managers
+name: Passbolt
+version: '10.11'
+tagline: Password manager dedicated for managing passwords in a collaborative way
+  on any Web server, using a MySQL database back...
+description: Password manager dedicated for managing passwords in a collaborative
+  way on any Web server, using a MySQL database backend.
+developer: passbolt
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.passbolt.com/
+repo: https://github.com/passbolt/passbolt_api
+support: https://github.com/passbolt/passbolt_docker

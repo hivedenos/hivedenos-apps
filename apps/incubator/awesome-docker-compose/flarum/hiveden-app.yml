@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: flarum
+category: social-networks-and-forums
+name: Flarum
+version: '10'
+tagline: Delightfully simple forums.
+description: Delightfully simple forums. Flarum is the next-generation forum software
+  that makes online discussion fun again.
+developer: flarum
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://flarum.org/
+repo: https://github.com/flarum/flarum
+support: https://github.com/crazy-max/docker-flarum

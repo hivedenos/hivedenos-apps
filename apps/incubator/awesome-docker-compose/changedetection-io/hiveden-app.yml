@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: changedetection-io
+category: automation
+name: changedetection.io
+version: latest
+tagline: Self-hosted tool for staying up-to-date with web-site content changes.
+description: Self-hosted tool for staying up-to-date with web-site content changes.
+developer: dgtlmoon
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://changedetection.io/
+repo: https://github.com/dgtlmoon/changedetection.io
+support: https://github.com/dgtlmoon/changedetection.io#installation

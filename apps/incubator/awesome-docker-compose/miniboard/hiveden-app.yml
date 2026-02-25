@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: miniboard
+category: network-monitoring
+name: miniboard
+version: v1.26.3
+tagline: Lightweight dashboard with tabs, uptime monitoring and notifications.
+description: Lightweight dashboard with tabs, uptime monitoring and notifications.
+developer: aceberg
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/network-monitoring/miniboard
+repo: https://github.com/aceberg/miniboard
+support: https://github.com/aceberg/miniboard#quick-start

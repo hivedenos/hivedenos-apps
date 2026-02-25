@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: websurfx
+category: internet-tools
+name: Websurfx
+version: latest
+tagline: Aggregate results from other search engines (metasearch engine) without ads
+  while keeping privacy and security in mind.
+description: Aggregate results from other search engines (metasearch engine) without
+  ads while keeping privacy and security in mind. It is extremely fast and provides
+  a high level of customization (alternative to SearX).
+developer: neon-mmd
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/internet-tools/websurfx
+repo: https://github.com/neon-mmd/websurfx
+support: https://github.com/neon-mmd/websurfx/blob/rolling/docs/installation.md#docker-deployment

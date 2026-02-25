@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  authentik:
+    image: docker.io/library/postgres:16-alpine
+    restart: unless-stopped

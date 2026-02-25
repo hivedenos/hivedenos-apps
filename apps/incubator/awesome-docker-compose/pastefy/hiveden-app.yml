@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: pastefy
+category: pastebins
+name: Pastefy
+version: '10.11'
+tagline: Beautiful, simple and easy to deploy Pastebin with optional Client-Encryption,
+  Multitab-Pastes, an API, a highlighted E...
+description: Beautiful, simple and easy to deploy Pastebin with optional Client-Encryption,
+  Multitab-Pastes, an API, a highlighted Editor and more.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/pastebins/pastefy
+repo: https://github.com/interaapps/pastefy#Deploy
+support: https://github.com/interaapps/pastefy#Deploy

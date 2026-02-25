@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: morphos
+category: miscellaneous
+name: Morphos
+version: latest
+tagline: Self-hosted file converter server.
+description: Self-hosted file converter server.
+developer: danvergara
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/miscellaneous/morphos
+repo: https://github.com/danvergara/morphos
+support: https://github.com/danvergara/morphos#docker

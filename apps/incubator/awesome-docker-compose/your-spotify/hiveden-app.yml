@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: your-spotify
+category: internet-tools
+name: Your Spotify
+version: '6'
+tagline: YourSpotify is a self-hosted application that tracks what you listen and
+  offers you a dashboard to explore statistics a...
+description: YourSpotify is a self-hosted application that tracks what you listen
+  and offers you a dashboard to explore statistics about it.
+developer: Yooooomi
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/internet-tools/your-spotify
+repo: https://github.com/Yooooomi/your_spotify
+support: https://github.com/Yooooomi/your_spotify#installation

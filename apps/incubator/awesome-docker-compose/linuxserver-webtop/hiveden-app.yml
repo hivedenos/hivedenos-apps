@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: linuxserver-webtop
+category: virtual-system-linux-gui
+name: linuxserver/webtop
+version: latest
+tagline: Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop
+  environments in officially supported flavors...
+description: Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop
+  environments in officially supported flavors accessible via any modern web browser.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/virtual-system/Linux GUI/linuxserver-webtop
+repo: https://github.com/linuxserver/docker-webtop
+support: https://github.com/linuxserver/docker-webtop

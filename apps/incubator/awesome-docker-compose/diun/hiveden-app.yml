@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: diun
+category: container-management
+name: Diun
+version: latest
+tagline: Receive notifications when an image is updated on a Docker registry.
+description: Receive notifications when an image is updated on a Docker registry.
+developer: crazy-max
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://crazymax.dev/diun/
+repo: https://github.com/crazy-max/diun
+support: https://crazymax.dev/diun/install/docker/

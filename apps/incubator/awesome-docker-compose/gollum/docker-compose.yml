@@ -1,0 +1,14 @@
+version: 
+ 
+services:
+  gollum:
+    image: gollumwiki/gollum:master
+    restart: always
+    ports:
+      - 
+    volumes:
+      - ${PWD}/config.rb:/etc/gollum/config.rb
+      - ${PWD}/gitconfig:/home/www-data/.gitconfig
+      - ${PWD}/wikidata:/wiki
+    command:
+      - 

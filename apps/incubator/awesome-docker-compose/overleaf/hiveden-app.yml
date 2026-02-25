@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: overleaf
+category: note-taking-and-editors
+name: Overleaf
+version: latest
+tagline: Web-based collaborative LaTeX editor.
+description: Web-based collaborative LaTeX editor.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/note-taking-and-editors/overleaf
+repo: https://awesome-docker-compose.com/apps/note-taking-and-editors/overleaf
+support: https://awesome-docker-compose.com/apps/note-taking-and-editors/overleaf

@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: linuxserver-obsidian
+category: knowledge-management-tools-obsidian
+name: Docker Obsidian
+version: latest
+tagline: Obsidian is a note-taking app that lets you create, link, and organize your
+  notes on your device, with hundreds of plug...
+description: Obsidian is a note-taking app that lets you create, link, and organize
+  your notes on your device, with hundreds of plugins and themes to customize your
+  workflow.
+developer: obsidianmd
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://obsidian.md/
+repo: https://github.com/obsidianmd
+support: https://github.com/linuxserver/docker-obsidian

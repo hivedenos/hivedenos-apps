@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: kitchenowl
+category: recipe-management
+name: KitchenOwl
+version: latest
+tagline: A cross-platform shopping list, recipe storage, expense tracker, and meal
+  planner following the material design languag...
+description: A cross-platform shopping list, recipe storage, expense tracker, and
+  meal planner following the material design language.
+developer: TomBursch
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://kitchenowl.org/
+repo: https://github.com/TomBursch/kitchenowl
+support: https://docs.kitchenowl.org/latest/self-hosting/

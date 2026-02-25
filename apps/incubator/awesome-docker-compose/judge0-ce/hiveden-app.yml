@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: judge0-ce
+category: ide-and-tools
+name: Judge0 CE
+version: latest
+tagline: Open source API to compile and run source code.
+description: Open source API to compile and run source code.
+developer: judge0
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://judge0.com/
+repo: https://github.com/judge0/judge0
+support: https://github.com/judge0/judge0/blob/master/CHANGELOG.md#deployment-procedure

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: thunderbird-docker
+category: email-webmail-clients
+name: Thunderbird Docker
+version: latest
+tagline: Docker container for Thunderbird.
+description: Docker container for Thunderbird. The GUI of the application is accessed
+  through a modern web browser (no installation or configuration needed on the client
+  side) or via any VNC client.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.thunderbird.net/
+repo: https://github.com/jlesage/docker-thunderbird
+support: https://github.com/jlesage/docker-thunderbird

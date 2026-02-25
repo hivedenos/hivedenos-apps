@@ -1,0 +1,6 @@
+version: 
+ 
+services:
+  mysql-s3-backup:
+    image: dsteinkopf/d3fk/mysql-s3-backup
+ 

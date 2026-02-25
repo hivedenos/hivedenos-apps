@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: woodpecker
+category: ci-and-cd
+name: Woodpecker
+version: latest
+tagline: Community fork of Drone that uses Docker containers.
+description: Community fork of Drone that uses Docker containers.
+developer: woodpecker-ci
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://woodpecker-ci.org/
+repo: https://github.com/woodpecker-ci/woodpecker
+support: https://woodpecker-ci.org/docs/administration/deployment-methods/docker-compose

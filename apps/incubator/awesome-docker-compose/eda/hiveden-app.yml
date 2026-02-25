@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: eda
+category: analytics
+name: EDA
+version: latest
+tagline: Web application for data analysis and visualization.
+description: Web application for data analysis and visualization.
+developer: jortilles
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://eda.jortilles.com/
+repo: https://github.com/jortilles/EDA
+support: https://github.com/jortilles/EDA#Demo

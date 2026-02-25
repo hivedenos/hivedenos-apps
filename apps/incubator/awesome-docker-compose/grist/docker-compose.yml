@@ -1,0 +1,9 @@
+version: 
+services:
+  grist:
+    image: gristlabs/grist
+    ports:
+      - 8484:8484
+    volumes:
+      - $PWD/persist:/persist
+    restart: unless-stopped  

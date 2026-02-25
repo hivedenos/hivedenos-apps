@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: drawio
+category: diagraming-and-canvas
+name: draw.io
+version: latest
+tagline: Diagram software for making flowcharts, process diagrams, org charts, UML,
+  ER and network diagrams.
+description: Diagram software for making flowcharts, process diagrams, org charts,
+  UML, ER and network diagrams.
+developer: jgraph
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.drawio.com/
+repo: https://github.com/jgraph/drawio
+support: https://github.com/jgraph/docker-drawio

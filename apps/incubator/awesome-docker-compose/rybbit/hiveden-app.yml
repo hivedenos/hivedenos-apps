@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: rybbit
+category: analytics
+name: Rybbit
+version: 2.10.0
+tagline: "\uD83D\uDC38 Rybbit - open-source and privacy-friendly alternative to Google\
+  \ Analytics that is 10x more intuitive."
+description: "\uD83D\uDC38 Rybbit - open-source and privacy-friendly alternative to\
+  \ Google Analytics that is 10x more intuitive."
+developer: rybbit-io
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.rybbit.io/
+repo: https://github.com/rybbit-io/rybbit
+support: https://www.rybbit.io/docs/self-hosting

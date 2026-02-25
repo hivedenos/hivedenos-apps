@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  docspell:
+    image: docspell/restserver:latest
+    restart: unless-stopped

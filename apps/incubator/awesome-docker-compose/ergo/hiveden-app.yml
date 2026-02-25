@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: ergo
+category: irc
+name: Ergo
+version: stable
+tagline: Modern IRCv3 server written in Go, combining the features of an ircd, a services
+  framework, and a bouncer.
+description: Modern IRCv3 server written in Go, combining the features of an ircd,
+  a services framework, and a bouncer.
+developer: ergochat
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://ergo.chat/
+repo: https://github.com/ergochat/ergo
+support: https://github.com/ergochat/ergo/blob/master/distrib/docker/README.md

@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: apache-airflow
+category: automation
+name: Apache Airflow
+version: 2.10.2}
+tagline: Airflow is a platform to programmatically author, schedule, and monitor workflows.
+description: Airflow is a platform to programmatically author, schedule, and monitor
+  workflows.
+developer: apache
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://airflow.apache.org/
+repo: https://github.com/apache/airflow
+support: https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html

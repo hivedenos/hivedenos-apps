@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: azuracast
+category: audio-server
+name: AzuraCast
+version: latest
+tagline: A modern and accessible self-hosted web radio management suite.
+description: A modern and accessible self-hosted web radio management suite.
+developer: azuracast
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.azuracast.com/
+repo: https://github.com/azuracast/azuracast
+support: https://www.azuracast.com/docs/getting-started/installation/

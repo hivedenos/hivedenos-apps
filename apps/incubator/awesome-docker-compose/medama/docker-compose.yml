@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  medama:
+    image: ghcr.io/medama-io/medama:latest
+    restart: unless-stopped
+    environment:
+      - LOGGER=pretty
+    ports:
+      - 
+    volumes:
+      - ./data:/app/data

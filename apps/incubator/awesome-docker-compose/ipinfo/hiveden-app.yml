@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: ipinfo
+category: ip-and-domain
+name: Ipinfo.tw
+version: latest
+tagline: A self-hosted, non-tracking, and ad-free solution to reveal client-side IP
+  info like IP address, country, AS number/des...
+description: A self-hosted, non-tracking, and ad-free solution to reveal client-side
+  IP info like IP address, country, AS number/description, and additionally, user
+  agent.
+developer: PeterDaveHello
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://ipinfo.tw/
+repo: https://github.com/PeterDaveHello/ipinfo.tw
+support: https://github.com/PeterDaveHello/ipinfo.tw#usage

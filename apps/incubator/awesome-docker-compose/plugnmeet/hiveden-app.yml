@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: plugnmeet
+category: video-conferencing
+name: plugNmeet
+version: '6'
+tagline: Scalable, High Performance, Open source web conferencing system.
+description: Scalable, High Performance, Open source web conferencing system.
+developer: mynaparrot
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.plugnmeet.org/
+repo: https://github.com/mynaparrot/plugNmeet-server
+support: https://github.com/mynaparrot/plugNmeet-install

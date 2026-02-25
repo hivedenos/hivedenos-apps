@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: gatus
+category: network-monitoring
+name: Gatus
+version: latest
+tagline: Automated service health dashboard.
+description: Automated service health dashboard.
+developer: TwiN
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://gatus.io/
+repo: https://github.com/TwiN/gatus
+support: https://github.com/TwiN/gatus#deployment

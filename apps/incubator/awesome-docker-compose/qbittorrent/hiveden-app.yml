@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: qbittorrent
+category: torrenting
+name: Qbittorrent
+version: latest
+tagline: Free cross-platform bittorrent client with a feature rich Web UI for remote
+  access.
+description: Free cross-platform bittorrent client with a feature rich Web UI for
+  remote access.
+developer: qbittorrent
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.qbittorrent.org/
+repo: https://github.com/qbittorrent/qBittorrent
+support: https://github.com/qbittorrent/qBittorrent

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: vikunja
+category: task-management
+name: Vikunja
+version: latest
+tagline: The to-do app to organize your life.
+description: The to-do app to organize your life.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://vikunja.io/
+repo: https://vikunja.io/docs/docker-walkthrough
+support: https://vikunja.io/docs/docker-walkthrough

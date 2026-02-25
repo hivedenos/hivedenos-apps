@@ -1,0 +1,13 @@
+version: 
+services:
+  memcached:
+    image: memcached
+    restart: always
+    expose:
+      - 
+  yopass:
+    image: jhaals/yopass
+    restart: always
+    ports:
+      - 8000:80
+    command: --memcached=memcached:11211 --port 80

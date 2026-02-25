@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: databunker
+category: database-management
+name: Databunker
+version: latest
+tagline: Network-based, self-hosted, GDPR compliant, secure database for personal
+  data or PII.
+description: Network-based, self-hosted, GDPR compliant, secure database for personal
+  data or PII.
+developer: securitybunker
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://databunker.org/
+repo: https://github.com/securitybunker/databunker
+support: https://databunker.org/doc/install/

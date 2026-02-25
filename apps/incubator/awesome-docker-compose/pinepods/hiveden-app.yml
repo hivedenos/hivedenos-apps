@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: pinepods
+category: podcasting
+name: Pinepods
+version: latest
+tagline: A rust based podcast management system with multi-user support.
+description: A rust based podcast management system with multi-user support. Pinepods
+  utilizes a central database so aspects like listen time and themes follow from device
+  to device.
+developer: madeofpendletonwool
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.pinepods.online/
+repo: https://github.com/madeofpendletonwool/PinePods
+support: https://www.pinepods.online/docs/intro

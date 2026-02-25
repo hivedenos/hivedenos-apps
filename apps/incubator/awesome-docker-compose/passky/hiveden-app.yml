@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: passky
+category: password-managers
+name: Passky
+version: latest
+tagline: Simple, modern and open source password manager with website, browser extension,
+  android and desktop application.
+description: Simple, modern and open source password manager with website, browser
+  extension, android and desktop application.
+developer: Rabbit-Company
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://passky.org/
+repo: https://github.com/Rabbit-Company/Passky-Server
+support: https://github.com/Rabbit-Company/Passky-Server/blob/main/docs/installation/docker.md

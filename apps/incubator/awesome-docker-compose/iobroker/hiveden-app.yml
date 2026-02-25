@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: iobroker
+category: internet-of-things-iot
+name: ioBroker
+version: latest
+tagline: Integration platform for the Internet of Things, focused on building automation,
+  smart metering, ambient assisted livin...
+description: Integration platform for the Internet of Things, focused on building
+  automation, smart metering, ambient assisted living, process automation, visualization
+  and data logging.
+developer: ioBroker
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.iobroker.net/
+repo: https://github.com/ioBroker/ioBroker
+support: https://docs.buanet.de/iobroker-docker-image/

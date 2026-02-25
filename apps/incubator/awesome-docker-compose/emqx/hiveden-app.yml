@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: emqx
+category: internet-of-things-iot
+name: EMQX
+version: 5.8.0
+tagline: An ultra-scalable open-source MQTT broker.
+description: An ultra-scalable open-source MQTT broker. Connect 100M+ IoT devices
+  in one single cluster, move and process real-time IoT data with 1M msg/s throughput
+  at 1ms latency.
+developer: emqx
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.emqx.com/
+repo: https://github.com/emqx/emqx
+support: https://docs.emqx.com/en/emqx/latest/deploy/install-docker-ce.html

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: bunkerweb
+category: firewall
+name: BunkerWeb
+version: 1.5.10
+tagline: "\uD83D\uDEE1\xEF\xB8\x8F Open-source and next-generation Web Application\
+  \ Firewall (WAF)."
+description: "\uD83D\uDEE1\xEF\xB8\x8F Open-source and next-generation Web Application\
+  \ Firewall (WAF)."
+developer: bunkerity
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.bunkerweb.io/
+repo: https://github.com/bunkerity/bunkerweb
+support: https://docs.bunkerweb.io/latest/quickstart-guide/

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: anse
+category: chatbot-ui
+name: Anse
+version: latest
+tagline: Supercharged experience for multiple models such as ChatGPT, DALL-E and Stable
+  Diffusion.
+description: Supercharged experience for multiple models such as ChatGPT, DALL-E and
+  Stable Diffusion.
+developer: anse-app
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://anse.app/
+repo: https://github.com/anse-app/anse
+support: https://docs.anse.app/self-deploy/docker

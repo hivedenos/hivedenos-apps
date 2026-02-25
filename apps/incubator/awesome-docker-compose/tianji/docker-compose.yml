@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  tianji:
+    image: moonrailgun/tianji
+    restart: unless-stopped

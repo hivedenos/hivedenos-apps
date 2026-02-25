@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: txtdot
+category: proxy
+name: txtdot
+version: latest
+tagline: A HTTP proxy that parses only text, links and pictures from pages reducing
+  internet bandwidth usage, removing ads and h...
+description: A HTTP proxy that parses only text, links and pictures from pages reducing
+  internet bandwidth usage, removing ads and heavy scripts.
+developer: TxtDot
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://txt.dc09.ru/
+repo: https://github.com/TxtDot/txtdot
+support: https://txtdot.github.io/documentation/docker/

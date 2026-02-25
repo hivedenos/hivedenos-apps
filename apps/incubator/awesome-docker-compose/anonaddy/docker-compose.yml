@@ -1,0 +1,50 @@
+version: '3.9'
+ 
+name: addy
+ 
+services:
+  db:
+    image: mariadb:10
+    container_name: addy_db
+    command:
+      - 
+      - 
+      - 
+    volumes:
+      - 
+    environment:
+      - 
+      - 
+      - 
+      - 
+    restart: always
+ 
+  redis:
+    image: redis:4.0-alpine
+    container_name: addy_redis
+    restart: always
+ 
+  addy:
+    image: anonaddy/anonaddy:latest
+    container_name: addy
+    depends_on:
+      - db
+      - redis
+    ports:
+      - target: 25
+        published: 25
+        protocol: tcp
+      - target: 8000
+        published: 8000
+        protocol: tcp
+    volumes:
+      - 
+    env_file:
+      - 
+    environment:
+      - 
+      - 
+      - 
+      - 
+      - 
+    restart: always

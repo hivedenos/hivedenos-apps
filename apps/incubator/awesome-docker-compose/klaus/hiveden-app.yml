@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: klaus
+category: git-server
+name: Klaus
+version: latest
+tagline: Simple, easy-to-set-up Git web viewer that Just Works.
+description: Simple, easy-to-set-up Git web viewer that Just Works.
+developer: jonashaag
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://klausdemo.lophus.org/
+repo: https://github.com/jonashaag/klaus
+support: https://github.com/jonashaag/klaus#running-with-docker

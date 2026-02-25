@@ -1,0 +1,10 @@
+version: 
+ 
+services:
+  honey:
+    image: ghcr.io/dani3l0/honey:latest
+    ports:
+      - 4173:4173
+    volumes:
+      - /path/to/config:/app/dist/config:ro
+    restart: unless-stopped

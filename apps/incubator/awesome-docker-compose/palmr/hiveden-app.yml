@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: palmr
+category: file-transfer-single-click-drag-n-drop-upload
+name: Palmr
+version: latest
+tagline: Palmr.
+description: Palmr. is a flexible and open-source alternative to file transfer services
+  like WeTransfer, SendGB, Send Anywhere, and Files.fm.
+developer: kyantech
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://palmr.kyantech.com.br/
+repo: https://github.com/kyantech/Palmr
+support: https://palmr.kyantech.com.br/docs/2.0.0-beta/installation

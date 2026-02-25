@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: cloudbeaver
+category: database-management
+name: CloudBeaver
+version: latest
+tagline: Self-hosted management of databases, supports PostgreSQL, MySQL, SQLite and
+  more.
+description: Self-hosted management of databases, supports PostgreSQL, MySQL, SQLite
+  and more. A web/hosted version of DBeaver.
+developer: dbeaver
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://dbeaver.com/
+repo: https://github.com/dbeaver/cloudbeaver
+support: https://github.com/dbeaver/cloudbeaver/wiki/Run-Docker-Container

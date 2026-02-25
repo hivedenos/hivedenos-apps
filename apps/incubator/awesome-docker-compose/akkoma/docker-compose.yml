@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  akkoma:
+    image: akkoma-db:latest
+    restart: unless-stopped

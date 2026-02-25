@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: owncast
+category: video-streaming
+name: Owncast
+version: latest
+tagline: Decentralized single-user live video streaming and chat server for running
+  your own live streams similar in style to th...
+description: Decentralized single-user live video streaming and chat server for running
+  your own live streams similar in style to the large mainstream options.
+developer: owncast
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://owncast.online/
+repo: https://github.com/owncast/owncast
+support: https://owncast.online/quickstart/container/

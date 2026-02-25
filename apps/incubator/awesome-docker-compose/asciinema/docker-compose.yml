@@ -1,0 +1,46 @@
+version: '3.9'
+ 
+services:
+  asciinema:
+    image: ghcr.io/asciinema/asciinema-server:20240428
+    environment:
+      - SECRET_KEY_BASE=  # <- see below
+      - URL_HOST=asciinema.example.com
+      - URL_SCHEME=https
+      - SMTP_HOST=smtp.example.com
+      - SMTP_USERNAME=foobar
+      - SMTP_PASSWORD=hunter2
+    volumes:
+      - asciinema_data:/var/opt/asciinema
+    depends_on:
+      postgres:
+        condition: service_healthy
+ 
+  postgres:
+    image: docker.io/library/postgres:14
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U postgres']
+      interval: 2s
+      timeout: 5s
+      retries: 10
+ 
+  caddy:
+    image: caddy:2
+    command: caddy reverse-proxy --from https://asciinema.example.com --to http://asciinema:4000
+    ports:
+      - '80:80'
+      - '443:443'
+      - '443:443/udp'
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+ 
+volumes:
+  asciinema_data:
+  postgres_data:
+  caddy_data:
+  caddy_config:

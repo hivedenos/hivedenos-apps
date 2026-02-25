@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: httplaceholder
+category: ide-and-tools
+name: HttPlaceholder
+version: latest
+tagline: Quickly mock away any webservice using HttPlaceholder.
+description: Quickly mock away any webservice using HttPlaceholder. HttPlaceholder
+  lets you specify what the request should look like and what response needs to be
+  returned.
+developer: dukeofharen
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://httplaceholder.org/
+repo: https://github.com/dukeofharen/httplaceholder
+support: https://github.com/dukeofharen/httplaceholder/blob/master/docs/docs.md#docker

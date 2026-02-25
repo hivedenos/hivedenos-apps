@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: wastebin
+category: pastebins
+name: Wastebin
+version: latest
+tagline: Lightweight, minimal and fast pastebin with an SQLite backend.
+description: Lightweight, minimal and fast pastebin with an SQLite backend.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/pastebins/wastebin
+repo: https://github.com/matze/wastebin#installation
+support: https://github.com/matze/wastebin#installation

@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  psitransfer:
+    image: psitrax/psitransfer
+    restart: unless-stopped

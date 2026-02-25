@@ -1,0 +1,10 @@
+version: 
+ 
+services:
+  ifconfig:
+    image: georgyo/ifconfig.io
+    ports:
+      - 8080:8080
+    environment:
+      HOSTNAME: 
+    restart: unless-stopped

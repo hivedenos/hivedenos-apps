@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: taskcafe
+category: task-management
+name: Taskcafe
+version: latest
+tagline: An open source project management tool with Kanban boards.
+description: An open source project management tool with Kanban boards.
+developer: JordanKnott
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/task-management/taskcafe
+repo: https://github.com/JordanKnott/taskcafe
+support: https://github.com/JordanKnott/taskcafe#installation

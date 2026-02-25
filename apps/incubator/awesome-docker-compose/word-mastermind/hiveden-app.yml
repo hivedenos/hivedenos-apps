@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: word-mastermind
+category: games
+name: Word Mastermind
+version: latest
+tagline: Wordle clone.
+description: Wordle clone. A Mastermind-like game, but instead of colors you need
+  to guess words.
+developer: clupasq
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/games/word-mastermind
+repo: https://github.com/clupasq/word-mastermind
+support: https://github.com/clupasq/word-mastermind#running-with-docker

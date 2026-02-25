@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: snapdrop
+category: file-transfer-single-click-drag-n-drop-upload
+name: Snapdrop
+version: latest
+tagline: Local file sharing in your browser.
+description: "Local file sharing in your browser. Inspired by Apple\xE2\x80\x99s Airdrop."
+developer: snapdrop
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://snapdrop.net/
+repo: https://github.com/snapdrop/snapdrop
+support: https://github.com/dutchcoders/transfer.sh#docker

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: ydl-api-ng
+category: video-downloader
+name: ydl_api_ng
+version: latest
+tagline: Simple youtube-dl REST API to launch downloads on a distant server.
+description: Simple youtube-dl REST API to launch downloads on a distant server.
+developer: Totonyus
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/video-downloader/ydl_api_ng
+repo: https://github.com/Totonyus/ydl_api_ng
+support: https://github.com/Totonyus/ydl_api_ng#installation

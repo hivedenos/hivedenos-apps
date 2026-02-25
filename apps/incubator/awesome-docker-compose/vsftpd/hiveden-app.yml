@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: vsftpd
+category: ftp-and-sftp
+name: vsftpd
+version: latest
+tagline: Flexible, fully featured and highly configurable SFTP server with optional
+  FTP/S and WebDAV support.
+description: Flexible, fully featured and highly configurable SFTP server with optional
+  FTP/S and WebDAV support.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://security.appspot.com/vsftpd.html
+repo: https://awesome-docker-compose.com/apps/ftp-and-sftp/vsftpd
+support: https://awesome-docker-compose.com/apps/ftp-and-sftp/vsftpd

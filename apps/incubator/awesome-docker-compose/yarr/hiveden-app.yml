@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: yarr
+category: rss
+name: Yarr
+version: latest
+tagline: Yarr (yet another rss reader) is a web-based feed aggregator which can be
+  used both as a desktop application and a pers...
+description: Yarr (yet another rss reader) is a web-based feed aggregator which can
+  be used both as a desktop application and a personal self-hosted server.
+developer: nkanaev
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/rss/yarr
+repo: https://github.com/nkanaev/yarr
+support: https://github.com/ItsNoted/yarr-docker

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: mybb
+category: social-networks-and-forums
+name: MyBB
+version: latest
+tagline: Free, extensible forum software package.
+description: Free, extensible forum software package.
+developer: mybb
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://mybb.com/
+repo: https://github.com/mybb/mybb
+support: https://github.com/mybb/docker

@@ -1,0 +1,11 @@
+version: '3'
+ 
+services:
+  flaresolverr:
+    image: flaresolverr/flaresolverr
+    container_name: flaresolverr
+    ports:
+      - 
+    environment:
+      - TZ=America/New_York # Set the time zone (optional)
+    restart: unless-stopped

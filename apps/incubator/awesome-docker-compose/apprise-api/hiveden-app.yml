@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: apprise-api
+category: notification
+name: Apprise API
+version: latest
+tagline: "Apprise-api\xE2\x81\_ Takes advantage of Apprise\xE2\x81\_ through your\
+  \ network with a user-friendly API."
+description: "Apprise-api\xE2\x81\_ Takes advantage of Apprise\xE2\x81\_ through your\
+  \ network with a user-friendly API."
+developer: caronc
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/notification/apprise-api
+repo: https://github.com/caronc/apprise-api
+support: https://github.com/linuxserver/docker-apprise-api

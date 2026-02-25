@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: miniflux
+category: rss
+name: Miniflux
+version: latest
+tagline: Miniflux is a minimalist and open source news reader, written in Go and PostgreSQL.
+description: Miniflux is a minimalist and open source news reader, written in Go and
+  PostgreSQL.
+developer: miniflux
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://miniflux.app/
+repo: https://github.com/miniflux/v2
+support: https://miniflux.app/docs/docker.html

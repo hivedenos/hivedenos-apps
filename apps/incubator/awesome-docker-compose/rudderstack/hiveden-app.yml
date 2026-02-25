@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: rudderstack
+category: analytics
+name: RudderStack
+version: 15-alpine
+tagline: Privacy and Security focused Segment-alternative, in Golang and React.
+description: Privacy and Security focused Segment-alternative, in Golang and React.
+developer: rudderlabs
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.rudderstack.com/
+repo: https://github.com/rudderlabs/rudder-server/
+support: https://www.rudderstack.com/docs/get-started/rudderstack-open-source/data-plane-setup/docker/

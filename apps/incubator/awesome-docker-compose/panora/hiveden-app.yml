@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: panora
+category: api-management
+name: Panora
+version: '16.1'
+tagline: An API to add an integration catalog to your SaaS product in minutes (alternative
+  to Merge.dev).
+description: An API to add an integration catalog to your SaaS product in minutes
+  (alternative to Merge.dev).
+developer: panoratech
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://panora.dev/
+repo: https://github.com/panoratech/Panora
+support: https://github.com/panoratech/Panora#%EF%B8%8F-try

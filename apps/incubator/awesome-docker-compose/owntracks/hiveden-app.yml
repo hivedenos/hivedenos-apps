@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: owntracks
+category: maps-and-gps
+name: Owntracks
+version: latest
+tagline: Store and access data published by OwnTracks location tracking apps.
+description: Store and access data published by OwnTracks location tracking apps.
+developer: owntracks
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://owntracks.org/
+repo: https://github.com/owntracks/recorder
+support: https://github.com/owntracks/docker-recorder

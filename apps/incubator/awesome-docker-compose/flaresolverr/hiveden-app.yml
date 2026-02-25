@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: flaresolverr
+category: proxy
+name: FlareSolverr
+version: latest
+tagline: FlareSolverr is a proxy server to bypass Cloudflare and DDoS-GUARD protection.
+description: FlareSolverr is a proxy server to bypass Cloudflare and DDoS-GUARD protection.
+developer: FlareSolverr
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/proxy/flaresolverr
+repo: https://github.com/FlareSolverr/FlareSolverr
+support: https://github.com/FlareSolverr/FlareSolverr#docker

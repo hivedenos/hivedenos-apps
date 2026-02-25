@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: notifo
+category: notification
+name: Notifo
+version: '5'
+tagline: Multichannel notification server with support for Email, Mobile Push, Web
+  Push, SMS, messaging and a javascript plugin.
+description: Multichannel notification server with support for Email, Mobile Push,
+  Web Push, SMS, messaging and a javascript plugin.
+developer: notifo-io
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://app.notifo.io/
+repo: https://github.com/notifo-io/notifo
+support: https://github.com/notifo-io/notifo/wiki/Installation#containers

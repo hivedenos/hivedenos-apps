@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: ryot
+category: media-server
+name: Ryot
+version: 16-alpine
+tagline: A self hosted platform for tracking various facets of your life - media,
+  fitness etc.
+description: A self hosted platform for tracking various facets of your life - media,
+  fitness etc.
+developer: IgnisDa
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://ryot.io/
+repo: https://github.com/IgnisDa/ryot
+support: https://docs.ryot.io/

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: bitpoll
+category: polls-and-events
+name: Bitpoll
+version: '1.23'
+tagline: A web application for scheduling meetings and general polling.
+description: A web application for scheduling meetings and general polling.
+developer: fsinfuhh
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://bitpoll.de/
+repo: https://github.com/fsinfuhh/Bitpoll
+support: https://github.com/fsinfuhh/Bitpoll#using-docker

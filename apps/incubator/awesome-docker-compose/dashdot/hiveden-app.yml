@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: dashdot
+category: system-monitoring
+name: Dashdot
+version: latest
+tagline: A simple, modern server dashboard, primarily used by smaller private servers
+description: A simple, modern server dashboard, primarily used by smaller private
+  servers
+developer: MauriceNino
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://getdashdot.com/
+repo: https://github.com/MauriceNino/dashdot
+support: https://getdashdot.com/docs/installation/docker-compose

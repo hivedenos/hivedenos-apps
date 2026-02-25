@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: mongooseim
+category: xmpp
+name: MongooseIM
+version: latest
+tagline: Mobile messaging platform with a focus on performance and scalability.
+description: Mobile messaging platform with a focus on performance and scalability.
+developer: esl
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.erlang-solutions.com/technologies/mongooseim/
+repo: https://github.com/esl/MongooseIM
+support: https://github.com/esl/mongooseim-docker

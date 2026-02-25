@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: authelia
+category: single-sign-on-sso
+name: Authelia
+version: latest
+tagline: The Single Sign-On Multi-Factor portal for web apps.
+description: The Single Sign-On Multi-Factor portal for web apps.
+developer: authelia
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.authelia.com/
+repo: https://github.com/authelia/authelia
+support: https://www.authelia.com/integration/deployment/docker/

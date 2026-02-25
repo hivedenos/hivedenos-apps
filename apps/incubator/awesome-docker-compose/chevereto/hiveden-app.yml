@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: chevereto
+category: image-hosting
+name: Chevereto
+version: latest
+tagline: Ultimate image sharing software.
+description: Ultimate image sharing software. Create your very own personal image
+  hosting website in just minutes.
+developer: chevereto
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://chevereto.com/
+repo: https://github.com/chevereto/chevereto
+support: https://github.com/chevereto/docker

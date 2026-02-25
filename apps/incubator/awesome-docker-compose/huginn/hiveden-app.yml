@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: huginn
+category: automation
+name: Huginn
+version: latest
+tagline: Allows you to build agents that monitor and act on your behalf.
+description: Allows you to build agents that monitor and act on your behalf.
+developer: huginn
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/automation/huginn
+repo: https://github.com/huginn/huginn
+support: https://github.com/huginn/huginn/blob/master/doc/docker/install.md

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: wallabag
+category: archiving
+name: Wallabag
+version: latest
+tagline: Wallabag, formerly Poche, is a web application allowing you to save articles
+  to read them later with improved readabili...
+description: Wallabag, formerly Poche, is a web application allowing you to save articles
+  to read them later with improved readability.
+developer: wallabag
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://wallabag.org/
+repo: https://github.com/wallabag/wallabag
+support: https://github.com/wallabag/wallabag/blob/master/docker-compose.yml

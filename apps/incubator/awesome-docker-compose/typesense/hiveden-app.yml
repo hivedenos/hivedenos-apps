@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: typesense
+category: search-engine-solution
+name: Typesense
+version: '27.1'
+tagline: Blazing fast, typo-tolerant open source search engine optimized for developer
+  happiness and ease of use.
+description: Blazing fast, typo-tolerant open source search engine optimized for developer
+  happiness and ease of use.
+developer: typesense
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://typesense.org/
+repo: https://github.com/typesense/typesense
+support: https://typesense.org/docs/guide/install-typesense.html

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: linx-server
+category: image-hosting
+name: Linx Server
+version: latest
+tagline: Self-hosted file/code/media sharing website.
+description: Self-hosted file/code/media sharing website.
+developer: ZizzyDizzyMC
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://put.icu/
+repo: https://github.com/ZizzyDizzyMC/linx-server
+support: https://github.com/ZizzyDizzyMC/linx-server#getting-started

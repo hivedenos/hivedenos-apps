@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: microbin
+category: pastebins
+name: MicroBin
+version: latest
+tagline: A secure, configurable file-sharing and URL shortening web app written in
+  Rust.
+description: A secure, configurable file-sharing and URL shortening web app written
+  in Rust.
+developer: szabodanika
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://microbin.eu/
+repo: https://github.com/szabodanika/microbin
+support: https://github.com/szabodanika/microbin/blob/master/compose.yaml

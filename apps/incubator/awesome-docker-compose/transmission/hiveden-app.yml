@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: transmission
+category: torrenting
+name: Transmission
+version: latest
+tagline: Fast, easy, free Bittorrent client.
+description: Fast, easy, free Bittorrent client.
+developer: transmission
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://transmissionbt.com/
+repo: https://github.com/transmission/transmission
+support: https://github.com/transmission/transmission

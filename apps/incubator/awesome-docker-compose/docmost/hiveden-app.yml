@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: docmost
+category: knowledge-management-tools
+name: Docmost
+version: latest
+tagline: Docmost is an open-source collaborative wiki and documentation software.
+description: Docmost is an open-source collaborative wiki and documentation software.
+  It is an open-source alternative to Confluence and Notion.
+developer: docmost
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://docmost.com/
+repo: https://github.com/docmost/docmost
+support: https://docmost.com/docs/installation

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: atheos
+category: ide-and-tools
+name: Atheos
+version: latest
+tagline: Web-based IDE framework with a small footprint and minimal requirements,
+  continued from Codiad.
+description: Web-based IDE framework with a small footprint and minimal requirements,
+  continued from Codiad.
+developer: Atheos
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.atheos.io/
+repo: https://github.com/Atheos/Atheos
+support: https://github.com/Atheos/Atheos

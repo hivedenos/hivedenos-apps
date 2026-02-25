@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: ombi
+category: media-server
+name: Ombi
+version: latest
+tagline: Ombi is your friendly media request tool, automatically syncs with your media
+  servers.
+description: Ombi is your friendly media request tool, automatically syncs with your
+  media servers.
+developer: Ombi-app
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://ombi.io/
+repo: https://github.com/Ombi-app/Ombi
+support: https://docs.ombi.app/guides/installation/

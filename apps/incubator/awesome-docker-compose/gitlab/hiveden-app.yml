@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: gitlab
+category: git-server
+name: GitLab
+version: '6.2'
+tagline: Self Hosted Git repository management, code reviews, issue tracking, activity
+  feeds and wikis.
+description: Self Hosted Git repository management, code reviews, issue tracking,
+  activity feeds and wikis.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://gitlab.com/
+repo: https://github.com/sameersbn/docker-gitlab
+support: https://github.com/sameersbn/docker-gitlab

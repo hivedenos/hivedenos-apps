@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: chartbrew
+category: database-management
+name: Chartbrew
+version: '5.7'
+tagline: Web application that can connect directly to databases and APIs and use the
+  data to create beautiful charts.
+description: Web application that can connect directly to databases and APIs and use
+  the data to create beautiful charts.
+developer: chartbrew
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://chartbrew.com/
+repo: https://github.com/chartbrew/chartbrew
+support: https://docs.chartbrew.com/deployment/#run-the-application-with-docker

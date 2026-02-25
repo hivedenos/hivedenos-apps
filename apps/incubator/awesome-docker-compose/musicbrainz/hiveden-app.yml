@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: musicbrainz
+category: music-server
+name: Musicbrainz
+version: latest
+tagline: Server for the MusicBrainz project (website, API, database tools).
+description: Server for the MusicBrainz project (website, API, database tools).
+developer: metabrainz
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://metabrainz.org/
+repo: https://github.com/metabrainz/musicbrainz-server
+support: https://github.com/metabrainz/musicbrainz-docker

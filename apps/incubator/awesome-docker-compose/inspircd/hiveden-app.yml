@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: inspircd
+category: irc
+name: InspIRCd
+version: latest
+tagline: Modular IRC server written in C++ for Linux, BSD, Windows, and macOS.
+description: Modular IRC server written in C++ for Linux, BSD, Windows, and macOS.
+developer: inspircd
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.inspircd.org/
+repo: https://github.com/inspircd/inspircd
+support: https://github.com/inspircd/inspircd

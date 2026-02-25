@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: readflow
+category: rss
+name: readflow
+version: '14'
+tagline: 'Lightweight news reader with modern interface and features: full-text search,
+  automatic categorization, archiving, offl...'
+description: "Lightweight news reader with modern interface and features: full-text\
+  \ search, automatic categorization, archiving, offline support, notifications\xE2\
+  \x80\xA6"
+developer: ncarlier
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://readflow.app/
+repo: https://github.com/ncarlier/readflow
+support: https://github.com/ncarlier/readflow#installation

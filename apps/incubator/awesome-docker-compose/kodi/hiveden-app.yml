@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: kodi
+category: media-server
+name: Kodi
+version: Matrix
+tagline: Multimedia/Entertainment center, formerly known as XBMC.
+description: Multimedia/Entertainment center, formerly known as XBMC. Runs on Android,
+  BSD, Linux, macOS, iOS and Windows.
+developer: xbmc
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://kodi.tv/
+repo: https://github.com/xbmc/xbmc
+support: https://github.com/matthuisman/docker-kodi-headless

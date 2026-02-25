@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: tiny-file-manager
+category: file-transfer-web-based-file-managers
+name: Tiny File Manager
+version: master
+tagline: Web based File Manager in PHP, simple, fast and small file manager with a
+  single file.
+description: Web based File Manager in PHP, simple, fast and small file manager with
+  a single file.
+developer: prasathmani
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://tinyfilemanager.github.io/
+repo: https://github.com/prasathmani/tinyfilemanager
+support: https://github.com/prasathmani/tinyfilemanager#deploy-by-docker

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: blink
+category: url-shorteners
+name: Blink
+version: latest
+tagline: Easy-to-host, SSO-integrated, CDN-powered link shortener (+decoupled analytics)
+  for teams.
+description: Easy-to-host, SSO-integrated, CDN-powered link shortener (+decoupled
+  analytics) for teams.
+developer: JaneJeon
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://docs.blink.rest/
+repo: https://github.com/JaneJeon/blink
+support: https://github.com/JaneJeon/blink/tree/master/deploy/docker-compose

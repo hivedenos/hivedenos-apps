@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: plone
+category: cms
+name: Plone
+version: '6.0'
+tagline: Powerful open-source CMS system.
+description: Powerful open-source CMS system.
+developer: plone
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://plone.org/
+repo: https://github.com/plone
+support: https://6.docs.plone.org/install/containers/index.html

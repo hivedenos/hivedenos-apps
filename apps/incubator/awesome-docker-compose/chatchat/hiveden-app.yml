@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: chatchat
+category: chatbot-ui
+name: Chat Chat
+version: latest
+tagline: Chat Chat, your own unified chat and search to AI platform, with a simple
+  and easy to use interface.
+description: Chat Chat, your own unified chat and search to AI platform, with a simple
+  and easy to use interface.
+developer: okisdev
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://chat.okisdev.com/
+repo: https://github.com/okisdev/ChatChat
+support: https://docs.okis.dev/docs/chat/deployment

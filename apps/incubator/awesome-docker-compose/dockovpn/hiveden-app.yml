@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: dockovpn
+category: vpn
+name: DockOvpn
+version: latest
+tagline: Out-of-the-box stateless dockerized OpenVPN server which starts in less than
+  2 seconds.
+description: Out-of-the-box stateless dockerized OpenVPN server which starts in less
+  than 2 seconds.
+developer: dockovpn
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://dockovpn.io/
+repo: https://github.com/dockovpn/dockovpn
+support: https://github.com/dockovpn/dockovpn#container-properties

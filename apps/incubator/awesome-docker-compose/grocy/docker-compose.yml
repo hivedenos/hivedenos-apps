@@ -1,0 +1,40 @@
+version: '2.4'
+ 
+services:
+ 
+  frontend:
+    image: 
+    build:
+      args:
+        GROCY_VERSION: v4.2.0
+        PLATFORM: linux/amd64
+      context: .
+      dockerfile: Containerfile-frontend
+    depends_on:
+      - backend
+    ports:
+      - '8080:8080'
+    read_only: true
+    tmpfs:
+      - /tmp
+    restart: unless-stopped
+ 
+  backend:
+    image: 
+    build:
+      args:
+        GROCY_VERSION: v4.2.0
+        PLATFORM: linux/amd64
+      context: .
+      dockerfile: Containerfile-backend
+    expose:
+      - '9000'
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /var/www/data/viewcache:mode=755,uid=82,gid=82,size=16m
+    volumes:
+      - ./app-db:/var/www/data
+    env_file:
+      - grocy.env
+    restart: unless-stopped

@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: shellhub
+category: remote-access
+name: Shellhub
+version: ${SHELLHUB_VERSION}
+tagline: ShellHub is a modern SSH server for remotely accessing linux devices via
+  command line (using any SSH client) or web-bas...
+description: ShellHub is a modern SSH server for remotely accessing linux devices
+  via command line (using any SSH client) or web-based user interface, designed as
+  an alternative to sshd.
+developer: shellhub-io
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.shellhub.io/
+repo: https://github.com/shellhub-io/shellhub
+support: https://docs.shellhub.io/self-hosted/deploying

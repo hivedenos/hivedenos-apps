@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  tube-archivist:
+    image: bbilly1/tubearchivist
+    restart: unless-stopped

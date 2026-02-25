@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: ihatemoney
+category: budgeting
+name: IHateMoney
+version: latest
+tagline: Manage your shared expenses, easily.
+description: Manage your shared expenses, easily.
+developer: spiral-project
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://ihatemoney.org/
+repo: https://github.com/spiral-project/ihatemoney
+support: https://ihatemoney.readthedocs.io/en/latest/installation.html

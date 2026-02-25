@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: soneji-docker-chromium
+category: virtual-browser-chromium
+name: Soneji / docker-chromium
+version: latest
+tagline: Soneji / docker-chromium
+description: Soneji / docker-chromium
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/virtual-browser/Chromium/soneji-docker-chromium
+repo: https://github.com/Soneji/docker-chromium
+support: https://github.com/Soneji/docker-chromium

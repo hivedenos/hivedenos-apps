@@ -1,0 +1,54 @@
+version: 
+ 
+services:
+  lazytainer:
+    container_name: lazytainer
+    # to build the image yourself:
+    # 1. comment 'image:...'
+    # 2. uncomment 'build: .'
+    # 3. instead of 'docker compose up', run 'DOCKER_BUILDKIT=1 docker-compose up --build'
+    image: ghcr.io/vmorganp/lazytainer:master
+    # build: .
+    environment:
+      - VERBOSE=true # probably set this to false unless you're debugging or doing the initial demo
+    ports:
+      - 81:81
+      - 82:82
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    labels:
+      # this configuration will cause traffic to whoami1 to start whoami2, but traffic to only whoami2 will not wake whoami1
+      # if there's no incoming traffic on port 81, pause whoami1
+      - 
+      - 
+      - 
+      - 
+      # if there's no incoming traffic on port 81 OR 82, pause whoami2
+      - 
+      - 
+      - 
+      - 
+ 
+  whoami1:
+    container_name: whoami1
+    image: containous/whoami
+    # ports:
+
+    command: --port 81 # This is specific to containous/whoami
+    network_mode: service:lazytainer # or `container:lazytainer` if lazytainer is not in this compose file
+    depends_on:
+      - lazytainer
+    labels:
+      - 
+ 
+  whoami2:
+    container_name: whoami2
+    image: containous/whoami
+    # ports:
+
+    command: --port 82 # This is specific to containous/whoami
+    network_mode: service:lazytainer # or `container:lazytainer` if lazytainer is not in this compose file
+    depends_on:
+      - lazytainer
+    labels:
+      - 

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: formio
+category: api-management
+name: form.io
+version: latest
+tagline: A REST API building platform that utilizes a drag & drop form builder, and
+  is application framework agnostic.
+description: A REST API building platform that utilizes a drag & drop form builder,
+  and is application framework agnostic. Contains open source and enterprise version.
+developer: formio
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://form.io/
+repo: https://github.com/formio
+support: https://github.com/formio/formio#run-with-docker-compose

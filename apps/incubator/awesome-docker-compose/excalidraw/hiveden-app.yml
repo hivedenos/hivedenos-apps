@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: excalidraw
+category: diagraming-and-canvas
+name: Excalidraw
+version: latest
+tagline: Virtual whiteboard for sketching hand-drawn like diagrams.
+description: Virtual whiteboard for sketching hand-drawn like diagrams.
+developer: excalidraw
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://excalidraw.com/
+repo: https://github.com/excalidraw/excalidraw
+support: https://docs.excalidraw.com/docs/introduction/development

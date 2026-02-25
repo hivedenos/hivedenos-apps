@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: cobalt
+category: video-downloader
+name: Cobalt
+version: '10'
+tagline: Save what you love without ads, tracking, paywalls or other nonsense.
+description: Save what you love without ads, tracking, paywalls or other nonsense.
+  cobalt is a truly open web app, built with love and care by imput.
+developer: imputnet
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://cobalt.tools/
+repo: https://github.com/imputnet/cobalt
+support: https://github.com/imputnet/cobalt/blob/main/docs/run-an-instance.md

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: centrifugo
+category: custom-communication-systems
+name: Centrifugo
+version: v5
+tagline: Language-agnostic real-time messaging (Websocket or SockJS) server.
+description: Language-agnostic real-time messaging (Websocket or SockJS) server.
+developer: centrifugal
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://centrifugal.dev/
+repo: https://github.com/centrifugal/centrifugo
+support: https://centrifugal.dev/docs/getting-started/installation

@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  enclosed:
+    image: corentinth/enclosed
+    ports:
+      - 8787:8787
+    volumes:
+      - ./enclosed-data:/app/.data
+    restart: unless-stopped

@@ -1,0 +1,27 @@
+version: 
+ 
+volumes:
+  mysql-data: {}
+  mysql-backups-data: {}
+ 
+services:
+  mysql:
+    image: mysql:8.0
+    volumes:
+      - 
+    environment:
+      MYSQL_ROOT_PASSWORD: 
+ 
+  mysqlbackup:
+    image: selim13/automysqlbackup:2.6-9
+    volumes:
+      - 
+    environment:
+      USERNAME: root
+      PASSWORD: 
+      DBHOST: mysql
+      DBEXCLUDE: 
+      CRON_SCHEDULE: 
+      EXTRA_OPTS: 
+    depends_on:
+      - mysql

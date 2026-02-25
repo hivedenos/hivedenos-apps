@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: hatsu
+category: social-networks-and-forums
+name: Hatsu
+version: nightly
+tagline: Bridge that interacts with Fediverse on behalf of your static site.
+description: Bridge that interacts with Fediverse on behalf of your static site.
+developer: importantimport
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://hatsu.cli.rs/
+repo: https://github.com/importantimport/hatsu
+support: https://hatsu.cli.rs/admins/install-docker.html

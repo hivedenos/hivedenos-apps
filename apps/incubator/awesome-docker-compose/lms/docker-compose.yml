@@ -1,0 +1,11 @@
+version: 
+services:
+  lms:
+    image: epoupon/lms  
+    restart: unless-stopped
+    user: <user_id:group_id>
+    ports:
+      - <port>:5082
+    volumes:
+      - <path_to_music>:/music:ro
+      - <path_to_persistent_data>:/var/lms:rw

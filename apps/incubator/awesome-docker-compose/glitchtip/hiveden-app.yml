@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: glitchtip
+category: ticketing
+name: GlitchTip
+version: '16'
+tagline: Open source error-tracking app.
+description: Open source error-tracking app. GlitchTip collects errors reported by
+  your app.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://glitchtip.com/
+repo: https://gitlab.com/glitchtip/glitchtip
+support: https://glitchtip.com/documentation/install

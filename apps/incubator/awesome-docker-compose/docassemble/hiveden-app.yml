@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: docassemble
+category: polls-and-events
+name: Docassemble
+version: latest
+tagline: A free, open-source expert system for guided interviews and document assembly,
+  based on Python, YAML, and Markdown.
+description: A free, open-source expert system for guided interviews and document
+  assembly, based on Python, YAML, and Markdown.
+developer: jhpyle
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://docassemble.org/
+repo: https://github.com/jhpyle/docassemble
+support: https://docassemble.org/docs/docker.html

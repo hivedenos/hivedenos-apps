@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  sure:
+    image: ghcr.io/we-promise/sure:stable
+    restart: unless-stopped

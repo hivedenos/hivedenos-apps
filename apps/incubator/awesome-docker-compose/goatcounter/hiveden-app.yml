@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: goatcounter
+category: analytics
+name: GoatCounter
+version: latest
+tagline: Easy web statistics without tracking of personal data.
+description: Easy web statistics without tracking of personal data.
+developer: arp242
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.goatcounter.com/
+repo: https://github.com/arp242/goatcounter
+support: https://github.com/arp242/goatcounter

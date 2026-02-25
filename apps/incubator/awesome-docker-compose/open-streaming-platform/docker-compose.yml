@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  open-streaming-platform:
+    image: mariadb
+    restart: unless-stopped

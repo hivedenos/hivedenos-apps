@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: dokemon
+category: container-management
+name: Dokemon
+version: latest
+tagline: Deploy compose files, start/stop containers, delete unused images, view logs.
+description: Deploy compose files, start/stop containers, delete unused images, view
+  logs.
+developer: productiveops
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://dokemon.dev/
+repo: https://github.com/productiveops/dokemon
+support: https://github.com/productiveops/dokemon#quickstart

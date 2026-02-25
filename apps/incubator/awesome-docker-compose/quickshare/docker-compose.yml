@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  quickshare:
+    image: hexxa/quickshare
+    restart: unless-stopped

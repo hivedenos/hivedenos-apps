@@ -1,0 +1,82 @@
+version: '3.9'
+ 
+services:
+  redis:
+    image: redis:6
+    ports:
+      - 
+  db:
+    image: mariadb:10.11
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345
+    volumes:
+      - ./mariadb-data:/var/lib/mysql
+      - ./sql_dump/install.sql:/docker-entrypoint-initdb.d/install.sql
+  nats:
+    image: nats:alpine
+    command:
+      - 
+      - 
+      - 
+    ports:
+      -  # clients
+      -  # websockets
+    volumes:
+      - ./nats_server.conf:/nats-server.conf
+      - ./etc/tmp/nats-data:/data/jetstream
+  livekit:
+    image: livekit/livekit-server
+    ports:
+      - 
+      - 
+      - 
+    volumes:
+      - .:/app
+    command: 
+    depends_on:
+      - redis
+  livekit-ingress:
+    image: livekit/ingress
+    ports:
+      - 
+      - 
+    volumes:
+      - .:/app
+    command: 
+    depends_on:
+      - redis
+      - livekit
+  etherpad:
+    image: mynaparrot/plugnmeet-etherpad
+    ports:
+      - 
+    volumes:
+      - ./etc/etherpad/settings.json:/opt/etherpad-lite/settings.json
+      # mount fonts as read only mood
+#      - /usr/share/fonts/:/usr/share/fonts/:ro
+#      - /etc/fonts/:/etc/fonts/:ro
+#      - /usr/share/fontconfig/:/usr/share/fontconfig/:ro
+#      - /var/cache/fontconfig/:/var/cache/fontconfig/:ro   
+    depends_on:
+      - redis
+  plugnmeet-api:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - 
+    volumes:
+      - .:/app
+      - ../client:/app/client
+      - ../recording_files:/app/recording_files
+      # mount fonts as read only mood
+#      - /usr/share/fonts/:/usr/share/fonts/:ro
+#      - /etc/fonts/:/etc/fonts/:ro
+#      - /usr/share/fontconfig/:/usr/share/fontconfig/:ro
+#      - /var/cache/fontconfig/:/var/cache/fontconfig/:ro
+    depends_on:
+      - nats
+      - redis
+      - db
+      - livekit

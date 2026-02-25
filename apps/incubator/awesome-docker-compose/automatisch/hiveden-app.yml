@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: automatisch
+category: automation
+name: Automatisch
+version: '14.5'
+tagline: Business automation tool that lets you connect different services like Twitter,
+  Slack, and more to automate your busine...
+description: Business automation tool that lets you connect different services like
+  Twitter, Slack, and more to automate your business processes (alternative to Zapier).
+developer: automatisch
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://automatisch.io/
+repo: https://github.com/automatisch/automatisch
+support: https://automatisch.io/docs/guide/installation

@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  goatcounter:
+    image: baethon/goatcounter
+    restart: unless-stopped

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: mirotalk-sfu
+category: video-conferencing
+name: MiroTalk SFU
+version: latest
+tagline: Simple, secure, scalable real-time video conferences up to 4k, compatible
+  with all browsers and platforms.
+description: Simple, secure, scalable real-time video conferences up to 4k, compatible
+  with all browsers and platforms.
+developer: miroslavpejic85
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://sfu.mirotalk.com/
+repo: https://github.com/miroslavpejic85/mirotalksfu
+support: https://docs.mirotalk.com/mirotalk-sfu/self-hosting/

@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: goaway
+category: dns
+name: GoAway
+version: latest
+tagline: A lightweight DNS sinkhole for blocking unwanted domains at the network level.
+description: A lightweight DNS sinkhole for blocking unwanted domains at the network
+  level.
+developer: pommee
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/dns/goaway
+repo: https://github.com/pommee/goaway
+support: https://github.com/pommee/goaway#-installation

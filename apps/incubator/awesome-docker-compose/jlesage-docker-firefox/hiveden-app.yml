@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: jlesage-docker-firefox
+category: virtual-browser-firefox
+name: jlesage / docker-firefox
+version: latest
+tagline: Docker container for Firefox.
+description: Docker container for Firefox.
+developer: jlesage
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/virtual-browser/Firefox/jlesage-docker-firefox
+repo: https://github.com/jlesage/docker-firefox
+support: https://github.com/jlesage/docker-firefox

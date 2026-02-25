@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: timemachine
+category: file-synchronization
+name: Timemachine
+version: smb
+tagline: Docker image to run Samba or AFP (netatalk) to provide a compatible Time
+  Machine for MacOS.
+description: Docker image to run Samba or AFP (netatalk) to provide a compatible Time
+  Machine for MacOS.
+developer: mbentley
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/file-synchronization/timemachine
+repo: https://github.com/mbentley/docker-timemachine
+support: https://github.com/mbentley/docker-timemachine#example-usage-for-smb

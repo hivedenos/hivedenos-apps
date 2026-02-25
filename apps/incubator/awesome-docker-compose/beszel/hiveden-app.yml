@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: beszel
+category: system-monitoring
+name: Beszel
+version: latest
+tagline: A lightweight server resource monitoring hub with historical data, docker
+  stats, and alerts.
+description: A lightweight server resource monitoring hub with historical data, docker
+  stats, and alerts.
+developer: henrygd
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/system-monitoring/beszel
+repo: https://github.com/henrygd/beszel
+support: https://github.com/henrygd/beszel#installation

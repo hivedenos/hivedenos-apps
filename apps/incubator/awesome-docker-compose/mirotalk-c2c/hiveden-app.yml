@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: mirotalk-c2c
+category: video-conferencing
+name: MiroTalk C2C
+version: latest
+tagline: Real-time cam-2-cam video calls & screen sharing, end-to-end encrypted, to
+  embed in any website with a simple iframe.
+description: Real-time cam-2-cam video calls & screen sharing, end-to-end encrypted,
+  to embed in any website with a simple iframe.
+developer: miroslavpejic85
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://c2c.mirotalk.com/
+repo: https://github.com/miroslavpejic85/mirotalkc2c
+support: https://docs.mirotalk.com/mirotalk-c2c/self-hosting/

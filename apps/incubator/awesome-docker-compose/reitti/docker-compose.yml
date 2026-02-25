@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  reitti:
+    image: dedicatedcode/reitti:latest
+    restart: unless-stopped

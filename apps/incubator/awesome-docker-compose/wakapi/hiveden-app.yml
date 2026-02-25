@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: wakapi
+category: ide-and-tools
+name: Wakapi
+version: latest
+tagline: Tracking tool for coding statistics, compatible with WakaTime.
+description: Tracking tool for coding statistics, compatible with WakaTime.
+developer: muety
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://wakapi.dev/
+repo: https://github.com/muety/wakapi
+support: https://github.com/muety/wakapi#%EF%B8%8F-how-to-use

@@ -1,0 +1,27 @@
+version: 
+services:
+  nodebb:
+    user: 0:0
+    image: elestio/nodebb:${SOFTWARE_VERSION_TAG}
+    restart: always
+    environment:
+      URL: 
+      DATABASE: 
+      DB_NAME: 
+      DB_HOST: 
+      DB_PORT: 
+    volumes:
+      - ./nodebb-files:/usr/src/app/public/uploads
+      # - ./nodebb-config/config.json:/usr/src/app/config.json
+      - ./entrypoint.sh:/usr/src/app/entrypoint.sh
+    ports:
+      - 
+ 
+  redis:
+    image: redis
+    restart: always
+    command: redis-server --appendonly yes --loglevel warning --requirepass ${REDIS_PASSWORD}
+    volumes:
+      - ./nodebb-data:/data
+    ports:
+      - 

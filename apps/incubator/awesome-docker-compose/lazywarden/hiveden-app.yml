@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: lazywarden
+category: password-managers
+name: Lazywarden
+version: latest
+tagline: Lazywarden is a Python automation tool designed to Backup and Restore data
+  from your vault, including Bitwarden attachm...
+description: Lazywarden is a Python automation tool designed to Backup and Restore
+  data from your vault, including Bitwarden attachments.
+developer: querylab
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/password-managers/lazywarden
+repo: https://github.com/querylab/lazywarden
+support: https://github.com/querylab/lazywarden#-docker-compose

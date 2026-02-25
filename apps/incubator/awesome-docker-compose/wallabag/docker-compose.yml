@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  wallabag:
+    image: wallabag/wallabag
+    restart: unless-stopped

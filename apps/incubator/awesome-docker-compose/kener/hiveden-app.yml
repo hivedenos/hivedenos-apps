@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: kener
+category: network-monitoring
+name: Kener
+version: latest
+tagline: Kener is a Modern Self hosted Status Page, batteries included.
+description: Kener is a Modern Self hosted Status Page, batteries included.
+developer: rajnandan1
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://kener.ing/
+repo: https://github.com/rajnandan1/kener
+support: https://rajnandan1.github.io/kener-docs/docs/deployment

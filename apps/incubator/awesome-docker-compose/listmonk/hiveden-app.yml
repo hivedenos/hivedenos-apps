@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: listmonk
+category: email-mailing-lists-and-newsletters
+name: Listmonk
+version: latest
+tagline: High performance, self-hosted newsletter and mailing list manager with a
+  modern dashboard.
+description: High performance, self-hosted newsletter and mailing list manager with
+  a modern dashboard.
+developer: knadh
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://listmonk.app/
+repo: https://github.com/knadh/listmonk
+support: https://listmonk.app/docs/installation/

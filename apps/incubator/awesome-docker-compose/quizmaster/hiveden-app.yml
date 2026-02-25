@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: quizmaster
+category: games
+name: Quizmaster
+version: latest
+tagline: A web-app for conducting a quiz, including a page for players to enter their
+  answers.
+description: A web-app for conducting a quiz, including a page for players to enter
+  their answers.
+developer: nymanjens
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/games/quizmaster
+repo: https://github.com/nymanjens/quizmaster
+support: https://github.com/nymanjens/quizmaster#installation

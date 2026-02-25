@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: gotify
+category: notification
+name: Gotify
+version: latest
+tagline: Self-hosted notification server with Android and CLI clients, similar to
+  PushBullet.
+description: Self-hosted notification server with Android and CLI clients, similar
+  to PushBullet.
+developer: gotify
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://gotify.net/
+repo: https://github.com/gotify/server
+support: https://gotify.net/docs/install

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: feedcord
+category: rss
+name: FeedCord
+version: latest
+tagline: A simple, lightweight & customizable RSS News Feed for your Discord Server.
+description: A simple, lightweight & customizable RSS News Feed for your Discord Server.
+developer: Qolors
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/rss/feedcord
+repo: https://github.com/Qolors/FeedCord
+support: https://github.com/Qolors/FeedCord#setting-up-docker-composeyaml

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: phplist
+category: email-mailing-lists-and-newsletters
+name: Phplist
+version: medium
+tagline: Newsletter and email marketing with advanced management of subscribers, bounces,
+  and plugins.
+description: Newsletter and email marketing with advanced management of subscribers,
+  bounces, and plugins.
+developer: phpList
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.phplist.org/
+repo: https://github.com/phpList/phplist3
+support: https://github.com/phpList/phplist-docker

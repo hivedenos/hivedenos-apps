@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: cockpit
+category: cms
+name: Cockpit
+version: pro-latest
+tagline: Simple Content Platform to manage any structured content.
+description: Simple Content Platform to manage any structured content.
+developer: Cockpit-HQ
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://getcockpit.com/
+repo: https://github.com/Cockpit-HQ/Cockpit
+support: https://getcockpit.com/documentation/core/quickstart/installation

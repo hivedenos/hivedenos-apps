@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: sqlitebrowser-docker
+category: database-management
+name: SQLiteBrowser Docker
+version: latest
+tagline: "DB Browser for SQLite\xE2\x81\_ is a high quality, visual, open source tool\
+  \ to create, design, and edit database files compati..."
+description: "DB Browser for SQLite\xE2\x81\_ is a high quality, visual, open source\
+  \ tool to create, design, and edit database files compatible with SQLite."
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://sqlitebrowser.org/
+repo: https://github.com/linuxserver/docker-sqlitebrowser
+support: https://github.com/linuxserver/docker-sqlitebrowser

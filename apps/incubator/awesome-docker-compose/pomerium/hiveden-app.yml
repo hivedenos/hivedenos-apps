@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: pomerium
+category: web-servers
+name: Pomerium
+version: v0.27.0
+tagline: Pomerium is an identity and context-aware access proxy.
+description: Pomerium is an identity and context-aware access proxy.
+developer: pomerium
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.pomerium.com/
+repo: https://github.com/pomerium/pomerium
+support: https://www.pomerium.com/docs/quickstart

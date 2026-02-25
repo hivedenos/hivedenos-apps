@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: heyform
+category: polls-and-events
+name: HeyForm
+version: latest
+tagline: HeyForm is an open-source form builder that allows anyone to create engaging
+  conversational forms for surveys, question...
+description: HeyForm is an open-source form builder that allows anyone to create engaging
+  conversational forms for surveys, questionnaires, quizzes, and polls.
+developer: heyform
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://heyform.net/
+repo: https://github.com/heyform/heyform
+support: https://docs.heyform.net/open-source/self-hosting

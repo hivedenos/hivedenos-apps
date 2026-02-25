@@ -1,0 +1,35 @@
+version: 
+ 
+services:
+  fathom:
+    image: usefathom/fathom:latest
+    ports:
+      - 
+    environment:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+    links:
+      - 
+    depends_on:
+      - mysql
+    restart: always
+  mysql:
+    image: 
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+    ports:
+      - 
+    environment:
+      - 
+      - 
+      - 
+      - 
+      - 
+    restart: always

@@ -1,0 +1,6 @@
+version: 
+services:
+  chanify:
+    image: wizjin/chanify:latest
+    command: serve --secret=<secret key> --name=<node name>
+      --endpoint=http://<address>:<port>

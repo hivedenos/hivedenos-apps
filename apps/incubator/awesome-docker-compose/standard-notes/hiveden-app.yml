@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: standard-notes
+category: note-taking-and-editors
+name: Standard Notes
+version: '3.0'
+tagline: Simple and private notes app.
+description: "Simple and private notes app. Protect your privacy while getting more\
+  \ done. That\xE2\x80\x99s Standard Notes."
+developer: standardnotes
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://standardnotes.com/
+repo: https://github.com/standardnotes/app
+support: https://github.com/standardnotes/server

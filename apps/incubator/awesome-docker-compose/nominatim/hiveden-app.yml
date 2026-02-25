@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: nominatim
+category: maps-and-gps
+name: Nominatim
+version: '4.4'
+tagline: Server application for geocoding (address -> coordinates) and reverse geocoding
+  (coordinates -> address) on OpenStreetM...
+description: Server application for geocoding (address -> coordinates) and reverse
+  geocoding (coordinates -> address) on OpenStreetMap data.
+developer: osm-search
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://nominatim.org/
+repo: https://github.com/osm-search/Nominatim
+support: https://github.com/mediagis/nominatim-docker

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: accent
+category: localization
+name: Accent
+version: '15.6'
+tagline: Open-source, self-hosted, developer-oriented translation tool.
+description: Open-source, self-hosted, developer-oriented translation tool.
+developer: mirego
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.accent.reviews/
+repo: https://github.com/mirego/accent
+support: https://www.accent.reviews/guides/deploy

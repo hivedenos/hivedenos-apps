@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: wantguns-bin
+category: pastebins
+name: Wantguns/Bin
+version: latest
+tagline: Minimal pastebin for both textual and binary files shipped in a single statically
+  linked binary.
+description: Minimal pastebin for both textual and binary files shipped in a single
+  statically linked binary.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/pastebins/wantguns-bin
+repo: https://github.com/wantguns/bin#server-deployment
+support: https://github.com/wantguns/bin#server-deployment

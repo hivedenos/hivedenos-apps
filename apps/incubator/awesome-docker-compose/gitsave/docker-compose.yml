@@ -1,0 +1,14 @@
+version: '3.9'
+ 
+services:
+  gitsave:
+    image: timwitzdam/gitsave:latest
+    container_name: GitSave
+    restart: always
+    ports:
+      - 
+    volumes:
+      - ./gitsave:/app/data
+      - ./backups:/app/backups
+    environment:
+      - JWT_SECRET=${JWT_SECRET:?error}

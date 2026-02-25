@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: tasks-md
+category: task-management
+name: Tasks.md
+version: latest
+tagline: A self-hosted, file based task management board that supports Markdown syntax.
+description: A self-hosted, file based task management board that supports Markdown
+  syntax.
+developer: BaldissaraMatheus
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/task-management/tasks-md
+repo: https://github.com/BaldissaraMatheus/Tasks.md
+support: https://github.com/BaldissaraMatheus/Tasks.md#-installation

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: shelf
+category: inventory-management
+name: Shelf
+version: latest
+tagline: Asset and equipment tracking software used by teams who value clarity.
+description: Asset and equipment tracking software used by teams who value clarity.
+  Shelf is an asset database and QR asset label generator that lets you create, manage
+  and overview your assets across locations. Unlimited assets, free forever.
+developer: Shelf-nu
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.shelf.nu/
+repo: https://github.com/Shelf-nu/shelf.nu
+support: https://github.com/Shelf-nu/shelf.nu/blob/main/docs/docker.md

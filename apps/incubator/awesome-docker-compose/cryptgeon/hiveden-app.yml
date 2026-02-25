@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: cryptgeon
+category: pastebins
+name: Cryptgeon
+version: 7-alpine
+tagline: cryptgeon is a secure, open source note / file sharing service inspired by
+  PrivNote written in rust & svelte.
+description: cryptgeon is a secure, open source note / file sharing service inspired
+  by PrivNote written in rust & svelte.
+developer: cupcakearmy
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/pastebins/cryptgeon
+repo: https://github.com/cupcakearmy/cryptgeon
+support: https://github.com/cupcakearmy/cryptgeon#environment-variables

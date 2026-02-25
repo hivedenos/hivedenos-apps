@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: chatgpt-web
+category: chatbot-ui-chatgpt-ui
+name: ChatGPT Web
+version: latest
+tagline: ChatGPT UI built with Express and Vue3.
+description: ChatGPT UI built with Express and Vue3.
+developer: Chanzhaoyu
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/chatbot-ui/ChatGPT UI/chatgpt-web
+repo: https://github.com/Chanzhaoyu/chatgpt-web
+support: https://github.com/Chanzhaoyu/chatgpt-web#docker-compose

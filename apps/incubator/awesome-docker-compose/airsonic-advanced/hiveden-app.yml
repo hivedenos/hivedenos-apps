@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: airsonic-advanced
+category: music-server
+name: Airsonic Advanced
+version: latest
+tagline: Airsonic-Advanced is a more modern implementation of the Airsonic fork with
+  several key performance and feature enhance...
+description: Airsonic-Advanced is a more modern implementation of the Airsonic fork
+  with several key performance and feature enhancements. It adds and supersedes several
+  features in Airsonic.
+developer: airsonic-advanced
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/music-server/airsonic-advanced
+repo: https://github.com/airsonic-advanced/airsonic-advanced
+support: https://github.com/airsonic-advanced/airsonic-advanced

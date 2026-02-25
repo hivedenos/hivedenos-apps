@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: ybfeed
+category: pastebins
+name: ybFeed
+version: latest
+tagline: Personal micro feed where you can post snippets of text or images.
+description: Personal micro feed where you can post snippets of text or images.
+developer: ybizeul
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/pastebins/ybfeed
+repo: https://github.com/ybizeul/ybFeed
+support: https://github.com/ybizeul/ybFeed#installation

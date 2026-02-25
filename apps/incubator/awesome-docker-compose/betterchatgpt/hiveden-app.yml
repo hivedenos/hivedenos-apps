@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: betterchatgpt
+category: chatbot-ui-chatgpt-ui
+name: BetterChatGPT
+version: latest
+tagline: "An amazing UI for OpenAI\xE2\x80\x99s ChatGPT (Website + Windows + MacOS\
+  \ + Linux)."
+description: "An amazing UI for OpenAI\xE2\x80\x99s ChatGPT (Website + Windows + MacOS\
+  \ + Linux)."
+developer: ztjhz
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://bettergpt.chat/
+repo: https://github.com/ztjhz/BetterChatGPT
+support: https://github.com/ztjhz/BetterChatGPT#running-it-locally-using-docker-compose

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: peertube
+category: video-streaming
+name: Peertube
+version: latest
+tagline: Decentralized video streaming platform using P2P (BitTorrent) directly in
+  the web browser.
+description: Decentralized video streaming platform using P2P (BitTorrent) directly
+  in the web browser.
+developer: Chocobozzz
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://joinpeertube.org/
+repo: https://github.com/Chocobozzz/PeerTube
+support: https://github.com/Chocobozzz/PeerTube/blob/develop/support/doc/docker.md

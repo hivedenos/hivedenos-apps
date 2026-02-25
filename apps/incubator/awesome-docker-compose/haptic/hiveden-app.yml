@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: haptic
+category: note-taking-and-editors
+name: Haptic
+version: latest
+tagline: A new local-first, privacy-focused and open-source home for your markdown
+  notes.
+description: A new local-first, privacy-focused and open-source home for your markdown
+  notes.
+developer: chroxify
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.haptic.md/
+repo: https://github.com/chroxify/haptic
+support: https://github.com/chroxify/haptic#docker

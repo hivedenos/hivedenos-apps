@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: appwrite
+category: low-code
+name: Appwrite
+version: '2.11'
+tagline: "End to end backend server for web, native, and mobile developers \uD83D\uDE80\
+  ."
+description: "End to end backend server for web, native, and mobile developers \uD83D\
+  \uDE80."
+developer: appwrite
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://appwrite.io/
+repo: https://github.com/appwrite/appwrite
+support: https://github.com/appwrite/appwrite#installation

@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: rapidbay
+category: video-streaming
+name: Rapidbay
+version: latest
+tagline: Self-hosted torrent videostreaming service/torrent client that allows searching
+  and playing videos from torrents in the...
+description: Self-hosted torrent videostreaming service/torrent client that allows
+  searching and playing videos from torrents in the browser or from a Chromecast/AppleTV/Smart
+  TV.
+developer: hauxir
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/video-streaming/rapidbay
+repo: https://github.com/hauxir/rapidbay
+support: https://github.com/hauxir/rapidbay#running

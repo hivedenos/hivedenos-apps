@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: archivebox
+category: archiving
+name: ArchiveBox
+version: latest
+tagline: Self-hosted wayback machine that creates HTML & screenshot archives of sites
+  from your bookmarks, browsing history, RSS...
+description: Self-hosted wayback machine that creates HTML & screenshot archives of
+  sites from your bookmarks, browsing history, RSS feeds, or other sources.
+developer: ArchiveBox
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://archivebox.io/
+repo: https://github.com/ArchiveBox/ArchiveBox
+support: https://github.com/ArchiveBox/ArchiveBox#quickstart

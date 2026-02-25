@@ -1,0 +1,22 @@
+manifestVersion: 1.1
+id: reitti
+category: maps-and-gps
+name: Reitti
+version: latest
+tagline: Reitti is a comprehensive personal location tracking and analysis application
+  that helps you understand your movement p...
+description: "Reitti is a comprehensive personal location tracking and analysis application\
+  \ that helps you understand your movement patterns and significant places. The name\
+  \ \xE2\x80\x9CReitti\xE2\x80\x9D comes from Finnish, meaning \xE2\x80\x9Croute\xE2\
+  \x80\x9D or \xE2\x80\x9Cpath\xE2\x80\x9D."
+developer: dedicatedcode
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.dedicatedcode.com/projects/reitti/
+repo: https://github.com/dedicatedcode/reitti
+support: https://github.com/dedicatedcode/reitti#docker-deployment

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: yourls
+category: url-shorteners
+name: YOURLS
+version: latest
+tagline: YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener.
+description: YOURLS is a set of PHP scripts that will allow you to run Your Own URL
+  Shortener. Features include password protection, URL customization, bookmarklets,
+  statistics, API, plugins, jsonp.
+developer: YOURLS
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://yourls.org/
+repo: https://github.com/YOURLS/YOURLS
+support: https://github.com/YOURLS/containers/tree/main/images/yourls

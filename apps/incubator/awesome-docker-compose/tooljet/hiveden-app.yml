@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: tooljet
+category: low-code
+name: ToolJet
+version: EE-LTS-latest
+tagline: Low-code framework to build & deploy internal tools with minimal engineering
+  effort (alternative to Retool & Mendix).
+description: Low-code framework to build & deploy internal tools with minimal engineering
+  effort (alternative to Retool & Mendix).
+developer: ToolJet
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.tooljet.com/
+repo: https://github.com/ToolJet/ToolJet
+support: https://docs.tooljet.com/docs/setup/docker/

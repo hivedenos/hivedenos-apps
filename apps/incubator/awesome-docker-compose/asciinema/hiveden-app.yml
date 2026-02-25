@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: asciinema
+category: miscellaneous
+name: asciinema
+version: '20240428'
+tagline: Web app for hosting asciicasts.
+description: Web app for hosting asciicasts.
+developer: asciinema
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://asciinema.org/
+repo: https://github.com/asciinema/asciinema-server
+support: https://docs.asciinema.org/manual/server/self-hosting/quick-start/

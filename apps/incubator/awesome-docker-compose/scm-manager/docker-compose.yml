@@ -1,0 +1,12 @@
+version: '2.0'
+ 
+services:
+  scm:
+    image: scmmanager/scm-manager:<version>
+    ports:
+      - 
+      # if the ssh plugin is used
+      - 
+    volumes:
+      - ./scmhome:/var/lib/scm
+    restart: unless-stopped

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: bytebase
+category: database-management
+name: Bytebase
+version: ${SOFTWARE_VERSION_TAG}
+tagline: Safe database schema change and version control for DevOps teams, supports
+  MySQL, PostgreSQL, TiDB, ClickHouse, and Sno...
+description: Safe database schema change and version control for DevOps teams, supports
+  MySQL, PostgreSQL, TiDB, ClickHouse, and Snowflake.
+developer: bytebase
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.bytebase.com/
+repo: https://github.com/bytebase/bytebase
+support: https://github.com/bytebase/bytebase

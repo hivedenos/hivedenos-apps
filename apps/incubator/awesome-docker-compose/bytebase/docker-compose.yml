@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  bytebase:
+    image: elestio/bytebase:${SOFTWARE_VERSION_TAG}
+    restart: unless-stopped

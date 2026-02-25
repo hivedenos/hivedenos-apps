@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: pangolin
+category: reverse-proxy
+name: Pangolin
+version: 1.4.0
+tagline: Tunneled Mesh Reverse Proxy Server with Identity and Access Control and Dashboard
+  UI.
+description: Tunneled Mesh Reverse Proxy Server with Identity and Access Control and
+  Dashboard UI.
+developer: fosrl
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://fossorial.io/
+repo: https://github.com/fosrl/pangolin
+support: https://docs.fossorial.io/Getting%20Started/Manual%20Install%20Guides/docker-compose

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: duplicity
+category: backup
+name: Duplicity
+version: mini
+tagline: Encrypted bandwidth-efficient backup using the rsync algorithm.
+description: Encrypted bandwidth-efficient backup using the rsync algorithm.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://duplicity.gitlab.io/
+repo: https://awesome-docker-compose.com/apps/backup/duplicity
+support: https://awesome-docker-compose.com/apps/backup/duplicity

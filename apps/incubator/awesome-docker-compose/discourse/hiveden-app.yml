@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: discourse
+category: social-networks-and-forums
+name: Discourse
+version: '16'
+tagline: Advanced forum / community solution based on Ruby and JS.
+description: Advanced forum / community solution based on Ruby and JS.
+developer: discourse
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.discourse.org/
+repo: https://github.com/discourse/discourse_docker
+support: https://github.com/discourse/discourse_docker

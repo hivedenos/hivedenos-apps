@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: weechat
+category: irc
+name: Weechat
+version: latest
+tagline: Fast, light and extensible chat client.
+description: Fast, light and extensible chat client.
+developer: weechat
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://weechat.org/
+repo: https://github.com/weechat/weechat
+support: https://github.com/weechat/weechat-container

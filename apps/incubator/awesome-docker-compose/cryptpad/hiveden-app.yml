@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: cryptpad
+category: office-suites
+name: Cryptpad
+version: latest
+tagline: CryptPad is a collaboration suite that is end-to-end-encrypted and open-source.
+description: CryptPad is a collaboration suite that is end-to-end-encrypted and open-source.
+  It is built to enable collaboration, synchronizing changes to documents in real
+  time.
+developer: cryptpad
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://cryptpad.org/
+repo: https://github.com/cryptpad/cryptpad
+support: https://docs.cryptpad.org/en/admin_guide/installation.html#docker

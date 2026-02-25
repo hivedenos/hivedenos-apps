@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: misago
+category: social-networks-and-forums
+name: Misago
+version: '2.2'
+tagline: Misago is fully featured modern forum application that is fast, scalable
+  and responsive.
+description: Misago is fully featured modern forum application that is fast, scalable
+  and responsive.
+developer: rafalp
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://misago-project.org/
+repo: https://github.com/rafalp/Misago
+support: https://github.com/rafalp/misago_docker

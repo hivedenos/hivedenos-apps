@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: motor-admin
+category: low-code
+name: Motor Admin
+version: latest
+tagline: No-code admin panel and business intelligence software - search, create,
+  update, and delete data entries, create custom...
+description: No-code admin panel and business intelligence software - search, create,
+  update, and delete data entries, create custom actions, and build reports.
+developer: motor-admin
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.getmotoradmin.com/
+repo: https://github.com/motor-admin/motor-admin
+support: https://www.getmotoradmin.com/installation

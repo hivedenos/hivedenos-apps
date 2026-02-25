@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: papermerge
+category: document-management
+name: Papermerge
+version: '3.2'
+tagline: Open Source Document Management System focused on scanned documents (electronic
+  archives).
+description: Open Source Document Management System focused on scanned documents (electronic
+  archives). Features file browsing in similar way to dropbox/google drive. OCR, full
+  text search, text overlay/selection.
+developer: ciur
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://papermerge.com/
+repo: https://github.com/ciur/papermerge
+support: https://docs.papermerge.io/3.2/setup/docker-compose/

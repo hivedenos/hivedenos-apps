@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: fava
+category: budgeting
+name: Fava
+version: latest
+tagline: Fava is the web frontend of Beancount, a text based double-entry accounting
+  system.
+description: Fava is the web frontend of Beancount, a text based double-entry accounting
+  system.
+developer: beancount
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://beancount.github.io/fava/
+repo: https://github.com/beancount/fava
+support: https://github.com/beancount/fava

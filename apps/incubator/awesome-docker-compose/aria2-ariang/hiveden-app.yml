@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: aria2-ariang
+category: file-downloader
+name: Aria2 AriaNg
+version: latest
+tagline: Aria2 downloader and AriaNg webui Docker image based on Alpine Linux.
+description: Aria2 downloader and AriaNg webui Docker image based on Alpine Linux.
+developer: hurlenko
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/file-downloader/aria2-ariang
+repo: https://github.com/hurlenko/aria2-ariang-docker
+support: https://github.com/hurlenko/aria2-ariang-docker#usage

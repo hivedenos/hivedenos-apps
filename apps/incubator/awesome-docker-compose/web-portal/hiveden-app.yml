@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: web-portal
+category: personal-dashboards
+name: Web Portal
+version: '2'
+tagline: A python web app designed to allow a easy way to manage the links to all
+  of your web services.
+description: A python web app designed to allow a easy way to manage the links to
+  all of your web services.
+developer: enchant97
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://webportal.docs.enchantedcode.co.uk/
+repo: https://github.com/enchant97/web-portal
+support: https://webportal.docs.enchantedcode.co.uk/users/install.html

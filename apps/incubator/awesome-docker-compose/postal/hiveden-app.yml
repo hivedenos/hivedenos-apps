@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: postal
+category: email-servers
+name: Postal
+version: latest
+tagline: A complete and fully featured mail server for use by websites & web servers.
+description: A complete and fully featured mail server for use by websites & web servers.
+developer: postalserver
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://docs.postalserver.io/
+repo: https://github.com/postalserver/postal
+support: https://docs.postalserver.io/getting-started/installation

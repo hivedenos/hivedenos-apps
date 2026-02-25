@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: onlyoffice
+category: office-suites
+name: Onlyoffice
+version: latest
+tagline: Office suite that enables you to manage documents, projects, team and customer
+  relations in one place.
+description: Office suite that enables you to manage documents, projects, team and
+  customer relations in one place.
+developer: ONLYOFFICE
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.onlyoffice.com/
+repo: https://github.com/ONLYOFFICE/DocumentServer
+support: https://github.com/ONLYOFFICE/Docker-DocumentServer

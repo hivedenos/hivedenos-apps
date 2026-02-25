@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: convos
+category: irc
+name: Convos
+version: stable
+tagline: Always online web IRC client.
+description: Always online web IRC client.
+developer: convos-chat
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://convos.chat/
+repo: https://github.com/convos-chat/convos
+support: https://convos.chat/doc/start

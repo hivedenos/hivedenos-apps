@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: altus
+category: internet-tools
+name: Altus
+version: latest
+tagline: "Altus\xE2\x81\_ is an Electron-based WhatsApp client with themes and multiple\
+  \ account support."
+description: "Altus\xE2\x81\_ is an Electron-based WhatsApp client with themes and\
+  \ multiple account support."
+developer: amanharwara
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/internet-tools/altus
+repo: https://github.com/amanharwara/altus
+support: https://github.com/linuxserver/docker-altus

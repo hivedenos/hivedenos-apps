@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: bruceforce-vaultwarden-backup
+category: password-managers
+name: Bruceforce/Vaultwarden-backup
+version: latest
+tagline: Simple cron powered backup image for vaultwarden.
+description: Simple cron powered backup image for vaultwarden.
+developer: Bruceforce
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/password-managers/bruceforce-vaultwarden-backup
+repo: https://github.com/Bruceforce/vaultwarden-backup
+support: https://github.com/Bruceforce/vaultwarden-backup#usage

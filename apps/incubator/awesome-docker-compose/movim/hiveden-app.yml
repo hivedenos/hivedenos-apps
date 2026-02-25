@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: movim
+category: social-networks-and-forums
+name: Movim
+version: 0.21.1
+tagline: Modern, federated social network based on XMPP, with a fully featured group-chat,
+  subscriptions and microblogging.
+description: Modern, federated social network based on XMPP, with a fully featured
+  group-chat, subscriptions and microblogging.
+developer: movim
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://movim.eu/
+repo: https://github.com/movim/movim
+support: https://github.com/movim/movim_docker

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: recipya
+category: recipe-management
+name: Recipya
+version: nightly
+tagline: A clean, simple and powerful recipe manager your whole family will enjoy.
+description: A clean, simple and powerful recipe manager your whole family will enjoy.
+developer: reaper47
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://recipya.musicavis.ca/
+repo: https://github.com/reaper47/recipya
+support: https://recipya.musicavis.ca/docs/installation/docker/

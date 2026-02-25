@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: kanboard
+category: task-management
+name: Kanboard
+version: latest
+tagline: Simple and open source visual task board.
+description: Simple and open source visual task board.
+developer: kanboard
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://kanboard.org/
+repo: https://github.com/kanboard/kanboard
+support: https://docs.kanboard.org/v1/admin/docker/

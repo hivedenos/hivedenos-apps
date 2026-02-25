@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: jupyterlab
+category: ide-and-tools
+name: JupyterLab
+version: latest
+tagline: Web-based environment for interactive and reproducible computing.
+description: Web-based environment for interactive and reproducible computing.
+developer: jupyterlab
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://jupyterlab.readthedocs.io/
+repo: https://github.com/jupyterlab/jupyterlab
+support: https://jupyter-docker-stacks.readthedocs.io/en/latest/

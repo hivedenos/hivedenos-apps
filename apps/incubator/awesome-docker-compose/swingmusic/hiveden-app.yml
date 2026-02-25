@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: swingmusic
+category: music-server
+name: Swingmusic
+version: latest
+tagline: Swing Music is a beautiful, self-hosted music player and streaming server
+  for your local audio files.
+description: "Swing Music is a beautiful, self-hosted music player and streaming server\
+  \ for your local audio files. Like a cooler Spotify \xE2\x80\xA6 but bring your\
+  \ own music."
+developer: swingmx
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://swingmx.com/
+repo: https://github.com/swingmx/swingmusic
+support: https://github.com/swingmx/swingmusic#docker

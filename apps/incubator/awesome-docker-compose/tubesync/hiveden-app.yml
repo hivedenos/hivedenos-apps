@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: tubesync
+category: automation
+name: TubeSync
+version: latest
+tagline: Syncs YouTube channels and playlists to a locally hosted media server.
+description: Syncs YouTube channels and playlists to a locally hosted media server.
+developer: meeb
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/automation/tubesync
+repo: https://github.com/meeb/tubesync
+support: https://github.com/meeb/tubesync#installation

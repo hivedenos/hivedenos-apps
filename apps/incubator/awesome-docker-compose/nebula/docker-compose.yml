@@ -1,0 +1,10 @@
+version: 
+services:
+  nebula:
+    image: nebulaoss/nebula
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - ./config:/etc/defined
+    restart: unless-stopped

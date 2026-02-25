@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: doplarr
+category: arr
+name: Doplarr
+version: latest
+tagline: An *arr request bot for Discord.
+description: An *arr request bot for Discord.
+developer: kiranshila
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/arr/doplarr
+repo: https://github.com/kiranshila/Doplarr
+support: https://github.com/linuxserver/docker-doplarr

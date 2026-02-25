@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: grimoire
+category: bookmarks-managers
+name: Grimoire
+version: 0.22.10
+tagline: "Bookmark manager for the wizards \uD83E\uDDD9."
+description: "Bookmark manager for the wizards \uD83E\uDDD9."
+developer: goniszewski
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://grimoire.pro/
+repo: https://github.com/goniszewski/grimoire
+support: https://grimoire.pro/docs/getting-started/quick-start

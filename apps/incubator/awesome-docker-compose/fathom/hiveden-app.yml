@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: fathom
+category: analytics
+name: Fathom Lite
+version: latest
+tagline: A simple and privacy-focused web analytics (alternative to Google Analytics).
+description: A simple and privacy-focused web analytics (alternative to Google Analytics).
+developer: usefathom
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://usefathom.com/
+repo: https://github.com/usefathom/fathom
+support: https://github.com/usefathom/fathom/blob/master/docker-compose.yml

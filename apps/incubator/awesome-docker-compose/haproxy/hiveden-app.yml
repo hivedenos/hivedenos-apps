@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: haproxy
+category: web-servers
+name: HAProxy
+version: latest
+tagline: Very fast and reliable reverse-proxy offering high availability, load balancing,
+  and proxying for TCP and HTTP-based ap...
+description: Very fast and reliable reverse-proxy offering high availability, load
+  balancing, and proxying for TCP and HTTP-based applications.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.haproxy.org/
+repo: https://awesome-docker-compose.com/apps/web-servers/haproxy
+support: https://awesome-docker-compose.com/apps/web-servers/haproxy

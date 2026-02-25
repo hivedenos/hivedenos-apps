@@ -1,0 +1,17 @@
+version: 
+ 
+services:
+  node-red:
+    image: nodered/node-red:latest
+    environment:
+      - TZ=Europe/Amsterdam
+    ports:
+      - 
+    networks:
+      - node-red-net
+    volumes:
+      - ./node-red-data:/data
+    restart: always
+ 
+networks:
+  node-red-net:

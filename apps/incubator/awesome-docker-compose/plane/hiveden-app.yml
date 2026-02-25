@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: plane
+category: project-management
+name: Plane
+version: 15.7-alpine
+tagline: "\uD83D\uDD25 \uD83D\uDD25 \uD83D\uDD25 Open Source JIRA, Linear, Monday,\
+  \ and Asana Alternative."
+description: "\uD83D\uDD25 \uD83D\uDD25 \uD83D\uDD25 Open Source JIRA, Linear, Monday,\
+  \ and Asana Alternative. Plane helps you track your issues, epics, and product roadmaps\
+  \ in the simplest way possible."
+developer: makeplane
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://plane.so/
+repo: https://github.com/makeplane/plane
+support: https://docs.plane.so/self-hosting/methods/docker-compose

@@ -1,0 +1,18 @@
+version: 
+services:
+  directus:
+    image: directus/directus:11.0.0
+    ports:
+      - 8055:8055
+    volumes:
+      - ./database:/directus/database
+      - ./uploads:/directus/uploads
+      - ./extensions:/directus/extensions
+    environment:
+      SECRET: 
+      ADMIN_EMAIL: 
+      ADMIN_PASSWORD: 
+      DB_CLIENT: 
+      DB_FILENAME: 
+      WEBSOCKETS_ENABLED: 
+    restart: unless-stopped  

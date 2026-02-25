@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  emqx:
+    image: emqx:5.8.0
+    restart: unless-stopped

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: koito
+category: music-server
+name: Koito
+version: latest
+tagline: Koito is a modern, themeable scrobbler that you can use with any program
+  that scrobbles to a custom ListenBrainz URL.
+description: Koito is a modern, themeable scrobbler that you can use with any program
+  that scrobbles to a custom ListenBrainz URL.
+developer: gabehf
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://koito.io/
+repo: https://github.com/gabehf/Koito
+support: https://koito.io/reference/configuration/

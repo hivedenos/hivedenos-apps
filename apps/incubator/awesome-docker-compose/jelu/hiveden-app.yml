@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: jelu
+category: e-books
+name: Jelu
+version: latest
+tagline: Self hosted read and to-read list tracker.
+description: Self hosted read and to-read list tracker.
+developer: bayang
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://bayang.github.io/jelu-web/
+repo: https://github.com/bayang/jelu
+support: https://bayang.github.io/jelu-web/installation/docker/

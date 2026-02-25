@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  invidious:
+    image: quay.io/invidious/invidious:latest
+    restart: unless-stopped

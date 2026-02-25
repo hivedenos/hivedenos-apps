@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  judge0-ce:
+    image: judge0/judge0:latest
+    restart: unless-stopped

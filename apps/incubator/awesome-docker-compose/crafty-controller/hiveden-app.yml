@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: crafty-controller
+category: games
+name: Crafty Controller
+version: latest
+tagline: Crafty Controller is a free and open-source Minecraft launcher and manager
+  that allows users to start and administer Mi...
+description: Crafty Controller is a free and open-source Minecraft launcher and manager
+  that allows users to start and administer Minecraft servers from a user-friendly
+  interface.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://craftycontrol.com/
+repo: https://docs.craftycontrol.com/pages/getting-started/installation/docker/
+support: https://docs.craftycontrol.com/pages/getting-started/installation/docker/

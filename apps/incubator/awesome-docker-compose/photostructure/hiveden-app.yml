@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: photostructure
+category: photo-server
+name: Photostructure
+version: alpha
+tagline: PhotoStructure is your new home for all your photos and videos.
+description: PhotoStructure is your new home for all your photos and videos.
+developer: photostructure
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://photostructure.com/
+repo: https://github.com/photostructure
+support: https://photostructure.com/server/photostructure-for-docker-compose/

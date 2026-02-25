@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: fusio
+category: api-management
+name: Fusio
+version: '8.0'
+tagline: Open-source API management platform which helps to build and manage REST
+  APIs.
+description: Open-source API management platform which helps to build and manage REST
+  APIs.
+developer: apioo
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.fusio-project.org/
+repo: https://github.com/apioo/fusio
+support: https://docs.fusio-project.org/docs/installation/docker

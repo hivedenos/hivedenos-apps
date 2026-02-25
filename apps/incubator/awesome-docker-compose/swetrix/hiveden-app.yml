@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: swetrix
+category: analytics
+name: Swetrix
+version: v3.2.0
+tagline: Swetrix is a fully open source, privacy focused and cookieless alternative
+  to Google Analytics.
+description: Swetrix is a fully open source, privacy focused and cookieless alternative
+  to Google Analytics.
+developer: Swetrix
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://swetrix.com/
+repo: https://github.com/Swetrix
+support: https://github.com/Swetrix/selfhosting

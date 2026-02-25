@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: phpbb
+category: social-networks-and-forums
+name: phpBB
+version: latest
+tagline: Flat-forum bulletin board software solution that can be used to stay in touch
+  with a group of people or can power your...
+description: Flat-forum bulletin board software solution that can be used to stay
+  in touch with a group of people or can power your entire website.
+developer: phpbb
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.phpbb.com/
+repo: https://github.com/phpbb/phpbb
+support: https://github.com/phpbb/phpbb

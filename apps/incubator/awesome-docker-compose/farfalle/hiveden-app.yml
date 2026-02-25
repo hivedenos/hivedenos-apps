@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: farfalle
+category: ai-search-engine
+name: Farfalle
+version: latest
+tagline: Open-source AI-powered search engine.
+description: Open-source AI-powered search engine. (Perplexity Clone)
+developer: rashadphz
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.farfalle.dev/
+repo: https://github.com/rashadphz/farfalle
+support: https://github.com/rashadphz/farfalle#%EF%B8%8F-getting-started-locally

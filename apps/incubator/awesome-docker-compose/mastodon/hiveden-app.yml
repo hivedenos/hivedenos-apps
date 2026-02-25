@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: mastodon
+category: social-networks-and-forums
+name: Mastodon
+version: 14-alpine
+tagline: Federated microblogging server.
+description: Federated microblogging server.
+developer: mastodon
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://joinmastodon.org/
+repo: https://github.com/mastodon/mastodon
+support: https://github.com/mastodon/mastodon#docker

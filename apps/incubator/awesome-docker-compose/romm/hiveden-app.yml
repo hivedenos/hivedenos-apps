@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: romm
+category: games-emulation
+name: Romm
+version: latest
+tagline: RomM (ROM Manager) allows you to scan, enrich, and browse your game collection
+  with a clean and responsive interface.
+description: RomM (ROM Manager) allows you to scan, enrich, and browse your game collection
+  with a clean and responsive interface.
+developer: rommapp
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://romm.app/
+repo: https://github.com/rommapp/romm
+support: https://github.com/rommapp/romm#installation

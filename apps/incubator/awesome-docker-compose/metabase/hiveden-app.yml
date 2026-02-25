@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: metabase
+category: analytics
+name: Metabase
+version: latest
+tagline: Metabase is the easy, open-source way for everyone in your company to ask
+  questions and learn from data.
+description: Metabase is the easy, open-source way for everyone in your company to
+  ask questions and learn from data.
+developer: metabase
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.metabase.com/
+repo: https://github.com/metabase/metabase
+support: https://www.metabase.com/docs/latest/installation-and-operation/running-metabase-on-docker

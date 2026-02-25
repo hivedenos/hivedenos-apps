@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: collabora
+category: office-suites
+name: Collabora
+version: latest
+tagline: Collabora Online Development Edition (CODE) is a powerful LibreOffice-based
+  online office that supports all major docum...
+description: Collabora Online Development Edition (CODE) is a powerful LibreOffice-based
+  online office that supports all major document, spreadsheet and presentation file
+  formats, which you can integrate in your own infrastructure.
+developer: CollaboraOnline
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.collaboraonline.com/
+repo: https://github.com/CollaboraOnline/online
+support: https://www.collaboraonline.com/code/#learnmorecode

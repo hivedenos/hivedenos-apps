@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: docker-compose-anywhere
+category: container-management
+name: Docker Compose Anywhere
+version: v3.1.2
+tagline: "Effortlessly deploy Docker Compose apps in production with zero downtime\
+  \ using an opinionated template \uD83D\uDEE0\xEF\xB8\x8F."
+description: "Effortlessly deploy Docker Compose apps in production with zero downtime\
+  \ using an opinionated template \uD83D\uDEE0\xEF\xB8\x8F."
+developer: hadijaveed
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/container-management/docker-compose-anywhere
+repo: https://github.com/hadijaveed/docker-compose-anywhere
+support: https://github.com/hadijaveed/docker-compose-anywhere/blob/main/docker-compose-deploy.yml

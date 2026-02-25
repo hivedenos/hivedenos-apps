@@ -1,0 +1,10 @@
+version: '3.9'
+ 
+services:
+  13ft:
+    container_name: 13ft
+    hostname: 13ft
+    image: ghcr.io/wasi-master/13ft:latest
+    ports:
+      - 
+    restart: unless-stopped  

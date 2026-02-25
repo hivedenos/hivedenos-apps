@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: whoogle
+category: internet-tools
+name: Whoogle
+version: -benbusby/whoogle-search}
+tagline: A self-hosted, ad-free, privacy-respecting metasearch engine.
+description: A self-hosted, ad-free, privacy-respecting metasearch engine.
+developer: benbusby
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/internet-tools/whoogle
+repo: https://github.com/benbusby/whoogle-search
+support: https://github.com/benbusby/whoogle-search#manual-docker

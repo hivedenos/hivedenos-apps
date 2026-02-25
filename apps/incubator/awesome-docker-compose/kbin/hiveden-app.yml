@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: kbin
+category: social-networks-and-forums
+name: Kbin
+version: latest
+tagline: Federated content aggregator and microblogging platform.
+description: Federated content aggregator and microblogging platform.
+developer: ernestwisniewski
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://kbin.pub/
+repo: https://github.com/ernestwisniewski/kbin
+support: https://github.com/ernestwisniewski/kbin/blob/develop/docs/docker_deployment_guide.md

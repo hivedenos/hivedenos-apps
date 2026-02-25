@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: wizarr
+category: arr
+name: Wizarr
+version: latest
+tagline: Wizarr is an advanced user invitation and management system for Jellyfin,
+  Plex, Emby etc.
+description: Wizarr is an advanced user invitation and management system for Jellyfin,
+  Plex, Emby etc.
+developer: Wizarrrr
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://docs.wizarr.dev/
+repo: https://github.com/Wizarrrr/wizarr
+support: https://docs.wizarr.dev/getting-started/installation

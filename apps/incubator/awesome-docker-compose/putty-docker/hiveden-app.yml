@@ -1,0 +1,22 @@
+manifestVersion: 1.1
+id: putty-docker
+category: remote-access
+name: PuTTY Docker
+version: latest
+tagline: PuTTY is a free and open-source terminal emulator, serial console and network
+  file transfer application.
+description: "PuTTY is a free and open-source terminal emulator, serial console and\
+  \ network file transfer application. It supports several network protocols, including\
+  \ SCP, SSH, Telnet, rlogin, and raw socket connection. It can also connect to a\
+  \ serial port.\nThis is a Docker container for PuTTY\xE2\x81\_."
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.putty.org/
+repo: https://github.com/jlesage/docker-putty
+support: https://github.com/jlesage/docker-putty

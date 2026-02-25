@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: freescout
+category: ticketing
+name: FreeScout
+version: latest
+tagline: 'Open source clone of Help Scout: email-based customer support application,
+  help desk and shared mailbox.'
+description: 'Open source clone of Help Scout: email-based customer support application,
+  help desk and shared mailbox.'
+developer: freescout-help-desk
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://freescout.net/
+repo: https://github.com/freescout-help-desk/freescout
+support: https://github.com/tiredofit/docker-freescout

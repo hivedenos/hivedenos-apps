@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: planka
+category: project-management
+name: Planka
+version: latest
+tagline: Realtime kanban board for workgroups (alternative to Trello).
+description: Realtime kanban board for workgroups (alternative to Trello).
+developer: plankanban
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://planka.app/
+repo: https://github.com/plankanban/planka
+support: https://docs.planka.cloud/docs/installation/docker/production_version

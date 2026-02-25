@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: lemmy
+category: social-networks-and-forums
+name: Lemmy
+version: latest
+tagline: A link aggregator / reddit clone for the fediverse (alternative to Reddit).
+description: A link aggregator / reddit clone for the fediverse (alternative to Reddit).
+developer: LemmyNet
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://join-lemmy.org/
+repo: https://github.com/LemmyNet/lemmy
+support: https://github.com/LemmyNet/lemmy

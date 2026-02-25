@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: slash
+category: url-shorteners
+name: Slash
+version: latest
+tagline: An open source, self-hosted platform for sharing and managing your most frequently
+  used links.
+description: An open source, self-hosted platform for sharing and managing your most
+  frequently used links. Easily create customizable, human-readable shortcuts to streamline
+  your link management.
+developer: yourselfhosted
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/url-shorteners/slash
+repo: https://github.com/yourselfhosted/slash
+support: https://github.com/yourselfhosted/slash/blob/main/docs/install.md

@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: actual-budget
+category: budgeting
+name: Actual Budget
+version: latest
+tagline: Actual is a local-first personal finance tool based on zero-sum budgeting.
+description: Actual is a local-first personal finance tool based on zero-sum budgeting.
+  It supports synchronization across devices, custom rules, manual transaction importing
+  (from QIF, OFX, and QFX files), and optional automatic synchronization with many
+  banks.
+developer: actualbudget
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://actualbudget.org/
+repo: https://github.com/actualbudget/actual
+support: https://actualbudget.org/docs/install/docker

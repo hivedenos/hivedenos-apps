@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: babybuddy
+category: miscellaneous
+name: "Babybuddy\xE2\x81"
+version: latest
+tagline: "Babybuddy\xE2\x81\_ is a buddy for babies!"
+description: "Babybuddy\xE2\x81\_ is a buddy for babies! Helps caregivers track sleep,\
+  \ feedings, diaper changes, tummy time and more to learn about and predict baby\xE2\
+  \x80\x99s needs without (as much) guess work."
+developer: babybuddy
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://docs.baby-buddy.net/
+repo: https://github.com/babybuddy/babybuddy
+support: https://docs.baby-buddy.net/setup/deployment/

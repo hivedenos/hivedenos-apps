@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: readarr
+category: arr
+name: Readarr
+version: develop
+tagline: Book Manager and Automation (Sonarr for Ebooks).
+description: Book Manager and Automation (Sonarr for Ebooks).
+developer: Readarr
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://readarr.com/
+repo: https://github.com/Readarr/Readarr
+support: https://github.com/linuxserver/docker-readarr

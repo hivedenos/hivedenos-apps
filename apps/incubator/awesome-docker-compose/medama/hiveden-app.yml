@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: medama
+category: analytics
+name: Medama
+version: latest
+tagline: Self-hostable, privacy-focused website analytics.
+description: Self-hostable, privacy-focused website analytics.
+developer: medama-io
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://oss.medama.io/
+repo: https://github.com/medama-io/medama
+support: https://oss.medama.io/deployment/docker

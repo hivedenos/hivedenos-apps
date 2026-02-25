@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: zerotier-docker
+category: vpn-mesh-networking
+name: Zerotier Docker
+version: latest
+tagline: ZeroTier One as Docker Image.
+description: ZeroTier One as Docker Image.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.zerotier.com/
+repo: https://github.com/zyclonite/zerotier-docker
+support: https://github.com/zyclonite/zerotier-docker

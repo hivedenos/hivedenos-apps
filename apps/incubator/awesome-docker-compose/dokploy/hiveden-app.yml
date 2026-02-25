@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: dokploy
+category: paas
+name: Dokploy
+version: latest
+tagline: Open Source Alternative to Vercel, Netlify and Heroku.
+description: Open Source Alternative to Vercel, Netlify and Heroku.
+developer: Dokploy
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://dokploy.com/
+repo: https://github.com/Dokploy/dokploy
+support: https://docs.dokploy.com/en/docs/core/get-started/installation

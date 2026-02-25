@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: aptabase
+category: analytics
+name: Aptabase
+version: 15-alpine
+tagline: Open source, privacy first and simple analytics for mobile and desktop apps.
+description: Open source, privacy first and simple analytics for mobile and desktop
+  apps.
+developer: aptabase
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://aptabase.com/
+repo: https://github.com/aptabase/aptabase
+support: https://github.com/aptabase/aptabase

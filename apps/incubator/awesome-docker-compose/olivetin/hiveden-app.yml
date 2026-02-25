@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: olivetin
+category: automation
+name: OliveTin
+version: latest
+tagline: OliveTin is a web interface for running Linux shell commands.
+description: OliveTin is a web interface for running Linux shell commands.
+developer: OliveTin
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.olivetin.app/
+repo: https://github.com/OliveTin/OliveTin
+support: https://docs.olivetin.app/install-compose.html

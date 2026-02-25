@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: softether
+category: vpn
+name: SoftEther
+version: latest
+tagline: Multi-protocol software VPN with advanced features.
+description: Multi-protocol software VPN with advanced features.
+developer: SoftEtherVPN
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.softether.org/
+repo: https://github.com/SoftEtherVPN/SoftEtherVPN
+support: https://github.com/SoftEtherVPN/SoftEtherVPN

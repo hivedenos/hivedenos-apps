@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: ubuntu-postgresql
+category: databases-postgresql
+name: Ubuntu PostgreSQL Image
+version: 14-22.04_beta
+tagline: 'Configuration: See the Docker Hub page'
+description: 'Configuration: See the Docker Hub page'
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/databases/postgresql/ubuntu-postgresql
+repo: https://awesome-docker-compose.com/apps/databases/postgresql/ubuntu-postgresql
+support: https://awesome-docker-compose.com/apps/databases/postgresql/ubuntu-postgresql

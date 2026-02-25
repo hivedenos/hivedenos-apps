@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: lychee
+category: photo-server
+name: Lychee
+version: '10'
+tagline: Open source grid and album based photo-management-system.
+description: Open source grid and album based photo-management-system.
+developer: LycheeOrg
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://lycheeorg.github.io/
+repo: https://github.com/LycheeOrg/Lychee
+support: https://github.com/LycheeOrg/Lychee-Docker

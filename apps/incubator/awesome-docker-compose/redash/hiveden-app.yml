@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: redash
+category: analytics
+name: Redash
+version: __TAG__
+tagline: Connect to any data source, easily visualize, dashboard and share your data.
+description: Connect to any data source, easily visualize, dashboard and share your
+  data.
+developer: getredash
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://redash.io/
+repo: https://github.com/getredash/redash
+support: https://redash.io/help/open-source/setup/#docker

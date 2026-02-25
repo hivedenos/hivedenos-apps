@@ -1,0 +1,12 @@
+version: 
+ 
+services:
+   appsmith:
+     image: index.docker.io/appsmith/appsmith-ee
+     container_name: appsmith
+     ports:
+         - 
+         - 
+     volumes:
+         - ./stacks:/appsmith-stacks
+     restart: unless-stopped

@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: fider
+category: polls-and-events
+name: Fider
+version: '12'
+tagline: Open platform to collect and prioritize feedback (alternative to UserVoice).
+description: Open platform to collect and prioritize feedback (alternative to UserVoice).
+developer: getfider
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://fider.io/
+repo: https://github.com/getfider/fider
+support: https://fider.io/docs/hosting-instance

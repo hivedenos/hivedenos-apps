@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: gotosocial
+category: social-networks-and-forums
+name: GoToSocial
+version: latest
+tagline: ActivityPub federated social network server implementing the Mastodon client
+  API.
+description: ActivityPub federated social network server implementing the Mastodon
+  client API.
+developer: superseriousbusiness
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://docs.gotosocial.org/
+repo: https://github.com/superseriousbusiness/gotosocial
+support: https://docs.gotosocial.org/en/latest/getting_started/installation/container/

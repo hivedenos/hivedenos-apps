@@ -1,0 +1,22 @@
+manifestVersion: 1.1
+id: wg-easy
+category: vpn-wireguard
+name: WG-Easy
+version: latest
+tagline: WG-Easy is a simple, web-based management interface for WireGuard VPN, which
+  simplifies the configuration and managemen...
+description: WG-Easy is a simple, web-based management interface for WireGuard VPN,
+  which simplifies the configuration and management of VPN connections. It provides
+  a user-friendly web interface to configure your VPN without the need for complex
+  command-line tools.
+developer: wg-easy
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/vpn/wireguard/wg-easy
+repo: https://github.com/wg-easy/wg-easy
+support: https://github.com/wg-easy/wg-easy#installation

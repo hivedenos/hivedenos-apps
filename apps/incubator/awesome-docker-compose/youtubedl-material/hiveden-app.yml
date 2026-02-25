@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: youtubedl-material
+category: video-downloader
+name: youtubedl-material
+version: latest
+tagline: Material Design inspired YouTube downloader, based on youtube-dl.
+description: Material Design inspired YouTube downloader, based on youtube-dl. Supports
+  playlists, quality select, search, dark mode and much more, all with a clean and
+  modern design.
+developer: Tzahi12345
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/video-downloader/youtubedl-material
+repo: https://github.com/Tzahi12345/YoutubeDL-Material
+support: https://github.com/Tzahi12345/YoutubeDL-Material#docker

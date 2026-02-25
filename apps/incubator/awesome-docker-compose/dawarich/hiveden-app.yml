@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: dawarich
+category: maps-and-gps
+name: Dawarich
+version: 7.0-alpine
+tagline: Self-hosted alternative to Google Location History (Google Maps Timeline).
+description: Self-hosted alternative to Google Location History (Google Maps Timeline).
+developer: Freika
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://dawarich.app/
+repo: https://github.com/Freika/dawarich
+support: https://dawarich.app/docs/intro

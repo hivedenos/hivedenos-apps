@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: appsmith
+category: low-code
+name: Appsmith
+version: latest
+tagline: Cloud or self-hosted open-source platform to build admin panels, CRUD apps
+  and workflows.
+description: Cloud or self-hosted open-source platform to build admin panels, CRUD
+  apps and workflows. Build everything you need, 10x faster.
+developer: appsmithorg
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.appsmith.com/
+repo: https://github.com/appsmithorg/appsmith
+support: https://docs.appsmith.com/getting-started/setup/installation-guides/docker

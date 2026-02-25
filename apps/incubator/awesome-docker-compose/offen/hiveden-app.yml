@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: offen
+category: analytics
+name: Offen
+version: v1.4.2
+tagline: Open, lightweight, self hosted and free web analytics.
+description: Open, lightweight, self hosted and free web analytics.
+developer: offen
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.offen.dev/
+repo: https://github.com/offen/offen
+support: https://docs.offen.dev/running-offen/tutorials/configuring-deploying-offen-docker/

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: lenpaste
+category: pastebins
+name: Lenpaste
+version: 1.3.1
+tagline: Lenpaste is a web service that allows you to share notes anonymously, an
+  alternative to Pastebin.
+description: Lenpaste is a web service that allows you to share notes anonymously,
+  an alternative to Pastebin. There is its own API.
+developer: lcomrade
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://paste.lcomrade.su/
+repo: https://github.com/lcomrade/lenpaste
+support: https://github.com/lcomrade/lenpaste#launch-your-own-server

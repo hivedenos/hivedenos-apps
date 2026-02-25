@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: our-shopping-list
+category: task-management
+name: Our Shopping List
+version: latest
+tagline: Simple shared list application.
+description: Simple shared list application. Typical uses include shopping lists of
+  course, and any other small todo-list that needs to be used collaboratively.
+developer: nanawel
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/task-management/our-shopping-list
+repo: https://github.com/nanawel/our-shopping-list
+support: https://github.com/nanawel/our-shopping-list#-installation

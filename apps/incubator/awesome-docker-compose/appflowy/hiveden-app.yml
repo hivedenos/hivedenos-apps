@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: appflowy
+category: project-management
+name: Appflowy
+version: main
+tagline: "With AppFlowy, you can build detailed lists of to-do\xE2\x80\x99s for different\
+  \ projects while tracking the status of each one."
+description: "With AppFlowy, you can build detailed lists of to-do\xE2\x80\x99s for\
+  \ different projects while tracking the status of each one. Open Source Notion Alternative."
+developer: AppFlowy-IO
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.appflowy.io/
+repo: https://github.com/AppFlowy-IO/appflowy
+support: https://docs.appflowy.io/docs/appflowy/install-appflowy/installation-methods/installing-with-docker

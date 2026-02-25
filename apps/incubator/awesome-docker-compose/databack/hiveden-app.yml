@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: databack
+category: database-backup
+name: databack
+version: full
+tagline: databack is a tool to back up your data from MySQL/PostgreSQL/SSH etc.
+description: databack is a tool to back up your data from MySQL/PostgreSQL/SSH etc.
+  to any other storages like S3, SCP etc. Which can be run cron job to back up your
+  data automatically, and you can also restore your data from backup files.
+developer: long2ice
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/database-backup/databack
+repo: https://github.com/long2ice/databack
+support: https://github.com/long2ice/databack#deployment

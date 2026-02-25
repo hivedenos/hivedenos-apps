@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: elabftw
+category: cms
+name: eLabFTW
+version: latest
+tagline: Online lab notebook for research labs.
+description: "Online lab notebook for research labs. Store experiments, use a database\
+  \ to find reagents or protocols, use trusted timestamping to legally timestamp an\
+  \ experiment, export as pdf or zip archive, share with collaborators\xE2\x80\xA6\
+  ."
+developer: elabftw
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.elabftw.net/
+repo: https://github.com/elabftw/elabftw
+support: https://doc.elabftw.net/install.html

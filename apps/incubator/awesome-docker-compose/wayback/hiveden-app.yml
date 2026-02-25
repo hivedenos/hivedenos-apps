@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: wayback
+category: archiving
+name: Wayback
+version: latest
+tagline: An archiving tool with an IM-style interface that prioritizes privacy and
+  accessibility, integrated with various archiv...
+description: An archiving tool with an IM-style interface that prioritizes privacy
+  and accessibility, integrated with various archival services including Internet
+  Archive, archive.today, Ghostarchive, IPFS, Telegraph, and file systems.
+developer: wabarc
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://docs.wabarc.eu.org/
+repo: https://github.com/wabarc/wayback
+support: https://docs.wabarc.eu.org/deployment/

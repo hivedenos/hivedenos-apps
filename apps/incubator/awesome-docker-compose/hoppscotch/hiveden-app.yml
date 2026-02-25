@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: hoppscotch
+category: api-management
+name: Hoppscotch
+version: latest
+tagline: A free, fast and beautiful API request builder.
+description: A free, fast and beautiful API request builder.
+developer: hoppscotch
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://hoppscotch.io/
+repo: https://github.com/hoppscotch/hoppscotch
+support: https://github.com/hoppscotch/hoppscotch

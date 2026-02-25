@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  shellhub:
+    image: shellhubio/ssh:${SHELLHUB_VERSION}
+    restart: unless-stopped

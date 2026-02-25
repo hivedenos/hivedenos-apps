@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: blocky
+category: dns
+name: Blocky
+version: latest
+tagline: Fast and lightweight DNS proxy (like Pi-hole) as ad-blocker for local network
+  with many features.
+description: Fast and lightweight DNS proxy (like Pi-hole) as ad-blocker for local
+  network with many features.
+developer: 0xERR0R
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://0xerr0r.github.io/blocky/
+repo: https://github.com/0xERR0R/blocky
+support: https://0xerr0r.github.io/blocky/latest/installation/

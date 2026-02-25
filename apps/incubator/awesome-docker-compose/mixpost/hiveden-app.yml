@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: mixpost
+category: analytics
+name: Mixpost
+version: latest
+tagline: Self-hosted social media management software (Buffer alternative).
+description: Self-hosted social media management software (Buffer alternative).
+developer: inovector
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://mixpost.app/
+repo: https://github.com/inovector/mixpost
+support: https://docs.mixpost.app/lite/installation/docker

@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  coolify:
+    image: ghcr.io/coollabsio/coolify-realtime:1.0.1
+    restart: unless-stopped

@@ -1,0 +1,23 @@
+manifestVersion: 1.1
+id: blender
+category: miscellaneous
+name: Blender
+version: latest
+tagline: "Blender\xE2\x81\_ is a free and open-source 3D computer graphics software\
+  \ toolset used for creating animated films, visual eff..."
+description: "Blender\xE2\x81\_ is a free and open-source 3D computer graphics software\
+  \ toolset used for creating animated films, visual effects, art, 3D printed models,\
+  \ motion graphics, interactive 3D applications, virtual reality, and computer games.\
+  \ This image does not support GPU rendering out of the box only accelerated workspace\
+  \ experience."
+developer: blender
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.blender.org/
+repo: https://github.com/blender
+support: https://github.com/linuxserver/docker-blender

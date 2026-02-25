@@ -1,0 +1,15 @@
+version: 
+ 
+services:
+  caprover:
+    image: caprover/caprover
+    ports:
+      - 80:80
+      - 443:443
+      - 3000:3000
+    environment:
+      - ACCEPTED_TERMS=true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /captain:/captain
+    restart: always

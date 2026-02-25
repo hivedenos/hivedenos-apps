@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: mediawiki
+category: wikis
+name: Mediawiki
+version: latest
+tagline: MediaWiki is a free and open-source wiki software package written in PHP.
+description: MediaWiki is a free and open-source wiki software package written in
+  PHP. It serves as the platform for Wikipedia and the other Wikimedia projects, used
+  by hundreds of millions of people each month.
+developer: wikimedia
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.mediawiki.org/
+repo: https://github.com/wikimedia/mediawiki
+support: https://github.com/wikimedia/mediawiki-docker

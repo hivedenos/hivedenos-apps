@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: this-week-in-past
+category: photo-server
+name: This week in past
+version: latest
+tagline: Aggregates images taken this week, from previous years and presents them
+  on a web page with a simple slideshow.
+description: Aggregates images taken this week, from previous years and presents them
+  on a web page with a simple slideshow.
+developer: RouHim
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://awesome-docker-compose.com/apps/photo-server/this-week-in-past
+repo: https://github.com/RouHim/this-week-in-past
+support: https://github.com/RouHim/this-week-in-past#docker

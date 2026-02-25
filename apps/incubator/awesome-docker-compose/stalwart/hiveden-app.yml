@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: stalwart
+category: email-servers
+name: Stalwart
+version: latest
+tagline: All-in-one mail server with JMAP, IMAP4, and SMTP support and a wide range
+  of modern features.
+description: All-in-one mail server with JMAP, IMAP4, and SMTP support and a wide
+  range of modern features.
+developer: stalwartlabs
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://stalw.art/
+repo: https://github.com/stalwartlabs/mail-server
+support: https://stalw.art/docs/install/docker/

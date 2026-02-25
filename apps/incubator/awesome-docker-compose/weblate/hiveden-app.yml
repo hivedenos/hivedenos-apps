@@ -1,0 +1,18 @@
+manifestVersion: 1.1
+id: weblate
+category: localization
+name: Weblate
+version: 16-alpine
+tagline: Web-based translation tool with tight version control integration.
+description: Web-based translation tool with tight version control integration.
+developer: WeblateOrg
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://weblate.org/
+repo: https://github.com/WeblateOrg/weblate
+support: https://docs.weblate.org/en/latest/admin/install/docker.html

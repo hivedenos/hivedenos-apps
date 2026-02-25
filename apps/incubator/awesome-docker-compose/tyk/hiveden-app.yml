@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: tyk
+category: api-management
+name: Tyk
+version: v5.5.0
+tagline: Fast and scalable open source API Gateway.
+description: Fast and scalable open source API Gateway. Out of the box, Tyk offers
+  an API Management Platform with an API Gateway, API Analytics, Developer Portal
+  and API Management Dashboard.
+developer: TykTechnologies
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://tyk.io/
+repo: https://github.com/TykTechnologies/tyk
+support: https://github.com/TykTechnologies/tyk-gateway-docker

@@ -1,0 +1,6 @@
+version: "3.8"
+
+services:
+  pg-back-web:
+    image: eduardolat/pgbackweb:latest
+    restart: unless-stopped

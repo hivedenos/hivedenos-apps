@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: 2fauth
+category: miscellaneous
+name: 2FAuth
+version: latest
+tagline: A web app to manage your Two-Factor Authentication (2FA) accounts and generate
+  their security codes.
+description: A web app to manage your Two-Factor Authentication (2FA) accounts and
+  generate their security codes.
+developer: Bubka
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://docs.2fauth.app/
+repo: https://github.com/Bubka/2FAuth
+support: https://docs.2fauth.app/getting-started/installation/docker/docker-compose/
