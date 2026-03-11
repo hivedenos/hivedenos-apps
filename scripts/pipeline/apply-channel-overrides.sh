@@ -33,6 +33,13 @@ jq \
     ($override.channel // $app.channel // "incubator") as $candidate
     | if valid_channel($candidate) then $candidate else "incubator" end;
 
+  def resolved_channel_label($app; $channel; $meta):
+    if $channel == "incubator" then
+      ($source_id // $meta.label // $channel)
+    else
+      ($meta.label // $channel)
+    end;
+
   def resolved_override($app):
     ($overrides
       | map(select(
@@ -49,7 +56,7 @@ jq \
     | ($channel_defs[$channel] // $channel_defs["stable"] // {}) as $meta
     | .origin_channel = (.origin_channel // .channel // "stable")
     | .channel = $channel
-    | .channel_label = ($meta.label // $channel)
+    | .channel_label = resolved_channel_label($app; $channel; $meta)
     | .risk_level = ($meta.risk_level // "unknown")
     | .support_tier = ($meta.support_tier // "community")
     | .promotion_status = (

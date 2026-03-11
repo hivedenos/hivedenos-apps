@@ -80,6 +80,13 @@ while IFS= read -r app_json; do
             brandify($value)
           end;
 
+        def resolved_channel_label($meta):
+          if $channel == "incubator" then
+            ($app.source.id // $channel)
+          else
+            ($meta.label // $channel)
+          end;
+
         def remap_icon_url($url):
           if $url == null then
             null
@@ -124,7 +131,7 @@ while IFS= read -r app_json; do
             description: maybe_brandify($app.description),
             developer: maybe_brandify($app.developer),
             channel: $channel,
-            channel_label: ($meta.label // $channel),
+            channel_label: resolved_channel_label($meta),
             risk_level: ($meta.risk_level // "unknown"),
             support_tier: ($meta.support_tier // "community"),
             repository_path: $repository_path,
