@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: cloudflare-ddns
 category: dns
-name: CloudFlare DDNS
+name: Cloudflare DDNS
 version: latest
-tagline: some Cloudflare DDNS updaters.
-description: some Cloudflare DDNS updaters.
+tagline: Automatically update Cloudflare DNS records for dynamic IPs.
+description: Automatically update Cloudflare DNS records for dynamic IPs. Features
+  IPv4/IPv6 support, proxy control, WAF list management, and robust security features.
 developer: favonia
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/dns/cloudflare-ddns
+website: https://github.com/favonia/cloudflare-ddns?utm_source=awesome-docker-compose.com
 repo: https://github.com/favonia/cloudflare-ddns
 support: https://github.com/favonia/cloudflare-ddns#%EF%B8%8F-quick-start

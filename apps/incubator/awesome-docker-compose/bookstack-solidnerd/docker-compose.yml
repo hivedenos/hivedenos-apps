@@ -1,0 +1,28 @@
+services:
+  bookstack:
+    image: solidnerd/bookstack:latest
+    depends_on:
+      - mysql
+    environment:
+      - DB_HOST=mysql:3306
+      - DB_DATABASE=bookstack
+      - DB_USERNAME=bookstack
+      - DB_PASSWORD=${DB_PASSWORD}
+      - APP_URL=http://localhost:8080
+    volumes:
+      - ./uploads:/var/www/bookstack/public/uploads
+      - ./storage-uploads:/var/www/bookstack/storage/uploads
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
+  mysql:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=bookstack
+      - MYSQL_USER=bookstack
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+    restart: unless-stopped

@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: lighttpd
-category: web-servers
+category: web-server
 name: Lighttpd
 version: latest
-tagline: Secure, fast, compliant, and very flexible web server that has been optimized
-  for high-performance environments.
-description: Secure, fast, compliant, and very flexible web server that has been optimized
-  for high-performance environments.
+tagline: Run a secure, fast, and flexible web server optimized for high-performance.
+description: Run a secure, fast, and flexible web server optimized for high-performance.
+  Use less memory and CPU while supporting FastCGI, URL-Rewriting, and compression.
 developer: Awesome Docker Compose
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.lighttpd.net/
-repo: https://redmine.lighttpd.net/projects/lighttpd/wiki
+website: https://www.lighttpd.net?utm_source=awesome-docker-compose.com
+repo: https://git.lighttpd.net/lighttpd/lighttpd1.4
 support: https://redmine.lighttpd.net/projects/lighttpd/wiki

@@ -1,12 +1,13 @@
-version: 
- 
 services:
   meilisearch:
-    image: getmeili/meilisearch:v1.10
-    ports:
-      - 7700:7700
+    image: getmeili/meilisearch:latest
+    container_name: meilisearch
     environment:
-      - MEILI_MASTER_KEY='MASTER_KEY'\
+      - MEILI_MASTER_KEY=${MEILI_MASTER_KEY}
+      - MEILI_ENV=production
+      - MEILI_NO_ANALYTICS=true
+    ports:
+      - "7700:7700"
     volumes:
-      - $(pwd)/meili_data:/meili_data
+      - ./meili_data:/meili_data
     restart: unless-stopped

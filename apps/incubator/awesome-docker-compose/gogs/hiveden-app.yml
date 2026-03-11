@@ -3,8 +3,10 @@ id: gogs
 category: git-server
 name: Gogs
 version: latest
-tagline: Painless self-hosted Git Service written in Go.
-description: Painless self-hosted Git Service written in Go.
+tagline: Set up a simple, stable, and extensible self-hosted Git service with minimal
+  effort.
+description: Set up a simple, stable, and extensible self-hosted Git service with
+  minimal effort. It's cross-platform, lightweight, and runs from a single binary.
 developer: gogs
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://gogs.io/
+website: https://gogs.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/gogs/gogs
 support: https://github.com/gogs/gogs/tree/main/docker

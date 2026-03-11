@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: jenkins
 category: ci-and-cd
 name: Jenkins
-version: dind
-tagline: Continuous Integration Server.
-description: Continuous Integration Server.
+version: lts
+tagline: Use this open-source automation server to build, test, and deploy software.
+description: Use this open-source automation server to build, test, and deploy software.
+  Integrate with hundreds of plugins for a complete CI/CD toolchain.
 developer: jenkinsci
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.jenkins.io/
+website: https://www.jenkins.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/jenkinsci/jenkins
 support: https://www.jenkins.io/doc/book/installing/docker/

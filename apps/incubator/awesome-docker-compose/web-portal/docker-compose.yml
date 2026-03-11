@@ -1,20 +1,30 @@
-version: 
- 
 services:
-  web-portal:
-    container_name: web-portal
-    image: ghcr.io/enchant97/web-portal:2
-    restart: unless-stopped
-    volumes:
-      - ./data:/app/data
-      # Uncomment if you want custom plugins
-      # - ./plugins:/app/plugins
+  webportal:
+    image: ghcr.io/enchantedcode/webportal:latest
+    container_name: webportal
     ports:
-      # Change only left side
-      - 8000:8000
+      - "8080:80"
     environment:
-      # This config is built into the Docker image
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_DATABASE=webportal
+      - DB_USERNAME=webportal
+      - DB_PASSWORD=${DB_PASSWORD}
+      - APP_KEY=${APP_KEY}
+    volumes:
+      - ./webportal-data:/var/www/html/storage
+    depends_on:
+      - db
+    restart: unless-stopped
 
-      - 
-      # This must be secure
-      - 
+  db:
+    image: mariadb:10.6
+    container_name: webportal_db
+    environment:
+      - MYSQL_DATABASE=webportal
+      - MYSQL_USER=webportal
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+    restart: unless-stopped

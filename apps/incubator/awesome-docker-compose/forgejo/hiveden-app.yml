@@ -3,10 +3,9 @@ id: forgejo
 category: git-server
 name: Forgejo
 version: '8'
-tagline: A lightweight software forge focused on scaling, federation, and privacy
-  (fork of Gitea).
-description: A lightweight software forge focused on scaling, federation, and privacy
-  (fork of Gitea).
+tagline: Self-host your software projects with an easy-to-install, lightweight forge.
+description: Self-host your software projects with an easy-to-install, lightweight
+  forge. Get a performant, 100% free alternative to GitHub you can own and control.
 developer: Awesome Docker Compose
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://forgejo.org/
-repo: https://forgejo.org/docs/latest/admin/installation-docker/
-support: https://forgejo.org/docs/latest/admin/installation-docker/
+website: https://forgejo.org?utm_source=awesome-docker-compose.com
+repo: https://codeberg.org/forgejo/forgejo
+support: https://forgejo.org/docs/latest/admin/installation/docker/

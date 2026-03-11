@@ -1,28 +1,15 @@
-version: 
- 
 services:
   webthings-gateway:
-    container_name: webthings-gateway
     image: webthingsio/gateway:latest
+    container_name: webthings-gateway
     restart: unless-stopped
-    network_mode: host
-
-
-    #ports:
-
-
-    environment:
-      - 
+    ports:
+      - "8080:8080"
+      - "4443:4443"
     volumes:
-      - /opt/docker/webthings-gateway:/home/node/.webthings
-    logging:
-      driver: 
-      options:
-        max-size: 
-        max-file: 
-    # If certain devices are needed, e.g. USB dongles, enable them here.
-    #devices:
-    #  - /dev/ttyUSB0:/dev/ttyUSB0
-    #  - /dev/ttyACM0:/dev/ttyACM0
-    # If Bluetooth, the container needs to run in privileged mode.
-    #privileged: true
+      - ./data:/home/node/.webthings
+    environment:
+      - TZ=UTC
+    # network_mode: host # Uncomment if you need local network discovery (mDNS) for IoT devices
+    # devices:
+    #   - /dev/ttyACM0:/dev/ttyACM0 # Example for passing through a Zigbee/Z-Wave dongle

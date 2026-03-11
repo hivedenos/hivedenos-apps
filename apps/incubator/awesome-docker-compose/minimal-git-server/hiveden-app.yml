@@ -2,11 +2,10 @@ manifestVersion: 1.1
 id: minimal-git-server
 category: git-server
 name: minimal-git-server
-version: '2'
-tagline: A lightweight and minimal self-hosted git server with a basic CLI to manage
-  repositories, supporting multiple accounts...
-description: A lightweight and minimal self-hosted git server with a basic CLI to
-  manage repositories, supporting multiple accounts and running in a container.
+version: latest
+tagline: Deploy a minimal, self-hosted git server using Docker or Podman.
+description: Deploy a minimal, self-hosted git server using Docker or Podman. Manage
+  repositories and user accounts easily with a simple command-line interface.
 developer: mcarbonne
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/git-server/minimal-git-server
+website: https://github.com/mcarbonne/minimal-git-server?utm_source=awesome-docker-compose.com
 repo: https://github.com/mcarbonne/minimal-git-server
 support: https://github.com/mcarbonne/minimal-git-server#minimal-configuration

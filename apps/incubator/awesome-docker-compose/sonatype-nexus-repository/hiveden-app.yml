@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: sonatype-nexus-repository
+category: ide-and-tools
+name: Sonatype Nexus Repository
+version: latest
+tagline: Integrate development tools into a centralized binary repository manager.
+description: Integrate development tools into a centralized binary repository manager.
+  Optimize build performance, manage packages, and increase visibility across the
+  SDLC.
+developer: sonatype
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.sonatype.com/products/sonatype-nexus-repository?utm_source=awesome-docker-compose.com
+repo: https://github.com/sonatype/docker-nexus3
+support: https://github.com/sonatype/docker-nexus3/blob/main/docker-compose.yml

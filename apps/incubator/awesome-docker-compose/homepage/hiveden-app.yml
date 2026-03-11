@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: homepage
-category: personal-dashboards
+category: personal-dashboard
 name: Homepage
 version: latest
-tagline: A highly customizable homepage (or startpage / application dashboard) with
-  Docker and service API integrations.
-description: A highly customizable homepage (or startpage / application dashboard)
-  with Docker and service API integrations.
+tagline: Build a modern, fast, and secure application dashboard.
+description: Build a modern, fast, and secure application dashboard. Integrate over
+  100 services and customize everything with simple YAML files or docker labels.
 developer: gethomepage
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://gethomepage.dev/
+website: https://gethomepage.dev?utm_source=awesome-docker-compose.com
 repo: https://github.com/gethomepage/homepage
-support: https://gethomepage.dev/latest/installation/docker/
+support: https://gethomepage.dev/installation/docker/

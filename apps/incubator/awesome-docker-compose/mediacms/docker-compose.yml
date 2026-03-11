@@ -1,6 +1,62 @@
-version: "3.8"
-
 services:
-  mediacms:
+  web:
     image: mediacms/mediacms:latest
-    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./media_files:/mediacms/media_files
+    environment:
+      - FRONTEND_HOST=localhost
+      - POSTGRES_HOST=db
+      - POSTGRES_USER=mediacms
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=mediacms
+      - REDIS_HOST=redis
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
+    depends_on:
+      - db
+      - redis
+
+  db:
+    image: postgres:13
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=mediacms
+      - POSTGRES_USER=mediacms
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+
+  redis:
+    image: redis:6
+    volumes:
+      - ./redis_data:/data
+
+  celery:
+    image: mediacms/mediacms:latest
+    command: celery -A cms worker --loglevel=info
+    volumes:
+      - ./media_files:/mediacms/media_files
+    environment:
+      - FRONTEND_HOST=localhost
+      - POSTGRES_HOST=db
+      - POSTGRES_USER=mediacms
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=mediacms
+      - REDIS_HOST=redis
+    depends_on:
+      - db
+      - redis
+
+  celery_beat:
+    image: mediacms/mediacms:latest
+    command: celery -A cms beat --loglevel=info
+    environment:
+      - FRONTEND_HOST=localhost
+      - POSTGRES_HOST=db
+      - POSTGRES_USER=mediacms
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=mediacms
+      - REDIS_HOST=redis
+    depends_on:
+      - db
+      - redis

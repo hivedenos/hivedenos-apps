@@ -1,46 +1,28 @@
-version: '3.9'
- 
 services:
-  asciinema:
-    image: ghcr.io/asciinema/asciinema-server:20240428
-    environment:
-      - SECRET_KEY_BASE=  # <- see below
-      - URL_HOST=asciinema.example.com
-      - URL_SCHEME=https
-      - SMTP_HOST=smtp.example.com
-      - SMTP_USERNAME=foobar
-      - SMTP_PASSWORD=hunter2
-    volumes:
-      - asciinema_data:/var/opt/asciinema
-    depends_on:
-      postgres:
-        condition: service_healthy
- 
   postgres:
-    image: docker.io/library/postgres:14
+    image: postgres:15-alpine
+    restart: unless-stopped
     environment:
-      - POSTGRES_HOST_AUTH_METHOD=trust
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: asciinema
     volumes:
-      - postgres_data:/var/lib/postgresql/data
-    healthcheck:
-      test: ['CMD-SHELL', 'pg_isready -U postgres']
-      interval: 2s
-      timeout: 5s
-      retries: 10
- 
-  caddy:
-    image: caddy:2
-    command: caddy reverse-proxy --from https://asciinema.example.com --to http://asciinema:4000
+      - ./data/postgres:/var/lib/postgresql/data
+
+  asciinema:
+    image: ghcr.io/asciinema/asciinema-server:latest
+    restart: unless-stopped
+    depends_on:
+      - postgres
     ports:
-      - '80:80'
-      - '443:443'
-      - '443:443/udp'
+      - "4000:4000"
+    environment:
+      DATABASE_URL: postgres://postgres:${POSTGRES_PASSWORD}@postgres/asciinema
+      SECRET_KEY_BASE: ${SECRET_KEY_BASE}
+      # Optional: Configure these if running behind a reverse proxy or on a specific domain
+      # URL_HOST: localhost
+      # URL_SCHEME: http
+      # URL_PORT: 4000
     volumes:
-      - caddy_data:/data
-      - caddy_config:/config
- 
-volumes:
-  asciinema_data:
-  postgres_data:
-  caddy_data:
-  caddy_config:
+      - ./data/uploads:/opt/app/uploads
+      - ./data/config:/opt/app/config

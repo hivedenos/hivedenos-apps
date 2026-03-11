@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: haproxy-bitnami
+category: web-server
+name: HAProxy (Bitnami)
+version: latest
+tagline: Distribute TCP and HTTP traffic across servers for maximum uptime and performance.
+description: Distribute TCP and HTTP traffic across servers for maximum uptime and
+  performance. This open-source solution is ideal for demanding websites and applications.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.haproxy.org?utm_source=awesome-docker-compose.com
+repo: https://git.haproxy.org/
+support: https://hub.docker.com/r/bitnami/haproxy

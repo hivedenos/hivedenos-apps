@@ -3,8 +3,9 @@ id: maloja
 category: music-server
 name: Maloja
 version: latest
-tagline: Self-hosted music scrobble database (alternative to Last.fm).
-description: Self-hosted music scrobble database (alternative to Last.fm).
+tagline: Track your music listening habits with a self-hosted scrobble database.
+description: Track your music listening habits with a self-hosted scrobble database.
+  Generate personal charts, manage custom tags, and keep your data entirely private.
 developer: krateng
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://maloja.krateng.ch/
+website: https://github.com/krateng/maloja?utm_source=awesome-docker-compose.com
 repo: https://github.com/krateng/maloja
 support: https://github.com/krateng/maloja#how-to-install

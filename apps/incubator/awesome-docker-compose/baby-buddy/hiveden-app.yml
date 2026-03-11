@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: baby-buddy
+category: miscellaneous
+name: Baby Buddy
+version: latest
+tagline: Help caregivers track sleep, feedings, diaper changes, and tummy time.
+description: Help caregivers track sleep, feedings, diaper changes, and tummy time.
+  Learn about and predict your baby's needs with less guesswork using this handy tracker.
+developer: babybuddy
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://docs.baby-buddy.net?utm_source=awesome-docker-compose.com
+repo: https://github.com/babybuddy/babybuddy
+support: https://docs.baby-buddy.net/setup/deployment/

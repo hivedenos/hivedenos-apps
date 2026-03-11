@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: cachet
 category: network-monitoring
 name: Cachet
-version: 12-alpine
-tagline: An open source status page system, for everyone.
-description: An open source status page system, for everyone.
+version: 14-alpine
+tagline: Transparently communicate downtime with a beautiful, open-source status page.
+description: Transparently communicate downtime with a beautiful, open-source status
+  page. Automate incidents via API, schedule maintenance, and display system metrics.
 developer: cachethq
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://cachethq.io/
+website: https://cachethq.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/cachethq/cachet
-support: https://docs.cachethq.io/installation/docker.html
+support: https://docs.cachethq.io/v2.x/installation/docker

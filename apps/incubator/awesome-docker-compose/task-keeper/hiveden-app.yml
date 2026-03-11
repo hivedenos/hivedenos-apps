@@ -2,9 +2,11 @@ manifestVersion: 1.1
 id: task-keeper
 category: task-management
 name: Task Keeper
-version: '10.3'
-tagline: List editor for power users, backed by a self-hosted server.
-description: List editor for power users, backed by a self-hosted server.
+version: latest
+tagline: Manage tasks and notes efficiently with a self-hosted list editor.
+description: Manage tasks and notes efficiently with a self-hosted list editor. Use
+  extensive keyboard shortcuts, tags, and collapsible items to organize your daily
+  work.
 developer: nymanjens
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/task-management/task-keeper
+website: https://github.com/nymanjens/piga?utm_source=awesome-docker-compose.com
 repo: https://github.com/nymanjens/piga
 support: https://github.com/nymanjens/piga#installation-with-docker

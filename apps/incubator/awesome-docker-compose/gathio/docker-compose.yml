@@ -1,21 +1,26 @@
-version: '3.9'
- 
 services:
-    gathio:
-        container_name: gathio-app
-        image: ghcr.io/lowercasename/gathio:latest
-        links:
-            - mongo
-        ports:
-            - 3000:3000
-        volumes:
-            # The path to Gathio's config folder - change to match your system
-            - ./gathio-docker/config:/app/config
-            # The path to Gathio's user-uploaded event images folder - change to match your system
-            - ./gathio-docker/images:/app/public/events
-    mongo:
-        container_name: gathio-db
-        image: mongo:latest
-        volumes:
-            - ./mongodb_data_db:/data/db
-        restart: always
+  app:
+    # Builds directly from the official repository to ensure the latest version
+    build: https://github.com/lowprofile/gathio.git
+    container_name: gathio_app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGODB_URI=mongodb://mongo:27017/gathio
+      - BASE_URL=${BASE_URL}
+      - SECRET=${SECRET}
+      - MAILGUN_API_KEY=${MAILGUN_API_KEY}
+      - MAILGUN_DOMAIN=${MAILGUN_DOMAIN}
+      - EMAIL_FROM=${EMAIL_FROM}
+    volumes:
+      - ./data/uploads:/usr/src/app/public/uploads
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:4.4
+    container_name: gathio_mongo
+    restart: unless-stopped
+    volumes:
+      - ./data/db:/data/db

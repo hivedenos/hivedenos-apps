@@ -1,0 +1,26 @@
+services:
+  aliasvault:
+    image: ghcr.io/aliasvault/aliasvault:latest
+    container_name: aliasvault
+    restart: unless-stopped
+
+    ports:
+      - "80:80"
+      - "443:443"
+      - "25:25"
+      - "587:587"
+
+    volumes:
+      - ./database:/database
+      - ./logs:/logs
+      - ./secrets:/secrets
+      - ./certificates:/certificates
+
+    environment:
+      HOSTNAME: "localhost"
+      PUBLIC_REGISTRATION_ENABLED: "true"
+      IP_LOGGING_ENABLED: "true"
+      FORCE_HTTPS_REDIRECT: "false"
+      SUPPORT_EMAIL: ""
+      PRIVATE_EMAIL_DOMAINS: ""
+      SMTP_TLS_ENABLED: "false"

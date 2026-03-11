@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: vaultwarden-backup
+category: password-manager
+name: Vaultwarden Backup
+version: latest
+tagline: Protect your self-hosted password manager with automated backups.
+description: Protect your self-hosted password manager with automated backups. This
+  Docker container uses rclone to store data on any cloud and sends email or webhook
+  alerts.
+developer: ttionya
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/ttionya/vaultwarden-backup?utm_source=awesome-docker-compose.com
+repo: https://github.com/ttionya/vaultwarden-backup
+support: https://github.com/ttionya/vaultwarden-backup#usage

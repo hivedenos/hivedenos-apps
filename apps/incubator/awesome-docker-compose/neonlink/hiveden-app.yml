@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: neonlink
-category: bookmarks-managers
+category: bookmark-manager
 name: NeonLink
 version: latest
-tagline: Simple self-hosted bookmark service.
-description: Simple self-hosted bookmark service.
+tagline: Create your own private bookmarking service.
+description: Create your own private bookmarking service. It's lightweight, open-source,
+  and easy to deploy with Docker, even on a Raspberry Pi. Auto-fetches link details.
 developer: AlexSciFier
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/bookmarks-managers/neonlink
+website: https://github.com/AlexSciFier/neonlink?utm_source=awesome-docker-compose.com
 repo: https://github.com/AlexSciFier/neonlink
-support: https://github.com/AlexSciFier/neonlink#installation
+support: https://github.com/AlexSciFier/neonlink

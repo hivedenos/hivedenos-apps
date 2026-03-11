@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: maddy-mail-server
+category: email-server
+name: Maddy Mail Server
+version: latest
+tagline: Run a complete, secure email server with a single daemon.
+description: Run a complete, secure email server with a single daemon. This tool handles
+  SMTP delivery, IMAP storage, and essential security protocols with minimal upkeep.
+developer: foxcpp
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://maddy.email?utm_source=awesome-docker-compose.com
+repo: https://github.com/foxcpp/maddy
+support: https://maddy.email/docker/

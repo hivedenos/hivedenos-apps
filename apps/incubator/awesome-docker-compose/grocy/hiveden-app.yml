@@ -3,10 +3,10 @@ id: grocy
 category: inventory-management
 name: Grocy
 version: latest
-tagline: ERP beyond your fridge - grocy is a web-based self-hosted groceries & household
-  management solution for your home.
-description: ERP beyond your fridge - grocy is a web-based self-hosted groceries &
-  household management solution for your home.
+tagline: Track groceries, plan daily meals, and manage household chores with a self-hosted
+  system.
+description: Track groceries, plan daily meals, and manage household chores with a
+  self-hosted system. Monitor inventory levels and reduce food waste effortlessly.
 developer: grocy
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://grocy.info/
+website: https://grocy.info?utm_source=awesome-docker-compose.com
 repo: https://github.com/grocy/grocy
-support: https://github.com/grocy/grocy-docker
+support: https://github.com/linuxserver/docker-grocy

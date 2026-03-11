@@ -1,10 +1,9 @@
-version: 
- 
 services:
   portkey:
     image: codehat/portkey:latest
-    volumes:
-      - $(PWD)/config.yml:/opt/config.yml
+    container_name: portkey
     ports:
-      - 3000:3000
+      - "8080:8080"
+    volumes:
+      - ./data:/app/data
     restart: unless-stopped

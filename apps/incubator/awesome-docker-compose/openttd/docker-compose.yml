@@ -1,9 +1,12 @@
-version: 
 services:
   openttd:
-    image: bateau/openttd:latest
-    volumes:
-      - /path/to/your/.openttd:/home/openttd/.openttd
+    image: openttd/openttd:latest
+    container_name: openttd
+    restart: unless-stopped
     ports:
-      - 3979:3979/tcp
-      - 3979:3979/udp
+      - "3979:3979/tcp"
+      - "3979:3979/udp"
+    volumes:
+      - ./data:/home/openttd/.local/share/openttd
+    # Runs the game in dedicated server mode
+    command: -D

@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: sure
 category: budgeting
 name: Sure
-version: stable
-tagline: Sure is an open-source personal finance manager.
-description: Sure is an open-source personal finance manager.
+version: latest
+tagline: See your full financial life in one place.
+description: See your full financial life in one place. Link accounts, create custom
+  budgets, automate transaction sorting, and visualize your net worth with charts.
 developer: we-promise
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://sure.am/
+website: https://sure.am?utm_source=awesome-docker-compose.com
 repo: https://github.com/we-promise/sure
 support: https://github.com/we-promise/sure/blob/main/docs/hosting/docker.md

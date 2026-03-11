@@ -1,10 +1,8 @@
-version: 
 services:
   tinyfilemanager:
-    container_name: tinyfilemanager
-    image: prasathmani/tinyfilemanager:master
-    volumes:
-      - /absolute/path:/var/www/html/data
-    ports:
-      - 80:80
+    image: tinyfilemanager/tinyfilemanager:master
     restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - ./data:/var/www/html/data

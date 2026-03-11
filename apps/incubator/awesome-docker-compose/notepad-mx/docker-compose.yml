@@ -1,0 +1,9 @@
+services:
+  notepad:
+    image: athlon1600/notepad
+    container_name: notepad
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data

@@ -1,11 +1,10 @@
-version: 
- 
 services:
   alerthub:
-    image: ghcr.io/ardakilic/alerthub:2
+    image: ardakilic/alerthub:latest
     container_name: alerthub
-    volumes:
-      - /host/path/config.js:/usr/src/app/etc/config.js
-    ports:
-      - 3444:3444
     restart: unless-stopped
+    volumes:
+      - ./config.js:/app/config.js
+      - ./data/db.json:/app/db.json
+    environment:
+      - TZ=${TZ}

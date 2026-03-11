@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: servas
-category: bookmarks-managers
+category: bookmark-manager
 name: Servas
-version: 10.7.3
-tagline: A self-hosted bookmark management tool.
-description: A self-hosted bookmark management tool.
+version: latest
+tagline: Organize your bookmarks with tags and nested groups.
+description: Organize your bookmarks with tags and nested groups. This self-hosted,
+  open-source manager works on all devices and has browser extensions for easy saving.
 developer: beromir
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://servas.app/
+website: https://servas.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/beromir/Servas
 support: https://github.com/beromir/Servas#docker

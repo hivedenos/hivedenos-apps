@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: zammad
 category: ticketing
 name: Zammad
-version: -6.3.1-151}
-tagline: Easy to use but powerful open-source support and ticketing system.
-description: Easy to use but powerful open-source support and ticketing system.
+version: 8.12.2
+tagline: Manage user support efficiently with a free, open-source ticketing solution.
+description: Manage user support efficiently with a free, open-source ticketing solution.
+  Install it directly on your own servers using CentOS, Debian, Ubuntu, or Docker.
 developer: zammad
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://zammad.org/
+website: https://zammad.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/zammad/zammad
 support: https://github.com/zammad/zammad-docker-compose

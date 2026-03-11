@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: accent
 category: localization
 name: Accent
-version: '15.6'
-tagline: Open-source, self-hosted, developer-oriented translation tool.
-description: Open-source, self-hosted, developer-oriented translation tool.
+version: latest
+tagline: Manage project translations with a simple, developer-oriented tool.
+description: Manage project translations with a simple, developer-oriented tool. Get
+  a feature-packed, 100% open-source solution that is easy to deploy on your own.
 developer: mirego
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.accent.reviews/
+website: https://www.accent.reviews?utm_source=awesome-docker-compose.com
 repo: https://github.com/mirego/accent
-support: https://www.accent.reviews/guides/deploy
+support: https://www.accent.reviews/guides/deploy/

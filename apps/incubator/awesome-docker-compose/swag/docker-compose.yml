@@ -1,28 +1,21 @@
-version: 
- 
 services:
   swag:
-    image: lscr.io/linuxserver/swag
+    image: lscr.io/linuxserver/swag:latest
     container_name: swag
     cap_add:
       - NET_ADMIN
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/London
-      - URL=yourdomain.url
-      - SUBDOMAINS=www,
+      - TZ=Etc/UTC
+      - URL=${DOMAIN_NAME}
       - VALIDATION=http
-      - CERTPROVIDER= #optional
-      - DNSPLUGIN=cloudflare #optional
-      - DUCKDNSTOKEN=<token> #optional
-      - EMAIL=<e-mail> #optional
-      - ONLY_SUBDOMAINS=false #optional
-      - EXTRA_DOMAINS=<extradomains> #optional
-      - STAGING=false #optional
+      - SUBDOMAINS=www,
+      - CERTPROVIDER=letsencrypt
+      - EMAIL=${LETSENCRYPT_EMAIL}
     volumes:
-      - </path/to/appdata/config>:/config
+      - ./config:/config
     ports:
       - 443:443
-      - 80:80 #optional
+      - 80:80
     restart: unless-stopped

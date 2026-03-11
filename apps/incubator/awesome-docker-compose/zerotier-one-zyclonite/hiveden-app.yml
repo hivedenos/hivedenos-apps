@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: zerotier-one-zyclonite
+category: mesh-networking
+name: ZeroTier One (zyclonite)
+version: latest
+tagline: Create secure, resilient networks for any device, anywhere.
+description: Create secure, resilient networks for any device, anywhere. Set up in
+  minutes without hardware and manage everything from a single dashboard with end-to-end
+  encryption.
+developer: zerotier
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.zerotier.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/zerotier/ZeroTierOne
+support: https://github.com/zyclonite/zerotier-docker

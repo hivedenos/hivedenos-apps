@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: readeck
+category: bookmark-manager
+name: Readeck
+version: latest
+tagline: Collect web content like articles, photos, and videos.
+description: Collect web content like articles, photos, and videos. Organize with
+  labels, highlight key passages, save searchable video transcripts, and export to
+  e-books.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://readeck.org?utm_source=awesome-docker-compose.com
+repo: https://codeberg.org/readeck/readeck
+support: https://codeberg.org/readeck/readeck#how-to-test-or-install

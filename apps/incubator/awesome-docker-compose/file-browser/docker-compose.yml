@@ -1,0 +1,14 @@
+services:
+  filebrowser:
+    image: filebrowser/filebrowser
+    container_name: filebrowser
+    user: ${PUID}:${PGID}
+    ports:
+      - 8080:80
+    volumes:
+      - ./data:/srv
+      - ./filebrowser.db:/database/filebrowser.db
+      - ./settings.json:/.filebrowser.json
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true

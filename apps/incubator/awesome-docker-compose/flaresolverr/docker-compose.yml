@@ -1,11 +1,13 @@
-version: '3'
- 
 services:
   flaresolverr:
-    image: flaresolverr/flaresolverr
+    image: flaresolverr/flaresolverr:latest
     container_name: flaresolverr
-    ports:
-      - 
     environment:
-      - TZ=America/New_York # Set the time zone (optional)
+      - LOG_LEVEL=info
+      - LOG_HTML=false
+      - CAPTCHA_SOLVER=none
+      - TZ=Europe/London
+      - HEADLESS=true
+    ports:
+      - "8191:8191"
     restart: unless-stopped

@@ -1,0 +1,14 @@
+services:
+  swingmusic:
+    image: ghcr.io/swing-opensource/swingmusic:latest
+    container_name: swingmusic
+    restart: unless-stopped
+    ports:
+      - "1970:1970"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    volumes:
+      - ./music:/music
+      - ./data:/data

@@ -1,43 +1,34 @@
-version: '3.9'
- 
 services:
-  search01:
-    image: ghcr.io/codelibs/fess-opensearch:2.17.0
-    container_name: search01
+  elasticsearch:
+    image: ghcr.io/codelibs/fess-elasticsearch:latest
+    container_name: fess-elasticsearch
     environment:
-      - node.name=search01
-      - discovery.seed_hosts=search01
-      - cluster.initial_cluster_manager_nodes=search01
-      - cluster.name=fess-search
-      - bootstrap.memory_lock=true
-      - node.roles=cluster_manager,data,ingest,ml
-      - 
-      - 
-      - 
-      - 
-    ulimits:
-      memlock:
-        soft: -1
-        hard: -1
-      nofile:
-        soft: 65535
-        hard: 65535
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms1g -Xmx1g"
+      - xpack.security.enabled=false
     volumes:
-      - search01_data:/usr/share/opensearch/data
-      - search01_dictionary:/usr/share/opensearch/config/dictionary
+      - ./es-data:/usr/share/elasticsearch/data
+      - ./dictionary:/usr/share/elasticsearch/config/dictionary
     ports:
-      - 9200:9200
+      - "9200:9200"
     networks:
-      - search_net
-    logging:
-      driver: 
-      options:
-        max-size: 
-        max-file: 
-    restart: unless-stopped
- 
-volumes:
-  search01_data:
-    driver: local
-  search01_dictionary:
-    driver: local
+      - fess-net
+
+  fess:
+    image: ghcr.io/codelibs/fess:latest
+    container_name: fess
+    depends_on:
+      - elasticsearch
+    environment:
+      - "ES_HTTP_URL=http://elasticsearch:9200"
+      - "FESS_DICTIONARY_PATH=/usr/share/elasticsearch/config/dictionary/"
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./dictionary:/usr/share/elasticsearch/config/dictionary
+    networks:
+      - fess-net
+
+networks:
+  fess-net:
+    driver: bridge

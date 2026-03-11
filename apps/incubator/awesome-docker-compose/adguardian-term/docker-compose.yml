@@ -1,0 +1,13 @@
+services:
+  adguardian-term:
+    image: lissy93/adguardian-term:latest
+    container_name: adguardian-term
+    # Required for Terminal User Interface (TUI)
+    stdin_open: true
+    tty: true
+    # Host networking is recommended to easily connect to a local AdGuard Home instance
+    network_mode: host
+    volumes:
+      # Persist configuration file
+      - ./config:/root/.config/adguardian-term
+    restart: unless-stopped

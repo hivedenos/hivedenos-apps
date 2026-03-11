@@ -3,10 +3,10 @@ id: koito
 category: music-server
 name: Koito
 version: latest
-tagline: Koito is a modern, themeable scrobbler that you can use with any program
-  that scrobbles to a custom ListenBrainz URL.
-description: Koito is a modern, themeable scrobbler that you can use with any program
-  that scrobbles to a custom ListenBrainz URL.
+tagline: Track your listening patterns, relay scrobbles to other sites, and automatically
+  fetch rich metadata with this modern,...
+description: Track your listening patterns, relay scrobbles to other sites, and automatically
+  fetch rich metadata with this modern, themeable, open-source music server.
 developer: gabehf
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://koito.io/
+website: https://koito.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/gabehf/Koito
 support: https://koito.io/reference/configuration/

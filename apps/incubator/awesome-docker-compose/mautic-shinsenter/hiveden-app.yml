@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: mautic-shinsenter
+category: mailing-and-newsletter
+name: Mautic (shinsenter)
+version: '8.0'
+tagline: Build and manage marketing campaigns with a privacy-focused, open-source
+  automation platform.
+description: Build and manage marketing campaigns with a privacy-focused, open-source
+  automation platform. Enjoy unlimited segmentation and channels without vendor lock-in.
+developer: mautic
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://mautic.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/mautic/mautic
+support: https://github.com/mautic/mautic

@@ -3,9 +3,10 @@ id: docker-osx
 category: virtual-system
 name: Docker-OSX
 version: latest
-tagline: Run macOS VM in a Docker!
-description: Run macOS VM in a Docker! Run near native OSX-KVM in Docker! X11 Forwarding!
-  CI/CD for OS X Security Research! Docker mac Containers.
+tagline: Launch macOS virtual machines inside Docker containers.
+description: Launch macOS virtual machines inside Docker containers. Get near-native
+  KVM performance for CI/CD, security research, and cross-platform development on
+  any host.
 developer: sickcodes
 dependencies: []
 gallery: []
@@ -14,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/virtual-system/docker-osx
+website: https://github.com/sickcodes/Docker-OSX?utm_source=awesome-docker-compose.com
 repo: https://github.com/sickcodes/Docker-OSX
 support: https://github.com/sickcodes/Docker-OSX#quick-start-docker-osx

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: wireguard-linuxserver-io
+category: vpn
+name: WireGuard (LinuxServer.io)
+version: latest
+tagline: Deploy a fast, modern VPN server or client using a versatile Docker image.
+description: Deploy a fast, modern VPN server or client using a versatile Docker image.
+  Automatically generate server and peer configurations, including QR codes for easy
+  setup.
+developer: linuxserver
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/linuxserver/docker-wireguard?utm_source=awesome-docker-compose.com
+repo: https://github.com/linuxserver/docker-wireguard
+support: https://github.com/linuxserver/docker-wireguard

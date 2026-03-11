@@ -1,4 +1,36 @@
-version: '3.9'
 services:
-  elabftw:
- 
+  web:
+    image: elabftw/elabimg:latest
+    container_name: elabftw
+    restart: always
+    cap_add:
+      - SYS_ADMIN
+    environment:
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_NAME=elabftw
+      - DB_USER=elabftw
+      - DB_PASSWORD=${DB_PASSWORD}
+      - SECRET_KEY=${SECRET_KEY}
+      - SERVER_NAME=localhost
+      - DISABLE_HTTPS=false
+    ports:
+      - "443:443"
+    volumes:
+      - ./uploads:/elabftw/uploads
+      - ./etc/elabftw:/etc/elabftw
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+      - MYSQL_DATABASE=elabftw
+      - MYSQL_USER=elabftw
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - ./mysql:/var/lib/mysql
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci

@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: luanti
+category: games
+name: Luanti
+version: latest
+tagline: Build custom voxel games, explore massive worlds, and play with friends online.
+description: Build custom voxel games, explore massive worlds, and play with friends
+  online. Access thousands of open-source mods and customize your adventure easily.
+developer: luanti-org
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.luanti.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/luanti-org/luanti
+support: https://github.com/luanti-org/luanti/blob/master/doc/docker_server.md

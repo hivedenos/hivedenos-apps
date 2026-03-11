@@ -1,0 +1,37 @@
+services:
+  app:
+    image: shelfnu/shelf.nu:latest
+    container_name: shelf-app
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+      - MEILI_MASTER_KEY=${MEILI_MASTER_KEY}
+      - MEILI_HOST=http://meilisearch:7700
+      - NEXTAUTH_SECRET=${NEXTAUTH_SECRET}
+      - NEXTAUTH_URL=${NEXTAUTH_URL}
+    depends_on:
+      - postgres
+      - meilisearch
+    restart: always
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: shelf-postgres
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+    restart: always
+
+  meilisearch:
+    image: getmeili/meilisearch:v1.10
+    container_name: shelf-meilisearch
+    environment:
+      - MEILI_MASTER_KEY=${MEILI_MASTER_KEY}
+      - MEILI_NO_ANALYTICS=true
+    volumes:
+      - ./meili-data:/meili_data
+    restart: always

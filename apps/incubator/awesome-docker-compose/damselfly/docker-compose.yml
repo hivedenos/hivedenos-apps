@@ -1,12 +1,13 @@
-version: '3.9'
 services:
-    damselfly: 
-        container_name: damselfly
-        image: webreaper/damselfly
-        ports:
-            - 6363:6363/tcp
-        volumes:
-            - ./config:/config
-            - .thumbs:/thumbs
-            - ./photo:/pictures 
-        restart: unless-stopped
+  damselfly:
+    image: webreaper/damselfly:latest
+    container_name: damselfly
+    environment:
+      - TZ=UTC
+    ports:
+      - "6363:6363"
+    volumes:
+      - ./config:/config
+      - ./pictures:/pictures
+      - ./thumbs:/thumbs
+    restart: unless-stopped

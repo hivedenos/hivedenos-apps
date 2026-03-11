@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: youtubedl-material
 category: video-downloader
-name: youtubedl-material
+name: YoutubeDL-Material
 version: latest
-tagline: Material Design inspired YouTube downloader, based on youtube-dl.
-description: Material Design inspired YouTube downloader, based on youtube-dl. Supports
-  playlists, quality select, search, dark mode and much more, all with a clean and
-  modern design.
+tagline: Self-host a YouTube downloader with a Material Design interface.
+description: Self-host a YouTube downloader with a Material Design interface. Download
+  videos, audio, and playlists. Supports Docker, an API, and even Twitch VODs.
 developer: Tzahi12345
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/video-downloader/youtubedl-material
+website: https://github.com/Tzahi12345/YoutubeDL-Material?utm_source=awesome-docker-compose.com
 repo: https://github.com/Tzahi12345/YoutubeDL-Material
 support: https://github.com/Tzahi12345/YoutubeDL-Material#docker

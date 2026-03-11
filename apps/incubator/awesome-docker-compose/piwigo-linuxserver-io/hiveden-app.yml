@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: piwigo-linuxserver-io
+category: photo-server
+name: Piwigo (LinuxServer.io)
+version: latest
+tagline: Take control of your photo library.
+description: Take control of your photo library. Organize and share massive collections
+  with powerful, open source software designed for individuals and teams.
+developer: Piwigo
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://piwigo.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/Piwigo/Piwigo
+support: https://github.com/linuxserver/docker-piwigo

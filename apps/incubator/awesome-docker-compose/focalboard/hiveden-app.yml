@@ -3,11 +3,11 @@ id: focalboard
 category: project-management
 name: Focalboard
 version: latest
-tagline: Define, organize, track and manage work across individuals and teams (alternative
-  to Trello, Notion, and Asana).
-description: Define, organize, track and manage work across individuals and teams
-  (alternative to Trello, Notion, and Asana).
-developer: mattermost
+tagline: Centralize tasks, track milestones, and align technical teams with an open
+  source project management platform featuring...
+description: Centralize tasks, track milestones, and align technical teams with an
+  open source project management platform featuring Kanban, calendar, and table views.
+developer: mattermost-community
 dependencies: []
 gallery: []
 path: /
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.focalboard.com/
-repo: https://github.com/mattermost/focalboard
+website: https://www.focalboard.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/mattermost-community/focalboard
 support: https://www.focalboard.com/download/personal-edition/docker/

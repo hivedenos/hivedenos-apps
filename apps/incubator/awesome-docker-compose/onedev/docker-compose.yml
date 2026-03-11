@@ -1,12 +1,11 @@
-version: 
- 
 services:
-  server:
-    image: 1dev/server
+  onedev:
+    image: 1dev/server:latest
+    container_name: onedev
+    ports:
+      - "6610:6610"
+      - "6611:6611"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - $(pwd)/onedev:/opt/onedev
-    ports:
-      - 6610:6610
-      - 6611:6611
+      - ./data:/opt/onedev
     restart: unless-stopped

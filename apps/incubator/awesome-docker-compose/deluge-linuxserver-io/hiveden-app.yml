@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: deluge-linuxserver-io
+category: torrenting
+name: Deluge (LinuxServer.io)
+version: latest
+tagline: Defend your website against aggressive AI scrapers using a smart Proof-of-Work
+  system.
+description: Defend your website against aggressive AI scrapers using a smart Proof-of-Work
+  system. Prevent server downtime and keep resources accessible for real users.
+developer: linuxserver
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://deluge-torrent.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/linuxserver/docker-deluge
+support: https://github.com/linuxserver/docker-deluge

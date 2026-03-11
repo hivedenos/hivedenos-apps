@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: apache-answer
+category: social-network-and-forums
+name: Apache Answer
+version: latest
+tagline: Build scalable community forums, help centers, and knowledge management platforms.
+description: Build scalable community forums, help centers, and knowledge management
+  platforms. Features include intuitive tagging, gamification, and plugin integrations.
+developer: apache
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://answer.apache.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/apache/answer
+support: https://answer.apache.org/docs/installation/

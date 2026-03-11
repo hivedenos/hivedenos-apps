@@ -1,7 +1,25 @@
-version: 
 services:
   gocd-server:
-    image: gocd/gocd-server:v24.3.0
+    image: gocd/gocd-server:latest
+    container_name: gocd-server
     ports:
-      - 8153:8153
-    restart: always
+      - "8153:8153"
+    environment:
+      - GOCD_SERVER_JVM_OPTS=-Dagent.auto.register.key=${AGENT_AUTO_REGISTER_KEY}
+    volumes:
+      - ./gocd-server-data:/godata
+      - ./gocd-server-home:/home/go
+    restart: unless-stopped
+
+  gocd-agent:
+    image: gocd/gocd-agent-alpine-3.18:latest
+    container_name: gocd-agent
+    environment:
+      - GO_SERVER_URL=http://gocd-server:8153/go
+      - AGENT_AUTO_REGISTER_KEY=${AGENT_AUTO_REGISTER_KEY}
+    volumes:
+      - ./gocd-agent-data:/godata
+      - ./gocd-agent-home:/home/go
+    depends_on:
+      - gocd-server
+    restart: unless-stopped

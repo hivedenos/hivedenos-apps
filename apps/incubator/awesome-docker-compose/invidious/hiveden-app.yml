@@ -3,8 +3,9 @@ id: invidious
 category: video-streaming
 name: Invidious
 version: latest
-tagline: Alternative YouTube front-end.
-description: Alternative YouTube front-end.
+tagline: Experience YouTube without ads or tracking.
+description: Experience YouTube without ads or tracking. Subscribe to channels and
+  create playlists without a Google account. A privacy-focused, open-source front-end.
 developer: iv-org
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://invidious.io/
+website: https://invidious.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/iv-org/invidious
 support: https://docs.invidious.io/installation/

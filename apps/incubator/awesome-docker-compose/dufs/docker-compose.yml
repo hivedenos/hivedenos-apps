@@ -1,10 +1,11 @@
-version: '3'
 services:
   dufs:
     image: sigoden/dufs
+    container_name: dufs
     ports:
-    - 5000:5000
+      - "5000:5000"
     volumes:
-    - .:/data
+      - ./files:/data
+    # -A allows all operations (upload, delete, etc). Remove -A for read-only.
     command: /data -A
     restart: unless-stopped

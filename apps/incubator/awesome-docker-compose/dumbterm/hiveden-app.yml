@@ -3,10 +3,10 @@ id: dumbterm
 category: remote-access
 name: DumbTerm
 version: latest
-tagline: A stupidly simple web-based terminal emulator, with common tools and Starship
-  enabled!
-description: "A stupidly simple web-based terminal emulator, with common tools and\
-  \ Starship enabled! \uD83D\uDE80"
+tagline: Create and embed interactive terminal simulations for your website or product
+  demos.
+description: Create and embed interactive terminal simulations for your website or
+  product demos. Guide users through command-line processes with a simple interface.
 developer: DumbWareio
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/remote-access/dumbterm
+website: https://dumbterm.dumbware.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/DumbWareio/DumbTerm
 support: https://github.com/DumbWareio/DumbTerm#quick-start

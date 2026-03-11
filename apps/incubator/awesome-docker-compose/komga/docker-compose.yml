@@ -1,23 +1,14 @@
-version: '3.3'
 services:
   komga:
     image: gotson/komga
     container_name: komga
+    # Runs as user 1000:1000 by default. Adjust if necessary to match your host user.
+    user: "1000:1000"
+    environment:
+      - TZ=Etc/UTC
     volumes:
-      - type: bind
-        source: /path/to/config
-        target: /config
-      - type: bind
-        source: /path/to/data
-        target: /data
-      - type: bind
-        source: /etc/timezone #alternatively you can use a TZ environment variable, like TZ=Europe/London
-        target: /etc/timezone
-        read_only: true
+      - ./config:/config
+      - ./media:/data
     ports:
       - 25600:25600
-    user: 
-    # remove the whole environment section if you don't need it
-    environment:
-      - <ENV_VAR>=<extra configuration>
     restart: unless-stopped

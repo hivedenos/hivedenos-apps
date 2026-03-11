@@ -3,8 +3,9 @@ id: warpgate
 category: remote-access
 name: Warpgate
 version: latest
-tagline: Smart SSH and HTTPS bastion that works with any SSH client.
-description: Smart SSH and HTTPS bastion that works with any SSH client.
+tagline: Secure internal SSH, HTTPS, and database servers with SSO and RBAC.
+description: Secure internal SSH, HTTPS, and database servers with SSO and RBAC. This
+  open-source tool requires no client apps and provides full session recording.
 developer: warp-tech
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/remote-access/warpgate
+website: https://warpgate.null.page?utm_source=awesome-docker-compose.com
 repo: https://github.com/warp-tech/warpgate
-support: https://github.com/warp-tech/warpgate/wiki/Getting-started-on-Docker
+support: https://warpgate.null.page/getting-started-on-docker/

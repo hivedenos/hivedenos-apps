@@ -1,33 +1,31 @@
-version: '3.3'
- 
 services:
-  leantime_db:
-    image: mysql:8.4
-    container_name: mysql_leantime
+  mysql:
+    image: mysql:5.7
+    container_name: leantime_mysql
     volumes:
-      - ./db_data:/var/lib/mysql
-    restart: unless-stopped
-    env_file: ./.env                                        # Environment file with settings
-    networks:
-      - leantime-net
-    command: --character-set-server=UTF8MB4 --collation-server=UTF8MB4_unicode_ci
- 
- 
+      - ./data/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: leantime
+      MYSQL_USER: leantime
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --default-authentication-plugin=mysql_native_password
+    restart: always
+
   leantime:
     image: leantime/leantime:latest
-    container_name: leantime
-    restart: unless-stopped
-    env_file: ./.env                                        # Environment file with settings
-    networks:
-      - leantime-net
-    volumes:
-      - ./public_userfiles:/var/www/html/public/userfiles     # Volume to store public files, logo etc
-      - ./userfiles:/var/www/html/userfiles                   # Volume to store private user uploaded files
-      - ./plugins:/var/www/html/app/Plugins                   # Uncomment if you are planning to use plugins from the marketplace
+    container_name: leantime_app
+    environment:
+      LEAN_DB_HOST: mysql
+      LEAN_DB_USER: leantime
+      LEAN_DB_PASSWORD: ${DB_PASSWORD}
+      LEAN_DB_DATABASE: leantime
+      LEAN_APP_URL: http://localhost:8080
     ports:
-      -                                           # The port to expose and access Leantime
+      - 8080:80
+    volumes:
+      - ./data/public_userfiles:/var/www/html/public/userfiles
+      - ./data/userfiles:/var/www/html/userfiles
     depends_on:
-      - leantime_db                                         # Don't start Leantime unless leantime_db is running
- 
-networks:
-  leantime-net:
+      - mysql
+    restart: always

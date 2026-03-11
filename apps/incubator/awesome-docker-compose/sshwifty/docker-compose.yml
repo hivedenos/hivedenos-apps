@@ -1,8 +1,7 @@
-version: 
 services:
   sshwifty:
+    image: nirui/sshwifty:latest
     container_name: sshwifty
-    image: niruix/sshwifty:latest
-    ports:
-      - 8182:8182
     restart: always
+    ports:
+      - "8182:8182"

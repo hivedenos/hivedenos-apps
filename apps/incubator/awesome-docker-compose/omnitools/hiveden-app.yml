@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: omnitools
+category: miscellaneous
+name: OmniTools
+version: latest
+tagline: Replace multiple single-purpose apps with a comprehensive suite of utilities.
+description: Replace multiple single-purpose apps with a comprehensive suite of utilities.
+  Manage tasks, convert files, and calculate data from a single unified dashboard.
+developer: iib0011
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://omnitools.app?utm_source=awesome-docker-compose.com
+repo: https://github.com/iib0011/omni-tools
+support: https://github.com/iib0011/omni-tools#self-hostrun

@@ -1,0 +1,29 @@
+services:
+  mariadb:
+    image: docker.io/bitnami/mariadb:11.4
+    container_name: mariadb
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - MARIADB_USER=bn_wordpress
+      - MARIADB_DATABASE=bitnami_wordpress
+      - MARIADB_PASSWORD=${DATABASE_PASSWORD}
+    volumes:
+      - ./mariadb_data:/bitnami/mariadb
+  wordpress:
+    image: docker.io/bitnami/wordpress:6
+    container_name: wordpress
+    ports:
+      - '8080:8080'
+      - '8443:8443'
+    environment:
+      - WORDPRESS_DATABASE_HOST=mariadb
+      - WORDPRESS_DATABASE_PORT_NUMBER=3306
+      - WORDPRESS_DATABASE_USER=bn_wordpress
+      - WORDPRESS_DATABASE_NAME=bitnami_wordpress
+      - WORDPRESS_DATABASE_PASSWORD=${DATABASE_PASSWORD}
+      - WORDPRESS_USERNAME=user
+      - WORDPRESS_PASSWORD=${WORDPRESS_ADMIN_PASSWORD}
+    volumes:
+      - ./wordpress_data:/bitnami/wordpress
+    depends_on:
+      - mariadb

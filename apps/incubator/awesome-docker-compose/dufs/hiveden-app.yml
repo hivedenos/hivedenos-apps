@@ -1,12 +1,12 @@
 manifestVersion: 1.1
 id: dufs
-category: file-transfer-web-based-file-managers
+category: storage-file-transfer
 name: Dufs
 version: latest
-tagline: "A file server that supports static serving, uploading, searching, accessing\
-  \ control, webdav\xE2\x80\xA6"
-description: "A file server that supports static serving, uploading, searching, accessing\
-  \ control, webdav\xE2\x80\xA6"
+tagline: Deploy a versatile file server to host static assets, manage drag-and-drop
+  uploads, and enforce access controls.
+description: Deploy a versatile file server to host static assets, manage drag-and-drop
+  uploads, and enforce access controls. Includes WebDAV, search, and HTTPS support.
 developer: sigoden
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/file-transfer---web-based-file-managers/dufs
+website: https://github.com/sigoden/dufs?utm_source=awesome-docker-compose.com
 repo: https://github.com/sigoden/dufs
 support: https://github.com/sigoden/dufs

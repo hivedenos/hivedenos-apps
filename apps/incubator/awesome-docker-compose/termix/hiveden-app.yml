@@ -3,10 +3,10 @@ id: termix
 category: remote-access
 name: Termix
 version: latest
-tagline: Termix is an open-source, web-based server management platform with SSH terminal,
-  tunneling, and file editing capabilit...
-description: Termix is an open-source, web-based server management platform with SSH
-  terminal, tunneling, and file editing capabilities.
+tagline: Access a full SSH terminal, set up secure tunnels, and edit server files
+  directly from your web browser.
+description: Access a full SSH terminal, set up secure tunnels, and edit server files
+  directly from your web browser. A complete server management platform.
 developer: Termix-SSH
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://termix.site/
+website: https://termix.site?utm_source=awesome-docker-compose.com
 repo: https://github.com/Termix-SSH/Termix
-support: https://docs.termix.site/install
+support: https://docs.termix.site/install/server/docker

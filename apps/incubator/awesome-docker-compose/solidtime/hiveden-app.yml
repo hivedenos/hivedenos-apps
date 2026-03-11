@@ -2,11 +2,10 @@ manifestVersion: 1.1
 id: solidtime
 category: time-tracking
 name: solidtime
-version: '15'
-tagline: solidtime is a modern open-source time tracking application for Freelancers
-  and Agencies.
-description: solidtime is a modern open-source time tracking application for Freelancers
-  and Agencies.
+version: latest
+tagline: Track hours, manage team permissions, and generate beautiful PDF invoices.
+description: Track hours, manage team permissions, and generate beautiful PDF invoices.
+  Migrate data easily from other apps and choose between cloud or on-premise hosting.
 developer: solidtime-io
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.solidtime.io/
+website: https://www.solidtime.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/solidtime-io/solidtime
 support: https://docs.solidtime.io/self-hosting/guides/docker

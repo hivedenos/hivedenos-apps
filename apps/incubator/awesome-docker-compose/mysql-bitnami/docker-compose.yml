@@ -1,0 +1,14 @@
+services:
+  mysql:
+    image: bitnami/mysql:latest
+    container_name: bitnami_mysql
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=my_database
+      - MYSQL_USER=my_user
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+    volumes:
+      - ./mysql-data:/bitnami/mysql
+    restart: unless-stopped

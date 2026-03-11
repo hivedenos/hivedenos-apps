@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: airsonic-advanced-linuxserver-io
+category: music-server
+name: Airsonic-Advanced (LinuxServer.io)
+version: latest
+tagline: Stream massive audio and video collections with a highly optimized, self-hosted
+  media server featuring lightning-fast l...
+description: Stream massive audio and video collections with a highly optimized, self-hosted
+  media server featuring lightning-fast library scans and modern security.
+developer: kagemomiji
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/kagemomiji/airsonic-advanced?utm_source=awesome-docker-compose.com
+repo: https://github.com/kagemomiji/airsonic-advanced
+support: https://github.com/linuxserver/docker-airsonic-advanced

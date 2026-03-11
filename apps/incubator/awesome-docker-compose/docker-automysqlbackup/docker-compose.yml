@@ -1,0 +1,12 @@
+services:
+  automysqlbackup:
+    image: selim13/automysqlbackup:latest
+    container_name: automysqlbackup
+    environment:
+      - DBHOST=mysql
+      - USERNAME=${DB_USERNAME}
+      - PASSWORD=${DB_PASSWORD}
+      - DBNAMES=all
+    volumes:
+      - ./backups:/backup
+    restart: unless-stopped

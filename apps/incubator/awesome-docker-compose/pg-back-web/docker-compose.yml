@@ -1,6 +1,21 @@
-version: "3.8"
-
 services:
-  pg-back-web:
+  pgbackweb:
     image: eduardolat/pgbackweb:latest
+    ports:
+      - "8085:8085"
+    environment:
+      - PBW_ENCRYPTION_KEY=${PBW_ENCRYPTION_KEY}
+      - PBW_POSTGRES_CONN_STRING=postgresql://postgres:${POSTGRES_PASSWORD}@pgbackweb-db:5432/pgbackweb?sslmode=disable
+    depends_on:
+      - pgbackweb-db
+    restart: unless-stopped
+
+  pgbackweb-db:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=pgbackweb
+    volumes:
+      - ./db-data:/var/lib/postgresql/data
     restart: unless-stopped

@@ -2,11 +2,10 @@ manifestVersion: 1.1
 id: chartbrew
 category: database-management
 name: Chartbrew
-version: '5.7'
-tagline: Web application that can connect directly to databases and APIs and use the
-  data to create beautiful charts.
-description: Web application that can connect directly to databases and APIs and use
-  the data to create beautiful charts.
+version: latest
+tagline: Create real-time dashboards from all your data sources.
+description: Create real-time dashboards from all your data sources. Use an AI assistant
+  to query data, build reports for clients, and embed interactive charts anywhere.
 developer: chartbrew
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://chartbrew.com/
+website: https://chartbrew.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/chartbrew/chartbrew
-support: https://docs.chartbrew.com/deployment/#run-the-application-with-docker
+support: https://docs.chartbrew.com/deployment/run-on-docker

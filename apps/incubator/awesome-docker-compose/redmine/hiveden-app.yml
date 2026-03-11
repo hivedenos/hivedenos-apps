@@ -2,11 +2,11 @@ manifestVersion: 1.1
 id: redmine
 category: project-management
 name: Redmine
-version: '8.0'
-tagline: Redmine is a flexible project management web application written using Ruby
-  on Rails framework
-description: Redmine is a flexible project management web application written using
-  Ruby on Rails framework
+version: latest
+tagline: Organize tasks and track issues using a flexible, open-source project management
+  platform featuring Gantt charts, time...
+description: Organize tasks and track issues using a flexible, open-source project
+  management platform featuring Gantt charts, time tracking, and version control integration.
 developer: redmine
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.redmine.org/
+website: https://www.redmine.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/redmine/redmine
 support: https://github.com/redmine/redmine

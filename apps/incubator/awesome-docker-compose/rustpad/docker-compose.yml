@@ -1,8 +1,10 @@
-version: 
 services:
   rustpad:
+    image: rustpad/rustpad
     container_name: rustpad
-    image: ekzhang/rustpad
+    restart: unless-stopped
     ports:
       - 3030:3030
-    restart: unless-stopped
+    environment:
+      - EXPIRY_DAYS=1
+      - RUST_LOG=info

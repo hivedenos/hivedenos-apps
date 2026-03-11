@@ -3,9 +3,10 @@ id: nxs-backup
 category: backup
 name: nxs-backup
 version: latest
-tagline: The tool for creating, delivering and rotating backups for GNU/Linux distributions.
-description: The tool for creating, delivering and rotating backups for GNU/Linux
-  distributions.
+tagline: Create discrete or incremental backups for files and databases like MySQL,
+  PostgreSQL, and MongoDB.
+description: Create discrete or incremental backups for files and databases like MySQL,
+  PostgreSQL, and MongoDB. Get notified via email or webhooks. Runs on any Linux system.
 developer: nixys
 dependencies: []
 gallery: []
@@ -14,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://nxs-backup.io/
+website: https://nxs-backup.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/nixys/nxs-backup
 support: https://github.com/nixys/nxs-backup#docker-compose

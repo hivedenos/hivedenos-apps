@@ -1,12 +1,12 @@
 manifestVersion: 1.1
 id: fileshelter
-category: file-transfer-single-click-drag-n-drop-upload
+category: quick-file-transfer
 name: FileShelter
 version: latest
-tagline: FileShelter is a self-hosted software that allows you to easily share files
-  over the Internet.
-description: FileShelter is a self-hosted software that allows you to easily share
-  files over the Internet.
+tagline: Share files safely using customizable links.
+description: Share files safely using customizable links. Set specific expiration
+  dates, add password protection, and control exactly who accesses your important
+  documents.
 developer: epoupon
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://fileshelter-demo.poupon.dev/
+website: https://fileshelter-demo.poupon.dev?utm_source=awesome-docker-compose.com
 repo: https://github.com/epoupon/fileshelter
 support: https://github.com/epoupon/fileshelter/blob/master/INSTALL.md

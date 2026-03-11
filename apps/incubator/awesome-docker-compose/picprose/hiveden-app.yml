@@ -3,11 +3,10 @@ id: picprose
 category: miscellaneous
 name: PicProse
 version: latest
-tagline: PicProse is a article cover image generator tool for Medium, Wordpress, Wechat
-  and other blog post.
-description: PicProse is a article cover image generator tool for Medium, Wordpress,
-  Wechat and other blog post.
-developer: jarronkot
+tagline: Design professional cover images for blogs, videos, and social media platforms.
+description: Design professional cover images for blogs, videos, and social media
+  platforms. Customize fonts, colors, and dimensions easily with ready-to-use presets.
+developer: jaaronkot
 dependencies: []
 gallery: []
 path: /
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/miscellaneous/picprose
-repo: https://github.com/jarronkot/picprose
-support: https://github.com/jaaronkot/picprose#getting-started
+website: https://picprose.pixpark.net?utm_source=awesome-docker-compose.com
+repo: https://github.com/jaaronkot/picprose
+support: https://github.com/jaaronkot/picprose#deploy-with-docker

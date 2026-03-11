@@ -1,6 +1,16 @@
-version: "3.8"
-
 services:
   booklore:
-    image: ghcr.io/adityachandelgit/booklore-app:latest
+    image: booklore/booklore:latest
+    container_name: booklore
     restart: unless-stopped
+    ports:
+      - 3000:3000
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - APP_URL=http://localhost:3000
+      - SECRET_KEY=${SECRET_KEY}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
+    volumes:
+      - ./data:/app/data

@@ -2,11 +2,11 @@ manifestVersion: 1.1
 id: inventree
 category: inventory-management
 name: InvenTree
-version: '13'
-tagline: InvenTree is an open-source inventory management system which provides intuitive
-  parts management and stock control.
-description: InvenTree is an open-source inventory management system which provides
-  intuitive parts management and stock control.
+version: stable
+tagline: Manage parts, track stock, and organize suppliers with this open-source inventory
+  system.
+description: Manage parts, track stock, and organize suppliers with this open-source
+  inventory system. Features include BOM management and custom plugin integrations.
 developer: inventree
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://inventree.org/
+website: https://inventree.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/inventree/InvenTree
 support: https://docs.inventree.org/en/latest/start/docker_install/

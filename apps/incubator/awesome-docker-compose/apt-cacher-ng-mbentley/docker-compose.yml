@@ -1,0 +1,13 @@
+services:
+  apt-cacher-ng:
+    image: mbentley/apt-cacher-ng:latest
+    container_name: apt-cacher-ng
+    restart: unless-stopped
+    ports:
+      - "3142:3142"
+    volumes:
+      - ./data:/var/cache/apt-cacher-ng
+    environment:
+      - TZ=UTC
+      # Optional upstream proxy configuration
+      - ACNG_PROXY=${ACNG_PROXY}

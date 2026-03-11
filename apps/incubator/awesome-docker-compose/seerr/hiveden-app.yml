@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: seerr
+category: media-server
+name: Seerr
+version: latest
+tagline: Find new media to watch with smart recommendations.
+description: Find new media to watch with smart recommendations. Easily manage user
+  requests, integrate with popular DVR applications, and set granular access permissions.
+developer: seerr-team
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://seerr.dev?utm_source=awesome-docker-compose.com
+repo: https://github.com/seerr-team/seerr
+support: https://docs.seerr.dev/getting-started/docker

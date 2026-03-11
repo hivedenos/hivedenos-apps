@@ -3,10 +3,10 @@ id: scrutiny
 category: system-monitoring
 name: Scrutiny
 version: master-omnibus
-tagline: Web UI for hard drive S.M.A.R.T monitoring, historical trends & real-world
-  failure thresholds.
-description: Web UI for hard drive S.M.A.R.T monitoring, historical trends & real-world
-  failure thresholds.
+tagline: Monitor hard drive health with a web UI.
+description: Monitor hard drive health with a web UI. Track historical S.M.A.R.T.
+  data, use real-world failure thresholds, and receive timely notifications to prevent
+  data loss.
 developer: AnalogJ
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/system-monitoring/scrutiny
+website: https://github.com/AnalogJ/scrutiny?utm_source=awesome-docker-compose.com
 repo: https://github.com/AnalogJ/scrutiny
 support: https://github.com/AnalogJ/scrutiny#docker

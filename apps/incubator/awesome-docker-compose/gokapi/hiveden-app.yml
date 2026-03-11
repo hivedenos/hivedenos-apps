@@ -1,13 +1,11 @@
 manifestVersion: 1.1
 id: gokapi
-category: file-transfer-single-click-drag-n-drop-upload
+category: quick-file-transfer
 name: Gokapi
 version: latest
-tagline: Lightweight server to share files, which expire after a set amount of downloads
-  or days.
-description: Lightweight server to share files, which expire after a set amount of
-  downloads or days. Similar to the discontinued Firefox Send, with the difference
-  that only the admin is allowed to upload files.
+tagline: Share files securely using a lightweight server.
+description: Share files securely using a lightweight server. Set expiration by days
+  or download count, save disk space, and maintain full control over your shared data.
 developer: Forceu
 dependencies: []
 gallery: []
@@ -16,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://gokapi.readthedocs.io/
+website: https://gokapi.readthedocs.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/Forceu/gokapi
 support: https://gokapi.readthedocs.io/en/latest/setup.html

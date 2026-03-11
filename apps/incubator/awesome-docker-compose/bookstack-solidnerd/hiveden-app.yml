@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: bookstack-solidnerd
+category: wiki
+name: BookStack (solidnerd)
+version: latest
+tagline: Create, organize, and search your documentation easily.
+description: Create, organize, and search your documentation easily. This free, open-source
+  wiki offers a simple interface, built-in diagrams, and robust authentication.
+developer: solidnerd
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.bookstackapp.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/solidnerd/docker-bookstack
+support: https://github.com/solidnerd/docker-bookstack

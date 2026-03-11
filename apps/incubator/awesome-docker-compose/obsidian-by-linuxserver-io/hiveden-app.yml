@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: obsidian-by-linuxserver-io
+category: knowledge-management
+name: Obsidian by LinuxServer.io
+version: latest
+tagline: Build a private knowledge base with powerful linked notes.
+description: Build a private knowledge base with powerful linked notes. Visualize
+  connections, customize with plugins, and own your data forever in open, offline
+  files.
+developer: linuxserver
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://obsidian.md?utm_source=awesome-docker-compose.com
+repo: https://github.com/linuxserver/docker-obsidian
+support: https://github.com/linuxserver/docker-obsidian

@@ -1,8 +1,13 @@
-version: '3.9'
 services:
-    hascheksolutions:
-        image: ghcr.io/hascheksolutions/pictshare
-        container_name: pictshare
-        ports:
-            - '8080:80'
-        restart: unless-stopped
+  pictshare:
+    image: ghcr.io/hascheksolutions/pictshare
+    container_name: pictshare
+    ports:
+      - "8080:80"
+    volumes:
+      - ./data:/data
+    environment:
+      - TITLE=PictShare
+      - MAX_UPLOAD_SIZE=50M
+      - UPLOAD_CODE=${UPLOAD_CODE}
+    restart: unless-stopped

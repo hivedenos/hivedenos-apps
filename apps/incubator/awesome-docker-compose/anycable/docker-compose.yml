@@ -1,15 +1,27 @@
-version: 
 services:
-  anycable-go:
+  anycable:
     image: anycable/anycable-go:latest
-    ulimits:
-      nofile:
-        soft: 65536
-        hard: 65536
+    restart: unless-stopped
     ports:
-      - 8080:8080
+      - "8080:8080"
     environment:
-      - REDIS_URL=redis://redis:6379/0
-      - ANYCABLE_RPC_HOST=rpc:50051
-      - ANYCABLE_HOST=0.0.0.0
-    restart: always  
+      ANYCABLE_HOST: "0.0.0.0"
+      ANYCABLE_PORT: "8080"
+      ANYCABLE_RPC_HOST: ${ANYCABLE_RPC_HOST}
+      ANYCABLE_REDIS_URL: ${ANYCABLE_REDIS_URL}
+      ANYCABLE_DEBUG: "true"
+    depends_on:
+      - redis
+    networks:
+      - anycable_net
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    volumes:
+      - ./redis-data:/data
+    networks:
+      - anycable_net
+
+networks:
+  anycable_net:

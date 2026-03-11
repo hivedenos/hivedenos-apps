@@ -1,23 +1,35 @@
-version: 
 services:
-  healthchecks:
-    image: healthchecks/healthchecks:latest
-    container_name: healthchecks
+  db:
+    image: postgres:15-alpine
     environment:
-      - ALLOWED_HOSTS=localhost
-      - DB=sqlite
-      - DB_NAME=/data/hc.sqlite
-      - DEBUG=False
-      - DEFAULT_FROM_EMAIL=fixme-email-address-here
-      - EMAIL_HOST=fixme-smtp-host-here
-      - EMAIL_HOST_PASSWORD=fixme-smtp-password-here
-      - EMAIL_HOST_USER=fixme-smtp-username-here
-      - EMAIL_PORT=587
-      - EMAIL_USE_TLS=True
-      - SECRET_KEY=---
-      - SITE_ROOT=http://localhost:8000
-    ports:
-      - 8000:8000
+      POSTGRES_DB: healthchecks
+      POSTGRES_USER: healthchecks
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
     volumes:
-      - ./healthchecks-data:/data
+      - ./db-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  web:
+    image: healthchecks/healthchecks:latest
+    ports:
+      - "8000:8000"
+    environment:
+      - SECRET_KEY=${SECRET_KEY}
+      - ALLOWED_HOSTS=*
+      - DB_NAME=healthchecks
+      - DB_USER=healthchecks
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_HOST=db
+      - SITE_ROOT=http://localhost:8000
+      - PING_ENDPOINT=http://localhost:8000/ping/
+      - DEFAULT_FROM_EMAIL=healthchecks@example.com
+      - EMAIL_HOST=smtp.example.com
+      - EMAIL_PORT=587
+      - EMAIL_HOST_USER=${EMAIL_HOST_USER}
+      - EMAIL_HOST_PASSWORD=${EMAIL_HOST_PASSWORD}
+      - EMAIL_USE_TLS=True
+    volumes:
+      - ./app-data:/data
+    depends_on:
+      - db
     restart: unless-stopped

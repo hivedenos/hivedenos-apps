@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: calibre-web
 category: e-books
-name: Calibre Web
+name: Calibre-Web
 version: latest
-tagline: Web app providing a clean interface for browsing, reading and downloading
-  eBooks using an existing Calibre database.
-description: Web app providing a clean interface for browsing, reading and downloading
-  eBooks using an existing Calibre database.
+tagline: Turn your Calibre database into a responsive web interface.
+description: Turn your Calibre database into a responsive web interface. Browse, read,
+  and download eBooks, manage user permissions, and sync directly to your eReader.
 developer: janeczku
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/e-books/calibre-web
+website: https://github.com/janeczku/calibre-web?utm_source=awesome-docker-compose.com
 repo: https://github.com/janeczku/calibre-web
 support: https://github.com/linuxserver/docker-calibre-web

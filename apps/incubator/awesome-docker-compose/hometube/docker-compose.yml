@@ -1,0 +1,15 @@
+services:
+  hometube:
+    image: ghcr.io/egalitarianmonkey/hometube:latest
+    container_name: hometube
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./config:/app/config
+      - ./data:/app/data
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - SECRET_KEY=${SECRET_KEY}

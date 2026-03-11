@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: outline
-category: wikis
+category: wiki
 name: Outline
 version: latest
-tagline: An open, extensible, wiki for your team.
-description: An open, extensible, wiki for your team.
+tagline: Organize internal documentation with a fast, collaborative wiki.
+description: Organize internal documentation with a fast, collaborative wiki. Enjoy
+  real-time editing, AI-powered search, Slack integration, and custom branding options.
 developer: outline
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.getoutline.com/
+website: https://www.getoutline.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/outline/outline
 support: https://docs.getoutline.com/s/hosting/doc/docker-7pfeLP5a8t

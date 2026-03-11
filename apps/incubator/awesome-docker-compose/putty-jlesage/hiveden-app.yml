@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: putty-jlesage
+category: remote-access
+name: PuTTY (jlesage)
+version: latest
+tagline: Run a versatile terminal emulator inside a Docker container.
+description: Run a versatile terminal emulator inside a Docker container. Access its
+  GUI through any modern web browser or VNC client, with extensive security options.
+developer: jlesage
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.putty.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/jlesage/docker-putty
+support: https://github.com/jlesage/docker-putty

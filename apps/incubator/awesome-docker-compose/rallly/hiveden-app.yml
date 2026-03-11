@@ -2,9 +2,11 @@ manifestVersion: 1.1
 id: rallly
 category: booking-and-scheduling
 name: Rallly
-version: '14.2'
-tagline: Create polls to vote on dates and times (alternative to Doodle).
-description: Create polls to vote on dates and times (alternative to Doodle).
+version: latest
+tagline: Schedule group meetings, create availability polls, and organize events with
+  this open-source collaboration tool.
+description: Schedule group meetings, create availability polls, and organize events
+  with this open-source collaboration tool. Save time and avoid back-and-forth emails.
 developer: lukevella
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://rallly.co/
+website: https://rallly.co?utm_source=awesome-docker-compose.com
 repo: https://github.com/lukevella/rallly
-support: https://support.rallly.co/self-hosting/docker-compose
+support: https://support.rallly.co/self-hosting/installation/docker#docker

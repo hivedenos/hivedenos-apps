@@ -2,10 +2,11 @@ manifestVersion: 1.1
 id: joomla
 category: cms
 name: Joomla!
-version: '8.0'
-tagline: Advanced Content Management System (CMS).
-description: Advanced Content Management System (CMS).
-developer: Awesome Docker Compose
+version: latest
+tagline: Build and manage websites using a free, open-source content management system.
+description: Build and manage websites using a free, open-source content management
+  system. Benefit from thousands of extensions, multilingual support, and custom designs.
+developer: joomla-docker
 dependencies: []
 gallery: []
 path: /
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.joomla.org/
-repo: https://awesome-docker-compose.com/apps/cms/joomla
-support: https://awesome-docker-compose.com/apps/cms/joomla
+website: https://www.joomla.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/joomla-docker/docker-joomla
+support: https://github.com/joomla-docker/docker-joomla

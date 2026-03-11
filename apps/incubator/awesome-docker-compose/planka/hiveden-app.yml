@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: planka
 category: project-management
 name: Planka
-version: latest
-tagline: Realtime kanban board for workgroups (alternative to Trello).
-description: Realtime kanban board for workgroups (alternative to Trello).
+version: master
+tagline: Manage agile projects with a self-hosted Kanban board.
+description: Manage agile projects with a self-hosted Kanban board. Collaborate in
+  real-time, organize tasks visually, and maintain complete control over your data.
 developer: plankanban
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://planka.app/
+website: https://planka.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/plankanban/planka
-support: https://docs.planka.cloud/docs/installation/docker/production_version
+support: https://docs.planka.cloud/docs/category/docker

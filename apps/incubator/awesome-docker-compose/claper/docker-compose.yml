@@ -1,53 +1,26 @@
-version: '3.9'
- 
 services:
-  db:
-    image: postgres:15
+  claper:
+    image: claper/claper:latest
     ports:
-      - 5432:5432
-    volumes:
-      - 
-    healthcheck:
-      test:
-        - CMD
-        - pg_isready
-        - 
-        - 
-        - 
-        - 
-        - 
-      retries: 3
-      timeout: 5s
+      - "4000:4000"
     environment:
-      POSTGRES_PASSWORD: claper
-      POSTGRES_USER: claper
-      POSTGRES_DB: claper
-    networks:
-      - claper-net
-  app:
-    image: ghcr.io/claperco/claper:latest # or build: .
-    ports:
-      - 4000:4000
-    volumes:
-      - 
-    healthcheck:
-      test: curl --fail http://localhost:4000 || exit 1
-      retries: 3
-      start_period: 20s
-      timeout: 5s
-    env_file: .env
+      - DATABASE_URL=ecto://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db/${POSTGRES_DB}
+      - SECRET_KEY_BASE=${SECRET_KEY_BASE}
+      - PHX_HOST=${PHX_HOST}
     depends_on:
       db:
         condition: service_healthy
-    networks:
-      - claper-net
- 
-volumes:
-  claper-db:
-    driver: local
-  claper-uploads:
-    driver: local
- 
-networks:
-  claper-net:
-    driver: bridge
+
+  db:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5

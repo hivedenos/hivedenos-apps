@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: rudderstack
 category: analytics
 name: RudderStack
-version: 15-alpine
-tagline: Privacy and Security focused Segment-alternative, in Golang and React.
-description: Privacy and Security focused Segment-alternative, in Golang and React.
+version: 11-alpine
+tagline: Collect high-quality customer data from every source.
+description: Collect high-quality customer data from every source. Deliver it in real-time
+  to your entire stack to power analytics, marketing, and AI with full privacy control.
 developer: rudderlabs
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.rudderstack.com/
-repo: https://github.com/rudderlabs/rudder-server/
+website: https://www.rudderstack.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/rudderlabs/rudder-server
 support: https://www.rudderstack.com/docs/get-started/rudderstack-open-source/data-plane-setup/docker/

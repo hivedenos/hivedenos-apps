@@ -1,12 +1,9 @@
-version: '3'
- 
 services:
   gopeed:
-    container_name: gopeed
-    ports:
-      -  # HTTP port (host:container)
     image: liwei2633/gopeed
-    volumes:
-      - ~/gopeed/Downloads:/root/Downloads # mount download path
-      #- ~/gopeed/storage:/app/storage # if you need to mount storage path, uncomment this line
+    container_name: gopeed
     restart: unless-stopped
+    ports:
+      - "9999:9999"
+    volumes:
+      - ./downloads:/root/Downloads

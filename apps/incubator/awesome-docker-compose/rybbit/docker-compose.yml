@@ -1,22 +1,19 @@
-version: '3.9'
-
 services:
   caddy:
+    profiles: ["with-webserver"]
     image: caddy:2.10.0
     container_name: caddy
     restart: unless-stopped
     ports:
-      -
-      -
-      -  # Needed for HTTP/3
+      - "80:80"
+      - "443:443"
+      - "443:443/udp" # Needed for HTTP/3
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile # Mount Caddy config file
-      - caddy_data:/data # Mount persistent data volume for certs etc.
-      - caddy_config:/config # Mount persistent config volume
+      - ./caddy_data:/data               # Local directory for SSL certs and state
+      - ./caddy_config:/config           # Local directory for config cache
     environment:
-      # Pass domain name for use in Caddyfile
-      # Email is configured via Caddyfile global options
-      - DOMAIN_NAME=${DOMAIN_NAME}
+      - DOMAIN_NAME=${DOMAIN_NAME}       # Domain for Caddyfile usage
     depends_on:
       - backend
       - client
@@ -24,25 +21,31 @@ services:
   clickhouse:
     container_name: clickhouse
     image: clickhouse/clickhouse-server:25.4.2
-    ports:
-      -
-      -
     volumes:
-      - clickhouse-data:/var/lib/clickhouse
-      - ./clickhouse_config:/etc/clickhouse-server/config.d
+      - ./event-data:/var/lib/clickhouse # Persistent data in local directory
+      - ./event-logs:/var/log/clickhouse # Persistent logs in local directory
+    configs:
+      - source: clickhouse_network
+        target: /etc/clickhouse-server/config.d/network.xml
+      - source: clickhouse_json
+        target: /etc/clickhouse-server/config.d/enable_json.xml
+      - source: clickhouse_logging
+        target: /etc/clickhouse-server/config.d/logging_rules.xml
+      - source: clickhouse_user_logging
+        target: /etc/clickhouse-server/config.d/user_logging.xml
     environment:
       - CLICKHOUSE_DB=${CLICKHOUSE_DB:-analytics}
       - CLICKHOUSE_USER=${CLICKHOUSE_USER:-default}
       - CLICKHOUSE_PASSWORD=${CLICKHOUSE_PASSWORD:-frog}
     healthcheck:
-      test:
-        [
-        ]
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:8123/ping"]
       interval: 3s
       timeout: 5s
       retries: 5
       start_period: 10s
     restart: unless-stopped
+    ports:
+      - "8123:8123"
 
   postgres:
     image: postgres:17.4
@@ -52,17 +55,25 @@ services:
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-frog}
       - POSTGRES_DB=${POSTGRES_DB:-analytics}
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - ./postgres-data:/var/lib/postgresql/data # Persistent DB data in local directory
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 3s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
     restart: unless-stopped
+    ports:
+      - "5432:5432"
 
   backend:
     image: ghcr.io/rybbit-io/rybbit-backend:${IMAGE_TAG:-latest}
     container_name: backend
     build:
-      context: ./server
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: server/Dockerfile
     ports:
-      -
+      - "${HOST_BACKEND_PORT:-127.0.0.1:3001:3001}"
     environment:
       - NODE_ENV=production
       - CLICKHOUSE_HOST=http://clickhouse:8123
@@ -76,25 +87,32 @@ services:
       - BETTER_AUTH_SECRET=${BETTER_AUTH_SECRET}
       - BASE_URL=${BASE_URL}
       - DISABLE_SIGNUP=${DISABLE_SIGNUP}
-      - RESEND_API_KEY=${RESEND_API_KEY}
+      - DISABLE_TELEMETRY=${DISABLE_TELEMETRY}
+      - MAPBOX_TOKEN=${MAPBOX_TOKEN}
     depends_on:
       clickhouse:
         condition: service_healthy
       postgres:
         condition: service_started
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://127.0.0.1:3001/api/health"]
+      interval: 3s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
     restart: unless-stopped
 
   client:
     image: ghcr.io/rybbit-io/rybbit-client:${IMAGE_TAG:-latest}
     container_name: client
     build:
-      context: ./client
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: client/Dockerfile
       args:
         NEXT_PUBLIC_BACKEND_URL: ${BASE_URL}
         NEXT_PUBLIC_DISABLE_SIGNUP: ${DISABLE_SIGNUP}
     ports:
-      -
+      - "${HOST_CLIENT_PORT:-127.0.0.1:3002:3002}"
     environment:
       - NODE_ENV=production
       - NEXT_PUBLIC_BACKEND_URL=${BASE_URL}
@@ -103,8 +121,48 @@ services:
       - backend
     restart: unless-stopped
 
-volumes:
-  clickhouse-data:
-  postgres-data:
-  caddy_data: # Persistent volume for Caddy's certificates and state
-  caddy_config: # Persistent volume for Caddy's configuration cache (optional but good practice)
+configs:
+  clickhouse_network:
+    content: |
+      <clickhouse>
+          <listen_host>0.0.0.0</listen_host>
+      </clickhouse>
+
+  clickhouse_json:
+    content: |
+      <clickhouse>
+          <settings>
+              <enable_json_type>1</enable_json_type>
+          </settings>
+      </clickhouse>
+
+  clickhouse_logging:
+    content: |
+      <clickhouse>
+        <logger>
+            <level>warning</level>
+            <console>true</console>
+        </logger>
+        <query_thread_log remove="remove"/>
+        <query_log remove="remove"/>
+        <text_log remove="remove"/>
+        <trace_log remove="remove"/>
+        <metric_log remove="remove"/>
+        <asynchronous_metric_log remove="remove"/>
+        <session_log remove="remove"/>
+        <part_log remove="remove"/>
+        <latency_log remove="remove"/>
+        <processors_profile_log remove="remove"/>
+      </clickhouse>
+
+  clickhouse_user_logging:
+    content: |
+      <clickhouse>
+        <profiles>
+          <default>
+            <log_queries>0</log_queries>
+            <log_query_threads>0</log_query_threads>
+            <log_processors_profiles>0</log_processors_profiles>
+          </default>
+        </profiles>
+      </clickhouse>

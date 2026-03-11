@@ -1,9 +1,14 @@
-version: 
 services:
   gossa:
     image: pldubouilh/gossa
-    volumes:
-      - ~/LocalDirToShare:/shared
+    container_name: gossa
+    restart: unless-stopped
     ports:
-      - 8001:8001
-    restart: unless-stopped  
+      - "8001:8001"
+    environment:
+      - GOSSA_USER=${GOSSA_USER}
+      - GOSSA_PASS=${GOSSA_PASS}
+      - GOSSA_RO=false
+      - GOSSA_SKIP_HIDDEN=true
+    volumes:
+      - ./data:/shared

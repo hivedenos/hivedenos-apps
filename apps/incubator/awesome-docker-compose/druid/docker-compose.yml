@@ -1,116 +1,172 @@
-version: 
- 
-volumes:
-  metadata_data: {}
-  middle_var: {}
-  historical_var: {}
-  broker_var: {}
-  coordinator_var: {}
-  router_var: {}
-  druid_shared: {}
- 
- 
 services:
   postgres:
-    container_name: postgres
-    image: postgres:latest
-    ports:
-      - 
+    image: postgres:15
+    container_name: druid-postgres
     volumes:
-      - metadata_data:/var/lib/postgresql/data
+      - ./data/postgres:/var/lib/postgresql/data
     environment:
-      - POSTGRES_PASSWORD=FoolishPassword
-      - POSTGRES_USER=druid
-      - POSTGRES_DB=druid
- 
-  # Need 3.5 or later for container nodes
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_DB=${POSTGRES_DB}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
   zookeeper:
-    container_name: zookeeper
-    image: zookeeper:3.5.10
-    ports:
-      - 
-    environment:
-      - ZOO_MY_ID=1
- 
-  coordinator:
-    image: apache/druid:30.0.0
-    container_name: coordinator
+    image: zookeeper:3.8
+    container_name: druid-zookeeper
     volumes:
-      - druid_shared:/opt/shared
-      - coordinator_var:/opt/druid/var
-    depends_on:
-      - zookeeper
-      - postgres
-    ports:
-      - 
+      - ./data/zookeeper/data:/data
+      - ./data/zookeeper/datalog:/datalog
+    restart: unless-stopped
+
+  coordinator:
+    image: apache/druid:latest
+    container_name: druid-coordinator
     command:
       - coordinator
-    env_file:
-      - environment
- 
-  broker:
-    image: apache/druid:30.0.0
-    container_name: broker
     volumes:
-      - broker_var:/opt/druid/var
+      - ./data/druid/deepstorage:/opt/druid/var/deepstorage
+      - ./data/druid/indexing-logs:/opt/druid/var/indexing-logs
     depends_on:
-      - zookeeper
-      - postgres
-      - coordinator
+      zookeeper: 
+        condition: service_started
+      postgres: 
+        condition: service_healthy
     ports:
-      - 
+      - "8081:8081"
+    environment:
+      - DRUID_XMX=1g
+      - DRUID_XMS=1g
+      - druid_metadata_storage_type=postgresql
+      - druid_metadata_storage_connector_connectURI=jdbc:postgresql://postgres:5432/${POSTGRES_DB}
+      - druid_metadata_storage_connector_user=${POSTGRES_USER}
+      - druid_metadata_storage_connector_password=${POSTGRES_PASSWORD}
+      - druid_zk_service_host=zookeeper
+      - druid_zk_paths_base=/druid
+      - druid_storage_type=local
+      - druid_storage_storageDirectory=/opt/druid/var/deepstorage
+      - druid_indexer_logs_type=file
+      - druid_indexer_logs_directory=/opt/druid/var/indexing-logs
+    restart: unless-stopped
+
+  broker:
+    image: apache/druid:latest
+    container_name: druid-broker
     command:
       - broker
-    env_file:
-      - environment
- 
-  historical:
-    image: apache/druid:30.0.0
-    container_name: historical
-    volumes:
-      - druid_shared:/opt/shared
-      - historical_var:/opt/druid/var
-    depends_on: 
-      - zookeeper
-      - postgres
-      - coordinator
+    depends_on:
+      zookeeper: 
+        condition: service_started
+      coordinator: 
+        condition: service_started
+      postgres: 
+        condition: service_healthy
     ports:
-      - 
+      - "8082:8082"
+    environment:
+      - DRUID_XMX=1g
+      - DRUID_XMS=1g
+      - druid_metadata_storage_type=postgresql
+      - druid_metadata_storage_connector_connectURI=jdbc:postgresql://postgres:5432/${POSTGRES_DB}
+      - druid_metadata_storage_connector_user=${POSTGRES_USER}
+      - druid_metadata_storage_connector_password=${POSTGRES_PASSWORD}
+      - druid_zk_service_host=zookeeper
+      - druid_zk_paths_base=/druid
+      - druid_sql_enable=true
+    restart: unless-stopped
+
+  historical:
+    image: apache/druid:latest
+    container_name: druid-historical
     command:
       - historical
-    env_file:
-      - environment
- 
-  middlemanager:
-    image: apache/druid:30.0.0
-    container_name: middlemanager
     volumes:
-      - druid_shared:/opt/shared
-      - middle_var:/opt/druid/var
-    depends_on: 
-      - zookeeper
-      - postgres
-      - coordinator
+      - ./data/druid/deepstorage:/opt/druid/var/deepstorage
+      - ./data/druid/segment-cache:/opt/druid/var/druid/segment-cache
+    depends_on:
+      zookeeper: 
+        condition: service_started
+      coordinator: 
+        condition: service_started
+      postgres: 
+        condition: service_healthy
     ports:
-      - 
-      - 
+      - "8083:8083"
+    environment:
+      - DRUID_XMX=1g
+      - DRUID_XMS=1g
+      - druid_metadata_storage_type=postgresql
+      - druid_metadata_storage_connector_connectURI=jdbc:postgresql://postgres:5432/${POSTGRES_DB}
+      - druid_metadata_storage_connector_user=${POSTGRES_USER}
+      - druid_metadata_storage_connector_password=${POSTGRES_PASSWORD}
+      - druid_zk_service_host=zookeeper
+      - druid_zk_paths_base=/druid
+      - druid_storage_type=local
+      - druid_storage_storageDirectory=/opt/druid/var/deepstorage
+      - druid_segmentCache_locations=[{"path":"/opt/druid/var/druid/segment-cache","maxSize":10000000000}]
+      - druid_server_maxSize=10000000000
+    restart: unless-stopped
+
+  middlemanager:
+    image: apache/druid:latest
+    container_name: druid-middlemanager
     command:
       - middleManager
-    env_file:
-      - environment
- 
-  router:
-    image: apache/druid:30.0.0
-    container_name: router
     volumes:
-      - router_var:/opt/druid/var
+      - ./data/druid/deepstorage:/opt/druid/var/deepstorage
+      - ./data/druid/indexing-logs:/opt/druid/var/indexing-logs
+      - ./data/druid/task-hadoop-tmp:/opt/druid/var/druid/task-hadoop-tmp
     depends_on:
-      - zookeeper
-      - postgres
-      - coordinator
+      zookeeper: 
+        condition: service_started
+      coordinator: 
+        condition: service_started
+      postgres: 
+        condition: service_healthy
     ports:
-      - 
+      - "8091:8091"
+      - "8100-8105:8100-8105"
+    environment:
+      - DRUID_XMX=256m
+      - DRUID_XMS=256m
+      - druid_metadata_storage_type=postgresql
+      - druid_metadata_storage_connector_connectURI=jdbc:postgresql://postgres:5432/${POSTGRES_DB}
+      - druid_metadata_storage_connector_user=${POSTGRES_USER}
+      - druid_metadata_storage_connector_password=${POSTGRES_PASSWORD}
+      - druid_zk_service_host=zookeeper
+      - druid_zk_paths_base=/druid
+      - druid_storage_type=local
+      - druid_storage_storageDirectory=/opt/druid/var/deepstorage
+      - druid_indexer_logs_type=file
+      - druid_indexer_logs_directory=/opt/druid/var/indexing-logs
+      - druid_worker_capacity=3
+      - druid_indexer_runner_javaOptsArray=["-server", "-Xmx1g", "-Xms1g", "-XX:MaxDirectMemorySize=1g", "-Duser.timezone=UTC", "-Dfile.encoding=UTF-8", "-Djava.util.logging.manager=org.apache.logging.log4j.jul.LogManager"]
+    restart: unless-stopped
+
+  router:
+    image: apache/druid:latest
+    container_name: druid-router
     command:
       - router
-    env_file:
-      - environment
+    depends_on:
+      zookeeper: 
+        condition: service_started
+      coordinator: 
+        condition: service_started
+    ports:
+      - "8888:8888"
+    environment:
+      - DRUID_XMX=256m
+      - DRUID_XMS=256m
+      - druid_metadata_storage_type=postgresql
+      - druid_metadata_storage_connector_connectURI=jdbc:postgresql://postgres:5432/${POSTGRES_DB}
+      - druid_metadata_storage_connector_user=${POSTGRES_USER}
+      - druid_metadata_storage_connector_password=${POSTGRES_PASSWORD}
+      - druid_zk_service_host=zookeeper
+      - druid_zk_paths_base=/druid
+      - druid_router_managementProxy_enabled=true
+    restart: unless-stopped

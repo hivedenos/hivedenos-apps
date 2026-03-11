@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: nebula
-category: vpn-mesh-networking
+category: mesh-networking
 name: Nebula
 version: latest
-tagline: A scalable p2p VPN with a focus on performance, simplicity and security.
-description: A scalable p2p VPN with a focus on performance, simplicity and security.
+tagline: Create a fast, secure, and scalable overlay network.
+description: Create a fast, secure, and scalable overlay network. Connect hosts across
+  any IP network using encrypted, peer-to-peer tunnels and a group-based firewall.
 developer: slackhq
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/vpn---mesh-networking/nebula
+website: https://nebula.defined.net/docs?utm_source=awesome-docker-compose.com
 repo: https://github.com/slackhq/nebula
-support: https://github.com/slackhq/nebula
+support: https://hub.docker.com/r/nebulaoss/nebula

@@ -1,0 +1,18 @@
+services:
+  drawio:
+    image: jgraph/drawio
+    container_name: drawio
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+      - "8443:8443"
+    environment:
+      - PUBLIC_DNS=localhost
+      - ORGANISATION_NAME=My Organization
+      # Google Drive Integration (Optional)
+      - DRAWIO_GOOGLE_CLIENT_ID=${DRAWIO_GOOGLE_CLIENT_ID}
+      - DRAWIO_GOOGLE_CLIENT_SECRET=${DRAWIO_GOOGLE_CLIENT_SECRET}
+      # GitLab Integration (Optional)
+      - DRAWIO_GITLAB_ID=${DRAWIO_GITLAB_ID}
+      - DRAWIO_GITLAB_SECRET=${DRAWIO_GITLAB_SECRET}
+      - DRAWIO_GITLAB_URL=${DRAWIO_GITLAB_URL}

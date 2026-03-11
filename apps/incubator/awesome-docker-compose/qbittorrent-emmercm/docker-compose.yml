@@ -1,0 +1,17 @@
+services:
+  qbittorrent:
+    image: emmercm/qbittorrent:latest
+    container_name: qbittorrent
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - UMASK=022
+    ports:
+      - 8080:8080
+      - 6881:6881
+      - 6881:6881/udp
+    volumes:
+      - ./config:/config
+      - ./downloads:/downloads
+    restart: unless-stopped

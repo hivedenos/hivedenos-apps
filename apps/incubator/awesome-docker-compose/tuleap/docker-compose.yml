@@ -1,6 +1,29 @@
-version: "3.8"
-
 services:
-  tuleap:
-    image: tuleap/tuleap-community-edition
+  web:
+    image: tuleap/tuleap-community-edition:latest
+    container_name: tuleap_web
+    ports:
+      - "80:80"
+      - "443:443"
+      - "2222:22"
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_PORT=3306
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - TULEAP_FQDN=localhost
+      - TULEAP_SYS_MAIL_DOMAIN=localhost
+    volumes:
+      - ./tuleap-data:/data
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  db:
+    image: mysql:8.0
+    container_name: tuleap_db
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+    volumes:
+      - ./mysql-data:/var/lib/mysql
     restart: unless-stopped

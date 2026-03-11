@@ -3,8 +3,9 @@ id: corecontrol
 category: system-monitoring
 name: CoreControl
 version: latest
-tagline: Dashboard to manage your entire server infrastructure.
-description: Dashboard to manage your entire server infrastructure.
+tagline: Manage your entire server infrastructure from one place.
+description: Manage your entire server infrastructure from one place. Add servers,
+  track self-hosted apps with uptime monitoring, and visualize your network with flowcharts.
 developer: crocofied
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://corecontrol.xyz/
-repo: https://github.com/crocofied/corecontrol
-support: https://corecontrol.xyz/installation
+website: https://github.com/crocofied/CoreObs?utm_source=awesome-docker-compose.com
+repo: https://github.com/crocofied/CoreObs
+support: https://github.com/crocofied/CoreObs

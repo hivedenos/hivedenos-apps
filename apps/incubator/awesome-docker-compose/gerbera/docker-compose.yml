@@ -1,10 +1,11 @@
-version: 
 services:
   gerbera:
-    image: gerbera/gerbera
+    image: gerbera/gerbera:latest
     container_name: gerbera
     network_mode: host
     volumes:
-      - ./gerbera-config:/var/run/gerbera
-      - /some/files:/mnt/content:ro
+      - ./content:/content
+      - ./data:/var/run/gerbera
+    environment:
+      - TZ=Etc/UTC
     restart: unless-stopped

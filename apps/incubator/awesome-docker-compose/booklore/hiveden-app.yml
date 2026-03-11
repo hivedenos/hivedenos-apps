@@ -3,11 +3,11 @@ id: booklore
 category: e-books
 name: BookLore
 version: latest
-tagline: BookLore is a web app for hosting, managing, and exploring books, with support
-  for PDFs, eBooks, reading progress, meta...
-description: BookLore is a web app for hosting, managing, and exploring books, with
-  support for PDFs, eBooks, reading progress, metadata, and stats.
-developer: adityachandelgit
+tagline: Organize your digital books with automatic metadata, dynamic shelves, and
+  a built-in web reader.
+description: Organize your digital books with automatic metadata, dynamic shelves,
+  and a built-in web reader. Sync reading progress across devices and share with family.
+developer: booklore-app
 dependencies: []
 gallery: []
 path: /
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/e-books/booklore
-repo: https://github.com/adityachandelgit/BookLore
-support: https://github.com/adityachandelgit/BookLore#-deploy-with-docker
+website: https://booklore.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/booklore-app/booklore
+support: https://booklore.org/docs/installation

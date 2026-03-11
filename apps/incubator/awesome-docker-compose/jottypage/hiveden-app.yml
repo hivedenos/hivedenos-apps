@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: jottypage
+category: note-taking-and-editor
+name: "jotty\xB7page"
+version: latest
+tagline: Manage tasks and notes using a lightweight, file-based system.
+description: Manage tasks and notes using a lightweight, file-based system. Features
+  include rich text editing, Kanban boards, PGP encryption, and seamless sharing.
+developer: fccview
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://jotty.page?utm_source=awesome-docker-compose.com
+repo: https://github.com/fccview/jotty
+support: https://github.com/fccview/jotty/blob/main/howto/DOCKER.md

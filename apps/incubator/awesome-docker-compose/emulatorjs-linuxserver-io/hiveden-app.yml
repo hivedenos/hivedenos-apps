@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: emulatorjs-linuxserver-io
+category: game-emulation
+name: EmulatorJS (LinuxServer.io)
+version: latest
+tagline: Add fully customizable, browser-based game emulators to any website with
+  just a few lines of code.
+description: Add fully customizable, browser-based game emulators to any website with
+  just a few lines of code. Features a built-in code generator and RetroArch cores.
+developer: EmulatorJS
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://emulatorjs.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/EmulatorJS/EmulatorJS
+support: https://github.com/linuxserver/emulatorjs

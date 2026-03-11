@@ -1,14 +1,12 @@
-version: 
 services:
   honkit:
     image: honkit/honkit
-    stdin_open: true
-    tty: true
-    init: true
+    container_name: honkit
     ports:
-      - 4000:4000
+      - "4000:4000"
+      - "35729:35729"
     volumes:
-      - 
-    working_dir: 
+      - ./data:/srv/honkit
+    working_dir: /srv/honkit
     command: honkit serve
-    restart: unless-stopped  
+    restart: unless-stopped

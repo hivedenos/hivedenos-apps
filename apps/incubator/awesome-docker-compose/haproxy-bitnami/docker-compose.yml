@@ -1,0 +1,13 @@
+services:
+  haproxy:
+    image: bitnami/haproxy:latest
+    container_name: haproxy
+    environment:
+      - HAPROXY_STATS_PASSWORD=${HAPROXY_STATS_PASSWORD}
+    ports:
+      - "80:8080"
+      - "443:8443"
+      - "8404:8404"
+    volumes:
+      - ./haproxy:/opt/bitnami/haproxy/conf
+    restart: unless-stopped

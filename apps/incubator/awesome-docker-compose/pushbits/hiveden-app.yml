@@ -1,12 +1,12 @@
 manifestVersion: 1.1
 id: pushbits
 category: notification
-name: Pushbits
+name: PushBits
 version: latest
-tagline: Self-hosted notification server for relaying push notifications via Matrix,
-  similar to PushBullet and Gotify.
-description: Self-hosted notification server for relaying push notifications via Matrix,
-  similar to PushBullet and Gotify.
+tagline: Route push notifications through a simple web API directly to your Matrix
+  client.
+description: Route push notifications through a simple web API directly to your Matrix
+  client. Enjoy a highly secure, minimalistic alternative to dedicated alert apps.
 developer: pushbits
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.pushbits.io/
+website: https://pushbits.github.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/pushbits/server
-support: https://www.pushbits.io/docs/#installation
+support: https://pushbits.github.io/docs/

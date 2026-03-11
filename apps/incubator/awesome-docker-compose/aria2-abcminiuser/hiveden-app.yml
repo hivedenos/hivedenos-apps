@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: aria2-abcminiuser
+category: file-downloader
+name: Aria2 (abcminiuser)
+version: latest
+tagline: Run a high-performance download manager with a built-in web interface.
+description: Run a high-performance download manager with a built-in web interface.
+  Easily configure custom settings, manage file permissions, and handle remote downloads.
+developer: abcminiuser
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/abcminiuser/docker-aria2-with-webui?utm_source=awesome-docker-compose.com
+repo: https://github.com/abcminiuser/docker-aria2-with-webui
+support: https://github.com/abcminiuser/docker-aria2-with-webui

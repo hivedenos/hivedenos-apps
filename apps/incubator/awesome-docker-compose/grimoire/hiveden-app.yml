@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: grimoire
-category: bookmarks-managers
+category: bookmark-manager
 name: Grimoire
-version: 0.22.10
-tagline: "Bookmark manager for the wizards \uD83E\uDDD9."
-description: "Bookmark manager for the wizards \uD83E\uDDD9."
+version: latest
+tagline: Conjure order from bookmark chaos.
+description: Conjure order from bookmark chaos. Automatically fetches page titles,
+  images, and content. Keep your links private with this open-source, self-hosted
+  manager.
 developer: goniszewski
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://grimoire.pro/
+website: https://grimoire.pro?utm_source=awesome-docker-compose.com
 repo: https://github.com/goniszewski/grimoire
-support: https://grimoire.pro/docs/getting-started/quick-start
+support: https://grimoire.pro/docs/getting-started/quick-start/

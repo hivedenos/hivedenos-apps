@@ -2,11 +2,10 @@ manifestVersion: 1.1
 id: tandoor
 category: recipe-management
 name: Tandoor
-version: 16-alpine
-tagline: Application for managing recipes, planning meals, building shopping lists
-  and much much more!
-description: Application for managing recipes, planning meals, building shopping lists
-  and much much more!
+version: 15-alpine
+tagline: Build your ultimate online cookbook.
+description: Build your ultimate online cookbook. Import recipes from any website,
+  plan weekly meals, automatically generate shopping lists, and share with family.
 developer: TandoorRecipes
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://tandoor.dev/
+website: https://tandoor.dev?utm_source=awesome-docker-compose.com
 repo: https://github.com/TandoorRecipes/recipes
 support: https://docs.tandoor.dev/install/docker/

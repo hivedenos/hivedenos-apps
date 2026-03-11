@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: pomerium
-category: web-servers
+category: web-server
 name: Pomerium
-version: v0.27.0
-tagline: Pomerium is an identity and context-aware access proxy.
-description: Pomerium is an identity and context-aware access proxy.
+version: latest
+tagline: Enable Zero Trust access for every identity.
+description: Enable Zero Trust access for every identity. Secure internal apps and
+  APIs with context-aware policies without needing a VPN. Self-hosted for complete
+  control.
 developer: pomerium
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.pomerium.com/
+website: https://www.pomerium.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/pomerium/pomerium
-support: https://www.pomerium.com/docs/quickstart
+support: https://www.pomerium.com/docs/get-started/quickstart

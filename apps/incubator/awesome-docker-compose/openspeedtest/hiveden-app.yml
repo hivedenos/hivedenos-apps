@@ -3,8 +3,9 @@ id: openspeedtest
 category: speedtest
 name: OpenSpeedTest
 version: latest
-tagline: Free & Open-Source HTML5 Network Performance Estimation Tool.
-description: Free & Open-Source HTML5 Network Performance Estimation Tool.
+tagline: Run a fast, accurate internet speed test directly in your browser.
+description: Run a fast, accurate internet speed test directly in your browser. Measure
+  download, upload, ping, and jitter on any device without installing an app.
 developer: openspeedtest
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/speedtest/openspeedtest
+website: https://openspeedtest.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/openspeedtest/Speed-Test
 support: https://github.com/openspeedtest/Speed-Test#self-hosted-on-premise--docker-imagesource-code

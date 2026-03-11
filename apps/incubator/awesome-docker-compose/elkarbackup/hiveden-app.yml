@@ -3,8 +3,9 @@ id: elkarbackup
 category: backup
 name: ElkarBackup
 version: latest
-tagline: ElkarBackup is a free open-source backup solution based on RSync/RSnapshot.
-description: ElkarBackup is a free open-source backup solution based on RSync/RSnapshot.
+tagline: Manage all network backups from a single web interface.
+description: Manage all network backups from a single web interface. This open-source
+  tool offers secure transfers, instant recovery, notifications, and custom scripting.
 developer: elkarbackup
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.elkarbackup.org/
+website: https://www.elkarbackup.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/elkarbackup/elkarbackup
 support: https://docs.elkarbackup.org/docs/installation.html#docker

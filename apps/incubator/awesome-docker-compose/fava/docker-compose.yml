@@ -1,9 +1,11 @@
-version: 
 services:
   fava:
-    image: yegle/fava
-    volumes:
-      - $PWD:/bean
+    image: yegle/fava:latest
+    container_name: fava
+    ports:
+      - "5000:5000"
     environment:
-      - BEANCOUNT_FILE=/bean/example.bean
+      - BEANCOUNT_FILE=/data/main.bean
+    volumes:
+      - ./data:/data
     restart: unless-stopped

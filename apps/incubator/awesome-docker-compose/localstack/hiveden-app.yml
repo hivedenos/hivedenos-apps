@@ -3,9 +3,9 @@ id: localstack
 category: paas
 name: LocalStack
 version: latest
-tagline: LocalStack is a fully functional local AWS cloud stack.
-description: LocalStack is a fully functional local AWS cloud stack. This includes
-  Lambda for serverless computation.
+tagline: Run fully functional cloud applications on your local infrastructure.
+description: Run fully functional cloud applications on your local infrastructure.
+  Get instant feedback, debug interactively, and reduce costs from idle cloud environments.
 developer: localstack
 dependencies: []
 gallery: []
@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://localstack.cloud/
+website: https://www.localstack.cloud?utm_source=awesome-docker-compose.com
 repo: https://github.com/localstack/localstack
-support: https://docs.localstack.cloud/getting-started/installation/#docker-compose
+support: https://docs.localstack.cloud/aws/getting-started/installation/#docker-compose

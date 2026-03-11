@@ -2,11 +2,10 @@ manifestVersion: 1.1
 id: jitsi-meet
 category: video-conferencing
 name: Jitsi Meet
-version: -unstable}
-tagline: Jitsi Meet is an OpenSource (MIT) WebRTC Javascript application that uses
-  Jitsi Videobridge to provide high quality, sc...
-description: Jitsi Meet is an OpenSource (MIT) WebRTC Javascript application that
-  uses Jitsi Videobridge to provide high quality, scalable video conferences.
+version: stable
+tagline: Host fully encrypted, open-source video meetings for free.
+description: Host fully encrypted, open-source video meetings for free. Share screens,
+  edit documents, and chat with no account required and no time limits.
 developer: jitsi
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://jitsi.org/jitsi-meet/
+website: https://jitsi.org/jitsi-meet?utm_source=awesome-docker-compose.com
 repo: https://github.com/jitsi/jitsi-meet
 support: https://github.com/jitsi/docker-jitsi-meet

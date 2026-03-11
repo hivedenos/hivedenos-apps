@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: hemmelig
-category: pastebins
+category: pastebin
 name: Hemmelig
-version: v5.19.17
-tagline: Share encrypted secrets cross organizations, or as private persons.
-description: Share encrypted secrets cross organizations, or as private persons.
+version: latest
+tagline: Protect sensitive information by sending encrypted messages that automatically
+  self-destruct once opened.
+description: Protect sensitive information by sending encrypted messages that automatically
+  self-destruct once opened. Ensure complete privacy for your confidential data.
 developer: HemmeligOrg
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://hemmelig.app/
+website: https://hemmelig.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/HemmeligOrg/Hemmelig.app
-support: https://github.com/HemmeligOrg/Hemmelig.app#docker-image
+support: https://github.com/HemmeligOrg/Hemmelig.app

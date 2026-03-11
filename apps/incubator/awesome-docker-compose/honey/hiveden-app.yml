@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: honey
-category: personal-dashboards
+category: personal-dashboard
 name: Honey
 version: latest
-tagline: Nice and sweet place for all your self-hosted services.
-description: Nice and sweet place for all your self-hosted services.
+tagline: Create a personalized dashboard for your self-hosted services.
+description: Create a personalized dashboard for your self-hosted services. This lightweight,
+  client-side tool requires no backend and is configured with a simple JSON file.
 developer: dani3l0
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://honeyy.vercel.app/
+website: https://honeyy.vercel.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/dani3l0/honey
 support: https://github.com/dani3l0/honey#-via-docker

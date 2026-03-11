@@ -3,9 +3,10 @@ id: librespeed
 category: speedtest
 name: LibreSpeed
 version: latest
-tagline: Self-hosted Speed Test for HTML5 and more.
-description: Self-hosted Speed Test for HTML5 and more. Easy setup, examples, configurable,
-  mobile friendly. Supports PHP, Node, Multiple servers, and more.
+tagline: Test your internet connection's performance with a free and open-source tool.
+description: Test your internet connection's performance with a free and open-source
+  tool. Get accurate results for ping, jitter, download, and upload speeds without
+  Flash or Java.
 developer: librespeed
 dependencies: []
 gallery: []
@@ -14,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/speedtest/librespeed
+website: https://librespeed.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/librespeed/speedtest
 support: https://github.com/librespeed/speedtest/blob/master/doc_docker.md

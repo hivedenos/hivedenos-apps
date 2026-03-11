@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: syncthing-linuxserver-io
+category: file-synchronization
+name: Syncthing (LinuxServer.io)
+version: latest
+tagline: Synchronize files continuously across multiple devices in real time.
+description: Synchronize files continuously across multiple devices in real time.
+  Keep data private with end-to-end encryption, decentralized storage, and open-source
+  code.
+developer: linuxserver
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://syncthing.net?utm_source=awesome-docker-compose.com
+repo: https://github.com/linuxserver/docker-syncthing
+support: https://github.com/linuxserver/docker-syncthing

@@ -1,15 +1,19 @@
-version: 
 services:
   centrifugo:
-    container_name: centrifugo
     image: centrifugo/centrifugo:v5
-    volumes:
-      - ./config.json:/centrifugo/config.json
-    command: centrifugo -c config.json
-    ports:
-      - 8000:8000
+    container_name: centrifugo
     ulimits:
       nofile:
-        soft: 65535
-        hard: 65535
-    restart: always   
+        soft: 65536
+        hard: 65536
+    ports:
+      - "8000:8000"
+    environment:
+      CENTRIFUGO_TOKEN_HMAC_SECRET_KEY: ${CENTRIFUGO_TOKEN_HMAC_SECRET_KEY}
+      CENTRIFUGO_API_KEY: ${CENTRIFUGO_API_KEY}
+      CENTRIFUGO_ADMIN_PASSWORD: ${CENTRIFUGO_ADMIN_PASSWORD}
+      CENTRIFUGO_ADMIN_SECRET: ${CENTRIFUGO_ADMIN_SECRET}
+      CENTRIFUGO_ADMIN: "true"
+    volumes:
+      - ./data:/centrifugo/data
+    restart: unless-stopped

@@ -2,10 +2,10 @@ manifestVersion: 1.1
 id: nhost
 category: paas
 name: Nhost
-version: v2.5
-tagline: Firebase Alternative with GraphQL.
-description: Firebase Alternative with GraphQL. Get a database and backend configured
-  and ready in minutes.
+version: 15-alpine
+tagline: Build and deploy a scalable backend in minutes.
+description: Build and deploy a scalable backend in minutes. Get a complete stack
+  with a local CLI, Git-based CI/CD, and managed infrastructure for rapid development.
 developer: nhost
 dependencies: []
 gallery: []
@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://nhost.io/
+website: https://nhost.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/nhost/nhost
 support: https://github.com/nhost/nhost/tree/main/examples/docker-compose

@@ -1,33 +1,46 @@
-version: '2'
 services:
+  db:
+    image: mariadb:10.11
+    container_name: seafile-mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_LOG_CONSOLE=true
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+    networks:
+      - seafile-net
+    restart: unless-stopped
+
+  memcached:
+    image: memcached:1.6
+    container_name: seafile-memcached
+    entrypoint: memcached -m 256
+    networks:
+      - seafile-net
+    restart: unless-stopped
+
   seafile:
-    image: gronis/seafile
+    image: seafileltd/seafile-mc:latest
     container_name: seafile
-    restart: unless-stopped
-    depends_on:
-      - seafile-db
-    links:
-      - seafile-db
-    volumes:
-      - ./seafile-container-data:/seafile:rw
     ports:
-      - 8000:8000
-      - 8082:8082
-    environment:
-      - SEAFILE_NAME=Seafile
-      - SEAFILE_ADDRESS=seafile.example.com
-      - SEAFILE_ADMIN=admin@seafile.example.com
-      - SEAFILE_ADMIN_PW=SuperSecretPassword
-      - MYSQL_SERVER=seafile-db
-      - MYSQL_USER=seafile
-      - MYSQL_USER_PASSWORD=SuperSecretDatabasePassword
-      - MYSQL_ROOT_PASSWORD=EvenMoreSuperSecretDatabasePassword
- 
-  seafile-db:
-    image: mariadb:latest
-    container_name: seafile-db
-    restart: unless-stopped
+      - "80:80"
     volumes:
-      - ./seafile-db-data:/var/lib/mysql
+      - ./seafile-data:/shared
     environment:
-      - MYSQL_ROOT_PASSWORD=EvenMoreSuperSecretDatabasePassword
+      - DB_HOST=db
+      - DB_ROOT_PASSWD=${MYSQL_ROOT_PASSWORD}
+      - TIME_ZONE=Etc/UTC
+      - SEAFILE_ADMIN_EMAIL=${SEAFILE_ADMIN_EMAIL}
+      - SEAFILE_ADMIN_PASSWORD=${SEAFILE_ADMIN_PASSWORD}
+      - SEAFILE_SERVER_LETSENCRYPT=false
+      - SEAFILE_SERVER_HOSTNAME=seafile.example.com
+    depends_on:
+      - db
+      - memcached
+    networks:
+      - seafile-net
+    restart: unless-stopped
+
+networks:
+  seafile-net:
+    name: seafile-net

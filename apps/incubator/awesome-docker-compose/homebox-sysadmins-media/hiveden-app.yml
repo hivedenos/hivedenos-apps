@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: homebox-sysadmins-media
+category: inventory-management
+name: HomeBox (SysAdmins Media)
+version: latest
+tagline: Manage your home inventory with this fast, self-hosted, and open-source system.
+description: Manage your home inventory with this fast, self-hosted, and open-source
+  system. Track items, generate QR codes, and keep your data entirely private.
+developer: sysadminsmedia
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://homebox.software?utm_source=awesome-docker-compose.com
+repo: https://github.com/sysadminsmedia/homebox
+support: https://homebox.software/en/quick-start/install/

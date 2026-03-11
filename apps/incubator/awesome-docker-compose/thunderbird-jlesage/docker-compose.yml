@@ -1,0 +1,13 @@
+services:
+  thunderbird:
+    image: jlesage/thunderbird
+    ports:
+      - "5800:5800"
+    volumes:
+      - ./config:/config:rw
+    environment:
+      - USER_ID=1000
+      - GROUP_ID=1000
+      - TZ=Etc/UTC
+      - VNC_PASSWORD=${VNC_PASSWORD}
+    restart: unless-stopped

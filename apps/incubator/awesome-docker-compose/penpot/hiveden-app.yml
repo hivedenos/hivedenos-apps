@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: penpot
+category: miscellaneous
+name: Penpot
+version: -latest}
+tagline: Create interfaces, build interactive prototypes, and generate production-ready
+  code in one open-source platform.
+description: Create interfaces, build interactive prototypes, and generate production-ready
+  code in one open-source platform. Eliminate handoff friction and work together.
+developer: penpot
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://penpot.app?utm_source=awesome-docker-compose.com
+repo: https://github.com/penpot/penpot
+support: https://help.penpot.app/technical-guide/getting-started/docker/

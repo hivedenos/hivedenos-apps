@@ -2,11 +2,11 @@ manifestVersion: 1.1
 id: tooljet
 category: low-code
 name: ToolJet
-version: EE-LTS-latest
-tagline: Low-code framework to build & deploy internal tools with minimal engineering
-  effort (alternative to Retool & Mendix).
-description: Low-code framework to build & deploy internal tools with minimal engineering
-  effort (alternative to Retool & Mendix).
+version: '13'
+tagline: Create secure, full-stack internal applications 10x faster using an AI-powered
+  builder.
+description: Create secure, full-stack internal applications 10x faster using an AI-powered
+  builder. Automate workflows and connect to any data source with ease.
 developer: ToolJet
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.tooljet.com/
+website: https://www.tooljet.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/ToolJet/ToolJet
 support: https://docs.tooljet.com/docs/setup/docker/

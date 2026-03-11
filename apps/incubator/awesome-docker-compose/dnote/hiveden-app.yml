@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: dnote
-category: note-taking-and-editors
+category: note-taking-and-editor
 name: Dnote
 version: 14-alpine
-tagline: A simple command line notebook with multi-device sync and web interface.
-description: A simple command line notebook with multi-device sync and web interface.
+tagline: Quickly save commands, snippets, and insights from your terminal.
+description: Quickly save commands, snippets, and insights from your terminal. Find
+  them instantly with full-text search and sync across devices with a self-hosted
+  server.
 developer: dnote
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.getdnote.com/
+website: https://www.getdnote.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/dnote/dnote
-support: https://github.com/dnote/dnote/blob/master/host/docker/README.md
+support: https://github.com/dnote/dnote#server-optional

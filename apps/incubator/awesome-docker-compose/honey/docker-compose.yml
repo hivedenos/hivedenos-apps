@@ -1,10 +1,13 @@
-version: 
- 
 services:
   honey:
     image: ghcr.io/dani3l0/honey:latest
+    container_name: honey
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
     ports:
-      - 4173:4173
+      - 3000:3000
     volumes:
-      - /path/to/config:/app/dist/config:ro
+      - ./data:/app/data
     restart: unless-stopped

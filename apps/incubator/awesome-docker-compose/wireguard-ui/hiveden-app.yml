@@ -1,11 +1,12 @@
 manifestVersion: 1.1
 id: wireguard-ui
-category: vpn-wireguard
-name: WireGuard-UI
-version: v1.0.20210914-ls7
-tagline: A web user interface to manage your WireGuard setup.
-description: A web user interface to manage your WireGuard setup.
-developer: Awesome Docker Compose
+category: vpn
+name: WireGuard UI
+version: latest
+tagline: Get a friendly web interface to manage your WireGuard setup.
+description: Get a friendly web interface to manage your WireGuard setup. Add users,
+  manage client info, and distribute configs via QR code, file, email, or Telegram.
+developer: ngoduykhanh
 dependencies: []
 gallery: []
 path: /
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/vpn/wireguard/wireguard-ui
-repo: https://awesome-docker-compose.com/apps/vpn/wireguard/wireguard-ui
-support: https://awesome-docker-compose.com/apps/vpn/wireguard/wireguard-ui
+website: https://github.com/ngoduykhanh/wireguard-ui?utm_source=awesome-docker-compose.com
+repo: https://github.com/ngoduykhanh/wireguard-ui
+support: https://github.com/ngoduykhanh/wireguard-ui

@@ -1,13 +1,11 @@
 manifestVersion: 1.1
 id: rustpad
-category: pastebins
+category: pastebin
 name: Rustpad
 version: latest
-tagline: Rustpad is an efficient and minimal open-source collaborative text editor
-  based on the operational transformation algor...
-description: Rustpad is an efficient and minimal open-source collaborative text editor
-  based on the operational transformation algorithm. It lets users collaborate in
-  real time while writing code in their browser.
+tagline: Write and edit code or text together in real time.
+description: Write and edit code or text together in real time. This minimal, open-source
+  editor uses operational transformation for fast, conflict-free collaboration.
 developer: ekzhang
 dependencies: []
 gallery: []
@@ -16,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://rustpad.io/
+website: https://rustpad.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/ekzhang/rustpad
 support: https://github.com/ekzhang/rustpad#deployment

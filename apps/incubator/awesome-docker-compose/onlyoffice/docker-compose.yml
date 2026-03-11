@@ -1,14 +1,15 @@
-version: 
 services:
   documentserver:
-    image: onlyoffice/documentserver
+    image: onlyoffice/documentserver:latest
+    container_name: onlyoffice-documentserver
+    restart: always
     ports:
-      - 80:80
+      - "8080:80"
+    environment:
+      - JWT_ENABLED=true
+      - JWT_SECRET=${JWT_SECRET}
     volumes:
-      - /app/onlyoffice/DocumentServer/logs:/var/log/onlyoffice
-      - /app/onlyoffice/DocumentServer/data:/var/www/onlyoffice/Data
-      - /app/onlyoffice/DocumentServer/lib:/var/lib/onlyoffice
-      - /app/onlyoffice/DocumentServer/rabbitmq:/var/lib/rabbitmq
-      - /app/onlyoffice/DocumentServer/redis:/var/lib/redis
-      - /app/onlyoffice/DocumentServer/db:/var/lib/postgresql
-    restart: unless-stopped
+      - ./data/logs:/var/log/onlyoffice
+      - ./data/data:/var/www/onlyoffice/Data
+      - ./data/lib:/var/lib/onlyoffice
+      - ./data/db:/var/lib/postgresql

@@ -1,15 +1,20 @@
-version: 
 services:
   ovenmediaengine:
-    image: airensoft/ovenmediaengine:0.16.8
-    container_name: ome
-    environment:
-      - OME_HOST_IP=Your.HOST.IP.Address
-    ports:
-      - 1935:1935
-      - 9999:9999/udp
-      - 9000:9000
-      - 3333:3333
-      - 3478:3478
-      - 10000-10009:10000-10009/udp
+    image: airensoft/ovenmediaengine:latest
+    container_name: ovenmediaengine
     restart: unless-stopped
+    environment:
+      - TZ=UTC
+    ports:
+      - "1935:1935"
+      - "3333:3333"
+      - "3334:3334"
+      - "3478:3478"
+      - "3478:3478/udp"
+      - "4000:4000/udp"
+      - "8080:8080"
+      - "8090:8090"
+      - "9000:9000"
+      - "10000-10010:10000-10010/udp"
+    volumes:
+      - ./conf:/opt/ovenmediaengine/bin/origin_conf

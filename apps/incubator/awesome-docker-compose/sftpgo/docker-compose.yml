@@ -1,0 +1,16 @@
+services:
+  sftpgo:
+    image: drakkan/sftpgo:latest
+    container_name: sftpgo
+    ports:
+      - "8080:8080"   # Web UI and REST API
+      - "2022:2022"   # SFTP service
+      - "2121:2121"   # FTP service (optional)
+      - "10080:10080" # WebDAV service (optional)
+    environment:
+      - SFTPGO_DEFAULT_ADMIN_USERNAME=${SFTPGO_DEFAULT_ADMIN_USERNAME}
+      - SFTPGO_DEFAULT_ADMIN_PASSWORD=${SFTPGO_DEFAULT_ADMIN_PASSWORD}
+    volumes:
+      - ./data:/srv/sftpgo
+      - ./config:/var/lib/sftpgo
+    restart: unless-stopped

@@ -1,181 +1,149 @@
-version: '3.9'
 services:
   web:
-    container_name: web
-    build:
-      context: .
-      dockerfile: ./web/Dockerfile.web
-      args:
-        DOCKER_BUILDKIT: 1
+    container_name: plane-web
+    image: makeplane/plane-frontend:latest
     restart: always
-    command: node web/server.js web
+    command: /usr/local/bin/start.sh
+    environment:
+      NEXT_PUBLIC_API_BASE_URL: ${NEXT_PUBLIC_API_BASE_URL}
+      NEXT_PUBLIC_GOOGLE_CLIENTID: "0"
+      NEXT_PUBLIC_GITHUB_ID: "0"
+      NEXT_PUBLIC_GITLAB_APP_ID: "0"
+      NEXT_PUBLIC_SENTRY_DSN: ""
+      NEXT_PUBLIC_ENABLE_SENTRY: "0"
     depends_on:
       - api
- 
-  admin:
-    container_name: admin
-    build:
-      context: .
-      dockerfile: ./admin/Dockerfile.admin
-      args:
-        DOCKER_BUILDKIT: 1
-    restart: always
-    command: node admin/server.js admin
-    depends_on:
-      - api
-      - web
- 
-  space:
-    container_name: space
-    build:
-      context: .
-      dockerfile: ./space/Dockerfile.space
-      args:
-        DOCKER_BUILDKIT: 1
-    restart: always
-    command: node space/server.js space
-    depends_on:
-      - api
-      - web
- 
+      - worker
+
   api:
-    container_name: api
-    build:
-      context: ./apiserver
-      dockerfile: Dockerfile.api
-      args:
-        DOCKER_BUILDKIT: 1
+    container_name: plane-api
+    image: makeplane/plane-backend:latest
     restart: always
-    command: ./bin/docker-entrypoint-api.sh
-    env_file:
-      - ./apiserver/.env
+    command: ./bin/takeoff
+    environment:
+      DATABASE_URL: postgres://${PGUSER}:${PGPASSWORD}@${PGHOST}:5432/${PGDATABASE}
+      REDIS_URL: redis://${REDIS_HOST}:6379/
+      SECRET_KEY: ${SECRET_KEY}
+      AWS_REGION: ${AWS_REGION}
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+      AWS_S3_ENDPOINT_URL: ${AWS_S3_ENDPOINT_URL}
+      AWS_S3_BUCKET_NAME: ${AWS_S3_BUCKET_NAME}
+      FILE_SIZE_LIMIT: 5242880
+      WEB_URL: ${WEB_URL}
+      GITHUB_CLIENT_SECRET: ""
+      DISABLE_COLLECTSTATIC: 1
+      DOCKERIZED: 1
     depends_on:
-      - plane-db
-      - plane-redis
- 
+      - db
+      - redis
+      - minio
+
   worker:
-    container_name: bgworker
-    build:
-      context: ./apiserver
-      dockerfile: Dockerfile.api
-      args:
-        DOCKER_BUILDKIT: 1
+    container_name: plane-worker
+    image: makeplane/plane-backend:latest
     restart: always
-    command: ./bin/docker-entrypoint-worker.sh
-    env_file:
-      - ./apiserver/.env
+    command: ./bin/worker
+    environment:
+      DATABASE_URL: postgres://${PGUSER}:${PGPASSWORD}@${PGHOST}:5432/${PGDATABASE}
+      REDIS_URL: redis://${REDIS_HOST}:6379/
+      SECRET_KEY: ${SECRET_KEY}
+      AWS_REGION: ${AWS_REGION}
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+      AWS_S3_ENDPOINT_URL: ${AWS_S3_ENDPOINT_URL}
+      AWS_S3_BUCKET_NAME: ${AWS_S3_BUCKET_NAME}
+      FILE_SIZE_LIMIT: 5242880
+      WEB_URL: ${WEB_URL}
+      DOCKERIZED: 1
     depends_on:
       - api
-      - plane-db
-      - plane-redis
- 
-  beat-worker:
-    container_name: beatworker
-    build:
-      context: ./apiserver
-      dockerfile: Dockerfile.api
-      args:
-        DOCKER_BUILDKIT: 1
+      - db
+      - redis
+      - minio
+
+  beat:
+    container_name: plane-beat
+    image: makeplane/plane-backend:latest
     restart: always
-    command: ./bin/docker-entrypoint-beat.sh
-    env_file:
-      - ./apiserver/.env
+    command: ./bin/beat
+    environment:
+      DATABASE_URL: postgres://${PGUSER}:${PGPASSWORD}@${PGHOST}:5432/${PGDATABASE}
+      REDIS_URL: redis://${REDIS_HOST}:6379/
+      SECRET_KEY: ${SECRET_KEY}
+      AWS_REGION: ${AWS_REGION}
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+      AWS_S3_ENDPOINT_URL: ${AWS_S3_ENDPOINT_URL}
+      AWS_S3_BUCKET_NAME: ${AWS_S3_BUCKET_NAME}
+      FILE_SIZE_LIMIT: 5242880
+      WEB_URL: ${WEB_URL}
+      DOCKERIZED: 1
     depends_on:
       - api
-      - plane-db
-      - plane-redis
- 
+      - db
+      - redis
+      - minio
+
   migrator:
     container_name: plane-migrator
-    build:
-      context: ./apiserver
-      dockerfile: Dockerfile.api
-      args:
-        DOCKER_BUILDKIT: 1
+    image: makeplane/plane-backend:latest
     restart: no
-    command: ./bin/docker-entrypoint-migrator.sh
-    env_file:
-      - ./apiserver/.env
+    command: ./bin/migrate
+    environment:
+      DATABASE_URL: postgres://${PGUSER}:${PGPASSWORD}@${PGHOST}:5432/${PGDATABASE}
+      REDIS_URL: redis://${REDIS_HOST}:6379/
+      SECRET_KEY: ${SECRET_KEY}
+      AWS_REGION: ${AWS_REGION}
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+      AWS_S3_ENDPOINT_URL: ${AWS_S3_ENDPOINT_URL}
+      AWS_S3_BUCKET_NAME: ${AWS_S3_BUCKET_NAME}
+      DOCKERIZED: 1
     depends_on:
-      - plane-db
-      - plane-redis
- 
-  live:
-    container_name: plane-live
-    build:
-      context: .
-      dockerfile: ./live/Dockerfile.live
-      args:
-        DOCKER_BUILDKIT: 1
+      - db
+      - redis
+      - minio
+
+  proxy:
+    container_name: plane-proxy
+    image: makeplane/plane-proxy:latest
     restart: always
-    command: node live/dist/server.js
- 
-  plane-db:
+    ports:
+      - ${APP_PORT:-80}:80
+    environment:
+      FILE_SIZE_LIMIT: 5242880
+      BUCKET_NAME: ${AWS_S3_BUCKET_NAME}
+    depends_on:
+      - web
+      - api
+
+  db:
     container_name: plane-db
-    image: postgres:15.7-alpine
+    image: postgres:15-alpine
     restart: always
-    command: postgres -c 'max_connections=1000'
-    volumes:
-      - pgdata:/var/lib/postgresql/data
-    env_file:
-      - .env
     environment:
-      POSTGRES_USER: ${POSTGRES_USER}
-      POSTGRES_DB: ${POSTGRES_DB}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_USER: ${PGUSER}
+      POSTGRES_DB: ${PGDATABASE}
+      POSTGRES_PASSWORD: ${PGPASSWORD}
       PGDATA: /var/lib/postgresql/data
- 
-  plane-redis:
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+
+  redis:
     container_name: plane-redis
-    image: valkey/valkey:7.2.5-alpine
+    image: redis:7-alpine
     restart: always
     volumes:
-      - redisdata:/data
- 
-  plane-mq:
-    container_name: plane-mq
-    image: rabbitmq:3.13.6-management-alpine
-    restart: always
-    env_file:
-      - .env
-    environment:
-      RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER}
-      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASSWORD}
-      RABBITMQ_DEFAULT_VHOST: ${RABBITMQ_VHOST}
-    volumes:
-      - rabbitmq_data:/var/lib/rabbitmq
- 
-  plane-minio:
+      - ./data/redis:/data
+
+  minio:
     container_name: plane-minio
     image: minio/minio
     restart: always
-    command: 
-    volumes:
-      - uploads:/export
+    command: server /data --console-address ":9090"
     environment:
       MINIO_ROOT_USER: ${AWS_ACCESS_KEY_ID}
       MINIO_ROOT_PASSWORD: ${AWS_SECRET_ACCESS_KEY}
- 
-  # Comment this if you already have a reverse proxy running
-  proxy:
-    container_name: proxy
-    build:
-      context: ./nginx
-      dockerfile: Dockerfile
-    restart: always
-    ports:
-      - ${NGINX_PORT}:80
-    environment:
-      FILE_SIZE_LIMIT: ${FILE_SIZE_LIMIT:-5242880}
-      BUCKET_NAME: ${AWS_S3_BUCKET_NAME:-uploads}
-    depends_on:
-      - web
-      - api
-      - space
-      - admin
- 
-volumes:
-  pgdata:
-  redisdata:
-  uploads:
-  rabbitmq_data:
+    volumes:
+      - ./data/minio:/data

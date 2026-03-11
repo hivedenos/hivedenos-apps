@@ -3,10 +3,9 @@ id: kitchenowl
 category: recipe-management
 name: KitchenOwl
 version: latest
-tagline: A cross-platform shopping list, recipe storage, expense tracker, and meal
-  planner following the material design languag...
-description: A cross-platform shopping list, recipe storage, expense tracker, and
-  meal planner following the material design language.
+tagline: Organize grocery runs, save favorite recipes, and split household expenses.
+description: Organize grocery runs, save favorite recipes, and split household expenses.
+  Plan meals ahead and get smart cooking suggestions based on your habits.
 developer: TomBursch
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://kitchenowl.org/
+website: https://kitchenowl.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/TomBursch/kitchenowl
 support: https://docs.kitchenowl.org/latest/self-hosting/

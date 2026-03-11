@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: authelia
-category: single-sign-on-sso
+category: identity-and-access-management
 name: Authelia
 version: latest
-tagline: The Single Sign-On Multi-Factor portal for web apps.
-description: The Single Sign-On Multi-Factor portal for web apps.
+tagline: Secure your applications with a free, open-source IAM platform.
+description: Secure your applications with a free, open-source IAM platform. Get single
+  sign-on, multi-factor authentication, and granular access control in a lightweight
+  solution.
 developer: authelia
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.authelia.com/
+website: https://www.authelia.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/authelia/authelia
 support: https://www.authelia.com/integration/deployment/docker/

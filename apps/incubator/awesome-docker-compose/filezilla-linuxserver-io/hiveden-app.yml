@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: filezilla-linuxserver-io
+category: ftp-and-sftp
+name: FileZilla (LinuxServer.io)
+version: latest
+tagline: Manage and transfer files securely using a free, open-source FTP client and
+  server.
+description: Manage and transfer files securely using a free, open-source FTP client
+  and server. Benefit from robust support for FTP, FTPS, and SFTP protocols.
+developer: linuxserver
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://filezilla-project.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/linuxserver/docker-filezilla
+support: https://github.com/linuxserver/docker-filezilla

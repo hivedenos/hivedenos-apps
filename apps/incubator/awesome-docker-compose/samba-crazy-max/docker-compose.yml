@@ -1,0 +1,17 @@
+services:
+  samba:
+    image: crazy-max/samba:latest
+    container_name: samba
+    # Host networking is recommended for Service Discovery (NetBIOS) to work correctly.
+    # If host networking is not compatible with your environment, map ports 137-138/udp, 139/tcp, and 445/tcp.
+    network_mode: host
+    environment:
+      - TZ=UTC
+      - SAMBA_LOG_LEVEL=0
+      - SAMBA_USERS=${SAMBA_USERS}
+      - "SAMBA_VOLUME_CONFIG_public=[/shares/public]; guest ok = yes; read only = no; browseable = yes"
+      - "SAMBA_VOLUME_CONFIG_private=[/shares/private]; valid users = admin; guest ok = no; read only = no; browseable = yes"
+    volumes:
+      - "./shares/public:/shares/public"
+      - "./shares/private:/shares/private"
+    restart: always

@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: ghost
-category: blogging-platforms
+category: blogging-platform
 name: Ghost
-version: 5-alpine
-tagline: Just a blogging platform.
-description: Just a blogging platform.
+version: '5'
+tagline: Create a custom website, publish rich media content, send email newsletters,
+  and manage paid subscriptions with zero tr...
+description: Create a custom website, publish rich media content, send email newsletters,
+  and manage paid subscriptions with zero transaction fees to grow your business.
 developer: Awesome Docker Compose
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://ghost.org/
-repo: https://awesome-docker-compose.com/apps/blogging-platforms/ghost
-support: https://awesome-docker-compose.com/apps/blogging-platforms/ghost
+website: https://ghost.org?utm_source=awesome-docker-compose.com
+repo: https://awesome-docker-compose.com/ghost
+support: https://awesome-docker-compose.com/ghost

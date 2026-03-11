@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: wiki-js-linuxserver-io
+category: wiki
+name: Wiki.js (LinuxServer.io)
+version: latest
+tagline: Create and manage documentation with a highly extensible open-source wiki.
+description: Create and manage documentation with a highly extensible open-source
+  wiki. Enjoy multiple editors, robust access controls, cloud sync, and deep customization.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://js.wiki?utm_source=awesome-docker-compose.com
+repo: https://github.com/linuxserver/docker-wikijs
+support: https://github.com/linuxserver/docker-wikijs

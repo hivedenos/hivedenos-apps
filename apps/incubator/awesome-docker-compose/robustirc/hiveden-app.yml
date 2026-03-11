@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: robustirc
+category: irc
+name: RobustIRC
+version: latest
+tagline: Enjoy uninterrupted IRC communication.
+description: Enjoy uninterrupted IRC communication. This network architecture prevents
+  netsplits during server downtime and seamlessly handles client connectivity issues.
+developer: robustirc
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://robustirc.net?utm_source=awesome-docker-compose.com
+repo: https://github.com/robustirc/robustirc
+support: https://robustirc.net/docs/adminguide.html#_installing_running

@@ -3,8 +3,9 @@ id: medama
 category: analytics
 name: Medama
 version: latest
-tagline: Self-hostable, privacy-focused website analytics.
-description: Self-hostable, privacy-focused website analytics.
+tagline: Monitor website performance with real-time, privacy-first insights.
+description: Monitor website performance with real-time, privacy-first insights. This
+  self-hostable solution uses a lightweight tracker (<1KB) without cookies or IP addresses.
 developer: medama-io
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://oss.medama.io/
+website: https://oss.medama.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/medama-io/medama
 support: https://oss.medama.io/deployment/docker

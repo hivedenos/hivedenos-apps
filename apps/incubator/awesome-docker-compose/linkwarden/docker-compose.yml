@@ -1,18 +1,19 @@
-version: 
 services:
   postgres:
     image: postgres:16-alpine
-    env_file: .env
     restart: always
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
       - ./pgdata:/var/lib/postgresql/data
+
   linkwarden:
-    env_file: .env
-    environment:
-      - DATABASE_URL=postgresql://postgres:${POSTGRES_PASSWORD}@postgres:5432/postgres
+    image: ghcr.io/linkwarden/linkwarden:latest
     restart: always
-    # build: . # uncomment this line to build from source
-    image: ghcr.io/linkwarden/linkwarden:latest # comment this line to build from source
+    environment:
+      DATABASE_URL: postgresql://postgres:${POSTGRES_PASSWORD}@postgres:5432/postgres
+      NEXTAUTH_URL: http://localhost:3000
+      NEXTAUTH_SECRET: ${NEXTAUTH_SECRET}
     ports:
       - 3000:3000
     volumes:

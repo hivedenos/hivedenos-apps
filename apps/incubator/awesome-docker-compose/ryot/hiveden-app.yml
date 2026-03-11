@@ -3,10 +3,10 @@ id: ryot
 category: media-server
 name: Ryot
 version: 16-alpine
-tagline: A self hosted platform for tracking various facets of your life - media,
-  fitness etc.
-description: A self hosted platform for tracking various facets of your life - media,
-  fitness etc.
+tagline: Monitor your media consumption, fitness progress, and daily habits in one
+  secure place.
+description: Monitor your media consumption, fitness progress, and daily habits in
+  one secure place. Gain insightful analytics while maintaining complete data privacy.
 developer: IgnisDa
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://ryot.io/
+website: https://ryot.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/IgnisDa/ryot
 support: https://docs.ryot.io/

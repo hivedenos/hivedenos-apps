@@ -3,11 +3,9 @@ id: mindsdb
 category: database-management
 name: MindsDB
 version: latest
-tagline: MindsDB is an open source self hosted AI layer for existing databases that
-  allows you to effortlessly develop, train an...
-description: MindsDB is an open source self hosted AI layer for existing databases
-  that allows you to effortlessly develop, train and deploy state-of-the-art machine
-  learning models using standard queries.
+tagline: Query structured and unstructured data using natural language.
+description: Query structured and unstructured data using natural language. Get real-time,
+  trustworthy analytics from over 200 sources without moving data or waiting for analysts.
 developer: mindsdb
 dependencies: []
 gallery: []
@@ -16,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://mindsdb.com/
+website: https://mindsdb.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/mindsdb/mindsdb
 support: https://docs.mindsdb.com/setup/self-hosted/docker

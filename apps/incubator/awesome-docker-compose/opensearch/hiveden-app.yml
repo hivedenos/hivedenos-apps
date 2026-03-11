@@ -3,8 +3,9 @@ id: opensearch
 category: search-engine-solution
 name: OpenSearch
 version: latest
-tagline: Open source distributed and RESTful search engine.
-description: Open source distributed and RESTful search engine.
+tagline: Easily ingest, search, and analyze data at scale.
+description: Easily ingest, search, and analyze data at scale. This open source suite
+  offers powerful observability, security, and AI/ML tools for any application.
 developer: opensearch-project
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://opensearch.org/
+website: https://opensearch.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/opensearch-project/OpenSearch
-support: https://opensearch.org/docs/latest/install-and-configure/install-opensearch/docker/
+support: https://docs.opensearch.org/latest/install-and-configure/install-opensearch/docker/

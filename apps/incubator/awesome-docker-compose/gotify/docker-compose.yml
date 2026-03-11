@@ -1,12 +1,12 @@
-version: 
- 
 services:
   gotify:
     image: gotify/server
+    container_name: gotify
+    restart: unless-stopped
     ports:
       - 8080:80
     environment:
-      - GOTIFY_DEFAULTUSER_PASS=custom
+      - GOTIFY_DEFAULTUSER_PASS=${GOTIFY_DEFAULTUSER_PASS}
+      - TZ=UTC
     volumes:
-      - 
-    restart: always
+      - ./gotify_data:/app/data

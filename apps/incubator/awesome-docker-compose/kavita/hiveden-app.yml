@@ -3,10 +3,9 @@ id: kavita
 category: e-books
 name: Kavita
 version: latest
-tagline: Cross-platform e-book/manga/comic/pdf server and web reader with user management,
-  ratings and reviews, and metadata sup...
-description: Cross-platform e-book/manga/comic/pdf server and web reader with user
-  management, ratings and reviews, and metadata support.
+tagline: Host your own digital library for EPUB, PDF, comics, and manga.
+description: Host your own digital library for EPUB, PDF, comics, and manga. Enjoy
+  built-in readers, rich metadata, OPDS support, and granular user access controls.
 developer: Kareadita
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.kavitareader.com/
+website: https://www.kavitareader.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/Kareadita/Kavita
-support: https://www.kavitareader.com/#downloads-v1-docker
+support: https://wiki.kavitareader.com/installation/docker/

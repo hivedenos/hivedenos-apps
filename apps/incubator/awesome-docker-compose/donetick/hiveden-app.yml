@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: donetick
+category: task-management
+name: Donetick
+version: latest
+tagline: Manage daily chores with intelligent scheduling, fair distribution algorithms,
+  and gamification.
+description: Manage daily chores with intelligent scheduling, fair distribution algorithms,
+  and gamification. Keep your household or team perfectly organized and on track.
+developer: donetick
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://donetick.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/donetick/donetick
+support: https://github.com/donetick/donetick#using-docker-compose

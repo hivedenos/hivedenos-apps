@@ -3,8 +3,9 @@ id: wakapi
 category: ide-and-tools
 name: Wakapi
 version: latest
-tagline: Tracking tool for coding statistics, compatible with WakaTime.
-description: Tracking tool for coding statistics, compatible with WakaTime.
+tagline: Get detailed insights into your coding habits.
+description: Get detailed insights into your coding habits. Track time, analyze languages
+  used, and display your stats with badges. An open-source, self-hostable solution.
 developer: muety
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://wakapi.dev/
+website: https://wakapi.dev?utm_source=awesome-docker-compose.com
 repo: https://github.com/muety/wakapi
 support: https://github.com/muety/wakapi#%EF%B8%8F-how-to-use

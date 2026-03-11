@@ -1,8 +1,12 @@
-version: '3.9'
 services:
-  youtube-dl:
-    image: 
+  youtube-dl-server:
+    image: nbr23/youtube-dl-server:latest
+    container_name: youtube-dl-server
+    ports:
+      - "8080:8080"
+    environment:
+      - YOUTUBE_DL_UPDATE=true
+      - YDL_FORMAT=bestvideo+bestaudio/best
     volumes:
-      - $HOME/youtube-dl:/youtube-dl
-      - ./config.yml:/app_config/config.yml:ro # Overwrite the container's config file with your own configuration
-    restart: always
+      - ./downloads:/youtube-dl
+    restart: unless-stopped

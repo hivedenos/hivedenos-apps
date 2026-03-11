@@ -1,0 +1,9 @@
+services:
+  homehub:
+    image: surajverma/homehub:latest
+    container_name: homehub
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data

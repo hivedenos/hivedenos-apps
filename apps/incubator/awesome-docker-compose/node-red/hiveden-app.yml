@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: node-red
 category: internet-of-things-iot
-name: Node Red
+name: Node-RED
 version: latest
-tagline: Browser-based flow editor that helps you wiring hardware devices, APIs and
-  online services to create IoT solutions.
-description: Browser-based flow editor that helps you wiring hardware devices, APIs
-  and online services to create IoT solutions.
+tagline: Build event-driven applications using a low-code approach.
+description: Build event-driven applications using a low-code approach. Easily collect,
+  transform, and visualize real-time data for home automation or industrial systems.
 developer: node-red
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://nodered.org/
+website: https://nodered.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/node-red/node-red
 support: https://nodered.org/docs/getting-started/docker

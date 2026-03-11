@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: azimutt
+category: database-management
+name: Azimutt
+version: 15-alpine
+tagline: Explore, document, and analyze complex databases.
+description: Explore, document, and analyze complex databases. Get AI-powered SQL
+  generation, schema analysis, and create clear ERDs to improve team collaboration.
+developer: azimuttapp
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://azimutt.app?utm_source=awesome-docker-compose.com
+repo: https://github.com/azimuttapp/azimutt
+support: https://github.com/azimuttapp/azimutt/blob/main/INSTALL.md

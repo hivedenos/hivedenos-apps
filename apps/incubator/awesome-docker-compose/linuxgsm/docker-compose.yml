@@ -1,14 +1,21 @@
-version: '3.4'
 services:
-  linuxgsm-csgo:
-    image: gameservermanagers/gameserver:csgo
-    # image: ghcr.io/gameservermanagers/gameserver:csgo
-    container_name: csgoserver
-    volumes:
-      - /path/to/csgoserver:/data
-    ports:
-      - 
-      - 
-      - 
-      - 
+  linuxgsm:
+    image: gameservermanagers/gameserver:latest
+    container_name: linuxgsm
     restart: unless-stopped
+    environment:
+      # Specify the game server to install (e.g., cs2server, mcserver, rustserver)
+      - GAMESERVER=cs2server
+      - LGSM_GITHUBUSER=GameServerManagers
+      - LGSM_GITHUBREPO=LinuxGSM
+      - LGSM_GITHUBBRANCH=master
+      # Game Server Login Token (if required by the specific game)
+      - GSLT=${GSLT}
+    volumes:
+      - ./data:/data
+    ports:
+      # Ports vary by game. Below are default ports for CS2.
+      # Adjust accordingly for other games (e.g., Minecraft uses 25565).
+      - "27015:27015/tcp"
+      - "27015:27015/udp"
+      - "27020:27020/udp"

@@ -1,0 +1,15 @@
+services:
+  firefox:
+    image: jlesage/firefox
+    container_name: firefox
+    ports:
+      - "5800:5800"
+    environment:
+      - TZ=Etc/UTC
+      - PUID=1000
+      - PGID=1000
+      - VNC_PASSWORD=${VNC_PASSWORD}
+    volumes:
+      - ./config:/config
+    shm_size: "2gb"
+    restart: unless-stopped

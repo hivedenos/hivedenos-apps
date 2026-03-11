@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: chat-vault
+category: backup
+name: Chat Vault
+version: latest
+tagline: Automatically back up WhatsApp chats from email or local files.
+description: Automatically back up WhatsApp chats from email or local files. Browse,
+  search, and view your archived conversations in a familiar, chat-like interface.
+developer: vitormarcal
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/vitormarcal/chatvault?utm_source=awesome-docker-compose.com
+repo: https://github.com/vitormarcal/chatvault
+support: https://github.com/vitormarcal/chatvault#docker

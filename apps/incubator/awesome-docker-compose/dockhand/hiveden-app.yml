@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: dockhand
+category: container-management
+name: Dockhand
+version: latest
+tagline: Manage containers and Compose stacks with a modern UI.
+description: Manage containers and Compose stacks with a modern UI. Deploy from Git,
+  scan for vulnerabilities, and manage multiple hosts with enterprise-grade authentication.
+developer: Finsys
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://dockhand.pro?utm_source=awesome-docker-compose.com
+repo: https://github.com/Finsys/dockhand
+support: https://dockhand.pro/manual/

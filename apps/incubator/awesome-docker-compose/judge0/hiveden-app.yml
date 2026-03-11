@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: judge0
+category: ide-and-tools
+name: Judge0
+version: 1.13.1
+tagline: Integrate a robust, scalable API for secure, sandboxed code execution.
+description: Integrate a robust, scalable API for secure, sandboxed code execution.
+  Supports 60+ languages to power e-learning platforms, IDEs, and AI agents.
+developer: judge0
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://judge0.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/judge0/judge0
+support: https://github.com/judge0/judge0/blob/master/CHANGELOG.md#deployment-procedure

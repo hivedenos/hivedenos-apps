@@ -2,12 +2,11 @@ manifestVersion: 1.1
 id: mathesar
 category: database-management
 name: Mathesar
-version: latest
-tagline: An intuitive UI for managing data collaboratively, for users of all technical
-  skill levels.
-description: "An intuitive UI for managing data collaboratively, for users of all\
-  \ technical skill levels. Built on Postgres \xE2\x80\x93 connect an existing DB\
-  \ or set up a new one."
+version: '14'
+tagline: Provide a simple, spreadsheet-like UI for your PostgreSQL database.
+description: Provide a simple, spreadsheet-like UI for your PostgreSQL database. This
+  open-source tool is self-hosted, secure, and easy for anyone to use, no technical
+  skills needed.
 developer: mathesar-foundation
 dependencies: []
 gallery: []
@@ -16,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://mathesar.org/
+website: https://mathesar.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/mathesar-foundation/mathesar
-support: https://docs.mathesar.org/installation/docker-compose/
+support: https://docs.mathesar.org/latest/administration/install-via-docker-compose/

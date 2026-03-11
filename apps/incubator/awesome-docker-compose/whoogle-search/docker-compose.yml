@@ -1,0 +1,27 @@
+services:
+  whoogle-search:
+    image: benbusby/whoogle-search:latest
+    container_name: whoogle-search
+    restart: unless-stopped
+    pids_limit: 50
+    security_opt:
+      - "no-new-privileges:true"
+    cap_drop:
+      - ALL
+    ports:
+      - "5000:5000"
+    environment:
+      # Sensitive credentials mapped to .env
+      - WHOOGLE_USER=${WHOOGLE_USER}
+      - WHOOGLE_PASS=${WHOOGLE_PASS}
+      - WHOOGLE_PROXY_USER=${WHOOGLE_PROXY_USER}
+      - WHOOGLE_PROXY_PASS=${WHOOGLE_PROXY_PASS}
+      
+      # Configuration settings
+      - WHOOGLE_PROXY_TYPE=${WHOOGLE_PROXY_TYPE}
+      - WHOOGLE_PROXY_LOC=${WHOOGLE_PROXY_LOC}
+      - WHOOGLE_CONFIG_URL=${WHOOGLE_CONFIG_URL}
+      - WHOOGLE_CONFIG_DISABLE=0
+      - WHOOGLE_MINIMAL=0
+      - WHOOGLE_RESULT_COUNT=20
+      - HTTPS_ONLY=0

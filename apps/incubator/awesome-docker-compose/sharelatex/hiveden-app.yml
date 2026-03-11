@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: sharelatex
+category: note-taking-and-editor
+name: ShareLaTeX
+version: latest
+tagline: Write and collaborate on LaTeX documents in real-time.
+description: Write and collaborate on LaTeX documents in real-time. Access hundreds
+  of templates, control versions, and switch between visual and code editors.
+developer: overleaf
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.sharelatex.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/overleaf/overleaf
+support: https://github.com/overleaf/toolkit/blob/master/doc/docker-compose.md

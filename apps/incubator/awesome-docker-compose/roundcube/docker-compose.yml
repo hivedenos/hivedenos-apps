@@ -1,28 +1,32 @@
-version: '2.4'
- 
 services:
-  roundcube:
-    container_name: roundcube
-    image: eilandert/roundcube:latest
-    restart: always
-    depends_on:
-    - 
-    - 
-    volumes:
-      - ./roundcube/config:/var/roundcube/config
-      - ./roundcube/plugins:/var/www/html/plugins
-      - ./roundcube/logs:/var/www/html/logs
+  roundcubemail:
+    image: roundcube/roundcubemail:latest
+    container_name: roundcubemail
+    restart: unless-stopped
+    ports:
+      - "8000:80"
     environment:
-     - ROUNDCUBEMAIL_DEFAULT_HOST=ssl://10.0.0.227
-     - ROUNDCUBEMAIL_DEFAULT_PORT=993
-     - ROUNDCUBEMAIL_SMTP_SERVER=tls://postfix
-     - ROUNDCUBEMAIL_SMTP_PORT=587
-     - ROUNDCUBEMAIL_DB_TYPE=mysql
-     - ROUNDCUBEMAIL_DB_HOST=172.30.0.100
-     - ROUNDCUBEMAIL_DB_USER=roundcube
-     - ROUNDCUBEMAIL_DB_PASSWORD # Defined in .env
-     - ROUNDCUBEMAIL_DB_NAME=roundcube
-     - ROUNDCUBEMAIL_PLUGINS=archive,zipdownload,managesieve,newmail_notifier,password,new_user_dialog
-     - ROUNDCUBEMAIL_UPLOAD_MAX_FILESIZE=10M
-     - TZ=Europe/Amsterdam
-     - CLEAN_INACTIVE_USERS_DAYS=365
+      - ROUNDCUBEMAIL_DB_TYPE=mysql
+      - ROUNDCUBEMAIL_DB_HOST=roundcubedb
+      - ROUNDCUBEMAIL_DB_NAME=roundcubemail
+      - ROUNDCUBEMAIL_DB_USER=roundcube
+      - ROUNDCUBEMAIL_DB_PASSWORD=${ROUNDCUBEMAIL_DB_PASSWORD}
+      - ROUNDCUBEMAIL_SKIN=elastic
+      - ROUNDCUBEMAIL_DEFAULT_HOST=ssl://imap.example.com
+      - ROUNDCUBEMAIL_SMTP_SERVER=ssl://smtp.example.com
+    volumes:
+      - ./www:/var/www/html
+    depends_on:
+      - roundcubedb
+
+  roundcubedb:
+    image: mariadb:10
+    container_name: roundcubedb
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=roundcubemail
+      - MYSQL_USER=roundcube
+      - MYSQL_PASSWORD=${ROUNDCUBEMAIL_DB_PASSWORD}
+    volumes:
+      - ./db-data:/var/lib/mysql

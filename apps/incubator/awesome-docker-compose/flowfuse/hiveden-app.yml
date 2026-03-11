@@ -2,12 +2,12 @@ manifestVersion: 1.1
 id: flowfuse
 category: internet-of-things-iot
 name: FlowFuse
-version: 1.6.0
-tagline: Connect, collect, transform, visualise, and interact with your Industrial
-  Data in a single platform.
-description: Connect, collect, transform, visualise, and interact with your Industrial
-  Data in a single platform. Use FlowFuse to manage, scale and secure your Node-RED
-  solutions.
+version: latest
+tagline: Bridge the gap between IT and OT by connecting machines, moving data across
+  protocols, and building industrial applicat...
+description: Bridge the gap between IT and OT by connecting machines, moving data
+  across protocols, and building industrial applications faster with an AI-powered
+  copilot.
 developer: FlowFuse
 dependencies: []
 gallery: []
@@ -16,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://flowfuse.com/
+website: https://flowfuse.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/FlowFuse/flowfuse
 support: https://flowfuse.com/docs/install/docker/

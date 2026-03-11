@@ -1,0 +1,15 @@
+services:
+  doublecommander:
+    image: lscr.io/linuxserver/doublecommander:latest
+    container_name: doublecommander
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    volumes:
+      - ./config:/config
+      - ./data:/data
+    ports:
+      - 3000:3000
+    shm_size: "1gb"
+    restart: unless-stopped

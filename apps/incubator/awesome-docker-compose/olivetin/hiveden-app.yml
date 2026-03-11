@@ -3,8 +3,9 @@ id: olivetin
 category: automation
 name: OliveTin
 version: latest
-tagline: OliveTin is a web interface for running Linux shell commands.
-description: OliveTin is a web interface for running Linux shell commands.
+tagline: Create a simple web interface for your shell commands.
+description: Create a simple web interface for your shell commands. Safely delegate
+  tasks like restarting services or running backups to users without direct SSH access.
 developer: OliveTin
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.olivetin.app/
+website: https://www.olivetin.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/OliveTin/OliveTin
-support: https://docs.olivetin.app/install-compose.html
+support: https://docs.olivetin.app/install/docker_compose.html

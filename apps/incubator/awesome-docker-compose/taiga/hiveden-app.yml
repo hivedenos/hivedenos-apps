@@ -2,10 +2,11 @@ manifestVersion: 1.1
 id: taiga
 category: project-management
 name: Taiga
-version: '12.3'
-tagline: Your Agile, Free and Open Source Project Management Tool.
-description: Your Agile, Free and Open Source Project Management Tool.
-developer: kaleidos-ventures
+version: '13'
+tagline: Plan, track, and deliver projects using a free, open-source agile platform.
+description: Plan, track, and deliver projects using a free, open-source agile platform.
+  Features include customizable Kanban boards, Scrum sprints, and issue tracking.
+developer: taigaio
 dependencies: []
 gallery: []
 path: /
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.taiga.io/
-repo: https://github.com/kaleidos-ventures/taiga-docker
+website: https://taiga.io?utm_source=awesome-docker-compose.com
+repo: https://github.com/taigaio/taiga-docker
 support: https://community.taiga.io/t/taiga-30min-setup/170

@@ -3,10 +3,10 @@ id: stash
 category: media-server
 name: Stash
 version: latest
-tagline: A web-based library organizer and player for your adult media stash, with
-  auto-tagging and metadata scraping support.
-description: A web-based library organizer and player for your adult media stash,
-  with auto-tagging and metadata scraping support.
+tagline: Organize, tag, and stream your personal adult media privately.
+description: Organize, tag, and stream your personal adult media privately. Create
+  galleries, bookmark favorite scenes, and scrape metadata securely on your local
+  network.
 developer: stashapp
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://stashapp.cc/
+website: https://stashapp.cc?utm_source=awesome-docker-compose.com
 repo: https://github.com/stashapp/stash
-support: https://docs.stashapp.cc/getting-started/installation/docker/
+support: https://docs.stashapp.cc/installation/docker/

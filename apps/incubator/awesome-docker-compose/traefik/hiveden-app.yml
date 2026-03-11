@@ -1,11 +1,12 @@
 manifestVersion: 1.1
 id: traefik
-category: web-servers
+category: web-server
 name: Traefik
-version: v3.1
-tagline: HTTP reverse proxy and load balancer that makes deploying microservices easy.
-description: HTTP reverse proxy and load balancer that makes deploying microservices
-  easy.
+version: v3.0
+tagline: Dynamically route and load balance your microservices with a modern reverse
+  proxy.
+description: Dynamically route and load balance your microservices with a modern reverse
+  proxy. Automates service discovery, ingress control, and SSL certificate management.
 developer: traefik
 dependencies: []
 gallery: []
@@ -14,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://traefik.io/traefik/
+website: https://traefik.io/traefik?utm_source=awesome-docker-compose.com
 repo: https://github.com/traefik/traefik
 support: https://doc.traefik.io/traefik/getting-started/install-traefik/

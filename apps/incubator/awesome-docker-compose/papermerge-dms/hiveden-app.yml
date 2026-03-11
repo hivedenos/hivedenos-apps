@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: papermerge-dms
+category: document-management
+name: Papermerge DMS
+version: '3.2'
+tagline: Store, organize, and index scanned documents in PDF, JPEG, and TIFF formats.
+description: Store, organize, and index scanned documents in PDF, JPEG, and TIFF formats.
+  Instantly find information using full-text search, custom tags, and metadata.
+developer: ciur
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://papermerge.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/ciur/papermerge
+support: https://docs.papermerge.io/3.2/setup/docker-compose/

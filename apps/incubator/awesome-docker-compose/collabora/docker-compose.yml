@@ -1,8 +1,17 @@
-version: 
- 
 services:
-  code:
-    image: collabora/code
-    ports:
-      - 127.0.0.1:9980:9980
+  collabora:
+    image: collabora/code:latest
+    container_name: collabora_code
     restart: unless-stopped
+    cap_add:
+      - MKNOD
+    ports:
+      - "9980:9980"
+    environment:
+      - aliasgroup1=${COLLABORA_ALIAS_1}
+      - username=${ADMIN_USERNAME}
+      - password=${ADMIN_PASSWORD}
+      - extra_params=--o:ssl.enable=false --o:ssl.termination=true
+      - TZ=UTC
+    volumes:
+      - ./fonts:/opt/cool/systemplate/usr/share/fonts/truetype/custom

@@ -1,10 +1,14 @@
-version: 
 services:
   wastebin:
-    environment:
-      - ./db=/data/state.db
+    image: quxfoo/wastebin:latest
+    container_name: wastebin
+    restart: unless-stopped
     ports:
       - 8088:8088
+    environment:
+      WASTEBIN_DATABASE_URL: sqlite:///data/wastebin.db
+      WASTEBIN_MAX_BODY_SIZE: 1048576
+      WASTEBIN_TITLE: Wastebin
+      WASTEBIN_SIGNING_KEY: ${WASTEBIN_SIGNING_KEY}
     volumes:
       - ./data:/data
-    image: quxfoo/wastebin:latest

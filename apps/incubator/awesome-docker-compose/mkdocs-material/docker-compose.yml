@@ -1,9 +1,0 @@
-version: 
-services:
-  mkdocs-material:
-    image: squidfunk/mkdocs-material
-    ports:
-      - 8000:8000
-    volumes:
-      - ./docs:/docs
-    restart: unless-stopped  

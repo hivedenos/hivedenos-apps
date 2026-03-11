@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: wekan
 category: task-management
 name: WeKan
-version: latest
-tagline: Open-source Trello-like kanban.
-description: Open-source Trello-like kanban.
+version: '5'
+tagline: Organize projects visually with customizable kanban boards.
+description: Organize projects visually with customizable kanban boards. Host it yourself
+  for complete data privacy, set access controls, and track tasks efficiently.
 developer: wekan
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://wekan.github.io/
+website: https://wekan.fi?utm_source=awesome-docker-compose.com
 repo: https://github.com/wekan/wekan
 support: https://github.com/wekan/wekan/blob/main/docker-compose.yml

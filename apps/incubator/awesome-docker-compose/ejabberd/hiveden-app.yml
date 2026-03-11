@@ -3,8 +3,10 @@ id: ejabberd
 category: xmpp
 name: ejabberd
 version: latest
-tagline: XMPP instant messaging server.
-description: XMPP instant messaging server.
+tagline: Deploy a highly scalable XMPP, MQTT, and SIP platform to build massive realtime
+  services.
+description: Deploy a highly scalable XMPP, MQTT, and SIP platform to build massive
+  realtime services. Ensure unmatched uptime, fault tolerance, and secure communications.
 developer: processone
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.ejabberd.im/
+website: https://www.ejabberd.im?utm_source=awesome-docker-compose.com
 repo: https://github.com/processone/ejabberd
-support: https://docs.ejabberd.im/admin/install/container/
+support: https://docs.ejabberd.im/admin/install/

@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: trip
+category: map-and-gps
+name: TRIP
+version: '1'
+tagline: Plan adventures with a self-hosted map tracker.
+description: Plan adventures with a self-hosted map tracker. Visualize points of interest,
+  collaborate on itineraries, and manage trip details privately with zero ads.
+developer: itskovacs
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://itskovacs-trip.netlify.app?utm_source=awesome-docker-compose.com
+repo: https://github.com/itskovacs/trip
+support: https://itskovacs.github.io/trip/docs/getting-started/deploy

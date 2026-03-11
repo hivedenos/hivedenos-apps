@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: kutt
-category: url-shorteners
+category: url-shortener
 name: Kutt
-version: latest
-tagline: Free Modern URL Shortener.
-description: Free Modern URL Shortener.
+version: 12-alpine
+tagline: Shorten URLs, set custom domains, and track link performance with a self-hosted
+  platform.
+description: Shorten URLs, set custom domains, and track link performance with a self-hosted
+  platform. Manage users, customize themes, and integrate via a RESTful API.
 developer: thedevs-network
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://kutt.it/
+website: https://github.com/thedevs-network/kutt?utm_source=awesome-docker-compose.com
 repo: https://github.com/thedevs-network/kutt
 support: https://github.com/thedevs-network/kutt#docker

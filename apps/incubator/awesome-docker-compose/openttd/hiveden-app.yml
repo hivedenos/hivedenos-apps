@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: openttd
 category: games
-name: Openttd
+name: OpenTTD
 version: latest
-tagline: Open source transport tycoon simulation game.
-description: Open source transport tycoon simulation game.
+tagline: Construct intricate transport systems, manage cargo routes, and build profitable
+  networks in this comprehensive open-so...
+description: Construct intricate transport systems, manage cargo routes, and build
+  profitable networks in this comprehensive open-source simulation game.
 developer: OpenTTD
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.openttd.org/
+website: https://www.openttd.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/OpenTTD/OpenTTD
 support: https://github.com/OpenTTD/OpenTTD

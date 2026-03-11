@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: postgresql-official
+category: database
+name: PostgreSQL (Official)
+version: latest
+tagline: Manage your data with a powerful, open-source object-relational database.
+description: Manage your data with a powerful, open-source object-relational database.
+  Benefit from over 35 years of development for unmatched reliability and performance.
+developer: docker-library
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.postgresql.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/docker-library/postgres
+support: https://github.com/docker-library/postgres

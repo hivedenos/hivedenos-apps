@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: cosmos
-category: self-hosting-solutions
+category: self-hosting-solution
 name: Cosmos
 version: latest
-tagline: Secure and Easy Self-hosted platform.
-description: "Secure and Easy Self-hosted platform. Take control of your data and\
-  \ privacy without sacrificing security and stability (Authentication, anti-DDOS,\
-  \ anti-bot, \xE2\x80\xA6)"
+tagline: Build a private, self-hosted cloud with enterprise-grade security.
+description: Build a private, self-hosted cloud with enterprise-grade security. Deploy
+  250+ apps with one click, manage users, and secure your data at home or work.
 developer: azukaar
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://cosmos-cloud.io/
+website: https://cosmos-cloud.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/azukaar/cosmos-server
-support: https://cosmos-cloud.io/doc/1%20index/
+support: https://cosmos-cloud.io/docs/index/

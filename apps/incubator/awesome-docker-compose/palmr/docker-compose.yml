@@ -1,6 +1,22 @@
-version: "3.8"
-
 services:
   palmr:
-    image: kyantech/palmr-api:latest
+    image: kyantech/palmr:latest
+    container_name: palmr
     restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=${DATABASE_URL}
+      - NEXTAUTH_SECRET=${NEXTAUTH_SECRET}
+      - NEXTAUTH_URL=${NEXTAUTH_URL}
+    volumes:
+      - ./uploads:/app/uploads
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:6
+    container_name: palmr-mongo
+    restart: unless-stopped
+    volumes:
+      - ./mongo-data:/data/db

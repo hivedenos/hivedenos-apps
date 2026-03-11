@@ -1,0 +1,21 @@
+services:
+  mailserver:
+    image: analogic/poste.io:latest
+    restart: always
+    # Replace with your actual domain
+    hostname: mail.example.com
+    ports:
+      - "25:25"
+      - "80:80"
+      - "443:443"
+      - "110:110"
+      - "143:143"
+      - "465:465"
+      - "587:587"
+      - "993:993"
+      - "995:995"
+    environment:
+      - TZ=UTC
+      - HTTPS=ON
+    volumes:
+      - ./data:/data

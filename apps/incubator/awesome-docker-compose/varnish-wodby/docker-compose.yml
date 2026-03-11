@@ -1,0 +1,13 @@
+services:
+  varnish:
+    image: wodby/varnish:latest
+    container_name: varnish
+    environment:
+      VARNISH_SECRET: ${VARNISH_SECRET}
+      VARNISH_BACKEND_HOST: 127.0.0.1
+      VARNISH_BACKEND_PORT: 8080
+      VARNISH_PORT: 6081
+      VARNISH_MEMORY_ALLOCATION: 256m
+    ports:
+      - "6081:6081"
+    restart: unless-stopped

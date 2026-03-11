@@ -1,8 +1,52 @@
 services:
-  app:
+  erugo:
     image: wardy784/erugo:latest
+    container_name: erugo
     restart: unless-stopped
-    volumes:
-      - ./erugo-storage:/var/www/html/storage
     ports:
-      - 
+      - "8000:80"
+    environment:
+      APP_NAME: Erugo
+      APP_ENV: production
+      APP_KEY: ${APP_KEY}
+      APP_DEBUG: "false"
+      APP_URL: http://localhost:8000
+      DB_CONNECTION: mysql
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_DATABASE: erugo
+      DB_USERNAME: erugo
+      DB_PASSWORD: ${DB_PASSWORD}
+      REDIS_HOST: redis
+      REDIS_PASSWORD: null
+      REDIS_PORT: 6379
+      MAIL_MAILER: smtp
+      MAIL_HOST: smtp.example.com
+      MAIL_PORT: 587
+      MAIL_USERNAME: user@example.com
+      MAIL_PASSWORD: ${MAIL_PASSWORD}
+      MAIL_ENCRYPTION: tls
+      MAIL_FROM_ADDRESS: no-reply@example.com
+      MAIL_FROM_NAME: Erugo
+    volumes:
+      - ./storage:/var/www/html/storage/app/public
+    depends_on:
+      - db
+      - redis
+
+  db:
+    image: mariadb:10.11
+    container_name: erugo_db
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: erugo
+      MYSQL_USER: erugo
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+    volumes:
+      - ./db-data:/var/lib/mysql
+
+  redis:
+    image: redis:alpine
+    container_name: erugo_redis
+    restart: unless-stopped

@@ -1,6 +1,26 @@
-version: "3.8"
-
 services:
   kinto:
-    image: postgres:14
+    image: kinto/kinto-server:latest
+    ports:
+      - "8888:8888"
+    depends_on:
+      - db
+    environment:
+      KINTO_STORAGE_BACKEND: kinto.core.storage.postgresql
+      KINTO_STORAGE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db/${POSTGRES_DB}
+      KINTO_CACHE_BACKEND: kinto.core.cache.postgresql
+      KINTO_CACHE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db/${POSTGRES_DB}
+      KINTO_PERMISSION_BACKEND: kinto.core.permission.postgresql
+      KINTO_PERMISSION_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db/${POSTGRES_DB}
+      KINTO_USERID_HMAC_SECRET: ${KINTO_USERID_HMAC_SECRET}
+    restart: unless-stopped
+
+  db:
+    image: postgres:14-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
     restart: unless-stopped

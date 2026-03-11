@@ -1,105 +1,77 @@
-version: 
- 
 services:
   postgres:
     restart: unless-stopped
     env_file: .env
-    environment:
-      - 
-    image: postgres:15-alpine
+    image: postgres:15
     volumes:
       - ./data/postgres:/var/lib/postgresql/data
- 
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
   redis:
     restart: unless-stopped
     env_file: .env
-    image: redis:7-alpine
+    image: redis:7
     volumes:
       - ./data/redis:/data
- 
-  celeryworker:
-    restart: unless-stopped
-    image: funkwhale/api:${FUNKWHALE_VERSION:-latest}
-    depends_on:
-      - postgres
-      - redis
-    env_file: .env
-    # Celery workers handle background tasks (such file imports or federation
-    # messaging). The more processes a worker gets, the more tasks
-    # can be processed in parallel. However, more processes also means
-    # a bigger memory footprint.
-    # By default, a worker will span a number of process equal to your number
-    # of CPUs. You can adjust this, by explicitly setting the --concurrency
-    # flag:
-    #   celery -A funkwhale_api.taskapp worker -l INFO --concurrency=4
-    command:
-      - celery
-      - --app=funkwhale_api.taskapp
-      - worker
-      - --loglevel=INFO
-      - --concurrency=${CELERYD_CONCURRENCY-0}
-    environment:
-      - C_FORCE_ROOT=true
-    volumes:
-      - 
-      - 
- 
-  celerybeat:
-    restart: unless-stopped
-    image: funkwhale/api:${FUNKWHALE_VERSION:-latest}
-    command:
-      - celery
-      - --app=funkwhale_api.taskapp
-      - beat
-      - --loglevel=INFO
-    depends_on:
-      - postgres
-      - redis
-    env_file: .env
- 
-  api:
-    restart: unless-stopped
-    image: funkwhale/api:${FUNKWHALE_VERSION:-latest}
-    depends_on:
-      - postgres
-      - redis
-    env_file: .env
-    volumes:
-      - 
-      - 
-      - 
- 
-  front:
-    restart: unless-stopped
-    image: funkwhale/front:${FUNKWHALE_VERSION:-latest}
-    depends_on:
-      - api
-    env_file:
-      - .env
-    environment:
-      # Override those variables in your .env file if needed
-      - 
-    volumes:
-      # Uncomment if you want to use your previous nginx config, please let us
-      # know what special configuration you need, so we can support it with out
-      # upstream nginx configuration!
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
-
- 
-      - 
-      - 
-      - 
-    ports:
-      # override those variables in your .env file if needed
-      - 
- 
   typesense:
     restart: unless-stopped
-    env_file:
-      - .env
+    env_file: .env
     image: typesense/typesense:0.24.0
     volumes:
-      - ./typesense/data:/data
-    command: --data-dir /data --enable-cors
-    profiles:
+      - ./data/typesense:/data
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8108/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api:
+    restart: unless-stopped
+    env_file: .env
+    image: funkwhale/funkwhale:${FUNKWHALE_VERSION:-latest}
+    depends_on:
+      - postgres
+      - redis
       - typesense
+    volumes:
+      - ./data/music:/music:ro
+      - ./data/media:/app/data/media
+      - ./data/static:/app/data/static
+    ports:
+      - "${FUNKWHALE_API_PORT:-5000}:5000"
+
+  celeryworker:
+    restart: unless-stopped
+    env_file: .env
+    image: funkwhale/funkwhale:${FUNKWHALE_VERSION:-latest}
+    depends_on:
+      - postgres
+      - redis
+    command: celery -A funkwhale_api.taskapp worker -l INFO --concurrency=${CELERYD_CONCURRENCY:-0}
+    volumes:
+      - ./data/music:/music:ro
+      - ./data/media:/app/data/media
+      - ./data/static:/app/data/static
+
+  celerybeat:
+    restart: unless-stopped
+    env_file: .env
+    image: funkwhale/funkwhale:${FUNKWHALE_VERSION:-latest}
+    depends_on:
+      - postgres
+      - redis
+    command: celery -A funkwhale_api.taskapp beat -l INFO
+    volumes:
+      - ./data/music:/music:ro
+      - ./data/media:/app/data/media
+      - ./data/static:/app/data/static

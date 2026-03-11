@@ -1,6 +1,24 @@
-version: "3.8"
-
 services:
   gancio:
-    image: postgres:15
+    image: git.autistici.org/ai/gancio/gancio:latest
     restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      # Configuration injected via NODE_CONFIG to map environment variables to the config structure
+      NODE_CONFIG: '{"base_url":"${BASE_URL}","db":{"dialect":"postgres","host":"db","port":5432,"database":"${POSTGRES_DB}","username":"${POSTGRES_USER}","password":"${POSTGRES_PASSWORD}"}}'
+    volumes:
+      - ./data/uploads:/app/public/images/uploads
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - ./data/db:/var/lib/postgresql/data

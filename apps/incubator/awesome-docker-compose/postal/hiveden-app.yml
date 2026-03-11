@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: postal
-category: email-servers
+category: email-server
 name: Postal
-version: latest
-tagline: A complete and fully featured mail server for use by websites & web servers.
-description: A complete and fully featured mail server for use by websites & web servers.
+version: '10.6'
+tagline: Manage incoming and outgoing emails on your own servers with a fully featured,
+  open-source delivery platform.
+description: Manage incoming and outgoing emails on your own servers with a fully
+  featured, open-source delivery platform. Scale easily and integrate spam protection.
 developer: postalserver
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docs.postalserver.io/
+website: https://docs.postalserver.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/postalserver/postal
 support: https://docs.postalserver.io/getting-started/installation

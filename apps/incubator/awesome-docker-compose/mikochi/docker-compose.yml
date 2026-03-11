@@ -1,13 +1,12 @@
-version: 
 services:
   mikochi:
     image: zer0tonin/mikochi:latest
+    container_name: mikochi
+    restart: unless-stopped
     ports:
-      - 8080:8080
+      - 8080:80
     volumes:
-      - $(PWD)/data:/data
+      - ./files:/data
     environment:
-      - DATA_DIR=/data
-      - USERNAME=zer0tonin
-      - PASSWORD=horsebatterysomething
-    restart: unless-stopped  
+      - USERNAME=${MIKOCHI_USERNAME}
+      - PASSWORD=${MIKOCHI_PASSWORD}

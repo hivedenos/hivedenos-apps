@@ -1,12 +1,12 @@
-version: '3.9'
 services:
   linkding:
-    container_name: 
     image: sissbruecker/linkding:latest
+    container_name: linkding
     ports:
-      - 
+      - "9090:9090"
     volumes:
-      - 
-    env_file:
-      - .env
+      - ./data:/etc/linkding/data
+    environment:
+      - LD_SUPERUSER_NAME=${LD_SUPERUSER_NAME}
+      - LD_SUPERUSER_PASSWORD=${LD_SUPERUSER_PASSWORD}
     restart: unless-stopped

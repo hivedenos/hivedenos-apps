@@ -1,8 +1,11 @@
-version: '3.9'
 services:
   web-check:
-    container_name: Web-Check
-    image: lissy93/web-check
+    image: lissy93/web-check:latest
+    container_name: web-check
     ports:
-      - 3000:3000
+      - "3000:3000"
+    environment:
+      - SHODAN_API_KEY=${SHODAN_API_KEY}
+      - VIRUSTOTAL_API_KEY=${VIRUSTOTAL_API_KEY}
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
     restart: unless-stopped

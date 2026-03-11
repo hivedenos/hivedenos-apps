@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: transfer-sh
-category: file-transfer-single-click-drag-n-drop-upload
+category: quick-file-transfer
 name: transfer.sh
 version: latest
-tagline: Easy file sharing from the command line.
-description: Easy file sharing from the command line.
+tagline: Share files instantly from your terminal.
+description: Share files instantly from your terminal. Encrypt uploads, set download
+  limits, scan for viruses, and host your own instance with multiple storage backends.
 developer: dutchcoders
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/file-transfer---single-click--drag-n-drop-upload/transfer_sh
+website: https://github.com/dutchcoders/transfer.sh?utm_source=awesome-docker-compose.com
 repo: https://github.com/dutchcoders/transfer.sh
-support: https://github.com/dutchcoders/transfer.sh
+support: https://github.com/dutchcoders/transfer.sh#docker

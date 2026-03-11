@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: apt-cacher-ng-mbentley
+category: proxy
+name: Apt-Cacher NG (mbentley)
+version: latest
+tagline: Optimize Linux package downloads with a low-overhead caching proxy.
+description: Optimize Linux package downloads with a low-overhead caching proxy. It
+  uses native system functions for speed and includes a web frontend for statistics.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.unix-ag.uni-kl.de/~bloch/acng?utm_source=awesome-docker-compose.com
+repo: https://awesome-docker-compose.com/apt-cacher-ng-mbentley
+support: https://awesome-docker-compose.com/apt-cacher-ng-mbentley

@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: mafl
-category: personal-dashboards
+category: personal-dashboard
 name: Mafl
 version: latest
-tagline: Minimalistic flexible homepage.
-description: Minimalistic flexible homepage.
+tagline: Build a fast, private, and organized homepage with interactive cards.
+description: Build a fast, private, and organized homepage with interactive cards.
+  Customize themes, group services, and set it up easily with simple YAML configuration.
 developer: hywax
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://mafl.hywax.space/
+website: https://mafl.hywax.space?utm_source=awesome-docker-compose.com
 repo: https://github.com/hywax/mafl
 support: https://mafl.hywax.space/guide/getting-started.html

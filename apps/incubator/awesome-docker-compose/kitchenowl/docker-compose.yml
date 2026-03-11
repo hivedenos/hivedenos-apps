@@ -1,18 +1,30 @@
-version: 
 services:
-  front:
-    image: tombursch/kitchenowl-web:latest
-    restart: unless-stopped
-    # environment:
-    #   - BACK_URL=back:5000 # Change this if you rename the containers
+  kitchenowl:
+    image: tombursch/kitchenowl:latest
+    restart: always
     ports:
-      - 
-    depends_on:
-      - back
-  back:
-    image: tombursch/kitchenowl-backend:latest
-    restart: unless-stopped
+      - "8080:80"
     environment:
-      - JWT_SECRET_KEY=PLEASE_CHANGE_ME
+      - APP_URL=http://localhost:8080
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
+      - HASH_ID_SALT=${HASH_ID_SALT}
+      - DB_CONNECTION=pgsql
+      - DB_HOST=database
+      - DB_PORT=5432
+      - DB_DATABASE=kitchenowl
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}
     volumes:
-      - ./kitchenowl_data:/data
+      - ./storage:/storage
+    depends_on:
+      - database
+
+  database:
+    image: postgres:15
+    restart: always
+    environment:
+      - POSTGRES_DB=kitchenowl
+      - POSTGRES_USER=${DB_USERNAME}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data

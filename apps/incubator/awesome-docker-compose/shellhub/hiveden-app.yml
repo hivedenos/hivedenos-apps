@@ -3,11 +3,10 @@ id: shellhub
 category: remote-access
 name: Shellhub
 version: ${SHELLHUB_VERSION}
-tagline: ShellHub is a modern SSH server for remotely accessing linux devices via
-  command line (using any SSH client) or web-bas...
-description: ShellHub is a modern SSH server for remotely accessing linux devices
-  via command line (using any SSH client) or web-based user interface, designed as
-  an alternative to sshd.
+tagline: Remotely access Linux devices via a secure, centralized SSH gateway.
+description: Remotely access Linux devices via a secure, centralized SSH gateway.
+  Connect through a web UI or any SSH client, record sessions, and manage firewall
+  rules.
 developer: shellhub-io
 dependencies: []
 gallery: []
@@ -16,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.shellhub.io/
+website: https://www.shellhub.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/shellhub-io/shellhub
 support: https://docs.shellhub.io/self-hosted/deploying

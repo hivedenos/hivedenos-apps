@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: kodi-matthuisman
+category: media-server
+name: Kodi (matthuisman)
+version: latest
+tagline: Deploy a headless media center in a Docker container to manage centralized
+  library updates via a web interface.
+description: Deploy a headless media center in a Docker container to manage centralized
+  library updates via a web interface. Includes multi-architecture and add-on support.
+developer: matthuisman
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://kodi.tv?utm_source=awesome-docker-compose.com
+repo: https://github.com/matthuisman/docker-kodi-headless
+support: https://github.com/matthuisman/docker-kodi-headless

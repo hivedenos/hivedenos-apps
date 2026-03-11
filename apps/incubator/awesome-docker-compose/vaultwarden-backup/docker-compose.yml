@@ -1,0 +1,27 @@
+services:
+  vaultwarden:
+    image: vaultwarden/server:latest
+    container_name: vaultwarden
+    restart: always
+    volumes:
+      - ./vw-data:/data
+    ports:
+      - 8080:80
+
+  vaultwarden-backup:
+    image: ttionya/vaultwarden-backup:latest
+    container_name: vaultwarden-backup
+    restart: always
+    environment:
+      - RCLONE_REMOTE_NAME=BitwardenBackup
+      - RCLONE_REMOTE_DIR=/VaultwardenBackup/
+      - CRON=5 * * * *
+      - ZIP_ENABLE=TRUE
+      - ZIP_PASSWORD=${ZIP_PASSWORD}
+      - BACKUP_KEEP_DAYS=30
+      - TIMEZONE=UTC
+    volumes:
+      - ./vw-data:/data
+      - ./rclone-data:/config
+    depends_on:
+      - vaultwarden

@@ -1,10 +1,14 @@
-version: 
 services:
-  apprise:
-    container_name: apprise
-    image: caronc/apprise:latest
-    ports:
-      - 8000:8000
-    volumes:
-      - /var/lib/apprise/config:/config
+  apprise-api:
+    image: caronc/apprise-api:latest
+    container_name: apprise-api
     restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data/config:/config
+      - ./data/attach:/attach
+    environment:
+      - TZ=Etc/UTC
+      - PUID=1000
+      - PGID=1000

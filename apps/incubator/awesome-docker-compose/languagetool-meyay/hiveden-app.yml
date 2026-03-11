@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: languagetool-meyay
+category: miscellaneous
+name: LanguageTool (meyay)
+version: latest
+tagline: Detect grammar, punctuation, and spelling errors instantly.
+description: Detect grammar, punctuation, and spelling errors instantly. Improve your
+  writing style across 30 languages and rephrase sentences using advanced AI.
+developer: languagetool-org
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://languagetool.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/languagetool-org/languagetool
+support: https://github.com/meyayl/docker-languagetool

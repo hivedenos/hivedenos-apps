@@ -1,14 +1,11 @@
 manifestVersion: 1.1
 id: reitti
-category: maps-and-gps
+category: map-and-gps
 name: Reitti
 version: latest
-tagline: Reitti is a comprehensive personal location tracking and analysis application
-  that helps you understand your movement p...
-description: "Reitti is a comprehensive personal location tracking and analysis application\
-  \ that helps you understand your movement patterns and significant places. The name\
-  \ \xE2\x80\x9CReitti\xE2\x80\x9D comes from Finnish, meaning \xE2\x80\x9Croute\xE2\
-  \x80\x9D or \xE2\x80\x9Cpath\xE2\x80\x9D."
+tagline: Self-host your location data for complete privacy.
+description: Self-host your location data for complete privacy. Automatically detect
+  visits, analyze trips, and transform your movements into shareable travel stories.
 developer: dedicatedcode
 dependencies: []
 gallery: []
@@ -17,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.dedicatedcode.com/projects/reitti/
+website: https://www.dedicatedcode.com/projects/reitti?utm_source=awesome-docker-compose.com
 repo: https://github.com/dedicatedcode/reitti
 support: https://github.com/dedicatedcode/reitti#docker-deployment

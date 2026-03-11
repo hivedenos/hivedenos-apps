@@ -3,10 +3,10 @@ id: openvscode-server
 category: ide-and-tools
 name: OpenVSCode Server
 version: latest
-tagline: OpenVSCode Server runs on a remote machine and allows access through a modern
-  web browser.
-description: OpenVSCode Server runs on a remote machine and allows access through
-  a modern web browser.
+tagline: Run the official VS Code on a remote server and access your full development
+  environment from any device with a modern...
+description: Run the official VS Code on a remote server and access your full development
+  environment from any device with a modern web browser. Self-host your IDE anywhere.
 developer: gitpod-io
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.gitpod.io/
+website: https://github.com/gitpod-io/openvscode-server?utm_source=awesome-docker-compose.com
 repo: https://github.com/gitpod-io/openvscode-server
 support: https://github.com/gitpod-io/openvscode-server#docker

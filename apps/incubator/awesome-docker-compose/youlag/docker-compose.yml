@@ -4,9 +4,15 @@ services:
     container_name: freshrss
     restart: unless-stopped
     ports:
-      - 
+      - "8080:80"
+    environment:
+      - TZ=UTC
+      - CRON_MIN=1,31
+      - FRESHRSS_INSTALL_ADMIN_USER=${ADMIN_USER}
+      - FRESHRSS_INSTALL_ADMIN_PASSWORD=${ADMIN_PASSWORD}
+      - FRESHRSS_INSTALL_ADMIN_EMAIL=${ADMIN_EMAIL}
+      - FRESHRSS_INSTALL_BASE_URL=${BASE_URL}
+      - FRESHRSS_INSTALL_API_ENABLED=1
     volumes:
       - ./data:/var/www/FreshRSS/data
-      - ./extensions:/var/www/FreshRSS/extensions # Mount the extensions folder
-    environment:
-      - TZ=Europe/Paris
+      - ./extensions:/var/www/FreshRSS/extensions

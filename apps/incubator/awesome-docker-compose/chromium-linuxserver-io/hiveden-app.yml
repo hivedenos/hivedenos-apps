@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: chromium-linuxserver-io
+category: virtual-browser
+name: Chromium (LinuxServer.io)
+version: latest
+tagline: Deploy a web-accessible browser in a container for secure, isolated web surfing.
+description: Deploy a web-accessible browser in a container for secure, isolated web
+  surfing. Leverage GPU hardware acceleration for a fast and responsive remote experience.
+developer: linuxserver
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/linuxserver/docker-chromium?utm_source=awesome-docker-compose.com
+repo: https://github.com/linuxserver/docker-chromium
+support: https://github.com/linuxserver/docker-chromium

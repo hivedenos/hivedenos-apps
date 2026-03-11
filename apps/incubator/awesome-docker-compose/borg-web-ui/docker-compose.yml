@@ -1,0 +1,18 @@
+services:
+  borg-ui:
+    image: ainullcode/borg-ui:latest
+    container_name: borg-ui
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+      - ADMIN_USERNAME=${ADMIN_USERNAME}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
+      - SECRET_KEY=${SECRET_KEY}
+    volumes:
+      - ./backups:/backups
+      - ./data:/app/data
+      - ./ssh:/root/.ssh
+    ports:
+      - "8080:8080"
+    restart: unless-stopped

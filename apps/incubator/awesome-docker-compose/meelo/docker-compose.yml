@@ -1,6 +1,10 @@
-version: "3.8"
-
 services:
   meelo:
-    image: ghcr.io/arthi-chaud/meelo-server:latest
+    image: ghcr.io/arthi-chaud/meelo:latest
+    container_name: meelo
     restart: unless-stopped
+    ports:
+      - 3000:3000
+    volumes:
+      - ./data:/app/data
+      - ./music:/music

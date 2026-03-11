@@ -1,11 +1,11 @@
 manifestVersion: 1.1
 id: teammapper
-category: knowledge-management-tools
-name: Teammapper
+category: knowledge-management
+name: TeamMapper
 version: latest
-tagline: Host and create your own mindmaps.
-description: Host and create your own mindmaps. Share your mindmap sessions with your
-  team and collaborate live on mindmaps.
+tagline: Use this web application to draw mind maps collaboratively.
+description: Use this web application to draw mind maps collaboratively. Turn brainstorming
+  sessions into structured plans and visualize complex information with your team.
 developer: b310-digital
 dependencies: []
 gallery: []
@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.teammapper.org/
+website: https://www.teammapper.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/b310-digital/teammapper
 support: https://github.com/b310-digital/teammapper#getting-started

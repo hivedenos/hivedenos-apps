@@ -1,0 +1,14 @@
+services:
+  fathom:
+    image: usefathom/fathom:latest
+    container_name: fathom
+    restart: always
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - FATHOM_DEBUG=true
+      - FATHOM_DATABASE_DRIVER=sqlite3
+      - FATHOM_DATABASE_NAME=/app/data/fathom.db
+      - FATHOM_SECRET=${FATHOM_SECRET}

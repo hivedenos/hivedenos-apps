@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: chatwoot
+category: ticketing
+name: Chatwoot
+version: latest
+tagline: Centralize customer support across live chat, email, and social channels
+  with an open-source platform.
+description: Centralize customer support across live chat, email, and social channels
+  with an open-source platform. Automate responses and build help center portals.
+developer: chatwoot
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/chatwoot/chatwoot?utm_source=awesome-docker-compose.com
+repo: https://github.com/chatwoot/chatwoot
+support: https://developers.chatwoot.com/self-hosted/deployment/docker

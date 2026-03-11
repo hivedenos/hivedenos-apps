@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: plik
-category: file-transfer-single-click-drag-n-drop-upload
+category: quick-file-transfer
 name: Plik
 version: latest
-tagline: Plik is a scalable and friendly temporary file upload system.
-description: Plik is a scalable and friendly temporary file upload system.
+tagline: Share files quickly using a temporary upload service.
+description: Share files quickly using a temporary upload service. Protect your data
+  with custom expiration limits, password protection, and secure download links.
 developer: root-gg
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://plik.root.gg/
+website: https://plik.root.gg?utm_source=awesome-docker-compose.com
 repo: https://github.com/root-gg/plik
-support: https://github.com/root-gg/plik/blob/master/documentation/docker.md
+support: https://root-gg.github.io/plik/guide/docker.html

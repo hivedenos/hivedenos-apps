@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: dokuwiki-linuxserver-io
+category: wiki
+name: DokuWiki (LinuxServer.io)
+version: latest
+tagline: Protect your website from automated scripts and malicious traffic.
+description: Protect your website from automated scripts and malicious traffic. Verify
+  real users quickly with a simple, user-friendly human validation process.
+developer: dokuwiki
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.dokuwiki.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/dokuwiki/dokuwiki
+support: https://github.com/linuxserver/docker-dokuwiki

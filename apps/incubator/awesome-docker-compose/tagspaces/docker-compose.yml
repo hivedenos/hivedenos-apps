@@ -1,7 +1,9 @@
-version: 
 services:
   tagspaces:
-    image: tagspaces/tagspaces-lite-web:5.4.4
+    image: ghcr.io/tagspaces/tagspaces-web:latest
+    container_name: tagspaces
+    restart: unless-stopped
     ports:
-      - 5000:80
-    restart: unless-stopped  
+      - "8888:80"
+    volumes:
+      - ./files:/usr/share/nginx/html/ext

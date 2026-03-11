@@ -3,9 +3,9 @@ id: onedev
 category: git-server
 name: OneDev
 version: latest
-tagline: All-In-One DevOps Platform.
-description: All-In-One DevOps Platform. With Git Management, Issue Tracking, and
-  CI/CD. Simple yet Powerful.
+tagline: Run a self-hosted DevOps platform with Git, CI/CD, Kanban, and package management.
+description: Run a self-hosted DevOps platform with Git, CI/CD, Kanban, and package
+  management. Automate workflows, track issues, and manage your entire dev lifecycle.
 developer: theonedev
 dependencies: []
 gallery: []
@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://onedev.io/
+website: https://onedev.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/theonedev/onedev
 support: https://docs.onedev.io/

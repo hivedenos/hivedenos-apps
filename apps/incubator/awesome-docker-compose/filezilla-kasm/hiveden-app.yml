@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: filezilla-kasm
+category: ftp-and-sftp
+name: FileZilla (Kasm)
+version: latest
+tagline: Manage and transfer files securely using a free, open-source FTP client and
+  server.
+description: Manage and transfer files securely using a free, open-source FTP client
+  and server. Connect easily via FTP, FTPS, and SFTP protocols for reliable sharing.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://filezilla-project.org?utm_source=awesome-docker-compose.com
+repo: https://awesome-docker-compose.com/filezilla-kasm
+support: https://awesome-docker-compose.com/filezilla-kasm

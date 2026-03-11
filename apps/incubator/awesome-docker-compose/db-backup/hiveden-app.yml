@@ -2,11 +2,10 @@ manifestVersion: 1.1
 id: db-backup
 category: database-backup
 name: db-backup
-version: '10.11'
-tagline: Backup multiple database types on a scheduled basis with many customizable
-  options.
-description: Backup multiple database types on a scheduled basis with many customizable
-  options.
+version: latest
+tagline: Run scheduled backups for various databases in a single Docker container.
+description: Run scheduled backups for various databases in a single Docker container.
+  Customize jobs with compression, encryption, and store them locally, on S3, or Azure.
 developer: tiredofit
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/database-backup/db-backup
+website: https://github.com/tiredofit/docker-db-backup?utm_source=awesome-docker-compose.com
 repo: https://github.com/tiredofit/docker-db-backup
 support: https://github.com/tiredofit/docker-db-backup#configuration

@@ -1,11 +1,13 @@
-version: '3'
- 
 services:
-  app:
-    image: tolgee/tolgee
-    volumes:
-      - ./data:/data
+  tolgee:
+    image: tolgee/tolgee:latest
+    container_name: tolgee
     ports:
-      - '25432:25432' # if you would like to access the DB
-      - '8080:8080'
+      - "8080:8080"
+    volumes:
+      - ./tolgee-data:/data
+    environment:
+      - tolgee.authentication.initial-username=${TOLGEE_ADMIN_USERNAME}
+      - tolgee.authentication.initial-password=${TOLGEE_ADMIN_PASSWORD}
+      - tolgee.authentication.jwt-secret=${TOLGEE_JWT_SECRET}
     restart: unless-stopped

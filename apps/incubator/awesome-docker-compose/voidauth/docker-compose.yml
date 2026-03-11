@@ -1,0 +1,32 @@
+services:
+  # ---------------------------------
+  # Your reverse-proxy service here:
+  # caddy, traefik, nginx, etc.
+  # ---------------------------------
+
+  voidauth: 
+    image: voidauth/voidauth:latest
+    restart: unless-stopped
+    volumes:
+      - ./voidauth/config:/app/config
+    environment:
+      # Required environment variables
+      # More environment variable options can be found 
+      #   on the Getting Started page.
+      APP_URL: # required, ex. https://auth.example.com
+      STORAGE_KEY: # required
+      DB_PASSWORD: # required, same as voidauth-db POSTGRES_PASSWORD
+      DB_HOST: voidauth-db # required
+    depends_on:
+      voidauth-db:
+        condition: service_healthy
+
+  voidauth-db:
+    image: postgres:18
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: # required, same as voidauth DB_PASSWORD
+    volumes:
+      - ./db:/var/lib/postgresql/18/docker
+    healthcheck:
+      test: "pg_isready -U postgres -h localhost"

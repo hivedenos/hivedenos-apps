@@ -1,15 +1,43 @@
-version: 
 services:
-  web:
-    image: passit/passit:stable
-    command: bin/start.sh
-    ports:
-      - 
-    environment:
-      DATABASE_URL: postgres://postgres:postgres@YOUR_HOST:5432/postgres
-      SECRET_KEY: change_me
-      IS_DEBUG: 'False'
-      EMAIL_URL: consolemail://
-      DEFAULT_FROM_EMAIL: 
-      EMAIL_CONFIRMATION_HOST: 
+  db:
+    image: postgres:13-alpine
     restart: unless-stopped
+    environment:
+      POSTGRES_USER: passit
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: passit
+    volumes:
+      - ./db-data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    volumes:
+      - ./redis-data:/data
+
+  web:
+    image: passit/passit:latest
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgres://passit:${DB_PASSWORD}@db:5432/passit
+      - REDIS_URL=redis://redis:6379/0
+      - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
+      - DJANGO_DEBUG=False
+    depends_on:
+      - db
+      - redis
+
+  worker:
+    image: passit/passit:latest
+    restart: unless-stopped
+    command: celery -A passit worker -l info
+    environment:
+      - DATABASE_URL=postgres://passit:${DB_PASSWORD}@db:5432/passit
+      - REDIS_URL=redis://redis:6379/0
+      - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
+      - DJANGO_DEBUG=False
+    depends_on:
+      - db
+      - redis

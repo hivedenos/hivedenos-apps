@@ -1,18 +1,14 @@
 services:
   filerise:
-    image: error311/filerise-docker:latest
+    image: error311/filerise:latest
     container_name: filerise
-    ports:
-      - 
     environment:
-      TIMEZONE: 
-      TOTAL_UPLOAD_SIZE: 
-      SECURE: 
-      PERSISTENT_TOKENS_KEY: 
-      SCAN_ON_START: 
-      CHOWN_ON_START: 
+      - PUID=1000
+      - PGID=1000
+      - TZ=${TZ}
     volumes:
-      - ./uploads:/var/www/uploads
-      - ./users:/var/www/users
-      - ./metadata:/var/www/metadata
+      - ./config:/config
+      - ./data:/data
+    ports:
+      - 8080:80
     restart: unless-stopped

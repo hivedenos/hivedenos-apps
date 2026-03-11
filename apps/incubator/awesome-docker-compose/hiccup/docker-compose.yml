@@ -1,10 +1,9 @@
-version: '3.9'
- 
 services:
-  web:
-    image: bleckbeard/hiccup:latest
+  hiccup:
+    image: ghcr.io/bleckbeard/hiccup:latest
+    container_name: hiccup
     ports:
-      - '8899:80'
+      - "8080:80"
     volumes:
-      - ./public/configs/config.json:/usr/share/nginx/html/configs/config.json
+      - ./data:/usr/share/nginx/html/data
     restart: unless-stopped

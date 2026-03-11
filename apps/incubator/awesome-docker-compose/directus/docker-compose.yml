@@ -1,18 +1,35 @@
-version: 
 services:
-  directus:
-    image: directus/directus:11.0.0
-    ports:
-      - 8055:8055
+  database:
+    image: postgres:15
+    container_name: directus-db
+    restart: always
     volumes:
-      - ./database:/directus/database
+      - ./db-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: directus
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: directus
+
+  directus:
+    image: directus/directus:latest
+    container_name: directus-app
+    restart: always
+    ports:
+      - "8055:8055"
+    volumes:
       - ./uploads:/directus/uploads
       - ./extensions:/directus/extensions
+    depends_on:
+      - database
     environment:
-      SECRET: 
-      ADMIN_EMAIL: 
-      ADMIN_PASSWORD: 
-      DB_CLIENT: 
-      DB_FILENAME: 
-      WEBSOCKETS_ENABLED: 
-    restart: unless-stopped  
+      KEY: ${KEY}
+      SECRET: ${SECRET}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+      DB_CLIENT: pg
+      DB_HOST: database
+      DB_PORT: 5432
+      DB_DATABASE: directus
+      DB_USER: directus
+      DB_PASSWORD: ${DB_PASSWORD}
+      WEBSOCKETS_ENABLED: "true"

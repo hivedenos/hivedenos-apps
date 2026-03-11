@@ -1,0 +1,22 @@
+services:
+  mongo:
+    image: mongo:5.0
+    restart: always
+    volumes:
+      - ./data/mongo:/data/db
+    ulimits:
+      nofile:
+        soft: 64000
+        hard: 64000
+
+  countly:
+    image: countly/countly-server:latest
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./data/countly:/var/lib/countly-server
+    depends_on:
+      - mongo
+    environment:
+      - COUNTLY_MB_HOST=mongo

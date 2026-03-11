@@ -1,11 +1,11 @@
 manifestVersion: 1.1
 id: palmr
-category: file-transfer-single-click-drag-n-drop-upload
+category: quick-file-transfer
 name: Palmr
 version: latest
-tagline: Palmr.
-description: Palmr. is a flexible and open-source alternative to file transfer services
-  like WeTransfer, SendGB, Send Anywhere, and Files.fm.
+tagline: Host your own secure file-sharing platform.
+description: Host your own secure file-sharing platform. Upload, manage, and share
+  files with password protection, custom links, and zero tracking or artificial limits.
 developer: kyantech
 dependencies: []
 gallery: []
@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://palmr.kyantech.com.br/
+website: https://github.com/kyantech/Palmr?utm_source=awesome-docker-compose.com
 repo: https://github.com/kyantech/Palmr
-support: https://palmr.kyantech.com.br/docs/2.0.0-beta/installation
+support: https://github.com/kyantech/Palmr

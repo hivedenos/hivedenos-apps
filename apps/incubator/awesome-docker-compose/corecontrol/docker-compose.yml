@@ -1,6 +1,14 @@
-version: "3.8"
-
 services:
-  corecontrol:
+  coreobs:
     image: haedlessdev/corecontrol:latest
+    container_name: coreobs
     restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - TZ=UTC
+      - ADMIN_USERNAME=${ADMIN_USERNAME}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
+      - SECRET_KEY=${SECRET_KEY}

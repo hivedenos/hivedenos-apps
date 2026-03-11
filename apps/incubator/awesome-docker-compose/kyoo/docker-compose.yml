@@ -1,6 +1,54 @@
-version: "3.8"
-
 services:
   kyoo:
-    image: ghcr.io/zoriya/kyoo_transcoder:4.7
+    image: ghcr.io/zoriya/kyoo:latest
+    container_name: kyoo
     restart: unless-stopped
+    ports:
+      - 80:80
+    environment:
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=kyoo
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=kyoo
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - MEILISEARCH_HOST=http://meilisearch:7700
+      - MEILISEARCH_API_KEY=${MEILI_MASTER_KEY}
+      - JWT_SECRET=${JWT_SECRET}
+    volumes:
+      - ./data/config:/app/config
+      - ./data/logs:/app/logs
+      - ./media:/app/media
+    depends_on:
+      - postgres
+      - redis
+      - meilisearch
+
+  postgres:
+    image: postgres:15-alpine
+    container_name: kyoo_postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=kyoo
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=kyoo
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+
+  redis:
+    image: redis:alpine
+    container_name: kyoo_redis
+    restart: unless-stopped
+    volumes:
+      - ./data/redis:/data
+
+  meilisearch:
+    image: getmeili/meilisearch:v1.3
+    container_name: kyoo_meilisearch
+    restart: unless-stopped
+    environment:
+      - MEILI_MASTER_KEY=${MEILI_MASTER_KEY}
+      - MEILI_NO_ANALYTICS=true
+    volumes:
+      - ./data/meili:/meili_data

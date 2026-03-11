@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: garage-web-ui
+category: object-storage-and-file-server
+name: Garage Web UI
+version: v2.0.0
+tagline: Monitor cluster health, manage buckets, and browse objects for your self-hosted
+  S3-compatible storage service using a l...
+description: Monitor cluster health, manage buckets, and browse objects for your self-hosted
+  S3-compatible storage service using a lightweight, responsive web interface.
+developer: khairul169
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/khairul169/garage-webui?utm_source=awesome-docker-compose.com
+repo: https://github.com/khairul169/garage-webui
+support: https://github.com/khairul169/garage-webui#docker-compose

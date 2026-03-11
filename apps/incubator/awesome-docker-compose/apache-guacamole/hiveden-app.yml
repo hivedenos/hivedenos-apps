@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: apache-guacamole
+category: remote-access
+name: Apache Guacamole
+version: '15'
+tagline: Access your remote desktops from any device with a web browser.
+description: Access your remote desktops from any device with a web browser. This
+  clientless gateway supports VNC, RDP, and SSH protocols without requiring any plugins.
+developer: apache
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://guacamole.apache.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/apache/guacamole-server
+support: https://guacamole.incubator.apache.org/doc/gug/guacamole-docker.html

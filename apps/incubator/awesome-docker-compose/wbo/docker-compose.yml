@@ -1,9 +1,9 @@
-version: 
 services:
   wbo:
     image: lovasoa/wbo:latest
-    ports:
-      - 5001:80
-    volumes:
-      - $(pwd)/wbo-boards:/opt/app/server-data
+    container_name: whitebophir
     restart: unless-stopped
+    ports:
+      - "5001:80"
+    volumes:
+      - ./data:/opt/app/server-data

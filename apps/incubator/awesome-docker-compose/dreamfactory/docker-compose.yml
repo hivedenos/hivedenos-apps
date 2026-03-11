@@ -1,78 +1,43 @@
-version: '3'
- 
 services:
-  mysql:
+  dreamfactory:
+    image: dreamfactorysoftware/df-docker:latest
+    container_name: dreamfactory
+    ports:
+      - "8080:80"
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: dreamfactory
-      MYSQL_USER: df_admin
-      MYSQL_PASSWORD: df_admin
-    image: mysql:5.7
+      - DB_CONNECTION=mysql
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_DATABASE=dreamfactory
+      - DB_USERNAME=dreamfactory
+      - DB_PASSWORD=${DB_PASSWORD}
+      - CACHE_DRIVER=redis
+      - REDIS_HOST=redis
+      - APP_KEY=${APP_KEY}
+      - DF_SETUP_ADMIN_EMAIL=${ADMIN_EMAIL}
+      - DF_SETUP_ADMIN_PASSWORD=${ADMIN_PASSWORD}
     volumes:
-      - df-mysql:/var/lib/mysql
-      
-  example_data:
-    environment:
-      DATASETS: pagila
-      POSTGRES_PASSWORD: root_pw
-    image: aa8y/postgres-dataset    
-      
-  redis:
-    image: redis
- 
-  web:
+      - ./df-storage:/opt/dreamfactory/storage
     depends_on:
       - mysql
+      - redis
+    restart: unless-stopped
+
+  mysql:
+    image: mysql:8.0
+    container_name: dreamfactory-mysql
     environment:
-      SERVERNAME: dreamfactory.local
-
-      # APP_KEY: YOUR_APP_KEY
-      DB_DRIVER: mysql
-      DB_HOST: mysql
-      DB_USERNAME: df_admin
-      DB_PASSWORD: df_admin
-      DB_DATABASE: dreamfactory
-      CACHE_DRIVER: redis
-      CACHE_HOST: redis
-      CACHE_DATABASE: 0
-      CACHE_PORT: 6379
- 
-#      APP_LOG_LEVEL: debug
-
-
- 
-#      Uncomment and configure to enable emailing
-
-#      SSMTP_root:
-#      SSMTP_mailhub:
-#      SSMTP_AuthUser:
-#      SSMTP_AuthPass:
-#      SSMTP_UseSTARTTLS:
-#      SSMTP_UseTLS:
-#      SSMTP_AuthMethod:
-#      SSMTP_FromLineOverride:
- 
-#      Uncomment to enable Logs DB
-#      LOGSDB_HOST: logsdb
-#      LOGSDB_DATABASE: access_log
-#      LOGSDB_USERNAME: mongoadmin
-#      LOGSDB_PASSWORD: password
-
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=dreamfactory
+      - MYSQL_USER=dreamfactory
+      - MYSQL_PASSWORD=${DB_PASSWORD}
     volumes:
-      - df-storage:/opt/dreamfactory/storage
-    build: .
-    ports:
-      - 
- 
-#  Uncomment to enable Logs DB
-#  logsdb:
-#    image: mongo:4.0-xenial
-#    environment:
-#      MONGO_INITDB_ROOT_USERNAME: mongoadmin
-#      MONGO_INITDB_ROOT_PASSWORD: password
- 
-volumes:
-  df-storage:
-    driver: local
-  df-mysql:
-    driver: local
+      - ./mysql-data:/var/lib/mysql
+    restart: unless-stopped
+
+  redis:
+    image: redis:alpine
+    container_name: dreamfactory-redis
+    volumes:
+      - ./redis-data:/data
+    restart: unless-stopped

@@ -3,10 +3,10 @@ id: damselfly
 category: photo-server
 name: Damselfly
 version: latest
-tagline: Fast server-based photo management system for large collections of images.
-description: Fast server-based photo management system for large collections of images.
-  Includes face detection, face & object recognition, powerful search, and EXIF Keyword
-  tagging. Runs on Linux, MacOS and Windows.
+tagline: Organize massive photo libraries with a self-hosted management system.
+description: Organize massive photo libraries with a self-hosted management system.
+  Use powerful AI for face and object recognition, and find any image in seconds with
+  fast search.
 developer: webreaper
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/photo-server/damselfly
+website: https://damselfly.info?utm_source=awesome-docker-compose.com
 repo: https://github.com/webreaper/damselfly
 support: https://github.com/Webreaper/Damselfly/blob/master/docs/Installation.md

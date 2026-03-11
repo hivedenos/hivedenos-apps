@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: shelf-nu
+category: inventory-management
+name: Shelf.nu
+version: latest
+tagline: Take control of your physical and digital gear with an open-source platform.
+description: Take control of your physical and digital gear with an open-source platform.
+  Track inventory, manage reservations, and generate custom QR labels easily.
+developer: Shelf-nu
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.shelf.nu?utm_source=awesome-docker-compose.com
+repo: https://github.com/Shelf-nu/shelf.nu
+support: https://github.com/Shelf-nu/shelf.nu/blob/main/docs/docker.md

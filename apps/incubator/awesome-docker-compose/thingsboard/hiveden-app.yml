@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: thingsboard
 category: internet-of-things-iot
-name: Thingsboard
+name: ThingsBoard
 version: latest
-tagline: Open-source IoT Platform - Device management, data collection, processing
-  and visualization.
-description: Open-source IoT Platform - Device management, data collection, processing
-  and visualization.
+tagline: Manage IoT devices, collect telemetry data, and build real-time dashboards.
+description: Manage IoT devices, collect telemetry data, and build real-time dashboards.
+  This open-source platform offers fault-tolerant processing and high scalability.
 developer: thingsboard
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://thingsboard.io/
+website: https://thingsboard.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/thingsboard/thingsboard
 support: https://thingsboard.io/docs/user-guide/install/docker/

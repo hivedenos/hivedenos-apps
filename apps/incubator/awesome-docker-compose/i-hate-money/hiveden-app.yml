@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: i-hate-money
+category: budgeting
+name: I hate money
+version: latest
+tagline: Manage shared expenses for housemates, trips, or any group.
+description: Manage shared expenses for housemates, trips, or any group. Create secure
+  projects to track who paid what and settle up without confusion or stress.
+developer: spiral-project
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://ihatemoney.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/spiral-project/ihatemoney
+support: https://ihatemoney.readthedocs.io/en/latest/index.html

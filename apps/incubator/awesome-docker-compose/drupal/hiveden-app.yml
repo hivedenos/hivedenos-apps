@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: drupal
 category: cms
 name: Drupal
-version: 10-apache
-tagline: Advanced open source content management platform.
-description: Advanced open source content management platform.
+version: '10'
+tagline: Build scalable digital experiences with a fully composable, open-source CMS.
+description: Build scalable digital experiences with a fully composable, open-source
+  CMS. Utilize integrated AI tools, visual page building, and enterprise-grade security.
 developer: Awesome Docker Compose
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.drupal.org/
-repo: https://awesome-docker-compose.com/apps/cms/drupal
-support: https://awesome-docker-compose.com/apps/cms/drupal
+website: https://www.drupal.org?utm_source=awesome-docker-compose.com
+repo: https://awesome-docker-compose.com/drupal
+support: https://awesome-docker-compose.com/drupal

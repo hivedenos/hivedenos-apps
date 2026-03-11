@@ -1,12 +1,12 @@
 manifestVersion: 1.1
 id: retrom
-category: games-emulation
+category: game-emulation
 name: Retrom
 version: latest
-tagline: A centralized game library/collection management service with a focus on
-  emulation.
-description: A centralized game library/collection management service with a focus
-  on emulation.
+tagline: Host your own cloud gaming library to manage, install, and play DRM-free
+  and emulated games across Windows, macOS, and...
+description: Host your own cloud gaming library to manage, install, and play DRM-free
+  and emulated games across Windows, macOS, and Linux devices from a single interface.
 developer: jmberesford
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/games/emulation/retrom
+website: https://github.com/jmberesford/retrom?utm_source=awesome-docker-compose.com
 repo: https://github.com/jmberesford/retrom
-support: https://github.com/jmberesford/retrom#docker-recommended
+support: https://github.com/JMBeresford/retrom/wiki/Installation

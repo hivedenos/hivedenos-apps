@@ -1,0 +1,12 @@
+services:
+  openhabittracker:
+    image: jinjinov/openhabittracker:latest
+    container_name: openhabittracker
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - TZ=${TZ}
+      - ASPNETCORE_ENVIRONMENT=Production

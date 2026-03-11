@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: meelo
-category: media-server
+category: music-server
 name: Meelo
 version: latest
-tagline: Personal Music Server, designed for collectors and music maniacs.
-description: Personal Music Server, designed for collectors and music maniacs.
+tagline: Take control of your audio library with a self-hosted music server.
+description: Take control of your audio library with a self-hosted music server. Manage
+  multiple album versions, track rare B-sides, and integrate music videos easily.
 developer: Arthi-chaud
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://arthi-chaud.github.io/Meelo/
+website: https://arthi-chaud.github.io/Meelo?utm_source=awesome-docker-compose.com
 repo: https://github.com/Arthi-chaud/Meelo
 support: https://arthi-chaud.github.io/Meelo/setup/tldr/

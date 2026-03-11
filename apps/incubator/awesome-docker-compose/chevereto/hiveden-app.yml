@@ -2,10 +2,11 @@ manifestVersion: 1.1
 id: chevereto
 category: image-hosting
 name: Chevereto
-version: latest
-tagline: Ultimate image sharing software.
-description: Ultimate image sharing software. Create your very own personal image
-  hosting website in just minutes.
+version: '10.11'
+tagline: Build your own image and video hosting service on your server.
+description: Build your own image and video hosting service on your server. Set content
+  rules, manage users and albums, and connect to external storage like S3 or Google
+  Cloud.
 developer: chevereto
 dependencies: []
 gallery: []
@@ -14,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://chevereto.com/
+website: https://chevereto.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/chevereto/chevereto
 support: https://github.com/chevereto/docker

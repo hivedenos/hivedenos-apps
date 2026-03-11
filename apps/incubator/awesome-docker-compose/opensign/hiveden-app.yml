@@ -1,12 +1,12 @@
 manifestVersion: 1.1
 id: opensign
 category: document-management
-name: Opensign
+name: OpenSign
 version: latest
-tagline: Free, open source & self-hosted document signing software (alternative to
-  DocuSign).
-description: Free, open source & self-hosted document signing software (alternative
-  to DocuSign).
+tagline: Securely sign, organize, and deliver PDF documents using a free, open-source
+  e-signature platform.
+description: Securely sign, organize, and deliver PDF documents using a free, open-source
+  e-signature platform. Get unlimited signing, collaboration, and secure storage.
 developer: opensignlabs
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.opensignlabs.com/
+website: https://www.opensignlabs.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/opensignlabs/opensign
 support: https://github.com/opensignlabs/opensign#installation

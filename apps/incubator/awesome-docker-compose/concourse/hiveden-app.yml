@@ -2,11 +2,11 @@ manifestVersion: 1.1
 id: concourse
 category: ci-and-cd
 name: Concourse
-version: latest
-tagline: Concourse is a CI tool that treats pipelines as first class objects and containerizes
-  every step along the way.
-description: Concourse is a CI tool that treats pipelines as first class objects and
-  containerizes every step along the way.
+version: '15'
+tagline: Create powerful, container-based CI/CD pipelines using simple YAML.
+description: Create powerful, container-based CI/CD pipelines using simple YAML. Visualize
+  your entire workflow, get reproducible builds, and debug failures with direct container
+  access.
 developer: concourse
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://concourse-ci.org/
+website: https://concourse-ci.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/concourse/concourse
 support: https://github.com/concourse/concourse-docker

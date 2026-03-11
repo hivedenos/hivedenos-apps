@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: romm
-category: games-emulation
+category: game-emulation
 name: Romm
 version: latest
-tagline: RomM (ROM Manager) allows you to scan, enrich, and browse your game collection
-  with a clean and responsive interface.
-description: RomM (ROM Manager) allows you to scan, enrich, and browse your game collection
-  with a clean and responsive interface.
+tagline: Organize your game collection with a self-hosted manager.
+description: Organize your game collection with a self-hosted manager. Fetch metadata
+  automatically, play directly in your browser, and sync progress across all devices.
 developer: rommapp
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://romm.app/
+website: https://romm.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/rommapp/romm
-support: https://github.com/rommapp/romm#installation
+support: https://docs.romm.app/latest/Getting-Started/Quick-Start-Guide/#build

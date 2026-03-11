@@ -1,30 +1,31 @@
-version: 
 services:
-  postal:
-    image: ${POSTAL_IMAGE}
-    depends_on:
-      - mariadb
-    entrypoint: []
-    volumes:
-      - 
-    environment:
-      POSTAL_SIGNING_KEY_PATH: /config/signing.key
-      MAIN_DB_HOST: mariadb
-      MAIN_DB_USERNAME: root
-      MESSAGE_DB_HOST: mariadb
-      MESSAGE_DB_USERNAME: root
-      LOGGING_ENABLED: 
-      RAILS_ENVIRONMENT: test
-      RAILS_LOG_ENABLED: 
-      WAIT_FOR_TIMEOUT: 90
-      WAIT_FOR_TARGETS: |-
-        mariadb:3306
-    restart: always   
-    
   mariadb:
-    image: mariadb
+    image: mariadb:10.6
     restart: always
     environment:
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD}
       MARIADB_DATABASE: postal
-      MARIADB_ALLOW_EMPTY_PASSWORD: 'yes'
-      MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 'yes'
+    volumes:
+      - ./data/mariadb:/var/lib/mysql
+
+  rabbitmq:
+    image: rabbitmq:3.12
+    restart: always
+    environment:
+      RABBITMQ_DEFAULT_USER: postal
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASSWORD}
+      RABBITMQ_DEFAULT_VHOST: postal
+    volumes:
+      - ./data/rabbitmq:/var/lib/rabbitmq
+
+  postal:
+    image: ghcr.io/postalserver/postal:2
+    restart: always
+    ports:
+      - "5000:5000"
+      - "2525:25"
+    volumes:
+      - ./config:/config
+    depends_on:
+      - mariadb
+      - rabbitmq

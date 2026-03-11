@@ -3,10 +3,10 @@ id: picsur
 category: image-hosting
 name: Picsur
 version: latest
-tagline: A simple imaging hosting platform that allows you to easily host, edit, and
-  share images.
-description: A simple imaging hosting platform that allows you to easily host, edit,
-  and share images.
+tagline: Create your own image sharing platform.
+description: Create your own image sharing platform. Upload, convert, and edit images
+  in various formats. Manage users with roles, strip EXIF data, and deploy easily
+  with Docker.
 developer: CaramelFur
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://picsur.org/
+website: https://github.com/CaramelFur/Picsur?utm_source=awesome-docker-compose.com
 repo: https://github.com/CaramelFur/Picsur
 support: https://github.com/CaramelFur/Picsur#running-your-own-instance

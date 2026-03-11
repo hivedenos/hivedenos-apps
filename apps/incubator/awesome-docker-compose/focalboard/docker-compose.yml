@@ -1,7 +1,9 @@
-version: 
 services:
   focalboard:
     image: mattermost/focalboard
+    container_name: focalboard
     ports:
-      - 80:8000
-    restart: always   
+      - 8000:8000
+    volumes:
+      - ./data:/var/lib/focalboard
+    restart: unless-stopped

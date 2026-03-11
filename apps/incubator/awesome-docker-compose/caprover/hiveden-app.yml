@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: caprover
 category: paas
-name: Caprover
+name: CapRover
 version: latest
-tagline: Build your own PaaS in a few minutes.
-description: Build your own PaaS in a few minutes.
+tagline: Manage and deploy web apps and databases with a simple interface.
+description: Manage and deploy web apps and databases with a simple interface. Get
+  free SSL, clustering, and one-click installs on your own servers. Save time and
+  money.
 developer: caprover
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://caprover.com/
+website: https://caprover.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/caprover/caprover
 support: https://caprover.com/docs/get-started.html

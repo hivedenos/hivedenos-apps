@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: swing-music
+category: music-server
+name: Swing Music
+version: latest
+tagline: Set up a fast, self-hosted music streaming server for your personal library.
+description: Set up a fast, self-hosted music streaming server for your personal library.
+  Discover related artists, browse by folder, and enjoy a beautiful web interface.
+developer: swingmx
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://swingmx.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/swingmx/swingmusic
+support: https://swingmx.com/guide/getting-started.html

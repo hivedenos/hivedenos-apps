@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: alerthub
 category: miscellaneous
 name: AlertHub
-version: '2'
-tagline: AlertHub is a simple tool to get alerted from GitHub releases.
-description: AlertHub is a simple tool to get alerted from GitHub releases.
+version: latest
+tagline: Track repository updates across GitHub and GitLab.
+description: Track repository updates across GitHub and GitLab. Receive instant notifications
+  via email, Telegram, or push services, and generate custom RSS feeds.
 developer: Ardakilic
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/miscellaneous/alerthub
+website: https://github.com/Ardakilic/alerthub?utm_source=awesome-docker-compose.com
 repo: https://github.com/Ardakilic/alerthub
 support: https://github.com/Ardakilic/alerthub#docker-container

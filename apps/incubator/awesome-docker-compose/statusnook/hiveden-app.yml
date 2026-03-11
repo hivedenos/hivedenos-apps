@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: statusnook
 category: network-monitoring
 name: Statusnook
-version: v1.26.3
-tagline: Effortlessly deploy a status page and start monitoring endpoints in minutes.
-description: Effortlessly deploy a status page and start monitoring endpoints in minutes.
+version: latest
+tagline: Deploy a self-hosted status page to monitor endpoints in minutes.
+description: Deploy a self-hosted status page to monitor endpoints in minutes. Communicate
+  incidents and maintenance with your users via email and Slack. Simple setup.
 developer: goksan
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://statusnook.com/
+website: https://statusnook.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/goksan/statusnook
 support: https://github.com/goksan/statusnook#docker

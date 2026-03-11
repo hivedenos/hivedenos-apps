@@ -2,9 +2,11 @@ manifestVersion: 1.1
 id: librenms
 category: system-monitoring
 name: LibreNMS
-version: '10'
-tagline: Community-based GPL-licensed network monitoring system.
-description: Community-based GPL-licensed network monitoring system.
+version: '10.11'
+tagline: Automatically discover and monitor your network with extensive device support.
+description: Automatically discover and monitor your network with extensive device
+  support. Get flexible alerts via email or Slack, access a full API, and scale with
+  distributed polling.
 developer: librenms
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.librenms.org/
-repo: https://github.com/librenms/docker
-support: https://docs.librenms.org/Installation/Docker/
+website: https://www.librenms.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/librenms/librenms
+support: https://github.com/librenms/docker

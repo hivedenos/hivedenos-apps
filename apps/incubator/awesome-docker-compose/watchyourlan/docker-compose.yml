@@ -1,18 +1,14 @@
-version: 
- 
 services:
-  wyl:
-    image: aceberg/watchyourlan:v2
-    network_mode:         
+  watchyourlan:
+    image: aceberg/watchyourlan
+    container_name: watchyourlan
+    network_mode: "host"
     restart: unless-stopped
-    volumes:
-    - ~/.dockerdata/wyl:/data/WatchYourLAN
     environment:
-      TZ: Asia/Novosibirsk              # required: needs your TZ for correct time
-      IFACES:   # required: 1 or more interface
-      HOST:                    # optional, default: 0.0.0.0
-      PORT:                       # optional, default: 8840
-      TIMEOUT:                     # optional, time in seconds, default: 120
-      SHOUTRRR_URL:                   # optional, set url to notify
-      THEME:                      # optional
-      COLOR:                      # optional
+      - IFACE=eth0
+      - TZ=UTC
+      - GUIIP=0.0.0.0
+      - GUIPORT=8840
+      - SHOUTRRR_URL=${SHOUTRRR_URL}
+    volumes:
+      - ./data:/data/WatchYourLAN

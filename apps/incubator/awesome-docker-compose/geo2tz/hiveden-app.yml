@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: geo2tz
-category: maps-and-gps
+category: map-and-gps
 name: Geo2Tz
 version: latest
-tagline: Get the timezone from geo coordinates (lat, lon).
-description: Get the timezone from geo coordinates (lat, lon).
+tagline: Run your own REST API to find timezones from geo-coordinates.
+description: Run your own REST API to find timezones from geo-coordinates. A simple,
+  stable, and private solution for handling location data without third-party services.
 developer: noandrea
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/maps-and-gps/geo2tz
+website: https://github.com/noandrea/geo2tz?utm_source=awesome-docker-compose.com
 repo: https://github.com/noandrea/geo2tz
 support: https://github.com/noandrea/geo2tz#docker

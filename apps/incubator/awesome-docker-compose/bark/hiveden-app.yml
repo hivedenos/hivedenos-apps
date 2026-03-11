@@ -3,10 +3,10 @@ id: bark
 category: notification
 name: Bark
 version: latest
-tagline: Bark is an iOS App which allows you to push customed notifications to your
-  iPhone.
-description: Bark is an iOS App which allows you to push customed notifications to
-  your iPhone.
+tagline: Monitor texts, emails, and social media for signs of cyberbullying, depression,
+  and online predators.
+description: Monitor texts, emails, and social media for signs of cyberbullying, depression,
+  and online predators. Keep children safe across all their digital devices.
 developer: Finb
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://bark.day.app/
+website: https://bark.day.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/Finb/bark-server
 support: https://github.com/Finb/bark-server#installation

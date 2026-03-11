@@ -3,8 +3,11 @@ id: changedetection-io
 category: automation
 name: changedetection.io
 version: latest
-tagline: Self-hosted tool for staying up-to-date with web-site content changes.
-description: Self-hosted tool for staying up-to-date with web-site content changes.
+tagline: Monitor any website for changes, track product restocks, and receive instant
+  alerts.
+description: Monitor any website for changes, track product restocks, and receive
+  instant alerts. Select specific elements and get notifications on Discord, Slack,
+  and more.
 developer: dgtlmoon
 dependencies: []
 gallery: []
@@ -13,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://changedetection.io/
+website: https://changedetection.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/dgtlmoon/changedetection.io
 support: https://github.com/dgtlmoon/changedetection.io#installation

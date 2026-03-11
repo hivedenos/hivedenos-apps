@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: transmission-linuxserver-io
+category: torrenting
+name: Transmission (LinuxServer.io)
+version: latest
+tagline: Download files quickly with a lightweight, open-source BitTorrent client.
+description: Download files quickly with a lightweight, open-source BitTorrent client.
+  Enjoy native OS integration, zero ads, and powerful features without tracking.
+developer: transmission
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://transmissionbt.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/transmission/transmission
+support: https://github.com/linuxserver/docker-transmission

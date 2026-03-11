@@ -3,10 +3,9 @@ id: 2fauth
 category: miscellaneous
 name: 2FAuth
 version: latest
-tagline: A web app to manage your Two-Factor Authentication (2FA) accounts and generate
-  their security codes.
-description: A web app to manage your Two-Factor Authentication (2FA) accounts and
-  generate their security codes.
+tagline: Generate and manage one-time passwords securely from any device.
+description: Generate and manage one-time passwords securely from any device. This
+  self-hosted web app offers QR scanning, data encryption, and multi-user support.
 developer: Bubka
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docs.2fauth.app/
+website: https://docs.2fauth.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/Bubka/2FAuth
 support: https://docs.2fauth.app/getting-started/installation/docker/docker-compose/

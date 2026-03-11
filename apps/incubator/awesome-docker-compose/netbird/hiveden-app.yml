@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: netbird
+category: mesh-networking
+name: NetBird
+version: latest
+tagline: Replace legacy VPNs with an open-source, WireGuard-based overlay network.
+description: Replace legacy VPNs with an open-source, WireGuard-based overlay network.
+  Enforce Zero Trust access, manage SSO and MFA, and secure remote connectivity.
+developer: netbirdio
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://netbird.io?utm_source=awesome-docker-compose.com
+repo: https://github.com/netbirdio/netbird
+support: https://docs.netbird.io/get-started/install/docker

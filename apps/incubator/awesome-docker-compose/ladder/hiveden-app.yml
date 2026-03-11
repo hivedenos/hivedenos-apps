@@ -1,11 +1,12 @@
 manifestVersion: 1.1
 id: ladder
-category: internet-tools
+category: internet-tool
 name: Ladder
 version: latest
-tagline: Selfhosted alternative to 12ft.io.
-description: Selfhosted alternative to 12ft.io. and 1ft.io bypass paywalls with a
-  proxy ladder and remove CORS headers from any URL.
+tagline: Deploy a self-hosted HTTP proxy to bypass paywalls, strip CORS headers, and
+  modify web requests.
+description: Deploy a self-hosted HTTP proxy to bypass paywalls, strip CORS headers,
+  and modify web requests. Features custom rulesets, API access, and ad removal.
 developer: everywall
 dependencies: []
 gallery: []
@@ -14,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/internet-tools/ladder
+website: https://github.com/everywall/ladder?utm_source=awesome-docker-compose.com
 repo: https://github.com/everywall/ladder
 support: https://github.com/everywall/ladder#docker

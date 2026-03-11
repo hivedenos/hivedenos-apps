@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: nginx-proxy-manager
-category: web-servers
+category: web-server
 name: Nginx Proxy Manager
 version: latest
-tagline: Nginx Proxy Manager is an easy way to accomplish reverse proxying hosts with
-  SSL termination.
-description: Nginx Proxy Manager is an easy way to accomplish reverse proxying hosts
-  with SSL termination.
+tagline: Easily manage Nginx proxy hosts with a powerful web UI.
+description: Easily manage Nginx proxy hosts with a powerful web UI. Secure your services
+  with free, automatic SSL certificates from Let's Encrypt. Ideal for home networks.
 developer: NginxProxyManager
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://nginxproxymanager.com/
+website: https://nginxproxymanager.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/NginxProxyManager/nginx-proxy-manager
 support: https://nginxproxymanager.com/guide/

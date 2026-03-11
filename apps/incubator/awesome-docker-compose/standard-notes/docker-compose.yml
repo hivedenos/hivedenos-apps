@@ -1,62 +1,41 @@
-version: '3.9'
 services:
+  db:
+    image: mysql:8.0
+    restart: unless-stopped
+    volumes:
+      - ./db-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: standardnotes
+      MYSQL_USER: standardnotes
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    volumes:
+      - ./redis-data:/data
+
   server:
-    image: standardnotes/server
-    env_file: .env
-    container_name: server_self_hosted
+    image: standardnotes/server:latest
     restart: unless-stopped
     ports:
-      - 3000:3000
-      - 3125:3104
-    volumes:
-      - ./logs:/var/lib/server/logs
-      - ./uploads:/opt/server/packages/files/dist/uploads
-    networks:
-      - standardnotes_self_hosted
- 
-  localstack:
-    image: localstack/localstack:3.0
-    container_name: localstack_self_hosted
-    expose:
-      - 4566
-    restart: unless-stopped
+      - "3000:3000"
+    depends_on:
+      - db
+      - redis
     environment:
-      - SERVICES=sns,sqs
-      - HOSTNAME_EXTERNAL=localstack
-      - LS_LOG=warn
-    volumes:
-      - ./localstack_bootstrap.sh:/etc/localstack/init/ready.d/localstack_bootstrap.sh
-    networks:
-      - standardnotes_self_hosted
- 
-  db:
-    image: mysql:8
-    container_name: db_self_hosted
-    environment:
-      - MYSQL_DATABASE=standard_notes_db
-      - MYSQL_USER=std_notes_user
-      - MYSQL_ROOT_PASSWORD=changeme123
-      - MYSQL_PASSWORD=changeme123
-    expose:
-      - 3306
-    restart: unless-stopped
-    volumes:
-      - ./data/mysql:/var/lib/mysql
-      - ./data/import:/docker-entrypoint-initdb.d
-    networks:
-      - standardnotes_self_hosted
- 
-  cache:
-    image: redis:6.0-alpine
-    container_name: cache_self_hosted
-    volumes:
-      - ./data/redis/:/data
-    expose:
-      - 6379
-    restart: unless-stopped
-    networks:
-      - standardnotes_self_hosted
- 
-networks:
-  standardnotes_self_hosted:
-    name: standardnotes_self_hosted
+      - DB_CONNECTION=mysql
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_DATABASE=standardnotes
+      - DB_USERNAME=standardnotes
+      - DB_PASSWORD=${MYSQL_PASSWORD}
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - SECRET_KEY=${SECRET_KEY}
+      - VALET_TOKEN=${VALET_TOKEN}
+      - ENCRYPTION_SERVER_KEY=${ENCRYPTION_SERVER_KEY}
+      - USER_JWT_SECRET=${USER_JWT_SECRET}
+      - AUTH_JWT_SECRET=${AUTH_JWT_SECRET}
+      - DISABLE_USER_REGISTRATION=false

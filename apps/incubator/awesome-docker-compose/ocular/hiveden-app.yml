@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: ocular
+category: budgeting
+name: Ocular
+version: v2
+tagline: Manage finances with a self-hosted, privacy-focused budgeting app.
+description: Manage finances with a self-hosted, privacy-focused budgeting app. Track
+  expenses across multiple years, view detailed statistics, and keep your data secure.
+developer: simonwep
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://simonwep.github.io/ocular?utm_source=awesome-docker-compose.com
+repo: https://github.com/simonwep/ocular
+support: https://simonwep.github.io/ocular/pages/deploy.html

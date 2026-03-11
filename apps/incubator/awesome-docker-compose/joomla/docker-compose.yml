@@ -1,34 +1,27 @@
 services:
- 
   joomla:
-    image: joomla
+    image: joomla:latest
     restart: always
     ports:
       - 8080:80
     environment:
       JOOMLA_DB_HOST: db
-      JOOMLA_DB_USER: joomla
-      JOOMLA_DB_PASSWORD: examplepass
-      JOOMLA_DB_NAME: joomla_db
-      JOOMLA_SITE_NAME: Joomla
-      JOOMLA_ADMIN_USER: Joomla Hero
-      JOOMLA_ADMIN_USERNAME: joomla
-      JOOMLA_ADMIN_PASSWORD: joomla@secured
-      JOOMLA_ADMIN_EMAIL: joomla@example.com
+      JOOMLA_DB_USER: ${JOOMLA_DB_USER}
+      JOOMLA_DB_PASSWORD: ${JOOMLA_DB_PASSWORD}
+      JOOMLA_DB_NAME: ${JOOMLA_DB_NAME}
     volumes:
       - ./joomla_data:/var/www/html
-    networks:
-      - joomla_network
- 
+    depends_on:
+      - db
+
   db:
     image: mysql:8.0
     restart: always
+    command: --default-authentication-plugin=mysql_native_password
     environment:
-      MYSQL_DATABASE: joomla_db
-      MYSQL_USER: joomla
-      MYSQL_PASSWORD: examplepass
-      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${JOOMLA_DB_NAME}
+      MYSQL_USER: ${JOOMLA_DB_USER}
+      MYSQL_PASSWORD: ${JOOMLA_DB_PASSWORD}
     volumes:
       - ./db_data:/var/lib/mysql
-    networks:
-      - joomla_network

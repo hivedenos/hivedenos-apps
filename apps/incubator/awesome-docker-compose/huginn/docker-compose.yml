@@ -1,9 +1,25 @@
-version: 
 services:
   huginn:
     image: huginn/huginn
+    restart: always
     ports:
-      - 3000:3000
+      - "3000:3000"
+    environment:
+      - DATABASE_ADAPTER=mysql2
+      - DATABASE_HOST=db
+      - DATABASE_PORT=3306
+      - HUGINN_DATABASE_NAME=huginn
+      - HUGINN_DATABASE_USERNAME=root
+      - HUGINN_DATABASE_PASSWORD=${HUGINN_DATABASE_PASSWORD}
+      - APP_SECRET_TOKEN=${APP_SECRET_TOKEN}
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=${HUGINN_DATABASE_PASSWORD}
+      - MYSQL_DATABASE=huginn
     volumes:
-      - /home/huginn/mysql-data:/var/lib/mysql
-    restart: unless-stopped
+      - ./mysql-data:/var/lib/mysql

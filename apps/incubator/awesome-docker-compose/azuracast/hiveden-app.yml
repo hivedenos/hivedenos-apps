@@ -3,8 +3,9 @@ id: azuracast
 category: audio-server
 name: AzuraCast
 version: latest
-tagline: A modern and accessible self-hosted web radio management suite.
-description: A modern and accessible self-hosted web radio management suite.
+tagline: Launch a self-hosted web radio station with ease.
+description: Launch a self-hosted web radio station with ease. Manage media, playlists,
+  multiple stations, and user permissions from an intuitive web-based interface.
 developer: azuracast
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.azuracast.com/
+website: https://www.azuracast.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/azuracast/azuracast
 support: https://www.azuracast.com/docs/getting-started/installation/

@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: workout-lol
+category: fitness-tracker
+name: Workout.lol
+version: 15-alpine
+tagline: Generate personalized workout routines in seconds.
+description: Generate personalized workout routines in seconds. Simply select your
+  available equipment and the muscle groups you want to train to get a custom plan.
+developer: workout-lol
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://workout.lol?utm_source=awesome-docker-compose.com
+repo: https://github.com/workout-lol/workout-lol
+support: https://github.com/workout-lol/workout-lol/blob/main/docker/docker-compose.yml

@@ -2,10 +2,10 @@ manifestVersion: 1.1
 id: librephotos
 category: photo-server
 name: LibrePhotos
-version: ${tag}
-tagline: Self hosted wannabe Google Photos clone, with a slight focus on cool graphs.
-description: Self hosted wannabe Google Photos clone, with a slight focus on cool
-  graphs.
+version: latest
+tagline: Manage your entire photo library on your own server.
+description: Manage your entire photo library on your own server. Get powerful AI
+  organization, support for all file types, and access your memories from any device.
 developer: LibrePhotos
 dependencies: []
 gallery: []
@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docs.librephotos.com/
-repo: https://github.com/LibrePhotos/librephotos-docker
+website: https://docs.librephotos.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/LibrePhotos/librephotos
 support: https://docs.librephotos.com/docs/installation/standard-install/

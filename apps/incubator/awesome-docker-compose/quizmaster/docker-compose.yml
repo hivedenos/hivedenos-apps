@@ -1,9 +1,6 @@
-version: 
 services:
-  app:
-    image: nymanjens/quizmaster:latest
-    ports: []
-    volumes:
-      - ./conf/quiz:/app/conf/quiz
-      - ./conf/application.conf:/app/conf/application.conf
-    command: 
+  quizmaster:
+    image: nymanjens/quizmaster
+    ports:
+      - "80:8080"
+    restart: unless-stopped

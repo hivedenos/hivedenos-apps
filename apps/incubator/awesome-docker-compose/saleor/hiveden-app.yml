@@ -2,9 +2,11 @@ manifestVersion: 1.1
 id: saleor
 category: e-commerce
 name: Saleor
-version: '3.20'
-tagline: Django based open-sourced e-commerce storefront.
-description: Django based open-sourced e-commerce storefront.
+version: '3.19'
+tagline: Architect complex, omnichannel shopping experiences using an open-source,
+  headless commerce platform.
+description: Architect complex, omnichannel shopping experiences using an open-source,
+  headless commerce platform. Leverage robust GraphQL APIs to scale without lock-in.
 developer: saleor
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://saleor.io/
+website: https://saleor.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/saleor/saleor-platform
 support: https://docs.saleor.io/quickstart/running-locally

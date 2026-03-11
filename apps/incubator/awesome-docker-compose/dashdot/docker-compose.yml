@@ -1,11 +1,10 @@
-version: '3.5'
- 
 services:
-  dash:
+  dashdot:
     image: mauricenino/dashdot:latest
+    container_name: dashdot
     restart: unless-stopped
     privileged: true
     ports:
-      - '4000:3001'
+      - "3001:3001"
     volumes:
-      - /:/mnt/host:ro
+      - ./host-root:/mnt/host:ro

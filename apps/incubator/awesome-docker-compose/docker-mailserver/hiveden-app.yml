@@ -1,13 +1,12 @@
 manifestVersion: 1.1
 id: docker-mailserver
-category: email-servers
+category: email-server
 name: Docker Mailserver
 version: latest
-tagline: Production-ready fullstack but simple mail server (SMTP, IMAP, LDAP, Antispam,
-  Antivirus, etc.) running inside a contai...
-description: Production-ready fullstack but simple mail server (SMTP, IMAP, LDAP,
-  Antispam, Antivirus, etc.) running inside a container. Only configuration files,
-  no SQL database.
+tagline: Deploy a production-ready, fullstack mail server using simple configuration
+  files.
+description: Deploy a production-ready, fullstack mail server using simple configuration
+  files. Includes SMTP, IMAP, LDAP, anti-spam, and anti-virus without a database.
 developer: docker-mailserver
 dependencies: []
 gallery: []
@@ -16,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docker-mailserver.github.io/docker-mailserver/latest/
+website: https://docker-mailserver.github.io/docker-mailserver/latest?utm_source=awesome-docker-compose.com
 repo: https://github.com/docker-mailserver/docker-mailserver
 support: https://docker-mailserver.github.io/docker-mailserver/latest/examples/tutorials/basic-installation/

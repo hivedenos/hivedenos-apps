@@ -1,0 +1,13 @@
+services:
+  mdbook:
+    image: allfunc/mdbook:latest
+    container_name: mdbook
+    # Override entrypoint to ensure we can execute the command explicitly
+    entrypoint: ""
+    command: mdbook serve -n 0.0.0.0
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/book
+    working_dir: /book
+    restart: unless-stopped

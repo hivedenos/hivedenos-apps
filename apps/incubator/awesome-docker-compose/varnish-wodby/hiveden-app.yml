@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: varnish-wodby
+category: web-server
+name: Varnish (Wodby)
+version: latest
+tagline: Boost your web performance with a powerful open-source HTTP cache.
+description: Boost your web performance with a powerful open-source HTTP cache. Gain
+  deep insights and modern observability with real-time OpenTelemetry integration.
+developer: varnishcache
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://vinyl-cache.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/varnishcache/varnish-cache
+support: https://github.com/wodby/varnish

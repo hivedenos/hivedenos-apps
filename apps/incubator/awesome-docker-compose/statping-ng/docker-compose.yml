@@ -1,13 +1,14 @@
-version: '2.3'
- 
 services:
   statping:
     container_name: statping
-    image: adamboutcher/statping-ng:latest
-    volumes:
-      - ./statping_data:/app
-    environment:
-      DB_CONN: sqlite
+    image: ghcr.io/statping-ng/statping-ng:latest
+    restart: unless-stopped
     ports:
-      - 8080:8080
-    restart: always
+      - "8080:8080"
+    volumes:
+      - ./data:/app
+    environment:
+      - IS_DOCKER=true
+      - DB_CONN=sqlite
+      - ADMIN_USER=${ADMIN_USER}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}

@@ -1,10 +1,20 @@
-version: '3.8'
 services:
   beszel:
-    image: 'henrygd/beszel'
-    container_name: 'beszel'
+    image: henrygd/beszel
+    container_name: beszel
     restart: unless-stopped
     ports:
-      - '8090:8090'
+      - "8090:8090"
     volumes:
-      - ./beszel_data:/beszel_data
+      - ./beszel-data:/beszel_data
+
+  beszel-agent:
+    image: henrygd/beszel-agent
+    container_name: beszel-agent
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      PORT: 45876
+      KEY: ${BESZEL_AGENT_KEY}

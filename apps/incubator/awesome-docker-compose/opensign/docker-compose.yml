@@ -1,4 +1,36 @@
-version: '3.9'
 services:
-  actual_server:
- 
+  opensign:
+    image: opensign/opensignserver:latest
+    container_name: opensign
+    ports:
+      - "3000:3000"
+    environment:
+      - DB_URI=mongodb://mongo:27017/opensign
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - JWT_SECRET=${JWT_SECRET}
+      - REFRESH_TOKEN_SECRET=${REFRESH_TOKEN_SECRET}
+      - CLIENT_URL=http://localhost:3000
+      - SERVER_URL=http://localhost:3000
+      - MAIL_HOST=${MAIL_HOST}
+      - MAIL_PORT=${MAIL_PORT}
+      - MAIL_USER=${MAIL_USER}
+      - MAIL_PASS=${MAIL_PASS}
+      - MAIL_SECURE=${MAIL_SECURE}
+      - MAIL_FROM=${MAIL_FROM}
+    depends_on:
+      - mongo
+      - redis
+    restart: unless-stopped
+
+  mongo:
+    image: mongo:latest
+    container_name: opensign-mongo
+    volumes:
+      - ./data/mongo:/data/db
+    restart: unless-stopped
+
+  redis:
+    image: redis:alpine
+    container_name: opensign-redis
+    restart: unless-stopped

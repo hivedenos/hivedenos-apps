@@ -3,8 +3,9 @@ id: squirrel-servers-manager
 category: system-monitoring
 name: Squirrel Servers Manager
 version: latest
-tagline: A user friendly, UI/UX focus server & configuration management tool.
-description: A user friendly, UI/UX focus server & configuration management tool.
+tagline: Simplify server and container management with an open-source dashboard.
+description: Simplify server and container management with an open-source dashboard.
+  Harness the power of Ansible and Docker through an intuitive, agentless interface.
 developer: SquirrelCorporation
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://squirrelserversmanager.io/
+website: https://squirrelserversmanager.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/SquirrelCorporation/SquirrelServersManager
 support: https://github.com/SquirrelCorporation/SquirrelServersManager/blob/master/docker-compose.yml

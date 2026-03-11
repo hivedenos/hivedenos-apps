@@ -1,18 +1,13 @@
-version: '3'
 services:
-# Teedy Application
-  teedy-server:
-    image: sismics/docs:v1.10
+  docs:
+    image: sismics/docs:latest
+    container_name: sismics-docs
     restart: unless-stopped
     ports:
-      # Map internal port to host
-      - 8080:8080
+      - "8080:8080"
     environment:
-      # Base url to be used
-      DOCS_BASE_URL: 
-      # Set the admin email
-      DOCS_ADMIN_EMAIL_INIT: 
-
-      DOCS_ADMIN_PASSWORD_INIT: 
+      DOCS_BASE_URL: http://localhost:8080
+      DOCS_ADMIN_EMAIL_INIT: ${ADMIN_EMAIL}
+      DOCS_ADMIN_PASSWORD_INIT: ${ADMIN_PASSWORD}
     volumes:
-      - ./docs/data:/data
+      - ./data:/data

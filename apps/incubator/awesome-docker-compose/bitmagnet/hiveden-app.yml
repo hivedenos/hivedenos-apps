@@ -1,12 +1,12 @@
 manifestVersion: 1.1
 id: bitmagnet
 category: torrenting
-name: Bitmagnet
+name: bitmagnet
 version: latest
-tagline: A self-hosted BitTorrent indexer, DHT crawler, content classifier and torrent
-  search engine with web UI, GraphQL API an...
-description: A self-hosted BitTorrent indexer, DHT crawler, content classifier and
-  torrent search engine with web UI, GraphQL API and Servarr stack integration.
+tagline: Build your own torrent search engine using a self-hosted DHT crawler.
+description: Build your own torrent search engine using a self-hosted DHT crawler.
+  Automatically classify content, search metadata, and integrate with the Servarr
+  stack.
 developer: bitmagnet-io
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://bitmagnet.io/
+website: https://bitmagnet.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/bitmagnet-io/bitmagnet
 support: https://bitmagnet.io/setup/installation.html

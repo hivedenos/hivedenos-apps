@@ -3,10 +3,9 @@ id: portall
 category: miscellaneous
 name: Portall
 version: latest
-tagline: Portall provides an intuitive web-interface for generating, tracking, and
-  organizing ports and services across multiple...
-description: Portall provides an intuitive web-interface for generating, tracking,
-  and organizing ports and services across multiple hosts.
+tagline: Organize network ports across multiple hosts using an intuitive web interface.
+description: Organize network ports across multiple hosts using an intuitive web interface.
+  Generate port numbers, integrate with Docker, and scan ports automatically.
 developer: need4swede
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/miscellaneous/portall
+website: https://github.com/need4swede/Portall?utm_source=awesome-docker-compose.com
 repo: https://github.com/need4swede/Portall
-support: https://github.com/need4swede/Portall#docker-compose
+support: https://github.com/need4swede/Portall/blob/main/docker-compose.pull.yml

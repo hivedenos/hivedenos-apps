@@ -3,8 +3,9 @@ id: loggifly
 category: container-management
 name: LoggiFly
 version: latest
-tagline: Monitor Docker Logs and send Notifications.
-description: Monitor Docker Logs and send Notifications.
+tagline: Monitor Docker logs for specific text, regex patterns, or events.
+description: Monitor Docker logs for specific text, regex patterns, or events. Send
+  instant alerts to over 100 services like Slack, Discord, and Telegram.
 developer: clemcer
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/container-management/loggifly
+website: https://clemcer.github.io/LoggiFly?utm_source=awesome-docker-compose.com
 repo: https://github.com/clemcer/loggifly
-support: https://github.com/clemcer/loggifly#%EF%B8%8F-quick-start
+support: https://clemcer.github.io/LoggiFly/guide/getting-started

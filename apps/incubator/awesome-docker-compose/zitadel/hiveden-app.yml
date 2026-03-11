@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: zitadel
+category: identity-and-access-management
+name: ZITADEL
+version: latest
+tagline: Build secure, extensible authentication into your apps.
+description: Build secure, extensible authentication into your apps. Get an API-first
+  platform with SSO, passwordless login, RBAC, and custom workflows for any user type.
+developer: zitadel
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://zitadel.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/zitadel/zitadel
+support: https://zitadel.com/docs/self-hosting/deploy/compose

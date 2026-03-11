@@ -2,11 +2,10 @@ manifestVersion: 1.1
 id: appwrite
 category: low-code
 name: Appwrite
-version: '2.11'
-tagline: "End to end backend server for web, native, and mobile developers \uD83D\uDE80\
-  ."
-description: "End to end backend server for web, native, and mobile developers \uD83D\
-  \uDE80."
+version: '2.10'
+tagline: Build applications at any scale with a complete open-source platform.
+description: Build applications at any scale with a complete open-source platform.
+  Get auth, database, storage, functions, and hosting to launch your project in minutes.
 developer: appwrite
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://appwrite.io/
+website: https://appwrite.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/appwrite/appwrite
 support: https://github.com/appwrite/appwrite#installation

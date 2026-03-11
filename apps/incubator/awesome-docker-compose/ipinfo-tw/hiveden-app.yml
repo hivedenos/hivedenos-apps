@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: ipinfo-tw
+category: ip-and-domain
+name: ipinfo.tw
+version: latest
+tagline: Access detailed IP geolocation, ASN data, and user agent parsing.
+description: Access detailed IP geolocation, ASN data, and user agent parsing. Enhance
+  security, personalize content, and analyze traffic with a simple, reliable API.
+developer: PeterDaveHello
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://ipinfo.tw?utm_source=awesome-docker-compose.com
+repo: https://github.com/PeterDaveHello/ipinfo.tw
+support: https://github.com/PeterDaveHello/ipinfo.tw#usage

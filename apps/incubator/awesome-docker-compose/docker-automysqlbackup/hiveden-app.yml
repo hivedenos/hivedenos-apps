@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: docker-automysqlbackup
+category: database-backup
+name: Docker AutoMySQLBackup
+version: latest
+tagline: Run scheduled or one-shot MySQL backups in a lightweight container.
+description: Run scheduled or one-shot MySQL backups in a lightweight container. Configure
+  daily, weekly, and monthly schedules, compression, and database exclusions.
+developer: selim13
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/selim13/docker-automysqlbackup?utm_source=awesome-docker-compose.com
+repo: https://github.com/selim13/docker-automysqlbackup
+support: https://github.com/selim13/docker-automysqlbackup#image-usage

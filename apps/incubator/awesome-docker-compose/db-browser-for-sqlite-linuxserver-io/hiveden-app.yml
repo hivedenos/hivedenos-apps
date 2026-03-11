@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: db-browser-for-sqlite-linuxserver-io
+category: database-management
+name: DB Browser for SQLite (LinuxServer.io)
+version: latest
+tagline: Visually manage SQLite databases.
+description: Visually manage SQLite databases. Create and modify tables, browse records,
+  and execute complex SQL queries. Import and export data from text, CSV, or SQL files.
+developer: sqlitebrowser
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://sqlitebrowser.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/sqlitebrowser/sqlitebrowser
+support: https://github.com/linuxserver/docker-sqlitebrowser

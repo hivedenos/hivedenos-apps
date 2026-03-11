@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: readarr-linuxserver-io
+category: arr
+name: Readarr (LinuxServer.io)
+version: latest
+tagline: Automate your ebook collection by monitoring RSS feeds for new releases.
+description: Automate your ebook collection by monitoring RSS feeds for new releases.
+  Seamlessly integrate with download clients to grab, sort, and rename digital books.
+developer: Readarr
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://readarr.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/Readarr/Readarr
+support: https://github.com/linuxserver/docker-readarr

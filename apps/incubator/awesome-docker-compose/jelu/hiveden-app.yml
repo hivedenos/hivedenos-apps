@@ -3,8 +3,9 @@ id: jelu
 category: e-books
 name: Jelu
 version: latest
-tagline: Self hosted read and to-read list tracker.
-description: Self hosted read and to-read list tracker.
+tagline: Track your reading history, manage to-read lists, and import data from Goodreads.
+description: Track your reading history, manage to-read lists, and import data from
+  Goodreads. Organize books with custom tags, view reading stats, and share reviews.
 developer: bayang
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://bayang.github.io/jelu-web/
+website: https://bayang.github.io/jelu-web?utm_source=awesome-docker-compose.com
 repo: https://github.com/bayang/jelu
 support: https://bayang.github.io/jelu-web/installation/docker/

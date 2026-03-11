@@ -1,0 +1,15 @@
+services:
+  maddy:
+    image: foxcpp/maddy:latest
+    container_name: maddy
+    restart: unless-stopped
+    ports:
+      - "25:25"
+      - "143:143"
+      - "587:587"
+      - "993:993"
+    environment:
+      - MADDY_HOSTNAME=${MADDY_HOSTNAME}
+      - MADDY_DOMAIN=${MADDY_DOMAIN}
+    volumes:
+      - ./maddy-data:/data

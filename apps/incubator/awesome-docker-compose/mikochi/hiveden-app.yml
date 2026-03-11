@@ -1,12 +1,12 @@
 manifestVersion: 1.1
 id: mikochi
-category: file-transfer-web-based-file-managers
+category: storage-file-transfer
 name: Mikochi
 version: latest
-tagline: Browse remote folders, upload files, delete, rename, download and stream
-  files to VLC/mpv.
-description: Browse remote folders, upload files, delete, rename, download and stream
-  files to VLC/mpv.
+tagline: Browse, upload, and manage remote files on your self-hosted server or NAS.
+description: Browse, upload, and manage remote files on your self-hosted server or
+  NAS. Features fuzzy search, bulk downloads, and direct media streaming to VLC or
+  MPV.
 developer: zer0tonin
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/file-transfer---web-based-file-managers/mikochi
+website: https://github.com/zer0tonin/Mikochi?utm_source=awesome-docker-compose.com
 repo: https://github.com/zer0tonin/Mikochi
 support: https://github.com/zer0tonin/Mikochi#docker

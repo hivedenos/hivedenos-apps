@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: hatsu
-category: social-networks-and-forums
+category: social-network-and-forums
 name: Hatsu
-version: nightly
-tagline: Bridge that interacts with Fediverse on behalf of your static site.
-description: Bridge that interacts with Fediverse on behalf of your static site.
+version: latest
+tagline: Integrate static websites with the Fediverse using an automated ActivityPub
+  bridge.
+description: Integrate static websites with the Fediverse using an automated ActivityPub
+  bridge. Sync posts, accept followers, and receive replies directly via feeds.
 developer: importantimport
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://hatsu.cli.rs/
+website: https://hatsu.cli.rs?utm_source=awesome-docker-compose.com
 repo: https://github.com/importantimport/hatsu
 support: https://hatsu.cli.rs/admins/install-docker.html

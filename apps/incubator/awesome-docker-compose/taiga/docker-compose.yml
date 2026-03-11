@@ -1,6 +1,153 @@
-version: "3.8"
-
 services:
-  taiga:
-    image: postgres:12.3
-    restart: unless-stopped
+  taiga-db:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    networks:
+      - taiga-net
+    restart: always
+
+  taiga-back:
+    image: taigaio/taiga-back:latest
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_HOST: taiga-db
+      TAIGA_SECRET_KEY: ${TAIGA_SECRET_KEY}
+      TAIGA_SITES_SCHEME: ${TAIGA_SITES_SCHEME}
+      TAIGA_SITES_DOMAIN: ${TAIGA_SITES_DOMAIN}
+      CELERY_BROKER_URL: amqp://${RABBITMQ_USER}:${RABBITMQ_PASS}@taiga-async-rabbitmq:5672/taiga
+      EMAIL_BACKEND: django.core.mail.backends.console.EmailBackend
+    volumes:
+      - ./data/static:/taiga-back/static
+      - ./data/media:/taiga-back/media
+    networks:
+      - taiga-net
+    depends_on:
+      - taiga-db
+      - taiga-async-rabbitmq
+    restart: always
+
+  taiga-async:
+    image: taigaio/taiga-back:latest
+    entrypoint: ["/taiga-back/docker/entrypoint.sh"]
+    command: ["celery", "-A", "taiga", "worker", "-c", "4"]
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_HOST: taiga-db
+      TAIGA_SECRET_KEY: ${TAIGA_SECRET_KEY}
+      CELERY_BROKER_URL: amqp://${RABBITMQ_USER}:${RABBITMQ_PASS}@taiga-async-rabbitmq:5672/taiga
+    volumes:
+      - ./data/static:/taiga-back/static
+      - ./data/media:/taiga-back/media
+    networks:
+      - taiga-net
+    depends_on:
+      - taiga-db
+      - taiga-async-rabbitmq
+    restart: always
+
+  taiga-async-rabbitmq:
+    image: rabbitmq:3.8-management-alpine
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASS}
+      RABBITMQ_DEFAULT_VHOST: taiga
+    volumes:
+      - ./data/rabbitmq:/var/lib/rabbitmq
+    networks:
+      - taiga-net
+    restart: always
+
+  taiga-events:
+    image: taigaio/taiga-events:latest
+    environment:
+      RABBITMQ_URL: amqp://${RABBITMQ_USER}:${RABBITMQ_PASS}@taiga-async-rabbitmq:5672/taiga
+      TAIGA_SECRET_KEY: ${TAIGA_SECRET_KEY}
+    networks:
+      - taiga-net
+    depends_on:
+      - taiga-async-rabbitmq
+    restart: always
+
+  taiga-front:
+    image: taigaio/taiga-front:latest
+    environment:
+      TAIGA_URL: ${TAIGA_SITES_SCHEME}://${TAIGA_SITES_DOMAIN}
+      TAIGA_WEBSOCKETS_URL: ws://${TAIGA_SITES_DOMAIN}/events
+    networks:
+      - taiga-net
+    restart: always
+
+  taiga-gateway:
+    image: nginx:1.19-alpine
+    ports:
+      - "${PORT}:80"
+    volumes:
+      - ./data/static:/taiga/static
+      - ./data/media:/taiga/media
+    networks:
+      - taiga-net
+    depends_on:
+      - taiga-front
+      - taiga-back
+      - taiga-events
+    # Injecting a basic Nginx configuration to route traffic to the correct services
+    command: >
+      /bin/sh -c "cat <<EOF > /etc/nginx/conf.d/default.conf
+      server {
+          listen 80 default_server;
+          server_name _;
+          client_max_body_size 100M;
+          charset utf-8;
+          location / {
+              proxy_pass http://taiga-front;
+              proxy_redirect off;
+              proxy_set_header Host \$$host;
+              proxy_set_header X-Real-IP \$$remote_addr;
+              proxy_set_header X-Forwarded-For \$$proxy_add_x_forwarded_for;
+          }
+          location /api {
+              proxy_pass http://taiga-back:8000;
+              proxy_redirect off;
+              proxy_set_header Host \$$host;
+              proxy_set_header X-Real-IP \$$remote_addr;
+              proxy_set_header X-Forwarded-For \$$proxy_add_x_forwarded_for;
+          }
+          location /admin {
+              proxy_pass http://taiga-back:8000;
+              proxy_redirect off;
+              proxy_set_header Host \$$host;
+              proxy_set_header X-Real-IP \$$remote_addr;
+              proxy_set_header X-Forwarded-For \$$proxy_add_x_forwarded_for;
+          }
+          location /static {
+              alias /taiga/static;
+          }
+          location /media {
+              alias /taiga/media;
+          }
+          location /events {
+              proxy_pass http://taiga-events:8888/events;
+              proxy_http_version 1.1;
+              proxy_set_header Upgrade \$$http_upgrade;
+              proxy_set_header Connection \"upgrade\";
+              proxy_connect_timeout 7d;
+              proxy_send_timeout 7d;
+              proxy_read_timeout 7d;
+          }
+      }
+      EOF
+      nginx -g 'daemon off;'"
+    restart: always
+
+networks:
+  taiga-net:
+    driver: bridge

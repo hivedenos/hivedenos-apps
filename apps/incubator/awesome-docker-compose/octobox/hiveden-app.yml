@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: octobox
 category: git-server
 name: Octobox
-version: latest
-tagline: Take back control of your GitHub Notifications.
-description: Take back control of your GitHub Notifications.
+version: 13-alpine
+tagline: Manage your GitHub notifications effectively.
+description: Manage your GitHub notifications effectively. Archive threads when done,
+  search and filter by status or type, and see live updates for issues, PRs, and CI.
 developer: octobox
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://octobox.io/
+website: https://octobox.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/octobox/octobox
-support: https://github.com/octobox/octobox/blob/master/docs/INSTALLATION.md#using-docker-and-docker-compose
+support: https://github.com/octobox/octobox/blob/main/docs/INSTALLATION.md#using-docker-and-docker-compose

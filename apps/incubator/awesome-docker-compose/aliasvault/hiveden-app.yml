@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: aliasvault
+category: password-manager
+name: AliasVault
+version: latest
+tagline: Protect your digital identity with an end-to-end encrypted vault.
+description: Protect your digital identity with an end-to-end encrypted vault. Generate
+  unique passwords, passkeys, and email aliases to prevent tracking and stop spam.
+developer: aliasvault
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.aliasvault.net?utm_source=awesome-docker-compose.com
+repo: https://github.com/aliasvault/aliasvault
+support: https://docs.aliasvault.net/installation/docker-compose/

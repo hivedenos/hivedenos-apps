@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: mysql-bitnami
+category: database
+name: MySQL (Bitnami)
+version: latest
+tagline: Launch a hardened, non-root MySQL container with near-zero vulnerabilities.
+description: Launch a hardened, non-root MySQL container with near-zero vulnerabilities.
+  Easily configure users, databases, and replication clusters using environment variables.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/bitnami/containers/tree/main/bitnami/mysql?utm_source=awesome-docker-compose.com
+repo: https://awesome-docker-compose.com/mysql-bitnami
+support: https://awesome-docker-compose.com/mysql-bitnami

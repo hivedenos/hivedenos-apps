@@ -1,6 +1,18 @@
-version: 
- 
 services:
   mysql-s3-backup:
-    image: dsteinkopf/d3fk/mysql-s3-backup
- 
+    image: angatar/mysql-s3-backup:latest
+    container_name: mysql-s3-backup
+    restart: unless-stopped
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_PORT=3306
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_DATABASE=my_database
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - S3_BUCKET=my-backup-bucket
+      - S3_REGION=us-east-1
+      - S3_ENDPOINT=https://s3.amazonaws.com
+      - S3_PREFIX=backups/mysql/
+      - CRON_SCHEDULE=0 2 * * *

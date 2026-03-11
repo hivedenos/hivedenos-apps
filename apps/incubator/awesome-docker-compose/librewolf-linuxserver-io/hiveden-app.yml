@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: librewolf-linuxserver-io
+category: virtual-browser
+name: LibreWolf (LinuxServer.io)
+version: latest
+tagline: Enjoy a more private and secure web experience.
+description: Enjoy a more private and secure web experience. This browser removes
+  all telemetry, includes uBlock Origin, and hardens settings to prevent tracking.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://librewolf.net?utm_source=awesome-docker-compose.com
+repo: https://codeberg.org/librewolf
+support: https://github.com/linuxserver/docker-librewolf

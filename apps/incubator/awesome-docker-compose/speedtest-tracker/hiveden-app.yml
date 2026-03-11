@@ -2,11 +2,10 @@ manifestVersion: 1.1
 id: speedtest-tracker
 category: speedtest
 name: Speedtest Tracker
-version: 0.20.6
-tagline: "Speedtest Tracker is a self-hosted internet performance tracking application\
-  \ that runs speedtest checks against Ookla\xE2\x80..."
-description: "Speedtest Tracker is a self-hosted internet performance tracking application\
-  \ that runs speedtest checks against Ookla\xE2\x80\x99s Speedtest service."
+version: latest
+tagline: Self-host an application to monitor internet speed and uptime.
+description: Self-host an application to monitor internet speed and uptime. Build
+  a performance history to verify you're getting the speeds you pay for.
 developer: alexjustesen
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/speedtest/speedtest-tracker
+website: https://speedtest-tracker.dev?utm_source=awesome-docker-compose.com
 repo: https://github.com/alexjustesen/speedtest-tracker
-support: https://docs.speedtest-tracker.dev/getting-started/installation/installation
+support: https://docs.speedtest-tracker.dev/getting-started/installation/using-docker-compose

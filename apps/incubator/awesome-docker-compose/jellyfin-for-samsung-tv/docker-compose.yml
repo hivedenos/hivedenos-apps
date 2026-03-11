@@ -1,0 +1,11 @@
+services:
+  jellyfin-tizen-installer:
+    image: ghcr.io/georift/install-jellyfin-tizen
+    container_name: jellyfin-tizen-installer
+    # Host network is recommended for Tizen Studio (sdb) connectivity
+    network_mode: host
+    # Interactive mode is often required for the installer script
+    tty: true
+    stdin_open: true
+    # Pass the TV IP address as the command argument
+    command: ${TV_IP}

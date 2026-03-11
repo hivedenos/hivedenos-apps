@@ -1,13 +1,12 @@
 manifestVersion: 1.1
 id: gotosocial
-category: social-networks-and-forums
+category: social-network-and-forums
 name: GoToSocial
 version: latest
-tagline: ActivityPub federated social network server implementing the Mastodon client
-  API.
-description: ActivityPub federated social network server implementing the Mastodon
-  client API.
-developer: superseriousbusiness
+tagline: Launch a lightweight, customizable social server.
+description: Launch a lightweight, customizable social server. Connect across the
+  Fediverse without algorithms or tracking, using minimal memory and CPU resources.
+developer: Awesome Docker Compose
 dependencies: []
 gallery: []
 path: /
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docs.gotosocial.org/
-repo: https://github.com/superseriousbusiness/gotosocial
+website: https://docs.gotosocial.org?utm_source=awesome-docker-compose.com
+repo: https://codeberg.org/superseriousbusiness/gotosocial
 support: https://docs.gotosocial.org/en/latest/getting_started/installation/container/

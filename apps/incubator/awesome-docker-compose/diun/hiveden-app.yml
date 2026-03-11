@@ -3,8 +3,10 @@ id: diun
 category: container-management
 name: Diun
 version: latest
-tagline: Receive notifications when an image is updated on a Docker registry.
-description: Receive notifications when an image is updated on a Docker registry.
+tagline: Receive alerts for new Docker image tags via Slack, Telegram, email, and
+  more.
+description: Receive alerts for new Docker image tags via Slack, Telegram, email,
+  and more. Use regex filters to precisely monitor repositories and stay updated.
 developer: crazy-max
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://crazymax.dev/diun/
+website: https://crazymax.dev/diun?utm_source=awesome-docker-compose.com
 repo: https://github.com/crazy-max/diun
 support: https://crazymax.dev/diun/install/docker/

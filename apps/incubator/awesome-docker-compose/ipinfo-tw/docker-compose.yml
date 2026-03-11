@@ -1,0 +1,7 @@
+services:
+  ipinfo:
+    image: peterdavehello/ipinfo.tw:latest
+    container_name: ipinfo
+    ports:
+      - "8080:80"
+    restart: unless-stopped

@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: chibisafe
-category: file-transfer-single-click-drag-n-drop-upload
+category: quick-file-transfer
 name: Chibisafe
 version: latest
-tagline: File uploader service that aims to to be easy to use and set up.
-description: File uploader service that aims to to be easy to use and set up. It accepts
-  files, photos, documents, anything you imagine and gives you back a shareable link
-  for you to send to others.
+tagline: Save all your files in a beautiful, performant cloud vault.
+description: Save all your files in a beautiful, performant cloud vault. This modern,
+  self-hosted file uploading service features a fast API and chunked upload support.
 developer: chibisafe
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://chibisafe.app/
+website: https://chibisafe.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/chibisafe/chibisafe
-support: https://chibisafe.app/guides/running-with-docker
+support: https://chibisafe.app/docs/installation/running-with-docker

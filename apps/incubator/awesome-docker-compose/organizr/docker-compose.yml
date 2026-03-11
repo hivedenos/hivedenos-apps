@@ -1,15 +1,13 @@
-version: 
- 
 services:
   organizr:
-    image: linuxserver/organizr
     container_name: organizr
+    image: organizr/organizr:latest
+    restart: unless-stopped
+    ports:
+      - 8080:80
+    volumes:
+      - ./config:/config
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=<your timezone, eg Europe/London>
-    volumes:
-      - <path to data>:/config
-    ports:
-      - 9983:80
-    restart: unless-stopped
+      - TZ=UTC

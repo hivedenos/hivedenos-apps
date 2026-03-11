@@ -3,10 +3,9 @@ id: tianji
 category: system-monitoring
 name: Tianji
 version: latest
-tagline: 'Tianji: Insight into everything, Website Analytics + Uptime Monitor + Server
-  Status.'
-description: 'Tianji: Insight into everything, Website Analytics + Uptime Monitor
-  + Server Status. not only another GA alternatives.'
+tagline: Monitor website traffic, server health, and service uptime from one dashboard.
+description: Monitor website traffic, server health, and service uptime from one dashboard.
+  This open-source, privacy-first platform requires no cookie banners.
 developer: msgbyte
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://tianji.msgbyte.com/
+website: https://tianji.dev?utm_source=awesome-docker-compose.com
 repo: https://github.com/msgbyte/tianji
-support: https://tianji.msgbyte.com/docs/intro
+support: https://tianji.dev/docs/intro

@@ -1,39 +1,24 @@
-version: '3.9'
- 
 services:
-    bracket-frontend:
-        image: ghcr.io/evroon/bracket-frontend
-        container_name: bracket-frontend
-        ports:
-            - 
-        environment:
-            NODE_ENV: 
-            NEXT_PUBLIC_API_BASE_URL: 
-            NEXT_PUBLIC_HCAPTCHA_SITE_KEY: 
-        restart: unless-stopped
- 
-    bracket-backend:
-        image: ghcr.io/evroon/bracket-backend
-        container_name: bracket-backend
-        ports:
-            - 
-        environment:
-            ENVIRONMENT: 
-            PG_DSN: 
-            CORS_ORIGINS: https://your-site.com
-            JWT_SECRET: change_me
-        volumes:
-            - ./backend/static:/app/static
-        restart: unless-stopped
-        depends_on:
-          - postgres
- 
-    postgres:
-        image: postgres
-        restart: always
-        environment:
-          POSTGRES_DB: bracket_prod
-          POSTGRES_USER: bracket_prod
-          POSTGRES_PASSWORD: bracket_prod
-        volumes:
-          - ./postgres:/var/lib/postgresql/data
+  bracket:
+    image: ghcr.io/gielcobben/bracket:latest
+    container_name: bracket
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=${DATABASE_URL}
+      - NEXTAUTH_SECRET=${NEXTAUTH_SECRET}
+      - NEXTAUTH_URL=http://localhost:3000
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  db:
+    image: postgres:16-alpine
+    container_name: bracket-db
+    environment:
+      - POSTGRES_USER=bracket
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=bracket
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped

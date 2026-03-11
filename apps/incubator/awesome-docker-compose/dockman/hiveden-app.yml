@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: dockman
+category: container-management
+name: Dockman
+version: latest
+tagline: Manage Docker Compose stacks in your homelab with unfiltered access to configuration
+  files.
+description: Manage Docker Compose stacks in your homelab with unfiltered access to
+  configuration files. Provides a straightforward way to control your container deployments.
+developer: RA341
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/RA341/dockman?utm_source=awesome-docker-compose.com
+repo: https://github.com/RA341/dockman
+support: https://github.com/RA341/dockman#docker-compose

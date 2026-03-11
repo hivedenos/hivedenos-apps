@@ -2,11 +2,11 @@ manifestVersion: 1.1
 id: bytebase
 category: database-management
 name: Bytebase
-version: ${SOFTWARE_VERSION_TAG}
-tagline: Safe database schema change and version control for DevOps teams, supports
-  MySQL, PostgreSQL, TiDB, ClickHouse, and Sno...
-description: Safe database schema change and version control for DevOps teams, supports
-  MySQL, PostgreSQL, TiDB, ClickHouse, and Snowflake.
+version: latest
+tagline: Standardize database schema migrations using review workflows, SQL linting,
+  and GitOps.
+description: Standardize database schema migrations using review workflows, SQL linting,
+  and GitOps. Secure data with just-in-time access, masking, and detailed audit logs.
 developer: bytebase
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.bytebase.com/
+website: https://www.bytebase.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/bytebase/bytebase
-support: https://github.com/bytebase/bytebase
+support: https://docs.bytebase.com/get-started/self-host/deploy-with-docker

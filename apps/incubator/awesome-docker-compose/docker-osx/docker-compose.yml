@@ -1,6 +1,16 @@
-version: "3.8"
-
 services:
   docker-osx:
     image: sickcodes/docker-osx:latest
-    restart: unless-stopped
+    container_name: docker-osx
+    devices:
+      - /dev/kvm:/dev/kvm
+    ports:
+      - "50922:10022"
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./shared:/mnt/shared
+    environment:
+      - DISPLAY=${DISPLAY:-:0.0}
+      - MAC_ADDRESS=${MAC_ADDRESS}
+    stdin_open: true
+    tty: true

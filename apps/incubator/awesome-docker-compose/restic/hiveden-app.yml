@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: restic
+category: backup
+name: restic
+version: latest
+tagline: Back up your files securely to various storage types with a single executable.
+description: Back up your files securely to various storage types with a single executable.
+  Enjoy fast, encrypted, and verifiable backups that only transfer changed data.
+developer: restic
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://restic.net?utm_source=awesome-docker-compose.com
+repo: https://github.com/restic/restic
+support: https://github.com/restic/restic/tree/master/docker

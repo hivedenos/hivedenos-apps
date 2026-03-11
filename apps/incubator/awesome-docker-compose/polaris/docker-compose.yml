@@ -1,13 +1,11 @@
-version: 
- 
 services:
   polaris:
+    image: ogarcia/polaris:latest
     container_name: polaris
-    image: registry.gitlab.com/connectical/container/polaris
+    restart: unless-stopped
     ports:
-      - 5050:5050
+      - "5050:5050"
     volumes:
-      - /my/music/directory:/music
-      - /my/polaris/cache:/var/cache/polaris
-      - /my/polaris/data:/var/lib/polaris
-    restart: unless-stopped  
+      - ./music:/music
+      - ./data:/var/lib/polaris
+      - ./cache:/var/cache/polaris

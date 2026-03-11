@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: freshrss
 category: rss
 name: FreshRSS
-version: edge
-tagline: Self-hostable RSS feed aggregator.
-description: Self-hostable RSS feed aggregator.
+version: latest
+tagline: Aggregate feeds from websites, podcasts, and video channels.
+description: Aggregate feeds from websites, podcasts, and video channels. This free,
+  self-hosted reader is lightweight, powerful, and fully customizable.
 developer: FreshRSS
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://freshrss.org/
+website: https://freshrss.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/FreshRSS/FreshRSS
 support: https://github.com/FreshRSS/FreshRSS/tree/edge/Docker

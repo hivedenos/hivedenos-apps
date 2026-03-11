@@ -1,12 +1,12 @@
 manifestVersion: 1.1
 id: enigma-bbs
-category: social-networks-and-forums
-name: Enigma 1/2 BBS
+category: social-network-and-forums
+name: "ENiGMA\xBD BBS"
 version: latest
-tagline: "Enigma 1/2 is a modern, multi-platform BBS engine with unlimited \xE2\x80\
-  \x9Ccallers\xE2\x80\x9D and legacy DOS door game support."
-description: "Enigma 1/2 is a modern, multi-platform BBS engine with unlimited \xE2\
-  \x80\x9Ccallers\xE2\x80\x9D and legacy DOS door game support."
+tagline: Launch a highly customizable, multi-platform BBS featuring SSH access, legacy
+  DOS door support, FidoNet integration, an...
+description: Launch a highly customizable, multi-platform BBS featuring SSH access,
+  legacy DOS door support, FidoNet integration, and a built-in achievement system.
 developer: NuSkooler
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://nuskooler.github.io/enigma-bbs/
+website: https://nuskooler.github.io/enigma-bbs?utm_source=awesome-docker-compose.com
 repo: https://github.com/NuSkooler/enigma-bbs
 support: https://nuskooler.github.io/enigma-bbs/installation/docker.html

@@ -1,5 +1,3 @@
-version: '3.9'
- 
 services:
   tubesync:
     image: ghcr.io/meeb/tubesync:latest
@@ -8,9 +6,9 @@ services:
     ports:
       - 4848:4848
     volumes:
-      - /some/directory/tubesync-config:/config
-      - /some/directory/tubesync-downloads:/downloads
+      - ./config:/config
+      - ./downloads:/downloads
     environment:
-      - TZ=Europe/London
+      - TZ=UTC
       - PUID=1000
       - PGID=1000

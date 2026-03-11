@@ -1,0 +1,14 @@
+services:
+  chatvault:
+    image: ghcr.io/vitormarcal/chatvault:latest
+    container_name: chatvault
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data
+      - ./imports:/app/imports
+    environment:
+      - TZ=UTC
+      - ADMIN_USERNAME=${ADMIN_USERNAME}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}

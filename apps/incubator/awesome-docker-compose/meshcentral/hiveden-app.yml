@@ -3,10 +3,10 @@ id: meshcentral
 category: remote-access
 name: MeshCentral
 version: latest
-tagline: A full computer management website.
-description: A full computer management website. With MeshCentral, you can run your
-  own web server to remotely manage and control computers on a local network or anywhere
-  on the internet.
+tagline: Install an open-source, self-hosted web server to remotely manage and control
+  computers across multiple platforms like...
+description: Install an open-source, self-hosted web server to remotely manage and
+  control computers across multiple platforms like Windows, Linux, and macOS.
 developer: Ylianst
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://meshcentral.com/
+website: https://meshcentral.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/Ylianst/MeshCentral
-support: https://github.com/Ylianst/MeshCentral
+support: https://ylianst.github.io/MeshCentral/install/container/

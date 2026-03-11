@@ -1,0 +1,11 @@
+services:
+  sphinxsearch:
+    image: macbre/sphinxsearch:latest
+    container_name: sphinxsearch
+    ports:
+      - "9306:9306"
+      - "9312:9312"
+    volumes:
+      - ./conf/sphinx.conf:/etc/sphinxsearch/sphinx.conf
+      - ./data:/var/lib/sphinxsearch/data
+    restart: unless-stopped

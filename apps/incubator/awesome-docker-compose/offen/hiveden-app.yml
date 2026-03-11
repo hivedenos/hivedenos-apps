@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: offen
 category: analytics
 name: Offen
-version: v1.4.2
-tagline: Open, lightweight, self hosted and free web analytics.
-description: Open, lightweight, self hosted and free web analytics.
+version: latest
+tagline: Gain valuable website insights with a self-hosted, open-source tool.
+description: Gain valuable website insights with a self-hosted, open-source tool.
+  Give users full access and control over their data. GDPR compliant and opt-in only.
 developer: offen
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.offen.dev/
+website: https://www.offen.dev?utm_source=awesome-docker-compose.com
 repo: https://github.com/offen/offen
 support: https://docs.offen.dev/running-offen/tutorials/configuring-deploying-offen-docker/

@@ -3,10 +3,9 @@ id: mirotalk-sfu
 category: video-conferencing
 name: MiroTalk SFU
 version: latest
-tagline: Simple, secure, scalable real-time video conferences up to 4k, compatible
-  with all browsers and platforms.
-description: Simple, secure, scalable real-time video conferences up to 4k, compatible
-  with all browsers and platforms.
+tagline: Connect instantly with free, secure video calls directly in your browser.
+description: Connect instantly with free, secure video calls directly in your browser.
+  Enjoy screen sharing, recording, interactive whiteboards, and AI-powered features.
 developer: miroslavpejic85
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://sfu.mirotalk.com/
+website: https://sfu.mirotalk.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/miroslavpejic85/mirotalksfu
 support: https://docs.mirotalk.com/mirotalk-sfu/self-hosting/

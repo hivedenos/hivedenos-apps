@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: prowlarr-linuxserver-io
+category: arr
+name: Prowlarr (LinuxServer.io)
+version: latest
+tagline: Centralize your torrent trackers and Usenet indexers.
+description: Centralize your torrent trackers and Usenet indexers. Sync configurations
+  across media server applications and monitor indexer health from a single dashboard.
+developer: Prowlarr
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://prowlarr.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/Prowlarr/Prowlarr
+support: https://github.com/linuxserver/docker-prowlarr

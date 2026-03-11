@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: ungoogled-chromium-linuxserver-io
+category: virtual-browser
+name: Ungoogled Chromium (LinuxServer.io)
+version: latest
+tagline: Access a de-Googled Chromium browser from anywhere via the web.
+description: Access a de-Googled Chromium browser from anywhere via the web. Run it
+  in a secure container for a private browsing experience with GPU acceleration support.
+developer: linuxserver
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/linuxserver/docker-ungoogled-chromium?utm_source=awesome-docker-compose.com
+repo: https://github.com/linuxserver/docker-ungoogled-chromium
+support: https://github.com/linuxserver/docker-ungoogled-chromium

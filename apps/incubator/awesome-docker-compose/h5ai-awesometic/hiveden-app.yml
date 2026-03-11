@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: h5ai-awesometic
+category: storage-file-transfer
+name: h5ai (awesometic)
+version: latest
+tagline: Upgrade default web server directory listings with a modern, customizable
+  index.
+description: Upgrade default web server directory listings with a modern, customizable
+  index. Compatible with Apache httpd, lighttpd, and nginx for better navigation.
+developer: lrsjng
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/lrsjng/h5ai?utm_source=awesome-docker-compose.com
+repo: https://github.com/lrsjng/h5ai
+support: https://github.com/awesometic/docker-h5ai

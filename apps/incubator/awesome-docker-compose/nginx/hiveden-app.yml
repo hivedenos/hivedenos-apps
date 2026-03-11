@@ -1,12 +1,12 @@
 manifestVersion: 1.1
 id: nginx
-category: web-servers
+category: web-server
 name: Nginx
 version: latest
-tagline: HTTP and reverse proxy server, mail proxy server, and generic TCP/UDP proxy
-  server.
-description: HTTP and reverse proxy server, mail proxy server, and generic TCP/UDP
-  proxy server.
+tagline: Serve web content, reverse proxy, cache, and load balance traffic with a
+  high-performance, open-source solution.
+description: Serve web content, reverse proxy, cache, and load balance traffic with
+  a high-performance, open-source solution. Handle HTTP, TCP, and UDP protocols efficiently.
 developer: nginx
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://nginx.org/
+website: https://nginx.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/nginx/nginx
-support: https://github.com/nginxinc/docker-nginx
+support: https://github.com/nginx/docker-nginx

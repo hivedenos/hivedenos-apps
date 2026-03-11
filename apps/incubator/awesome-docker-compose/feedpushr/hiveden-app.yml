@@ -1,11 +1,12 @@
 manifestVersion: 1.1
 id: feedpushr
 category: rss
-name: Feedpushr
+name: feedpushr
 version: latest
-tagline: Powerful RSS aggregator, able to transform and send articles to many outputs.
-description: Powerful RSS aggregator, able to transform and send articles to many
-  outputs. Single binary, extensible with plugins.
+tagline: Manage feed subscriptions via a Web UI and API.
+description: Manage feed subscriptions via a Web UI and API. Apply custom filters
+  and use conditional logic to push new articles to various outputs like HTTP, email,
+  and more.
 developer: ncarlier
 dependencies: []
 gallery: []
@@ -14,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/rss/feedpushr
+website: https://github.com/ncarlier/feedpushr?utm_source=awesome-docker-compose.com
 repo: https://github.com/ncarlier/feedpushr
 support: https://github.com/ncarlier/feedpushr#installation

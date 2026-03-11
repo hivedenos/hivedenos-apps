@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: endurain
+category: fitness-tracker
+name: Endurain
+version: latest
+tagline: Manage your fitness journey with a self-hosted tracking service.
+description: Manage your fitness journey with a self-hosted tracking service. Sync
+  with Strava and Garmin, monitor gear wear, and log health metrics securely.
+developer: endurain-project
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://docs.endurain.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/endurain-project/endurain
+support: https://docs.endurain.com/getting-started/getting-started/

@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: funkwhale
 category: music-server
 name: Funkwhale
-version: 15-alpine
-tagline: Modern, web-based, convivial, multi-user and free music server.
-description: Modern, web-based, convivial, multi-user and free music server.
+version: '15'
+tagline: Take control of your audio library with a decentralized platform.
+description: Take control of your audio library with a decentralized platform. Host
+  your music, publish podcasts, and share playlists without ads or third-party tracking.
 developer: Awesome Docker Compose
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.funkwhale.audio/
-repo: https://docs.funkwhale.audio/administrator/installation/docker.html
+website: https://www.funkwhale.audio?utm_source=awesome-docker-compose.com
+repo: https://dev.funkwhale.audio/funkwhale
 support: https://docs.funkwhale.audio/administrator/installation/docker.html

@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: countly-lite
+category: analytics
+name: Countly Lite
+version: '5.0'
+tagline: Capture, analyze, and act on user data from any device.
+description: Capture, analyze, and act on user data from any device. This privacy-first
+  platform offers on-premise or private cloud hosting for complete data sovereignty.
+developer: Countly
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://countly.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/Countly/countly-server
+support: https://support.countly.com/hc/en-us/articles/360037814511-Setting-Up-Countly-with-Docker

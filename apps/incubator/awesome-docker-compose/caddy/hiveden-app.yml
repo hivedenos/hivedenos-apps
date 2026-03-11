@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: caddy
-category: web-servers
+category: web-server
 name: Caddy
-version: latest
-tagline: Powerful, enterprise-ready, open source web server with automatic HTTPS.
-description: Powerful, enterprise-ready, open source web server with automatic HTTPS.
+version: 2-alpine
+tagline: Run a secure and scalable web server with automatic HTTPS by default.
+description: Run a secure and scalable web server with automatic HTTPS by default.
+  Includes a powerful reverse proxy, static file server, and flexible configuration
+  options.
 developer: caddyserver
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://caddyserver.com/
+website: https://caddyserver.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/caddyserver/caddy
 support: https://github.com/caddyserver/caddy-docker

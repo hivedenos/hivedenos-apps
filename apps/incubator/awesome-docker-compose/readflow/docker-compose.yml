@@ -1,36 +1,29 @@
-version: 
- 
 services:
-  ########################################
-  # PostgreSQL
-  ########################################
-  db:
-    image: postgres:14
-    restart: always
-    environment:
-      - POSTGRES_DB=${POSTGRES_DB:-readflow}
-      - POSTGRES_USER=${POSTGRES_USER:-postgres}
-      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-secret}
-    volumes:
-      - ./db-data:/var/lib/postgresql/data
- 
-  ########################################
-  # readflow
-  ########################################
   readflow:
-    #build: .
-    image: 
-    restart: always
-    depends_on:
-      - db
+    image: ncarlier/readflow:latest
+    container_name: readflow
+    restart: unless-stopped
     ports:
-      - 
+      - "8080:8080"
     environment:
-      - READFLOW_DATABASE_URI=postgres://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-secret}@db/${POSTGRES_DB:-readflow}?sslmode=disable
-      - READFLOW_AUTHN_METHOD=basic
-      - READFLOW_AUTHN_BASIC_HTPASSWD_FILE=file:///var/local/demo.htpasswd
+      - APP_DB_URI=mongodb://mongodb:27017/readflow
+      - APP_CACHE_URI=redis://redis:6379
+      - APP_JWT_SECRET=${APP_JWT_SECRET}
+      - LOG_LEVEL=info
+    depends_on:
+      - mongodb
+      - redis
+
+  mongodb:
+    image: mongo:5
+    container_name: readflow_db
+    restart: unless-stopped
     volumes:
-      - ${PWD}/var/demo.htpasswd:/var/local/demo.htpasswd
- 
-networks:
-  default:
+      - ./data/mongo:/data/db
+
+  redis:
+    image: redis:alpine
+    container_name: readflow_redis
+    restart: unless-stopped
+    volumes:
+      - ./data/redis:/data

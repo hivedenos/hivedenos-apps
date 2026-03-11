@@ -1,22 +1,28 @@
-version: '3.7'
 services:
-  restserver:
-    image: eikek0/sharry:latest
-    container_name: sharry
-    command: /opt/sharry.conf
+  sharry:
+    image: eikek/sharry:latest
+    command:
+      - "-Dsharry.rest-api.bind-address=0.0.0.0"
+      - "-Dsharry.rest-api.base-url=http://localhost:${APP_PORT}"
+      - "-Ddb.url=jdbc:postgresql://db:5432/${DB_NAME}"
+      - "-Ddb.user=${DB_USER}"
+      - "-Ddb.password=${DB_PASSWORD}"
+      - "-Dsharry.rest-api.secret=${SHARRY_SECRET}"
+      - "-Dsharry.filestore.path=/opt/data"
     ports:
-      - 
+      - "${APP_PORT}:9090"
     volumes:
-      - ./sharry.conf:/opt/sharry.conf
+      - ./sharry-data:/opt/data
     depends_on:
       - db
+    restart: unless-stopped
+
   db:
-    image: postgres:16.3
-    container_name: postgres_db
-    volumes:
-      - ./postgres_data:/var/lib/postgresql/data/
+    image: postgres:13-alpine
     environment:
-      - POSTGRES_USER=dbuser
-      - POSTGRES_PASSWORD=dbpass
-      - POSTGRES_DB=dbname
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
     restart: unless-stopped

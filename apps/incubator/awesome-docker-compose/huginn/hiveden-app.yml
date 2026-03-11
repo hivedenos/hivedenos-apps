@@ -2,9 +2,11 @@ manifestVersion: 1.1
 id: huginn
 category: automation
 name: Huginn
-version: latest
-tagline: Allows you to build agents that monitor and act on your behalf.
-description: Allows you to build agents that monitor and act on your behalf.
+version: '5.7'
+tagline: Build agents to perform automated tasks online.
+description: Build agents to perform automated tasks online. Read the web, watch for
+  events, and take actions on your behalf. A hackable, self-hosted alternative to
+  IFTTT.
 developer: huginn
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/automation/huginn
+website: https://github.com/huginn/huginn?utm_source=awesome-docker-compose.com
 repo: https://github.com/huginn/huginn
 support: https://github.com/huginn/huginn/blob/master/doc/docker/install.md

@@ -1,13 +1,12 @@
 manifestVersion: 1.1
 id: fenrus
-category: personal-dashboards
+category: personal-dashboard
 name: Fenrus
 version: latest
-tagline: A self hosted personal home page that allows for multiple users, guest access
-  and multiple dashboards for each user.
-description: "A self hosted personal home page that allows for multiple users, guest\
-  \ access and multiple dashboards for each user. It also has \xE2\x80\x9CSmart Apps\xE2\
-  \x80\x9D which display live data for those apps."
+tagline: Create a custom home page with quick access to your personal apps and sites.
+description: Create a custom home page with quick access to your personal apps and
+  sites. Organize links into groups, use smart apps for more info, and set up custom
+  search engines.
 developer: revenz
 dependencies: []
 gallery: []
@@ -16,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/personal-dashboards/fenrus
+website: https://github.com/revenz/fenrus?utm_source=awesome-docker-compose.com
 repo: https://github.com/revenz/fenrus
 support: https://github.com/revenz/fenrus#docker

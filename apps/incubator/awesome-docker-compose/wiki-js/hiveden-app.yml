@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: wiki-js
+category: wiki
+name: Wiki.js
+version: 15-alpine
+tagline: Manage team documentation using a fast, open-source platform.
+description: Manage team documentation using a fast, open-source platform. Enjoy multiple
+  editors, version tracking, granular permissions, and seamless cloud backups.
+developer: Requarks
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://js.wiki?utm_source=awesome-docker-compose.com
+repo: https://github.com/Requarks/wiki
+support: https://docs.requarks.io/install/docker

@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: timetagger
 category: time-tracking
-name: Timetaggers
+name: TimeTagger
 version: latest
-tagline: TimeTagger is a web-based time-tracking solution that can run locally or
-  on a server.
-description: TimeTagger is a web-based time-tracking solution that can run locally
-  or on a server.
+tagline: Manage your hours using an interactive timeline and flexible tags.
+description: Manage your hours using an interactive timeline and flexible tags. Generate
+  detailed PDF reports, set productivity goals, and sync data across all devices.
 developer: almarklein
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://timetagger.app/
+website: https://timetagger.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/almarklein/timetagger
 support: https://github.com/almarklein/timetagger#self-hosting-your-time-tracker

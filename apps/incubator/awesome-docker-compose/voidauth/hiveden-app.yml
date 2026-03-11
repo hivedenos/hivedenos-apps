@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: voidauth
+category: identity-and-access-management
+name: VoidAuth
+version: latest
+tagline: Protect your self-hosted apps with an open-source SSO provider.
+description: Protect your self-hosted apps with an open-source SSO provider. Manage
+  users, enable passkeys, and customize your authentication experience with ease.
+developer: voidauth
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://voidauth.app?utm_source=awesome-docker-compose.com
+repo: https://github.com/voidauth/voidauth
+support: https://github.com/voidauth/voidauth#quick-start

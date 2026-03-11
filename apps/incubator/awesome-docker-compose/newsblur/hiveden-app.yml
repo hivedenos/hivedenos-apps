@@ -2,11 +2,11 @@ manifestVersion: 1.1
 id: newsblur
 category: rss
 name: Newsblur
-version: latest
-tagline: NewsBlur is a personal news reader that brings people together to talk about
-  the world.
-description: NewsBlur is a personal news reader that brings people together to talk
-  about the world. A new sound of an old instrument.
+version: '13'
+tagline: Read news from any source with real-time RSS updates.
+description: Read news from any source with real-time RSS updates. Train feeds to
+  hide stories you dislike and highlight what you love. Share and discuss stories
+  with friends.
 developer: samuelclay
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://newsblur.com/
+website: https://newsblur.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/samuelclay/NewsBlur
-support: https://github.com/samuelclay/NewsBlur/blob/master/docker-compose.yml
+support: https://github.com/samuelclay/NewsBlur/blob/main/docker-compose.yml

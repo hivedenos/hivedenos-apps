@@ -3,11 +3,9 @@ id: wayback
 category: archiving
 name: Wayback
 version: latest
-tagline: An archiving tool with an IM-style interface that prioritizes privacy and
-  accessibility, integrated with various archiv...
-description: An archiving tool with an IM-style interface that prioritizes privacy
-  and accessibility, integrated with various archival services including Internet
-  Archive, archive.today, Ghostarchive, IPFS, Telegraph, and file systems.
+tagline: Archive webpages to multiple services like IPFS and Internet Archive.
+description: Archive webpages to multiple services like IPFS and Internet Archive.
+  Use a self-hosted toolkit with CLI, bot integrations, and local storage options.
 developer: wabarc
 dependencies: []
 gallery: []
@@ -16,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docs.wabarc.eu.org/
+website: https://docs.wabarc.eu.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/wabarc/wayback
 support: https://docs.wabarc.eu.org/deployment/

@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: limesurvey-adamzammit
+category: poll-and-events
+name: LimeSurvey (adamzammit)
+version: latest
+tagline: Design professional, on-brand surveys in minutes.
+description: Design professional, on-brand surveys in minutes. Access 800+ templates,
+  share via QR or links, and analyze responses with built-in visual reports.
+developer: LimeSurvey
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.limesurvey.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/LimeSurvey/LimeSurvey
+support: https://github.com/adamzammit/limesurvey-docker

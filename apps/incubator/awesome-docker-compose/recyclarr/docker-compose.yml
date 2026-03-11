@@ -1,17 +1,12 @@
-version: '3.9'
-networks:
-  recyclarr:
-    name: recyclarr
-    external: true
- 
 services:
   recyclarr:
-    image: ghcr.io/recyclarr/recyclarr
+    image: recyclarr/recyclarr
     container_name: recyclarr
     user: 1000:1000
-    networks: [recyclarr]
+    init: true
     volumes:
       - ./config:/config
     environment:
-      - TZ=America/Santiago
-    restart: unless-stopped
+      - TZ=America/New_York
+      - CRON_SCHEDULE=@daily
+      - RECYCLARR_CREATE_CONFIG=true

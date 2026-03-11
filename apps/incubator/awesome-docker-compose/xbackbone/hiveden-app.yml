@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: xbackbone
-category: file-transfer-single-click-drag-n-drop-upload
+category: quick-file-transfer
 name: XBackBone
 version: latest
-tagline: A simple, fast and lightweight file manager with instant sharing tools integration,
-  like ShareX (a free and open-source...
-description: A simple, fast and lightweight file manager with instant sharing tools
-  integration, like ShareX (a free and open-source screenshot utility for Windows).
+tagline: Manage and share files instantly with a lightweight PHP file manager.
+description: Manage and share files instantly with a lightweight PHP file manager.
+  Enjoy multi-user support, media previews, and seamless cloud storage integration.
 developer: SergiX44
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://xbackbone.app/
+website: https://xbackbone.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/SergiX44/XBackBone
 support: https://github.com/linuxserver/docker-xbackbone

@@ -1,34 +1,28 @@
-version: '3.8'
 services:
   movim:
-    environment:
-      DAEMON_URL: http://localhost
-      DAEMON_PORT: 8080
-      DAEMON_INTERFACE: 0.0.0.0
-      DB_DRIVER: pgsql
-      DB_HOST: postgresql
-      DB_PORT: 5432
-      DB_DATABASE: movim
-      DB_USERNAME: movim
-      DB_PASSWORD: changeme
-    image: movim/movim:0.21.1
-    volumes:
-    - ${PWD}/movim:/var/www/html:rw
- 
-  nginx:
-    image: nginx:mainline-alpine
+    image: movim/movim:latest
+    restart: unless-stopped
     ports:
-    - published: 80
-      target: 80
-    volumes:
-    - ${PWD}/movim:/var/www/html:ro
-    - ${PWD}/nginx:/etc/nginx/conf.d:ro
- 
-  postgresql:
+      - "8080:80"
     environment:
-      POSTGRES_DB: movim
-      POSTGRES_PASSWORD: changeme
-      POSTGRES_USER: movim
-    image: postgres:15-alpine
+      - DB_TYPE=pgsql
+      - DB_HOST=database
+      - DB_PORT=5432
+      - DB_NAME=movim
+      - DB_USER=movim
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DAEMON_URL=${DAEMON_URL}
     volumes:
-    - ${PWD}/postgres/data:/var/lib/postgresql/data:rw
+      - ./data/movim:/var/www/html
+    depends_on:
+      - database
+
+  database:
+    image: postgres:13-alpine
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=movim
+      - POSTGRES_USER=movim
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data

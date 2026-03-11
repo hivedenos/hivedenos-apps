@@ -1,10 +1,13 @@
 manifestVersion: 1.1
 id: lancache
 category: games
-name: Lancache
+name: LanCache
 version: latest
-tagline: LAN Party game caching made easy.
-description: LAN Party game caching made easy.
+tagline: Maximize network performance at LAN parties by downloading games once and
+  serving them locally.
+description: Maximize network performance at LAN parties by downloading games once
+  and serving them locally. Save bandwidth and get gamers playing faster with easy
+  caching.
 developer: lancachenet
 dependencies: []
 gallery: []
@@ -13,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://lancache.net/
+website: https://lancache.net?utm_source=awesome-docker-compose.com
 repo: https://github.com/lancachenet/monolithic
 support: https://github.com/lancachenet/docker-compose

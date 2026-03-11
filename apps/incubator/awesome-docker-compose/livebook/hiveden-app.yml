@@ -1,13 +1,12 @@
 manifestVersion: 1.1
 id: livebook
-category: note-taking-and-editors
+category: note-taking-and-editor
 name: Livebook
 version: latest
-tagline: Realtime collaborative notebook app based on Markdown that supports running
-  Elixir code snippets, TeX and Mermaid Diagr...
-description: Realtime collaborative notebook app based on Markdown that supports running
-  Elixir code snippets, TeX and Mermaid Diagrams. Easily deployed using Docker or
-  Elixir.
+tagline: Create interactive notebooks to automate workflows, visualize data, and run
+  machine learning models.
+description: Create interactive notebooks to automate workflows, visualize data, and
+  run machine learning models. Collaborate in real-time and build reproducible workflows.
 developer: livebook-dev
 dependencies: []
 gallery: []
@@ -16,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://livebook.dev/
+website: https://livebook.dev?utm_source=awesome-docker-compose.com
 repo: https://github.com/livebook-dev/livebook
 support: https://github.com/livebook-dev/livebook#installation

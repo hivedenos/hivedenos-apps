@@ -3,10 +3,9 @@ id: matomo
 category: analytics
 name: Matomo
 version: '10.11'
-tagline: "Google Analytics alternative that protects your data and your customers\xE2\
-  \x80\x99 privacy."
-description: "Google Analytics alternative that protects your data and your customers\xE2\
-  \x80\x99 privacy."
+tagline: Gain full control of your website data with an ethical analytics platform.
+description: Gain full control of your website data with an ethical analytics platform.
+  Track 100% of traffic accurately while protecting user privacy and ensuring compliance.
 developer: matomo-org
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://matomo.org/
+website: https://matomo.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/matomo-org/matomo
 support: https://github.com/matomo-org/docker

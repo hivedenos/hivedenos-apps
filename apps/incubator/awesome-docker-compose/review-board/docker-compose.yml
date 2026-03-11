@@ -1,0 +1,40 @@
+services:
+  reviewboard:
+    image: beanbag/reviewboard:latest
+    container_name: reviewboard
+    ports:
+      - "8000:8000"
+    environment:
+      - DOMAIN=localhost
+      - DB_TYPE=postgresql
+      - DB_NAME=reviewboard
+      - DB_USER=reviewboard
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_HOST=db
+      - CACHE_TYPE=memcached
+      - CACHE_INFO=memcached:11211
+      - ADMIN_USER=${ADMIN_USER}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
+      - ADMIN_EMAIL=${ADMIN_EMAIL}
+    volumes:
+      - ./data/site:/site
+    depends_on:
+      - db
+      - memcached
+    restart: unless-stopped
+
+  db:
+    image: postgres:13-alpine
+    container_name: reviewboard_db
+    environment:
+      - POSTGRES_DB=reviewboard
+      - POSTGRES_USER=reviewboard
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  memcached:
+    image: memcached:alpine
+    container_name: reviewboard_cache
+    restart: unless-stopped

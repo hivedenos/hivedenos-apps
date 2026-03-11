@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: photostructure
 category: photo-server
-name: Photostructure
-version: alpha
-tagline: PhotoStructure is your new home for all your photos and videos.
-description: PhotoStructure is your new home for all your photos and videos.
+name: PhotoStructure
+version: latest
+tagline: Organize a lifetime of photos and videos on your own hardware.
+description: Organize a lifetime of photos and videos on your own hardware. Automatically
+  de-duplicates, tags, and surfaces forgotten memories for you to enjoy.
 developer: photostructure
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://photostructure.com/
-repo: https://github.com/photostructure
-support: https://photostructure.com/server/photostructure-for-docker-compose/
+website: https://photostructure.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/photostructure/photostructure-for-servers
+support: https://photostructure.com/server/docker-compose-wizard/

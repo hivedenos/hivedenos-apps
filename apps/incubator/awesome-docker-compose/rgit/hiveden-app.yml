@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: rgit
 category: git-server
 name: rgit
-version: main
-tagline: An ultra-fast & lightweight cgit clone.
-description: An ultra-fast & lightweight cgit clone.
+version: latest
+tagline: View your git repositories with a blazingly fast web interface.
+description: View your git repositories with a blazingly fast web interface. Built
+  in Rust, it uses efficient metadata storage and on-demand loading for superior performance.
 developer: w4
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/git-server/rgit
+website: https://github.com/w4/rgit?utm_source=awesome-docker-compose.com
 repo: https://github.com/w4/rgit
 support: https://github.com/w4/rgit#docker

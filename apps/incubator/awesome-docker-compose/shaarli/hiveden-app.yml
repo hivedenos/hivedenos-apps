@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: shaarli
-category: bookmarks-managers
+category: bookmark-manager
 name: Shaarli
-version: ${SHAARLI_DOCKER_TAG}
-tagline: The personal, minimalist, super fast, database-free, bookmarking service.
-description: The personal, minimalist, super fast, database-free, bookmarking service.
+version: latest
+tagline: Install a personal, minimalist, and super-fast bookmarking service on your
+  own server.
+description: Install a personal, minimalist, and super-fast bookmarking service on
+  your own server. It's database-free, easy to set up, and keeps your data private.
 developer: shaarli
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://shaarli.readthedocs.io/
+website: https://shaarli.readthedocs.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/shaarli/Shaarli
 support: https://shaarli.readthedocs.io/en/master/Docker.html

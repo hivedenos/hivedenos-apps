@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: webtop
+category: virtual-system
+name: Webtop
+version: latest
+tagline: Access a full Linux desktop from any modern web browser.
+description: Access a full Linux desktop from any modern web browser. Deploy containerized
+  environments based on Ubuntu, Alpine, Arch, or Fedora with GPU acceleration support.
+developer: linuxserver
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/linuxserver/docker-webtop?utm_source=awesome-docker-compose.com
+repo: https://github.com/linuxserver/docker-webtop
+support: https://github.com/linuxserver/docker-webtop

@@ -2,10 +2,11 @@ manifestVersion: 1.1
 id: coolify
 category: paas
 name: Coolify
-version: 1.0.1
-tagline: An open-source & self-hostable Heroku / Netlify alternative (and even more).
-description: An open-source & self-hostable Heroku / Netlify alternative (and even
-  more).
+version: latest
+tagline: Deploy applications, databases, and services to your own server.
+description: Deploy applications, databases, and services to your own server. This
+  open-source platform offers Git integration, free SSL certificates, and automatic
+  backups.
 developer: coollabsio
 dependencies: []
 gallery: []
@@ -14,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://coolify.io/
+website: https://coolify.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/coollabsio/coolify
-support: https://coolify.io/docs/installation
+support: https://github.com/coollabsio/coolify/blob/v4.x/docker-compose.prod.yml

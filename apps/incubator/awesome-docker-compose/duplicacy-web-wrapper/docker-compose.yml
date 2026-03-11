@@ -1,0 +1,18 @@
+services:
+  duplicacy-web:
+    image: saspus/duplicacy-web:latest
+    container_name: duplicacy-web
+    hostname: duplicacy-web
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - DWE_PASSWORD=${DWE_PASSWORD}
+    ports:
+      - 3875:3875
+    volumes:
+      - ./config:/config
+      - ./logs:/logs
+      - ./cache:/cache
+      - ./backups:/backups:ro
+    restart: unless-stopped

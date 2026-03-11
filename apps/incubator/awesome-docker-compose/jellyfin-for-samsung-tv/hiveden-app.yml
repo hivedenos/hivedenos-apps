@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: jellyfin-for-samsung-tv
+category: media-server
+name: Jellyfin for Samsung TV
+version: latest
+tagline: Bypass the app store and deploy your personal media server directly to your
+  Samsung TV using a single, pre-configured D...
+description: Bypass the app store and deploy your personal media server directly to
+  your Samsung TV using a single, pre-configured Docker container command.
+developer: Georift
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/Georift/install-jellyfin-tizen?utm_source=awesome-docker-compose.com
+repo: https://github.com/Georift/install-jellyfin-tizen
+support: https://github.com/Georift/install-jellyfin-tizen#install-jellyfin

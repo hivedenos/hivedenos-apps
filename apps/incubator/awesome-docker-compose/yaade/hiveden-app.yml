@@ -3,8 +3,9 @@ id: yaade
 category: api-management
 name: Yaade
 version: latest
-tagline: Yaade is an open-source, self-hosted, collaborative API development environment.
-description: Yaade is an open-source, self-hosted, collaborative API development environment.
+tagline: Develop APIs in a secure, open-source environment on your own servers.
+description: Develop APIs in a secure, open-source environment on your own servers.
+  This tool offers easy setup, low hardware needs, and external auth integration.
 developer: EsperoTech
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docs.yaade.io/
+website: https://docs.yaade.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/EsperoTech/yaade
 support: https://github.com/EsperoTech/yaade#-install

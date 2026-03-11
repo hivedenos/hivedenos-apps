@@ -3,8 +3,9 @@ id: tubetube
 category: video-downloader
 name: TubeTube
 version: latest
-tagline: TubeTube is a simple YouTube downloader.
-description: TubeTube is a simple YouTube downloader.
+tagline: A self-hosted downloader for YouTube content.
+description: A self-hosted downloader for YouTube content. Get fast, multithreaded
+  downloads and choose custom formats, locations, and subtitle options for total control.
 developer: MattBlackOnly
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/video-downloader/tubetube
+website: https://github.com/MattBlackOnly/TubeTube?utm_source=awesome-docker-compose.com
 repo: https://github.com/MattBlackOnly/TubeTube
 support: https://github.com/MattBlackOnly/TubeTube#docker-compose-configuration

@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: discourse
-category: social-networks-and-forums
+category: social-network-and-forums
 name: Discourse
 version: '16'
-tagline: Advanced forum / community solution based on Ruby and JS.
-description: Advanced forum / community solution based on Ruby and JS.
+tagline: Launch a scalable community platform to reduce support costs, gather product
+  feedback, and connect teams through organi...
+description: Launch a scalable community platform to reduce support costs, gather
+  product feedback, and connect teams through organized, searchable conversations.
 developer: discourse
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.discourse.org/
-repo: https://github.com/discourse/discourse_docker
+website: https://www.discourse.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/discourse/discourse
 support: https://github.com/discourse/discourse_docker

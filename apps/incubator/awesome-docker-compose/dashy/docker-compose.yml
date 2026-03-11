@@ -1,25 +1,16 @@
-version: 
- 
 services:
   dashy:
-    # To build from source, replace 'image: lissy93/dashy' with 'build: .'
-    # build: .
-    image: lissy93/dashy
-    container_name: Dashy
-    # Pass in your config file below, by specifying the path on your host machine
-    # volumes:
-      # - /root/my-config.yml:/app/user-data/conf.yml
+    image: lissy93/dashy:latest
+    container_name: dashy
     ports:
-      - 8080:8080
-    # Set any environmental variables
+      - "4000:80"
+    volumes:
+      - ./data/conf.yml:/app/public/conf.yml
     environment:
       - NODE_ENV=production
-    # Specify your user ID and group ID. You can find this by running `id -u` and `id -g`
-    #  - UID=1000
-    #  - GID=1000
-    # Specify restart policy
+      - UID=1000
+      - GID=1000
     restart: unless-stopped
-    # Configure healthchecks
     healthcheck:
       test: ['CMD', 'node', '/app/services/healthcheck']
       interval: 1m30s

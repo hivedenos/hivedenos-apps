@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: morphos-server
+category: miscellaneous
+name: Morphos Server
+version: latest
+tagline: Convert images, documents, and ebooks privately on your own server.
+description: Convert images, documents, and ebooks privately on your own server. Deploy
+  easily via Docker and manage conversions through a clean web UI or REST API.
+developer: danvergara
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/danvergara/morphos?utm_source=awesome-docker-compose.com
+repo: https://github.com/danvergara/morphos
+support: https://github.com/danvergara/morphos#docker

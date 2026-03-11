@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: quickshare
-category: file-transfer-single-click-drag-n-drop-upload
-name: QuickShare
+category: quick-file-transfer
+name: Quickshare
 version: latest
-tagline: Quick and simple file sharing between different devices.
-description: Quick and simple file sharing between different devices.
+tagline: Host your own file sharing platform with resumable uploads, QR code access,
+  and cross-device compatibility for Linux, M...
+description: Host your own file sharing platform with resumable uploads, QR code access,
+  and cross-device compatibility for Linux, Mac, and Windows environments.
 developer: ihexxa
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://ihexxa.github.io/quickshare.site/
+website: https://ihexxa.github.io/quickshare.site?utm_source=awesome-docker-compose.com
 repo: https://github.com/ihexxa/quickshare
 support: https://github.com/ihexxa/quickshare#quick-start

@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: gollum
-category: wikis
+category: wiki
 name: Gollum
-version: master
-tagline: Simple, Git-powered wiki with a sweet API and local frontend.
-description: Simple, Git-powered wiki with a sweet API and local frontend.
+version: latest
+tagline: Build and manage wikis backed by version control.
+description: Build and manage wikis backed by version control. Write in various markup
+  languages, edit locally, and track changes easily with a built-in web interface.
 developer: gollum
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/wikis/gollum
+website: https://github.com/gollum/gollum?utm_source=awesome-docker-compose.com
 repo: https://github.com/gollum/gollum
 support: https://github.com/gollum/gollum/wiki/Gollum-via-Docker

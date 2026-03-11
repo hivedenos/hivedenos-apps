@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: gancio
-category: polls-and-events
+category: poll-and-events
 name: Gancio
-version: '15'
-tagline: A shared agenda for local communities.
-description: A shared agenda for local communities.
+version: latest
+tagline: Organize local events with a privacy-first, shared agenda.
+description: Organize local events with a privacy-first, shared agenda. Publish anonymously,
+  avoid personal timelines, and export content freely across multiple platforms.
 developer: Awesome Docker Compose
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://gancio.org/
-repo: https://gancio.org/install/docker
+website: https://gancio.org?utm_source=awesome-docker-compose.com
+repo: https://framagit.org/les/gancio
 support: https://gancio.org/install/docker

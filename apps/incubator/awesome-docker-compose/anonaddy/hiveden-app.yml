@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: anonaddy
-category: email-servers
-name: Anonaddy
-version: '10'
-tagline: Open source email forwarding service for creating aliases.
-description: Open source email forwarding service for creating aliases.
+category: email-server
+name: AnonAddy
+version: latest
+tagline: Generate unlimited email aliases to protect your real inbox from spam.
+description: Generate unlimited email aliases to protect your real inbox from spam.
+  Reply anonymously, use custom domains, and encrypt messages with GPG for total privacy.
 developer: anonaddy
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://addy.io/
+website: https://addy.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/anonaddy/anonaddy
 support: https://github.com/anonaddy/docker

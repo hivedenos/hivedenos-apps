@@ -1,0 +1,56 @@
+services:
+  backend:
+    image: ghcr.io/papermerge/core:3.2
+    ports:
+      - "8000:80"
+    environment:
+      - PAPERMERGE__DATABASE__URL=postgres://${DB_USER}:${DB_PASSWORD}@db:5432/${DB_NAME}
+      - PAPERMERGE__REDIS__URL=redis://redis:6379/0
+      - PAPERMERGE__SEARCH__URL=solr://solr:8983/solr/papermerge
+      - PAPERMERGE__SECURITY__SECRET_KEY=${SECRET_KEY}
+      - PAPERMERGE__SECURITY__SUPERUSER_USERNAME=${ADMIN_USERNAME}
+      - PAPERMERGE__SECURITY__SUPERUSER_EMAIL=${ADMIN_EMAIL}
+      - PAPERMERGE__SECURITY__SUPERUSER_PASSWORD=${ADMIN_PASSWORD}
+    volumes:
+      - ./media:/app/media
+    depends_on:
+      - db
+      - redis
+      - solr
+
+  worker:
+    image: ghcr.io/papermerge/core:3.2
+    command: worker
+    environment:
+      - PAPERMERGE__DATABASE__URL=postgres://${DB_USER}:${DB_PASSWORD}@db:5432/${DB_NAME}
+      - PAPERMERGE__REDIS__URL=redis://redis:6379/0
+      - PAPERMERGE__SEARCH__URL=solr://solr:8983/solr/papermerge
+      - PAPERMERGE__SECURITY__SECRET_KEY=${SECRET_KEY}
+    volumes:
+      - ./media:/app/media
+    depends_on:
+      - db
+      - redis
+      - solr
+
+  db:
+    image: postgres:15
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+
+  redis:
+    image: redis:7
+    volumes:
+      - ./redis-data:/data
+
+  solr:
+    image: solr:9
+    ports:
+      - "8983:8983"
+    volumes:
+      - ./solr-data:/var/solr
+    command: solr-precreate papermerge

@@ -3,10 +3,9 @@ id: kapowarr
 category: arr
 name: Kapowarr
 version: latest
-tagline: Kapowarr is a software to build and manage a comic book library, fitting
-  in the *arr suite of software.
-description: Kapowarr is a software to build and manage a comic book library, fitting
-  in the *arr suite of software.
+tagline: Automate your comic book collection with this powerful management software.
+description: Automate your comic book collection with this powerful management software.
+  Easily organize, track, and expand your digital library within the *arr ecosystem.
 developer: Casvt
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://casvt.github.io/Kapowarr/
+website: https://casvt.github.io/Kapowarr?utm_source=awesome-docker-compose.com
 repo: https://github.com/Casvt/Kapowarr
 support: https://casvt.github.io/Kapowarr/installation/docker/

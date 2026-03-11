@@ -1,10 +1,12 @@
-version: 
- 
 services:
   dozzle:
+    container_name: dozzle
     image: amir20/dozzle:latest
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
     ports:
       - 8080:8080
-  restart: unless-stopped
+    environment:
+      - DOZZLE_USERNAME=${DOZZLE_USERNAME}
+      - DOZZLE_PASSWORD=${DOZZLE_PASSWORD}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro

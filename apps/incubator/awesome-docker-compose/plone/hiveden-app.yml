@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: plone
 category: cms
 name: Plone
-version: '6.0'
-tagline: Powerful open-source CMS system.
-description: Powerful open-source CMS system.
+version: '6'
+tagline: Build and manage websites using a highly secure, open-source platform.
+description: Build and manage websites using a highly secure, open-source platform.
+  Enjoy fast editing, complete data ownership, and a modern React-based interface.
 developer: plone
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://plone.org/
-repo: https://github.com/plone
+website: https://plone.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/plone/Products.CMFPlone
 support: https://6.docs.plone.org/install/containers/index.html

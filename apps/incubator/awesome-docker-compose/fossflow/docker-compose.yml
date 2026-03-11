@@ -1,9 +1,9 @@
 services:
   fossflow:
-    image: stnsmith/fossflow:latest
+    image: ghcr.io/stan-smith/fossflow:latest
     container_name: fossflow
-    ports:
-      - 
-    volumes:
-      - ./diagrams:/data/diagrams
     restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./data:/app/data

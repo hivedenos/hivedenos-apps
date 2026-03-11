@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: pwndrop-linuxserver-io
+category: quick-file-transfer
+name: pwndrop (LinuxServer.io)
+version: latest
+tagline: Host and share red team payloads securely over HTTP and WebDAV.
+description: Host and share red team payloads securely over HTTP and WebDAV. Disguise
+  files with facades, spoof extensions, and manage access through a hidden admin panel.
+developer: kgretzky
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://breakdev.org/pwndrop?utm_source=awesome-docker-compose.com
+repo: https://github.com/kgretzky/pwndrop
+support: https://github.com/linuxserver/docker-pwndrop

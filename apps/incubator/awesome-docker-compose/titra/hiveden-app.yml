@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: titra
 category: project-management
 name: Titra
-version: '7.0'
-tagline: Modern open source project time tracking for freelancers and small teams.
-description: Modern open source project time tracking for freelancers and small teams.
+version: '5'
+tagline: Start tracking work hours and project time instantly with a single click.
+description: Start tracking work hours and project time instantly with a single click.
+  Enjoy a simple interface with real-time reporting, dark mode, and easy integrations.
 developer: kromitgmbh
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://titra.io/
+website: https://titra.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/kromitgmbh/titra
 support: https://github.com/kromitgmbh/titra#-running-with-docker-compose

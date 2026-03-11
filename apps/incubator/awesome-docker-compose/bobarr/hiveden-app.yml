@@ -2,11 +2,11 @@ manifestVersion: 1.1
 id: bobarr
 category: arr
 name: Bobarr
-version: latest
-tagline: "\uD83C\uDF7F The all-in-one alternative for Sonarr, Radarr, Jackett\xE2\x80\
-  \xA6 with a VPN and running in docker."
-description: "\uD83C\uDF7F The all-in-one alternative for Sonarr, Radarr, Jackett\xE2\
-  \x80\xA6 with a VPN and running in docker."
+version: 12-alpine
+tagline: Replace multiple media managers with a single Docker-based solution.
+description: Replace multiple media managers with a single Docker-based solution.
+  Search, organize, and download movies and TV shows securely through an integrated
+  VPN.
 developer: iam4x
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/arr/bobarr
+website: https://github.com/iam4x/bobarr?utm_source=awesome-docker-compose.com
 repo: https://github.com/iam4x/bobarr
 support: https://github.com/iam4x/bobarr#setup

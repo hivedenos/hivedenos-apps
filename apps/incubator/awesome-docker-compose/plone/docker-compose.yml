@@ -1,12 +1,13 @@
-version: 
- 
 services:
-  plone-backend:
-    image: plone/plone-backend:6.0
-    container_name: plone6-backend
-    environment:
-      - SITE=Plone
-      - CORS_ALLOW_ORIGIN=*
+  plone:
+    image: plone/plone-backend:6
+    container_name: plone-backend
+    restart: unless-stopped
     ports:
-      - 8080:8080
-    restart: always
+      - "8080:8080"
+    environment:
+      SITE: plone
+      PROFILES: plone.app.contenttypes:plone-content
+      TZ: UTC
+    volumes:
+      - ./plone-data:/app/var

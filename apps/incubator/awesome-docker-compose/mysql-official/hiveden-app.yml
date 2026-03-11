@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: mysql-official
+category: database
+name: MySQL (Official)
+version: '8'
+tagline: Build applications with a high-performance, open-source database.
+description: Build applications with a high-performance, open-source database. Get
+  unmatched scalability, reliability, and security, plus integrated AI/ML capabilities.
+developer: docker-library
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.mysql.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/docker-library/mysql
+support: https://github.com/docker-library/mysql

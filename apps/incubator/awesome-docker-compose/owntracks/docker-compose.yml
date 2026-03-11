@@ -1,11 +1,15 @@
-version: '3'
- 
 services:
-  otrecorder:
-    image: owntracks/recorder
+  recorder:
+    image: owntracks/recorder:latest
+    container_name: owntracks-recorder
     ports:
-      - 8083:8083
+      - "8083:8083"
     volumes:
       - ./config:/config
       - ./store:/store
+    environment:
+      - OTR_PORT=1883
+      - OTR_HOST=${OTR_HOST}
+      - OTR_USER=${OTR_USER}
+      - OTR_PASS=${OTR_PASS}
     restart: unless-stopped

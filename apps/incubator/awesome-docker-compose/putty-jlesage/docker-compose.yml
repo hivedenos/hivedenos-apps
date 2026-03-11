@@ -1,0 +1,14 @@
+services:
+  putty:
+    image: jlesage/putty
+    container_name: putty
+    environment:
+      - USER_ID=1000
+      - GROUP_ID=1000
+      - TZ=Etc/UTC
+      - VNC_PASSWORD=${VNC_PASSWORD}
+    volumes:
+      - ./config:/config
+    ports:
+      - "5800:5800"
+    restart: unless-stopped

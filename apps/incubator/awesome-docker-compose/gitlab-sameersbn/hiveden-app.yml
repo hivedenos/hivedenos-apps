@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: gitlab-sameersbn
+category: git-server
+name: GitLab (sameersbn)
+version: 6.2.6
+tagline: Access a read-only mirror of a complete DevOps platform, stripped of all
+  proprietary code.
+description: Access a read-only mirror of a complete DevOps platform, stripped of
+  all proprietary code. Host your own fully open-source software development lifecycle.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://about.gitlab.com?utm_source=awesome-docker-compose.com
+repo: https://gitlab.com/gitlab-org/gitlab-foss
+support: https://github.com/sameersbn/docker-gitlab

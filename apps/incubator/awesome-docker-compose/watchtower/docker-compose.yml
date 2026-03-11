@@ -1,7 +1,12 @@
-version: 
 services:
   watchtower:
     image: containrrr/watchtower
+    container_name: watchtower
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - WATCHTOWER_CLEANUP=true
+      - WATCHTOWER_POLL_INTERVAL=86400
+      - REPO_USER=${REPO_USER}
+      - REPO_PASS=${REPO_PASS}
     restart: unless-stopped

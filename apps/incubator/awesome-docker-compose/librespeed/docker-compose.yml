@@ -1,20 +1,14 @@
-version: '3.7'
 services:
   speedtest:
-    container_name: speedtest
     image: ghcr.io/librespeed/speedtest:latest
-    restart: always
-    environment:
-      MODE: standalone
-
-
-
-
-      #PASSWORD:
-      #EMAIL:
-
-
-
-      #WEBPORT: 80
+    container_name: librespeed
     ports:
-      -  # webport mapping (host:container)
+      - "8080:80"
+    environment:
+      - MODE=standalone
+      - TELEMETRY=true
+      - PASSWORD=${ADMIN_PASSWORD}
+      - TITLE=Librespeed
+    volumes:
+      - ./data:/database
+    restart: unless-stopped

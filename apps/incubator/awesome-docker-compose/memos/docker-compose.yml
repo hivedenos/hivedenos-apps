@@ -1,10 +1,9 @@
-version: 
 services:
   memos:
-    image: neosmemo/memos:latest
+    image: ghcr.io/usememos/memos:latest
     container_name: memos
     volumes:
-      - ./data:/var/opt/memos
+      - ./memos-data:/var/opt/memos
     ports:
-      - 5230:5230
-    restart: unless-stopped
+      - "5230:5230"
+    restart: always

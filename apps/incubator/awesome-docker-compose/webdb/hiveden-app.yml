@@ -3,8 +3,9 @@ id: webdb
 category: database-management
 name: WebDB
 version: latest
-tagline: Efficient database IDE.
-description: Efficient database IDE.
+tagline: Access, query, and manage databases using a powerful web-based interface.
+description: Access, query, and manage databases using a powerful web-based interface.
+  Write SQL, visualize schemas, and collaborate with your team from any browser.
 developer: Awesome Docker Compose
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://webdb.app/
-repo: https://docs.webdb.app/installation/standalone
+website: https://webdb.app?utm_source=awesome-docker-compose.com
+repo: https://gitlab.com/web-db/app
 support: https://docs.webdb.app/installation/standalone

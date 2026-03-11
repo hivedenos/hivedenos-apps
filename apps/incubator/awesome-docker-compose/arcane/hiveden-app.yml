@@ -3,11 +3,10 @@ id: arcane
 category: container-management
 name: Arcane
 version: latest
-tagline: Arcane is a modern, web-based interface for managing your Docker environment,
-  built with SvelteKit.
-description: Arcane is a modern, web-based interface for managing your Docker environment,
-  built with SvelteKit.
-developer: ofkm
+tagline: Take control of your Docker environment with a modern management tool.
+description: Take control of your Docker environment with a modern management tool.
+  Handle containers, images, and volumes through an intuitive interface for all users.
+developer: getarcaneapp
 dependencies: []
 gallery: []
 path: /
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://arcane.ofkm.dev/
-repo: https://github.com/ofkm/arcane
-support: https://arcane.ofkm.dev/docs/getting-started/quickstart
+website: https://getarcane.app?utm_source=awesome-docker-compose.com
+repo: https://github.com/getarcaneapp/arcane
+support: https://getarcane.app/docs/setup/installation

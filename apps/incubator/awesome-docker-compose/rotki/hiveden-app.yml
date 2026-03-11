@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: rotki
+category: budgeting
+name: rotki
+version: latest
+tagline: Manage your crypto assets privately with an open-source, self-hosted portfolio
+  tracker.
+description: Manage your crypto assets privately with an open-source, self-hosted
+  portfolio tracker. Connect exchanges, monitor EVM protocols, and generate profit
+  reports.
+developer: rotki
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://rotki.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/rotki/rotki
+support: https://docs.rotki.com/requirement-and-installation/packaged-binaries.html#docker-compose

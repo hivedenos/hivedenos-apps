@@ -2,11 +2,10 @@ manifestVersion: 1.1
 id: bar-assistant
 category: recipe-management
 name: Bar Assistant
-version: v1.6
-tagline: Bar assistant is a self hosted application for managing your home bar.
-description: Bar assistant is a self hosted application for managing your home bar.
-  It allows you to add your ingredients, search for cocktails and create custom cocktail
-  recipes.
+version: latest
+tagline: Manage your cocktail recipes, track ingredient inventory, and calculate costs.
+description: Manage your cocktail recipes, track ingredient inventory, and calculate
+  costs. Create custom menus, plan event quantities, and discover new drinks easily.
 developer: karlomikus
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://barassistant.app/
+website: https://barassistant.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/karlomikus/bar-assistant
 support: https://docs.barassistant.app/setup/

@@ -3,8 +3,9 @@ id: kanboard
 category: task-management
 name: Kanboard
 version: latest
-tagline: Simple and open source visual task board.
-description: Simple and open source visual task board.
+tagline: Manage projects with a free, open-source Kanban board.
+description: Manage projects with a free, open-source Kanban board. Visualize tasks,
+  limit work in progress, and automate workflows using a minimalist interface.
 developer: kanboard
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://kanboard.org/
+website: https://kanboard.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/kanboard/kanboard
 support: https://docs.kanboard.org/v1/admin/docker/

@@ -1,6 +1,9 @@
-version: "3.8"
-
 services:
   eda:
     image: jortilles/eda:latest
+    container_name: eda
     restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./data:/data

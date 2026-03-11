@@ -3,10 +3,10 @@ id: stump
 category: e-books
 name: Stump
 version: latest
-tagline: A fast, free and open source comics, manga and digital book server with OPDS
-  support.
-description: A fast, free and open source comics, manga and digital book server with
-  OPDS support.
+tagline: Curate and host your comic books, manga, and digital libraries on a lightning-fast
+  server.
+description: Curate and host your comic books, manga, and digital libraries on a lightning-fast
+  server. Sync reading progress across devices and read offline anywhere.
 developer: stumpapp
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.stumpapp.dev/
+website: https://www.stumpapp.dev?utm_source=awesome-docker-compose.com
 repo: https://github.com/stumpapp/stump
 support: https://www.stumpapp.dev/installation/docker

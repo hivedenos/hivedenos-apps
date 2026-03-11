@@ -1,11 +1,12 @@
 manifestVersion: 1.1
 id: traccar
-category: maps-and-gps
+category: map-and-gps
 name: Traccar
 version: latest
-tagline: Java application to track GPS positions.
-description: Java application to track GPS positions. Supports loads of tracking devices
-  and protocols, has an Android and iOS App. Has a web interface to view your trips.
+tagline: Track any GPS device on a modern, open-source platform.
+description: Track any GPS device on a modern, open-source platform. Get real-time
+  views, detailed reports, and instant alerts for geo-fencing, driving behavior, and
+  more.
 developer: traccar
 dependencies: []
 gallery: []
@@ -14,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.traccar.org/
+website: https://www.traccar.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/traccar/traccar
 support: https://github.com/traccar/traccar-docker

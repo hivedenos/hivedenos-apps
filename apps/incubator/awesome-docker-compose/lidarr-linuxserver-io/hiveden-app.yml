@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: lidarr-linuxserver-io
+category: arr
+name: Lidarr (LinuxServer.io)
+version: latest
+tagline: Automate your music library management.
+description: Automate your music library management. Monitor RSS feeds, download new
+  albums, fix messy metadata, and upgrade audio quality automatically.
+developer: Lidarr
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://lidarr.audio?utm_source=awesome-docker-compose.com
+repo: https://github.com/Lidarr/Lidarr
+support: https://github.com/linuxserver/docker-lidarr

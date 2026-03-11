@@ -1,6 +1,21 @@
-version: "3.8"
-
 services:
   bytebase:
-    image: elestio/bytebase:${SOFTWARE_VERSION_TAG}
+    image: bytebase/bytebase:latest
+    container_name: bytebase
+    init: true
     restart: unless-stopped
+    ports:
+      - "5678:8080"
+    volumes:
+      - ./bytebase-data:/var/opt/bytebase
+    command:
+      - --data
+      - /var/opt/bytebase
+      - --port
+      - "8080"
+      - --external-url
+      - ${BYTEBASE_EXTERNAL_URL}
+    healthcheck:
+      test: ["CMD-SHELL", "curl --fail http://localhost:8080/healthz || exit 1"]
+      interval: 5m
+      timeout: 60s

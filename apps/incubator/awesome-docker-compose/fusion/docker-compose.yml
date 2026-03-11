@@ -1,11 +1,11 @@
-version: '3.9'
 services:
-    fusion:
-        image: rook1e404/fusion
-        environment:
-            - PASSWORD=123456
-        volumes:
-            - ./data:/data
-        ports:
-            - '8080:8080'
-        restart: always
+  fusion:
+    image: ghcr.io/0x2e/fusion:latest
+    container_name: fusion
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/data
+    environment:
+      - TZ=UTC

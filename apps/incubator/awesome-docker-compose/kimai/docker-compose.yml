@@ -1,33 +1,28 @@
-version: '3.5'
 services:
- 
   sqldb:
-    image: mysql:8.3
-    volumes:
-      - ./mysql:/var/lib/mysql
+    image: mariadb:10.11
+    command: --default-authentication-plugin=mysql_native_password
     environment:
-      - MYSQL_DATABASE=kimai
-      - MYSQL_USER=kimaiuser
-      - MYSQL_PASSWORD=kimaipassword
-      - MYSQL_ROOT_PASSWORD=changemeplease
-    command: --default-storage-engine innodb
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+    volumes:
+      - ./mysql-data:/var/lib/mysql
     restart: unless-stopped
-    healthcheck:
-      test: mysqladmin -p$$MYSQL_ROOT_PASSWORD ping -h localhost
-      interval: 20s
-      start_period: 10s
-      timeout: 10s
-      retries: 3
- 
+
   kimai:
     image: kimai/kimai2:apache
-    volumes:
-      - ./data:/opt/kimai/var/data
+    environment:
+      ADMIN_MAIL: ${ADMIN_MAIL}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+      DATABASE_URL: mysql://${DB_USER}:${DB_PASSWORD}@sqldb:3306/${DB_DATABASE}?charset=utf8mb4&serverVersion=10.11.2-MariaDB
+      TRUSTED_HOSTS: localhost,127.0.0.1
     ports:
       - 8001:8001
-    environment:
-      - ADMINMAIL=admin@kimai.local
-      - ADMINPASS=changemeplease
-      - 
-      - TRUSTED_HOSTS=nginx,localhost,127.0.0.1
+    volumes:
+      - ./kimai-public:/opt/kimai/public
+      - ./kimai-var:/opt/kimai/var
+    depends_on:
+      - sqldb
     restart: unless-stopped

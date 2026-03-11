@@ -3,10 +3,9 @@ id: immich-kiosk
 category: photo-server
 name: Immich Kiosk
 version: latest
-tagline: Immich Kiosk is a lightweight slideshow for running on kiosk devices and
-  browsers that uses Immich as a data source.
-description: Immich Kiosk is a lightweight slideshow for running on kiosk devices
-  and browsers that uses Immich as a data source.
+tagline: Create custom photo slideshows for TVs, tablets, or browsers.
+description: Create custom photo slideshows for TVs, tablets, or browsers. This tool
+  offers a responsive design, simple Docker setup, and URL-based controls.
 developer: damongolding
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/photo-server/immich-kiosk
+website: https://immichkiosk.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/damongolding/immich-kiosk
 support: https://github.com/damongolding/immich-kiosk#installation

@@ -1,11 +1,9 @@
-version: 
- 
 services:
   klaus:
     image: jonashaag/klaus:latest
-    volumes:
-      - /path/to/your/repos:/repos
+    container_name: klaus
     ports:
-      - 7777:80
-    command: klaus --host 0.0.0.0 --port 80 /repos/repo1 /repos/repo2 ...
+      - "8080:8080"
+    volumes:
+      - ./repos:/srv/repos:ro
     restart: unless-stopped

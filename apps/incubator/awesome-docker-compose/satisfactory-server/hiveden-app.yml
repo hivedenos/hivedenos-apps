@@ -3,8 +3,10 @@ id: satisfactory-server
 category: games
 name: Satisfactory Server
 version: latest
-tagline: A Dockerized version of the Satisfactory dedicated server.
-description: A Dockerized version of the Satisfactory dedicated server.
+tagline: Run a dedicated multiplayer server for your favorite factory building game
+  using Docker.
+description: Run a dedicated multiplayer server for your favorite factory building
+  game using Docker. Enjoy automatic updates, easy backups, and full modding support.
 developer: wolveix
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/games/satisfactory-server
+website: https://github.com/wolveix/satisfactory-server?utm_source=awesome-docker-compose.com
 repo: https://github.com/wolveix/satisfactory-server
 support: https://github.com/wolveix/satisfactory-server#setup

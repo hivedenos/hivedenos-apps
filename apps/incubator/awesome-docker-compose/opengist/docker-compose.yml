@@ -1,11 +1,11 @@
-version: 
- 
 services:
   opengist:
-    image: ghcr.io/thomiceli/opengist:1
+    image: ghcr.io/thomiceli/opengist:latest
     container_name: opengist
     restart: unless-stopped
     ports:
-      - 
+      - "6157:6157"
+    environment:
+      - OG_SECRET=${OG_SECRET}
     volumes:
-      - 
+      - ./opengist-data:/opengist/data

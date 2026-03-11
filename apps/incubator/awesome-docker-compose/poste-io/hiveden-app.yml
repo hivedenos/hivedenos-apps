@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: poste-io
+category: email-server
+name: Poste.io
+version: latest
+tagline: Launch a fully functional email server in minutes.
+description: Launch a fully functional email server in minutes. Get native anti-spam,
+  antivirus, webmail, and easy administration built on modern security standards.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://poste.io?utm_source=awesome-docker-compose.com
+repo: https://awesome-docker-compose.com/poste-io
+support: https://awesome-docker-compose.com/poste-io

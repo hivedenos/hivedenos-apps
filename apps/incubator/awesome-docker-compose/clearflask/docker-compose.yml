@@ -1,6 +1,41 @@
-version: "3.8"
-
 services:
   clearflask:
-    image: ghcr.io/clearflask/clearflask-connect:latest
-    restart: unless-stopped
+    image: clearflask/clearflask:latest
+    container_name: clearflask
+    restart: always
+    ports:
+      - "8080:8080"
+    environment:
+      - CLEARFLASK_BIN_TYPE=docker
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_REGION=${AWS_REGION}
+    volumes:
+      - ./data/clearflask:/var/lib/clearflask
+    depends_on:
+      - dynamodb
+      - elasticsearch
+
+  dynamodb:
+    image: amazon/dynamodb-local:latest
+    container_name: clearflask_dynamodb
+    command: "-jar DynamoDBLocal.jar -sharedDb -dbPath /home/dynamodblocal/data"
+    restart: always
+    working_dir: /home/dynamodblocal
+    environment:
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_REGION=${AWS_REGION}
+    volumes:
+      - ./data/dynamodb:/home/dynamodblocal/data
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.9
+    container_name: clearflask_elasticsearch
+    restart: always
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    volumes:
+      - ./data/elasticsearch:/usr/share/elasticsearch/data

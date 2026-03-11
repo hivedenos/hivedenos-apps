@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: feishin
+category: music-server
+name: Feishin
+version: latest
+tagline: Connect to self-hosted music servers and enjoy a modern playback experience.
+description: Connect to self-hosted music servers and enjoy a modern playback experience.
+  Features include synchronized lyrics, scrobbling, and smart playlist editing.
+developer: jeffvli
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://feishin.vercel.app?utm_source=awesome-docker-compose.com
+repo: https://github.com/jeffvli/feishin
+support: https://github.com/jeffvli/feishin#docker-compose

@@ -1,5 +1,15 @@
-version: 
 services:
   wayback:
-    image: wabarc/wayback
-    command: 
+    image: wabarc/wayback:latest
+    container_name: wayback
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/data
+    environment:
+      - WAYBACK_DATA_DIR=/data
+      - WAYBACK_HOST=0.0.0.0
+      - WAYBACK_PORT=8080
+      - WAYBACK_TELEGRAM_TOKEN=${WAYBACK_TELEGRAM_TOKEN}
+      - WAYBACK_DISCORD_TOKEN=${WAYBACK_DISCORD_TOKEN}

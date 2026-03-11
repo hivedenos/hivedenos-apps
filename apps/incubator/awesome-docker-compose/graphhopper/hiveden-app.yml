@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: graphhopper
-category: maps-and-gps
+category: map-and-gps
 name: GraphHopper
 version: latest
-tagline: Fast routing library and server using OpenStreetMap.
-description: Fast routing library and server using OpenStreetMap.
+tagline: Integrate powerful route optimization into your application.
+description: Integrate powerful route optimization into your application. Get precise
+  routes for any vehicle, save on fuel costs, and build with a simple, developer-friendly
+  API.
 developer: graphhopper
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.graphhopper.com/
+website: https://www.graphhopper.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/graphhopper/graphhopper
 support: https://github.com/IsraelHikingMap/graphhopper-docker-image-push

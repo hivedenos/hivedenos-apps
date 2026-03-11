@@ -3,9 +3,9 @@ id: word-mastermind
 category: games
 name: Word Mastermind
 version: latest
-tagline: Wordle clone.
-description: Wordle clone. A Mastermind-like game, but instead of colors you need
-  to guess words.
+tagline: Enjoy unlimited word guessing gameplay without daily restrictions.
+description: Enjoy unlimited word guessing gameplay without daily restrictions. Use
+  custom dictionaries, track letter placement, and play endlessly on your own server.
 developer: clupasq
 dependencies: []
 gallery: []
@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/games/word-mastermind
+website: https://github.com/clupasq/word-mastermind?utm_source=awesome-docker-compose.com
 repo: https://github.com/clupasq/word-mastermind
 support: https://github.com/clupasq/word-mastermind#running-with-docker

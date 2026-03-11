@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: file-browser
+category: storage-file-transfer
+name: File Browser
+version: latest
+tagline: Transform any server into a personal cloud.
+description: Transform any server into a personal cloud. Upload, edit, and preview
+  files through a sleek web interface featuring user management and custom commands.
+developer: filebrowser
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://filebrowser.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/filebrowser/filebrowser
+support: https://filebrowser.org/installation

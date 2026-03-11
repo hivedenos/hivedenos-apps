@@ -3,8 +3,10 @@ id: watchtower
 category: container-management
 name: Watchtower
 version: latest
-tagline: A process for automating Docker container base image updates.
-description: A process for automating Docker container base image updates.
+tagline: Automatically update running Docker containers.
+description: Automatically update running Docker containers. It monitors your image
+  registry, pulls new images, and gracefully restarts your applications with the latest
+  version.
 developer: containrrr
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://containrrr.dev/watchtower/
+website: https://containrrr.dev/watchtower?utm_source=awesome-docker-compose.com
 repo: https://github.com/containrrr/watchtower
 support: https://github.com/containrrr/watchtower#quick-start

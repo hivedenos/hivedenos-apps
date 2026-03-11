@@ -3,11 +3,10 @@ id: roundup-issue-tracker
 category: ticketing
 name: Roundup Issue Tracker
 version: latest
-tagline: A simple-to-use and -install issue-tracking system with command-line, web,
-  REST, XML-RPC, and e-mail interfaces.
-description: A simple-to-use and -install issue-tracking system with command-line,
-  web, REST, XML-RPC, and e-mail interfaces. Designed with flexibility in mind - not
-  just another bug tracker.
+tagline: Manage bugs, support tickets, and sales leads with a highly customizable
+  tracking system.
+description: Manage bugs, support tickets, and sales leads with a highly customizable
+  tracking system. Access via web, command-line, REST, XML-RPC, or email interfaces.
 developer: Awesome Docker Compose
 dependencies: []
 gallery: []
@@ -16,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.roundup-tracker.org/
+website: https://www.roundup-tracker.org?utm_source=awesome-docker-compose.com
 repo: https://www.roundup-tracker.org/docs/installation.html#running-your-container
 support: https://www.roundup-tracker.org/docs/installation.html#running-your-container

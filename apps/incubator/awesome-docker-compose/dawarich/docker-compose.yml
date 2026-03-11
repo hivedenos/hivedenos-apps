@@ -1,112 +1,58 @@
-version: '3.9'
- 
-networks:
-  dawarich:
- 
 services:
-  dawarich_redis:
-    image: redis:7.0-alpine
-    command: redis-server
-    networks:
-      - dawarich
-    volumes:
-      - shared_data:/var/shared/redis
-    restart: always
-  dawarich_db:
+  db:
     image: postgres:14.2-alpine
-    container_name: dawarich_db
-    volumes:
-      - db_data:/var/lib/postgresql/data
-      - shared_data:/var/shared
-    networks:
-      - dawarich
+    restart: always
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: dawarich_production
+    volumes:
+      - ./pg_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7.0-alpine
     restart: always
-  dawarich_app:
-    image: freikin/dawarich:latest
-    container_name: dawarich_app
+    command: redis-server --appendonly yes
     volumes:
-      - gem_cache:/usr/local/bundle/gems
-      - public:/var/app/public
-    networks:
-      - dawarich
+      - ./redis_data:/data
+
+  web:
+    image: freikin/dawarich:latest
+    restart: always
     ports:
-      - 3000:3000
-    stdin_open: true
-    tty: true
-    entrypoint: dev-entrypoint.sh
-    command: ['bin/dev']
-    restart: on-failure
+      - "3000:3000"
     environment:
-      RAILS_ENV: development
-      REDIS_URL: redis://dawarich_redis:6379/0
-      DATABASE_HOST: dawarich_db
-      DATABASE_USERNAME: postgres
-      DATABASE_PASSWORD: password
-      DATABASE_NAME: dawarich_development
-      MIN_MINUTES_SPENT_IN_CITY: 60
-      APPLICATION_HOST: localhost
-      APPLICATION_HOSTS: localhost
-      TIME_ZONE: Europe/London
-      APPLICATION_PROTOCOL: http
-      DISTANCE_UNIT: km
-    logging:
-      driver: 
-      options:
-        max-size: 
-        max-file: 
-    depends_on:
-      - dawarich_db
-      - dawarich_redis
-    deploy:
-      resources:
-        limits:
-          cpus: '0.50'    # Limit CPU usage to 50% of one core
-          memory: '2G'    # Limit memory usage to 2GB
-  dawarich_sidekiq:
-    image: freikin/dawarich:latest
-    container_name: dawarich_sidekiq
+      - DATABASE_HOST=db
+      - DATABASE_PORT=5432
+      - DATABASE_USERNAME=postgres
+      - DATABASE_PASSWORD=${POSTGRES_PASSWORD}
+      - DATABASE_NAME=dawarich_production
+      - REDIS_URL=redis://redis:6379/0
+      - SECRET_KEY_BASE=${SECRET_KEY_BASE}
+      - APPLICATION_HOST=localhost
+      - TIME_ZONE=UTC
     volumes:
-      - gem_cache:/usr/local/bundle/gems
-      - public:/var/app/public
-    networks:
-      - dawarich
-    stdin_open: true
-    tty: true
-    entrypoint: dev-entrypoint.sh
-    command: ['sidekiq']
-    restart: on-failure
-    environment:
-      RAILS_ENV: development
-      REDIS_URL: redis://dawarich_redis:6379/0
-      DATABASE_HOST: dawarich_db
-      DATABASE_USERNAME: postgres
-      DATABASE_PASSWORD: password
-      DATABASE_NAME: dawarich_development
-      APPLICATION_HOST: localhost
-      APPLICATION_HOSTS: localhost
-      BACKGROUND_PROCESSING_CONCURRENCY: 10
-      APPLICATION_PROTOCOL: http
-      DISTANCE_UNIT: km
-    logging:
-      driver: 
-      options:
-        max-size: 
-        max-file: 
+      - ./public:/app/public
     depends_on:
-      - dawarich_db
-      - dawarich_redis
-      - dawarich_app
-    deploy:
-      resources:
-        limits:
-          cpus: '0.50'    # Limit CPU usage to 50% of one core
-          memory: '2G'    # Limit memory usage to 2GB
- 
-volumes:
-  db_data:
-  gem_cache:
-  shared_data:
-  public:
+      - db
+      - redis
+
+  sidekiq:
+    image: freikin/dawarich:latest
+    restart: always
+    command: bundle exec sidekiq
+    environment:
+      - DATABASE_HOST=db
+      - DATABASE_PORT=5432
+      - DATABASE_USERNAME=postgres
+      - DATABASE_PASSWORD=${POSTGRES_PASSWORD}
+      - DATABASE_NAME=dawarich_production
+      - REDIS_URL=redis://redis:6379/0
+      - SECRET_KEY_BASE=${SECRET_KEY_BASE}
+      - APPLICATION_HOST=localhost
+      - TIME_ZONE=UTC
+    volumes:
+      - ./public:/app/public
+    depends_on:
+      - db
+      - redis

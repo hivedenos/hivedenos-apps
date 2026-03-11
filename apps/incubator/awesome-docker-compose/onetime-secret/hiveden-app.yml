@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: onetime-secret
+category: pastebin
+name: Onetime Secret
+version: alpine
+tagline: Share sensitive data safely using self-destructing links.
+description: Share sensitive data safely using self-destructing links. Add optional
+  passphrases, meet compliance standards, and ensure information vanishes after one
+  view.
+developer: onetimesecret
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://onetimesecret.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/onetimesecret/onetimesecret
+support: https://github.com/onetimesecret/onetimesecret

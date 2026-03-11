@@ -3,8 +3,9 @@ id: lodestone
 category: games
 name: Lodestone
 version: latest
-tagline: A free, open source server hosting tool for Minecraft and other multiplayers.
-description: A free, open source server hosting tool for Minecraft and other multiplayers.
+tagline: Host multiplayer game servers with a free, open-source tool.
+description: Host multiplayer game servers with a free, open-source tool. Enjoy one-click
+  setup, real-time status tracking, a built-in file manager, and secure access.
 developer: Lodestone-Team
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.lodestone.cc/
+website: https://www.lodestone.cc?utm_source=awesome-docker-compose.com
 repo: https://github.com/Lodestone-Team/lodestone
 support: https://github.com/Lodestone-Team/lodestone/wiki/Docker-Support

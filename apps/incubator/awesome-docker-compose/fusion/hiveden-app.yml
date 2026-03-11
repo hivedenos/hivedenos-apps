@@ -3,8 +3,10 @@ id: fusion
 category: rss
 name: Fusion
 version: latest
-tagline: A lightweight RSS aggregator and reader.
-description: A lightweight RSS aggregator and reader.
+tagline: Manage news feeds with a lightweight, self-hosted reader.
+description: Manage news feeds with a lightweight, self-hosted reader. Get a clean
+  UI, keyboard shortcuts, and Fever API support for mobile clients. No AI, just your
+  news.
 developer: '0x2E'
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/rss/fusion
+website: https://github.com/0x2E/fusion?utm_source=awesome-docker-compose.com
 repo: https://github.com/0x2E/fusion
 support: https://github.com/0x2E/fusion#installation

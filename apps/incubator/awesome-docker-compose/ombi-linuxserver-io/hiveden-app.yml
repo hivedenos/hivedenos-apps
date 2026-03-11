@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: ombi-linuxserver-io
+category: media-server
+name: Ombi (LinuxServer.io)
+version: latest
+tagline: Manage media requests for Plex and Emby servers automatically.
+description: Manage media requests for Plex and Emby servers automatically. Sync users,
+  integrate with download clients, and send notifications when content is ready.
+developer: Ombi-app
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://ombi.io?utm_source=awesome-docker-compose.com
+repo: https://github.com/Ombi-app/Ombi
+support: https://docs.ombi.app/guides/installation/

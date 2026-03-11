@@ -1,8 +1,6 @@
-version: 
- 
 services:
   api:
-    image: ghcr.io/saleor/saleor:3.20
+    image: ghcr.io/saleor/saleor:3.19
     ports:
       - 8000:8000
     restart: unless-stopped
@@ -13,97 +11,77 @@ services:
     depends_on:
       - db
       - redis
-      - jaeger
+      - mailpit
     volumes:
-      # shared volume between worker and api for media
-      - saleor-media:/app/media
-    env_file:
-      - common.env
-      - backend.env
+      - ./saleor-media:/app/media
     environment:
-      - JAEGER_AGENT_HOST=jaeger
-      - DASHBOARD_URL=http://localhost:9000/
-      - ALLOWED_HOSTS=localhost,api
- 
+      - SECRET_KEY=${SECRET_KEY}
+      - DATABASE_URL=${DATABASE_URL}
+      - ALLOWED_HOSTS=localhost,127.0.0.1
+      - ALLOWED_CLIENT_HOSTS=localhost,127.0.0.1
+      - EMAIL_URL=smtp://mailpit:1025
+      - CELERY_BROKER_URL=redis://redis:6379/1
+      - DEFAULT_CHANNEL_SLUG=default-channel
+      - DEFAULT_FROM_EMAIL=noreply@example.com
+    command: python manage.py runserver 0.0.0.0:8000
+
   dashboard:
     image: ghcr.io/saleor/saleor-dashboard:latest
     ports:
       - 9000:80
     restart: unless-stopped
- 
+    networks:
+      - saleor-backend-tier
+    environment:
+      - API_URI=http://localhost:8000/graphql/
+
   db:
-    image: library/postgres:15-alpine
+    image: postgres:15-alpine
     ports:
       - 5432:5432
     restart: unless-stopped
     networks:
       - saleor-backend-tier
     volumes:
-      - saleor-db:/var/lib/postgresql/data
-      - ./replica_user.sql:/docker-entrypoint-initdb.d/replica_user.sql
+      - ./saleor-db:/var/lib/postgresql/data
     environment:
-      - POSTGRES_USER=saleor
-      - POSTGRES_PASSWORD=saleor
- 
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+
   redis:
-    image: library/redis:7.0-alpine
-    ports:
-      - 6379:6379
+    image: redis:7.0-alpine
     restart: unless-stopped
     networks:
       - saleor-backend-tier
     volumes:
-      - saleor-redis:/data
- 
+      - ./saleor-redis:/data
+
   worker:
-    image: ghcr.io/saleor/saleor:3.20
-    command: celery -A saleor --app=saleor.celeryconf:app worker --loglevel=info -B
+    image: ghcr.io/saleor/saleor:3.19
+    command: celery -A saleor --app=saleor.celeryconf:app worker --loglevel=info
     restart: unless-stopped
     networks:
       - saleor-backend-tier
-    env_file:
-      - common.env
-      - backend.env
     depends_on:
       - redis
       - mailpit
-    volumes:
-      # shared volume between worker and api for media
-      - saleor-media:/app/media
- 
-  jaeger:
-    image: jaegertracing/all-in-one
-    ports:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-    restart: unless-stopped
-    networks:
-      - saleor-backend-tier
-    volumes:
-      - type: tmpfs
-        target: /tmp
- 
+      - db
+    environment:
+      - SECRET_KEY=${SECRET_KEY}
+      - DATABASE_URL=${DATABASE_URL}
+      - EMAIL_URL=smtp://mailpit:1025
+      - CELERY_BROKER_URL=redis://redis:6379/1
+
   mailpit:
     image: axllent/mailpit
     ports:
-      - 1025:1025 # smtp server
-      - 8025:8025 # web ui. Visit http://localhost:8025/ to check emails
+      - 1025:1025
+      - 8025:8025
     restart: unless-stopped
     networks:
       - saleor-backend-tier
- 
-volumes:
-  saleor-db:
-    driver: local
-  saleor-redis:
-    driver: local
-  saleor-media:
- 
+
 networks:
   saleor-backend-tier:
     driver: bridge

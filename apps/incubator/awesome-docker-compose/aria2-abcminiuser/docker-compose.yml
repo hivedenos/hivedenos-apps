@@ -1,0 +1,13 @@
+services:
+  aria2:
+    image: xujinkai/aria2-with-webui
+    container_name: aria2-webui
+    restart: unless-stopped
+    ports:
+      - "6800:6800"
+      - "6880:80"
+    volumes:
+      - ./data:/data
+      - ./config:/conf
+    environment:
+      - SECRET=${RPC_SECRET}

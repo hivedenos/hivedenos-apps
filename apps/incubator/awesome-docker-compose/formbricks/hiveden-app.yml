@@ -1,13 +1,11 @@
 manifestVersion: 1.1
 id: formbricks
-category: polls-and-events
+category: poll-and-events
 name: Formbricks
 version: 15-alpine
-tagline: Experience Management Suite built on the largest open source survey stack
-  worldwide.
-description: Experience Management Suite built on the largest open source survey stack
-  worldwide. Gracefully gather feedback at every step of the customer journey to know
-  what your customers need.
+tagline: Collect actionable user feedback across your website, app, and emails.
+description: Collect actionable user feedback across your website, app, and emails.
+  Maintain full data privacy and compliance with this open-source survey platform.
 developer: formbricks
 dependencies: []
 gallery: []
@@ -16,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://formbricks.com/
+website: https://formbricks.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/formbricks/formbricks
-support: https://formbricks.com/docs/self-hosting/docker
+support: https://formbricks.com/docs/self-hosting/setup/docker

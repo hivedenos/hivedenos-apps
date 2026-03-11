@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: mailu
-category: email-servers
+category: email-server
 name: Mailu
-version: latest
-tagline: Mailu is a simple yet full-featured mail server as a set of Docker images.
-description: Mailu is a simple yet full-featured mail server as a set of Docker images.
+version: alpine
+tagline: Host your own secure email server with this set of Docker images.
+description: Host your own secure email server with this set of Docker images. Features
+  include webmail, advanced routing, robust antispam, and comprehensive admin tools.
 developer: mailu
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://mailu.io/
+website: https://mailu.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/mailu/mailu
-support: https://mailu.io/2024.06/compose/setup.html
+support: https://setup.mailu.io

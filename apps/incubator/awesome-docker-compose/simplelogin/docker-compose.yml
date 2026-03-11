@@ -1,18 +1,83 @@
-version: 
 services:
-  app:
-    container_name: sl-migration
-    image: simplelogin/app:3.4.0
-    volumes:
-      - $(pwd)/sl:/sl
-      - $(pwd)/sl/upload:/code/static/upload
-      - $(pwd)/dkim.key:/dkim.key
-      - $(pwd)/dkim.pub.key:/dkim.pub.key
-      - $(pwd)/simplelogin.env:/code/.env
-    networks:
-      - sl-network
-    command: flask db upgrade
+  sl-db:
+    image: postgres:13
     restart: always
-networks:
-  sl-network:
-    external: true
+    volumes:
+      - ./db-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  sl-redis:
+    image: redis:6
+    restart: always
+    volumes:
+      - ./redis-data:/data
+
+  sl-app:
+    image: simplelogin/app:latest
+    restart: always
+    command: python server.py
+    volumes:
+      - ./sl-data:/sl-data
+      - ./sl-data/upload:/code/static/upload
+    ports:
+      - "7777:7777"
+    environment:
+      - DB_URI=postgresql://${DB_USER}:${DB_PASSWORD}@sl-db:5432/${DB_NAME}
+      - FLASK_SECRET=${FLASK_SECRET}
+      - GNUPG_HOME=/sl-data/gnupg
+      - URL=http://localhost:7777
+      - EMAIL_DOMAIN=my-domain.com
+      - SUPPORT_EMAIL=support@my-domain.com
+      - ADMIN_EMAIL=admin@my-domain.com
+    depends_on:
+      sl-db:
+        condition: service_healthy
+      sl-redis:
+        condition: service_started
+
+  sl-email:
+    image: simplelogin/app:latest
+    restart: always
+    command: python email_handler.py
+    volumes:
+      - ./sl-data:/sl-data
+    ports:
+      - "20381:20381"
+    environment:
+      - DB_URI=postgresql://${DB_USER}:${DB_PASSWORD}@sl-db:5432/${DB_NAME}
+      - FLASK_SECRET=${FLASK_SECRET}
+      - GNUPG_HOME=/sl-data/gnupg
+      - URL=http://localhost:7777
+      - EMAIL_DOMAIN=my-domain.com
+    depends_on:
+      sl-db:
+        condition: service_healthy
+      sl-redis:
+        condition: service_started
+
+  sl-job:
+    image: simplelogin/app:latest
+    restart: always
+    command: python job_runner.py
+    volumes:
+      - ./sl-data:/sl-data
+      - ./sl-data/upload:/code/static/upload
+    environment:
+      - DB_URI=postgresql://${DB_USER}:${DB_PASSWORD}@sl-db:5432/${DB_NAME}
+      - FLASK_SECRET=${FLASK_SECRET}
+      - GNUPG_HOME=/sl-data/gnupg
+      - URL=http://localhost:7777
+      - EMAIL_DOMAIN=my-domain.com
+    depends_on:
+      sl-db:
+        condition: service_healthy
+      sl-redis:
+        condition: service_started

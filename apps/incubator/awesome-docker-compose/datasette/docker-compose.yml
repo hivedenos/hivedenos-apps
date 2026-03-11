@@ -1,11 +1,10 @@
-version: 
- 
 services:
   datasette:
     image: datasetteproject/datasette
+    container_name: datasette
     ports:
-      - 8001:8001
+      - "8001:8001"
     volumes:
-      - 
-    command: datasette -p 8001 -h 0.0.0.0 /mnt/fixtures.db
+      - ./data:/mnt
+    command: ["datasette", "-p", "8001", "-h", "0.0.0.0", "/mnt"]
     restart: unless-stopped

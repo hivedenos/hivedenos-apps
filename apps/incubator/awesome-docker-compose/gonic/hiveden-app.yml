@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: gonic
 category: music-server
-name: Gonic
+name: gonic
 version: latest
-tagline: Lightweight music streaming server.
-description: Lightweight music streaming server. Subsonic compatible.
+tagline: Host your own music and podcasts with this lightweight, Go-based streaming
+  server.
+description: Host your own music and podcasts with this lightweight, Go-based streaming
+  server. Features on-the-fly transcoding, fast scanning, and Subsonic API support.
 developer: sentriz
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/music-server/gonic
+website: https://github.com/sentriz/gonic?utm_source=awesome-docker-compose.com
 repo: https://github.com/sentriz/gonic
 support: https://github.com/sentriz/gonic/wiki/installation#with-docker

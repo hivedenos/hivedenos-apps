@@ -1,5 +1,3 @@
-version: '3.9'
- 
 services:
   cops:
     image: lscr.io/linuxserver/cops:latest
@@ -9,9 +7,8 @@ services:
       - PGID=1000
       - TZ=Etc/UTC
     volumes:
-      - /path/to/cops/config:/config
-      - /path/to/data:/books
+      - ./config:/config
+      - ./books:/books
     ports:
       - 80:80
-      - 443:443
     restart: unless-stopped

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: gaseous-server
+category: game-emulation
+name: Gaseous Server
+version: latest
+tagline: Manage your game ROMs and play them directly in a web-based emulator.
+description: Manage your game ROMs and play them directly in a web-based emulator.
+  Automatically identify titles and fetch rich metadata for a perfectly organized
+  library.
+developer: gaseous-project
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/gaseous-project/gaseous-server?utm_source=awesome-docker-compose.com
+repo: https://github.com/gaseous-project/gaseous-server
+support: https://github.com/gaseous-project/gaseous-server/wiki/Installation

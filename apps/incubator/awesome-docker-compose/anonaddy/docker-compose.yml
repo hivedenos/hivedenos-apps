@@ -1,50 +1,31 @@
-version: '3.9'
- 
-name: addy
- 
 services:
-  db:
-    image: mariadb:10
-    container_name: addy_db
-    command:
-      - 
-      - 
-      - 
-    volumes:
-      - 
-    environment:
-      - 
-      - 
-      - 
-      - 
-    restart: always
- 
-  redis:
-    image: redis:4.0-alpine
-    container_name: addy_redis
-    restart: always
- 
-  addy:
+  app:
     image: anonaddy/anonaddy:latest
-    container_name: addy
+    restart: always
     depends_on:
-      - db
+      - mariadb
       - redis
     ports:
-      - target: 25
-        published: 25
-        protocol: tcp
-      - target: 8000
-        published: 8000
-        protocol: tcp
+      - "25:25"
+      - "8000:8000"
     volumes:
-      - 
+      - ./data:/data
     env_file:
-      - 
-    environment:
-      - 
-      - 
-      - 
-      - 
-      - 
+      - .env
+
+  mariadb:
+    image: mariadb:10.6
     restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - ./mysql:/var/lib/mysql
+
+  redis:
+    image: redis:alpine
+    restart: always
+    volumes:
+      - ./redis:/data

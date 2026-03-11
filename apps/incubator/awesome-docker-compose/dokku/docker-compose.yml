@@ -1,19 +1,14 @@
-version: 
- 
 services:
   dokku:
-    image: dokku/dokku:0.34.8
+    image: dokku/dokku:latest
     container_name: dokku
-    network_mode: bridge
-    ports:
-      - 
-      - 
-      - 
-    volumes:
-      - 
-      - 
     environment:
-      DOKKU_HOSTNAME: dokku.me
-      DOKKU_HOST_ROOT: /var/lib/dokku/home/dokku
-      DOKKU_LIB_HOST_ROOT: /var/lib/dokku/var/lib/dokku
+      - DOKKU_HOSTNAME=dokku.example.com
+    ports:
+      - "80:80"
+      - "443:443"
+      - "2222:22"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./dokku-data:/mnt/dokku
     restart: unless-stopped

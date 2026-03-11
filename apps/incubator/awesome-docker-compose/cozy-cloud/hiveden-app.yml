@@ -2,11 +2,10 @@ manifestVersion: 1.1
 id: cozy-cloud
 category: cloud-storage
 name: Cozy Cloud
-version: '3.3'
-tagline: Cozy is a human-centric, open source and french personal cloud that gather
-  all your data for more services, control and...
-description: Cozy is a human-centric, open source and french personal cloud that gather
-  all your data for more services, control and security.
+version: '3'
+tagline: Unify your digital life with a secure, open-source workspace.
+description: Unify your digital life with a secure, open-source workspace. Store files,
+  share messages, organize notes, and manage passwords from any device.
 developer: cozy
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://cozy.io/
+website: https://cozy.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/cozy/cozy-stack
 support: https://docs.cozy.io/en/tutorials/selfhosting/docker/

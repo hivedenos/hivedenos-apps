@@ -1,10 +1,12 @@
-version: 
 services:
   openvscode-server:
-    image: gitpod/openvscode-server
+    image: gitpod/openvscode-server:latest
+    container_name: openvscode-server
     init: true
+    restart: unless-stopped
     ports:
-      - 3000:3000
+      - "3000:3000"
+    environment:
+      - CONNECTION_TOKEN=${CONNECTION_TOKEN}
     volumes:
-      - $(pwd):/home/workspace:cached
-    restart: unless-stopped  
+      - ./workspace:/home/workspace:cached

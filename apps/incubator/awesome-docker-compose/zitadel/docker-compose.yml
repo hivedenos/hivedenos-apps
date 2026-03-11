@@ -1,0 +1,63 @@
+services:
+  zitadel:
+    image: ghcr.io/zitadel/zitadel:latest
+    command: 'start-from-init --masterkeyFromEnv --config /config.yaml --steps /steps.yaml'
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - ZITADEL_DATABASE_COCKROACH_HOST=db
+      - ZITADEL_DATABASE_COCKROACH_USER=root
+      - ZITADEL_DATABASE_COCKROACH_PASSWORD=${ZITADEL_COCKROACHDB_PASSWORD}
+      - ZITADEL_DATABASE_COCKROACH_DATABASE=zitadel
+      - ZITADEL_DATABASE_COCKROACH_SSL_MODE=disable
+      - ZITADEL_MASTERKEY=${ZITADEL_MASTERKEY}
+      - ZITADEL_DEFAULTINSTANCE_ORG_NAME=ZITADEL
+      - ZITADEL_DEFAULTINSTANCE_PROJECT_NAME=ZITADEL
+      - ZITADEL_DEFAULTINSTANCE_APPLICATION_NAME=ZITADEL Console
+      - ZITADEL_DEFAULTINSTANCE_APPLICATION_CLIENTID=${ZITADEL_DEFAULTINSTANCE_CLIENTID}
+      - ZITADEL_DEFAULTINSTANCE_USER_USERNAME=zitadel-admin
+      - ZITADEL_DEFAULTINSTANCE_USER_PASSWORD=${ZITADEL_DEFAULTINSTANCE_PASSWORD}
+      - ZITADEL_DEFAULTINSTANCE_MACHINE_KEY_PATH=/machinekey/machinekey.json
+      - ZITADEL_EXTERNALDOMAIN=localhost
+      - ZITADEL_EXTERNALPORT=8080
+      - ZITADEL_EXTERNALSECURE=false
+      - ZITADEL_LOG_LEVEL=info
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./config.yaml:/config.yaml
+      - ./steps.yaml:/steps.yaml
+      - ./machinekey:/machinekey
+    restart: always
+    healthcheck:
+      test: ["CMD", "/app/zitadel", "ready", "--config", "/config.yaml"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  db:
+    image: cockroachdb/cockroach:latest-v22.2
+    command: start-single-node --insecure
+    restart: always
+    volumes:
+      - ./cockroach-data:/cockroach/cockroach-data
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8080/health?ready=1" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    ports:
+      - "26257:26257"
+      - "8081:8080"
+
+  cockroach-init:
+    image: cockroachdb/cockroach:latest-v22.2
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./cockroach-init.sh:/cockroach-init.sh
+    entrypoint: ["/cockroach/cockroach", "sql", "--insecure", "-f", "/cockroach-init.sh", "--host", "db:26257"]

@@ -1,0 +1,15 @@
+services:
+  aria2-ariang:
+    image: hurlenko/aria2-ariang:latest
+    container_name: aria2-ariang
+    restart: unless-stopped
+    ports:
+      - 6800:6800
+      - 8080:80
+    volumes:
+      - ./data:/aria2/data
+      - ./conf:/aria2/conf
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - RPC_SECRET=${RPC_SECRET}

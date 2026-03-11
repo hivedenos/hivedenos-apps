@@ -1,13 +1,11 @@
 manifestVersion: 1.1
 id: rsshub
 category: rss
-name: Rsshub
+name: RSSHub
 version: alpine
-tagline: "An easy to use, and extensible RSS feed aggregator, it\xE2\x80\x99s capable\
-  \ of generating RSS feeds from pretty much everything..."
-description: "An easy to use, and extensible RSS feed aggregator, it\xE2\x80\x99s\
-  \ capable of generating RSS feeds from pretty much everything ranging from social\
-  \ media to university departments."
+tagline: Generate RSS feeds for websites and platforms that don't have them.
+description: Generate RSS feeds for websites and platforms that don't have them. Aggregate
+  content from various sources into your favorite RSS reader.
 developer: DIYgod
 dependencies: []
 gallery: []
@@ -16,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://rsshub.app/
+website: https://rsshub.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/DIYgod/RSSHub
-support: https://docs.rsshub.app/deploy/
+support: https://github.com/DIYgod/RSSHub/blob/master/docker-compose.yml

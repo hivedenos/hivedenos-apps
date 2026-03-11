@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: nominatim
-category: maps-and-gps
+category: map-and-gps
 name: Nominatim
-version: '4.4'
-tagline: Server application for geocoding (address -> coordinates) and reverse geocoding
-  (coordinates -> address) on OpenStreetM...
-description: Server application for geocoding (address -> coordinates) and reverse
-  geocoding (coordinates -> address) on OpenStreetMap data.
+version: '4.3'
+tagline: Find locations by name or look up addresses for any coordinate on the planet.
+description: Find locations by name or look up addresses for any coordinate on the
+  planet. This open-source geocoder uses constantly updated OpenStreetMap data.
 developer: osm-search
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://nominatim.org/
+website: https://nominatim.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/osm-search/Nominatim
 support: https://github.com/mediagis/nominatim-docker

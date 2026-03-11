@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: kiwix-serve
-category: note-taking-and-editors
+category: note-taking-and-editor
 name: Kiwix Serve
-version: 3.1.2
-tagline: HTTP daemon for serving wikis from ZIM files.
-description: HTTP daemon for serving wikis from ZIM files.
+version: latest
+tagline: Download entire websites like Wikipedia or TED Talks to read offline.
+description: Download entire websites like Wikipedia or TED Talks to read offline.
+  Access a vast library of knowledge on any device, from your phone to a Raspberry
+  Pi.
 developer: kiwix
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://kiwix.org/en/applications/
+website: https://kiwix.org/en/applications?utm_source=awesome-docker-compose.com
 repo: https://github.com/kiwix/kiwix-tools
 support: https://github.com/kiwix/kiwix-tools/tree/main/docker

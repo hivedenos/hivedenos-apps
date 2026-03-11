@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: web-portal
-category: personal-dashboards
+category: personal-dashboard
 name: Web Portal
-version: '2'
-tagline: A python web app designed to allow a easy way to manage the links to all
-  of your web services.
-description: A python web app designed to allow a easy way to manage the links to
-  all of your web services.
+version: latest
+tagline: Build a lightning-fast personal portal using a widget-based system.
+description: Build a lightning-fast personal portal using a widget-based system. Customize
+  your dashboard with themes, backgrounds, and powerful external plugins.
 developer: enchant97
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://webportal.docs.enchantedcode.co.uk/
+website: https://webportal.docs.enchantedcode.co.uk?utm_source=awesome-docker-compose.com
 repo: https://github.com/enchant97/web-portal
-support: https://webportal.docs.enchantedcode.co.uk/users/install.html
+support: https://webportal.docs.enchantedcode.co.uk/users/install/

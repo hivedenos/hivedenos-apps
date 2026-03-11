@@ -3,9 +3,11 @@ id: sqlpage
 category: low-code
 name: SQLPage
 version: latest
-tagline: SQL-only dynamic website builder.
-description: SQL-only dynamic website builder.
-developer: lovasoa
+tagline: Create interactive websites and applications using only SQL queries.
+description: Create interactive websites and applications using only SQL queries.
+  Generate maps, charts, forms, and dashboards directly from your existing database.
+  Fast and open-source.
+developer: sqlpage
 dependencies: []
 gallery: []
 path: /
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://sql.datapage.app/
-repo: https://github.com/lovasoa/SQLPage
-support: https://github.com/lovasoa/SQLPage#with-docker
+website: https://sql-page.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/sqlpage/SQLPage
+support: https://github.com/sqlpage/SQLPage#with-docker

@@ -3,10 +3,9 @@ id: paperless-ngx
 category: document-management
 name: Paperless-ngx
 version: '7'
-tagline: Scan, index, and archive all of your paper documents with an improved interface
-  (fork of Paperless).
-description: Scan, index, and archive all of your paper documents with an improved
-  interface (fork of Paperless).
+tagline: Digitize and organize physical documents with an open-source management system.
+description: Digitize and organize physical documents with an open-source management
+  system. Store data locally, perform OCR, and search your entire archive instantly.
 developer: paperless-ngx
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docs.paperless-ngx.com/
+website: https://docs.paperless-ngx.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/paperless-ngx/paperless-ngx
 support: https://github.com/paperless-ngx/paperless-ngx#getting-started

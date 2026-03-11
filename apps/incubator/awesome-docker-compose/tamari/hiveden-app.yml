@@ -2,10 +2,10 @@ manifestVersion: 1.1
 id: tamari
 category: recipe-management
 name: Tamari
-version: '0.8'
-tagline: Recipe manager web app with a built-in collection of recipes.
-description: Recipe manager web app with a built-in collection of recipes. Organize
-  by favorites and categories, create shopping lists, and plan meals.
+version: latest
+tagline: Manage your culinary life with a free, open-source web app.
+description: Manage your culinary life with a free, open-source web app. Discover
+  new dishes, organize favorites, plan meals, and generate shopping lists effortlessly.
 developer: alexbates
 dependencies: []
 gallery: []
@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://tamariapp.com/
+website: https://tamariapp.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/alexbates/Tamari
 support: https://tamariapp.com/docs/install-with-docker/

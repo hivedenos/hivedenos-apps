@@ -1,0 +1,18 @@
+services:
+  restic:
+    image: restic/restic:latest
+    hostname: restic-docker
+    environment:
+      - RESTIC_REPOSITORY=${RESTIC_REPOSITORY}
+      - RESTIC_PASSWORD=${RESTIC_PASSWORD}
+      # Uncomment and set these if using S3/Minio backends
+      # - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      # - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      # - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
+    volumes:
+      - ./data:/data:ro
+      - ./repo:/repo
+    # Default command checks version. 
+    # Initialize repo: docker compose run --rm restic init
+    # Run backup: docker compose run --rm restic backup /data
+    command: version

@@ -1,10 +1,17 @@
-version: 
 services:
   tamari:
+    image: alexbates/tamari:latest
     container_name: tamari
-    image: alexbates/tamari:0.8
+    restart: unless-stopped
     ports:
-      - 4888:4888
+      - "3000:3000"
     volumes:
-      - tamariappdata:/app/appdata
-    restart: always
+      - ./data:/app/data
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - DATABASE_URL=file:/app/data/tamari.db
+      - SECRET_KEY=${SECRET_KEY}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
+      - PUID=1000
+      - PGID=1000

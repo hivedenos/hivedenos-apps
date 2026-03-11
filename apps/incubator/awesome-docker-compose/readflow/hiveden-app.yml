@@ -2,12 +2,11 @@ manifestVersion: 1.1
 id: readflow
 category: rss
 name: readflow
-version: '14'
-tagline: 'Lightweight news reader with modern interface and features: full-text search,
-  automatic categorization, archiving, offl...'
-description: "Lightweight news reader with modern interface and features: full-text\
-  \ search, automatic categorization, archiving, offline support, notifications\xE2\
-  \x80\xA6"
+version: latest
+tagline: Centralize your news and articles in a single, simple app.
+description: Centralize your news and articles in a single, simple app. Save content
+  to read later on any device and enjoy a versatile reading experience with cloud
+  integrations.
 developer: ncarlier
 dependencies: []
 gallery: []
@@ -16,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://readflow.app/
+website: https://readflow.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/ncarlier/readflow
 support: https://github.com/ncarlier/readflow#installation

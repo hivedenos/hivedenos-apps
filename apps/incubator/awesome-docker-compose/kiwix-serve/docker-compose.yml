@@ -1,6 +1,10 @@
-version: 
 services:
-  kiwix-tools:
-    stdin_open: true
-    tty: true
-    image: ghcr.io/kiwix/kiwix-tools:3.1.2
+  kiwix-serve:
+    image: ghcr.io/kiwix/kiwix-tools:latest
+    container_name: kiwix-serve
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/data
+    command: "*.zim"
+    restart: unless-stopped

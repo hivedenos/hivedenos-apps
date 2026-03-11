@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: seatsurfing
 category: booking-and-scheduling
 name: Seatsurfing
-version: '12'
-tagline: Webbased app to book seats, desks and rooms for offices.
-description: Webbased app to book seats, desks and rooms for offices.
+version: latest
+tagline: Manage hybrid workspaces with easy desk sharing and room reservations.
+description: Manage hybrid workspaces with easy desk sharing and room reservations.
+  Upload floor plans, book seats from any device, and scale as your enterprise grows.
 developer: seatsurfing
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://seatsurfing.app/
-repo: https://github.com/seatsurfing/backend
-support: https://seatsurfing.app/docs/docker
+website: https://seatsurfing.io?utm_source=awesome-docker-compose.com
+repo: https://github.com/seatsurfing/seatsurfing
+support: https://seatsurfing.io/docs/self-hosted/docker

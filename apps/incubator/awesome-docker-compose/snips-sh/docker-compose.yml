@@ -1,12 +1,14 @@
-version: 
 services:
   snips:
-    image: 'ghcr.io/robherley/snips.sh:latest'
+    image: ghcr.io/robherley/snips.sh:latest
+    container_name: snips
     restart: unless-stopped
     ports:
-      - '80:8080'
-      - '22:2222'
+      - "8080:8080"
+      - "2222:2222"
+    environment:
+      SNIPS_DB_PATH: /data/snips.db
+      SNIPS_URL: http://localhost:8080
+      SNIPS_HMAC_KEY: ${SNIPS_HMAC_KEY}
     volumes:
       - ./data:/data
-    env_file:
-      - snips.env

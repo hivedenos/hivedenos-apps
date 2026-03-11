@@ -1,0 +1,13 @@
+services:
+  manticore:
+    image: manticoresearch/manticore:latest
+    container_name: manticore
+    restart: unless-stopped
+    ports:
+      - "9306:9306"
+      - "9308:9308"
+      - "9312:9312"
+    volumes:
+      - ./manticore-data:/var/lib/manticore
+    environment:
+      - EXTRA=1

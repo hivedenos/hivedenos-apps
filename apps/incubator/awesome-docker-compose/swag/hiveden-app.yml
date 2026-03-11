@@ -1,12 +1,12 @@
 manifestVersion: 1.1
 id: swag
-category: web-servers
-name: SWAG (Secure Web Application Gateway)
+category: web-server
+name: SWAG
 version: latest
-tagline: "Nginx webserver and reverse proxy with PHP support, built-in Certbot (Let\xE2\
-  \x80\x99s Encrypt) client and fail2ban integration."
-description: "Nginx webserver and reverse proxy with PHP support, built-in Certbot\
-  \ (Let\xE2\x80\x99s Encrypt) client and fail2ban integration."
+tagline: Set up an Nginx webserver and reverse proxy with automatic SSL certificate
+  renewal.
+description: Set up an Nginx webserver and reverse proxy with automatic SSL certificate
+  renewal. Protect your services with built-in Fail2ban for intrusion prevention.
 developer: linuxserver
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/web-servers/swag
+website: https://github.com/linuxserver/docker-swag?utm_source=awesome-docker-compose.com
 repo: https://github.com/linuxserver/docker-swag
 support: https://docs.linuxserver.io/general/swag/

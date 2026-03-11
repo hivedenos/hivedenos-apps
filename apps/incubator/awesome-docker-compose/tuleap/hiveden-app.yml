@@ -3,9 +3,11 @@ id: tuleap
 category: project-management
 name: Tuleap
 version: latest
-tagline: Modern open source project time tracking for freelancers and small teams.
-description: Modern open source project time tracking for freelancers and small teams.
-developer: Awesome Docker Compose
+tagline: Manage software development and team collaboration with a single web-based
+  solution.
+description: Manage software development and team collaboration with a single web-based
+  solution. Build and deploy projects efficiently with end-to-end traceability.
+developer: Enalean
 dependencies: []
 gallery: []
 path: /
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.tuleap.org/
-repo: https://docs.tuleap.org/installation-guide/docker/introduction.html
-support: https://docs.tuleap.org/installation-guide/docker/introduction.html
+website: https://www.tuleap.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/Enalean/tuleap
+support: https://docs.tuleap.com/installation-guide/docker/introduction.html

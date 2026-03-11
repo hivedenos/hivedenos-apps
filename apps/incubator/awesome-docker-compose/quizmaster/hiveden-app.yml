@@ -3,10 +3,10 @@ id: quizmaster
 category: games
 name: Quizmaster
 version: latest
-tagline: A web-app for conducting a quiz, including a page for players to enter their
-  answers.
-description: A web-app for conducting a quiz, including a page for players to enter
-  their answers.
+tagline: Host interactive online quizzes with custom question types and multimedia
+  support.
+description: Host interactive online quizzes with custom question types and multimedia
+  support. Manage the game flow while players submit answers from any device.
 developer: nymanjens
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/games/quizmaster
+website: https://github.com/nymanjens/quizmaster?utm_source=awesome-docker-compose.com
 repo: https://github.com/nymanjens/quizmaster
 support: https://github.com/nymanjens/quizmaster#installation

@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: vscodium-linuxserver-io
+category: ide-and-tools
+name: VSCodium (LinuxServer.io)
+version: latest
+tagline: Get community-driven, freely-licensed binaries of VS Code.
+description: Get community-driven, freely-licensed binaries of VS Code. Enjoy a powerful
+  code editor with the telemetry and tracking completely removed for a private experience.
+developer: VSCodium
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://vscodium.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/VSCodium/vscodium
+support: https://github.com/linuxserver/docker-vscodium

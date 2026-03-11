@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: passit
-category: password-managers
-name: PassIt
-version: stable
-tagline: Simple password manage with sharing features by group and user, but no administration
-  interface.
-description: Simple password manage with sharing features by group and user, but no
-  administration interface.
+category: password-manager
+name: Passit
+version: 13-alpine
+tagline: Manage your digital life with an open-source password manager.
+description: Manage your digital life with an open-source password manager. Access
+  and share passwords securely across all your devices, even when you're offline.
 developer: Awesome Docker Compose
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://passit.io/
-repo: https://passit.io/install/
+website: https://passit.io?utm_source=awesome-docker-compose.com
+repo: https://gitlab.com/passit
 support: https://passit.io/install/

@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: upstat
 category: network-monitoring
 name: Upstat
-version: v1.26.3
-tagline: "\uD83D\uDFE2 a simple open-source, self-hosted status monitoring tool."
-description: "\uD83D\uDFE2 a simple open-source, self-hosted status monitoring tool."
+version: latest
+tagline: Monitor your website and API uptime with a self-hosted tool.
+description: Monitor your website and API uptime with a self-hosted tool. Get instant
+  alerts for performance issues and keep users informed with status pages.
 developer: chamanbravo
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://upstat.vercel.app/
+website: https://upstat.vercel.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/chamanbravo/upstat
 support: https://github.com/chamanbravo/upstat#-how-to-install

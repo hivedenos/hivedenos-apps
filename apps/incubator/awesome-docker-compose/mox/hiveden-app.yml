@@ -1,14 +1,11 @@
 manifestVersion: 1.1
 id: mox
-category: email-servers
+category: email-server
 name: Mox
 version: latest
-tagline: Complete e-mail solution with IMAP4, SMTP, SPF, DKIM, DMARC, MTA-STS, DANE
-  and DNSSEC, reputation-based and content-bas...
-description: "Complete e-mail solution with IMAP4, SMTP, SPF, DKIM, DMARC, MTA-STS,\
-  \ DANE and DNSSEC, reputation-based and content-based junk filtering, Internationalization\
-  \ (IDNA), automatic TLS with ACME and Let\xE2\x80\x99s Encrypt, account autoconfiguration,\
-  \ and webmail."
+tagline: Take control of your communications with a complete, open-source email solution.
+description: Take control of your communications with a complete, open-source email
+  solution. Set up a secure server with modern protocols and webmail in under 10 minutes.
 developer: mjl-
 dependencies: []
 gallery: []
@@ -17,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.xmox.nl/
+website: https://www.xmox.nl?utm_source=awesome-docker-compose.com
 repo: https://github.com/mjl-/mox
 support: https://www.xmox.nl/install/#hdr-docker

@@ -1,11 +1,12 @@
 manifestVersion: 1.1
 id: wildduck
-category: email-servers
-name: Wildduck
-version: v1.34.0
-tagline: Scalable no-SPOF IMAP/POP3 mail server.
-description: Scalable no-SPOF IMAP/POP3 mail server.
-developer: nodemailer
+category: email-server
+name: WildDuck
+version: latest
+tagline: Deploy a highly scalable, stateless IMAP and POP3 mail server.
+description: Deploy a highly scalable, stateless IMAP and POP3 mail server. Enjoy
+  full Unicode support, advanced security, and complete management via a REST API.
+developer: zone-eu
 dependencies: []
 gallery: []
 path: /
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://wildduck.email/
-repo: https://github.com/nodemailer/wildduck
+website: https://docs.wildduck.email?utm_source=awesome-docker-compose.com
+repo: https://github.com/zone-eu/wildduck
 support: https://github.com/nodemailer/wildduck-dockerized

@@ -1,12 +1,12 @@
 manifestVersion: 1.1
 id: webthings-gateway
 category: internet-of-things-iot
-name: Webthings Gateway
+name: WebThings Gateway
 version: latest
-tagline: WebThings is an open source implementation of the Web of Things, including
-  the WebThings Gateway and the WebThings Fram...
-description: WebThings is an open source implementation of the Web of Things, including
-  the WebThings Gateway and the WebThings Framework.
+tagline: Create a secure smart home hub and build connected devices using open web
+  standards.
+description: Create a secure smart home hub and build connected devices using open
+  web standards. Monitor and control your internet of things with privacy in mind.
 developer: WebThingsIO
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://webthings.io/
+website: https://webthings.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/WebThingsIO/gateway
 support: https://webthings.io/docs/gateway/installation/

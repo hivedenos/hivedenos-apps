@@ -3,10 +3,9 @@ id: pictshare
 category: image-hosting
 name: PictShare
 version: latest
-tagline: PictShare is a multi lingual, open source image hosting service with a simple
-  resizing and upload API.
-description: PictShare is a multi lingual, open source image hosting service with
-  a simple resizing and upload API.
+tagline: Upload images to get shareable links.
+description: Upload images to get shareable links. Easily resize or crop them by simply
+  modifying the URL. Automate uploads via file, URL, or Base64 with a simple API.
 developer: HaschekSolutions
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.pictshare.net/
+website: https://www.pictshare.net?utm_source=awesome-docker-compose.com
 repo: https://github.com/HaschekSolutions/pictshare
 support: https://github.com/HaschekSolutions/pictshare#quickstart

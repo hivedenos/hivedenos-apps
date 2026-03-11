@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: pgbackrest-woblerr
+category: database-backup
+name: pgBackRest (woblerr)
+version: '15'
+tagline: Get reliable, scalable backups for the largest databases.
+description: Get reliable, scalable backups for the largest databases. Features parallel
+  processing, delta restore, encryption, and support for S3, Azure, and GCS storage.
+developer: pgbackrest
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://pgbackrest.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/pgbackrest/pgbackrest
+support: https://github.com/woblerr/docker-pgbackrest

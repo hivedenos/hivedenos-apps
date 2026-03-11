@@ -2,11 +2,11 @@ manifestVersion: 1.1
 id: ente
 category: photo-server
 name: Ente
-version: '12'
-tagline: An end-to-end encrypted photo-sharing platform (alternative to Google Photos,
-  Apple Photos).
-description: An end-to-end encrypted photo-sharing platform (alternative to Google
-  Photos, Apple Photos).
+version: latest
+tagline: Protect your photos with end-to-end encryption.
+description: Protect your photos with end-to-end encryption. This open-source tool
+  offers cross-platform access, family plans, and AI features without compromising
+  privacy.
 developer: ente-io
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/photo-server/ente
+website: https://ente.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/ente-io/ente
 support: https://github.com/ente-io/ente/blob/main/docs/docs/self-hosting/index.md

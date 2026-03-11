@@ -1,16 +1,13 @@
-version: 
- 
 services:
-  pgautoupgrade:
+  db:
     image: pgautoupgrade/pgautoupgrade:latest
-    container_name: pgauto
-    stdin_open: true
-    tty: true
-    volumes:
-      - type: bind
-        source: /path/to/your/database/directory
-        target: /var/lib/postgresql/data
+    container_name: pgautoupgrade
+    restart: unless-stopped
     environment:
-      - POSTGRES_PASSWORD=password
-      - PGAUTO_ONESHOT=yes
-    restart: always
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"

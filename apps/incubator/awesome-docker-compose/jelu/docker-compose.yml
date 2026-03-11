@@ -1,14 +1,12 @@
-version: '3.3'
 services:
   jelu:
-    image: wabayang/jelu
+    image: wabayang/jelu:latest
     container_name: jelu
+    mem_limit: 1024m
+    mem_reservation: 200m
     volumes:
-      - ~/jelu/config:/config
-      - ~/jelu/database:/database
-      - ~/jelu/files/images:/files/images
-      - ~/jelu/files/imports:/files/imports
-      - /etc/timezone:/etc/timezone:ro
+      - ./database:/database
+      - ./files:/files
     ports:
-      - 11111:11111
+      - "11111:11111"
     restart: unless-stopped

@@ -2,9 +2,12 @@ manifestVersion: 1.1
 id: cadvisor
 category: container-management
 name: Cadvisor
-version: v0.50.0
-tagline: Analyzes resource usage and performance characteristics of running containers.
-description: Analyzes resource usage and performance characteristics of running containers.
+version: v0.49.0
+tagline: Collect, aggregate, and export detailed data on container resource usage
+  and performance.
+description: Collect, aggregate, and export detailed data on container resource usage
+  and performance. Get historical usage, network stats, and more to optimize your
+  containers.
 developer: google
 dependencies: []
 gallery: []
@@ -13,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/container-management/cadvisor
+website: https://github.com/google/cadvisor?utm_source=awesome-docker-compose.com
 repo: https://github.com/google/cadvisor
 support: https://github.com/google/cadvisor#quick-start-running-cadvisor-in-a-docker-container

@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: hedgedoc-linuxserver-io
+category: note-taking-and-editor
+name: Hedgedoc (LinuxServer.io)
+version: latest
+tagline: Create and edit markdown documents with your team in real-time.
+description: Create and edit markdown documents with your team in real-time. This
+  self-hosted editor supports presentations, graphs, and diagrams with simple permissions.
+developer: linuxserver
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://hedgedoc.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/linuxserver/docker-hedgedoc
+support: https://github.com/linuxserver/docker-hedgedoc

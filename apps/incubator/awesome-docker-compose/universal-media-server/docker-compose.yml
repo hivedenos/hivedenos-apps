@@ -1,13 +1,16 @@
-version: 
 services:
   ums:
     image: universalmediaserver/ums
-    container_name: UMS
-    ports:
-      - 1044:1044
-      - 5001:5001
-      - 9001:9001
+    container_name: ums
+    # Host networking is required for DLNA/UPnP discovery to work correctly
+    network_mode: host
+    environment:
+      # Set user/group ID to match your host user if needed for permission management
+      - PUID=1000
+      - PGID=1000
     volumes:
-      - /srv/UMS:/root/media
-      - '"$HOME/.config/UMS":/root/.config/UMS'
+      # Persist configuration, database, and logs
+      - ./data:/root/.config/UMS
+      # Mount your media directory
+      - ./media:/media
     restart: unless-stopped

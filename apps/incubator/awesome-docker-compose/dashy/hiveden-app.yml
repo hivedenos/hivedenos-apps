@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: dashy
-category: personal-dashboards
+category: personal-dashboard
 name: Dashy
 version: latest
-tagline: Feature-rich homepage for your homelab, with easy YAML configuration.
-description: Feature-rich homepage for your homelab, with easy YAML configuration.
+tagline: Build a personal dashboard for your homelab.
+description: Build a personal dashboard for your homelab. Customize layouts, add widgets,
+  monitor service status, and manage access with built-in authentication.
 developer: lissy93
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://dashy.to/
+website: https://dashy.to?utm_source=awesome-docker-compose.com
 repo: https://github.com/lissy93/dashy
-support: https://dashy.to/docs/deployment#using-docker-compose
+support: https://dashy.to/docs/deployment/#using-docker-compose

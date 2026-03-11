@@ -1,9 +1,15 @@
-version: 
 services:
   srs:
-    image: ossrs/srs:5
-    ports:
-      - 1935:1935
-      - 1985:1985
-      - 8080:8080
+    image: ossrs/srs:6
+    container_name: srs
     restart: unless-stopped
+    ports:
+      - "1935:1935"       # RTMP
+      - "1985:1985"       # HTTP API
+      - "8080:8080"       # HTTP Server (HLS/HTTP-FLV)
+      - "8000:8000/udp"   # WebRTC
+      - "10080:10080/udp" # SRT
+    environment:
+      - CANDIDATE=${SRS_CANDIDATE}
+    volumes:
+      - ./data:/usr/local/srs/objs

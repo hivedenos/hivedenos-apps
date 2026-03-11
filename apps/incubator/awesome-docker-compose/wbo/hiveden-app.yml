@@ -3,10 +3,9 @@ id: wbo
 category: diagraming-and-canvas
 name: WBO
 version: latest
-tagline: Online collaborative Whiteboard that is simple, free, easy to use and to
-  deploy.
-description: Online collaborative Whiteboard that is simple, free, easy to use and
-  to deploy.
+tagline: Sketch new ideas together on a free, open-source online drawing tool.
+description: Sketch new ideas together on a free, open-source online drawing tool.
+  Collaborate in real time on a shared virtual board that is always saved.
 developer: lovasoa
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://wbo.ophir.dev/
+website: https://wbo.ophir.dev?utm_source=awesome-docker-compose.com
 repo: https://github.com/lovasoa/whitebophir
 support: https://github.com/lovasoa/whitebophir#running-your-own-instance-of-wbo

@@ -1,16 +1,13 @@
-version: 
- 
 services:
-  mysql-backup:
- 
+  backup-all-mysql:
     image: dsteinkopf/backup-all-mysql:latest
+    container_name: backup-all-mysql
     environment:
-      - BACKUP_INTERVAL=20000
-      - BACKUP_FIRSTDELAY=3600
-    links:
-      - mysql
-    restart: always
+      - MYSQL_HOST=192.168.1.100
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - CRON_TIME=0 2 * * *
+      - MAX_BACKUPS=14
     volumes:
-      - /opt/dockervolumes/wordpress/mysql-backup:/var/dbdumps
-      - /etc/localtime:/etc/localtime
-      - /etc/timezone:/etc/timezone
+      - ./backup:/backup
+    restart: unless-stopped

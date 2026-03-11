@@ -3,8 +3,11 @@ id: litecart
 category: e-commerce
 name: Litecart
 version: latest
-tagline: Shopping cart in 1 file (with support for payment by card or cryptocurrency).
-description: Shopping cart in 1 file (with support for payment by card or cryptocurrency).
+tagline: Launch a lightweight, single-file shopping cart to sell digital files and
+  license keys.
+description: Launch a lightweight, single-file shopping cart to sell digital files
+  and license keys. Accept credit cards and cryptocurrency without complex database
+  setups.
 developer: shurco
 dependencies: []
 gallery: []
@@ -13,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/e-commerce/litecart
+website: https://github.com/shurco/litecart?utm_source=awesome-docker-compose.com
 repo: https://github.com/shurco/litecart
 support: https://github.com/shurco/litecart#run-using-docker

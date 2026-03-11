@@ -1,0 +1,35 @@
+services:
+  freescout:
+    image: tiredofit/freescout
+    container_name: freescout
+    ports:
+      - 8080:80
+    environment:
+      - TIMEZONE=Etc/UTC
+      - SITE_URL=http://localhost:8080
+      - DB_HOST=freescout-db
+      - DB_PORT=3306
+      - DB_NAME=freescout
+      - DB_USER=freescout
+      - DB_PASS=${DB_PASSWORD}
+      - DB_TYPE=mysql
+      - CONTAINER_ENABLE_SCHEDULING=TRUE
+      - CONTAINER_ENABLE_MESSAGING=FALSE
+    volumes:
+      - ./data:/www/html
+      - ./logs:/www/logs
+    restart: always
+    depends_on:
+      - freescout-db
+
+  freescout-db:
+    image: mariadb:10.6
+    container_name: freescout-db
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+      - MYSQL_DATABASE=freescout
+      - MYSQL_USER=freescout
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - ./db-data:/var/lib/mysql
+    restart: always

@@ -1,11 +1,11 @@
 manifestVersion: 1.1
 id: spacebin
-category: pastebins
+category: pastebin
 name: Spacebin
 version: latest
-tagline: Modern Pastebin server written in Go with a JS-free web UI and tons of features.
-description: Modern Pastebin server written in Go with a JS-free web UI and tons of
-  features.
+tagline: Share notes, code snippets, and text documents easily.
+description: Share notes, code snippets, and text documents easily. Built with Go
+  for maximum reliability, this lightweight server ensures your data is always accessible.
 developer: lukewhrit
 dependencies: []
 gallery: []
@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://spaceb.in/
+website: https://spaceb.in?utm_source=awesome-docker-compose.com
 repo: https://github.com/lukewhrit/spacebin
 support: https://github.com/lukewhrit/spacebin#documentation

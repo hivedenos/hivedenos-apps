@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: mysql-backup
-category: database-backup-mysql-backup
+category: database-backup
 name: mysql-backup
-version: 8.2.0
-tagline: image to enable automated backups of mysql databases in containers.
-description: image to enable automated backups of mysql databases in containers.
+version: '8.0'
+tagline: Automate MySQL database backups and restores in containers.
+description: Automate MySQL database backups and restores in containers. Schedule
+  dumps, send to local or cloud storage, and prune old backups with a simple container
+  image.
 developer: databacker
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/database-backup/mysql-backup/mysql-backup
+website: https://github.com/databacker/mysql-backup?utm_source=awesome-docker-compose.com
 repo: https://github.com/databacker/mysql-backup
 support: https://github.com/databacker/mysql-backup/tree/master/examples

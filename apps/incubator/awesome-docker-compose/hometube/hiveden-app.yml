@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: hometube
+category: video-downloader
+name: HomeTube
+version: latest
+tagline: Grab videos and playlists from any source.
+description: Grab videos and playlists from any source. Automatically organize them
+  for your media server, block ads, and ensure you always get the best possible quality.
+developer: EgalitarianMonkey
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/EgalitarianMonkey/hometube?utm_source=awesome-docker-compose.com
+repo: https://github.com/EgalitarianMonkey/hometube
+support: https://github.com/EgalitarianMonkey/hometube/blob/main/docs/deployment.md

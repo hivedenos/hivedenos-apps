@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: druid
 category: analytics
 name: Druid
-version: latest
-tagline: Distributed, column-oriented, real-time analytics data store.
-description: Distributed, column-oriented, real-time analytics data store.
+version: '15'
+tagline: Execute OLAP queries in milliseconds on trillions of rows.
+description: Execute OLAP queries in milliseconds on trillions of rows. Build highly
+  concurrent applications with native integration for Kafka and Kinesis.
 developer: apache
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://druid.apache.org/
+website: https://druid.apache.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/apache/druid
 support: https://druid.apache.org/docs/latest/tutorials/docker/

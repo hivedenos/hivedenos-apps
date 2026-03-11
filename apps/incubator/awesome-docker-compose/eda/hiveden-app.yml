@@ -3,8 +3,10 @@ id: eda
 category: analytics
 name: EDA
 version: latest
-tagline: Web application for data analysis and visualization.
-description: Web application for data analysis and visualization.
+tagline: Connect your database and get insights in minutes.
+description: Connect your database and get insights in minutes. Build interactive
+  reports and dashboards with drag-and-drop ease. No coding or technical knowledge
+  is required.
 developer: jortilles
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://eda.jortilles.com/
+website: https://eda.jortilles.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/jortilles/EDA
-support: https://github.com/jortilles/EDA#Demo
+support: https://github.com/jortilles/EDA#-run-edalitics-with-docker-recommended

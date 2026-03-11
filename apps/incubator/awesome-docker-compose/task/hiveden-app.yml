@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: task
+category: automation
+name: "\xB5Task"
+version: 14-alpine
+tagline: Model and execute business processes using a declarative YAML format.
+description: Model and execute business processes using a declarative YAML format.
+  This lightweight automation engine is secure, extensible with Go plugins, and simple
+  to operate.
+developer: ovh
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/ovh/utask?utm_source=awesome-docker-compose.com
+repo: https://github.com/ovh/utask
+support: https://github.com/ovh/utask#running-with-docker-compose

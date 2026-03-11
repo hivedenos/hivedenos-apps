@@ -3,10 +3,10 @@ id: rustdesk
 category: remote-access
 name: RustDesk
 version: latest
-tagline: Remote Desktop Access software that works out-of-the-box (alternative to
-  TeamViewer).
-description: Remote Desktop Access software that works out-of-the-box (alternative
-  to TeamViewer).
+tagline: Get secure, open-source remote access.
+description: Get secure, open-source remote access. Host your own server for complete
+  data sovereignty, enhanced security, and full customization. Works on all major
+  platforms.
 developer: rustdesk
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://rustdesk.com/
+website: https://rustdesk.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/rustdesk/rustdesk-server
-support: https://github.com/rustdesk/rustdesk-server#docker-images
+support: https://rustdesk.com/docs/en/self-host/rustdesk-server-oss/docker/

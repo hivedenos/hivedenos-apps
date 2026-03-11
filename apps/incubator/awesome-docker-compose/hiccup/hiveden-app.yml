@@ -1,12 +1,12 @@
 manifestVersion: 1.1
 id: hiccup
-category: personal-dashboards
+category: personal-dashboard
 name: Hiccup
 version: latest
-tagline: A beautiful static homepage to get to your links and services quickly.
-description: A beautiful static homepage to get to your links and services quickly.
-  It has built-in search, editing, PWA support and localstorage caching to easily
-  organize your start page.
+tagline: Create a custom, static start page to access links quickly.
+description: Create a custom, static start page to access links quickly. Organize
+  bookmarks, search across providers, and manage your dashboard with a simple configuration
+  file.
 developer: ashwin-pc
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/personal-dashboards/hiccup
+website: https://github.com/ashwin-pc/hiccup?utm_source=awesome-docker-compose.com
 repo: https://github.com/ashwin-pc/hiccup
 support: https://github.com/ashwin-pc/hiccup#docker

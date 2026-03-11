@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: stalwart
-category: email-servers
+category: email-server
 name: Stalwart
 version: latest
-tagline: All-in-one mail server with JMAP, IMAP4, and SMTP support and a wide range
-  of modern features.
-description: All-in-one mail server with JMAP, IMAP4, and SMTP support and a wide
-  range of modern features.
+tagline: Deploy an all-in-one, Rust-based mail and collaboration server.
+description: Deploy an all-in-one, Rust-based mail and collaboration server. Benefit
+  from built-in spam filtering, modern protocols, and enterprise-grade security.
 developer: stalwartlabs
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://stalw.art/
-repo: https://github.com/stalwartlabs/mail-server
-support: https://stalw.art/docs/install/docker/
+website: https://stalw.art?utm_source=awesome-docker-compose.com
+repo: https://github.com/stalwartlabs/stalwart
+support: https://stalw.art/docs/install/platform/docker

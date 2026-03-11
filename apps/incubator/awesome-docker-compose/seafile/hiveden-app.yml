@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: seafile
 category: cloud-storage
 name: Seafile
-version: latest
-tagline: File hosting and sharing solution primary for teams and organizations.
-description: File hosting and sharing solution primary for teams and organizations.
+version: '10.11'
+tagline: Sync, share, and collaborate on your own private server.
+description: Sync, share, and collaborate on your own private server. Organize files
+  with custom properties, flexible views, and AI-powered automation for smarter management.
 developer: haiwen
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.seafile.com/
+website: https://www.seafile.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/haiwen/seafile
-support: https://github.com/haiwen/seafile
+support: https://manual.seafile.com/latest/setup/overview/

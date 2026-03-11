@@ -1,9 +1,19 @@
-version: 
 services:
-  config:
-    image: rclone/rclone
+  rclone:
+    image: rclone/rclone:latest
+    container_name: rclone
+    restart: unless-stopped
+    command: rcd --rc-web-gui --rc-addr :5572 --rc-user ${RCLONE_USER} --rc-pass ${RCLONE_PASS}
+    ports:
+      - "5572:5572"
     volumes:
-      - ~/.config/rclone:/config/rclone
-    user: $(id -u):$(id -g)
-    command:
-      - config
+      - ./config:/config/rclone
+      - ./data:/data:shared
+      - /etc/passwd:/etc/passwd:ro
+      - /etc/group:/etc/group:ro
+    devices:
+      - /dev/fuse
+    cap_add:
+      - SYS_ADMIN
+    security_opt:
+      - apparmor:unconfined

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: zerobyte
+category: backup
+name: Zerobyte
+version: latest
+tagline: Protect self-hosted data with automated, encrypted backups.
+description: Protect self-hosted data with automated, encrypted backups. Use a web
+  UI to schedule jobs, manage retention, and back up from NFS, SMB, SFTP, or local
+  dirs.
+developer: nicotsx
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/nicotsx/zerobyte?utm_source=awesome-docker-compose.com
+repo: https://github.com/nicotsx/zerobyte
+support: https://github.com/nicotsx/zerobyte#installation

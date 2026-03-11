@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: vaultwarden
-category: password-managers
+category: password-manager
 name: Vaultwarden
 version: latest
-tagline: Lightweight Bitwarden server API implementation written in Rust.
-description: Lightweight Bitwarden server API implementation written in Rust.
+tagline: Self-host a secure and lightweight password manager server.
+description: Self-host a secure and lightweight password manager server. Written in
+  Rust, this alternative is fully compatible with Bitwarden clients for managing credentials.
 developer: dani-garcia
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/password-managers/vaultwarden
+website: https://github.com/dani-garcia/vaultwarden?utm_source=awesome-docker-compose.com
 repo: https://github.com/dani-garcia/vaultwarden
-support: https://github.com/dani-garcia/vaultwarden#installation
+support: https://github.com/dani-garcia/vaultwarden#docker-compose

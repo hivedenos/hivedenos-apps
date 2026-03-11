@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: openproject
 category: project-management
-name: Openproject
-version: -14-slim}
-tagline: OpenProject is the leading open source project management software.
-description: OpenProject is the leading open source project management software.
+name: OpenProject
+version: '13'
+tagline: Manage classic, agile, or hybrid projects with complete data sovereignty.
+description: Manage classic, agile, or hybrid projects with complete data sovereignty.
+  Utilize Gantt charts, Kanban boards, and time tracking in a secure environment.
 developer: opf
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.openproject.org/
+website: https://www.openproject.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/opf/openproject
-support: https://github.com/opf/openproject-deploy
+support: https://github.com/opf/openproject-docker-compose

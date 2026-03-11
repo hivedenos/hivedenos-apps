@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: sonarr-linuxserver-io
+category: arr
+name: Sonarr (LinuxServer.io)
+version: latest
+tagline: Automate your TV show downloads across Usenet and Torrents.
+description: Automate your TV show downloads across Usenet and Torrents. Track upcoming
+  episodes with a built-in calendar and automatically bypass failed downloads.
+developer: Sonarr
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://sonarr.tv?utm_source=awesome-docker-compose.com
+repo: https://github.com/Sonarr/Sonarr
+support: https://github.com/linuxserver/docker-sonarr

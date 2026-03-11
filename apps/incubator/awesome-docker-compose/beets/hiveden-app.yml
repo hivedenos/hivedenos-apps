@@ -3,11 +3,9 @@ id: beets
 category: music-server
 name: Beets
 version: latest
-tagline: "Beets\xE2\x81\_ is a music library manager and not, for the most part, a\
-  \ music player."
-description: "Beets\xE2\x81\_ is a music library manager and not, for the most part,\
-  \ a music player. It does include a simple player plugin and an experimental Web-based\
-  \ player, but it generally leaves actual sound-reproduction to specialized tools."
+tagline: Catalog your music collection and automatically improve metadata.
+description: Catalog your music collection and automatically improve metadata. Fetch
+  album art, lyrics, and genres, transcode audio, and browse your library graphically.
 developer: beetbox
 dependencies: []
 gallery: []
@@ -16,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://beets.io/
+website: https://beets.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/beetbox/beets
 support: https://github.com/linuxserver/docker-beets

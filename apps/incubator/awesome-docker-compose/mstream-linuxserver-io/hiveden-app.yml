@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: mstream-linuxserver-io
+category: music-server
+name: mStream (LinuxServer.io)
+version: latest
+tagline: Set up a private music server in seconds to stream and sync your personal
+  audio collection across all devices.
+description: Set up a private music server in seconds to stream and sync your personal
+  audio collection across all devices. Enjoy uncompressed audio, privacy, and no ads.
+developer: IrosTheBeggar
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://mstream.io?utm_source=awesome-docker-compose.com
+repo: https://github.com/IrosTheBeggar/mStream
+support: https://github.com/linuxserver/docker-mstream

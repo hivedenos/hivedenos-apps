@@ -1,0 +1,17 @@
+services:
+  backrest:
+    image: garethgeorge/backrest:latest
+    container_name: backrest
+    restart: unless-stopped
+    environment:
+      - TZ=Etc/UTC
+      - PUID=1000
+      - PGID=1000
+      - XDG_CACHE_HOME=/cache
+    ports:
+      - "9898:9898"
+    volumes:
+      - ./data:/data
+      - ./cache:/cache
+      # Mount the directory you wish to backup
+      - ${BACKUP_SOURCE_DIR}:/source:ro

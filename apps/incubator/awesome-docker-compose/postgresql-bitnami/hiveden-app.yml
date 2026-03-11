@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: postgresql-bitnami
+category: database
+name: PostgreSQL (Bitnami)
+version: latest
+tagline: Deploy a hardened, production-ready object-relational database with near-zero
+  vulnerabilities.
+description: Deploy a hardened, production-ready object-relational database with near-zero
+  vulnerabilities. Easily configure replication, TLS, and LDAP using environment variables.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/bitnami/containers/tree/main/bitnami/postgresql?utm_source=awesome-docker-compose.com
+repo: https://awesome-docker-compose.com/postgresql-bitnami
+support: https://awesome-docker-compose.com/postgresql-bitnami

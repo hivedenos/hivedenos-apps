@@ -2,11 +2,10 @@ manifestVersion: 1.1
 id: dim
 category: media-server
 name: Dim
-version: dev
-tagline: Dim is a self-hosted media manager fueled by dark forces.
-description: Dim is a self-hosted media manager fueled by dark forces. With minimal
-  setup, Dim will organize and beautify your media collections, letting you access
-  and play them anytime from anywhere.
+version: master
+tagline: Take control of your media collection with a self-hosted manager.
+description: Take control of your media collection with a self-hosted manager. Organize
+  files, apply beautiful metadata, and play your content from any device.
 developer: Dusk-Labs
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/media-server/dim
+website: https://github.com/Dusk-Labs/dim?utm_source=awesome-docker-compose.com
 repo: https://github.com/Dusk-Labs/dim
 support: https://github.com/Dusk-Labs/dim#running-with-docker

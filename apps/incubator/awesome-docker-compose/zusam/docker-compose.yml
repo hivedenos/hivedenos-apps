@@ -1,19 +1,13 @@
-version: '3.9'
- 
 services:
   zusam:
-    # Adapt the next line to use the latest version of zusam
-    # https://hub.docker.com/r/zusam/zusam/tags
-    image: zusam/zusam:0.5.5
-    environment:
-      - DATABASE_NAME=data.db
-      - INIT_GROUP=zusam
-      - INIT_PASSWORD=zusam
-      - INIT_USER=zusam
-      - SUBPATH=
-    restart: always
-    volumes:
-
-      - /path/to/your/data/dir:/zusam/data
+    image: zusam/zusam:latest
+    container_name: zusam
+    restart: unless-stopped
     ports:
-      - 
+      - "4000:4000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - ZUSAM_SECRET_KEY=${ZUSAM_SECRET_KEY}
+      # Optional: Define the base URL if running behind a reverse proxy
+      # - ZUSAM_BASE_URL=https://your-domain.com

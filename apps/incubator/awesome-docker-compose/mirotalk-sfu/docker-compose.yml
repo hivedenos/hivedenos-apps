@@ -1,21 +1,18 @@
-version: '3'
- 
 services:
-    mirotalksfu:
-        image: mirotalk/sfu:latest
-        container_name: mirotalksfu
-        hostname: mirotalksfu
-        restart: unless-stopped
-        volumes:
-            - ./app/src/config.js:/src/app/src/config.js:ro
-            # These volume is mandatory if server.recording.enabled in the app/src/config.js
-            # - ./app/rec:/src/app/rec
-            # These volume is mandatory if server.rtmp.enabled fromFile in the app/src/config.js
-            # - ./app/rtmp:/src/app/rtmp
-            # These volumes are not mandatory, comment if you want to use it
-            # - ./app/:/src/app/:ro
-            # - ./public/:/src/public/:ro
-        ports:
-            - '3010:3010/tcp'
-            - '40000-40100:40000-40100/tcp'
-            - '40000-40100:40000-40100/udp'
+  mirotalk-sfu:
+    image: mirotalk/sfu:latest
+    container_name: mirotalk-sfu
+    restart: always
+    # Host networking is officially recommended for WebRTC to avoid NAT traversal issues.
+    # Ensure your firewall allows UDP ports 40000-40100 and TCP 3010.
+    network_mode: "host"
+    environment:
+      - PORT=3010
+      - MEDIASOUP_LISTEN_IP=0.0.0.0
+      - MEDIASOUP_ANNOUNCED_IP=${MEDIASOUP_ANNOUNCED_IP}
+      - MEDIASOUP_MIN_PORT=40000
+      - MEDIASOUP_MAX_PORT=40100
+      - API_KEY=${API_KEY}
+      - SECRET=${SECRET}
+    volumes:
+      - ./data/records:/src/app/records

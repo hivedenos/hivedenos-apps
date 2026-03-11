@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: notepad-mx
+category: pastebin
+name: Notepad.mx
+version: latest
+tagline: Store your notes securely online with client-side encryption.
+description: Store your notes securely online with client-side encryption. Access
+  your data from any device without creating an account or verifying an email address.
+developer: Athlon1600
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://notepad.mx?utm_source=awesome-docker-compose.com
+repo: https://github.com/Athlon1600/notepad
+support: https://github.com/Athlon1600/notepad#whale2-deploy-using-docker

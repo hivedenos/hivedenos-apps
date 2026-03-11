@@ -1,6 +1,15 @@
-version: "3.8"
-
 services:
   docker-android:
     image: budtmo/docker-android:emulator_11.0
-    restart: unless-stopped
+    privileged: true
+    devices:
+      - /dev/kvm:/dev/kvm
+    ports:
+      - "6080:6080"
+      - "5554:5554"
+      - "5555:5555"
+      - "4723:4723"
+    environment:
+      - DEVICE=Samsung Galaxy S10
+    volumes:
+      - ./videos:/tmp/video

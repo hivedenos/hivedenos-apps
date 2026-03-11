@@ -1,20 +1,9 @@
-version: 
- 
 services:
-  db:
-    image: mariadb:10.3
-    volumes: []
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: piga
-      MYSQL_DATABASE: piga
- 
-  web:
-    depends_on: [db]
-    command: bin/server
+  piga:
     image: nymanjens/piga:latest
-    ports: []
-    restart: always
-    environment:
-      APPLICATION_SECRET: ${APPLICATION_SECRET}
-      DATABASE_URL: jdbc:mysql://db:3306/piga?user=root&password=piga
+    container_name: piga
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./data:/data

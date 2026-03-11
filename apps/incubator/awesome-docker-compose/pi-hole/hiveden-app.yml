@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: pi-hole
+category: dns
+name: Pi-hole
+version: latest
+tagline: Protect your entire network from ads.
+description: Protect your entire network from ads. Block unwanted content in browsers,
+  mobile apps, and smart TVs to improve performance and speed up your internet.
+developer: pi-hole
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://pi-hole.net?utm_source=awesome-docker-compose.com
+repo: https://github.com/pi-hole/pi-hole
+support: https://github.com/pi-hole/docker-pi-hole

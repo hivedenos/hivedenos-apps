@@ -1,0 +1,11 @@
+services:
+  cloudflared-web:
+    image: wisdomsky/cloudflared-web:latest
+    container_name: cloudflared-web
+    restart: unless-stopped
+    ports:
+      - "7844:7844"
+    environment:
+      - TUNNEL_TOKEN=${TUNNEL_TOKEN}
+    volumes:
+      - ./cloudflared:/root/.cloudflared

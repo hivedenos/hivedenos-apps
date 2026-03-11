@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: picoshare
-category: file-transfer-single-click-drag-n-drop-upload
+category: quick-file-transfer
 name: PicoShare
 version: latest
-tagline: A minimalist, easy-to-host service for sharing images and other files.
-description: A minimalist, easy-to-host service for sharing images and other files.
+tagline: Host and share images, videos, and files directly.
+description: Host and share images, videos, and files directly. Keep full control
+  with no file restrictions, zero compression, and ad-free downloads for all your
+  guests.
 developer: mtlynch
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://demo.pico.rocks/
+website: https://demo.pico.rocks?utm_source=awesome-docker-compose.com
 repo: https://github.com/mtlynch/picoshare
 support: https://github.com/mtlynch/picoshare#run-picoshare

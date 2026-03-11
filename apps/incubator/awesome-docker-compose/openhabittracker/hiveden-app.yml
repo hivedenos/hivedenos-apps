@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: openhabittracker
+category: habit-tracker
+name: OpenHabitTracker
+version: latest
+tagline: Manage tasks, take notes, and build habits across all your devices.
+description: Manage tasks, take notes, and build habits across all your devices. This
+  free, open-source app uses a stress-free urgency system instead of rigid streaks.
+developer: Jinjinov
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://openhabittracker.net?utm_source=awesome-docker-compose.com
+repo: https://github.com/Jinjinov/OpenHabitTracker
+support: https://github.com/Jinjinov/OpenHabitTracker

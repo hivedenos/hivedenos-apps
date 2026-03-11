@@ -2,9 +2,11 @@ manifestVersion: 1.1
 id: neko
 category: virtual-browser
 name: Neko
-version: latest
-tagline: A self hosted virtual browser (rabb.it clone) that runs in Docker.
-description: A self hosted virtual browser (rabb.it clone) that runs in Docker.
+version: firefox
+tagline: Run a virtual browser in Docker for secure co-browsing, interactive presentations,
+  and live streaming.
+description: Run a virtual browser in Docker for secure co-browsing, interactive presentations,
+  and live streaming. Access it from anywhere with ultra-low latency.
 developer: m1k1o
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/virtual-browser/neko
+website: https://neko.m1k1o.net?utm_source=awesome-docker-compose.com
 repo: https://github.com/m1k1o/neko
-support: https://neko.m1k1o.net/#/getting-started/quick-start
+support: https://neko.m1k1o.net/docs/v3/quick-start

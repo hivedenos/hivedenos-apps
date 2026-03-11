@@ -1,0 +1,44 @@
+services:
+  hoppscotch-db:
+    image: postgres:14-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: hoppscotch
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  hoppscotch-backend:
+    image: elestio/hoppscotch-backend:latest
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@hoppscotch-db:5432/hoppscotch
+      JWT_SECRET: ${JWT_SECRET}
+      SESSION_SECRET: ${SESSION_SECRET}
+      TOKEN_SALT_COMPLEXITY: 10
+      MAGIC_LINK_TOKEN_VALIDITY: 3
+      REFRESH_TOKEN_VALIDITY: 604800000
+      ACCESS_TOKEN_VALIDITY: 86400000
+      REDIRECT_URL: http://localhost:3000
+      VITE_BASE_URL: http://localhost:3000
+      VITE_BACKEND_GQL_URL: http://localhost:3170/graphql
+      VITE_BACKEND_WS_URL: ws://localhost:3170/graphql
+      VITE_BACKEND_API_URL: http://localhost:3170/v1
+    depends_on:
+      - hoppscotch-db
+    ports:
+      - "3170:3170"
+    restart: unless-stopped
+
+  hoppscotch-app:
+    image: elestio/hoppscotch-app:latest
+    environment:
+      VITE_BASE_URL: http://localhost:3000
+      VITE_BACKEND_GQL_URL: http://localhost:3170/graphql
+      VITE_BACKEND_WS_URL: ws://localhost:3170/graphql
+      VITE_BACKEND_API_URL: http://localhost:3170/v1
+    ports:
+      - "3000:3000"
+    depends_on:
+      - hoppscotch-backend
+    restart: unless-stopped

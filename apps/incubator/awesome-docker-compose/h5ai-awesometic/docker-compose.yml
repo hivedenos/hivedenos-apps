@@ -1,0 +1,11 @@
+services:
+  h5ai:
+    image: awesometic/h5ai
+    container_name: h5ai
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./data:/var/www/data
+    environment:
+      - TZ=UTC

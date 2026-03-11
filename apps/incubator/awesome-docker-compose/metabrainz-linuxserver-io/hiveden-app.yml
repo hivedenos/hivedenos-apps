@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: metabrainz-linuxserver-io
+category: music-server
+name: MetaBrainz (LinuxServer.io)
+version: '16'
+tagline: Access comprehensive, peer-reviewed databases for music, literature, and
+  listening habits.
+description: Access comprehensive, peer-reviewed databases for music, literature,
+  and listening habits. Utilize open-source metadata gathered by a dedicated community.
+developer: metabrainz
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://metabrainz.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/metabrainz/musicbrainz-server
+support: https://github.com/metabrainz/musicbrainz-docker

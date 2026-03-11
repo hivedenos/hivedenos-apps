@@ -1,13 +1,11 @@
 manifestVersion: 1.1
 id: tagspaces
-category: file-transfer-web-based-file-managers
+category: storage-file-transfer
 name: TagSpaces
-version: 5.4.4
-tagline: TagSpaces is an offline, cross-platform file manager and organiser that also
-  can function as a note taking app.
-description: TagSpaces is an offline, cross-platform file manager and organiser that
-  also can function as a note taking app. The WebDAV version of the application can
-  be installed on top of a WebDAV servers such as Nextcloud or ownCloud.
+version: latest
+tagline: Take control of your data with an offline workspace.
+description: Take control of your data with an offline workspace. Tag files, write
+  notes, build Kanban boards, and use local AI tools without relying on cloud services.
 developer: tagspaces
 dependencies: []
 gallery: []
@@ -16,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.tagspaces.org/
+website: https://www.tagspaces.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/tagspaces/tagspaces
-support: https://docs.tagspaces.org/tutorials/tagspaces-web-docker
+support: https://docs.tagspaces.org/tutorials/tagspaces-web-docker/

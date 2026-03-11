@@ -3,8 +3,11 @@ id: maybe
 category: budgeting
 name: Maybe
 version: latest
-tagline: The OS for your personal finances.
-description: The OS for your personal finances.
+tagline: Take full control of your financial data with a self-hosted personal finance
+  application.
+description: Take full control of your financial data with a self-hosted personal
+  finance application. Manage your money with complete privacy. An open-source project
+  for everyone.
 developer: maybe-finance
 dependencies: []
 gallery: []
@@ -13,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://maybe.co/
+website: https://maybe.co?utm_source=awesome-docker-compose.com
 repo: https://github.com/maybe-finance/maybe
 support: https://github.com/maybe-finance/maybe/blob/main/docs/hosting/docker.md

@@ -1,11 +1,12 @@
 manifestVersion: 1.1
 id: wastebin
-category: pastebins
-name: Wastebin
+category: pastebin
+name: wastebin
 version: latest
-tagline: Lightweight, minimal and fast pastebin with an SQLite backend.
-description: Lightweight, minimal and fast pastebin with an SQLite backend.
-developer: Awesome Docker Compose
+tagline: Share text and code securely using a lightweight pastebin.
+description: Share text and code securely using a lightweight pastebin. Features include
+  syntax highlighting, password encryption, self-destruction, and QR code generation.
+developer: matze
 dependencies: []
 gallery: []
 path: /
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/pastebins/wastebin
-repo: https://github.com/matze/wastebin#installation
+website: https://bin.bloerg.net?utm_source=awesome-docker-compose.com
+repo: https://github.com/matze/wastebin
 support: https://github.com/matze/wastebin#installation

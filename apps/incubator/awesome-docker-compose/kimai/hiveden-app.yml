@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: kimai
 category: time-tracking
 name: Kimai
-version: '8.3'
-tagline: Kimai is a web-based multi-user time-tracking application.
-description: Kimai is a web-based multi-user time-tracking application.
+version: '10.11'
+tagline: Record work hours, analyze project budgets, and create custom invoices.
+description: Record work hours, analyze project budgets, and create custom invoices.
+  Secure your data with an open-source platform offering self-hosted and cloud options.
 developer: kimai
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.kimai.org/
+website: https://www.kimai.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/kimai/kimai
 support: https://www.kimai.org/documentation/docker-compose.html

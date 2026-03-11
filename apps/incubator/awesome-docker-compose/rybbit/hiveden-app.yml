@@ -3,10 +3,9 @@ id: rybbit
 category: analytics
 name: Rybbit
 version: 2.10.0
-tagline: "\uD83D\uDC38 Rybbit - open-source and privacy-friendly alternative to Google\
-  \ Analytics that is 10x more intuitive."
-description: "\uD83D\uDC38 Rybbit - open-source and privacy-friendly alternative to\
-  \ Google Analytics that is 10x more intuitive."
+tagline: Get lightweight web analytics without cookies.
+description: Get lightweight web analytics without cookies. Understand user behavior
+  with session replays, funnels, and real-time data. Fully GDPR & CCPA compliant.
 developer: rybbit-io
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.rybbit.io/
+website: https://rybbit.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/rybbit-io/rybbit
-support: https://www.rybbit.io/docs/self-hosting
+support: https://github.com/rybbit-io/rybbit

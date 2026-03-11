@@ -1,6 +1,88 @@
-version: "3.8"
-
 services:
-  shellhub:
-    image: shellhubio/ssh:${SHELLHUB_VERSION}
+  gateway:
+    image: shellhub/gateway:${SHELLHUB_VERSION}
     restart: unless-stopped
+    environment:
+      - SHELLHUB_DOMAIN=${SHELLHUB_DOMAIN}
+      - SHELLHUB_HTTP_PORT=${SHELLHUB_HTTP_PORT}
+      - SHELLHUB_HTTPS_PORT=${SHELLHUB_HTTPS_PORT}
+      - SHELLHUB_SSH_PORT=${SHELLHUB_SSH_PORT}
+      - SHELLHUB_PROXY_PORT=${SHELLHUB_PROXY_PORT}
+      - SHELLHUB_ENTERPRISE=${SHELLHUB_ENTERPRISE}
+      - SHELLHUB_CLOUD=${SHELLHUB_CLOUD}
+    ports:
+      - "${SHELLHUB_HTTP_PORT}:80"
+      - "${SHELLHUB_SSH_PORT}:22"
+    depends_on:
+      - api
+      - ui
+    networks:
+      - shellhub
+
+  api:
+    image: shellhub/api:${SHELLHUB_VERSION}
+    restart: unless-stopped
+    environment:
+      - SHELLHUB_DOMAIN=${SHELLHUB_DOMAIN}
+      - SHELLHUB_SECRET_KEY=${SHELLHUB_SECRET_KEY}
+      - SHELLHUB_ENTERPRISE=${SHELLHUB_ENTERPRISE}
+      - SHELLHUB_CLOUD=${SHELLHUB_CLOUD}
+      - MONGO_URI=mongodb://mongo:27017/main
+      - REDIS_URI=redis://redis:6379
+      - PRIVATE_KEY=/run/secrets/ssh_private_key
+      - PUBLIC_KEY=/run/secrets/ssh_public_key
+    volumes:
+      - ./ssh_keys:/run/secrets:ro
+    depends_on:
+      - mongo
+      - redis
+    networks:
+      - shellhub
+
+  ui:
+    image: shellhub/ui:${SHELLHUB_VERSION}
+    restart: unless-stopped
+    environment:
+      - SHELLHUB_DOMAIN=${SHELLHUB_DOMAIN}
+      - SHELLHUB_ENTERPRISE=${SHELLHUB_ENTERPRISE}
+      - SHELLHUB_CLOUD=${SHELLHUB_CLOUD}
+    networks:
+      - shellhub
+
+  ssh:
+    image: shellhub/ssh:${SHELLHUB_VERSION}
+    restart: unless-stopped
+    environment:
+      - SHELLHUB_DOMAIN=${SHELLHUB_DOMAIN}
+      - SHELLHUB_ENTERPRISE=${SHELLHUB_ENTERPRISE}
+      - SHELLHUB_CLOUD=${SHELLHUB_CLOUD}
+      - PRIVATE_KEY=/run/secrets/ssh_private_key
+      - PUBLIC_KEY=/run/secrets/ssh_public_key
+    volumes:
+      - ./ssh_keys:/run/secrets:ro
+    networks:
+      - shellhub
+
+  cli:
+    image: shellhub/cli:${SHELLHUB_VERSION}
+    entrypoint: /bin/sh
+    networks:
+      - shellhub
+
+  mongo:
+    image: mongo:4.4.8
+    restart: unless-stopped
+    volumes:
+      - ./mongo_data:/data/db
+    networks:
+      - shellhub
+
+  redis:
+    image: redis:alpine
+    restart: unless-stopped
+    networks:
+      - shellhub
+
+networks:
+  shellhub:
+    driver: bridge

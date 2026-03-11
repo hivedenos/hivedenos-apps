@@ -3,8 +3,10 @@ id: sshwifty
 category: remote-access
 name: Sshwifty
 version: latest
-tagline: Sshwifty is a SSH and Telnet connector made for the Web.
-description: Sshwifty is a SSH and Telnet connector made for the Web.
+tagline: Access SSH and Telnet services directly from your web browser.
+description: Access SSH and Telnet services directly from your web browser. Deploy
+  easily with Docker and configure connections with presets, hooks, and environment
+  variables.
 developer: nirui
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://sshwifty-demo.nirui.org/
+website: https://sshwifty-demo.nirui.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/nirui/sshwifty
 support: https://github.com/nirui/sshwifty#docker-image-recommended

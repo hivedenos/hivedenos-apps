@@ -1,15 +1,14 @@
-version: 
- 
 services:
   audioserve:
     image: izderadicka/audioserve
+    container_name: audioserve
     restart: unless-stopped
-    command: --tags /audiobooks
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - 
+    ports:
+      - "3000:3000"
     volumes:
-      - /etc/localtime:/etc/localtime:ro
-      - 
-      - 
+      - ./audiobooks:/audiobooks
+      - ./data:/home/audioserve/.audioserve
+    environment:
+      - AUDIOSERVE_SHARED_SECRET=${AUDIOSERVE_SHARED_SECRET}
+    # The command argument specifies the collection directory inside the container
+    command: /audiobooks

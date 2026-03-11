@@ -1,0 +1,14 @@
+services:
+  libtorrent:
+    image: emmercm/libtorrent:latest
+    container_name: libtorrent
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
+    # Keep the container running for interactive use or script execution
+    tty: true
+    stdin_open: true

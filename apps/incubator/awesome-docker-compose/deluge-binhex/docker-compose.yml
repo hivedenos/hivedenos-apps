@@ -1,0 +1,29 @@
+services:
+  delugevpn:
+    image: binhex/arch-delugevpn
+    container_name: delugevpn
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - 8112:8112
+      - 8118:8118
+      - 58846:58846
+    volumes:
+      - ./data:/data
+      - ./config:/config
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+      - VPN_ENABLED=yes
+      - VPN_USER=${VPN_USER}
+      - VPN_PASS=${VPN_PASS}
+      - VPN_PROV=pia
+      - VPN_CLIENT=openvpn
+      - STRICT_PORT_FORWARD=yes
+      - ENABLE_PRIVOXY=yes
+      - LAN_NETWORK=192.168.1.0/24
+      - NAME_SERVERS=8.8.8.8,8.8.4.4
+      - UMASK=000
+      - DEBUG=false
+    restart: unless-stopped

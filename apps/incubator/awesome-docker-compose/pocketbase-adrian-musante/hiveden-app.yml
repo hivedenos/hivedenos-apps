@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: pocketbase-adrian-musante
+category: low-code
+name: "PocketBase (Adri\xE1n Musante)"
+version: latest
+tagline: Get a realtime database, user authentication, file storage, and an admin
+  dashboard, all packaged in a single, portable...
+description: Get a realtime database, user authentication, file storage, and an admin
+  dashboard, all packaged in a single, portable open-source file.
+developer: pocketbase
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://pocketbase.io?utm_source=awesome-docker-compose.com
+repo: https://github.com/pocketbase/pocketbase
+support: https://hub.docker.com/r/adrianmusante/pocketbase

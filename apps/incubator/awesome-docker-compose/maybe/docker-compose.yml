@@ -1,6 +1,32 @@
-version: "3.8"
-
 services:
   maybe:
     image: ghcr.io/maybe-finance/maybe:latest
     restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - SECRET_KEY_BASE=${SECRET_KEY_BASE}
+      - DB_HOST=postgres
+      - POSTGRES_DB=maybe
+      - POSTGRES_USER=maybe
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./storage:/rails/storage
+
+  postgres:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=maybe
+      - POSTGRES_USER=maybe
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+      - ./pg-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U maybe"]
+      interval: 5s
+      timeout: 5s
+      retries: 5

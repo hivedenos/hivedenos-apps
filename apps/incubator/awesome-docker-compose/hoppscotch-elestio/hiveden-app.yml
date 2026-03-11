@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: hoppscotch-elestio
+category: api-management
+name: Hoppscotch (Elestio)
+version: 14-alpine
+tagline: Accelerate your API development with a free, open-source ecosystem.
+description: Accelerate your API development with a free, open-source ecosystem. Create
+  requests, write pre/post-request scripts, and manage environments with ease.
+developer: hoppscotch
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://hoppscotch.io?utm_source=awesome-docker-compose.com
+repo: https://github.com/hoppscotch/hoppscotch
+support: https://hub.docker.com/r/elestio/hoppscotch-app

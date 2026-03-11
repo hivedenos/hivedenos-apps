@@ -1,40 +1,35 @@
-version: '3.9'
- 
-networks:
-  keydb:
-  mongo:
- 
 services:
-  heyform:
-    image: heyform/community-edition:latest
+  app:
+    image: heyform/community:latest
+    container_name: heyform
     restart: always
-    volumes:
-      # Persist uploaded images
-      - ./assets:/app/static/upload
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/heyform
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - APP_HOMEPAGE_URL=${APP_HOMEPAGE_URL}
+      - SESSION_KEY=${SESSION_KEY}
+      - FORM_ENCRYPTION_KEY=${FORM_ENCRYPTION_KEY}
+      - MAIL_SMTP_HOST=${MAIL_SMTP_HOST}
+      - MAIL_SMTP_PORT=${MAIL_SMTP_PORT}
+      - MAIL_SMTP_USER=${MAIL_SMTP_USER}
+      - MAIL_SMTP_PASS=${MAIL_SMTP_PASS}
+      - MAIL_SMTP_SECURE=${MAIL_SMTP_SECURE}
+      - MAIL_FROM=${MAIL_FROM}
     depends_on:
       - mongo
-      - keydb
-    ports:
-      - '9513:8000'
-    environment:
-      APP_HOMEPAGE_URL: http://127.0.0.1:9513
-      SESSION_KEY: key1
-      FORM_ENCRYPTION_KEY: key2
-      MONGO_URI: 'mongodb://mongo:27017/heyform'
-      REDIS_HOST: keydb
-      REDIS_PORT: 6379
- 
+      - redis
+
   mongo:
-    image: percona/percona-server-mongodb:4.4
+    image: mongo:4.4
+    container_name: mongo
     restart: always
     volumes:
-      # Persist MongoDB data
-      - ./database:/data/db
- 
-  keydb:
-    image: eqalpha/keydb:latest
+      - ./mongo-data:/data/db
+
+  redis:
+    image: redis:6.0
+    container_name: redis
     restart: always
-    command: keydb-server --appendonly yes
-    volumes:
-      # Persist KeyDB data
-      - ./keydb:/data

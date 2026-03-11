@@ -1,0 +1,21 @@
+services:
+  redis:
+    image: redis:alpine
+    restart: always
+    volumes:
+      - ./redis-data:/data
+
+  onetimesecret:
+    image: onetimesecret/onetimesecret:latest
+    restart: always
+    ports:
+      - "7143:7143"
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+      - ONETIME_HOST=${ONETIME_HOST}
+      - ONETIME_SECRET=${ONETIME_SECRET}
+      - SSL=${SSL}
+    depends_on:
+      - redis
+    volumes:
+      - ./data:/var/lib/onetime

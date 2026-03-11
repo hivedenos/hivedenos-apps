@@ -3,9 +3,10 @@ id: jupyterlab
 category: ide-and-tools
 name: JupyterLab
 version: latest
-tagline: Web-based environment for interactive and reproducible computing.
-description: Web-based environment for interactive and reproducible computing.
-developer: jupyterlab
+tagline: Build shareable documents with code, text, and rich visualizations.
+description: Build shareable documents with code, text, and rich visualizations. Use
+  a flexible, extensible, and feature-rich environment for interactive data science.
+developer: jupyter
 dependencies: []
 gallery: []
 path: /
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://jupyterlab.readthedocs.io/
-repo: https://github.com/jupyterlab/jupyterlab
+website: https://jupyterlab.readthedocs.io?utm_source=awesome-docker-compose.com
+repo: https://github.com/jupyter/docker-stacks
 support: https://jupyter-docker-stacks.readthedocs.io/en/latest/

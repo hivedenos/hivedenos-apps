@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: firefox-jlesage
+category: virtual-browser
+name: Firefox (jlesage)
+version: latest
+tagline: Run a complete Firefox browser inside a Docker container.
+description: Run a complete Firefox browser inside a Docker container. Access its
+  GUI via a web browser or VNC for a secure, isolated, and highly customizable experience.
+developer: jlesage
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/jlesage/docker-firefox?utm_source=awesome-docker-compose.com
+repo: https://github.com/jlesage/docker-firefox
+support: https://github.com/jlesage/docker-firefox

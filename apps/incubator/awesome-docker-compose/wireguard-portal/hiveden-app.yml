@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: wireguard-portal
+category: vpn
+name: WireGuard Portal
+version: v2
+tagline: Control WireGuard VPN interfaces through a self-hosted web portal.
+description: Control WireGuard VPN interfaces through a self-hosted web portal. Authenticate
+  users via LDAP or OAuth, generate QR codes, and automate IP assignments.
+developer: h44z
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://wgportal.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/h44z/wg-portal
+support: https://wgportal.org/latest/documentation/getting-started/docker/

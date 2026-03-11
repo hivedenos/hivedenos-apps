@@ -3,10 +3,11 @@ id: postiz
 category: miscellaneous
 name: Postiz
 version: latest
-tagline: "\uD83D\uDCE8 Schedule social media posts, measure them, exchange with other\
-  \ members and get a lot of help from AI \uD83D\uDE80."
-description: "\uD83D\uDCE8 Schedule social media posts, measure them, exchange with\
-  \ other members and get a lot of help from AI \uD83D\uDE80."
+tagline: Schedule posts, analyze performance, and manage multiple accounts from one
+  dashboard.
+description: Schedule posts, analyze performance, and manage multiple accounts from
+  one dashboard. Leverage AI agents to create content, design visuals, and automate
+  growth.
 developer: gitroomhq
 dependencies: []
 gallery: []
@@ -15,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://postiz.com/
+website: https://postiz.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/gitroomhq/postiz-app
 support: https://docs.postiz.com/installation/docker-compose

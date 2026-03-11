@@ -1,37 +1,42 @@
-version: '3.9'
- 
 services:
   weblate:
-    image: weblate/weblate
-    tmpfs:
-    - /run
-    - /tmp
+    image: weblate/weblate:latest
+    ports:
+      - 8080:8080
+    environment:
+      - WEBLATE_SITE_DOMAIN=weblate.example.com
+      - WEBLATE_SITE_TITLE=Weblate
+      - WEBLATE_ADMIN_NAME=Weblate Admin
+      - WEBLATE_ADMIN_EMAIL=admin@example.com
+      - WEBLATE_ADMIN_PASSWORD=${WEBLATE_ADMIN_PASSWORD}
+      - WEBLATE_SERVER_EMAIL=weblate@example.com
+      - WEBLATE_DEFAULT_FROM_EMAIL=weblate@example.com
+      - POSTGRES_HOST=database
+      - POSTGRES_DATABASE=weblate
+      - POSTGRES_USER=weblate
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - REDIS_HOST=cache
+      - REDIS_PORT=6379
     volumes:
-    - weblate-data:/app/data
-    - weblate-cache:/app/cache
-    env_file:
-    - ./environment
-    restart: always
-    read_only: true
+      - ./weblate-data:/app/data
     depends_on:
-    - database
-    - cache
+      - database
+      - cache
+    restart: unless-stopped
+
   database:
-    image: postgres:16-alpine
-    env_file:
-    - ./environment
+    image: postgres:14-alpine
+    environment:
+      - POSTGRES_DB=weblate
+      - POSTGRES_USER=weblate
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
     volumes:
-    - postgres-data:/var/lib/postgresql/data
-    restart: always
+      - ./postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
   cache:
     image: redis:7-alpine
-    restart: always
-    read_only: true
-    command: [redis-server, --save, '60', '1']
+    command: redis-server --appendonly yes
     volumes:
-    - redis-data:/data
-volumes:
-  weblate-cache: {}
-  weblate-data: {}
-  postgres-data: {}
-  redis-data: {}
+      - ./redis-data:/data
+    restart: unless-stopped

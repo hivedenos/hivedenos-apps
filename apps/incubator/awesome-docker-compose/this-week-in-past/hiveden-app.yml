@@ -3,10 +3,9 @@ id: this-week-in-past
 category: photo-server
 name: This week in past
 version: latest
-tagline: Aggregates images taken this week, from previous years and presents them
-  on a web page with a simple slideshow.
-description: Aggregates images taken this week, from previous years and presents them
-  on a web page with a simple slideshow.
+tagline: Generate a web-based slideshow of your photos from this week in past years.
+description: Generate a web-based slideshow of your photos from this week in past
+  years. This self-hosted tool helps you rediscover memories from your own photo library.
 developer: RouHim
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/photo-server/this-week-in-past
+website: https://github.com/RouHim/this-week-in-past?utm_source=awesome-docker-compose.com
 repo: https://github.com/RouHim/this-week-in-past
 support: https://github.com/RouHim/this-week-in-past#docker

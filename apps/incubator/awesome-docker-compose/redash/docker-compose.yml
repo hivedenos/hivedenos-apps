@@ -1,62 +1,76 @@
-version: '3.9'
- 
-x-redash-service: &redash-service
-  image: redash/redash:__TAG__
-  depends_on:
-    - postgres
-    - redis
-  env_file: /opt/redash/env
-  restart: always
 services:
   server:
-    <<: *redash-service
+    image: redash/redash:10.1.0.b50633
     command: server
     ports:
-      - 
+      - "5000:5000"
     environment:
+      PYTHONUNBUFFERED: 0
+      REDASH_LOG_LEVEL: "INFO"
+      REDASH_REDIS_URL: "redis://redis:6379/0"
+      REDASH_DATABASE_URL: "postgresql://postgres:${POSTGRES_PASSWORD}@postgres/postgres"
+      REDASH_COOKIE_SECRET: "${REDASH_COOKIE_SECRET}"
+      REDASH_SECRET_KEY: "${REDASH_SECRET_KEY}"
       REDASH_WEB_WORKERS: 4
-  scheduler:
-    <<: *redash-service
-    command: scheduler
     depends_on:
-      - server
-  scheduled_worker:
-    <<: *redash-service
-    command: worker
-    depends_on:
-      - server
-    environment:
-      QUEUES: 
-      WORKERS_COUNT: 1
-  adhoc_worker:
-    <<: *redash-service
-    command: worker
-    depends_on:
-      - server
-    environment:
-      QUEUES: 
-      WORKERS_COUNT: 2
-  redis:
-    image: redis:7-alpine
-    restart: unless-stopped
-  postgres:
-    image: pgautoupgrade/pgautoupgrade:latest
-    env_file: /opt/redash/env
-    volumes:
-      - /opt/redash/postgres-data:/var/lib/postgresql/data
-    restart: unless-stopped
-  nginx:
-    image: redash/nginx:latest
-    ports:
-      - 
-    depends_on:
-      - server
-    links:
-      - server:redash
+      - postgres
+      - redis
     restart: always
-  worker:
-    <<: *redash-service
+
+  scheduler:
+    image: redash/redash:10.1.0.b50633
+    command: scheduler
+    environment:
+      PYTHONUNBUFFERED: 0
+      REDASH_LOG_LEVEL: "INFO"
+      REDASH_REDIS_URL: "redis://redis:6379/0"
+      REDASH_DATABASE_URL: "postgresql://postgres:${POSTGRES_PASSWORD}@postgres/postgres"
+      REDASH_COOKIE_SECRET: "${REDASH_COOKIE_SECRET}"
+      REDASH_SECRET_KEY: "${REDASH_SECRET_KEY}"
+    depends_on:
+      - server
+    restart: always
+
+  scheduled_worker:
+    image: redash/redash:10.1.0.b50633
     command: worker
     environment:
-      QUEUES: 
+      PYTHONUNBUFFERED: 0
+      REDASH_LOG_LEVEL: "INFO"
+      REDASH_REDIS_URL: "redis://redis:6379/0"
+      REDASH_DATABASE_URL: "postgresql://postgres:${POSTGRES_PASSWORD}@postgres/postgres"
+      REDASH_COOKIE_SECRET: "${REDASH_COOKIE_SECRET}"
+      REDASH_SECRET_KEY: "${REDASH_SECRET_KEY}"
+      QUEUES: "scheduled_queries,schemas"
       WORKERS_COUNT: 1
+    depends_on:
+      - server
+    restart: always
+
+  adhoc_worker:
+    image: redash/redash:10.1.0.b50633
+    command: worker
+    environment:
+      PYTHONUNBUFFERED: 0
+      REDASH_LOG_LEVEL: "INFO"
+      REDASH_REDIS_URL: "redis://redis:6379/0"
+      REDASH_DATABASE_URL: "postgresql://postgres:${POSTGRES_PASSWORD}@postgres/postgres"
+      REDASH_COOKIE_SECRET: "${REDASH_COOKIE_SECRET}"
+      REDASH_SECRET_KEY: "${REDASH_SECRET_KEY}"
+      QUEUES: "queries"
+      WORKERS_COUNT: 2
+    depends_on:
+      - server
+    restart: always
+
+  redis:
+    image: redis:5.0-alpine
+    restart: always
+
+  postgres:
+    image: postgres:9.6-alpine
+    environment:
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD}"
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+    restart: always

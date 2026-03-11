@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: homehub
+category: inventory-management
+name: HomeHub
+version: latest
+tagline: Turn any computer into a central family dashboard.
+description: Turn any computer into a central family dashboard. Manage shared notes,
+  shopping lists, chores, and expenses privately on your own home network.
+developer: surajverma
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/surajverma/homehub?utm_source=awesome-docker-compose.com
+repo: https://github.com/surajverma/homehub
+support: https://github.com/surajverma/homehub#getting-started-is-easy

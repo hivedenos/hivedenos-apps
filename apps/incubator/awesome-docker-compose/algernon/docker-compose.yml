@@ -1,10 +1,9 @@
-version: 
- 
 services:
   algernon:
-    image: xyproto/algernon
+    image: xyproto/algernon:latest
+    container_name: algernon
     ports:
-      - 4000:4000
+      - "3000:3000"
     volumes:
-      - .:/srv/algernon
+      - ./public:/srv/algernon
     restart: unless-stopped

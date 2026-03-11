@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: aria2-plus-ariang-hurlenko
+category: file-downloader
+name: Aria2 + AriaNg (hurlenko)
+version: latest
+tagline: Deploy a modern, responsive download manager using a lightweight Alpine Linux
+  Docker image.
+description: Deploy a modern, responsive download manager using a lightweight Alpine
+  Linux Docker image. Features multi-architecture support and easy permission management.
+developer: hurlenko
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/hurlenko/aria2-ariang-docker?utm_source=awesome-docker-compose.com
+repo: https://github.com/hurlenko/aria2-ariang-docker
+support: https://github.com/hurlenko/aria2-ariang-docker#usage

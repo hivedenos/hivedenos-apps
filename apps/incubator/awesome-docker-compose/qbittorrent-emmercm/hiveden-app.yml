@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: qbittorrent-emmercm
+category: torrenting
+name: qBittorrent (emmercm)
+version: latest
+tagline: Download and manage torrents with an open-source, ad-free client.
+description: Download and manage torrents with an open-source, ad-free client. Enjoy
+  an integrated search engine, RSS support, and advanced bandwidth scheduling.
+developer: emmercm
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.qbittorrent.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/emmercm/docker-qbittorrent
+support: https://github.com/emmercm/docker-qbittorrent

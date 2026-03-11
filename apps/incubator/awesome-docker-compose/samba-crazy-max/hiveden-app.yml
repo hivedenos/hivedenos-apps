@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: samba-crazy-max
+category: file-synchronization
+name: Samba (crazy-max)
+version: latest
+tagline: Protect your digital assets by setting strict administrative rules.
+description: Protect your digital assets by setting strict administrative rules. Block
+  unauthorized requests, manage user permissions, and secure your web infrastructure.
+developer: crazy-max
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.samba.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/crazy-max/docker-samba
+support: https://github.com/crazy-max/docker-samba

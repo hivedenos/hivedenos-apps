@@ -2,11 +2,10 @@ manifestVersion: 1.1
 id: automatisch
 category: automation
 name: Automatisch
-version: '14.5'
-tagline: Business automation tool that lets you connect different services like Twitter,
-  Slack, and more to automate your busine...
-description: Business automation tool that lets you connect different services like
-  Twitter, Slack, and more to automate your business processes (alternative to Zapier).
+version: 13-alpine
+tagline: Build no-code automations and connect your apps.
+description: Build no-code automations and connect your apps. Choose between a cloud
+  plan or self-hosting for complete data privacy and no vendor lock-in.
 developer: automatisch
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://automatisch.io/
+website: https://automatisch.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/automatisch/automatisch
 support: https://automatisch.io/docs/guide/installation

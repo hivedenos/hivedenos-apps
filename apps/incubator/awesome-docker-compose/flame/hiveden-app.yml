@@ -1,11 +1,11 @@
 manifestVersion: 1.1
 id: flame
-category: personal-dashboards
+category: personal-dashboard
 name: Flame
 version: latest
-tagline: Flame is self-hosted startpage for your server.
-description: Flame is self-hosted startpage for your server. Easily manage your apps
-  and bookmarks with built-in editors.
+tagline: Create a personal startpage for your server.
+description: Create a personal startpage for your server. Easily manage applications
+  and bookmarks with built-in editors, a powerful search, and Docker integration.
 developer: pawelmalak
 dependencies: []
 gallery: []
@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/personal-dashboards/flame
+website: https://github.com/pawelmalak/flame?utm_source=awesome-docker-compose.com
 repo: https://github.com/pawelmalak/flame
 support: https://github.com/pawelmalak/flame#installation

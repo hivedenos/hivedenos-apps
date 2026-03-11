@@ -1,0 +1,12 @@
+services:
+  rstudio:
+    image: rocker/rstudio:latest
+    container_name: rstudio
+    environment:
+      - PASSWORD=${RSTUDIO_PASSWORD}
+      - ROOT=true
+    ports:
+      - "8787:8787"
+    volumes:
+      - ./workspace:/home/rstudio
+    restart: unless-stopped

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: flarum-crazy-max
+category: social-network-and-forums
+name: Flarum (crazy-max)
+version: latest
+tagline: Create scalable online communities with this fast, free, and open-source
+  framework.
+description: Create scalable online communities with this fast, free, and open-source
+  framework. Customize themes, manage permissions, and add features using extensions.
+developer: flarum
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://flarum.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/flarum/flarum
+support: https://github.com/crazy-max/docker-flarum

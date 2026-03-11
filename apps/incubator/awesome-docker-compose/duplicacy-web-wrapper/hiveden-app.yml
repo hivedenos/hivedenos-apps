@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: duplicacy-web-wrapper
+category: backup
+name: Duplicacy-Web Wrapper
+version: latest
+tagline: Back up files to multiple cloud services with client-side encryption.
+description: Back up files to multiple cloud services with client-side encryption.
+  Benefit from advanced lock-free deduplication to save space. Manage backups via
+  a web GUI or CLI.
+developer: gilbertchen
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://duplicacy.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/gilbertchen/duplicacy
+support: https://hub.docker.com/r/saspus/duplicacy-web

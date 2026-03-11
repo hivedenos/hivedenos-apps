@@ -1,9 +1,12 @@
-version: 
 services:
   mindsdb:
-    container_name: mindsdb_container
-    image: mindsdb/mindsdb
+    image: mindsdb/mindsdb:latest
+    container_name: mindsdb
     ports:
-      - 47334:47334
-      - 47335:47335
+      - "47334:47334"
+      - "47335:47335"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    volumes:
+      - ./mdb_data:/root/mindsdb_data
     restart: unless-stopped

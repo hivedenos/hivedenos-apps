@@ -1,34 +1,16 @@
-version: 
- 
 services:
-    # init container updates permission
-    init:
-        image: 
-        user: root
-        volumes:
-            - dagu_config:/home/dagu/.config/dagu
-            - dagu_data:/home/dagu/.local/share
-        command: chown -R dagu /home/dagu/.config/dagu/ /home/dagu/.local/share
-    # ui server process
-    server:
-        image: 
-        environment:
-            - DAGU_PORT=8080
-        restart: unless-stopped
-        ports:
-            - 
-        volumes:
-            - dagu_config:/home/dagu/.config/dagu
-            - dagu_data:/home/dagu/.local/share
-        depends_on:
-            - init
-    # scheduler process
-    scheduler:
-        image: 
-        restart: unless-stopped
-        volumes:
-            - ./dagu_config:/home/dagu/.config/dagu
-            - ./dagu_data:/home/dagu/.local/share
-        command: dagu scheduler
-        depends_on:
-            - init
+  dagu:
+    image: ghcr.io/dagu-org/dagu:latest
+    container_name: dagu
+    ports:
+      - "8080:8080"
+    environment:
+      - DAGU_HOST=0.0.0.0
+      - DAGU_PORT=8080
+      - DAGU_IS_BASICAUTH=1
+      - DAGU_ADMIN_ID=${DAGU_ADMIN_ID}
+      - DAGU_ADMIN_PASSWORD=${DAGU_ADMIN_PASSWORD}
+    volumes:
+      - ./dags:/home/dagu/dags
+      - ./data:/home/dagu/.dagu
+    restart: unless-stopped

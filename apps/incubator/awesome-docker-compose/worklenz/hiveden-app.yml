@@ -3,10 +3,10 @@ id: worklenz
 category: project-management
 name: Worklenz
 version: 15-alpine
-tagline: Worklenz is an all-in-one project management tool designed for efficient
-  teams.
-description: Worklenz is an all-in-one project management tool designed for efficient
-  teams. It includes features for task management, project tracking, and team collaboration.
+tagline: Manage client projects, track billable hours, and monitor profitability in
+  one open-source platform.
+description: Manage client projects, track billable hours, and monitor profitability
+  in one open-source platform. Balance team workloads and share progress with clients.
 developer: Worklenz
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://worklenz.com/
+website: https://worklenz.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/Worklenz/worklenz
 support: https://github.com/Worklenz/worklenz#configuration

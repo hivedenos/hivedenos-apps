@@ -1,90 +1,56 @@
-version: '3.9'
- 
 services:
   postiz:
     image: ghcr.io/gitroomhq/postiz-app:latest
     container_name: postiz
     restart: always
-    environment:
-      # You must change these. Replace `postiz.your-server.com` with your DNS name - what your web browser sees.
-      MAIN_URL: 
-      FRONTEND_URL: 
-      NEXT_PUBLIC_BACKEND_URL: 
-      JWT_SECRET: 
- 
-      # These are totally fake values, you must change them with your own Cloudflare R2 settings.
-      # Docs: https://docs.postiz.com/configuration/r2
-      CLOUDFLARE_ACCOUNT_ID: 
-      CLOUDFLARE_ACCESS_KEY: 
-      CLOUDFLARE_SECRET_ACCESS_KEY: 
-      CLOUDFLARE_BUCKETNAME: 
-      CLOUDFLARE_BUCKET_URL: 
-      CLOUDFLARE_REGION: 
- 
-      # These defaults are probably fine, but if you change your user/password, update it in the 
-      # postiz-postgres or postiz-redis services below.
-      DATABASE_URL: 
-      REDIS_URL: 
-      BACKEND_INTERNAL_URL: 
-      IS_GENERAL:  # Required for self-hosting.
-    volumes:
-      - postiz-config:/config/
     ports:
-      - 5000:5000
-    networks:
-      - postiz-network
+      - ${APP_PORT:-3000}:3000
+    environment:
+      - DATABASE_URL=${DATABASE_URL}
+      - REDIS_URL=redis://redis:6379
+      - JWT_SECRET=${JWT_SECRET}
+      - FRONTEND_URL=${FRONTEND_URL:-http://localhost:3000}
+      - NEXT_PUBLIC_BACKEND_URL=${NEXT_PUBLIC_BACKEND_URL:-http://localhost:3000}
+      - IS_GENERAL=true
+      - STORAGE_PROVIDER=local
+      - UPLOAD_DIRECTORY=/app/uploads
+    volumes:
+      - ./data/uploads:/app/uploads
     depends_on:
-      postiz-postgres:
+      postgres:
         condition: service_healthy
-      postiz-redis:
-        condition: service_healthy
- 
-  postiz-postgres:
-    image: postgres:14.5
-    container_name: postiz-postgres
+      redis:
+        condition: service_started
+    networks:
+      - postiz_network
+
+  postgres:
+    image: postgres:15-alpine
+    container_name: postiz_postgres
     restart: always
     environment:
-      POSTGRES_PASSWORD: postiz-password
-      POSTGRES_USER: postiz-user
-      POSTGRES_DB: postiz-db-local
+      - POSTGRES_USER=${DB_USER:-postiz}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME:-postiz}
     volumes:
-      - postgres-volume:/var/lib/postgresql/data
-    ports:
-      - 5432:5432
-    networks:
-      - postiz-network
+      - ./data/postgres:/var/lib/postgresql/data
     healthcheck:
-      test: pg_isready -U postiz-user -d postiz-db-local
-      interval: 10s
-      timeout: 3s
-      retries: 3
-  postiz-redis:
-    image: redis:7.2
-    container_name: postiz-redis
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-postiz} -d ${DB_NAME:-postiz}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - postiz_network
+
+  redis:
+    image: redis:7-alpine
+    container_name: postiz_redis
     restart: always
-    ports:
-      - 6379:6379
-    healthcheck:
-      test: redis-cli ping
-      interval: 10s
-      timeout: 3s
-      retries: 3
     volumes:
-      - postiz-redis-data:/data
+      - ./data/redis:/data
     networks:
-      - postiz-network
- 
- 
-volumes:
-  postgres-volume:
-    external: false
- 
-  postiz-redis-data:
-    external: false
- 
-  postiz-config:
-    external: false
- 
+      - postiz_network
+
 networks:
-  postiz-network:
-    external: false
+  postiz_network:
+    driver: bridge

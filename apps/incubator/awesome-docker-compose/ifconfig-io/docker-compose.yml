@@ -1,0 +1,7 @@
+services:
+  ifconfig:
+    image: georgyo/ifconfig.io:latest
+    container_name: ifconfig
+    ports:
+      - "8080:8080"
+    restart: unless-stopped

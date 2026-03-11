@@ -1,5 +1,3 @@
-version: '3.9'
- 
 services:
   beets:
     image: lscr.io/linuxserver/beets:latest
@@ -9,9 +7,9 @@ services:
       - PGID=1000
       - TZ=Etc/UTC
     volumes:
-      - /path/to/beets/config:/config
-      - /path/to/music/library:/music
-      - /path/to/ingest:/downloads
+      - ./config:/config
+      - ./music:/music
+      - ./downloads:/downloads
     ports:
       - 8337:8337
     restart: unless-stopped

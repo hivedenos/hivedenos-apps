@@ -1,12 +1,12 @@
 manifestVersion: 1.1
 id: keila
-category: email-mailing-lists-and-newsletters
+category: mailing-and-newsletter
 name: Keila
 version: latest
-tagline: Self-hosted reliable and easy-to-use newsletter tool (alternative to Mailchimp
-  or Sendinblue).
-description: Self-hosted reliable and easy-to-use newsletter tool (alternative to
-  Mailchimp or Sendinblue).
+tagline: Manage contact lists and design personalized campaigns with a privacy-first,
+  open-source email platform.
+description: Manage contact lists and design personalized campaigns with a privacy-first,
+  open-source email platform. Maintain full control over your subscriber data.
 developer: pentacent
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.keila.io/
+website: https://www.keila.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/pentacent/keila
 support: https://www.keila.io/docs/installation

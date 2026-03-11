@@ -1,28 +1,22 @@
-version: '3'
- 
 services:
   offen:
-    image: offen/offen:v1.4.2
+    image: offen/offen:latest
+    container_name: offen
+    restart: unless-stopped
     ports:
-      - 80:80
-      - 443:443
-    env_file: ./offen.env
-    environment:
-      OFFEN_DATABASE_DIALECT: postgres
-      OFFEN_DATABASE_CONNECTIONSTRING: postgres://user:password@postgres:5432/offen?sslmode=disable
-      OFFEN_DATABASE_CONNECTIONRETRIES: 10
+      - "80:80"
+      - "443:443"
     volumes:
-      - ./certs:/var/www/.cache
-    depends_on:
-      - postgres
- 
-  postgres:
-    image: postgres:12-alpine
+      - ./data:/var/opt/offen
     environment:
-      POSTGRES_USER: user
-      POSTGRES_DB: offen
-      # check the documentation for POSTGRES_PASSWORD_FILE for
-      # how to avoid putting the password in here
-      POSTGRES_PASSWORD: password
-    volumes:
-      - ./data:/var/lib/postgresql/data
+      # General Configuration
+      OFFEN_SECRET: ${OFFEN_SECRET}
+      OFFEN_DATABASE_DIALECT: sqlite3
+      OFFEN_DATABASE_CONNECTION_STRING: /var/opt/offen/offen.db
+      
+      # SMTP Configuration (Required for transactional emails)
+      OFFEN_SMTP_HOST: ${OFFEN_SMTP_HOST}
+      OFFEN_SMTP_USER: ${OFFEN_SMTP_USER}
+      OFFEN_SMTP_PASSWORD: ${OFFEN_SMTP_PASSWORD}
+      OFFEN_SMTP_SENDER: ${OFFEN_SMTP_SENDER}
+      OFFEN_SMTP_PORT: 587

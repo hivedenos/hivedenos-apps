@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: static-web-server
-category: web-servers
+category: web-server
 name: Static Web Server
-version: 2-alpine
-tagline: Cross-platform, high-performance, and asynchronous web server for static
-  file serving.
-description: Cross-platform, high-performance, and asynchronous web server for static
-  file serving.
+version: '2'
+tagline: Run a high-performance static web server with minimal resources.
+description: Run a high-performance static web server with minimal resources. Get
+  HTTP/2, TLS, advanced compression, and cross-platform support in a single 4MB binary.
 developer: static-web-server
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://static-web-server.net/
+website: https://static-web-server.net?utm_source=awesome-docker-compose.com
 repo: https://github.com/static-web-server/static-web-server
 support: https://static-web-server.net/features/docker/

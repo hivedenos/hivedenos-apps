@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: convertx
+category: miscellaneous
+name: ConvertX
+version: latest
+tagline: Host your own file conversion service to process over 1,000 formats securely.
+description: Host your own file conversion service to process over 1,000 formats securely.
+  Manage multiple accounts, batch process files, and protect data with passwords.
+developer: C4illin
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/C4illin/ConvertX?utm_source=awesome-docker-compose.com
+repo: https://github.com/C4illin/ConvertX
+support: https://github.com/C4illin/ConvertX#deployment

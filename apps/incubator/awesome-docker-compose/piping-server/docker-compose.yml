@@ -1,7 +1,9 @@
-version: 
 services:
-  piping-server-pkg:
+  piping-server:
     image: nwtgck/piping-server
+    restart: unless-stopped
     ports:
-      - 8080:8080
-  restart: unless-stopped
+      - "8080:80"
+    # Optional: Uncomment to persist logs if configured
+    # volumes:
+    #   - ./logs:/var/log/piping-server

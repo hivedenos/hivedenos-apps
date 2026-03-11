@@ -3,9 +3,10 @@ id: komodo
 category: container-management
 name: Komodo
 version: latest
-tagline: A tool to build and deploy software across many servers.
-description: A tool to build and deploy software across many servers.
-developer: mbecker20
+tagline: Connect Git repositories to automatically build versioned Docker images.
+description: Connect Git repositories to automatically build versioned Docker images.
+  Deploy containers and view logs and uptime across your entire infrastructure.
+developer: moghtech
 dependencies: []
 gallery: []
 path: /
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://komo.do/
-repo: https://github.com/mbecker20/komodo
+website: https://komo.do?utm_source=awesome-docker-compose.com
+repo: https://github.com/moghtech/komodo
 support: https://komo.do/docs/setup

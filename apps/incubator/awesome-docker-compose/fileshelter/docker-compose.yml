@@ -1,6 +1,8 @@
-version: "3.8"
-
 services:
   fileshelter:
-    image: epoupon/fileshelter
+    image: epoupon/fileshelter:latest
     restart: unless-stopped
+    ports:
+      - "5091:5091"
+    volumes:
+      - ./data:/var/fileshelter

@@ -3,11 +3,10 @@ id: apprise
 category: notification
 name: Apprise
 version: latest
-tagline: Apprise allows you to send a notification to almost all of the most popular
-  notification services available to us today...
-description: 'Apprise allows you to send a notification to almost all of the most
-  popular notification services available to us today such as: Telegram, Discord,
-  Slack, Amazon SNS, Gotify, etc.'
+tagline: Send asynchronous push notifications to hundreds of services using a single,
+  lightweight library.
+description: Send asynchronous push notifications to hundreds of services using a
+  single, lightweight library. Support attachments, custom routing, and CLI integration.
 developer: caronc
 dependencies: []
 gallery: []
@@ -16,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/notification/apprise
+website: https://github.com/caronc/apprise?utm_source=awesome-docker-compose.com
 repo: https://github.com/caronc/apprise
 support: https://github.com/caronc/apprise

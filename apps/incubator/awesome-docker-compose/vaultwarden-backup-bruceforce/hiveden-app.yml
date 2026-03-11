@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: vaultwarden-backup-bruceforce
+category: password-manager
+name: Vaultwarden Backup (Bruceforce)
+version: latest
+tagline: Automate backups for your self-hosted Vaultwarden instance.
+description: Automate backups for your self-hosted Vaultwarden instance. Schedule
+  regular, compressed, and optionally encrypted archives of your critical password
+  data.
+developer: Bruceforce
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/Bruceforce/vaultwarden-backup?utm_source=awesome-docker-compose.com
+repo: https://github.com/Bruceforce/vaultwarden-backup
+support: https://github.com/Bruceforce/vaultwarden-backup#usage

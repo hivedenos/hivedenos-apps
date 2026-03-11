@@ -3,8 +3,10 @@ id: puter
 category: virtual-system
 name: Puter
 version: latest
-tagline: "\uD83C\uDF10 The Internet OS!"
-description: "\uD83C\uDF10 The Internet OS! Free, Open-Source, and Self-Hostable."
+tagline: Get a feature-rich internet OS for personal cloud storage, app development,
+  or remote desktop management.
+description: Get a feature-rich internet OS for personal cloud storage, app development,
+  or remote desktop management. It's free, open-source, and self-hostable.
 developer: HeyPuter
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/virtual-system/puter
+website: https://puter.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/HeyPuter/puter
 support: https://github.com/HeyPuter/puter#-docker-compose

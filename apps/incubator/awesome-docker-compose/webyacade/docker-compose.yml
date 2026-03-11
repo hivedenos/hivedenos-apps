@@ -1,0 +1,9 @@
+services:
+  webrcade:
+    image: webrcade/webrcade
+    container_name: webrcade
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/usr/share/nginx/html/content
+    restart: unless-stopped

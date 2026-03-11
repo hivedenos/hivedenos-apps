@@ -2,10 +2,11 @@ manifestVersion: 1.1
 id: redash
 category: analytics
 name: Redash
-version: __TAG__
-tagline: Connect to any data source, easily visualize, dashboard and share your data.
-description: Connect to any data source, easily visualize, dashboard and share your
-  data.
+version: 10.1.0.b50633
+tagline: Connect to any data source, write queries with a powerful SQL editor, and
+  build dashboards.
+description: Connect to any data source, write queries with a powerful SQL editor,
+  and build dashboards. Visualize your data and share insights easily with your team.
 developer: getredash
 dependencies: []
 gallery: []
@@ -14,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://redash.io/
+website: https://redash.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/getredash/redash
 support: https://redash.io/help/open-source/setup/#docker

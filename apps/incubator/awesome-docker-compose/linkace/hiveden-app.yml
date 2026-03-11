@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: linkace
-category: bookmarks-managers
+category: bookmark-manager
 name: LinkAce
-version: '11.2'
-tagline: LinkAce is a self-hosted archive to collect links of your favorite websites.
-description: LinkAce is a self-hosted archive to collect links of your favorite websites.
+version: latest
+tagline: Save, organize, and archive web links in your own self-hosted space.
+description: Save, organize, and archive web links in your own self-hosted space.
+  Automatically back up pages, monitor for changes, and categorize with tags and lists.
 developer: Kovah
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.linkace.org/
+website: https://www.linkace.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/Kovah/LinkAce
 support: https://www.linkace.org/docs/v1/setup/setup-with-docker/

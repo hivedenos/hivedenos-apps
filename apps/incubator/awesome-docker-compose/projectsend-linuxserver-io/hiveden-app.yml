@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: projectsend-linuxserver-io
+category: quick-file-transfer
+name: ProjectSend (LinuxServer.io)
+version: latest
+tagline: Share files securely with clients using a self-hosted platform.
+description: Share files securely with clients using a self-hosted platform. Maintain
+  complete control over your data with advanced permissions, encryption, and audit
+  logs.
+developer: projectsend
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.projectsend.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/projectsend/projectsend
+support: https://github.com/linuxserver/docker-projectsend

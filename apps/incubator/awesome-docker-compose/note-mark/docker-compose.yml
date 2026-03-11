@@ -1,17 +1,11 @@
-version: 
- 
-volumes:
-  data:
- 
 services:
   note-mark:
-    image: ghcr.io/enchant97/note-mark-aio:0.13.1
+    image: ghcr.io/enchant97/note-mark-aio:1
+    container_name: note-mark
     restart: unless-stopped
+    ports:
+      - "8080:80"
     volumes:
       - ./data:/data
     environment:
-      # !!! REPLACE These !!!
-      JWT_SECRET: 
-      CORS_ORIGINS: 
-    ports:
-      - 8000:8000
+      - SECRET_KEY=${SECRET_KEY}

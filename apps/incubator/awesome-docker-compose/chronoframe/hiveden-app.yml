@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: chronoframe
+category: photo-server
+name: ChronoFrame
+version: latest
+tagline: Host your personal photo collection with flexible storage options.
+description: Host your personal photo collection with flexible storage options. Easily
+  view images on an interactive map, play motion photos, and deploy quickly via Docker.
+developer: HoshinoSuzumi
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://chronoframe.bh8.ga?utm_source=awesome-docker-compose.com
+repo: https://github.com/HoshinoSuzumi/chronoframe
+support: https://chronoframe.bh8.ga/guide/getting-started.html

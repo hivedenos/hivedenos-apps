@@ -1,11 +1,11 @@
 manifestVersion: 1.1
 id: mistserver
 category: media-server
-name: Mistserver
+name: MistServer
 version: latest
-tagline: Public domain streaming media server that works with any device and any format.
-description: Public domain streaming media server that works with any device and any
-  format.
+tagline: Deliver high-quality internet streaming with a full-featured media toolkit.
+description: Deliver high-quality internet streaming with a full-featured media toolkit.
+  Build and integrate stable OTT applications designed for developers.
 developer: DDVTECH
 dependencies: []
 gallery: []
@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://mistserver.org/
+website: https://mistserver.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/DDVTECH/mistserver
-support: https://docs.mistserver.org/mistserver/installation/docker
+support: https://docs.mistserver.org/mistserver/installation/docker/

@@ -1,11 +1,9 @@
-version: 
- 
 services:
   fenrus:
-    image: revenz/fenrus
+    image: revenz/fenrus:latest
     container_name: fenrus
     environment:
-      - TZ=Pacific/Auckland
+      - TZ=UTC
     volumes:
       - ./data:/app/data
     ports:

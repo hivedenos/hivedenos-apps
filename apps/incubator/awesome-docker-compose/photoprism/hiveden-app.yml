@@ -1,12 +1,12 @@
 manifestVersion: 1.1
 id: photoprism
 category: photo-server
-name: Photoprism
+name: PhotoPrism
 version: latest
-tagline: Personal photo management powered by Go and Google TensorFlow.
-description: Personal photo management powered by Go and Google TensorFlow. Browse,
-  organize, and share your personal photo collection, using the latest technologies
-  to automatically tag and find pictures.
+tagline: Organize your photo collection on your own server.
+description: Organize your photo collection on your own server. Use AI to automatically
+  tag, classify, and find photos by people, places, and content. Keep your memories
+  private.
 developer: photoprism
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.photoprism.app/
+website: https://www.photoprism.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/photoprism/photoprism
 support: https://docs.photoprism.app/getting-started/docker-compose/

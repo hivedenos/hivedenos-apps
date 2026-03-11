@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: grist
-category: office-suites
+category: office-suite
 name: Grist
 version: latest
-tagline: Grist is a next-generation spreadsheet with relational structure, formula-based
-  access control, and a portable, self-co...
-description: Grist is a next-generation spreadsheet with relational structure, formula-based
-  access control, and a portable, self-contained format (alternative to Airtable).
+tagline: Organize your data with a relational spreadsheet-database.
+description: Organize your data with a relational spreadsheet-database. Build custom
+  layouts, control access with granular permissions, and use Python-powered formulas.
 developer: gristlabs
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.getgrist.com/
+website: https://www.getgrist.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/gristlabs/grist-core
 support: https://github.com/gristlabs/grist-core#using-grist

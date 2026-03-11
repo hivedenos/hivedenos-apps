@@ -3,10 +3,10 @@ id: atheos
 category: ide-and-tools
 name: Atheos
 version: latest
-tagline: Web-based IDE framework with a small footprint and minimal requirements,
-  continued from Codiad.
-description: Web-based IDE framework with a small footprint and minimal requirements,
-  continued from Codiad.
+tagline: Develop code in your browser with a minimal, self-hosted IDE.
+description: Develop code in your browser with a minimal, self-hosted IDE. Supports
+  40+ languages, real-time collaboration, a plugin marketplace, and advanced search
+  tools.
 developer: Atheos
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.atheos.io/
+website: https://www.atheos.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/Atheos/Atheos
-support: https://github.com/Atheos/Atheos
+support: https://hub.docker.com/r/hlsiira/atheos

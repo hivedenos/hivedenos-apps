@@ -2,11 +2,10 @@ manifestVersion: 1.1
 id: directus
 category: database-management
 name: Directus
-version: 11.0.0
-tagline: An Instant App & API for your SQL Database.
-description: An Instant App & API for your SQL Database. Directus wraps your new or
-  existing SQL database with a realtime GraphQL+REST API for developers, and an intuitive
-  admin app for non-technical users.
+version: '15'
+tagline: Connect any database to get a production-ready backend.
+description: Connect any database to get a production-ready backend. Let teams manage
+  content, build dashboards, and automate tasks in a secure, visual environment.
 developer: directus
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://directus.io/
+website: https://directus.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/directus/directus
-support: https://docs.directus.io/self-hosted/docker-guide.html
+support: https://directus.io/docs/getting-started/overview

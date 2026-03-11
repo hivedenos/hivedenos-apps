@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: infisical
+category: password-manager
+name: Infisical
+version: latest
+tagline: Centralize application secrets, certificates, and SSH keys across your infrastructure.
+description: Centralize application secrets, certificates, and SSH keys across your
+  infrastructure. Enforce identity-based access and automate certificate renewals.
+developer: Infisical
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://infisical.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/Infisical/infisical
+support: https://infisical.com/docs/self-hosting/deployment-options/docker-compose

@@ -1,15 +1,16 @@
-version: 
 services:
   neko:
-    image: 
-    shm_size: 
+    image: m1k1o/neko:firefox
+    restart: unless-stopped
+    shm_size: "2gb"
     ports:
-      - 
-      - 
+      - "8080:8080"
+      - "52000-52099:52000-52099/udp"
     environment:
-      NEKO_SCREEN: 1920x1080@30
-      NEKO_PASSWORD: neko
-      NEKO_PASSWORD_ADMIN: admin
-      NEKO_EPR: 52000-52100
-      NEKO_ICELITE: 1
-  restart: 
+      - NEKO_SCREEN=1920x1080@30
+      - NEKO_PASSWORD=${NEKO_PASSWORD}
+      - NEKO_PASSWORD_ADMIN=${NEKO_PASSWORD_ADMIN}
+      - NEKO_EPR=52000-52099
+      - NEKO_ICELITE=1
+    volumes:
+      - ./downloads:/home/neko/Downloads

@@ -1,10 +1,7 @@
-version: '3.9'
 services:
-    picprose:
-        container_name: picprose
-        image: hausen1012/picprose
-        ports:
-            - '3000:3000'
-        env_file:
-            - .env
-        restart: unless-stopped
+  picprose:
+    image: hausen1012/picprose:latest
+    container_name: picprose
+    restart: unless-stopped
+    ports:
+      - "3000:3000"

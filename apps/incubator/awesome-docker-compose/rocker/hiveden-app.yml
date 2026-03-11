@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: rocker
+category: ide-and-tools
+name: Rocker
+version: latest
+tagline: Get started with R and RStudio in seconds using pre-built Docker containers.
+description: Get started with R and RStudio in seconds using pre-built Docker containers.
+  Access versioned, reproducible environments for your data science projects.
+developer: rocker-org
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://rocker-project.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/rocker-org/rocker
+support: https://rocker-project.org/images/

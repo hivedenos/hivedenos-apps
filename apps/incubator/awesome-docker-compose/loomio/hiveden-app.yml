@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: loomio
-category: social-networks-and-forums
+category: social-network-and-forums
 name: Loomio
-version: alpine
-tagline: Loomio is a collaborative decision-making tool that makes it easy for anyone
-  to participate in decisions which affect t...
-description: Loomio is a collaborative decision-making tool that makes it easy for
-  anyone to participate in decisions which affect them.
+version: 13-alpine
+tagline: Facilitate asynchronous discussions and reach consensus faster.
+description: Facilitate asynchronous discussions and reach consensus faster. Use expressive
+  voting systems and time polls to make collaborative decisions without meetings.
 developer: loomio
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.loomio.com/
+website: https://www.loomio.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/loomio/loomio
 support: https://github.com/loomio/loomio-deploy

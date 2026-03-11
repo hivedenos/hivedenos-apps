@@ -1,10 +1,7 @@
-version: 
- 
 services:
   minmon:
     image: ghcr.io/flo-at/minmon:latest
+    container_name: minmon
+    restart: unless-stopped
     volumes:
-      - ./minmon.toml:/etc/minmon.toml:ro
-      # The following line is required for the DockerContainerStatus check.
-      #- /var/run/docker.sock:/var/run/docker.sock
-    restart: always
+      - ./config/minmon.toml:/etc/minmon.toml:ro

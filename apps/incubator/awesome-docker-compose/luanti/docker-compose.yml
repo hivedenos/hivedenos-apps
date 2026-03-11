@@ -1,0 +1,10 @@
+services:
+  luanti:
+    image: ghcr.io/luanti-org/luanti:latest
+    container_name: luanti_server
+    ports:
+      - "30000:30000/udp"
+    volumes:
+      - ./data:/var/lib/minetest/.minetest
+      - ./config:/etc/minetest
+    restart: unless-stopped

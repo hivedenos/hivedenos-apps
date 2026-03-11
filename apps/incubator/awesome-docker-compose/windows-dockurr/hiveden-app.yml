@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: windows-dockurr
+category: virtual-system
+name: Windows (Dockurr)
+version: latest
+tagline: Deploy various Windows versions, from XP to Server 2025, in a container.
+description: Deploy various Windows versions, from XP to Server 2025, in a container.
+  Get started quickly with automated setup, KVM acceleration, and a web viewer.
+developer: dockur
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/dockur/windows?utm_source=awesome-docker-compose.com
+repo: https://github.com/dockur/windows
+support: https://github.com/dockur/windows#usage-

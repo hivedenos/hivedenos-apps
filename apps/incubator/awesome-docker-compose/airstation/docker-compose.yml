@@ -1,0 +1,18 @@
+services:
+  airstation:
+    image: cheatsnake/airstation:latest
+    ports:
+      - "7331:7331"
+    volumes:
+      - ./data:/app/storage
+      - ./static:/app/static
+    restart: unless-stopped
+    environment:
+      AIRSTATION_SECRET_KEY: ${AIRSTATION_SECRET_KEY:-PASTE_YOUR_OWN_KEY}
+      AIRSTATION_JWT_SIGN: ${AIRSTATION_JWT_SIGN:-PASTE_RANDOM_STRING}
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:7331/"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: roundcube
-category: email-webmail-clients
+category: email-client
 name: Roundcube
 version: latest
-tagline: Browser-based IMAP client with an application-like user interface.
-description: Browser-based IMAP client with an application-like user interface.
+tagline: Access emails through a browser-based, multilingual IMAP client.
+description: Access emails through a browser-based, multilingual IMAP client. Enjoy
+  drag-and-drop management, PGP encryption, and a responsive, app-like interface.
 developer: roundcube
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://roundcube.net/
+website: https://roundcube.net?utm_source=awesome-docker-compose.com
 repo: https://github.com/roundcube/roundcubemail
-support: https://github.com/eilandert/dockerized/blob/master/roundcube/docker-compose.yml
+support: https://github.com/roundcube/roundcubemail

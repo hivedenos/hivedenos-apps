@@ -1,8 +1,17 @@
-version: 
 services:
   ejabberd:
+    image: ejabberd/ecs
     container_name: ejabberd
-    image: ghcr.io/processone/ejabberd
-    ports:
-      - 5222:5222
     restart: unless-stopped
+    ports:
+      - "5222:5222"
+      - "5269:5269"
+      - "5280:5280"
+      - "5443:5443"
+    environment:
+      - CTL_ON_CREATE=register ${EJABBERD_ADMIN_USER} ${EJABBERD_DOMAIN} ${EJABBERD_ADMIN_PASSWORD}
+    volumes:
+      - ./conf:/home/ejabberd/conf
+      - ./database:/home/ejabberd/database
+      - ./logs:/home/ejabberd/logs
+      - ./upload:/home/ejabberd/upload

@@ -1,51 +1,43 @@
-version: 
- 
 services:
-  castopod:
+  app:
     image: castopod/castopod:latest
-    container_name: 
-    volumes:
-      - ./castopod-media:/var/www/castopod/public/media
+    container_name: castopod-app
     environment:
-      MYSQL_DATABASE: castopod
-      MYSQL_USER: castopod
-      MYSQL_PASSWORD: changeme
-      CP_BASEURL: 
-      CP_ANALYTICS_SALT: changeme
-      CP_CACHE_HANDLER: redis
+      CP_BASEURL: ${CASTOPOD_BASE_URL}
+      CP_DATABASE_HOST: mariadb
+      CP_DATABASE_NAME: castopod
+      CP_DATABASE_USER: castopod
+      CP_DATABASE_PASSWORD: ${DB_PASSWORD}
       CP_REDIS_HOST: redis
-      CP_REDIS_PASSWORD: changeme
-    networks:
-      - castopod
-      - castopod-db
+      CP_REDIS_PASSWORD: ${REDIS_PASSWORD}
+      CP_ADMIN_USERNAME: ${ADMIN_USERNAME}
+      CP_ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+      CP_ADMIN_EMAIL: ${ADMIN_EMAIL}
+    volumes:
+      - ./media:/var/www/castopod/public/media
     ports:
       - 8000:8000
+    depends_on:
+      - mariadb
+      - redis
     restart: unless-stopped
- 
+
   mariadb:
-    image: mariadb:11.2
-    container_name: 
-    networks:
-      - castopod-db
-    volumes:
-      - ./castopod-db:/var/lib/mysql
+    image: mariadb:10.11
+    container_name: castopod-db
     environment:
-      MYSQL_ROOT_PASSWORD: changeme
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
       MYSQL_DATABASE: castopod
       MYSQL_USER: castopod
-      MYSQL_PASSWORD: changeme
-    restart: unless-stopped
- 
-  redis:
-    image: redis:7.2-alpine
-    container_name: 
-    command: --requirepass changeme
+      MYSQL_PASSWORD: ${DB_PASSWORD}
     volumes:
-      - ./castopod-cache:/data
-    networks:
-      - castopod
- 
- 
-networks:
-  castopod:
-  castopod-db:
+      - ./db_data:/var/lib/mysql
+    restart: unless-stopped
+
+  redis:
+    image: redis:7.0-alpine
+    container_name: castopod-redis
+    command: --requirepass ${REDIS_PASSWORD}
+    volumes:
+      - ./redis_data:/data
+    restart: unless-stopped

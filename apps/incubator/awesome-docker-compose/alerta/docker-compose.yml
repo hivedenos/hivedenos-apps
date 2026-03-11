@@ -1,32 +1,24 @@
-version: '3.1'
- 
 services:
-  web:
-    image: alerta/alerta-web
-    # volumes:
-      # - $PWD/config/config.json:/web/config.json
-    ports:
-      - 8080:8080
-    depends_on:
-      - db
+  postgres:
+    image: postgres:14-alpine
     environment:
-      # - DEBUG=1  # remove this line to turn DEBUG off
-      - DATABASE_URL=postgres://postgres:postgres@db:5432/monitoring
-      - AUTH_REQUIRED=True
-      - ADMIN_USERS=admin@alerta.io,devops@alerta.io
-      - ADMIN_PASSWORD=super-secret
-      - ADMIN_KEY=demo-key  # assigned to first user in ADMIN_USERS
-      - ADMIN_KEY_MAXAGE=500
-      # - NGINX_MAX_BODY_SIZE=42M  # allow larger alerts to be processed by alerta
-      # - PLUGINS=remote_ip,reject,heartbeat,blackout,normalise,enhance
-    restart: always
- 
-  db:
-    image: postgres
+      POSTGRES_USER: alerta
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: alerta
     volumes:
-      - ./pg-data:/var/lib/postgresql/data
+      - ./postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  alerta:
+    image: alerta/alerta-web:latest
     environment:
-      POSTGRES_DB: monitoring
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-    restart: always
+      DATABASE_URL: postgresql://alerta:${POSTGRES_PASSWORD}@postgres:5432/alerta
+      AUTH_REQUIRED: "True"
+      ADMIN_USERS: admin@alerta.io
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+      SECRET_KEY: ${SECRET_KEY}
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    restart: unless-stopped

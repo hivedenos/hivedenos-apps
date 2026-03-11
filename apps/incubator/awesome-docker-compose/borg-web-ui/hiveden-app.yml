@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: borg-web-ui
+category: backup
+name: Borg Web UI
+version: latest
+tagline: Control your Borg backups with a clean web interface.
+description: Control your Borg backups with a clean web interface. Schedule jobs,
+  browse archives, restore files, and monitor progress in real-time. Get alerts on
+  100+ services.
+developer: karanhudia
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://karanhudia.github.io/borg-ui?utm_source=awesome-docker-compose.com
+repo: https://github.com/karanhudia/borg-ui
+support: https://karanhudia.github.io/borg-ui/configuration

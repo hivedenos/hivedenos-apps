@@ -3,8 +3,9 @@ id: myip
 category: ip-and-domain
 name: MyIP
 version: latest
-tagline: MyIP - A Better IP Toolbox.
-description: MyIP - A Better IP Toolbox.
+tagline: Instantly analyze any IP address.
+description: Instantly analyze any IP address. Discover its location, owner, and reputation.
+  Perfect for network administrators, security researchers, and curious users.
 developer: jason5ng32
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://ipcheck.ing/
+website: https://ipcheck.ing?utm_source=awesome-docker-compose.com
 repo: https://github.com/jason5ng32/MyIP
 support: https://github.com/jason5ng32/MyIP#using-docker

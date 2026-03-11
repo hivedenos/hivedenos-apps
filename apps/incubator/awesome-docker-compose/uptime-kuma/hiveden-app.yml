@@ -3,8 +3,9 @@ id: uptime-kuma
 category: network-monitoring
 name: Uptime Kuma
 version: '1'
-tagline: A fancy self-hosted monitoring tool.
-description: A fancy self-hosted monitoring tool.
+tagline: Get instant alerts for downtime with this open-source monitoring tool.
+description: Get instant alerts for downtime with this open-source monitoring tool.
+  Host it yourself for complete data privacy and control over your monitoring.
 developer: louislam
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://uptime.kuma.pet/
+website: https://uptime.kuma.pet?utm_source=awesome-docker-compose.com
 repo: https://github.com/louislam/uptime-kuma
 support: https://github.com/louislam/uptime-kuma/wiki/%F0%9F%94%A7-How-to-Install

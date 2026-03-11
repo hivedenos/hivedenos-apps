@@ -1,7 +1,14 @@
-version: 
 services:
-  haptic-web:
+  haptic:
     image: chroxify/haptic-web:latest
+    container_name: haptic
     ports:
-      - 3000:80
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+      - SECRET_KEY=${SECRET_KEY}
     restart: unless-stopped

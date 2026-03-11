@@ -3,10 +3,10 @@ id: myspeed
 category: speedtest
 name: MySpeed
 version: latest
-tagline: A speed test analysis software that shows your internet speed for up to 30
-  days.
-description: A speed test analysis software that shows your internet speed for up
-  to 30 days.
+tagline: Automatically test your internet speed 24/7.
+description: Automatically test your internet speed 24/7. Track download, upload,
+  and ping history with detailed analytics. A self-hosted, open-source solution for
+  privacy.
 developer: gnmyt
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/speedtest/myspeed
+website: https://myspeed.dev?utm_source=awesome-docker-compose.com
 repo: https://github.com/gnmyt/myspeed
-support: https://docs.myspeed.dev/setup/linux/
+support: https://docs.myspeed.dev/setup/linux

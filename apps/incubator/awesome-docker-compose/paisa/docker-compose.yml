@@ -1,9 +1,9 @@
-version: 
 services:
   paisa:
     image: ananthakumaran/paisa:latest
+    container_name: paisa
     ports:
-      - 7500:7500
+      - "7500:7500"
     volumes:
-      - /home/john/Documents/paisa/:/root/Documents/paisa/
+      - ./data:/data
     restart: unless-stopped

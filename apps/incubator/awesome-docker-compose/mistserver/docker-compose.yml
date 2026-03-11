@@ -1,14 +1,17 @@
-version: 
 services:
   mistserver:
-    image: ddvtech/mistserver
-    volumes:
-      - type: bind
-        source: /PATH/TO/CONFIG.JSON
-        destination: /config.json
-      - type: bind
-        source: /FOLDER/WITH/VIDEOFILES
-        destination: /video
-    shm_size: 4g
-    network_mode: host
+    image: ddvtech/mistserver:latest
+    container_name: mistserver
     restart: unless-stopped
+    # MistServer requires a wide range of ports depending on protocols used.
+    # Host networking is often recommended for production streaming to avoid port mapping issues,
+    # but specific ports are mapped here for standard container isolation.
+    ports:
+      - "4242:4242" # Management Interface / API
+      - "8080:8080" # HTTP / HLS / DASH output
+      - "1935:1935" # RTMP input/output
+      # Uncomment the following if using RTSP (requires binding to 554)
+      # - "554:554"
+    volumes:
+      - ./config:/config
+      - ./media:/media

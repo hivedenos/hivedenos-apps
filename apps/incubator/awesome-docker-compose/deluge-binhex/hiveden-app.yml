@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: deluge-binhex
+category: torrenting
+name: Deluge (binhex)
+version: latest
+tagline: Defend your website against resource-heavy AI scrapers using a smart Proof-of-Work
+  system.
+description: Defend your website against resource-heavy AI scrapers using a smart
+  Proof-of-Work system. Keep your server online and accessible for legitimate human
+  users.
+developer: binhex
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://deluge-torrent.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/binhex/arch-delugevpn
+support: https://github.com/binhex/arch-delugevpn

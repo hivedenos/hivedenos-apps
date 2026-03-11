@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: passbolt
-category: password-managers
+category: password-manager
 name: Passbolt
 version: '10.11'
-tagline: Password manager dedicated for managing passwords in a collaborative way
-  on any Web server, using a MySQL database back...
-description: Password manager dedicated for managing passwords in a collaborative
-  way on any Web server, using a MySQL database backend.
+tagline: Securely manage and share credentials as a team.
+description: Securely manage and share credentials as a team. This open source platform
+  offers end-to-end encryption, granular controls, and flexible self-hosting options.
 developer: passbolt
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.passbolt.com/
+website: https://www.passbolt.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/passbolt/passbolt_api
 support: https://github.com/passbolt/passbolt_docker

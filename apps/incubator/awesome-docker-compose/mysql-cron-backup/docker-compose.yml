@@ -1,6 +1,23 @@
-version: "3.8"
-
 services:
-  mysql-cron-backup:
-    image: mariadb:10
-    restart: unless-stopped
+  mysql:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+
+  backup:
+    image: fradelg/mysql-cron-backup
+    restart: always
+    depends_on:
+      - mysql
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_PASS: ${MYSQL_ROOT_PASSWORD}
+      MAX_BACKUPS: 15
+      INIT_BACKUP: 1
+      CRON_TIME: "0 0 * * *"
+    volumes:
+      - ./backups:/backup

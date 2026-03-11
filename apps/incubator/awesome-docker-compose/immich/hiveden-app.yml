@@ -2,10 +2,10 @@ manifestVersion: 1.1
 id: immich
 category: photo-server
 name: Immich
-version: -release}
-tagline: Self-hosted photo and video backup solution directly from your mobile phone.
-description: Self-hosted photo and video backup solution directly from your mobile
-  phone.
+version: release
+tagline: Create a private, self-hosted photo and video library on your own server.
+description: Create a private, self-hosted photo and video library on your own server.
+  Automatically back up, organize, and search your media without sacrificing privacy.
 developer: immich-app
 dependencies: []
 gallery: []
@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://immich.app/
+website: https://immich.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/immich-app/immich
-support: https://immich.app/docs/install/docker-compose
+support: https://docs.immich.app/install/docker-compose/

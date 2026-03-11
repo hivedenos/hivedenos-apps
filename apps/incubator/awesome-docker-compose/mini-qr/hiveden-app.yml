@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: mini-qr
+category: miscellaneous
+name: Mini QR
+version: latest
+tagline: Create, customize, and scan beautiful QR codes.
+description: Create, customize, and scan beautiful QR codes. Add logos, adjust frames,
+  process batch exports via CSV, and utilize data templates for various formats.
+developer: lyqht
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://mini-qr-code-generator.vercel.app?utm_source=awesome-docker-compose.com
+repo: https://github.com/lyqht/mini-qr
+support: https://github.com/lyqht/mini-qr/blob/main/docker-compose.yml

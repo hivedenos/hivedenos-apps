@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: garage
+category: object-storage-and-file-server
+name: Garage
+version: latest
+tagline: Build your own resilient object storage for self-hosting.
+description: Build your own resilient object storage for self-hosting. Runs on any
+  hardware, offers S3 compatibility, and deploys as a single dependency-free binary.
+developer: deuxfleurs-org
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://garagehq.deuxfleurs.fr?utm_source=awesome-docker-compose.com
+repo: https://github.com/deuxfleurs-org/garage
+support: https://garagehq.deuxfleurs.fr/documentation/cookbook/real-world/

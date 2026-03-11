@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: qbittorrent-linuxserver-io
+category: torrenting
+name: qBittorrent (LinuxServer.io)
+version: latest
+tagline: Download files quickly with this open-source, ad-free BitTorrent client.
+description: Download files quickly with this open-source, ad-free BitTorrent client.
+  Enjoy a built-in search engine, RSS support, and advanced bandwidth scheduling.
+developer: linuxserver
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.qbittorrent.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/linuxserver/docker-qbittorrent
+support: https://github.com/linuxserver/docker-qbittorrent

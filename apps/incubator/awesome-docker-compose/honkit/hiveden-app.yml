@@ -3,10 +3,9 @@ id: honkit
 category: documentation
 name: HonKit
 version: latest
-tagline: "\uD83D\uDCD6 HonKit is building beautiful books using Markdown - Fork of\
-  \ GitBook."
-description: "\uD83D\uDCD6 HonKit is building beautiful books using Markdown - Fork\
-  \ of GitBook."
+tagline: Create stunning books and technical documentation using Markdown or AsciiDoc.
+description: Create stunning books and technical documentation using Markdown or AsciiDoc.
+  Generate static websites or export to PDF, ePub, and Mobi formats effortlessly.
 developer: honkit
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://honkit.netlify.app/
+website: https://honkit.netlify.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/honkit/honkit
 support: https://github.com/honkit/honkit/tree/master/docker

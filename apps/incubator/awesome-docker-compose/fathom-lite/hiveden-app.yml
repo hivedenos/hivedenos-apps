@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: fathom-lite
+category: analytics
+name: Fathom Lite
+version: latest
+tagline: Get accurate website insights without compromising user privacy.
+description: Get accurate website insights without compromising user privacy. Ditch
+  cookie banners and complex reports with a simple, fast, and compliant analytics
+  solution.
+developer: usefathom
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://usefathom.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/usefathom/fathom
+support: https://github.com/usefathom/fathom/blob/master/docker-compose.yml

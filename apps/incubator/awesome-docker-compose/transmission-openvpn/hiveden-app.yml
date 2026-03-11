@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: transmission-openvpn
+category: torrenting
+name: Transmission OpenVPN
+version: latest
+tagline: Run a secure torrent client with a built-in web interface routed entirely
+  through an encrypted VPN tunnel.
+description: Run a secure torrent client with a built-in web interface routed entirely
+  through an encrypted VPN tunnel. Keep your downloads private and easily accessible.
+developer: haugene
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://haugene.github.io/docker-transmission-openvpn?utm_source=awesome-docker-compose.com
+repo: https://github.com/haugene/docker-transmission-openvpn
+support: https://haugene.github.io/docker-transmission-openvpn/run-container/

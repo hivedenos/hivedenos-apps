@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: part-db
 category: inventory-management
-name: Part Db
+name: Part-DB
 version: latest
-tagline: An inventory management system for your electronic components.
-description: An inventory management system for your electronic components.
+tagline: Manage your electronic parts inventory with this open-source web application.
+description: Manage your electronic parts inventory with this open-source web application.
+  Track locations, generate barcodes, manage BOMs, and integrate with KiCad.
 developer: Part-DB
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docs.part-db.de/
+website: https://docs.part-db.de?utm_source=awesome-docker-compose.com
 repo: https://github.com/Part-DB/Part-DB-server
 support: https://docs.part-db.de/installation/installation_docker.html

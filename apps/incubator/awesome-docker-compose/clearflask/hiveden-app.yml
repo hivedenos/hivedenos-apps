@@ -1,12 +1,12 @@
 manifestVersion: 1.1
 id: clearflask
-category: polls-and-events
+category: poll-and-events
 name: ClearFlask
 version: latest
-tagline: Community-feedback tool for managing incoming feedback and prioritizing a
-  public roadmap (alternative to Canny, UserVoi...
-description: Community-feedback tool for managing incoming feedback and prioritizing
-  a public roadmap (alternative to Canny, UserVoice, Upvoty).
+tagline: Collect customer feedback, prioritize features, and share your product roadmap.
+description: Collect customer feedback, prioritize features, and share your product
+  roadmap. This open-source platform helps you build products your users actually
+  want.
 developer: clearflask
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://clearflask.com/
+website: https://clearflask.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/clearflask/clearflask
-support: https://github.com/clearflask/clearflask#self-hosting
+support: https://github.com/clearflask/clearflask/blob/master/clearflask-release/src/main/docker/compose/docker-compose.self-host.yml

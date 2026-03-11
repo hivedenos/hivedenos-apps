@@ -1,0 +1,14 @@
+services:
+  mariadb:
+    image: bitnami/mariadb:latest
+    container_name: mariadb
+    environment:
+      - MARIADB_ROOT_PASSWORD=${MARIADB_ROOT_PASSWORD}
+      - MARIADB_USER=${MARIADB_USER}
+      - MARIADB_PASSWORD=${MARIADB_PASSWORD}
+      - MARIADB_DATABASE=my_database
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mariadb-data:/bitnami/mariadb
+    restart: unless-stopped

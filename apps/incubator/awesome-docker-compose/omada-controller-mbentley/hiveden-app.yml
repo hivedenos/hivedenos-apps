@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: omada-controller-mbentley
+category: internet-of-things-iot
+name: Omada Controller (mbentley)
+version: latest
+tagline: Manage access points, switches, and gateways from a single centralized platform.
+description: Manage access points, switches, and gateways from a single centralized
+  platform. Enjoy unlimited scalability, cloud access, and intelligent network monitoring.
+developer: mbentley
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://support.omadanetworks.com/us/product/omada-software-controller?utm_source=awesome-docker-compose.com
+repo: https://github.com/mbentley/docker-omada-controller
+support: https://github.com/mbentley/docker-omada-controller#using-docker-compose

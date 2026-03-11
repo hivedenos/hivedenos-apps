@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: vod2pod-rss
 category: podcasting
-name: Vod2pod-rss
+name: vod2pod-rss
 version: latest
-tagline: Convert YouTube and Twitch channels to podcasts, no storage required.
-description: Convert YouTube and Twitch channels to podcasts, no storage required.
-  Transcodes VoDs to MP3 192k on the fly, generates an RSS feed to use in podcast
-  clients.
+tagline: Transform video channels into listenable podcast feeds.
+description: Transform video channels into listenable podcast feeds. Enjoy on-the-fly
+  MP3 transcoding for any podcast app without needing local server storage.
 developer: madiele
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/podcasting/vod2pod-rss
+website: https://github.com/madiele/vod2pod-rss?utm_source=awesome-docker-compose.com
 repo: https://github.com/madiele/vod2pod-rss
 support: https://github.com/madiele/vod2pod-rss#install

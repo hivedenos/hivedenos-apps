@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: geopulse
+category: map-and-gps
+name: GeoPulse
+version: latest
+tagline: Connect GPS tracking apps to a self-hosted platform.
+description: Connect GPS tracking apps to a self-hosted platform. Create interactive
+  timelines, analyze journeys, and get AI-powered insights into your travel history.
+developer: tess1o
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://tess1o.github.io/geopulse?utm_source=awesome-docker-compose.com
+repo: https://github.com/tess1o/geopulse
+support: https://tess1o.github.io/geopulse/docs/getting-started/deployment/docker-compose

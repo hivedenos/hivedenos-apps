@@ -1,0 +1,15 @@
+services:
+  languagetool:
+    image: meyayl/languagetool:latest
+    container_name: languagetool
+    restart: unless-stopped
+    ports:
+      - "8010:8010"
+    environment:
+      - JAVA_XMS=256m
+      - JAVA_XMX=1g
+      # Optional: Uncomment to download ngrams on startup (e.g., 'en,de')
+      # - download_ngrams_for_langs=en
+    volumes:
+      - ./ngrams:/ngrams
+      - ./config:/config

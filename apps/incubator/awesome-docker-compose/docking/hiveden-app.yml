@@ -2,11 +2,10 @@ manifestVersion: 1.1
 id: docking
 category: document-management
 name: DocKing
-version: '7'
-tagline: Document management service/microservice that handles templates and renders
-  them in PDF format, all in one place.
-description: Document management service/microservice that handles templates and renders
-  them in PDF format, all in one place.
+version: latest
+tagline: Offload document template management and PDF rendering to a dedicated microservice.
+description: Offload document template management and PDF rendering to a dedicated
+  microservice. Supports multiple engines, dynamic data, and asynchronous generation.
 developer: shipsaas
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docking.shipsaas.tech/
+website: https://docking.shipsaas.tech?utm_source=awesome-docker-compose.com
 repo: https://github.com/shipsaas/docking
 support: https://docking.shipsaas.tech/deployment/docker

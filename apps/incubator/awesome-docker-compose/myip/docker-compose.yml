@@ -1,8 +1,10 @@
-version: '3'
 services:
-    myip:
-        container_name: myip
-        image: jason5ng32/myip:latest 
-        restart: always
-        ports:
-            - 
+  myip:
+    image: jason5ng32/myip:latest
+    container_name: myip
+    ports:
+      - "18966:18966"
+    environment:
+      - IPINFO_API_TOKEN=${IPINFO_API_TOKEN}
+      - BING_MAP_API_KEY=${BING_MAP_API_KEY}
+    restart: unless-stopped

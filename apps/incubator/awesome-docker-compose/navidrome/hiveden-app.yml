@@ -3,8 +3,10 @@ id: navidrome
 category: music-server
 name: Navidrome
 version: latest
-tagline: Modern Music Server and Streamer, compatible with Subsonic/Airsonic.
-description: Modern Music Server and Streamer, compatible with Subsonic/Airsonic.
+tagline: Enjoy your personal music collection from anywhere with a lightweight, open-source
+  streaming server.
+description: Enjoy your personal music collection from anywhere with a lightweight,
+  open-source streaming server. Features a modern web UI and mobile app compatibility.
 developer: navidrome
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.navidrome.org/
+website: https://www.navidrome.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/navidrome/navidrome
 support: https://www.navidrome.org/docs/installation/docker/

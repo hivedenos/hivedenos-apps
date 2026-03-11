@@ -1,25 +1,17 @@
-version: 
- 
 services:
   bitwarden:
-    depends_on:
-      - db
-    env_file:
-      - settings.env
-    image: bitwarden/self-host:beta
+    image: bitwarden/self-host:latest
+    container_name: bitwarden
     restart: always
     ports:
-      - 
-    volumes:
-      - ./bitwarden:/etc/bitwarden
- 
-  db:
+      - "80:8080"
+      - "443:8443"
     environment:
-      MARIADB_USER: 
-      MARIADB_PASSWORD: 
-      MARIADB_DATABASE: 
-      MARIADB_RANDOM_ROOT_PASSWORD: 
-    image: mariadb:10
-    restart: always
+      BW_DOMAIN: "https://bitwarden.example.com"
+      BW_DB_PROVIDER: "sqlite"
+      BW_DB_FILE: "/etc/bitwarden/bwdata/core/attachments/db.sqlite3"
+      BW_INSTALLATION_ID: "${BW_INSTALLATION_ID}"
+      BW_INSTALLATION_KEY: "${BW_INSTALLATION_KEY}"
+      adminSettings__admins: "${ADMIN_EMAIL}"
     volumes:
-      - ./data:/var/lib/mysql
+      - ./bwdata:/etc/bitwarden/bwdata

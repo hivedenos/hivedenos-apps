@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: pydio-cells
+category: cloud-storage
+name: Pydio Cells
+version: latest
+tagline: Manage and share enterprise documents on your own infrastructure.
+description: Manage and share enterprise documents on your own infrastructure. Get
+  a secure, self-hosted platform with no-code automation and robust collaboration
+  features.
+developer: pydio
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.pydio.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/pydio/cells
+support: https://docs.pydio.com/cells-v4/admin-guide/quick-start/cells-installation/docker/

@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: airstation
+category: music-server
+name: Airstation
+version: latest
+tagline: Launch a self-hosted web app to stream music over the internet.
+description: Launch a self-hosted web app to stream music over the internet. Upload
+  tracks, manage your playback queue, and deliver seamless HLS audio to listeners.
+developer: cheatsnake
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://radio.yurace.pro?utm_source=awesome-docker-compose.com
+repo: https://github.com/cheatsnake/airstation
+support: https://github.com/cheatsnake/airstation/blob/master/docs/installation.md

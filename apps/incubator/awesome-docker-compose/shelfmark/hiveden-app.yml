@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: shelfmark
+category: e-books
+name: Shelfmark
+version: latest
+tagline: Search and download books and audiobooks from multiple sources.
+description: Search and download books and audiobooks from multiple sources. Features
+  a unified queue, multi-user support, and seamless integration with digital libraries.
+developer: calibrain
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/calibrain/shelfmark?utm_source=awesome-docker-compose.com
+repo: https://github.com/calibrain/shelfmark
+support: https://github.com/calibrain/shelfmark#%EF%B8%8F-configuration

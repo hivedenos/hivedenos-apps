@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: goatcounter
 category: analytics
 name: GoatCounter
-version: latest
-tagline: Easy web statistics without tracking of personal data.
-description: Easy web statistics without tracking of personal data.
+version: 15-alpine
+tagline: Get meaningful website insights without tracking personal data.
+description: Get meaningful website insights without tracking personal data. This
+  lightweight, open-source platform is simple to use and respects visitor privacy.
 developer: arp242
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.goatcounter.com/
+website: https://www.goatcounter.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/arp242/goatcounter
-support: https://github.com/arp242/goatcounter
+support: https://github.com/arp242/goatcounter#running-with-docker

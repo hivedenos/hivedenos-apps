@@ -1,15 +1,9 @@
-version: '3'
 services:
-  app:
+  filesharing:
     image: axeloz/filesharing:latest
-    environment:
-      UPLOAD_MAX_FILESIZE: 
-      UPLOAD_MAX_FILES: 
-      UPLOAD_LIMIT_IPS: 
-      UPLOAD_PREVENT_DUPLICATES: true
-      HASH_MAX_FILESIZE: 
-      LIMIT_DOWNLOAD_RATE: 
-    volumes:
-      - ./files:/app/storage/content
+    container_name: filesharing
+    restart: unless-stopped
     ports:
-      - 8080:80
+      - "8080:80"
+    volumes:
+      - ./data:/data

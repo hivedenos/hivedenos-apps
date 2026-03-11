@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: pretix
 category: e-commerce
-name: Pretix
+name: pretix
 version: stable
-tagline: Django based ticket sales platform for events.
-description: Django based ticket sales platform for events.
+tagline: Manage ticket sales for conferences and exhibitions with an adaptable, multi-lingual
+  platform.
+description: Manage ticket sales for conferences and exhibitions with an adaptable,
+  multi-lingual platform. Features include an online shop, box office, and open API.
 developer: pretix
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://pretix.eu/
+website: https://pretix.eu?utm_source=awesome-docker-compose.com
 repo: https://github.com/pretix/pretix
-support: https://docs.pretix.eu/en/latest/admin/installation/docker_smallscale.html
+support: https://docs.pretix.eu/self-hosting/installation/docker_smallscale/

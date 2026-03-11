@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: ghostfolio
 category: budgeting
 name: Ghostfolio
-version: latest
-tagline: Wealth management software to keep track of stocks, ETFs and cryptocurrencies.
-description: Wealth management software to keep track of stocks, ETFs and cryptocurrencies.
+version: 15-alpine
+tagline: Monitor your complete net worth with a private dashboard.
+description: Monitor your complete net worth with a private dashboard. Track cash,
+  stocks, ETFs, and cryptocurrencies from all your accounts in one place.
 developer: ghostfolio
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://ghostfol.io/
+website: https://ghostfol.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/ghostfolio/ghostfolio
 support: https://github.com/ghostfolio/ghostfolio#self-hosting

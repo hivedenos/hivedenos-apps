@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: glance
-category: personal-dashboards
+category: personal-dashboard
 name: Glance
 version: latest
-tagline: A self-hosted dashboard that puts all your feeds in one place.
-description: A self-hosted dashboard that puts all your feeds in one place.
+tagline: Create a personal, self-hosted dashboard to view all your feeds in one place.
+description: Create a personal, self-hosted dashboard to view all your feeds in one
+  place. Aggregate RSS, Reddit, YouTube, and more with highly customizable widgets.
 developer: glanceapp
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/personal-dashboards/glance
+website: https://github.com/glanceapp/glance?utm_source=awesome-docker-compose.com
 repo: https://github.com/glanceapp/glance
 support: https://github.com/glanceapp/glance#docker

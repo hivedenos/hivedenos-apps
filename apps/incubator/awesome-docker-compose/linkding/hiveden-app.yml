@@ -1,11 +1,12 @@
 manifestVersion: 1.1
 id: linkding
-category: bookmarks-managers
+category: bookmark-manager
 name: linkding
 version: latest
-tagline: linkding is a bookmark manager that you can host yourself.
-description: "linkding is a bookmark manager that you can host yourself. It\xE2\x80\
-  \x99s designed be to be minimal, fast, and easy to set up using Docker."
+tagline: Set up a minimal, fast, self-hosted bookmark manager.
+description: Set up a minimal, fast, self-hosted bookmark manager. Automatically fetch
+  metadata, archive pages, and manage links with a browser extension. Supports multiple
+  users.
 developer: sissbruecker
 dependencies: []
 gallery: []
@@ -14,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/bookmarks-managers/linkding
+website: https://linkding.link?utm_source=awesome-docker-compose.com
 repo: https://github.com/sissbruecker/linkding
 support: https://github.com/sissbruecker/linkding#installation

@@ -3,8 +3,9 @@ id: metube
 category: video-downloader
 name: MeTube
 version: latest
-tagline: Self-hosted YouTube downloader (web UI for youtube-dl / yt-dlp).
-description: Self-hosted YouTube downloader (web UI for youtube-dl / yt-dlp).
+tagline: Deploy a self-hosted web UI for yt-dlp to download videos and playlists.
+description: Deploy a self-hosted web UI for yt-dlp to download videos and playlists.
+  Highly configurable via environment variables and easy to run with Docker.
 developer: alexta69
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/video-downloader/metube
+website: https://github.com/alexta69/metube?utm_source=awesome-docker-compose.com
 repo: https://github.com/alexta69/metube
 support: https://github.com/alexta69/metube#run-using-docker

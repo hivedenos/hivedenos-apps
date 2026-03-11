@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: fider
-category: polls-and-events
+category: poll-and-events
 name: Fider
-version: '12'
-tagline: Open platform to collect and prioritize feedback (alternative to UserVoice).
-description: Open platform to collect and prioritize feedback (alternative to UserVoice).
+version: 15-alpine
+tagline: Gather customer feedback and feature requests in one public board.
+description: Gather customer feedback and feature requests in one public board. Let
+  users submit ideas and vote on your product direction to build what they truly want.
 developer: getfider
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://fider.io/
+website: https://www.fider.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/getfider/fider
-support: https://fider.io/docs/hosting-instance
+support: https://docs.fider.io/hosting-instance

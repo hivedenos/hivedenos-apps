@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: double-commander-linuxserver-io
+category: storage-file-transfer
+name: Double Commander (LinuxServer.io)
+version: latest
+tagline: Secure your web applications with advanced bot protection and traffic filtering.
+description: Secure your web applications with advanced bot protection and traffic
+  filtering. Keep your data safe and ensure uninterrupted access for legitimate users.
+developer: doublecmd
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://doublecmd.sourceforge.io?utm_source=awesome-docker-compose.com
+repo: https://github.com/doublecmd/doublecmd
+support: https://github.com/linuxserver/docker-doublecommander

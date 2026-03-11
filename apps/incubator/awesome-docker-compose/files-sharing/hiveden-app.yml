@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: files-sharing
-category: file-transfer-single-click-drag-n-drop-upload
+category: quick-file-transfer
 name: Files Sharing
 version: latest
-tagline: Open Source and self-hosted files sharing application based on unique and
-  temporary links.
-description: Open Source and self-hosted files sharing application based on unique
-  and temporary links.
+tagline: Group your important documents, images, and media into convenient bundles.
+description: Group your important documents, images, and media into convenient bundles.
+  Share large files quickly and manage your existing collections from one dashboard.
 developer: axeloz
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://filesharing.box.webinno.fr/
+website: https://filesharing.webinno.fr?utm_source=awesome-docker-compose.com
 repo: https://github.com/axeloz/filesharing
 support: https://github.com/axeloz/filesharing#installation

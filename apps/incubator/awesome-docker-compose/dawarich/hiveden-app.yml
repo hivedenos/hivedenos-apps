@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: dawarich
-category: maps-and-gps
+category: map-and-gps
 name: Dawarich
-version: 7.0-alpine
-tagline: Self-hosted alternative to Google Location History (Google Maps Timeline).
-description: Self-hosted alternative to Google Location History (Google Maps Timeline).
+version: 14.2-alpine
+tagline: Automatically record your location history to create beautiful maps, trips,
+  and stats.
+description: Automatically record your location history to create beautiful maps,
+  trips, and stats. Relive your travels with photos and notes, all with complete privacy.
 developer: Freika
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://dawarich.app/
+website: https://dawarich.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/Freika/dawarich
-support: https://dawarich.app/docs/intro
+support: https://dawarich.app/docs/self-hosting/introduction/

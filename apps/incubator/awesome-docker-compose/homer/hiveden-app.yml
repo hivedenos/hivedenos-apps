@@ -1,12 +1,12 @@
 manifestVersion: 1.1
 id: homer
-category: personal-dashboards
+category: personal-dashboard
 name: Homer
 version: latest
-tagline: A dead simple static homepage to expose your server services, with an easy
-  yaml configuration and connectivity check.
-description: A dead simple static homepage to expose your server services, with an
-  easy yaml configuration and connectivity check.
+tagline: Access all your server applications from one clean, static dashboard.
+description: Access all your server applications from one clean, static dashboard.
+  Organize your services with a simple YAML file for a fully customized, personal
+  landing page.
 developer: bastienwirtz
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://homer-demo.netlify.app/
+website: https://homer-demo.netlify.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/bastienwirtz/homer
 support: https://github.com/bastienwirtz/homer#getting-started

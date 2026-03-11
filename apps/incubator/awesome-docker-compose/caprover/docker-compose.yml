@@ -1,15 +1,12 @@
-version: 
- 
 services:
   caprover:
-    image: caprover/caprover
+    image: caprover/caprover:latest
+    container_name: caprover
+    restart: always
     ports:
-      - 80:80
-      - 443:443
-      - 3000:3000
-    environment:
-      - ACCEPTED_TERMS=true
+      - "80:80"
+      - "443:443"
+      - "3000:3000"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - /captain:/captain
-    restart: always
+      - ./captain:/captain

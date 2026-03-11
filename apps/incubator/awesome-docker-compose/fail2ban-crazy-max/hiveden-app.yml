@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: fail2ban-crazy-max
+category: firewall
+name: Fail2ban (crazy-max)
+version: latest
+tagline: Deploy a container that scans log files and bans IPs showing malicious signs.
+description: Deploy a container that scans log files and bans IPs showing malicious
+  signs. Configure custom jails, actions, and filters for robust server protection.
+developer: crazy-max
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/crazy-max/docker-fail2ban?utm_source=awesome-docker-compose.com
+repo: https://github.com/crazy-max/docker-fail2ban
+support: https://github.com/crazy-max/docker-fail2ban

@@ -1,12 +1,12 @@
 manifestVersion: 1.1
 id: pinepods
 category: podcasting
-name: Pinepods
+name: PinePods
 version: latest
-tagline: A rust based podcast management system with multi-user support.
-description: A rust based podcast management system with multi-user support. Pinepods
-  utilizes a central database so aspects like listen time and themes follow from device
-  to device.
+tagline: Manage and listen to podcasts across all devices with a lightning-fast, self-hosted
+  server.
+description: Manage and listen to podcasts across all devices with a lightning-fast,
+  self-hosted server. Enjoy universal sync, offline support, and multi-user access.
 developer: madeofpendletonwool
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.pinepods.online/
+website: https://www.pinepods.online?utm_source=awesome-docker-compose.com
 repo: https://github.com/madeofpendletonwool/PinePods
 support: https://www.pinepods.online/docs/intro

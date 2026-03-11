@@ -1,0 +1,10 @@
+services:
+  rotki:
+    image: rotki/rotki:latest
+    container_name: rotki
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./rotki-data:/data
+      - ./rotki-log:/log

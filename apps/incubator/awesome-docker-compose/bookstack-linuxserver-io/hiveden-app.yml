@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: bookstack-linuxserver-io
+category: wiki
+name: BookStack (LinuxServer.io)
+version: latest
+tagline: Create, organize, and store documentation easily using a free, self-hosted
+  wiki platform.
+description: Create, organize, and store documentation easily using a free, self-hosted
+  wiki platform. Enjoy a simple interface, powerful search, and built-in diagrams.
+developer: linuxserver
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.bookstackapp.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/linuxserver/docker-bookstack
+support: https://github.com/linuxserver/docker-bookstack

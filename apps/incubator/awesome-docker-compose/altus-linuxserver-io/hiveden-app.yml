@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: altus-linuxserver-io
+category: internet-tool
+name: Altus (LinuxServer.io)
+version: latest
+tagline: Manage multiple WhatsApp accounts simultaneously from your desktop.
+description: Manage multiple WhatsApp accounts simultaneously from your desktop. Customize
+  your chat experience with custom themes, dark mode, and native notifications.
+developer: amanharwara
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/amanharwara/altus?utm_source=awesome-docker-compose.com
+repo: https://github.com/amanharwara/altus
+support: https://github.com/linuxserver/docker-altus

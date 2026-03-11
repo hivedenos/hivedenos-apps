@@ -1,11 +1,11 @@
 manifestVersion: 1.1
 id: briefkasten
-category: bookmarks-managers
+category: bookmark-manager
 name: Briefkasten
-version: latest
-tagline: Self-hosted bookmarking application.
-description: Self-hosted bookmarking application. Works with any Prisma compatible
-  database (MySQL, Postgres, SQLite, etc.)
+version: 15-alpine
+tagline: Stop losing track of important links.
+description: Stop losing track of important links. Save any webpage, organize it into
+  collections, and find exactly what you need, whenever you need it.
 developer: ndom91
 dependencies: []
 gallery: []
@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://briefkastenhq.com/
+website: https://briefkastenhq.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/ndom91/briefkasten
 support: https://docs.briefkastenhq.com/docs/self-hosting

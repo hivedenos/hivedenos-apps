@@ -1,0 +1,15 @@
+services:
+  zerotier:
+    image: zyclonite/zerotier:latest
+    container_name: zerotier
+    network_mode: host
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+    volumes:
+      - ./zerotier-data:/var/lib/zerotier-one
+    environment:
+      - NETWORK_ID=${NETWORK_ID}
+    restart: unless-stopped

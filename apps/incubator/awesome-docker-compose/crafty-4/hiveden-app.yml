@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: crafty-4
+category: games
+name: Crafty 4
+version: latest
+tagline: Take full control of your Minecraft servers through a secure, self-hosted
+  web interface.
+description: Take full control of your Minecraft servers through a secure, self-hosted
+  web interface. Easily manage players, run commands, edit files, and create backups.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://craftycontrol.com?utm_source=awesome-docker-compose.com
+repo: https://gitlab.com/crafty-controller/crafty-4
+support: https://docs.craftycontrol.com/pages/getting-started/installation/docker/

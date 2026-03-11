@@ -1,0 +1,13 @@
+services:
+  gaseous-server:
+    image: gaseousgames/gaseousserver:latest
+    container_name: gaseous-server
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./roms:/roms
+    environment:
+      - SECRET_KEY=${SECRET_KEY}
+      - ALLOWED_HOSTS=*

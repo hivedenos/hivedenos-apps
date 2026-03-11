@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: teamspeak-mbentley
+category: custom-communication-system
+name: TeamSpeak (mbentley)
+version: latest
+tagline: Communicate with your team using military-grade security, ultra-low latency,
+  and 3D surround sound.
+description: Communicate with your team using military-grade security, ultra-low latency,
+  and 3D surround sound. Maintain complete control over your voice and text data.
+developer: mbentley
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://teamspeak.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/mbentley/docker-teamspeak
+support: https://github.com/mbentley/docker-teamspeak

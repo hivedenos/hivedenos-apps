@@ -1,30 +1,12 @@
-version: '3'
 services:
   chibisafe:
     image: chibisafe/chibisafe:latest
-    environment:
-      - BASE_API_URL=http://chibisafe_server:8000
-    expose:
-      - 8001
+    container_name: chibisafe
     restart: unless-stopped
- 
-  chibisafe_server:
-    image: chibisafe/chibisafe-server:latest
-    volumes:
-      - ./database:/app/database:rw
-      - ./uploads:/app/uploads:rw
-      - ./logs:/app/logs:rw
-    expose:
-      - 8000
-    restart: unless-stopped
- 
-  caddy:
-    image: caddy:2-alpine
-    volumes:
-      - ./Caddyfile:/etc/caddy/Caddyfile:ro
-      - ./uploads:/app/uploads:ro
     ports:
-      - 24424:80
+      - "24424:24424"
+    volumes:
+      - ./storage:/app/storage
     environment:
-      - 
-    restart: unless-stopped
+      - BASE_API_URL=http://localhost:24424
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}

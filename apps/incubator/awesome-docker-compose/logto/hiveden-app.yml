@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: logto
+category: identity-and-access-management
+name: Logto
+version: ${TAG-latest}
+tagline: Integrate multi-tenancy, enterprise SSO, and role-based access control into
+  your SaaS or AI applications using simple,...
+description: Integrate multi-tenancy, enterprise SSO, and role-based access control
+  into your SaaS or AI applications using simple, fast, and developer-friendly protocols.
+developer: logto-io
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://logto.io?utm_source=awesome-docker-compose.com
+repo: https://github.com/logto-io/logto
+support: https://docs.logto.io/logto-oss/get-started-with-oss

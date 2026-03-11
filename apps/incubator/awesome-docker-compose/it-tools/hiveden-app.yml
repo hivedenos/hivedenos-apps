@@ -3,8 +3,9 @@ id: it-tools
 category: miscellaneous
 name: IT-Tools
 version: latest
-tagline: Collection of handy online tools for developers, with great UX.
-description: Collection of handy online tools for developers, with great UX.
+tagline: Access a comprehensive, open-source collection of developer utilities.
+description: Access a comprehensive, open-source collection of developer utilities.
+  Convert data, manage networks, and manipulate text with an intuitive user experience.
 developer: CorentinTh
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/miscellaneous/it-tools
+website: https://it-tools.tech?utm_source=awesome-docker-compose.com
 repo: https://github.com/CorentinTh/it-tools
 support: https://github.com/CorentinTh/it-tools#self-host

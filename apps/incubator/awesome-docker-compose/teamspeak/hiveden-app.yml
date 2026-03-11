@@ -1,14 +1,12 @@
 manifestVersion: 1.1
 id: teamspeak
-category: custom-communication-systems
-name: Teamspeak
+category: custom-communication-system
+name: TeamSpeak
 version: latest
-tagline: TeamSpeak offers the ideal voice communication for online gaming, education
-  and training, internal business communicati...
-description: TeamSpeak offers the ideal voice communication for online gaming, education
-  and training, internal business communication, and staying in touch with friends
-  and family. Our primary focus is delivering a solution that is easy to use, with
-  high security standards, excellent voice quality, and low system and bandwidth usage.
+tagline: Communicate with crystal-clear, lag-free audio using a highly secure, decentralized
+  VoIP platform.
+description: Communicate with crystal-clear, lag-free audio using a highly secure,
+  decentralized VoIP platform. Enjoy 3D surround sound and advanced permission controls.
 developer: TeamSpeak-Systems
 dependencies: []
 gallery: []
@@ -17,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://teamspeak.com/
-repo: https://github.com/TeamSpeak-Systems
+website: https://teamspeak.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images
 support: https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images

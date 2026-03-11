@@ -1,12 +1,12 @@
 manifestVersion: 1.1
 id: mysql-s3-backup
-category: database-backup-mysql-backup
+category: database-backup
 name: mysql-s3-backup
 version: latest
-tagline: A docker multi-arch image with a tiny MySQL client to create databases dumps
-  and s3cmd S3 client purely installed on th...
-description: A docker multi-arch image with a tiny MySQL client to create databases
-  dumps and s3cmd S3 client purely installed on the latest Alpine container.
+tagline: Create MySQL database dumps and upload them to S3 with a tiny, multi-arch
+  Docker image.
+description: Create MySQL database dumps and upload them to S3 with a tiny, multi-arch
+  Docker image. Automate periodic backups easily with Kubernetes CronJobs.
 developer: Angatar
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/database-backup/mysql-backup/mysql-s3-backup
+website: https://github.com/Angatar/mysql-s3-backup?utm_source=awesome-docker-compose.com
 repo: https://github.com/Angatar/mysql-s3-backup
 support: https://github.com/Angatar/mysql-s3-backup#basic-usage

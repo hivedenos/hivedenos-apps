@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: nefarious
 category: video-downloader
-name: Nefarious
+name: nefarious
 version: latest
-tagline: Web application that automates downloading Movies and TV Shows.
-description: Web application that automates downloading Movies and TV Shows.
+tagline: Automatically download TV shows and movies with this self-hosted web app.
+description: Automatically download TV shows and movies with this self-hosted web
+  app. Use quality profiles, VPN integration, subtitle downloads, and multi-user support.
 developer: lardbit
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://lardbit.github.io/nefarious/
+website: https://lardbit.github.io/nefarious?utm_source=awesome-docker-compose.com
 repo: https://github.com/lardbit/nefarious
 support: https://github.com/lardbit/nefarious#setup

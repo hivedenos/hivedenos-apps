@@ -3,10 +3,9 @@ id: typesense
 category: search-engine-solution
 name: Typesense
 version: '27.1'
-tagline: Blazing fast, typo-tolerant open source search engine optimized for developer
-  happiness and ease of use.
-description: Blazing fast, typo-tolerant open source search engine optimized for developer
-  happiness and ease of use.
+tagline: Get a fast, typo-tolerant search engine optimized for instant experiences.
+description: Get a fast, typo-tolerant search engine optimized for instant experiences.
+  This open-source tool offers vector search, faceting, and simple API integration.
 developer: typesense
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://typesense.org/
+website: https://typesense.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/typesense/typesense
 support: https://typesense.org/docs/guide/install-typesense.html

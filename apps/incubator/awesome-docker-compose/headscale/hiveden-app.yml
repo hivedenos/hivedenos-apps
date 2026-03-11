@@ -1,12 +1,12 @@
 manifestVersion: 1.1
 id: headscale
-category: vpn-mesh-networking
+category: mesh-networking
 name: Headscale
-version: 0.22.3
-tagline: Self-hostable fork of Tailscale, cross-platform clients, simple to use, built-in
-  (currently experimental) monitoring to...
-description: Self-hostable fork of Tailscale, cross-platform clients, simple to use,
-  built-in (currently experimental) monitoring tools.
+version: latest
+tagline: Create and manage your own private network with this open-source Tailscale
+  control server.
+description: Create and manage your own private network with this open-source Tailscale
+  control server. Ideal for self-hosters, hobbyists, and small organizations.
 developer: juanfont
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://headscale.net/
+website: https://headscale.net?utm_source=awesome-docker-compose.com
 repo: https://github.com/juanfont/headscale
-support: https://headscale.net/running-headscale-container/
+support: https://headscale.net/stable/setup/install/container/

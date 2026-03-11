@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: onlyoffice
-category: office-suites
-name: Onlyoffice
+category: office-suite
+name: ONLYOFFICE
 version: latest
-tagline: Office suite that enables you to manage documents, projects, team and customer
-  relations in one place.
-description: Office suite that enables you to manage documents, projects, team and
-  customer relations in one place.
+tagline: A secure online office suite for real-time collaboration.
+description: A secure online office suite for real-time collaboration. Edit docs,
+  sheets, and slides with AI-powered tools on any device, online or offline.
 developer: ONLYOFFICE
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.onlyoffice.com/
+website: https://www.onlyoffice.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/ONLYOFFICE/DocumentServer
 support: https://github.com/ONLYOFFICE/Docker-DocumentServer

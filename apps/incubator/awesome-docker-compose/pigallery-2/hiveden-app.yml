@@ -3,10 +3,9 @@ id: pigallery-2
 category: photo-server
 name: Pigallery 2
 version: latest
-tagline: A directory-first photo gallery website, with a rich UI, optimised for running
-  on low resource servers.
-description: A directory-first photo gallery website, with a rich UI, optimised for
-  running on low resource servers.
+tagline: Build a speedy, self-hosted photo gallery directly from your file directories.
+description: Build a speedy, self-hosted photo gallery directly from your file directories.
+  Designed for Raspberry Pi and other low-power devices for efficient photo management.
 developer: bpatrik
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://bpatrik.github.io/pigallery2/
+website: https://bpatrik.github.io/pigallery2?utm_source=awesome-docker-compose.com
 repo: https://github.com/bpatrik/pigallery2
 support: https://github.com/bpatrik/pigallery2/blob/master/docker/README.md

@@ -3,8 +3,9 @@ id: docuseal
 category: document-management
 name: DocuSeal
 version: latest
-tagline: Create, fill, and sign digital documents (alternative to DocuSign).
-description: Create, fill, and sign digital documents (alternative to DocuSign).
+tagline: Collect legally binding e-signatures and build custom document workflows.
+description: Collect legally binding e-signatures and build custom document workflows.
+  Integrate seamlessly into any app using robust open-source developer tools.
 developer: docusealco
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.docuseal.co/
+website: https://www.docuseal.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/docusealco/docuseal
 support: https://github.com/docusealco/docuseal#deploy

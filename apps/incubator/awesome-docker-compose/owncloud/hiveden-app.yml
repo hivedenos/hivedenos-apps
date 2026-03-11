@@ -2,11 +2,10 @@ manifestVersion: 1.1
 id: owncloud
 category: cloud-storage
 name: ownCloud
-version: ${OWNCLOUD_VERSION}
-tagline: All-in-one solution for saving, synchronizing, viewing, editing and sharing
-  files, calendars, address books and more.
-description: All-in-one solution for saving, synchronizing, viewing, editing and sharing
-  files, calendars, address books and more.
+version: 10.15.0
+tagline: Take control of your digital content.
+description: Take control of your digital content. Securely sync, share, and collaborate
+  on files with a platform built for data sovereignty and enterprise-grade security.
 developer: owncloud
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/cloud-storage/owncloud
+website: https://owncloud.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/owncloud/core
 support: https://doc.owncloud.com/server/10.15/admin_manual/installation/docker/

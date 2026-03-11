@@ -1,6 +1,14 @@
-version: "3.8"
-
 services:
   viseron:
     image: roflcoopter/viseron:latest
+    container_name: viseron
     restart: unless-stopped
+    shm_size: 2gb
+    ports:
+      - 8888:8888
+    volumes:
+      - ./config:/config
+      - ./recordings:/recordings
+      - /etc/localtime:/etc/localtime:ro
+    devices:
+      - /dev/dri:/dev/dri

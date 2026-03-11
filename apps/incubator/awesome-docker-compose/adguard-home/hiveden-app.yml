@@ -3,8 +3,9 @@ id: adguard-home
 category: dns
 name: AdGuard Home
 version: latest
-tagline: Free and open source, userfriendly ads & trackers blocking DNS server.
-description: Free and open source, userfriendly ads & trackers blocking DNS server.
+tagline: Block ads and trackers on your entire home network.
+description: Block ads and trackers on your entire home network. Install once to protect
+  every device, from computers to smart TVs, without any client software.
 developer: AdguardTeam
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://adguard.com/en/adguard-home/overview.html
+website: https://adguard.com/en/adguard-home/overview.html?utm_source=awesome-docker-compose.com
 repo: https://github.com/AdguardTeam/AdGuardHome
 support: https://github.com/AdguardTeam/AdGuardHome/wiki/Docker

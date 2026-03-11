@@ -1,11 +1,12 @@
 manifestVersion: 1.1
 id: piping-server
-category: file-transfer-single-click-drag-n-drop-upload
+category: quick-file-transfer
 name: Piping Server
 version: latest
-tagline: Infinitely transfer between every device over pure HTTP with pipes or browsers.
-description: Infinitely transfer between every device over pure HTTP with pipes or
-  browsers.
+tagline: Transfer infinite data streams between devices using pure HTTP.
+description: Transfer infinite data streams between devices using pure HTTP. Enjoy
+  zero-installation, secure, and storageless file sharing via browsers or the command
+  line.
 developer: nwtgck
 dependencies: []
 gallery: []
@@ -14,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/file-transfer---single-click--drag-n-drop-upload/piping-server
+website: https://github.com/nwtgck/piping-server?utm_source=awesome-docker-compose.com
 repo: https://github.com/nwtgck/piping-server
 support: https://github.com/nwtgck/piping-server#self-host-on-docker

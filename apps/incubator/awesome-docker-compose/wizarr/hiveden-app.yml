@@ -3,10 +3,9 @@ id: wizarr
 category: arr
 name: Wizarr
 version: latest
-tagline: Wizarr is an advanced user invitation and management system for Jellyfin,
-  Plex, Emby etc.
-description: Wizarr is an advanced user invitation and management system for Jellyfin,
-  Plex, Emby etc.
+tagline: Automate user invitations for Plex, Jellyfin, and Emby.
+description: Automate user invitations for Plex, Jellyfin, and Emby. Generate secure
+  links, manage membership durations, and guide users through client setup.
 developer: Wizarrrr
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docs.wizarr.dev/
+website: https://docs.wizarr.dev?utm_source=awesome-docker-compose.com
 repo: https://github.com/Wizarrrr/wizarr
 support: https://docs.wizarr.dev/getting-started/installation

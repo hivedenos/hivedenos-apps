@@ -1,12 +1,12 @@
 manifestVersion: 1.1
 id: anycable
-category: custom-communication-systems
+category: custom-communication-system
 name: AnyCable
 version: latest
-tagline: Realtime server for reliable two-way communication over WebSockets, Server-sent
-  events, etc.
-description: Realtime server for reliable two-way communication over WebSockets, Server-sent
-  events, etc.
+tagline: Add reliable two-way realtime communication to your backend using WebSockets
+  and SSE.
+description: Add reliable two-way realtime communication to your backend using WebSockets
+  and SSE. Scale your applications efficiently with a robust, open-source server.
 developer: anycable
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://anycable.io/
-repo: https://github.com/anycable/anycable-go
+website: https://anycable.io?utm_source=awesome-docker-compose.com
+repo: https://github.com/anycable/anycable
 support: https://docs.anycable.io/deployment/docker

@@ -1,6 +1,14 @@
-version: "3.8"
-
 services:
   headscale:
-    image: headscale/headscale:0.22.3
+    image: headscale/headscale:latest
+    container_name: headscale
     restart: unless-stopped
+    command: headscale serve
+    ports:
+      - 8080:8080
+      - 9090:9090
+    volumes:
+      - ./config:/etc/headscale
+      - ./data:/var/lib/headscale
+    environment:
+      - HEADSCALE_OIDC_CLIENT_SECRET=${HEADSCALE_OIDC_CLIENT_SECRET}

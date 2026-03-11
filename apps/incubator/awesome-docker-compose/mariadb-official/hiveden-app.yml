@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: mariadb-official
+category: database
+name: MariaDB (Official)
+version: latest
+tagline: Access a powerful open source relational database from the creators of MySQL.
+description: Access a powerful open source relational database from the creators of
+  MySQL. Benefit from advanced clustering, temporal data, and Oracle compatibility.
+developer: MariaDB
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://mariadb.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/MariaDB/mariadb-docker
+support: https://github.com/MariaDB/mariadb-docker

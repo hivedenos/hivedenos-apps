@@ -2,9 +2,11 @@ manifestVersion: 1.1
 id: koel
 category: music-server
 name: Koel
-version: '13'
-tagline: Personal music streaming server that works.
-description: Personal music streaming server that works.
+version: latest
+tagline: Build a personal music streaming server featuring lossless audio, smart playlists,
+  and mobile apps.
+description: Build a personal music streaming server featuring lossless audio, smart
+  playlists, and mobile apps. Manage metadata easily and sync across all your devices.
 developer: koel
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://koel.dev/
+website: https://koel.dev?utm_source=awesome-docker-compose.com
 repo: https://github.com/koel/koel
 support: https://github.com/koel/docker

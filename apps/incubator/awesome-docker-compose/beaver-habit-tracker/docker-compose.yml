@@ -1,0 +1,9 @@
+services:
+  beaverhabits:
+    image: daya0576/beaverhabits:latest
+    container_name: beaverhabits
+    ports:
+      - "8080:80"
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped

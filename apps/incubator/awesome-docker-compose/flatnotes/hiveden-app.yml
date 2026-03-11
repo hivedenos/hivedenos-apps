@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: flatnotes
-category: note-taking-and-editors
-name: Flatnotes
+category: note-taking-and-editor
+name: flatnotes
 version: latest
-tagline: A self-hosted, database-less note-taking web app that utilises a flat folder
-  of markdown files for storage.
-description: A self-hosted, database-less note-taking web app that utilises a flat
-  folder of markdown files for storage.
+tagline: Create and manage notes using a simple folder of Markdown files.
+description: Create and manage notes using a simple folder of Markdown files. This
+  self-hosted web app offers a clean interface, powerful search, and requires no database.
 developer: dullage
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://demo.flatnotes.io/
+website: https://demo.flatnotes.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/dullage/flatnotes
 support: https://github.com/dullage/flatnotes#self-hosted

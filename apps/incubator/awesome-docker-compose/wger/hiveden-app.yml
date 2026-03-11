@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: wger
+category: fitness-tracker
+name: wger
+version: '14'
+tagline: Create custom workout and meal plans with a free, open-source fitness application.
+description: Create custom workout and meal plans with a free, open-source fitness
+  application. Track your progress with detailed logs, a photo diary, and a calendar
+  view.
+developer: wger-project
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://wger.de?utm_source=awesome-docker-compose.com
+repo: https://github.com/wger-project/wger
+support: https://wger.readthedocs.io/en/latest/production/docker.html

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: whoogle-search
+category: internet-tool
+name: Whoogle Search
+version: latest
+tagline: Get accurate search results without ads, JavaScript, or IP tracking.
+description: Get accurate search results without ads, JavaScript, or IP tracking.
+  Deploy this self-hosted metasearch engine easily to protect your privacy on any
+  device.
+developer: benbusby
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://pypi.org/project/whoogle-search?utm_source=awesome-docker-compose.com
+repo: https://github.com/benbusby/whoogle-search
+support: https://github.com/benbusby/whoogle-search#manual-docker

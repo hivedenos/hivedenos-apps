@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: wikidocs
-category: wikis
+category: wiki
 name: WikiDocs
 version: latest
-tagline: A databaseless markdown flat-file wiki engine.
-description: A databaseless markdown flat-file wiki engine.
+tagline: Build and manage documentation using a lightweight, databaseless flat-file
+  wiki engine.
+description: Build and manage documentation using a lightweight, databaseless flat-file
+  wiki engine. Write entirely in Markdown without complex database setups.
 developer: Zavy86
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://wikidocs.it/
+website: https://www.wikidocs.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/Zavy86/WikiDocs
-support: https://wikidocs.it/setup
+support: https://www.wikidocs.app/setup

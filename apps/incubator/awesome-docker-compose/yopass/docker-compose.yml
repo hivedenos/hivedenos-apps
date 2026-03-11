@@ -1,13 +1,17 @@
-version: 
 services:
-  memcached:
-    image: memcached
-    restart: always
-    expose:
-      - 
   yopass:
     image: jhaals/yopass
-    restart: always
+    restart: unless-stopped
     ports:
-      - 8000:80
-    command: --memcached=memcached:11211 --port 80
+      - "1337:1337"
+    # Yopass is configured via command line flags rather than environment variables
+    command: "--database=redis --redis=redis://:${REDIS_PASSWORD}@redis:6379 --port=1337"
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:alpine
+    restart: unless-stopped
+    command: redis-server --requirepass ${REDIS_PASSWORD}
+    volumes:
+      - ./redis-data:/data

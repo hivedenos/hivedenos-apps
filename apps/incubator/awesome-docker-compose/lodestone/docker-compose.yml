@@ -1,10 +1,10 @@
-version: 
 services:
-  lodestone_core:
-    image: ghcr.io/lodestone-team/lodestone_core
+  lodestone:
+    image: ghcr.io/lodestone-team/lodestone_core:latest
     container_name: lodestone
     restart: unless-stopped
     ports:
-      - 16662:16662
+      - "1337:1337"
     volumes:
-      - ./lodestone:/home/user/.lodestone
+      - ./data:/app/data
+      - /var/run/docker.sock:/var/run/docker.sock

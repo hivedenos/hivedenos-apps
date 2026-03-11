@@ -1,8 +1,9 @@
-version: 
 services:
   agent:
-    container_name: mycamera
     image: kerberos/agent:latest
+    container_name: agent
+    restart: unless-stopped
     ports:
-      - 80:80
-    restart: always
+      - "${APP_PORT}:80"
+    volumes:
+      - ./data:/home/agent/data

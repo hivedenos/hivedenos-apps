@@ -1,0 +1,26 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+  pgbackrest:
+    image: woblerr/pgbackrest:latest
+    container_name: pgbackrest
+    # Keeps the container alive so you can execute pgbackrest commands via 'docker exec'
+    command: tail -f /dev/null
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+      - ./config:/etc/pgbackrest
+      - ./backups:/var/lib/pgbackrest
+    depends_on:
+      - postgres
+    restart: unless-stopped

@@ -1,16 +1,13 @@
-version: 
- 
 services:
-  website:
-    image: joseluisq/static-web-server:2-alpine
-    container_name: 
+  web:
+    image: joseluisq/static-web-server:2
+    container_name: static-web-server
     ports:
-      - 80:80
-    restart: unless-stopped
+      - "8080:80"
     environment:
-      # Note: those envs are customizable but also optional
-      - SERVER_ROOT=/var/public
-      - SERVER_CONFIG_FILE=/etc/config.toml
+      - SERVER_PORT=80
+      - SERVER_ROOT=/public
+      - SERVER_BASIC_AUTH=${SERVER_BASIC_AUTH}
     volumes:
-      - ./public:/var/public
-      - ./config.toml:/etc/config.toml
+      - ./public:/public
+    restart: unless-stopped

@@ -1,6 +1,29 @@
-version: "3.8"
-
 services:
   squidex:
-    image: squidex/caddy-proxy
+    image: squidex/squidex:latest
+    ports:
+      - "8080:5000"
+    environment:
+      - URL=http://localhost:8080
+      - EVENTSTORE__TYPE=MongoDB
+      - EVENTSTORE__MONGODB__CONFIGURATION=mongodb://mongo:27017/squidex
+      - STORE__MONGODB__CONFIGURATION=mongodb://mongo:27017/squidex
+      - IDENTITY__ADMINEMAIL=${SQUIDEX_ADMIN_EMAIL}
+      - IDENTITY__ADMINPASSWORD=${SQUIDEX_ADMIN_PASSWORD}
+      - IDENTITY__GOOGLECLIENT=${SQUIDEX_GOOGLE_CLIENT}
+      - IDENTITY__GOOGLESECRET=${SQUIDEX_GOOGLE_SECRET}
+      - IDENTITY__GITHUBCLIENT=${SQUIDEX_GITHUB_CLIENT}
+      - IDENTITY__GITHUBSECRET=${SQUIDEX_GITHUB_SECRET}
+      - IDENTITY__MICROSOFTCLIENT=${SQUIDEX_MICROSOFT_CLIENT}
+      - IDENTITY__MICROSOFTSECRET=${SQUIDEX_MICROSOFT_SECRET}
+    depends_on:
+      - mongo
+    volumes:
+      - ./assets:/app/Assets
+    restart: unless-stopped
+
+  mongo:
+    image: mongo:latest
+    volumes:
+      - ./mongo-data:/data/db
     restart: unless-stopped

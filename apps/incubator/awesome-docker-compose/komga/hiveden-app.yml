@@ -3,10 +3,10 @@ id: komga
 category: e-books
 name: Komga
 version: latest
-tagline: Media server for comics/mangas/BDs with API and OPDS support, a modern web
-  interface for exploring your libraries, as w...
-description: Media server for comics/mangas/BDs with API and OPDS support, a modern
-  web interface for exploring your libraries, as well as a web reader.
+tagline: Organize and read your digital comics, mangas, and eBooks with a free, open-source
+  media server.
+description: Organize and read your digital comics, mangas, and eBooks with a free,
+  open-source media server. Manage metadata and access files from any compatible reader.
 developer: gotson
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://komga.org/
+website: https://komga.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/gotson/komga
-support: https://komga.org/docs/installation/docker
+support: https://komga.org/docs/installation/docker/

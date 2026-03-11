@@ -1,0 +1,14 @@
+services:
+  teamspeak:
+    image: mbentley/teamspeak
+    container_name: teamspeak
+    restart: unless-stopped
+    ports:
+      - "9987:9987/udp"
+      - "10011:10011"
+      - "30033:30033"
+    environment:
+      - TS3SERVER_LICENSE=accept
+      - TS3SERVER_SERVERADMIN_PASSWORD=${TS3SERVER_SERVERADMIN_PASSWORD}
+    volumes:
+      - ./data:/var/ts3server

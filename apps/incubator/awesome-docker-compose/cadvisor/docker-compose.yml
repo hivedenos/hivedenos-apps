@@ -1,8 +1,10 @@
-version: 
 services:
   cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.49.0
     container_name: cadvisor
-    image: gcr.io/cadvisor/cadvisor:v0.50.0
+    privileged: true
+    devices:
+      - /dev/kmsg:/dev/kmsg
     volumes:
       - /:/rootfs:ro
       - /var/run:/var/run:ro
@@ -10,8 +12,5 @@ services:
       - /var/lib/docker/:/var/lib/docker:ro
       - /dev/disk/:/dev/disk:ro
     ports:
-      - 8080:8080
-    privileged: true
-    devices:
-      - /dev/kmsg
-  restart: unless-stopped
+      - "8080:8080"
+    restart: unless-stopped

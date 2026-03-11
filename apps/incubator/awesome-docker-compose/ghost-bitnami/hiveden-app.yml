@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: ghost-bitnami
+category: blogging-platform
+name: Ghost (Bitnami)
+version: 5-alpine
+tagline: Create a custom website, publish rich content, send targeted newsletters,
+  and monetize your audience through paid subsc...
+description: Create a custom website, publish rich content, send targeted newsletters,
+  and monetize your audience through paid subscriptions with zero platform fees.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://ghost.org?utm_source=awesome-docker-compose.com
+repo: https://awesome-docker-compose.com/ghost-bitnami
+support: https://awesome-docker-compose.com/ghost-bitnami

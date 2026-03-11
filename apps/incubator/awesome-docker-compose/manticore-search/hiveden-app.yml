@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: manticore-search
+category: search-engine-solution
+name: Manticore Search
+version: latest
+tagline: Experience a fast, open-source database for search.
+description: Experience a fast, open-source database for search. Get powerful vector
+  search, a SQL interface, and full-text capabilities. A cost-effective Elasticsearch
+  alternative.
+developer: manticoresoftware
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://manticoresearch.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/manticoresoftware/manticoresearch
+support: https://github.com/manticoresoftware/docker

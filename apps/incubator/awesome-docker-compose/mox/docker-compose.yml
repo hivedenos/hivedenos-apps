@@ -1,24 +1,15 @@
-version: '3.7'
 services:
   mox:
-
-    # Include the @sha256:... digest to ensure you get the listed image.
-    image: r.xmox.nl/mox:latest
-    environment:
-      - MOX_DOCKER=yes # Quickstart won't try to write systemd service file.
-    # Mox needs host networking because it needs access to the IPs of the
-    # machine, and the IPs of incoming connections for spam filtering.
-    network_mode: 'host'
+    image: mjl-/mox:latest
+    container_name: mox
+    restart: unless-stopped
+    ports:
+      - "25:25"
+      - "80:80"
+      - "443:443"
+      - "465:465"
+      - "587:587"
+      - "993:993"
+      - "143:143"
     volumes:
-      - ./config:/mox/config
-      - ./data:/mox/data
-      # web is optional but recommended to bind in, useful for serving static files with
-      # the webserver.
-      - ./web:/mox/web
-    working_dir: /mox
-    restart: on-failure
-    healthcheck:
-      test: netstat -nlt | grep ':25 '
-      interval: 1s
-      timeout: 1s
-      retries: 10
+      - ./data:/mox

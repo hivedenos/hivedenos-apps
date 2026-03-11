@@ -1,32 +1,28 @@
-# MediaWiki with MariaDB
-#
-
-
-version: '3'
- 
 services:
   mediawiki:
-    image: mediawiki
-    restart: always
+    image: mediawiki:stable
+    restart: unless-stopped
     ports:
       - 8080:80
-    links:
-      - database
     volumes:
-      - ./images:/var/www/html/images
-      # After initial setup, download LocalSettings.php to the same directory as
-      # this yaml and uncomment the following line and use compose to restart
-      # the mediawiki service
+      - ./mediawiki-images:/var/www/html/images
+      # After initial setup via the web wizard, download LocalSettings.php to the host directory and uncomment the line below:
       # - ./LocalSettings.php:/var/www/html/LocalSettings.php
+    environment:
+      MEDIAWIKI_DB_HOST: database
+      MEDIAWIKI_DB_USER: ${MEDIAWIKI_DB_USER}
+      MEDIAWIKI_DB_PASSWORD: ${MEDIAWIKI_DB_PASSWORD}
+      MEDIAWIKI_DB_NAME: ${MEDIAWIKI_DB_NAME}
+    depends_on:
+      - database
 
   database:
-    image: mariadb
-    restart: always
+    image: mariadb:10
+    restart: unless-stopped
     environment:
-      # @see https://phabricator.wikimedia.org/source/mediawiki/browse/master/includes/DefaultSettings.php
-      MYSQL_DATABASE: my_wiki
-      MYSQL_USER: wikiuser
-      MYSQL_PASSWORD: example
-      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MEDIAWIKI_DB_NAME}
+      MYSQL_USER: ${MEDIAWIKI_DB_USER}
+      MYSQL_PASSWORD: ${MEDIAWIKI_DB_PASSWORD}
     volumes:
-      - ./db:/var/lib/mysql
+      - ./db-data:/var/lib/mysql

@@ -3,8 +3,10 @@ id: minmon
 category: network-monitoring
 name: MinMon
 version: latest
-tagline: MinMon - an opinionated minimal monitoring and alarming tool.
-description: MinMon - an opinionated minimal monitoring and alarming tool.
+tagline: Get a lightweight monitoring and alarming solution for Linux.
+description: Get a lightweight monitoring and alarming solution for Linux. Use a single
+  binary and a simple TOML config file to set up checks, actions, and reports. No
+  GUI or DB.
 developer: flo-at
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/network-monitoring/minmon
+website: https://github.com/flo-at/minmon?utm_source=awesome-docker-compose.com
 repo: https://github.com/flo-at/minmon
 support: https://github.com/flo-at/minmon#docker-image

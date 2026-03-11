@@ -1,14 +1,12 @@
-version: '3.9'
- 
 services:
   gitsave:
     image: timwitzdam/gitsave:latest
-    container_name: GitSave
-    restart: always
+    container_name: gitsave
+    restart: unless-stopped
     ports:
-      - 
+      - "8080:8080"
     volumes:
-      - ./gitsave:/app/data
-      - ./backups:/app/backups
+      - ./data:/app/data
     environment:
-      - JWT_SECRET=${JWT_SECRET:?error}
+      - ADMIN_USERNAME=${ADMIN_USERNAME}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}

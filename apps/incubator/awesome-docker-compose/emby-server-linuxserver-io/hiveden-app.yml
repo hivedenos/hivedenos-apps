@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: emby-server-linuxserver-io
+category: media-server
+name: Emby Server (LinuxServer.io)
+version: latest
+tagline: Organize and stream your personal movies, music, and photos to any device.
+description: Organize and stream your personal movies, music, and photos to any device.
+  Enjoy remote access, live TV, DVR, and robust parental controls without the hassle.
+developer: MediaBrowser
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://emby.media?utm_source=awesome-docker-compose.com
+repo: https://github.com/MediaBrowser/Emby
+support: https://github.com/linuxserver/docker-emby

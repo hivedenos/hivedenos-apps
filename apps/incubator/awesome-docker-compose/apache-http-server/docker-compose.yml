@@ -1,0 +1,9 @@
+services:
+  web:
+    image: httpd:latest
+    container_name: apache-web-server
+    ports:
+      - "8080:80"
+    volumes:
+      - ./public-html:/usr/local/apache2/htdocs/
+    restart: unless-stopped

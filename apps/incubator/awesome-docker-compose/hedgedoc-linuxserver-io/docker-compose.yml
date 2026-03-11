@@ -1,0 +1,14 @@
+services:
+  hedgedoc:
+    image: lscr.io/linuxserver/hedgedoc:latest
+    container_name: hedgedoc
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - CMD_SESSION_SECRET=${CMD_SESSION_SECRET}
+    volumes:
+      - ./config:/config
+    ports:
+      - 3000:3000
+    restart: unless-stopped

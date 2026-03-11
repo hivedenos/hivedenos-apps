@@ -2,9 +2,11 @@ manifestVersion: 1.1
 id: healthchecks
 category: automation
 name: Healthchecks
-version: latest
-tagline: Django app which listens for pings and sends alerts when pings are late.
-description: Django app which listens for pings and sends alerts when pings are late.
+version: 15-alpine
+tagline: Receive instant alerts when your cron jobs or scheduled tasks fail to run.
+description: Receive instant alerts when your cron jobs or scheduled tasks fail to
+  run. Set up monitoring in minutes using simple ping URLs. Monitor up to 20 jobs
+  for free.
 developer: healthchecks
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://healthchecks.io/
+website: https://healthchecks.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/healthchecks/healthchecks
 support: https://github.com/healthchecks/healthchecks#docker-image

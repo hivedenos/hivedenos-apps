@@ -1,9 +1,11 @@
-version: '3'
- 
 services:
-  app: 
-    image: bsyed/troddit
+  troddit:
+    build: https://github.com/burhan-syed/troddit.git
     container_name: troddit
-    ports: 
-      - 3000:3000
+    ports:
+      - "3000:3000"
+    environment:
+      - REDDIT_CLIENT_ID=${REDDIT_CLIENT_ID}
+      - REDDIT_CLIENT_SECRET=${REDDIT_CLIENT_SECRET}
+      - REDDIT_CALLBACK_URI=${REDDIT_CALLBACK_URI}
     restart: unless-stopped

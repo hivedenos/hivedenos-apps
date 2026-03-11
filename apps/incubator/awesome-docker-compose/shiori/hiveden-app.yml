@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: shiori
-category: bookmarks-managers
+category: bookmark-manager
 name: Shiori
-version: '15'
-tagline: Simple bookmark manager built with Go.
-description: Simple bookmark manager built with Go.
+version: latest
+tagline: Manage your bookmarks with a simple CLI or web interface.
+description: Manage your bookmarks with a simple CLI or web interface. Import from
+  Pocket, create offline archives of pages, and run it anywhere as a single binary.
 developer: go-shiori
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/bookmarks-managers/shiori
+website: https://github.com/go-shiori/shiori?utm_source=awesome-docker-compose.com
 repo: https://github.com/go-shiori/shiori
 support: https://github.com/go-shiori/shiori/blob/master/docker-compose.yaml

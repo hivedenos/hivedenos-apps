@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: yacy
-category: internet-tools
-name: Yacy
+category: internet-tool
+name: YaCy
 version: latest
-tagline: Peer based, decentralized search engine server.
-description: Peer based, decentralized search engine server.
+tagline: Build a decentralized search index, crawl websites, and search intranets
+  securely.
+description: Build a decentralized search index, crawl websites, and search intranets
+  securely. Protect data privacy using a peer-to-peer network and local search modes.
 developer: yacy
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://yacy.net/
+website: https://yacy.net?utm_source=awesome-docker-compose.com
 repo: https://github.com/yacy/yacy_search_server
 support: https://yacy.net/download_installation/

@@ -1,0 +1,13 @@
+services:
+  atomic-server:
+    image: joepio/atomic-server:latest
+    container_name: atomic-server
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      - ATOMIC_DOMAIN=localhost
+      - ATOMIC_EMAIL=${ATOMIC_EMAIL}
+    volumes:
+      - ./data:/atomic-storage

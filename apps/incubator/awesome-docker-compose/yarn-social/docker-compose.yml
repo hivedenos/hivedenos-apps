@@ -1,19 +1,16 @@
-version: 
- 
 services:
-  yarnd:
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
+  yarn:
+    image: prologic/yarnd:latest
+    container_name: yarn
+    restart: unless-stopped
     ports:
-      - 
+      - "8000:8000"
     volumes:
-      - ./data:/src/data
-      - ./internal:/src/internal
-    healthcheck:
-      test: wget -nv -t1 --spider 'http://localhost:8000' || exit 1
-      interval: 10s
-      retries: 5
-      start_period: 10s
-      timeout: 10s
-    restart: always
+      - ./data:/data
+    environment:
+      - YARN_DATA=/data
+      - YARN_STORE=bitcask:///data/yarn.db
+      - YARN_URL=http://localhost:8000
+      - YARN_COOKIE_SECRET=${YARN_COOKIE_SECRET}
+      - YARN_ADMIN_USER=${YARN_ADMIN_USER}
+      - YARN_ADMIN_PASSWORD=${YARN_ADMIN_PASSWORD}

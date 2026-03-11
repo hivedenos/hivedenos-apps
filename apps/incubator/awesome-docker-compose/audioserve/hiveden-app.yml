@@ -3,11 +3,10 @@ id: audioserve
 category: audio-server
 name: Audioserve
 version: latest
-tagline: "Simple personal server to serve audio files from directories (audiobooks,\
-  \ music, podcasts\xE2\x80\xA6)."
-description: "Simple personal server to serve audio files from directories (audiobooks,\
-  \ music, podcasts\xE2\x80\xA6). Focused on simplicity and supports sync of play\
-  \ position between clients."
+tagline: Host your personal audiobook collection using a lightweight server that respects
+  your existing folder structure.
+description: Host your personal audiobook collection using a lightweight server that
+  respects your existing folder structure. Enjoy cross-device syncing and fast transcoding.
 developer: izderadicka
 dependencies: []
 gallery: []
@@ -16,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/audio-server/audioserve
+website: https://github.com/izderadicka/audioserve?utm_source=awesome-docker-compose.com
 repo: https://github.com/izderadicka/audioserve
 support: https://github.com/izderadicka/audioserve#installation

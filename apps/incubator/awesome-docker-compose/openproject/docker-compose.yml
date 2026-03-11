@@ -1,6 +1,35 @@
-version: "3.8"
-
 services:
+  db:
+    image: postgres:13
+    restart: always
+    environment:
+      POSTGRES_DB: openproject
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+
+  cache:
+    image: memcached
+    restart: always
+
   openproject:
-    image: openproject/openproject:${TAG:-14-slim}
-    restart: unless-stopped
+    image: openproject/community:14
+    restart: always
+    depends_on:
+      - db
+      - cache
+    ports:
+      - "8080:80"
+    environment:
+      OPENPROJECT_HTTPS: 'false'
+      OPENPROJECT_HOST__NAME: 'localhost:8080'
+      OPENPROJECT_SECRET__KEY__BASE: ${OPENPROJECT_SECRET_KEY_BASE}
+      OPENPROJECT_DB__HOST: db
+      OPENPROJECT_DB__PORT: 5432
+      OPENPROJECT_DB__NAME: openproject
+      OPENPROJECT_DB__USERNAME: postgres
+      OPENPROJECT_DB__PASSWORD: ${POSTGRES_PASSWORD}
+      OPENPROJECT_CACHE__MEMCACHE__SERVER: cache
+      OPENPROJECT_RAILS__CACHE__STORE: memcache
+    volumes:
+      - ./data/assets:/var/openproject/assets

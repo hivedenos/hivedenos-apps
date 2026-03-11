@@ -1,22 +1,20 @@
-version: '3'
 services:
   titra:
     image: kromit/titra
-    container_name: titra_app
+    container_name: titra
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      ROOT_URL: ${ROOT_URL}
+      MONGO_URL: mongodb://mongodb:27017/titra
+      PORT: 3000
     depends_on:
       - mongodb
-    environment:
-      - ROOT_URL=${ROOT_URL}
-      - MONGO_URL=mongodb://mongodb/titra?directConnection=true
-      - PORT=3000
-    ports:
-      - 
-    restart: always
+
   mongodb:
-    image: mongo:7.0
-    container_name: titra_db
-    restart: always
-    environment:
-      - MONGO_DB:titra
+    image: mongo:5
+    container_name: titra-mongodb
+    restart: unless-stopped
     volumes:
-      - ./titra_db_volume:/data/db
+      - ./mongo-data:/data/db

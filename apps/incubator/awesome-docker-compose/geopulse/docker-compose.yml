@@ -1,0 +1,29 @@
+services:
+  geopulse:
+    image: tess1o/geopulse:latest
+    container_name: geopulse
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_USER=geopulse
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=geopulse
+      - SECRET_KEY=${SECRET_KEY}
+    volumes:
+      - ./geopulse-data:/app/data
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15-alpine
+    container_name: geopulse_db
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=geopulse
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=geopulse
+    volumes:
+      - ./db-data:/var/lib/postgresql/data

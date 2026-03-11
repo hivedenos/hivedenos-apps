@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: alerta
 category: system-monitoring
 name: Alerta
-version: latest
-tagline: Alerta monitoring system.
-description: Alerta monitoring system.
+version: 14-alpine
+tagline: Consolidate alerts from any monitoring tool into a single view.
+description: Consolidate alerts from any monitoring tool into a single view. Automatically
+  de-duplicate and correlate events to reduce noise. Integrates with your stack.
 developer: alerta
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://alerta.io/
+website: https://alerta.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/alerta/alerta
 support: https://github.com/alerta/docker-alerta

@@ -1,19 +1,13 @@
-version: 
- 
 services:
   hatsu:
-    container_name: hatsu
-    image: ghcr.io/importantimport/hatsu:nightly
+    image: ghcr.io/importantimport/hatsu:latest
     restart: unless-stopped
     ports:
-      - 3939:3939
-    # env_file:
-    #   - .env
-    environment:
-      - HATSU_DATABASE_URL=sqlite://hatsu.sqlite3
-      - HATSU_DOMAIN=hatsu.example.com
-      - HATSU_LISTEN_HOST=0.0.0.0
-      - HATSU_PRIMARY_ACCOUNT=blog.example.com
+      - "3000:3000"
     volumes:
-      # - ./.env:/app/.env
-      - ./hatsu.sqlite3:/app/hatsu.sqlite3
+      - ./data:/hatsu/data
+    environment:
+      - HATSU_DOMAIN=${HATSU_DOMAIN}
+      - HATSU_LISTEN_HOST=0.0.0.0
+      - HATSU_LISTEN_PORT=3000
+      - DATABASE_URL=sqlite:///hatsu/data/hatsu.sqlite

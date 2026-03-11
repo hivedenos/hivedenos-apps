@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: mdbook-allfunc
+category: documentation
+name: mdBook (allfunc)
+version: latest
+tagline: Convert standard Markdown into clean, navigable online books.
+description: Convert standard Markdown into clean, navigable online books. Create
+  fast and customizable product documentation, tutorials, and course materials with
+  ease.
+developer: rust-lang
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://rust-lang.github.io/mdBook?utm_source=awesome-docker-compose.com
+repo: https://github.com/rust-lang/mdBook
+support: https://github.com/allfunc/docker-mdbook

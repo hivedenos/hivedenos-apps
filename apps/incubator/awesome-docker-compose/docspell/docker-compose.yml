@@ -1,6 +1,61 @@
-version: "3.8"
-
 services:
-  docspell:
+  # The database service
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=docspell
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=docspell
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+
+  # The search index service
+  solr:
+    image: solr:9
+    restart: unless-stopped
+    volumes:
+      - ./data/solr:/var/solr
+    command:
+      - solr-precreate
+      - docspell
+
+  # The backend server
+  restserver:
     image: docspell/restserver:latest
     restart: unless-stopped
+    ports:
+      - "7880:7880"
+    environment:
+      - TZ=Europe/Berlin
+      - DOCSPELL_SERVER_ADMIN_ENDPOINT_SECRET=${ADMIN_SECRET}
+      - DOCSPELL_SERVER_AUTH_SERVER_SECRET=${AUTH_SECRET}
+      - DOCSPELL_SERVER_BACKEND_JDBC_PASSWORD=${DB_PASSWORD}
+      - DOCSPELL_SERVER_BACKEND_JDBC_URL=jdbc:postgresql://db:5432/docspell
+      - DOCSPELL_SERVER_BACKEND_JDBC_USER=docspell
+      - DOCSPELL_SERVER_FULL_TEXT_SEARCH_SOLR_URL=http://solr:8983/solr/docspell
+      - DOCSPELL_SERVER_FILE_STORE_TYPE=FileSystem
+      - DOCSPELL_SERVER_FILE_STORE_FILE_SYSTEM_BASE_DIR=/var/lib/docspell/files
+    depends_on:
+      - solr
+      - db
+    volumes:
+      - ./data/files:/var/lib/docspell/files
+
+  # The job executor (OCR, processing)
+  joex:
+    image: docspell/joex:latest
+    restart: unless-stopped
+    environment:
+      - TZ=Europe/Berlin
+      - DOCSPELL_JOEX_JDBC_PASSWORD=${DB_PASSWORD}
+      - DOCSPELL_JOEX_JDBC_URL=jdbc:postgresql://db:5432/docspell
+      - DOCSPELL_JOEX_JDBC_USER=docspell
+      - DOCSPELL_JOEX_FULL_TEXT_SEARCH_SOLR_URL=http://solr:8983/solr/docspell
+      - DOCSPELL_JOEX_FILE_STORE_TYPE=FileSystem
+      - DOCSPELL_JOEX_FILE_STORE_FILE_SYSTEM_BASE_DIR=/var/lib/docspell/files
+    depends_on:
+      - solr
+      - db
+    volumes:
+      - ./data/files:/var/lib/docspell/files

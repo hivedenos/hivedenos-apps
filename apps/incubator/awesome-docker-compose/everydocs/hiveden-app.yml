@@ -3,10 +3,9 @@ id: everydocs
 category: document-management
 name: EveryDocs
 version: latest
-tagline: A simple Document Management System for private use with basic functionality
-  to organize your documents digitally.
-description: A simple Document Management System for private use with basic functionality
-  to organize your documents digitally.
+tagline: Manage private documents digitally.
+description: Manage private documents digitally. Upload PDFs, organize them into folders,
+  extract text for full-text search, and keep your files securely encrypted.
 developer: jonashellmann
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/document-management/everydocs
+website: https://github.com/jonashellmann/everydocs-core?utm_source=awesome-docker-compose.com
 repo: https://github.com/jonashellmann/everydocs-core
 support: https://github.com/jonashellmann/everydocs-core#installation

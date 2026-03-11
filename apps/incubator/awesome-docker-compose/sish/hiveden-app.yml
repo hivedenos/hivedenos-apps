@@ -3,8 +3,9 @@ id: sish
 category: proxy
 name: sish
 version: latest
-tagline: HTTP(S)/WS(S)/TCP tunnels to localhost using only SSH (serveo/ngrok alternative).
-description: HTTP(S)/WS(S)/TCP tunnels to localhost using only SSH (serveo/ngrok alternative).
+tagline: Expose local web services or TCP ports to the internet securely.
+description: Expose local web services or TCP ports to the internet securely. This
+  open-source tool leverages your existing SSH client for easy and fast tunnel creation.
 developer: antoniomika
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docs.ssi.sh/
+website: https://docs.ssi.sh?utm_source=awesome-docker-compose.com
 repo: https://github.com/antoniomika/sish
 support: https://docs.ssi.sh/getting-started

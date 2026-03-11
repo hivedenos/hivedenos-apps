@@ -1,10 +1,9 @@
-version: '2'
 services:
   thelounge:
     image: ghcr.io/thelounge/thelounge:latest
     container_name: thelounge
-    ports:
-      - 
     restart: always
+    ports:
+      - "9000:9000"
     volumes:
-      - ~/.thelounge:/var/opt/thelounge
+      - ./data:/var/opt/thelounge

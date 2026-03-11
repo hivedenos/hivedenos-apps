@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: pdfding
+category: document-management
+name: PdfDing
+version: latest
+tagline: Host your own PDF manager to read, edit, and organize documents across all
+  devices.
+description: Host your own PDF manager to read, edit, and organize documents across
+  all devices. Sync your reading progress, add signatures, and share files securely.
+developer: mrmn2
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.pdfding.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/mrmn2/PdfDing
+support: https://docs.pdfding.com/getting_started/compose/

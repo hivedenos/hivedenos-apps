@@ -1,13 +1,13 @@
 manifestVersion: 1.1
 id: trilium-notes
-category: note-taking-and-editors
+category: note-taking-and-editor
 name: Trilium Notes
-version: '[VERSION]'
-tagline: Trilium Notes is a hierarchical note taking application with focus on building
-  large personal knowledge bases.
-description: Trilium Notes is a hierarchical note taking application with focus on
-  building large personal knowledge bases.
-developer: zadam
+version: latest
+tagline: Create a private knowledge base with interconnected notes, diagrams, and
+  kanban boards.
+description: Create a private knowledge base with interconnected notes, diagrams,
+  and kanban boards. Self-host for complete data privacy and sync across your devices.
+developer: TriliumNext
 dependencies: []
 gallery: []
 path: /
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/note-taking-and-editors/trilium-notes
-repo: https://github.com/zadam/trilium
-support: https://github.com/zadam/trilium/wiki/
+website: https://triliumnotes.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/TriliumNext/Trilium
+support: https://docs.triliumnotes.org/user-guide/setup/server/installation/docker

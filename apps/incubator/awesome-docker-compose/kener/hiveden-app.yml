@@ -3,8 +3,9 @@ id: kener
 category: network-monitoring
 name: Kener
 version: latest
-tagline: Kener is a Modern Self hosted Status Page, batteries included.
-description: Kener is a Modern Self hosted Status Page, batteries included.
+tagline: Build and host a beautiful status page for your services.
+description: Build and host a beautiful status page for your services. This open-source
+  system uses Svelte and TailwindCSS to keep your users informed and updated.
 developer: rajnandan1
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://kener.ing/
+website: https://kener.ing?utm_source=awesome-docker-compose.com
 repo: https://github.com/rajnandan1/kener
-support: https://rajnandan1.github.io/kener-docs/docs/deployment
+support: https://kener.ing/docs/deployment

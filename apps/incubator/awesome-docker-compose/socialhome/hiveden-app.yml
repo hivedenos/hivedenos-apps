@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: socialhome
-category: social-networks-and-forums
+category: social-network-and-forums
 name: Socialhome
 version: latest
-tagline: Federated and decentralized profile builder and social network engine.
-description: Federated and decentralized profile builder and social network engine.
+tagline: Build a customizable, grid-based personal profile that connects directly
+  to the federated social web.
+description: Build a customizable, grid-based personal profile that connects directly
+  to the federated social web. Share content, interact with others, and own your data.
 developer: jaywink
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://socialhome.network/
+website: https://socialhome.network?utm_source=awesome-docker-compose.com
 repo: https://github.com/jaywink/socialhome
 support: https://socialhome.readthedocs.io/en/latest/installation/docker.html

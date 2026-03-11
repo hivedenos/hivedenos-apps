@@ -1,0 +1,31 @@
+services:
+  projectsend:
+    image: lscr.io/linuxserver/projectsend:latest
+    container_name: projectsend
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    volumes:
+      - ./config:/config
+      - ./data:/data
+    ports:
+      - 8080:80
+    restart: unless-stopped
+    depends_on:
+      - mariadb
+
+  mariadb:
+    image: lscr.io/linuxserver/mariadb:latest
+    container_name: projectsend_db
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+      - MYSQL_DATABASE=projectsend
+      - MYSQL_USER=projectsend
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - ./db_data:/config
+    restart: unless-stopped

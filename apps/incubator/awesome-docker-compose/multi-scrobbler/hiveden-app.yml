@@ -3,8 +3,10 @@ id: multi-scrobbler
 category: music-server
 name: Multi Scrobbler
 version: latest
-tagline: Scrobble plays from multiple sources to multiple scrobbling services.
-description: Scrobble plays from multiple sources to multiple scrobbling services.
+tagline: Track your music activity from any source and sync it to your favorite scrobbling
+  services.
+description: Track your music activity from any source and sync it to your favorite
+  scrobbling services. Enjoy multi-user support, data correction, and offline queuing.
 developer: FoxxMD
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://foxxmd.github.io/multi-scrobbler/
+website: https://foxxmd.github.io/multi-scrobbler?utm_source=awesome-docker-compose.com
 repo: https://github.com/FoxxMD/multi-scrobbler
-support: https://foxxmd.github.io/multi-scrobbler/docs/installation/#docker
+support: https://foxxmd.github.io/multi-scrobbler/installation/#docker

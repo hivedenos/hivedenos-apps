@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: filerise
-category: file-transfer-web-based-file-managers
+category: storage-file-transfer
 name: FileRise
 version: latest
-tagline: FileRise is a lightweight, self-hosted file manager with granular ACLs, shared
-  uploads, encrypted folders, WebDAV & SSO.
-description: FileRise is a lightweight, self-hosted file manager with granular ACLs,
-  shared uploads, encrypted folders, WebDAV & SSO.
+tagline: Manage files securely on your own servers.
+description: Manage files securely on your own servers. Connect multiple storage sources,
+  set granular access controls, and build branded client upload portals easily.
 developer: error311
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://filerise.net/
+website: https://filerise.net?utm_source=awesome-docker-compose.com
 repo: https://github.com/error311/FileRise
-support: https://github.com/error311/FileRise/wiki
+support: https://github.com/error311/FileRise/wiki/install-setup

@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: rustfs
+category: object-storage-and-file-server
+name: RustFS
+version: latest
+tagline: Scale data infrastructure with a memory-safe, distributed storage system.
+description: Scale data infrastructure with a memory-safe, distributed storage system.
+  Achieve limitless scalability, full S3 compatibility, and multi-cloud redundancy.
+developer: rustfs
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://rustfs.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/rustfs/rustfs
+support: https://docs.rustfs.com/installation/docker/

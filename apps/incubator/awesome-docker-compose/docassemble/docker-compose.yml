@@ -1,10 +1,16 @@
-version: 
- 
 services:
   docassemble:
     image: jhpyle/docassemble
-    ports:
-      - 80:80
-      - 443:443
     restart: always
-    stop_grace_period: 
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      - DA_HOSTNAME=localhost
+      - DA_PASSWORD=${DA_ADMIN_PASSWORD}
+      - TIMEZONE=UTC
+    volumes:
+      - ./data/config:/usr/share/docassemble/config
+      - ./data/files:/usr/share/docassemble/files
+      - ./data/log:/usr/share/docassemble/log
+      - ./data/postgresql:/var/lib/postgresql/data

@@ -3,9 +3,10 @@ id: paisa
 category: budgeting
 name: Paisa
 version: latest
-tagline: Paisa is a Personal finance manager.
-description: Paisa is a Personal finance manager. It builds on top of the ledger double
-  entry accounting tool.
+tagline: Manage your personal finances with this open-source tool.
+description: Manage your personal finances with this open-source tool. Track investments,
+  budget expenses, and plan goals, all while keeping your data private on your own
+  system.
 developer: ananthakumaran
 dependencies: []
 gallery: []
@@ -14,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://paisa.fyi/
+website: https://paisa.fyi?utm_source=awesome-docker-compose.com
 repo: https://github.com/ananthakumaran/paisa
 support: https://paisa.fyi/getting-started/installation/

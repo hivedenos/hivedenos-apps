@@ -2,12 +2,12 @@ manifestVersion: 1.1
 id: ovenmediaengine
 category: video-streaming
 name: OvenMediaEngine
-version: 0.16.8
-tagline: OvenMediaEngine is a selfhostable Open-Source Streaming Server with Sub-Second
-  Latency.
-description: OvenMediaEngine is a selfhostable Open-Source Streaming Server with Sub-Second
-  Latency.
-developer: AirenSoft
+version: latest
+tagline: Create live video conferences with up to 9 broadcasters and countless viewers.
+description: Create live video conferences with up to 9 broadcasters and countless
+  viewers. This open-source platform supports webcam, screen sharing, and encoder
+  inputs.
+developer: OvenMediaLabs
 dependencies: []
 gallery: []
 path: /
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://space.ovenplayer.com/
-repo: https://github.com/AirenSoft/OvenMediaEngine
-support: https://airensoft.gitbook.io/ovenmediaengine/getting-started/getting-started-with-docker
+website: https://space.ovenplayer.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/OvenMediaLabs/OvenMediaEngine
+support: https://docs.ovenmediaengine.com/getting-started/getting-started-with-docker

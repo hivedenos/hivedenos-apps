@@ -3,8 +3,10 @@ id: dokploy
 category: paas
 name: Dokploy
 version: latest
-tagline: Open Source Alternative to Vercel, Netlify and Heroku.
-description: Open Source Alternative to Vercel, Netlify and Heroku.
+tagline: Simplify app and database deployment on your own infrastructure.
+description: Simplify app and database deployment on your own infrastructure. This
+  self-hosted PaaS offers multi-server support, native Docker Compose, and automated
+  backups.
 developer: Dokploy
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://dokploy.com/
+website: https://dokploy.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/Dokploy/dokploy
-support: https://docs.dokploy.com/en/docs/core/get-started/installation
+support: https://docs.dokploy.com/docs/core/installation

@@ -1,19 +1,27 @@
-version: '3.1'
- 
 services:
   yourls:
     image: yourls
     restart: always
     ports:
-      - 8080:80
+      - "8080:80"
     environment:
-      YOURLS_DB_PASS: example
-      YOURLS_SITE: https://example.com
-      YOURLS_USER: example_username
-      YOURLS_PASS: example_password
+      YOURLS_DB_HOST: mysql
+      YOURLS_DB_USER: yourls
+      YOURLS_DB_PASS: ${YOURLS_DB_PASS}
+      YOURLS_DB_NAME: yourls
+      YOURLS_USER: ${YOURLS_ADMIN_USER}
+      YOURLS_PASS: ${YOURLS_ADMIN_PASS}
+      YOURLS_SITE: http://localhost:8080
+    depends_on:
+      - mysql
+
   mysql:
-    image: mysql
+    image: mysql:5.7
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: example
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: yourls
+      MYSQL_USER: yourls
+      MYSQL_PASSWORD: ${YOURLS_DB_PASS}
+    volumes:
+      - ./mysql-data:/var/lib/mysql

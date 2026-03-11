@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: jump
-category: personal-dashboards
+category: personal-dashboard
 name: Jump
 version: latest
-tagline: Yet another self-hosted startpage for your server designed to be simple,
-  stylish, fast and secure.
-description: Yet another self-hosted startpage for your server designed to be simple,
-  stylish, fast and secure.
+tagline: Deploy a fast, self-hosted dashboard for your server's services.
+description: Deploy a fast, self-hosted dashboard for your server's services. Monitor
+  site status in real-time, organize with tags, and customize with weather and backgrounds.
 developer: daledavies
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://jumpdemo.daledavies.co.uk/
+website: https://jumpdemo.daledavies.co.uk?utm_source=awesome-docker-compose.com
 repo: https://github.com/daledavies/jump
 support: https://github.com/daledavies/jump#installation

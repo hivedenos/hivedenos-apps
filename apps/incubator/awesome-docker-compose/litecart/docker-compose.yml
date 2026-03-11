@@ -1,14 +1,9 @@
-version: 
- 
 services:
   litecart:
-    image: shurco/litecart:latest
+    image: shurco/litecart
     container_name: litecart
-    ports:
-      - 8080:8080
-    volumes:
-      - ./lc_base:/lc_base
-      - ./lc_digitals:/lc_digitals
-      - ./lc_uploads:/lc_uploads
-      - ./site:/site
     restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/data

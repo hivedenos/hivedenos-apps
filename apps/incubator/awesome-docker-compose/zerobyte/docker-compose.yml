@@ -1,0 +1,13 @@
+services:
+  zerobyte:
+    image: ghcr.io/nicotsx/zerobyte:latest
+    container_name: zerobyte
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      - RESTIC_PASSWORD=${RESTIC_PASSWORD}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /:/host:ro
+      - ./data:/app/data

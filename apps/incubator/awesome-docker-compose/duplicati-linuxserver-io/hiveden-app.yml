@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: duplicati-linuxserver-io
+category: backup
+name: Duplicati (LinuxServer.io)
+version: latest
+tagline: Protect your files with a zero-trust backup solution.
+description: Protect your files with a zero-trust backup solution. Store encrypted
+  data on any cloud provider, manage policies centrally, and deploy agents silently.
+developer: duplicati
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://duplicati.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/duplicati/duplicati
+support: https://github.com/linuxserver/docker-duplicati

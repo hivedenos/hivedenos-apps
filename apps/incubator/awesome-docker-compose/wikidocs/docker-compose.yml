@@ -1,13 +1,10 @@
-version: '3'
- 
 services:
   wikidocs:
-    image: zavy86/wikidocs
-    environment:
-      - PUID=1000
-      - PGID=1000
+    image: zavy86/wikidocs:latest
+    container_name: wikidocs
     ports:
-      - 80:80
+      - "8080:80"
     volumes:
-      - /path/to/local/wikidocs/datasets/or/volume:/datasets
+      - ./datasets:/var/www/html/datasets
+      - ./data:/var/www/html/data
     restart: unless-stopped

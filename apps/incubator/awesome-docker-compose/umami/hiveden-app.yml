@@ -3,8 +3,10 @@ id: umami
 category: analytics
 name: Umami
 version: postgresql-latest
-tagline: Umami is a simple, fast, privacy-focused alternative to Google Analytics.
-description: Umami is a simple, fast, privacy-focused alternative to Google Analytics.
+tagline: Umami is an open source, self-hosted web analytics solution.
+description: Umami is an open source, self-hosted web analytics solution. It is a
+  faster and privacy-focused alternative to Google Analytics. Umami is easy to set
+  up and use, and it doesn't track any personal information of your visitors.
 developer: umami-software
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://umami.is/
+website: https://umami.is?utm_source=awesome-docker-compose.com
 repo: https://github.com/umami-software/umami
 support: https://github.com/umami-software/umami/blob/master/docker-compose.yml

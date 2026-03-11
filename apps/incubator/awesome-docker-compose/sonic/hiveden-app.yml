@@ -2,10 +2,11 @@ manifestVersion: 1.1
 id: sonic
 category: search-engine-solution
 name: Sonic
-version: v1.4.9
-tagline: "\uD83E\uDD94 Fast, lightweight & schema-less search backend."
-description: "\uD83E\uDD94 Fast, lightweight & schema-less search backend. An alternative\
-  \ to Elasticsearch that runs on a few MBs of RAM."
+version: latest
+tagline: Add fast, schema-less search to your application.
+description: Add fast, schema-less search to your application. This lightweight backend
+  offers typo correction and auto-completion while running on just a few megabytes
+  of RAM.
 developer: valeriansaliou
 dependencies: []
 gallery: []
@@ -14,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/search-engine-solution/sonic
+website: https://github.com/valeriansaliou/sonic?utm_source=awesome-docker-compose.com
 repo: https://github.com/valeriansaliou/sonic
 support: https://github.com/valeriansaliou/sonic#installation

@@ -2,10 +2,12 @@ manifestVersion: 1.1
 id: vikunja
 category: task-management
 name: Vikunja
-version: latest
-tagline: The to-do app to organize your life.
-description: The to-do app to organize your life.
-developer: Awesome Docker Compose
+version: '10'
+tagline: Organize tasks, collaborate with peers, and manage projects using list, Kanban,
+  Gantt, and table views.
+description: Organize tasks, collaborate with peers, and manage projects using list,
+  Kanban, Gantt, and table views. Choose between self-hosting or a fully managed cloud.
+developer: go-vikunja
 dependencies: []
 gallery: []
 path: /
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://vikunja.io/
-repo: https://vikunja.io/docs/docker-walkthrough
-support: https://vikunja.io/docs/docker-walkthrough
+website: https://vikunja.io?utm_source=awesome-docker-compose.com
+repo: https://github.com/go-vikunja/vikunja
+support: https://vikunja.io/docs/docker-walkthrough/

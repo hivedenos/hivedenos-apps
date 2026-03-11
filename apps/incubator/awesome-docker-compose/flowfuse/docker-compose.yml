@@ -1,103 +1,46 @@
-version: '3.9'
 services:
-  nginx:
-    image: nginxproxy/nginx-proxy:1.6.0
-    networks:
-      - flowforge 
-    restart: always
-    volumes:
-      - 
-      - 
-      - 
-      - 
-
+  flowfuse:
+    image: flowfuse/flowfuse:latest
+    container_name: flowfuse
+    restart: unless-stopped
     ports:
-      - 
+      - "3000:3000"
+    environment:
+      - FF_PORT=3000
+      - FF_DB_HOST=db
+      - FF_DB_PORT=5432
+      - FF_DB_NAME=${POSTGRES_DB}
+      - FF_DB_USER=${POSTGRES_USER}
+      - FF_DB_PASSWORD=${POSTGRES_PASSWORD}
+      - FF_ADMIN_EMAIL=${FF_ADMIN_EMAIL}
+      - FF_ADMIN_PASSWORD=${FF_ADMIN_PASSWORD}
+      - FF_DRIVER_TYPE=docker
+      - FF_MQTT_HOST=mosquitto
+      - FF_MQTT_PORT=1883
+    volumes:
+      - ./data/flowfuse:/opt/flowfuse/data
+      - ./etc/flowfuse.yml:/opt/flowfuse/etc/flowfuse.yml
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - db
+      - mosquitto
 
-    # environment:
-
-  # acme:
-  #   image: nginxproxy/acme-companion:2.4.0
-  #   restart: always
-  #   volumes:
-
-
-  #   volumes_from:
-  #     - nginx:rw
-  #   environment:
-
-  #   depends_on:
-
-  postgres:
+  db:
     image: postgres:14
-    networks: 
-      - flowforge
-    restart: always
+    container_name: flowfuse-db
+    restart: unless-stopped
     environment:
-      POSTGRES_PASSWORD: secret
-      POSTGRES_USER: root
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
     volumes:
-      - 
-      - 
-      - 
-  flowforge-broker:
-    image: 
-    networks:
-      - flowforge
-    restart: always
-    ulimits:
-      nofile: 2048
-    environment:
-      - 
-      - 
-      - 
+      - ./data/postgres:/var/lib/postgresql/data
+
+  mosquitto:
+    image: eclipse-mosquitto:2
+    container_name: flowfuse-mosquitto
+    restart: unless-stopped
     volumes:
-      - 
-  forge:
-    build:
-      context: 
-    image: 
-    networks: 
-      - flowforge
-    restart: always
-    environment:
-      - 
-      - 
-    volumes:
-      - 
-      - 
-      - 
-    depends_on:
-      - 
-      - 
-      - 
- 
-  file-server:
-    build:
-      context: 
-    image: 
-    networks:
-      - flowforge
-    restart: always
-    volumes:
-      - 
-      - 
-    depends_on:
-      - 
- 
-  # npm:
-
-  #   networks:
-  #     - flowforge
-  #   restart: always
-  #   environment:
-
-
-  #   volumes:
-
-
-  #   depends_on:
-  #     - nginx
- 
-networks:
-  flowforge:
+      - ./etc/mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - ./data/mosquitto:/mosquitto/data
+      - ./data/mosquitto-log:/mosquitto/log

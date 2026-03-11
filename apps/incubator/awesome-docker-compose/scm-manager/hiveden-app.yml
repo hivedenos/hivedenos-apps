@@ -2,11 +2,10 @@ manifestVersion: 1.1
 id: scm-manager
 category: git-server
 name: SCM-Manager
-version: <version>
-tagline: The easiest way to share and manage your Git, Mercurial and Subversion repositories
-  over http.
-description: The easiest way to share and manage your Git, Mercurial and Subversion
-  repositories over http.
+version: latest
+tagline: Manage Git, Mercurial, and Subversion repositories from a single interface.
+description: Manage Git, Mercurial, and Subversion repositories from a single interface.
+  Install easily, extend with plugins, and integrate with a rich REST API.
 developer: scm-manager
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://scm-manager.org/
+website: https://scm-manager.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/scm-manager/scm-manager
 support: https://scm-manager.org/docs/latest/en/installation/docker/

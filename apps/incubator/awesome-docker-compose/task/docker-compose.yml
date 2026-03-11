@@ -1,0 +1,23 @@
+services:
+  postgres:
+    image: postgres:14-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: utask
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: utask
+    volumes:
+      - ./db-data:/var/lib/postgresql/data
+
+  utask:
+    image: ovhcom/utask:latest
+    restart: unless-stopped
+    ports:
+      - "8081:8081"
+    environment:
+      - UTASK_DB_URL=postgres://utask:${DB_PASSWORD}@postgres:5432/utask?sslmode=disable
+    volumes:
+      - ./config:/config
+      - ./plugins:/plugins
+    depends_on:
+      - postgres

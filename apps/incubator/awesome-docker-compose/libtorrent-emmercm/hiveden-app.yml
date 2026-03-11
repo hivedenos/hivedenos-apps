@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: libtorrent-emmercm
+category: torrenting
+name: libtorrent (emmercm)
+version: latest
+tagline: Integrate a highly efficient, scalable BitTorrent protocol implementation
+  into your C++ projects.
+description: Integrate a highly efficient, scalable BitTorrent protocol implementation
+  into your C++ projects. Enjoy low CPU and memory usage across all devices.
+developer: emmercm
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.libtorrent.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/emmercm/docker-libtorrent
+support: https://github.com/emmercm/docker-libtorrent

@@ -3,8 +3,9 @@ id: gladys-assistant
 category: internet-of-things-iot
 name: Gladys Assistant
 version: v4
-tagline: Gladys is a privacy-first, open-source home assistant.
-description: Gladys is a privacy-first, open-source home assistant.
+tagline: Automate your smart home with a privacy-first platform.
+description: Automate your smart home with a privacy-first platform. Manage devices
+  from a clean dashboard, create routines, and keep all your data stored locally.
 developer: GladysAssistant
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://gladysassistant.com/
+website: https://gladysassistant.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/GladysAssistant/Gladys
 support: https://gladysassistant.com/docs/installation/docker-compose/

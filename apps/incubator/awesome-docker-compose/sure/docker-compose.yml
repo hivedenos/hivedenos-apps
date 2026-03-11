@@ -1,6 +1,11 @@
-version: "3.8"
-
 services:
   sure:
-    image: ghcr.io/we-promise/sure:stable
+    image: ghcr.io/we-promise/sure:latest
+    container_name: sure
     restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - SECRET_KEY=${SECRET_KEY}
+    volumes:
+      - ./data:/app/data

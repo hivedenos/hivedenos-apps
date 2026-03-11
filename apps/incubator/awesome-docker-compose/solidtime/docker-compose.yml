@@ -1,6 +1,29 @@
-version: "3.8"
-
 services:
   solidtime:
-    image: postgres:15
-    restart: unless-stopped
+    image: solidtime/solidtime:latest
+    restart: always
+    ports:
+      - "8080:80"
+    environment:
+      - APP_URL=${APP_URL}
+      - APP_KEY=${APP_KEY}
+      - DB_CONNECTION=pgsql
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_DATABASE=solidtime
+      - DB_USERNAME=solidtime
+      - DB_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - ./data/storage:/var/www/html/storage
+    depends_on:
+      - db
+
+  db:
+    image: postgres:16-alpine
+    restart: always
+    environment:
+      - POSTGRES_DB=solidtime
+      - POSTGRES_USER=solidtime
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - ./data/db:/var/lib/postgresql/data

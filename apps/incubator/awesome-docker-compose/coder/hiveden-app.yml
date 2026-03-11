@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: coder
 category: ide-and-tools
 name: Coder
-version: -latest}
-tagline: Remote development machines on your own infrastructure.
-description: Remote development machines on your own infrastructure.
+version: latest
+tagline: Run AI coding agents at scale within secure, self-hosted environments.
+description: Run AI coding agents at scale within secure, self-hosted environments.
+  Gain full control over permissions, compliance, and audit logs on your own infrastructure.
 developer: coder
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://coder.com/
+website: https://coder.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/coder/coder
 support: https://coder.com/docs/install/docker

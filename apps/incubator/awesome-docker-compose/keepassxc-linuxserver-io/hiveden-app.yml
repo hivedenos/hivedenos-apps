@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: keepassxc-linuxserver-io
+category: password-manager
+name: KeePassXC (LinuxServer.io)
+version: latest
+tagline: Manage sensitive data in an encrypted, offline file.
+description: Manage sensitive data in an encrypted, offline file. Works across Windows,
+  macOS, and Linux. Auto-fills credentials into apps. Free, open-source, and ad-free.
+developer: keepassxreboot
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://keepassxc.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/keepassxreboot/keepassxc
+support: https://github.com/linuxserver/docker-keepassxc

@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: sphinx-search-macbre
+category: search-engine-solution
+name: Sphinx Search (macbre)
+version: latest
+tagline: Get a high-performance, open-source search server.
+description: Get a high-performance, open-source search server. Batch index from various
+  data sources or index on the fly. Supports vector search, JSON, and SQL-like queries.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://sphinxsearch.com?utm_source=awesome-docker-compose.com
+repo: https://hub.docker.com/r/macbre/sphinxsearch
+support: https://hub.docker.com/r/macbre/sphinxsearch

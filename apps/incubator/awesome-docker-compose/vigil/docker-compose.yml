@@ -1,9 +1,10 @@
-version: '3.9'
 services:
-    vigil:
-        image: 'valeriansaliou/vigil:v1.26.3'
-        volumes:
-            - './config.cfg:/etc/vigil.cfg'
-        ports:
-            - '8080:8080'
-        restart: always
+  vigil:
+    image: valeriansaliou/vigil:latest
+    container_name: vigil
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/data
+      - ./config.cfg:/etc/vigil.cfg:ro

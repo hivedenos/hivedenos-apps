@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: atomicserver
+category: knowledge-management
+name: AtomicServer
+version: latest
+tagline: Create, share, and model linked data with built-in validation and versioning.
+description: Create, share, and model linked data with built-in validation and versioning.
+  Define clear data schemas and build applications that work together seamlessly.
+developer: ontola
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://atomicdata.dev?utm_source=awesome-docker-compose.com
+repo: https://github.com/ontola/atomic-server
+support: https://github.com/ontola/atomic-server/blob/develop/docker-compose.yml

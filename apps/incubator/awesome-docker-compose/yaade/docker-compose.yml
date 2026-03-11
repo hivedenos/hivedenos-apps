@@ -1,13 +1,12 @@
-version: 
- 
 services:
   yaade:
-    image: esperotech/yaade:latest 
+    image: esperotech/yaade:latest
     container_name: yaade
     ports:
       - 9339:9339
-    environment:
-      - YAADE_ADMIN_USERNAME=admin
     volumes:
-      - ./yaade:/app/data
-    restart: always  
+      - ./yaade-data:/app/data
+    environment:
+      - YAADE_ADMIN_USERNAME=${YAADE_ADMIN_USERNAME}
+      - YAADE_ADMIN_PASSWORD=${YAADE_ADMIN_PASSWORD}
+    restart: unless-stopped

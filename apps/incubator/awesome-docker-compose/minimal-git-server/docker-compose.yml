@@ -1,13 +1,14 @@
-version: 
- 
 services:
-  minimal-git-server:
-    image: ghcr.io/mcarbonne/minimal-git-server:2
+  git-server:
+    image: ghcr.io/mcarbonne/minimal-git-server:latest
     container_name: minimal-git-server
-    volumes:
-      - .../ssh:/srv/ssh
-      - .../git:/srv/git
-      - .../config.yml:/srv/config.yml:ro
-    ports:
-      - 20222:22
     restart: unless-stopped
+    ports:
+      - "2222:22"
+      - "8080:80"
+    volumes:
+      - ./git-data:/git
+      - ./ssh-keys:/root/.ssh
+    environment:
+      - GIT_ADMIN_USERNAME=${GIT_ADMIN_USERNAME}
+      - GIT_ADMIN_PASSWORD=${GIT_ADMIN_PASSWORD}

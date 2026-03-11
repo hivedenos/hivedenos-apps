@@ -3,10 +3,9 @@ id: metabase
 category: analytics
 name: Metabase
 version: latest
-tagline: Metabase is the easy, open-source way for everyone in your company to ask
-  questions and learn from data.
-description: Metabase is the easy, open-source way for everyone in your company to
-  ask questions and learn from data.
+tagline: Enable anyone to explore data with no-code tools and AI.
+description: Enable anyone to explore data with no-code tools and AI. Create dashboards,
+  ask questions in natural language, and embed analytics into your application.
 developer: metabase
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.metabase.com/
+website: https://www.metabase.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/metabase/metabase
 support: https://www.metabase.com/docs/latest/installation-and-operation/running-metabase-on-docker

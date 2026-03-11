@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: openhab
 category: internet-of-things-iot
 name: openHAB
-version: 4.1.0-debian
-tagline: Vendor and technology agnostic open source software for home automation.
-description: Vendor and technology agnostic open source software for home automation.
+version: latest
+tagline: Connect thousands of smart devices into a single, vendor-agnostic platform.
+description: Connect thousands of smart devices into a single, vendor-agnostic platform.
+  Automate routines locally without relying on cloud services for complete privacy.
 developer: openhab
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.openhab.org/
+website: https://www.openhab.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/openhab/openhab-core
 support: https://www.openhab.org/docs/installation/docker.html

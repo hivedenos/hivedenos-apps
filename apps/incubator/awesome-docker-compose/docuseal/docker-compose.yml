@@ -1,6 +1,12 @@
-version: "3.8"
-
 services:
   docuseal:
-    image: docuseal/docuseal:latest
+    image: docuseal/docuseal
+    container_name: docuseal
     restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/data
+    environment:
+      - APP_URL=http://localhost:3000
+      - SECRET_KEY_BASE=${SECRET_KEY_BASE}

@@ -3,8 +3,9 @@ id: inspircd
 category: irc
 name: InspIRCd
 version: latest
-tagline: Modular IRC server written in C++ for Linux, BSD, Windows, and macOS.
-description: Modular IRC server written in C++ for Linux, BSD, Windows, and macOS.
+tagline: Build and manage custom chat networks with a lightweight, modular C++ server.
+description: Build and manage custom chat networks with a lightweight, modular C++
+  server. Tune features easily, ensure high stability, and maintain robust security.
 developer: inspircd
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.inspircd.org/
+website: https://www.inspircd.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/inspircd/inspircd
-support: https://github.com/inspircd/inspircd
+support: https://github.com/inspircd/docker

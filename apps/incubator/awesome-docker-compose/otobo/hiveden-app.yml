@@ -2,11 +2,10 @@ manifestVersion: 1.1
 id: otobo
 category: ticketing
 name: OTOBO
-version: 10.5}
-tagline: Flexible web-based ticketing system used for Customer Service, Help Desk,
-  IT Service Management.
-description: Flexible web-based ticketing system used for Customer Service, Help Desk,
-  IT Service Management.
+version: latest
+tagline: Automate routine tasks and manage IT, customer, and enterprise services efficiently.
+description: Automate routine tasks and manage IT, customer, and enterprise services
+  efficiently. Use a modular, open-source platform to reduce costs and improve support.
 developer: RotherOSS
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://otobo.io/
+website: https://otobo.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/RotherOSS/otobo
 support: https://github.com/RotherOSS/otobo-docker

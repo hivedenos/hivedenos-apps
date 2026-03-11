@@ -3,10 +3,10 @@ id: nocodb
 category: database-management
 name: NocoDB
 version: latest
-tagline: No-code platform that turns any database into a smart spreadsheet (alternative
-  to Airtable or Smartsheet).
-description: No-code platform that turns any database into a smart spreadsheet (alternative
-  to Airtable or Smartsheet).
+tagline: Instantly create a no-code platform on any SQL database.
+description: Instantly create a no-code platform on any SQL database. Manage data
+  with a spreadsheet UI, visualize it with Kanban or Gallery views, and access it
+  via API.
 developer: nocodb
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.nocodb.com/
+website: https://www.nocodb.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/nocodb/nocodb
 support: https://github.com/nocodb/nocodb#docker-with-sqlite

@@ -3,10 +3,10 @@ id: gitsave
 category: backup
 name: GitSave
 version: latest
-tagline: GitSave is a self-hosted and open-source application that backs up your Git
-  repositories.
-description: GitSave is a self-hosted and open-source application that backs up your
-  Git repositories.
+tagline: Take control of your code backups.
+description: Take control of your code backups. This open-source tool schedules and
+  manages backups for any Git repository on your own server. Supports Docker and SMB
+  shares.
 developer: TimWitzdam
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/backup/gitsave
+website: https://github.com/TimWitzdam/GitSave?utm_source=awesome-docker-compose.com
 repo: https://github.com/TimWitzdam/GitSave
 support: https://github.com/TimWitzdam/GitSave#docker-compose

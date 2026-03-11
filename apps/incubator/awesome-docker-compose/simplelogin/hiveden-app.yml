@@ -1,11 +1,11 @@
 manifestVersion: 1.1
 id: simplelogin
-category: email-servers
+category: email-server
 name: SimpleLogin
-version: 3.4.0
-tagline: Open source email alias solution to protect your email address.
-description: Open source email alias solution to protect your email address. Comes
-  with browser extensions and mobile apps.
+version: '13'
+tagline: Shield your real inbox from spam and phishing using anonymous email aliases.
+description: Shield your real inbox from spam and phishing using anonymous email aliases.
+  Send and receive messages securely while keeping your online identity hidden.
 developer: simple-login
 dependencies: []
 gallery: []
@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://simplelogin.io/
+website: https://simplelogin.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/simple-login/app
 support: https://github.com/simple-login/app#run-simplelogin-docker-containers

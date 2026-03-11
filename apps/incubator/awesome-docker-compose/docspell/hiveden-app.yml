@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: docspell
 category: document-management
 name: Docspell
-version: latest
-tagline: Auto-tagging document organizer and archive.
-description: Auto-tagging document organizer and archive.
+version: 16-alpine
+tagline: Manage digital documents from scanners and emails easily.
+description: Manage digital documents from scanners and emails easily. Extract text
+  using OCR, convert files to searchable PDFs, and find exactly what you need fast.
 developer: eikek
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docspell.org/
+website: https://docspell.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/eikek/docspell
 support: https://docspell.org/docs/install/docker/

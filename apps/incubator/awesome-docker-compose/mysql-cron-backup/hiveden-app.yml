@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: mysql-cron-backup
-category: database-backup-mysql-backup
+category: database-backup
 name: mysql-cron-backup
-version: '10'
-tagline: MySQL/MariaDB database backup using cron task manager.
-description: MySQL/MariaDB database backup using cron task manager.
+version: '8.0'
+tagline: Run a Docker container to automatically back up MySQL or MariaDB databases.
+description: Run a Docker container to automatically back up MySQL or MariaDB databases.
+  Configure schedules with cron, manage backup retention, and restore with ease.
 developer: fradelg
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/database-backup/mysql-backup/mysql-cron-backup
+website: https://github.com/fradelg/docker-mysql-cron-backup?utm_source=awesome-docker-compose.com
 repo: https://github.com/fradelg/docker-mysql-cron-backup
 support: https://github.com/fradelg/docker-mysql-cron-backup#usage

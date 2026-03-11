@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: sosse
 category: archiving
-name: SOSSE
-version: latest
-tagline: Selenium based search engine and crawler with offline archiving.
-description: Selenium based search engine and crawler with offline archiving.
+name: Sosse
+version: '1.14'
+tagline: Build a searchable web archive.
+description: Build a searchable web archive. This open-source crawler indexes dynamic
+  pages, downloads files, and integrates with external services via powerful webhooks.
 developer: biolds
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://sosse.readthedocs.io/
+website: https://sosse.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/biolds/sosse
 support: https://sosse.readthedocs.io/en/stable/install/docker.html

@@ -2,11 +2,11 @@ manifestVersion: 1.1
 id: teedy
 category: document-management
 name: Teedy
-version: v1.10
-tagline: Lightweight document management system packed with all the features you can
-  expect from big expensive solutions (Ex Sis...
-description: Lightweight document management system packed with all the features you
-  can expect from big expensive solutions (Ex SismicsDocs).
+version: latest
+tagline: Store, organize, and retrieve your files with a lightweight document management
+  system.
+description: Store, organize, and retrieve your files with a lightweight document
+  management system. Find text inside images and PDFs using built-in OCR technology.
 developer: sismics
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://teedy.io/
+website: https://teedy.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/sismics/docs
 support: https://github.com/sismics/docs#install-with-docker

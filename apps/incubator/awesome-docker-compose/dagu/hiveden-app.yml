@@ -3,9 +3,10 @@ id: dagu
 category: automation
 name: Dagu
 version: latest
-tagline: Powerful Cron alternative with a Web UI.
-description: Powerful Cron alternative with a Web UI. It allows you to define dependencies
-  between commands as a Directed Acyclic Graph (DAG) in a declarative YAML format.
+tagline: Manage complex jobs with a powerful, local-first workflow engine.
+description: Manage complex jobs with a powerful, local-first workflow engine. Define
+  pipelines in simple YAML, run any script, and monitor everything via a built-in
+  web UI.
 developer: dagu-org
 dependencies: []
 gallery: []
@@ -14,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://dagu.readthedocs.io/
+website: https://dagu.sh?utm_source=awesome-docker-compose.com
 repo: https://github.com/dagu-org/dagu
-support: https://dagu.readthedocs.io/en/latest/docker-compose.html
+support: https://docs.daguit.dev/getting-started/installation

@@ -1,6 +1,34 @@
-version: "3.8"
-
 services:
   freshrss:
-    image: freshrss/freshrss:edge
+    image: freshrss/freshrss:latest
+    container_name: freshrss
+    hostname: freshrss
     restart: unless-stopped
+    logging:
+      options:
+        max-size: 10m
+    ports:
+      - "8080:80"
+    environment:
+      - TZ=UTC
+      - CRON_MIN=1,31
+    volumes:
+      - ./data:/var/www/FreshRSS/data
+      - ./extensions:/var/www/FreshRSS/extensions
+    depends_on:
+      - db
+
+  db:
+    image: mariadb:10
+    container_name: freshrss-db
+    restart: unless-stopped
+    logging:
+      options:
+        max-size: 10m
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${DB_NAME}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - ./db-data:/var/lib/mysql

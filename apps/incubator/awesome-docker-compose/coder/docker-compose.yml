@@ -1,46 +1,32 @@
-version: "3.8"
-
 services:
   coder:
-    # This MUST be stable for our documentation and
-    # other automations.
-    image: ghcr.io/coder/coder:${CODER_VERSION:-latest}
+    image: ghcr.io/coder/coder:latest
+    container_name: coder
     ports:
-      -
+      - "7080:7080"
     environment:
-      CODER_PG_CONNECTION_URL:
-      CODER_HTTP_ADDRESS:
-      # You'll need to set CODER_ACCESS_URL to an IP or domain
-      # that workspaces can reach. This cannot be localhost
-      # or 127.0.0.1 for non-Docker templates!
-      CODER_ACCESS_URL:
-    # If the coder user does not have write permissions on
-    # the docker socket, you can uncomment the following
-    # lines and set the group ID to one that has write
-    # permissions on the docker socket.
-    #group_add:
-
+      CODER_PG_CONNECTION_URL: "postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@database/${POSTGRES_DB}?sslmode=disable"
+      CODER_HTTP_ADDRESS: "0.0.0.0:7080"
+      CODER_ACCESS_URL: "${CODER_ACCESS_URL}"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
       database:
         condition: service_healthy
+    restart: unless-stopped
+
   database:
-    # Minimum supported version is 13.
-    # More versions here: https://hub.docker.com/_/postgres
-    image:
-    ports:
-      -
+    image: postgres:14
+    container_name: coder_database
     environment:
-      POSTGRES_USER: ${POSTGRES_USER:-username} # The PostgreSQL user (useful to connect to the database)
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password} # The PostgreSQL password (useful to connect to the database)
-      POSTGRES_DB: ${POSTGRES_DB:-coder} # The PostgreSQL default database (automatically created at first launch)
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
     volumes:
-      - ./coder_data:/var/lib/postgresql/data
+      - ./postgres-data:/var/lib/postgresql/data
     healthcheck:
-      test:
-        [
-        ]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
       interval: 5s
       timeout: 5s
       retries: 5
+    restart: unless-stopped

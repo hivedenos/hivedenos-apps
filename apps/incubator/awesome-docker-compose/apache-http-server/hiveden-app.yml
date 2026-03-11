@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: apache-http-server
+category: web-server
+name: Apache HTTP Server
+version: latest
+tagline: Run a secure, efficient, and extensible open-source HTTP server.
+description: Run a secure, efficient, and extensible open-source HTTP server. A trusted
+  and reliable choice for serving web content on modern operating systems.
+developer: apache
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://httpd.apache.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/apache/httpd
+support: https://github.com/docker-library/httpd

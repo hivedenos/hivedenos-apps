@@ -3,9 +3,11 @@ id: glitchtip
 category: ticketing
 name: GlitchTip
 version: '16'
-tagline: Open source error-tracking app.
-description: Open source error-tracking app. GlitchTip collects errors reported by
-  your app.
+tagline: Collect real-time errors, monitor application performance, and track site
+  uptime.
+description: Collect real-time errors, monitor application performance, and track
+  site uptime. Enjoy an affordable, open-source alternative compatible with Sentry
+  SDKs.
 developer: Awesome Docker Compose
 dependencies: []
 gallery: []
@@ -14,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://glitchtip.com/
+website: https://glitchtip.com?utm_source=awesome-docker-compose.com
 repo: https://gitlab.com/glitchtip/glitchtip
 support: https://glitchtip.com/documentation/install

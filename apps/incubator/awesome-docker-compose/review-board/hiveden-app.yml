@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: review-board
+category: git-server
+name: Review Board
+version: latest
+tagline: Manage comprehensive reviews for code, documents, and images on your own
+  servers.
+description: Manage comprehensive reviews for code, documents, and images on your
+  own servers. Supports Git, Perforce, and ClearCase while keeping your data private
+  and secure.
+developer: reviewboard
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.reviewboard.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/reviewboard/reviewboard
+support: https://www.reviewboard.org/docs/manual/latest/admin/installation/docker/

@@ -3,11 +3,11 @@ id: txtdot
 category: proxy
 name: txtdot
 version: latest
-tagline: A HTTP proxy that parses only text, links and pictures from pages reducing
-  internet bandwidth usage, removing ads and h...
-description: A HTTP proxy that parses only text, links and pictures from pages reducing
-  internet bandwidth usage, removing ads and heavy scripts.
-developer: TxtDot
+tagline: Experience a simplified web.
+description: Experience a simplified web. This proxy strips pages to essential text
+  and images, cutting data usage, blocking ads, and removing heavy scripts for faster
+  loading.
+developer: TempoWorks
 dependencies: []
 gallery: []
 path: /
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://txt.dc09.ru/
-repo: https://github.com/TxtDot/txtdot
-support: https://txtdot.github.io/documentation/docker/
+website: https://txt.dc09.xyz?utm_source=awesome-docker-compose.com
+repo: https://github.com/TempoWorks/txtdot
+support: https://github.com/TempoWorks/txtdot/blob/main/docker-compose.yml

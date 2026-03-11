@@ -1,11 +1,12 @@
 manifestVersion: 1.1
 id: starbase-80
-category: personal-dashboards
+category: personal-dashboard
 name: Starbase 80
 version: latest
-tagline: A simple homepage with an iPad-style application grid, for mobile and desktop.
-description: A simple homepage with an iPad-style application grid, for mobile and
-  desktop. One JSON configuration file.
+tagline: Create a fast, static homepage for your containers and services.
+description: Create a fast, static homepage for your containers and services. Customize
+  your dashboard with a simple JSON file, environment variables, and multiple icon
+  sets.
 developer: notclickable-jordan
 dependencies: []
 gallery: []
@@ -14,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/personal-dashboards/starbase-80
+website: https://github.com/notclickable-jordan/starbase-80?utm_source=awesome-docker-compose.com
 repo: https://github.com/notclickable-jordan/starbase-80
 support: https://github.com/notclickable-jordan/starbase-80#docker

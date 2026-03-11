@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: beaver-habit-tracker
+category: habit-tracker
+name: Beaver Habit Tracker
+version: latest
+tagline: Track daily routines using a simple, privacy-first app that focuses on visual
+  streaks instead of rigid goals.
+description: Track daily routines using a simple, privacy-first app that focuses on
+  visual streaks instead of rigid goals. Enjoy a pressure-free way to monitor progress.
+developer: daya0576
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://beaverhabits.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/daya0576/beaverhabits
+support: https://github.com/daya0576/beaverhabits#self-hosting

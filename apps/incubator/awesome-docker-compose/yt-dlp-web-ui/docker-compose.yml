@@ -1,11 +1,14 @@
-version: '3.9'
 services:
   yt-dlp-webui:
-    image: marcobaobao/yt-dlp-webui
-    ports:
-      - 3033:3033
+    image: marcobaobao/yt-dlp-webui:latest
+    container_name: yt-dlp-webui
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
     volumes:
-      - <your dir>:/downloads # replace <your dir> with a directory on your host system
-    healthcheck:
-      test: curl -f http://localhost:3033 || exit 1
+      - ./data:/app/data
+      - ./downloads:/app/downloads
+    ports:
+      - "3000:3000"
     restart: unless-stopped

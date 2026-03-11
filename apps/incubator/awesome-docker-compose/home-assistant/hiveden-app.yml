@@ -2,9 +2,11 @@ manifestVersion: 1.1
 id: home-assistant
 category: internet-of-things-iot
 name: Home Assistant
-version: latest
-tagline: Open-source home automation platform.
-description: Open-source home automation platform.
+version: stable
+tagline: Connect over a thousand smart devices into one unified system.
+description: Connect over a thousand smart devices into one unified system. Build
+  advanced automations, track energy usage, and control your home locally without
+  the cloud.
 developer: home-assistant
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.home-assistant.io/
+website: https://www.home-assistant.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/home-assistant/core
 support: https://www.home-assistant.io/installation/

@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: lemmy
-category: social-networks-and-forums
+category: social-network-and-forums
 name: Lemmy
-version: latest
-tagline: A link aggregator / reddit clone for the fediverse (alternative to Reddit).
-description: A link aggregator / reddit clone for the fediverse (alternative to Reddit).
+version: 1-alpine
+tagline: Participate in decentralized communities with threaded comments and upvotes.
+description: Participate in decentralized communities with threaded comments and upvotes.
+  Enjoy an ad-free, open-source platform with no tracking and full user control.
 developer: LemmyNet
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://join-lemmy.org/
+website: https://join-lemmy.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/LemmyNet/lemmy
-support: https://github.com/LemmyNet/lemmy
+support: https://join-lemmy.org/docs/administration/install_docker.html

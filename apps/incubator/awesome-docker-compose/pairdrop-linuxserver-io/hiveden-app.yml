@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: pairdrop-linuxserver-io
+category: quick-file-transfer
+name: PairDrop (LinuxServer.io)
+version: latest
+tagline: Instantly share images, videos, PDFs, and links with people nearby.
+description: Instantly share images, videos, PDFs, and links with people nearby. Enjoy
+  secure, peer-to-peer file transfers across any device without creating an account.
+developer: schlagmichdoch
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://pairdrop.net?utm_source=awesome-docker-compose.com
+repo: https://github.com/schlagmichdoch/pairdrop
+support: https://github.com/linuxserver/docker-pairdrop

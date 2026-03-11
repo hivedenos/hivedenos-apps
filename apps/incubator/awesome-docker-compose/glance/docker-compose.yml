@@ -1,12 +1,10 @@
-version: '3.9'
- 
 services:
   glance:
-    image: glanceapp/glance
-    volumes:
-      - ./glance.yml:/app/glance.yml
-      - /etc/timezone:/etc/timezone:ro
-      - /etc/localtime:/etc/localtime:ro
+    image: glanceapp/glance:latest
+    container_name: glance
     ports:
       - 8080:8080
+    volumes:
+      - ./glance.yml:/app/glance.yml
+      # - /var/run/docker.sock:/var/run/docker.sock # Uncomment if you plan to use the Docker widget
     restart: unless-stopped

@@ -1,67 +1,60 @@
-version: '3.9'
- 
 services:
   postgresql:
-    image: docker.io/bitnami/postgresql:16
-    volumes:
-      - 'postgresql_data:/bitnami/postgresql'
+    image: bitnami/postgresql:16
+    restart: always
     environment:
-      # ALLOW_EMPTY_PASSWORD is recommended only for development.
-      - ALLOW_EMPTY_PASSWORD=yes
       - POSTGRESQL_USERNAME=bn_discourse
+      - POSTGRESQL_PASSWORD=${POSTGRESQL_PASSWORD}
       - POSTGRESQL_DATABASE=bitnami_discourse
+    volumes:
+      - ./data/postgresql:/bitnami/postgresql
+
   redis:
-    image: docker.io/bitnami/redis:7.4
+    image: bitnami/redis:7.2
+    restart: always
     environment:
-      # ALLOW_EMPTY_PASSWORD is recommended only for development.
-      - ALLOW_EMPTY_PASSWORD=yes
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
     volumes:
-      - 'redis_data:/bitnami/redis'
+      - ./data/redis:/bitnami/redis/data
+
   discourse:
-    image: docker.io/bitnami/discourse:3
+    image: bitnami/discourse:3
+    restart: always
     ports:
-      - '80:3000'
+      - "80:3000"
+    environment:
+      - DISCOURSE_DATABASE_HOST=postgresql
+      - DISCOURSE_DATABASE_PORT_NUMBER=5432
+      - DISCOURSE_DATABASE_USER=bn_discourse
+      - DISCOURSE_DATABASE_PASSWORD=${POSTGRESQL_PASSWORD}
+      - DISCOURSE_DATABASE_NAME=bitnami_discourse
+      - DISCOURSE_REDIS_HOST=redis
+      - DISCOURSE_REDIS_PORT_NUMBER=6379
+      - DISCOURSE_REDIS_PASSWORD=${REDIS_PASSWORD}
+      - DISCOURSE_HOST=localhost
+      - DISCOURSE_USERNAME=admin
+      - DISCOURSE_PASSWORD=${DISCOURSE_ADMIN_PASSWORD}
+      - DISCOURSE_EMAIL=admin@example.com
     volumes:
-      - 'discourse_data:/bitnami/discourse'
+      - ./data/discourse:/bitnami/discourse
     depends_on:
       - postgresql
       - redis
+
+  sidekiq:
+    image: bitnami/discourse:3
+    restart: always
+    command: /opt/bitnami/scripts/discourse/sidekiq.sh
     environment:
-      # ALLOW_EMPTY_PASSWORD is recommended only for development.
-      - ALLOW_EMPTY_PASSWORD=yes
-      - DISCOURSE_HOST=www.example.com
       - DISCOURSE_DATABASE_HOST=postgresql
       - DISCOURSE_DATABASE_PORT_NUMBER=5432
       - DISCOURSE_DATABASE_USER=bn_discourse
+      - DISCOURSE_DATABASE_PASSWORD=${POSTGRESQL_PASSWORD}
       - DISCOURSE_DATABASE_NAME=bitnami_discourse
       - DISCOURSE_REDIS_HOST=redis
       - DISCOURSE_REDIS_PORT_NUMBER=6379
-      - POSTGRESQL_CLIENT_POSTGRES_USER=postgres
-      - POSTGRESQL_CLIENT_CREATE_DATABASE_NAME=bitnami_discourse
-      - POSTGRESQL_CLIENT_CREATE_DATABASE_EXTENSIONS=hstore,pg_trgm
-  sidekiq:
-    image: docker.io/bitnami/discourse:3
+      - DISCOURSE_REDIS_PASSWORD=${REDIS_PASSWORD}
+    volumes:
+      - ./data/discourse:/bitnami/discourse
     depends_on:
       - discourse
-    volumes:
-      - 'sidekiq_data:/bitnami/discourse'
-    command: /opt/bitnami/scripts/discourse-sidekiq/run.sh
-    environment:
-      # ALLOW_EMPTY_PASSWORD is recommended only for development.
-      - ALLOW_EMPTY_PASSWORD=yes
-      - DISCOURSE_HOST=www.example.com
-      - DISCOURSE_DATABASE_HOST=postgresql
-      - DISCOURSE_DATABASE_PORT_NUMBER=5432
-      - DISCOURSE_DATABASE_USER=bn_discourse
-      - DISCOURSE_DATABASE_NAME=bitnami_discourse
-      - DISCOURSE_REDIS_HOST=redis
-      - DISCOURSE_REDIS_PORT_NUMBER=6379
-volumes:
-  postgresql_data:
-    driver: local
-  redis_data:
-    driver: local
-  discourse_data:
-    driver: local
-  sidekiq_data:
-    driver: local

@@ -1,20 +1,12 @@
-version: 
- 
 services:
-  diun:
-    image: crazymax/diun:latest
-    container_name: diun
-    command: serve
+  komodo-core:
+    image: ghcr.io/moghtech/komodo:latest
+    container_name: komodo-core
+    ports:
+      - "9120:9120"
     volumes:
-      - 
-      - 
+      - ./data:/config
+      - /var/run/docker.sock:/var/run/docker.sock
     environment:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-    restart: always
+      - KOMODO_JWT_SECRET=${KOMODO_JWT_SECRET}
+    restart: unless-stopped

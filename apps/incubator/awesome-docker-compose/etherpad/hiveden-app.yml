@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: etherpad
-category: office-suites
+category: office-suite
 name: Etherpad
 version: latest
-tagline: Etherpad is a highly customizable Open Source online editor providing collaborative
-  editing in really real-time.
-description: Etherpad is a highly customizable Open Source online editor providing
-  collaborative editing in really real-time.
+tagline: Experience truly real-time document editing.
+description: Experience truly real-time document editing. This open-source tool lets
+  you write articles, lists, and notes together with others, directly in your browser.
 developer: ether
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://etherpad.org/
+website: https://etherpad.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/ether/etherpad-lite
 support: https://github.com/ether/etherpad-lite/blob/develop/doc/docker.adoc

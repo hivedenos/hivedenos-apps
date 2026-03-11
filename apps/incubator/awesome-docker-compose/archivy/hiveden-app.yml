@@ -3,10 +3,9 @@ id: archivy
 category: archiving
 name: Archivy
 version: latest
-tagline: Archivy is a self-hostable knowledge repository that allows you to learn
-  and retain information in your own personal an...
-description: Archivy is a self-hostable knowledge repository that allows you to learn
-  and retain information in your own personal and extensible wiki.
+tagline: Create a personal knowledge repository you control.
+description: Create a personal knowledge repository you control. Save web pages, connect
+  notes with bidirectional links, and manage everything in portable markdown files.
 developer: archivy
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://archivy.github.io/
+website: https://archivy.github.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/archivy/archivy
 support: https://github.com/archivy/archivy-docker

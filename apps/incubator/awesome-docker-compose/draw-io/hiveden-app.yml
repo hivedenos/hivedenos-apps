@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: draw-io
+category: diagraming-and-canvas
+name: draw.io
+version: latest
+tagline: Create professional diagrams with a security-first tool.
+description: Create professional diagrams with a security-first tool. Works online
+  without registration or as a desktop app. Integrates with Google Drive, Confluence,
+  and more.
+developer: jgraph
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.drawio.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/jgraph/drawio
+support: https://github.com/jgraph/docker-drawio

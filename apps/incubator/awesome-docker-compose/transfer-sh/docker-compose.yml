@@ -1,8 +1,10 @@
-version: '3.9'
 services:
-    transfer.sh:
-        image: 'dutchcoders/transfer.sh:latest'
-        ports:
-            - '8080:8080'
-        command: '--provider local --basedir /tmp/'
-        restart: unless-stopped
+  transfer:
+    image: dutchcoders/transfer.sh:latest
+    container_name: transfersh
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/data
+    command: --provider local --basedir /data

@@ -1,0 +1,13 @@
+services:
+  timemachine:
+    image: mbentley/timemachine:smb
+    container_name: timemachine
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      - SMB_NAME=TimeMachine
+      - SMB_USERNAME=${SMB_USERNAME}
+      - SMB_PASSWORD=${SMB_PASSWORD}
+      - MIMIC_MODEL=TimeCapsule8,119
+    volumes:
+      - ./data:/opt/timemachine

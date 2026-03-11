@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: pyload-linuxserver-io
+category: file-downloader
+name: pyLoad (LinuxServer.io)
+version: latest
+tagline: Automate and manage file downloads from video sites and hosters.
+description: Automate and manage file downloads from video sites and hosters. This
+  lightweight, open-source tool runs on NAS, routers, and servers via a web interface.
+developer: pyload
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://pyload.net?utm_source=awesome-docker-compose.com
+repo: https://github.com/pyload/pyload
+support: https://github.com/linuxserver/docker-pyload-ng

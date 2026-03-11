@@ -3,11 +3,9 @@ id: kopia
 category: backup
 name: Kopia
 version: latest
-tagline: "Kopia\xE2\x81\_ is a cross-platform tool for managing encrypted backups\
-  \ in the cloud."
-description: "Kopia\xE2\x81\_ is a cross-platform tool for managing encrypted backups\
-  \ in the cloud. It provides fast, incremental backups, secure, client-side end-to-end\
-  \ encryption, compression and data deduplication."
+tagline: Create fast, encrypted, and deduplicated backups on Windows, Mac, or Linux.
+description: Create fast, encrypted, and deduplicated backups on Windows, Mac, or
+  Linux. Use your preferred cloud storage with a GUI or CLI. Open-source and secure.
 developer: kopia
 dependencies: []
 gallery: []
@@ -16,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://kopia.io/
+website: https://kopia.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/kopia/kopia
 support: https://kopia.io/docs/installation/#docker-images

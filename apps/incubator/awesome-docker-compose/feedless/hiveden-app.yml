@@ -2,11 +2,10 @@ manifestVersion: 1.1
 id: feedless
 category: rss
 name: feedless
-version: 15-3.4-alpine
-tagline: Middleware to create RSS feeds, filter existing feeds and transform them
-  (e.g.
-description: Middleware to create RSS feeds, filter existing feeds and transform them
-  (e.g. fulltext).
+version: latest
+tagline: Create custom RSS feeds from any website.
+description: Create custom RSS feeds from any website. Filter existing feeds, merge
+  multiple sources, and transform content to get the full text or track page changes.
 developer: damoeb
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://feedless.org/
+website: https://github.com/damoeb/feedless?utm_source=awesome-docker-compose.com
 repo: https://github.com/damoeb/feedless
 support: https://github.com/damoeb/feedless/blob/master/docker-compose.prod.yml

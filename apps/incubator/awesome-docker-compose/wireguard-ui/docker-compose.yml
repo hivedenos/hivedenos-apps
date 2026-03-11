@@ -1,18 +1,23 @@
-version: 
- 
 services:
- 
   wireguard:
-    image: linuxserver/wireguard:v1.0.20210914-ls7 #Use this image, latest seems to have issues
+    image: linuxserver/wireguard
     container_name: wireguard
     cap_add:
       - NET_ADMIN
+      - SYS_MODULE
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
     volumes:
-      - ./config:/config
+      - ./wireguard:/config
+      - /lib/modules:/lib/modules
     ports:
-      - 
-      - 
- 
+      - "51820:51820/udp"
+    sysctls:
+      - net.ipv4.conf.all.src_valid_mark=1
+    restart: always
+
   wireguard-ui:
     image: ngoduykhanh/wireguard-ui:latest
     container_name: wireguard-ui
@@ -20,15 +25,10 @@ services:
       - wireguard
     cap_add:
       - NET_ADMIN
-    network_mode: service:wireguard
     environment:
-      - SENDGRID_API_KEY
-      - EMAIL_FROM_ADDRESS
-      - EMAIL_FROM_NAME
-      - SESSION_SECRET
-      - WGUI_USERNAME=admin
-      - WGUI_PASSWORD=password
-      - WG_CONF_TEMPLATE
+      - SESSION_SECRET=${SESSION_SECRET}
+      - WGUI_USERNAME=${WGUI_USERNAME}
+      - WGUI_PASSWORD=${WGUI_PASSWORD}
       - WGUI_MANAGE_START=true
       - WGUI_MANAGE_RESTART=true
     logging:
@@ -37,5 +37,7 @@ services:
         max-size: 50m
     volumes:
       - ./db:/app/db
-      - ./config:/etc/wireguard
+      - ./wireguard:/etc/wireguard
+    ports:
+      - "5000:5000"
     restart: always

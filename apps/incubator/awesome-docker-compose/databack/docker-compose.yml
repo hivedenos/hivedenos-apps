@@ -1,8 +1,0 @@
-version: 
- 
-services:
-  databack:
-    image: ghcr.io/long2ice/databack/databack:full
-    restart: always
-    env_file: .env
-    network_mode: host

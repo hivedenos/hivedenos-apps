@@ -1,38 +1,37 @@
-version: "3.8"
 services:
   db:
     image: mariadb:10.11
     restart: unless-stopped
     environment:
-      MYSQL_RANDOM_ROOT_PASSWORD:
-      MYSQL_DATABASE:
-      MYSQL_USER:
-      MYSQL_PASSWORD:
+      - MARIADB_ROOT_PASSWORD=${MARIADB_ROOT_PASSWORD}
+      - MARIADB_DATABASE=passbolt
+      - MARIADB_USER=passbolt
+      - MARIADB_PASSWORD=${MARIADB_PASSWORD}
     volumes:
-      - ./database_volume:/var/lib/mysql
+      - ./db-data:/var/lib/mysql
 
   passbolt:
     image: passbolt/passbolt:latest-ce
-    #Alternatively you can use rootless:
-    #image: passbolt/passbolt:latest-ce-non-root
     restart: unless-stopped
+    tty: true
     depends_on:
       - db
     environment:
-      APP_FULL_BASE_URL: https://passbolt.local
-      DATASOURCES_DEFAULT_HOST:
-      DATASOURCES_DEFAULT_USERNAME:
-      DATASOURCES_DEFAULT_PASSWORD:
-      DATASOURCES_DEFAULT_DATABASE:
-    volumes:
-      - ./gpg_volume:/etc/passbolt/gpg
-      - ./jwt_volume:/etc/passbolt/jwt
-    command:
-      [
-      ]
+      - APP_FULL_BASE_URL=http://localhost
+      - DATASOURCES_DEFAULT_HOST=db
+      - DATASOURCES_DEFAULT_USERNAME=passbolt
+      - DATASOURCES_DEFAULT_PASSWORD=${MARIADB_PASSWORD}
+      - DATASOURCES_DEFAULT_DATABASE=passbolt
     ports:
       - 80:80
       - 443:443
-    #Alternatively for non-root images:
-    # - 80:8080
-    # - 443:4433
+    volumes:
+      - ./gpg:/etc/passbolt/gpg
+      - ./jwt:/etc/passbolt/jwt
+    command:
+      - /usr/bin/wait-for.sh
+      - -t
+      - "0"
+      - db:3306
+      - --
+      - /docker-entrypoint.sh

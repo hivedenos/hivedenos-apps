@@ -3,10 +3,10 @@ id: homegallery
 category: photo-server
 name: HomeGallery
 version: latest
-tagline: Self-hosted open-source web gallery to browse personal photos and videos
-  featuring tagging, mobile-friendly, and AI pow...
-description: Self-hosted open-source web gallery to browse personal photos and videos
-  featuring tagging, mobile-friendly, and AI powered image discovery.
+tagline: Organize photos and videos in a private, self-hosted gallery.
+description: Organize photos and videos in a private, self-hosted gallery. Discover
+  memories with AI search, tag faces, and browse your history on a map. Works on any
+  platform.
 developer: xemle
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://home-gallery.org/
+website: https://home-gallery.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/xemle/home-gallery
-support: https://docs.home-gallery.org/install/index.html
+support: https://home-gallery.org/docs/install/index.html

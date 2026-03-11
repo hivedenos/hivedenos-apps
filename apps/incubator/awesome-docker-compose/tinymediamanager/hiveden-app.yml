@@ -3,10 +3,9 @@ id: tinymediamanager
 category: media-server
 name: tinyMediaManager
 version: latest
-tagline: tinyMediaManager ia a full featured media manager to organize and clean up
-  your media library.
-description: tinyMediaManager ia a full featured media manager to organize and clean
-  up your media library.
+tagline: Organize movie and TV show collections with this cross-platform media manager.
+description: Organize movie and TV show collections with this cross-platform media
+  manager. Fetch metadata, create NFO files, and automatically rename your media files.
 developer: Awesome Docker Compose
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.tinymediamanager.org/
+website: https://www.tinymediamanager.org?utm_source=awesome-docker-compose.com
 repo: https://gitlab.com/tinyMediaManager/tinyMediaManager
 support: https://www.tinymediamanager.org/docs/docker

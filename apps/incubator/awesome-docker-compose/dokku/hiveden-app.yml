@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: dokku
 category: paas
 name: Dokku
-version: 0.34.8
-tagline: An open-source PaaS (alternative to Heroku).
-description: An open-source PaaS (alternative to Heroku).
+version: latest
+tagline: Create a personal PaaS on any server.
+description: Create a personal PaaS on any server. Push Heroku-compatible applications
+  via Git and let Docker build and run them in isolated containers. No vendor lock-in.
 developer: dokku
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://dokku.com/
+website: https://dokku.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/dokku/dokku
 support: https://dokku.com/docs/getting-started/install/docker/

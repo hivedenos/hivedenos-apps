@@ -3,8 +3,9 @@ id: the-lounge
 category: irc
 name: The Lounge
 version: latest
-tagline: Self-hosted web IRC client.
-description: Self-hosted web IRC client.
+tagline: Host your own modern web IRC client to stay connected across all devices.
+description: Host your own modern web IRC client to stay connected across all devices.
+  Enjoy push notifications, file uploads, and multi-user support without a bouncer.
 developer: thelounge
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://thelounge.chat/
+website: https://thelounge.chat?utm_source=awesome-docker-compose.com
 repo: https://github.com/thelounge/thelounge
 support: https://thelounge.chat/docs/install-and-upgrade#docker

@@ -1,9 +1,11 @@
-version: 
 services:
   grist:
     image: gristlabs/grist
+    container_name: grist
     ports:
-      - 8484:8484
+      - "8484:8484"
     volumes:
-      - $PWD/persist:/persist
-    restart: unless-stopped  
+      - ./persist:/persist
+    environment:
+      - GRIST_SESSION_SECRET=${GRIST_SESSION_SECRET}
+    restart: unless-stopped

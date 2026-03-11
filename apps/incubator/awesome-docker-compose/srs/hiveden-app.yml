@@ -2,11 +2,10 @@ manifestVersion: 1.1
 id: srs
 category: video-streaming
 name: SRS
-version: '5'
-tagline: A simple, high efficiency and real-time video server, supports RTMP, WebRTC,
-  HLS, HTTP-FLV and SRT.
-description: A simple, high efficiency and real-time video server, supports RTMP,
-  WebRTC, HLS, HTTP-FLV and SRT.
+version: '6'
+tagline: Build real-time video platforms with a high-efficiency media server.
+description: Build real-time video platforms with a high-efficiency media server.
+  Supports RTMP, WebRTC, HLS, SRT, and MPEG-DASH for versatile streaming solutions.
 developer: ossrs
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://ossrs.io/
+website: https://github.com/ossrs/srs?utm_source=awesome-docker-compose.com
 repo: https://github.com/ossrs/srs
 support: https://ossrs.io/lts/en-us/docs/v6/doc/getting-started

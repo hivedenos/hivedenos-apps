@@ -1,4 +1,108 @@
-version: '3.9'
 services:
-  mailu:
- 
+  redis:
+    image: redis:alpine
+    restart: always
+    volumes:
+      - ./redis:/data
+    networks:
+      - default
+
+  front:
+    image: ghcr.io/mailu/nginx:2.0
+    restart: always
+    env_file: .env
+    logging:
+      driver: json-file
+    ports:
+      - "80:80"
+      - "443:443"
+      - "25:25"
+      - "465:465"
+      - "587:587"
+      - "110:110"
+      - "995:995"
+      - "143:143"
+      - "993:993"
+    volumes:
+      - ./certs:/certs
+      - ./overrides/nginx:/overrides:ro
+    networks:
+      - default
+
+  resolver:
+    image: ghcr.io/mailu/unbound:2.0
+    restart: always
+    env_file: .env
+    networks:
+      default:
+        ipv4_address: 192.168.203.254
+
+  admin:
+    image: ghcr.io/mailu/admin:2.0
+    restart: always
+    env_file: .env
+    volumes:
+      - ./data:/data
+      - ./dkim:/dkim
+    depends_on:
+      - redis
+    networks:
+      - default
+
+  imap:
+    image: ghcr.io/mailu/dovecot:2.0
+    restart: always
+    env_file: .env
+    volumes:
+      - ./mail:/mail
+      - ./overrides/dovecot:/overrides:ro
+    depends_on:
+      - front
+    networks:
+      - default
+
+  smtp:
+    image: ghcr.io/mailu/postfix:2.0
+    restart: always
+    env_file: .env
+    volumes:
+      - ./mailqueue:/queue
+      - ./overrides/postfix:/overrides:ro
+    depends_on:
+      - front
+    networks:
+      - default
+
+  antispam:
+    image: ghcr.io/mailu/rspamd:2.0
+    restart: always
+    env_file: .env
+    volumes:
+      - ./filter:/var/lib/rspamd
+      - ./dkim:/dkim:ro
+      - ./overrides/rspamd:/overrides:ro
+    depends_on:
+      - front
+      - redis
+    networks:
+      - default
+
+  webmail:
+    image: ghcr.io/mailu/webmail:2.0
+    restart: always
+    env_file: .env
+    volumes:
+      - ./webmail:/data
+      - ./overrides/roundcube:/overrides:ro
+    depends_on:
+      - front
+    networks:
+      - default
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.203.0/24

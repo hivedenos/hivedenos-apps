@@ -3,8 +3,9 @@ id: youlag
 category: rss
 name: Youlag
 version: latest
-tagline: To use Youlag, you need to mount it into your FreshRSS extensions folder.
-description: To use Youlag, you need to mount it into your FreshRSS extensions folder.
+tagline: Enhance your RSS reader with a modern design for YouTube and articles.
+description: Enhance your RSS reader with a modern design for YouTube and articles.
+  Enjoy a mini player, video chapters, shorts blocking, and an improved reading experience.
 developer: civilblur
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/rss/youlag
+website: https://github.com/civilblur/youlag?utm_source=awesome-docker-compose.com
 repo: https://github.com/civilblur/youlag
 support: https://github.com/civilblur/youlag

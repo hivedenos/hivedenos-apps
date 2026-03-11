@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: yopass
-category: pastebins
+category: pastebin
 name: Yopass
-version: latest
-tagline: Secure sharing of secrets, passwords and files.
-description: Secure sharing of secrets, passwords and files.
+version: alpine
+tagline: Securely share passwords, API keys, and sensitive data using end-to-end encryption.
+description: Securely share passwords, API keys, and sensitive data using end-to-end
+  encryption. Create one-time, self-destructing links to keep your information safe.
 developer: jhaals
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://yopass.se/
+website: https://yopass.se?utm_source=awesome-docker-compose.com
 repo: https://github.com/jhaals/yopass
 support: https://github.com/jhaals/yopass#installation--configuration

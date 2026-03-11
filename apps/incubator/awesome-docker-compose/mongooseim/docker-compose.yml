@@ -1,4 +1,19 @@
-version: '3.9'
 services:
   mongooseim:
- 
+    image: mongooseim/mongooseim:latest
+    restart: unless-stopped
+    ports:
+      - "5222:5222"
+      - "5269:5269"
+      - "8088:8088"
+    environment:
+      - MNESIA_NODE_NAME=${MNESIA_NODE_NAME}
+      - MIM_LOG_LEVEL=${MIM_LOG_LEVEL}
+    volumes:
+      - ./data:/var/lib/mongooseim
+      - ./logs:/var/log/mongooseim
+    networks:
+      - mongooseim-net
+
+networks:
+  mongooseim-net:

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: rsnapshot-linuxserver-io
+category: backup
+name: rsnapshot (LinuxServer.io)
+version: latest
+tagline: Create periodic filesystem snapshots of local or remote machines.
+description: Create periodic filesystem snapshots of local or remote machines. Uses
+  rsync and hard links to significantly reduce disk space usage. Automate your backups
+  easily.
+developer: rsnapshot
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://rsnapshot.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/rsnapshot/rsnapshot
+support: https://github.com/linuxserver/docker-rsnapshot

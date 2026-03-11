@@ -2,10 +2,11 @@ manifestVersion: 1.1
 id: aptabase
 category: analytics
 name: Aptabase
-version: 15-alpine
-tagline: Open source, privacy first and simple analytics for mobile and desktop apps.
-description: Open source, privacy first and simple analytics for mobile and desktop
-  apps.
+version: latest
+tagline: Get real-time, anonymous insights for your apps.
+description: Get real-time, anonymous insights for your apps. This open-source platform
+  respects user privacy, ensures compliance, and offers lightweight SDKs for easy
+  setup.
 developer: aptabase
 dependencies: []
 gallery: []
@@ -14,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://aptabase.com/
+website: https://aptabase.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/aptabase/aptabase
-support: https://github.com/aptabase/aptabase
+support: https://github.com/aptabase/self-hosting

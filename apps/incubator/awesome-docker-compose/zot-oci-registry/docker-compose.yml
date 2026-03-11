@@ -1,6 +1,9 @@
-version: "3.8"
-
 services:
-  zot-oci-registry:
-    image: ghcr.io/project-zot/zot-linux-amd64:latest
+  zot:
+    image: ghcr.io/project-zot/zot:latest
+    container_name: zot_registry
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./zot-data:/tmp/zot
     restart: unless-stopped

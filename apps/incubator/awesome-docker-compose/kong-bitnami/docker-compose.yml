@@ -1,0 +1,29 @@
+services:
+  postgresql:
+    image: docker.io/bitnami/postgresql:15
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRESQL_USERNAME=kong
+      - POSTGRESQL_PASSWORD=${KONG_PG_PASSWORD}
+      - POSTGRESQL_DATABASE=kong
+    volumes:
+      - ./postgresql-data:/bitnami/postgresql
+
+  kong:
+    image: docker.io/bitnami/kong:latest
+    ports:
+      - "8000:8000"
+      - "8443:8443"
+      - "8001:8001"
+      - "8444:8444"
+    environment:
+      - KONG_DATABASE=postgres
+      - KONG_PG_HOST=postgresql
+      - KONG_PG_PORT_NUMBER=5432
+      - KONG_PG_USER=kong
+      - KONG_PG_PASSWORD=${KONG_PG_PASSWORD}
+      - KONG_PG_DATABASE=kong
+      - KONG_PASSWORD=${KONG_ADMIN_PASSWORD}
+    depends_on:
+      - postgresql

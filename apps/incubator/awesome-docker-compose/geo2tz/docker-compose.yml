@@ -1,13 +1,12 @@
-version: '3'
 services:
   geo2tz:
-    container_name: geo2tz
     image: ghcr.io/noandrea/geo2tz:latest
+    container_name: geo2tz
     ports:
-    - 2004:2004
-    # uncomment to enable authorization via request token
-    # environment:
-    # - GEO2TZ_WEB_AUTH_TOKEN_VALUE=somerandomstringhere
-    # - GEO2TZ_WEB_AUTH_TOKEN_PARAM_NAME=t
-
+      - "8080:8080"
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8080/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

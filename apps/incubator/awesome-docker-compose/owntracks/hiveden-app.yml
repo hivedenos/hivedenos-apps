@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: owntracks
-category: maps-and-gps
+category: map-and-gps
 name: Owntracks
 version: latest
-tagline: Store and access data published by OwnTracks location tracking apps.
-description: Store and access data published by OwnTracks location tracking apps.
+tagline: Keep a private diary of your location or share it securely with family.
+description: Keep a private diary of your location or share it securely with family.
+  This open-source app uses open protocols to ensure your data remains private.
 developer: owntracks
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://owntracks.org/
+website: https://owntracks.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/owntracks/recorder
 support: https://github.com/owntracks/docker-recorder

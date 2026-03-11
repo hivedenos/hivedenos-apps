@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: adguardian-term
+category: dns
+name: AdGuardian-Term
+version: latest
+tagline: Monitor your AdGuard Home instance in real-time from the terminal.
+description: Monitor your AdGuard Home instance in real-time from the terminal. View
+  live DNS queries, see block/allow stats, and analyze top domains on your network.
+developer: lissy93
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://adguardian.as93.net?utm_source=awesome-docker-compose.com
+repo: https://github.com/lissy93/AdGuardian-Term
+support: https://github.com/lissy93/AdGuardian-Term#docker

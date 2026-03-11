@@ -1,4 +1,3 @@
-version: '3.9'
 services:
   xbackbone:
     image: lscr.io/linuxserver/xbackbone:latest

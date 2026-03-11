@@ -3,10 +3,9 @@ id: fava
 category: budgeting
 name: Fava
 version: latest
-tagline: Fava is the web frontend of Beancount, a text based double-entry accounting
-  system.
-description: Fava is the web frontend of Beancount, a text based double-entry accounting
-  system.
+tagline: Access a powerful web interface for your double-entry bookkeeping ledger.
+description: Access a powerful web interface for your double-entry bookkeeping ledger.
+  Gain clear insights into your finances with a focus on usability and features.
 developer: beancount
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://beancount.github.io/fava/
+website: https://beancount.github.io/fava?utm_source=awesome-docker-compose.com
 repo: https://github.com/beancount/fava
-support: https://github.com/beancount/fava
+support: https://hub.docker.com/r/yegle/fava

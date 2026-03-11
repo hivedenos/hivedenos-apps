@@ -3,8 +3,10 @@ id: mixpost
 category: analytics
 name: Mixpost
 version: latest
-tagline: Self-hosted social media management software (Buffer alternative).
-description: Self-hosted social media management software (Buffer alternative).
+tagline: Manage unlimited social accounts on your own server.
+description: Manage unlimited social accounts on your own server. Get full data privacy,
+  powerful scheduling, and analytics without monthly subscription fees. Ideal for
+  agencies.
 developer: inovector
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://mixpost.app/
+website: https://mixpost.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/inovector/mixpost
-support: https://docs.mixpost.app/lite/installation/docker
+support: https://docs.mixpost.app/lite/installation/docker/

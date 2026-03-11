@@ -1,10 +1,14 @@
-version: 
 services:
   nebula:
-    image: nebulaoss/nebula
-    network_mode: host
+    image: nebulaoss/nebula:latest
+    container_name: nebula
     cap_add:
       - NET_ADMIN
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    ports:
+      - "4242:4242/udp"
     volumes:
-      - ./config:/etc/defined
+      - ./config:/etc/nebula
+    command: -config /etc/nebula/config.yml
     restart: unless-stopped

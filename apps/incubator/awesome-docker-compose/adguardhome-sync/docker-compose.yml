@@ -1,16 +1,14 @@
-version: '3.9'
- 
 services:
   adguardhome-sync:
-    image: lscr.io/linuxserver/adguardhome-sync:latest
+    image: ghcr.io/bakito/adguardhome-sync:latest
     container_name: adguardhome-sync
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Etc/UTC
-      - CONFIGFILE=/config/adguardhome-sync.yaml #optional
-    volumes:
-      - /path/to/adguardhome-sync/config:/config
-    ports:
-      - 8080:8080
+      - ORIGIN_URL=http://192.168.1.10:80
+      - ORIGIN_USERNAME=${ORIGIN_USERNAME}
+      - ORIGIN_PASSWORD=${ORIGIN_PASSWORD}
+      - REPLICA_URL=http://192.168.1.11:80
+      - REPLICA_USERNAME=${REPLICA_USERNAME}
+      - REPLICA_PASSWORD=${REPLICA_PASSWORD}
+      - CRON=*/10 * * * *
+      - RUN_ON_START=true
     restart: unless-stopped

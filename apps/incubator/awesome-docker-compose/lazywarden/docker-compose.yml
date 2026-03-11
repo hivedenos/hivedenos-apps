@@ -1,15 +1,14 @@
-version: '3.9'
- 
 services:
   lazywarden:
-    container_name: lazywarden_backup
-    hostname: lazywarden_backup
-    build: .
-    env_file:
-      - .env
+    image: querylab/lazywarden:latest
+    container_name: lazywarden
     environment:
-      UNLOCK_VAULT: 
+      - BW_HOST=${BW_HOST}
+      - BW_CLIENTID=${BW_CLIENTID}
+      - BW_CLIENTSECRET=${BW_CLIENTSECRET}
+      - BW_PASSWORD=${BW_PASSWORD}
+      - CRON_TIME=0 2 * * *
+      - TZ=UTC
     volumes:
-      - /root/lazywarden/config:/config
-      - /root/lazywarden/backup-drive:/root/lazywarden/backup-drive
+      - ./data:/backup
     restart: unless-stopped

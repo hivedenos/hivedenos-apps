@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: libretime
 category: audio-server
-name: Libretime
-version: '15'
-tagline: Simple, open source platform that lets you broadcast streaming radio on the
-  web (fork of Airtime).
-description: Simple, open source platform that lets you broadcast streaming radio
-  on the web (fork of Airtime).
+name: LibreTime
+version: 15-alpine
+tagline: Launch your radio station quickly with this open-source broadcast platform.
+description: Launch your radio station quickly with this open-source broadcast platform.
+  Manage audio libraries, schedule shows, and transmit via AM, FM, or the web.
 developer: LibreTime
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://libretime.org/
+website: https://libretime.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/LibreTime/libretime
 support: https://libretime.org/docs/admin-manual/install/install-using-docker/

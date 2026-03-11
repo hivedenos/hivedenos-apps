@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: snikket
 category: xmpp
 name: Snikket
-version: stable
-tagline: All-in-one Dockerized easy XMPP solution, including web admin and clients.
-description: All-in-one Dockerized easy XMPP solution, including web admin and clients.
+version: '1'
+tagline: Communicate safely on a decentralized messaging network.
+description: Communicate safely on a decentralized messaging network. Create private
+  groups, make audio or video calls, and keep your data completely under your control.
 developer: snikket-im
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://snikket.org/
+website: https://snikket.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/snikket-im/snikket-server
 support: https://snikket.org/service/quickstart/

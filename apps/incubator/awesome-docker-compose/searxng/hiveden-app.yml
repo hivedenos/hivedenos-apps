@@ -1,12 +1,12 @@
 manifestVersion: 1.1
 id: searxng
-category: internet-tools
+category: internet-tool
 name: SearXNG
-version: 2-alpine
-tagline: Internet metasearch engine which aggregates results from various search services
-  and databases (Fork of Searx).
-description: Internet metasearch engine which aggregates results from various search
-  services and databases (Fork of Searx).
+version: alpine
+tagline: Search the internet securely without being tracked or profiled.
+description: Search the internet securely without being tracked or profiled. This
+  open-source metasearch engine aggregates results from over 200 sources with full
+  privacy.
 developer: searxng
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docs.searxng.org/
+website: https://docs.searxng.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/searxng/searxng
 support: https://github.com/searxng/searxng-docker

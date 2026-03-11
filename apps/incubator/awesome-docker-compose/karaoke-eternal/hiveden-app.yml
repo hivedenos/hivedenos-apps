@@ -3,11 +3,9 @@ id: karaoke-eternal
 category: media-server
 name: Karaoke Eternal
 version: latest
-tagline: "Host awesome karaoke parties where everyone can easily find and queue songs\
-  \ from their phone\xE2\x80\x99s browser."
-description: "Host awesome karaoke parties where everyone can easily find and queue\
-  \ songs from their phone\xE2\x80\x99s browser. The player is also fully browser-based\
-  \ with support for MP3+G, MP4 and WebGL visualizations."
+tagline: Host unforgettable karaoke parties with a fully self-hosted system.
+description: Host unforgettable karaoke parties with a fully self-hosted system. Guests
+  can easily find and queue songs directly from their mobile browsers using QR codes.
 developer: bhj
 dependencies: []
 gallery: []
@@ -16,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.karaoke-eternal.com/
+website: https://www.karaoke-eternal.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/bhj/KaraokeEternal
 support: https://www.karaoke-eternal.com/docs/karaoke-eternal-server/

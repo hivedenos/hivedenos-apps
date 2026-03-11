@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: apprise-api-linuxserver-io
+category: notification
+name: Apprise API (LinuxServer.io)
+version: latest
+tagline: Send messages to over 120 different services using a lightweight REST framework.
+description: Send messages to over 120 different services using a lightweight REST
+  framework. Manage configurations, group targets with tags, and test via a built-in
+  UI.
+developer: caronc
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/caronc/apprise-api?utm_source=awesome-docker-compose.com
+repo: https://github.com/caronc/apprise-api
+support: https://github.com/linuxserver/docker-apprise-api

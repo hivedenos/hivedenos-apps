@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: pocket-id
+category: identity-and-access-management
+name: Pocket ID
+version: v2
+tagline: Implement secure, passwordless sign-ins for your services.
+description: Implement secure, passwordless sign-ins for your services. This simple
+  OIDC provider uses only passkeys, making authentication easy for you and your users.
+developer: pocket-id
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://pocket-id.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/pocket-id/pocket-id
+support: https://pocket-id.org/docs/setup/installation

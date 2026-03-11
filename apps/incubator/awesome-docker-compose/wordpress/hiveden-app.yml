@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: wordpress
-category: blogging-platforms
+category: blogging-platform
 name: WordPress
 version: '8.0'
-tagline: "World\xE2\x80\x99s most-used blogging and CMS engine."
-description: "World\xE2\x80\x99s most-used blogging and CMS engine."
+tagline: Create any website, blog, or app with an open-source publishing platform.
+description: Create any website, blog, or app with an open-source publishing platform.
+  Customize every detail using intuitive design tools and thousands of extensions.
 developer: Awesome Docker Compose
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://wordpress.org/
-repo: https://awesome-docker-compose.com/apps/blogging-platforms/wordpress
-support: https://awesome-docker-compose.com/apps/blogging-platforms/wordpress
+website: https://wordpress.org?utm_source=awesome-docker-compose.com
+repo: https://awesome-docker-compose.com/wordpress
+support: https://awesome-docker-compose.com/wordpress

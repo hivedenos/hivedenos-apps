@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: drawdb-xinsodev
+category: database-management
+name: drawDB (xinsodev)
+version: latest
+tagline: Create database diagrams, generate SQL scripts, and reverse engineer existing
+  schemas.
+description: Create database diagrams, generate SQL scripts, and reverse engineer
+  existing schemas. This free, intuitive online tool requires no sign-up to get started.
+developer: drawdb-io
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.drawdb.app?utm_source=awesome-docker-compose.com
+repo: https://github.com/drawdb-io/drawdb
+support: https://hub.docker.com/r/xinsodev/drawdb

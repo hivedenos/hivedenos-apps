@@ -2,11 +2,10 @@ manifestVersion: 1.1
 id: recipesage
 category: recipe-management
 name: RecipeSage
-version: v4.0.0
-tagline: A recipe keeper, meal plan organizer, and shopping list manager that can
-  import recipes directly from any URL.
-description: A recipe keeper, meal plan organizer, and shopping list manager that
-  can import recipes directly from any URL.
+version: latest
+tagline: Keep your favorite culinary creations in one organized digital cookbook.
+description: Keep your favorite culinary creations in one organized digital cookbook.
+  Save new dishes, manage ingredients, and access your recipes from anywhere.
 developer: julianpoy
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://recipesage.com/
+website: https://recipesage.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/julianpoy/recipesage
 support: https://github.com/julianpoy/recipesage-selfhost

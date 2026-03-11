@@ -1,13 +1,71 @@
-version: 
 services:
-  appflowy_client:
-    image: appflowyio/appflowy_client:main
-    volumes:
-      - $HOME/.Xauthority:/root/.Xauthority:rw
-      - /tmp/.X11-unix:/tmp/.X11-unix
-      - /dev/dri:/dev/dri
-      - /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket
-      - appflowy-data:/home/appflowy
-    environment:
-      - DISPLAY=${DISPLAY}
+  appflowy_cloud:
+    image: appflowyio/appflowy_cloud:latest
+    container_name: appflowy_cloud
     restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - APPFLOWY_DATABASE_URL=postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+      - APPFLOWY_REDIS_URL=redis://redis:6379
+      - APPFLOWY_S3_USE_MINIO=true
+      - APPFLOWY_S3_MINIO_URL=http://minio:9000
+      - APPFLOWY_S3_ACCESS_KEY=${MINIO_ROOT_USER}
+      - APPFLOWY_S3_SECRET_KEY=${MINIO_ROOT_PASSWORD}
+      - APPFLOWY_S3_BUCKET=${APPFLOWY_S3_BUCKET}
+      - APPFLOWY_S3_REGION=us-east-1
+      - APPFLOWY_MAILER_SMTP_HOST=${SMTP_HOST}
+      - APPFLOWY_MAILER_SMTP_PORT=${SMTP_PORT}
+      - APPFLOWY_MAILER_SMTP_USERNAME=${SMTP_USERNAME}
+      - APPFLOWY_MAILER_SMTP_PASSWORD=${SMTP_PASSWORD}
+      - APPFLOWY_MAILER_SENDER_EMAIL=${SMTP_SENDER_EMAIL}
+      - APPFLOWY_ACCESS_TOKEN_EXPIRATION=604800
+      - APPFLOWY_REFRESH_TOKEN_EXPIRATION=2592000
+    depends_on:
+      - postgres
+      - redis
+      - minio
+    networks:
+      - appflowy-network
+
+  postgres:
+    image: postgres:16
+    container_name: appflowy_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+    networks:
+      - appflowy-network
+
+  redis:
+    image: redis:7
+    container_name: appflowy_redis
+    restart: always
+    volumes:
+      - ./data/redis:/data
+    networks:
+      - appflowy-network
+
+  minio:
+    image: minio/minio:latest
+    container_name: appflowy_minio
+    restart: always
+    command: server /data --console-address ":9001"
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+    volumes:
+      - ./data/minio:/data
+    networks:
+      - appflowy-network
+
+networks:
+  appflowy-network:
+    driver: bridge

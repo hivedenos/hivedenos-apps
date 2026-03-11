@@ -1,11 +1,11 @@
 manifestVersion: 1.1
 id: minio
-category: object-storage-and-file-servers
+category: object-storage-and-file-server
 name: Minio
 version: latest
-tagline: Minio is an open source object storage server compatible with Amazon S3 APIs.
-description: Minio is an open source object storage server compatible with Amazon
-  S3 APIs.
+tagline: Manage exabyte-scale AI data with a high-performance object store.
+description: Manage exabyte-scale AI data with a high-performance object store. Natively
+  supports S3 for objects, Iceberg for tables, and SFTP for files to unify your data.
 developer: minio
 dependencies: []
 gallery: []
@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://min.io/
+website: https://www.min.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/minio/minio
 support: https://github.com/minio/minio

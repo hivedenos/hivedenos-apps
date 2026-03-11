@@ -1,23 +1,11 @@
-version: '3.9'
- 
 services:
   maloja:
-    # from dockerhub
-    image: 
-    # or built locally
-    #build:
-    #  context: .
-    #  dockerfile: ./Containerfile
-    ports:
-    - 
-    # different directories for configuration, state and logs
-    volumes:
-    - 
-    - 
-    - 
-    #you can also have everything together instead:
-    #volumes:
-
-    #environment:
-
+    image: krateng/maloja:latest
+    container_name: maloja
     restart: unless-stopped
+    ports:
+      - "42010:42010"
+    volumes:
+      - ./config:/config
+    environment:
+      - MALOJA_FORCE_PASSWORD=${MALOJA_ADMIN_PASSWORD}

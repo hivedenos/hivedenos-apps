@@ -1,10 +1,11 @@
-version: 
- 
 services:
-  r-notebook:
-    image: quay.io/jupyter//minimal-notebook:latest
+  jupyter:
+    image: jupyter/datascience-notebook:latest
+    container_name: jupyter
     ports:
-      - 10000:8888
+      - "8888:8888"
     volumes:
-      - '"${PWD}":/home/jovyan/work'
+      - ./work:/home/jovyan/work
+    environment:
+      - JUPYTER_TOKEN=${JUPYTER_TOKEN}
     restart: unless-stopped

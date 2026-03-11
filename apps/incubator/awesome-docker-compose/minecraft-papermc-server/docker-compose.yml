@@ -1,16 +1,12 @@
-version: '3.9'
 services:
-  minecraft:
+  papermc:
     image: marctv/minecraft-papermc-server:latest
-    restart: always
-    container_name: 
-    environment:
-      MEMORYSIZE: 
-      PAPERMC_FLAGS: 
-    volumes:
-      - ./minecraftserver:/data
+    restart: unless-stopped
     ports:
-      - 
-    # The following allow `docker attach minecraft` to work
-    stdin_open: true
-    tty: true
+      - "25565:25565"
+    volumes:
+      - ./data:/data
+    environment:
+      - EULA=true
+      - MEMORYSIZE=2G
+      - TZ=Etc/UTC

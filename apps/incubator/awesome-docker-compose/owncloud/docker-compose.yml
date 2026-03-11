@@ -1,6 +1,40 @@
-version: "3.8"
-
 services:
   owncloud:
-    image: owncloud/server:${OWNCLOUD_VERSION}
-    restart: unless-stopped
+    image: owncloud/server:10.15.0
+    restart: always
+    ports:
+      - 8080:8080
+    depends_on:
+      - mariadb
+      - redis
+    environment:
+      OWNCLOUD_DOMAIN: localhost:8080
+      OWNCLOUD_DB_TYPE: mysql
+      OWNCLOUD_DB_NAME: owncloud
+      OWNCLOUD_DB_USERNAME: owncloud
+      OWNCLOUD_DB_PASSWORD: ${OWNCLOUD_DB_PASSWORD}
+      OWNCLOUD_DB_HOST: mariadb
+      OWNCLOUD_ADMIN_USERNAME: ${OWNCLOUD_ADMIN_USERNAME}
+      OWNCLOUD_ADMIN_PASSWORD: ${OWNCLOUD_ADMIN_PASSWORD}
+      OWNCLOUD_REDIS_ENABLED: true
+      OWNCLOUD_REDIS_HOST: redis
+    volumes:
+      - ./owncloud-data:/mnt/data
+
+  mariadb:
+    image: mariadb:10.11
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_USER: owncloud
+      MYSQL_PASSWORD: ${OWNCLOUD_DB_PASSWORD}
+      MYSQL_DATABASE: owncloud
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+
+  redis:
+    image: redis:7
+    restart: always
+    command: ["--databases", "1"]
+    volumes:
+      - ./redis-data:/data

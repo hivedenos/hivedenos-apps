@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: cloudflared-web
+category: reverse-proxy
+name: Cloudflared-web
+version: latest
+tagline: Deploy a Docker image with a simple web UI to manage your Cloudflare tunnels.
+description: Deploy a Docker image with a simple web UI to manage your Cloudflare
+  tunnels. Easily configure your token and start or stop the service with a single
+  click.
+developer: WisdomSky
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/WisdomSky/Cloudflared-web?utm_source=awesome-docker-compose.com
+repo: https://github.com/WisdomSky/Cloudflared-web
+support: https://github.com/WisdomSky/Cloudflared-web#application-setup

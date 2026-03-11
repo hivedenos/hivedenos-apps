@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: thunderbird-jlesage
+category: email-client
+name: Thunderbird (jlesage)
+version: latest
+tagline: Organize messages, calendars, and contacts in a unified inbox.
+description: Organize messages, calendars, and contacts in a unified inbox. Enjoy
+  a free, open-source email experience that prioritizes your privacy and security.
+developer: jlesage
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.thunderbird.net?utm_source=awesome-docker-compose.com
+repo: https://github.com/jlesage/docker-thunderbird
+support: https://github.com/jlesage/docker-thunderbird

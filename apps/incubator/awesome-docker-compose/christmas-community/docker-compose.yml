@@ -1,26 +1,41 @@
-version: 
- 
 services:
-  christmas-community:
-    image: wingysam/christmas-community
-    volumes:
-      - ./data:/data
+  app:
+    image: wingysam/christmas-community:latest
+    restart: unless-stopped
     ports:
-      # If you want to go to localhost:8080 to access Christmas Community,
-      # use - 8080:80 instead of
-      - 80:80
+      - "8080:80"
     environment:
-      # Amazon Smile, set to 'false' to disable www.amazon.com links
-      # turning into smile.amazon.com
-      SMILE: 'true'
-      # Table mode, set to 'false' to revert to box mode
-      TABLE: 'true'
-      # Single list mode
-      # (for weddings, birthdays, etc. only the admin account's list is accessible)
-      # Set to 'true' to enable
-      SINGLE_LIST: 'false'
-      # Some websites (like walmart) send headers that are larger than 8MB in
-      # length. If issues are encountered, set the node.js limit to a higher
-      # number than 8192
+      - APP_NAME=Christmas
+      - APP_ENV=production
+      - APP_KEY=${APP_KEY}
+      - APP_DEBUG=false
+      - APP_URL=${APP_URL}
+      - DB_CONNECTION=mysql
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_DATABASE=christmas
+      - DB_USERNAME=christmas
+      - DB_PASSWORD=${DB_PASSWORD}
+      - MAIL_MAILER=smtp
+      - MAIL_HOST=${MAIL_HOST}
+      - MAIL_PORT=${MAIL_PORT}
+      - MAIL_USERNAME=${MAIL_USERNAME}
+      - MAIL_PASSWORD=${MAIL_PASSWORD}
+      - MAIL_ENCRYPTION=${MAIL_ENCRYPTION}
+      - MAIL_FROM_ADDRESS=${MAIL_FROM_ADDRESS}
+      - MAIL_FROM_NAME=${MAIL_FROM_NAME}
+    volumes:
+      - ./storage:/var/www/html/storage
+    depends_on:
+      - db
 
-    restart: always
+  db:
+    image: mariadb:10.6
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+      - MYSQL_DATABASE=christmas
+      - MYSQL_USER=christmas
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - ./db-data:/var/lib/mysql

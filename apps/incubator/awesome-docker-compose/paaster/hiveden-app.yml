@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: paaster
-category: pastebins
+category: pastebin
 name: Paaster
 version: latest
-tagline: Paaster is a secure by default end-to-end encrypted pastebin built with the
-  objective of simplicity.
-description: Paaster is a secure by default end-to-end encrypted pastebin built with
-  the objective of simplicity.
+tagline: Share code snippets securely using a privacy-first pastebin.
+description: Share code snippets securely using a privacy-first pastebin. Features
+  include end-to-end encryption and paste history to keep your data safe and accessible.
 developer: WardPearce
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://paaster.io/
+website: https://paaster.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/WardPearce/paaster
-support: https://github.com/WardPearce/paaster#setup
+support: https://github.com/WardPearce/paaster#deployment

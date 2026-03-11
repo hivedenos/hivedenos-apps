@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: material-for-mkdocs
+category: documentation
+name: Material for Mkdocs
+version: latest
+tagline: Write documentation in Markdown and instantly generate a fast, searchable,
+  and fully customizable static site that work...
+description: Write documentation in Markdown and instantly generate a fast, searchable,
+  and fully customizable static site that works perfectly on all devices.
+developer: squidfunk
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://squidfunk.github.io/mkdocs-material?utm_source=awesome-docker-compose.com
+repo: https://github.com/squidfunk/mkdocs-material
+support: https://squidfunk.github.io/mkdocs-material/getting-started/

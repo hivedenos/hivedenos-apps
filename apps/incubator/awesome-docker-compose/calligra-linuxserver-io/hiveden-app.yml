@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: calligra-linuxserver-io
+category: office-suite
+name: Calligra (LinuxServer.io)
+version: latest
+tagline: Create rich text documents, powerful spreadsheets, and stunning presentations.
+description: Create rich text documents, powerful spreadsheets, and stunning presentations.
+  Design vector graphics, build databases, and manage projects with one versatile
+  suite.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://calligra.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/linuxserver/docker-calligra
+support: https://github.com/linuxserver/docker-calligra

@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: note-mark
-category: note-taking-and-editors
+category: note-taking-and-editor
 name: Note Mark
-version: 0.13.1
-tagline: A minimal web-based Markdown notes app.
-description: A minimal web-based Markdown notes app.
+version: '1'
+tagline: Create and edit beautiful Markdown notes with incredible speed.
+description: Create and edit beautiful Markdown notes with incredible speed. This
+  open-source web app features themes, file uploads, and a sleek, responsive interface.
 developer: enchant97
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://notemark.docs.enchantedcode.co.uk/
+website: https://notemark.docs.enchantedcode.co.uk?utm_source=awesome-docker-compose.com
 repo: https://github.com/enchant97/note-mark
 support: https://notemark.docs.enchantedcode.co.uk/docs/setup/install/

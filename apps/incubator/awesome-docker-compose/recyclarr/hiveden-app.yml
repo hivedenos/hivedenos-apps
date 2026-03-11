@@ -3,8 +3,10 @@ id: recyclarr
 category: arr
 name: Recyclarr
 version: latest
-tagline: Automatically sync TRaSH Guides to your Sonarr and Radarr instances.
-description: Automatically sync TRaSH Guides to your Sonarr and Radarr instances.
+tagline: Automatically synchronize custom formats, quality profiles, and naming schemes
+  from TRaSH Guides to multiple Sonarr and...
+description: Automatically synchronize custom formats, quality profiles, and naming
+  schemes from TRaSH Guides to multiple Sonarr and Radarr instances using simple YAML.
 developer: recyclarr
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://recyclarr.dev/
+website: https://recyclarr.dev?utm_source=awesome-docker-compose.com
 repo: https://github.com/recyclarr/recyclarr
-support: https://recyclarr.dev/wiki/installation/docker/
+support: https://recyclarr.dev/guide/installation/docker/

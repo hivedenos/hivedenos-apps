@@ -1,11 +1,11 @@
 manifestVersion: 1.1
 id: shlink
-category: url-shorteners
+category: url-shortener
 name: Shlink
 version: stable
-tagline: URL shortener with REST API and command line interface.
-description: URL shortener with REST API and command line interface. Includes official
-  progressive web application and docker images.
+tagline: Host a custom URL shortener to manage links under your own domains.
+description: Host a custom URL shortener to manage links under your own domains. Generate
+  custom slugs, track anonymized visit stats, and integrate via REST API or CLI.
 developer: shlinkio
 dependencies: []
 gallery: []
@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://shlink.io/
+website: https://shlink.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/shlinkio/shlink
 support: https://shlink.io/documentation/install-docker-image/

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: radarr-linuxserver-io
+category: arr
+name: Radarr (LinuxServer.io)
+version: latest
+tagline: Automate your movie library with smart search, customizable quality profiles,
+  and automatic failed download handling.
+description: Automate your movie library with smart search, customizable quality profiles,
+  and automatic failed download handling. Track upcoming releases in one calendar.
+developer: Radarr
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://radarr.video?utm_source=awesome-docker-compose.com
+repo: https://github.com/Radarr/Radarr
+support: https://github.com/linuxserver/docker-radarr

@@ -3,12 +3,10 @@ id: castopod
 category: podcasting
 name: Castopod
 version: latest
-tagline: A podcast management hosting platform that includes the latest podcast 2.0
-  standards, an automated Fediverse feed, anal...
-description: A podcast management hosting platform that includes the latest podcast
-  2.0 standards, an automated Fediverse feed, analytics, an embeddable player, and
-  more.
-developer: Awesome Docker Compose
+tagline: Launch and manage your podcasts with a free, open-source hosting platform.
+description: Launch and manage your podcasts with a free, open-source hosting platform.
+  Interact directly with your listeners and build a highly engaged community.
+developer: ad-aures
 dependencies: []
 gallery: []
 path: /
@@ -16,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://castopod.org/
-repo: https://docs.castopod.org/main/en/getting-started/docker/
+website: https://castopod.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/ad-aures/castopod
 support: https://docs.castopod.org/main/en/getting-started/docker/

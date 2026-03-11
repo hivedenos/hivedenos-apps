@@ -1,12 +1,13 @@
-version: '3.9'
 services:
   homeassistant:
     container_name: homeassistant
-    image: 
+    image: home-assistant/home-assistant:stable
     volumes:
-      - /PATH_TO_YOUR_CONFIG:/config
+      - ./config:/config
       - /etc/localtime:/etc/localtime:ro
       - /run/dbus:/run/dbus:ro
+    environment:
+      - TZ=America/New_York
     restart: unless-stopped
     privileged: true
     network_mode: host

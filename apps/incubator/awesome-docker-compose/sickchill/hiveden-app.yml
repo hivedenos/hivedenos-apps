@@ -1,11 +1,13 @@
 manifestVersion: 1.1
 id: sickchill
 category: video-downloader
-name: Sickchill
+name: SickChill
 version: latest
-tagline: SickChill is an automatic video library manager for TV shows.
-description: SickChill is an automatic video library manager for TV shows. It watches
-  for new episodes of your favorite shows, and when they are posted it does its magic.
+tagline: Automatically find and download new episodes of your favorite TV shows and
+  anime.
+description: Automatically find and download new episodes of your favorite TV shows
+  and anime. It searches torrents and Usenet, grabs subtitles, and organizes your
+  library.
 developer: SickChill
 dependencies: []
 gallery: []
@@ -14,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://sickchill.github.io/
+website: https://sickchill.github.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/SickChill/sickchill
 support: https://github.com/SickChill/SickChill/wiki/Docker

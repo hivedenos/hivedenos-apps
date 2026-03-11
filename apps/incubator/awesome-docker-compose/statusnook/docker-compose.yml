@@ -1,9 +1,14 @@
-version: '3.9'
 services:
-    vigil:
-        image: 'valeriansaliou/vigil:v1.26.3'
-        volumes:
-            - './config.cfg:/etc/vigil.cfg'
-        ports:
-            - '8080:8080'
-        restart: always
+  statusnook:
+    image: goksan/statusnook:latest
+    container_name: statusnook
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - NODE_ENV=production
+      - ADMIN_USERNAME=${ADMIN_USERNAME}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
+      - SECRET_KEY=${SECRET_KEY}

@@ -1,6 +1,13 @@
-version: "3.8"
-
 services:
   copyparty:
-    image: copyparty/ac:latest
+    image: copyparty/ac
+    container_name: copyparty
     restart: unless-stopped
+    ports:
+      - 3923:3923
+    volumes:
+      - ./config:/cfg
+      - ./data:/w
+    environment:
+      - PUID=1000
+      - PGID=1000

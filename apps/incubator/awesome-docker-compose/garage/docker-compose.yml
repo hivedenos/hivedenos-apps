@@ -1,0 +1,16 @@
+services:
+  garage:
+    image: dxflrs/garage:latest
+    container_name: garage
+    restart: unless-stopped
+    ports:
+      - "3900:3900"
+      - "3901:3901"
+      - "3902:3902"
+      - "3903:3903"
+    volumes:
+      - ./config:/etc/garage
+      - ./data:/var/lib/garage
+    environment:
+      - GARAGE_RPC_SECRET=${GARAGE_RPC_SECRET}
+    command: server

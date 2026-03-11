@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: calibre-linuxserver-io
+category: e-books
+name: Calibre (LinuxServer.io)
+version: latest
+tagline: Take full control of your digital library.
+description: Take full control of your digital library. Organize, convert, and read
+  e-books across all your devices with this comprehensive management software.
+developer: kovidgoyal
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://calibre-ebook.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/kovidgoyal/calibre
+support: https://github.com/linuxserver/docker-calibre

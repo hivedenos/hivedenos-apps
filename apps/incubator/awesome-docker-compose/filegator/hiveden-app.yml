@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: filegator
-category: file-transfer-web-based-file-managers
+category: storage-file-transfer
 name: FileGator
 version: latest
-tagline: FileGator is a powerful multi-user file manager with a single page front-end.
-description: FileGator is a powerful multi-user file manager with a single page front-end.
+tagline: Manage files and folders using a free, self-hosted web application.
+description: Manage files and folders using a free, self-hosted web application. Enjoy
+  advanced features like drag-and-drop, zip support, and Amazon S3 integration.
 developer: filegator
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://filegator.io/
+website: https://filegator.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/filegator/filegator
 support: https://docs.filegator.io/install.html

@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: weblate
 category: localization
 name: Weblate
-version: 16-alpine
-tagline: Web-based translation tool with tight version control integration.
-description: Web-based translation tool with tight version control integration.
+version: latest
+tagline: Translate your projects continuously.
+description: Translate your projects continuously. This tool offers Git integration,
+  quality checks, and translation propagation in a simple web interface.
 developer: WeblateOrg
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://weblate.org/
+website: https://weblate.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/WeblateOrg/weblate
 support: https://docs.weblate.org/en/latest/admin/install/docker.html

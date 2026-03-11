@@ -1,10 +1,12 @@
 manifestVersion: 1.1
 id: firezone
-category: vpn-mesh-networking
+category: mesh-networking
 name: Firezone
 version: latest
-tagline: WireGuard based VPN Server and Firewall.
-description: WireGuard based VPN Server and Firewall.
+tagline: Replace your VPN with a fast, zero-trust solution built on WireGuard.
+description: Replace your VPN with a fast, zero-trust solution built on WireGuard.
+  Create simple access policies and sync users from your identity provider for easy
+  management.
 developer: firezone
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.firezone.dev/
+website: https://www.firezone.dev?utm_source=awesome-docker-compose.com
 repo: https://github.com/firezone/firezone
-support: https://www.firezone.dev/docs/deploy/docker
+support: https://github.com/firezone/firezone/blob/main/docker-compose.yml

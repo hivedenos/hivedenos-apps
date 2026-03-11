@@ -2,9 +2,10 @@ manifestVersion: 1.1
 id: cockpit
 category: cms
 name: Cockpit
-version: pro-latest
-tagline: Simple Content Platform to manage any structured content.
-description: Simple Content Platform to manage any structured content.
+version: latest
+tagline: Build digital solutions with an open-source, API-first headless platform.
+description: Build digital solutions with an open-source, API-first headless platform.
+  Manage structured content, maintain data sovereignty, and avoid vendor lock-in.
 developer: Cockpit-HQ
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://getcockpit.com/
+website: https://getcockpit.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/Cockpit-HQ/Cockpit
 support: https://getcockpit.com/documentation/core/quickstart/installation

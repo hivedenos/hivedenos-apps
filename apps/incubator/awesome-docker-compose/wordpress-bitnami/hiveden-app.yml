@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: wordpress-bitnami
+category: blogging-platform
+name: WordPress (Bitnami)
+version: '11.4'
+tagline: Create stunning websites, blogs, or apps without writing code.
+description: Create stunning websites, blogs, or apps without writing code. Use intuitive
+  design tools, real-time editing, and thousands of plugins to build anything.
+developer: Awesome Docker Compose
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://wordpress.org?utm_source=awesome-docker-compose.com
+repo: https://github.com/bitnami/containers/tree/main/bitnami/wordpress
+support: https://github.com/bitnami/containers/tree/main/bitnami/wordpress

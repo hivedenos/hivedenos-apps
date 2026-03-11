@@ -2,11 +2,11 @@ manifestVersion: 1.1
 id: redaxo
 category: cms
 name: REDAXO
-version: '8'
-tagline: Simple, flexible and useful content management system (documentation only
-  available in German).
-description: Simple, flexible and useful content management system (documentation
-  only available in German).
+version: latest
+tagline: Create everything from simple websites to complex portals with this flexible,
+  open-source content management system.
+description: Create everything from simple websites to complex portals with this flexible,
+  open-source content management system. Enjoy full control over your output code.
 developer: redaxo
 dependencies: []
 gallery: []
@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://redaxo.org/
+website: https://redaxo.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/redaxo/redaxo
-support: https://redaxo.org/doku/main/installation#docker
+support: https://redaxo.org/doku/5.x/installation#docker

@@ -1,0 +1,20 @@
+manifestVersion: 1.1
+id: ifconfig-io
+category: ip-and-domain
+name: ifconfig.io
+version: latest
+tagline: Get your public IP and network info instantly.
+description: Get your public IP and network info instantly. This lightweight service
+  is built for pure speed, handling thousands of requests per second with minimal
+  memory.
+developer: georgyo
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://ifconfig.io?utm_source=awesome-docker-compose.com
+repo: https://github.com/georgyo/ifconfig.io
+support: https://github.com/georgyo/ifconfig.io#deployment

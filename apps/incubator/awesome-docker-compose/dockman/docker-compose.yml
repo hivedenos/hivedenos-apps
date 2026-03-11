@@ -1,0 +1,14 @@
+services:
+  dockman:
+    image: ghcr.io/ra341/dockman:latest
+    container_name: dockman
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./data:/app/data
+      - ./stacks:/app/stacks
+    environment:
+      - ADMIN_USERNAME=${ADMIN_USERNAME}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}

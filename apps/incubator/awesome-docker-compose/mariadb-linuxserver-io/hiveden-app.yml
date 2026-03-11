@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: mariadb-linuxserver-io
+category: database
+name: MariaDB (LinuxServer.io)
+version: latest
+tagline: Deploy a MariaDB database server using a secure, multi-arch Docker image.
+description: Deploy a MariaDB database server using a secure, multi-arch Docker image.
+  Features easy user mapping, regular updates, and a custom base image for stability.
+developer: linuxserver
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://github.com/linuxserver/docker-mariadb?utm_source=awesome-docker-compose.com
+repo: https://github.com/linuxserver/docker-mariadb
+support: https://github.com/linuxserver/docker-mariadb

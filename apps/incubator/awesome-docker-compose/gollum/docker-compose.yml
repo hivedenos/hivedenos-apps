@@ -1,14 +1,13 @@
-version: 
- 
 services:
   gollum:
-    image: gollumwiki/gollum:master
-    restart: always
+    image: gollum/gollum:latest
+    container_name: gollum
     ports:
-      - 
+      - "4567:4567"
     volumes:
-      - ${PWD}/config.rb:/etc/gollum/config.rb
-      - ${PWD}/gitconfig:/home/www-data/.gitconfig
-      - ${PWD}/wikidata:/wiki
-    command:
-      - 
+      - ./wiki-data:/wiki
+    environment:
+      - GIT_AUTHOR_NAME=${GIT_AUTHOR_NAME}
+      - GIT_AUTHOR_EMAIL=${GIT_AUTHOR_EMAIL}
+    # Initialize the wiki with a specific adapter if needed, or allow uploads
+    # command: --allow-uploads page

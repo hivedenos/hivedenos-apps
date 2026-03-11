@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: phplist
-category: email-mailing-lists-and-newsletters
-name: Phplist
-version: medium
-tagline: Newsletter and email marketing with advanced management of subscribers, bounces,
-  and plugins.
-description: Newsletter and email marketing with advanced management of subscribers,
-  bounces, and plugins.
+category: mailing-and-newsletter
+name: phpList
+version: '10'
+tagline: Send email marketing campaigns and announcements to millions of subscribers.
+description: Send email marketing campaigns and announcements to millions of subscribers.
+  This open-source software offers a secure, flexible, and free way to manage lists.
 developer: phpList
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.phplist.org/
+website: https://www.phplist.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/phpList/phplist3
 support: https://github.com/phpList/phplist-docker

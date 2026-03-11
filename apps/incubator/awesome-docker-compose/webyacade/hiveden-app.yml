@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: webyacade
+category: game-emulation
+name: "web\u042Fcade"
+version: latest
+tagline: Play classic console games natively in your browser using custom feeds.
+description: Play classic console games natively in your browser using custom feeds.
+  Enjoy full gamepad support across desktop, mobile, and Xbox without video streaming.
+developer: webrcade
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://www.webrcade.com?utm_source=awesome-docker-compose.com
+repo: https://github.com/webrcade/webrcade
+support: https://docs.webrcade.com/advanced/docker/

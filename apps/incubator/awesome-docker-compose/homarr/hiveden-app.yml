@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: homarr
-category: personal-dashboards
+category: personal-dashboard
 name: Homarr
 version: latest
-tagline: Sleek, modern dashboard with many integrations and web-based config.
-description: Sleek, modern dashboard with many integrations and web-based config.
+tagline: Put all your server apps and services at your fingertips.
+description: Put all your server apps and services at your fingertips. This sleek,
+  modern dashboard offers seamless integrations and easy drag-and-drop customization.
 developer: ajnart
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://homarr.dev/
+website: https://homarr.dev?utm_source=awesome-docker-compose.com
 repo: https://github.com/ajnart/homarr
-support: https://homarr.dev/docs/getting-started/installation
+support: https://homarr.dev/docs/getting-started/installation/docker

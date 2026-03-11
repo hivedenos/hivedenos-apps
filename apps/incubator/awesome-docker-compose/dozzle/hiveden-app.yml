@@ -3,8 +3,10 @@ id: dozzle
 category: container-management
 name: Dozzle
 version: latest
-tagline: Real-time logging and monitoring for Docker in the browser.
-description: Real-time logging and monitoring for Docker in the browser.
+tagline: Monitor container logs in real-time with a lightweight, open-source, and
+  secure viewer.
+description: Monitor container logs in real-time with a lightweight, open-source,
+  and secure viewer. Self-host to keep your logs private. Supports Docker and Podman.
 developer: amir20
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://dozzle.dev/
+website: https://dozzle.dev?utm_source=awesome-docker-compose.com
 repo: https://github.com/amir20/dozzle
 support: https://dozzle.dev/guide/getting-started

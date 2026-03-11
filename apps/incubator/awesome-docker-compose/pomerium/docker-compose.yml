@@ -1,26 +1,10 @@
-version: '3.9'
- 
 services:
   pomerium:
-    image: pomerium/pomerium:v0.27.0
+    image: pomerium/pomerium:latest
+    container_name: pomerium
     ports:
-      - 443:443
-    restart: always
+      - "80:80"
+      - "443:443"
     environment:
-      POMERIUM_ZERO_TOKEN: <CLUSTER_TOKEN>
-      XDG_CACHE_HOME: /var/cache
-    volumes:
-      - ./pomerium-cache:/var/cache
-    networks:
-      main:
-        aliases:
-          - verify.<CLUSTER_STARTER_SUBDOMAIN>.pomerium.app
-  verify:
-    image: cr.pomerium.com/pomerium/verify:latest
-    networks:
-      main:
-        aliases:
-          - verify
- 
-networks:
-  main: {}
+      - POMERIUM_CLUSTER_TOKEN=${POMERIUM_CLUSTER_TOKEN}
+    restart: unless-stopped

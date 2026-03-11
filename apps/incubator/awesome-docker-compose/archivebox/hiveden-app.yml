@@ -2,11 +2,10 @@ manifestVersion: 1.1
 id: archivebox
 category: archiving
 name: ArchiveBox
-version: latest
-tagline: Self-hosted wayback machine that creates HTML & screenshot archives of sites
-  from your bookmarks, browsing history, RSS...
-description: Self-hosted wayback machine that creates HTML & screenshot archives of
-  sites from your bookmarks, browsing history, RSS feeds, or other sources.
+version: master
+tagline: A self-hosted solution to collect and save web pages offline.
+description: A self-hosted solution to collect and save web pages offline. Import
+  from browser history or bookmarks and save as HTML, PDF, media, and more.
 developer: ArchiveBox
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://archivebox.io/
+website: https://archivebox.io?utm_source=awesome-docker-compose.com
 repo: https://github.com/ArchiveBox/ArchiveBox
-support: https://github.com/ArchiveBox/ArchiveBox#quickstart
+support: https://github.com/ArchiveBox/ArchiveBox/blob/dev/docker-compose.yml

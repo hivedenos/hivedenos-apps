@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: kong-bitnami
+category: api-management
+name: Kong (Bitnami)
+version: '15'
+tagline: Deploy a lightweight, fast, and flexible API gateway across any cloud or
+  platform.
+description: Deploy a lightweight, fast, and flexible API gateway across any cloud
+  or platform. Automate the API lifecycle and extend functionality with a rich plugin
+  library.
+developer: Kong
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://konghq.com/products/kong-gateway?utm_source=awesome-docker-compose.com
+repo: https://github.com/Kong/kong
+support: https://hub.docker.com/r/bitnami/kong

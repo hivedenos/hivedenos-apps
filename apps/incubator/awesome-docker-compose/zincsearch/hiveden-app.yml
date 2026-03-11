@@ -3,8 +3,9 @@ id: zincsearch
 category: search-engine-solution
 name: ZincSearch
 version: latest
-tagline: Search engine that requires minimal resources (alternative to Elasticsearch).
-description: Search engine that requires minimal resources (alternative to Elasticsearch).
+tagline: Get a powerful full-text search engine in a single binary.
+description: Get a powerful full-text search engine in a single binary. A lightweight
+  alternative to Elasticsearch with compatible APIs for easy data ingestion.
 developer: zincsearch
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://zincsearch-docs.zinc.dev/
+website: https://zincsearch-docs.zinc.dev?utm_source=awesome-docker-compose.com
 repo: https://github.com/zincsearch/zincsearch
 support: https://zincsearch-docs.zinc.dev/installation/

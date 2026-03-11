@@ -2,12 +2,11 @@ manifestVersion: 1.1
 id: kyoo
 category: media-server
 name: Kyoo
-version: '4.7'
-tagline: Innovative media browser designed for seamless streaming of anime, series
-  and movies, offering advanced features like d...
-description: Innovative media browser designed for seamless streaming of anime, series
-  and movies, offering advanced features like dynamic transcoding, auto watch history
-  and intelligent metadata retrieval.
+version: latest
+tagline: Manage your personal media library with a portable platform that tracks watch
+  history, organizes content by genre, and...
+description: Manage your personal media library with a portable platform that tracks
+  watch history, organizes content by genre, and offers personalized recommendations.
 developer: zoriya
 dependencies: []
 gallery: []
@@ -16,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://kyoo.zoriya.dev/
+website: https://kyoo.zoriya.dev?utm_source=awesome-docker-compose.com
 repo: https://github.com/zoriya/kyoo
 support: https://github.com/zoriya/Kyoo/blob/master/INSTALLING.md

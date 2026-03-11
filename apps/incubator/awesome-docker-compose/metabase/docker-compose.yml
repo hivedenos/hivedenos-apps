@@ -1,38 +1,28 @@
-version: 
- 
 services:
   metabase:
     image: metabase/metabase:latest
     container_name: metabase
-    hostname: metabase
-    volumes:
-      - /dev/urandom:/dev/random:ro
     ports:
-      - 3000:3000
+      - "3000:3000"
     environment:
       MB_DB_TYPE: postgres
-      MB_DB_DBNAME: metabaseappdb
+      MB_DB_DBNAME: metabase
       MB_DB_PORT: 5432
       MB_DB_USER: metabase
-      MB_DB_PASS: mysecretpassword
+      MB_DB_PASS: ${MB_DB_PASS}
       MB_DB_HOST: postgres
-    networks:
-      - metanet1
-    healthcheck:
-      test: curl --fail -I http://localhost:3000/api/health || exit 1
-      interval: 15s
-      timeout: 5s
-      retries: 5
+      MB_ENCRYPTION_SECRET_KEY: ${MB_ENCRYPTION_SECRET_KEY}
+    depends_on:
+      - postgres
+    restart: unless-stopped
+
   postgres:
-    image: postgres:latest
-    container_name: postgres
-    hostname: postgres
+    image: postgres:15-alpine
+    container_name: metabase_postgres
     environment:
+      POSTGRES_DB: metabase
       POSTGRES_USER: metabase
-      POSTGRES_DB: metabaseappdb
-      POSTGRES_PASSWORD: mysecretpassword
-    networks:
-      - metanet1
-networks:
-  metanet1:
-    driver: bridge
+      POSTGRES_PASSWORD: ${MB_DB_PASS}
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+    restart: unless-stopped

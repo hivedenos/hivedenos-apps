@@ -1,8 +1,11 @@
-version: 
- 
 services:
   atheos:
     image: hlsiira/atheos:latest
+    container_name: atheos
     ports:
-      - 8080:80
+      - "8080:80"
+    volumes:
+      - ./data:/var/www/html/data
+      - ./plugins:/var/www/html/plugins
+      - ./workspace:/var/www/html/workspace
     restart: unless-stopped

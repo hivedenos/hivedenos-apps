@@ -1,6 +1,135 @@
-version: "3.8"
-
 services:
-  stackstorm:
-    image: ${ST2_IMAGE_REPO:-stackstorm/}st2web:${ST2_VERSION:-latest}
+  mongo:
+    image: mongo:4.4
     restart: unless-stopped
+    volumes:
+      - ./data/mongo:/data/db
+
+  rabbitmq:
+    image: rabbitmq:3.8-management
+    restart: unless-stopped
+    volumes:
+      - ./data/rabbitmq:/var/lib/rabbitmq
+
+  redis:
+    image: redis:6
+    restart: unless-stopped
+    volumes:
+      - ./data/redis:/data
+
+  st2auth:
+    image: stackstorm/st2auth:${ST2_VERSION:-3.8.0}
+    restart: unless-stopped
+    environment:
+      - ST2_USER=${ST2_USER}
+      - ST2_PASSWORD=${ST2_PASSWORD}
+    ports:
+      - "9100:9100"
+    depends_on:
+      - mongo
+      - rabbitmq
+      - redis
+
+  st2api:
+    image: stackstorm/st2api:${ST2_VERSION:-3.8.0}
+    restart: unless-stopped
+    ports:
+      - "9101:9101"
+    depends_on:
+      - mongo
+      - rabbitmq
+      - redis
+    volumes:
+      - ./data/packs:/opt/stackstorm/packs
+      - ./data/virtualenvs:/opt/stackstorm/virtualenvs
+
+  st2stream:
+    image: stackstorm/st2stream:${ST2_VERSION:-3.8.0}
+    restart: unless-stopped
+    ports:
+      - "9102:9102"
+    depends_on:
+      - mongo
+      - rabbitmq
+      - redis
+
+  st2sensorcontainer:
+    image: stackstorm/st2sensorcontainer:${ST2_VERSION:-3.8.0}
+    restart: unless-stopped
+    depends_on:
+      - mongo
+      - rabbitmq
+      - redis
+    volumes:
+      - ./data/packs:/opt/stackstorm/packs
+      - ./data/virtualenvs:/opt/stackstorm/virtualenvs
+
+  st2rulesengine:
+    image: stackstorm/st2rulesengine:${ST2_VERSION:-3.8.0}
+    restart: unless-stopped
+    depends_on:
+      - mongo
+      - rabbitmq
+      - redis
+
+  st2actionrunner:
+    image: stackstorm/st2actionrunner:${ST2_VERSION:-3.8.0}
+    restart: unless-stopped
+    depends_on:
+      - mongo
+      - rabbitmq
+      - redis
+    volumes:
+      - ./data/packs:/opt/stackstorm/packs
+      - ./data/virtualenvs:/opt/stackstorm/virtualenvs
+
+  st2workflowengine:
+    image: stackstorm/st2workflowengine:${ST2_VERSION:-3.8.0}
+    restart: unless-stopped
+    depends_on:
+      - mongo
+      - rabbitmq
+      - redis
+
+  st2notifier:
+    image: stackstorm/st2notifier:${ST2_VERSION:-3.8.0}
+    restart: unless-stopped
+    depends_on:
+      - mongo
+      - rabbitmq
+      - redis
+
+  st2garbagecollector:
+    image: stackstorm/st2garbagecollector:${ST2_VERSION:-3.8.0}
+    restart: unless-stopped
+    depends_on:
+      - mongo
+      - rabbitmq
+      - redis
+
+  st2timersengine:
+    image: stackstorm/st2timersengine:${ST2_VERSION:-3.8.0}
+    restart: unless-stopped
+    depends_on:
+      - mongo
+      - rabbitmq
+      - redis
+
+  st2scheduler:
+    image: stackstorm/st2scheduler:${ST2_VERSION:-3.8.0}
+    restart: unless-stopped
+    depends_on:
+      - mongo
+      - rabbitmq
+      - redis
+
+  st2client:
+    image: stackstorm/st2client:${ST2_VERSION:-3.8.0}
+    restart: unless-stopped
+    depends_on:
+      - st2api
+      - st2auth
+    environment:
+      - ST2_AUTH_URL=http://st2auth:9100/
+      - ST2_API_URL=http://st2api:9101/
+    command: tail -f /dev/null

@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: misskey
-category: social-networks-and-forums
+category: social-network-and-forums
 name: Misskey
-version: 7-alpine
-tagline: Decentralized app-like microblogging server/SNS for the Fediverse, using
-  the ActivityPub protocol like GNU social and M...
-description: Decentralized app-like microblogging server/SNS for the Fediverse, using
-  the ActivityPub protocol like GNU social and Mastodon.
+version: latest
+tagline: Launch a fully customizable, decentralized social network.
+description: Launch a fully customizable, decentralized social network. Connect to
+  the Fediverse, manage communities, and scale effortlessly with open-source software.
 developer: misskey-dev
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://misskey.io/
+website: https://misskey-hub.net?utm_source=awesome-docker-compose.com
 repo: https://github.com/misskey-dev/misskey
 support: https://misskey-hub.net/en/docs/for-admin/install/guides/docker/

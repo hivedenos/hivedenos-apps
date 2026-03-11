@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: mailcow
-category: email-servers
-name: Mailcow
+category: email-server
+name: mailcow
 version: '1.23'
-tagline: Mail server suite based on Dovecot, Postfix and other open source software,
-  that provides a modern Web UI for administr...
-description: Mail server suite based on Dovecot, Postfix and other open source software,
-  that provides a modern Web UI for administration.
+tagline: Deploy a complete, containerized email server suite.
+description: Deploy a complete, containerized email server suite. Manage domains,
+  secure communications with built-in encryption, and integrate external authentication.
 developer: mailcow
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://mailcow.email/
+website: https://mailcow.email?utm_source=awesome-docker-compose.com
 repo: https://github.com/mailcow/mailcow-dockerized
 support: https://docs.mailcow.email/getstarted/install/

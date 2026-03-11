@@ -1,0 +1,13 @@
+services:
+  babybuddy:
+    image: linuxserver/babybuddy:latest
+    restart: unless-stopped
+    ports:
+      - 8000:8000
+    volumes:
+      - ./data:/app/data
+    environment:
+      - CSRF_TRUSTED_ORIGINS=http://localhost:8000,http://127.0.0.1:8000
+      - DEBUG=False
+      - TIME_ZONE=UTC
+      - SECRET_KEY=${SECRET_KEY}

@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: freescout-tiredofit
+category: ticketing
+name: FreeScout (tiredofit)
+version: '10.6'
+tagline: Deliver professional customer support with a free, self-hosted help desk.
+description: Deliver professional customer support with a free, self-hosted help desk.
+  Manage unlimited agents, tickets, and shared mailboxes without compromising privacy.
+developer: freescout-help-desk
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://freescout.net?utm_source=awesome-docker-compose.com
+repo: https://github.com/freescout-help-desk/freescout
+support: https://github.com/tiredofit/docker-freescout

@@ -3,8 +3,9 @@ id: tubesync
 category: automation
 name: TubeSync
 version: latest
-tagline: Syncs YouTube channels and playlists to a locally hosted media server.
-description: Syncs YouTube channels and playlists to a locally hosted media server.
+tagline: Sync YouTube channels and playlists directly to your local server.
+description: Sync YouTube channels and playlists directly to your local server. Automate
+  downloads, organize media, and update Plex or Jellyfin for a personal video archive.
 developer: meeb
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/automation/tubesync
+website: https://github.com/meeb/tubesync?utm_source=awesome-docker-compose.com
 repo: https://github.com/meeb/tubesync
 support: https://github.com/meeb/tubesync#installation

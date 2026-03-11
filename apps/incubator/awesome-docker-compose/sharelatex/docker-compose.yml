@@ -1,0 +1,34 @@
+services:
+  sharelatex:
+    image: sharelatex/sharelatex:latest
+    container_name: sharelatex
+    restart: always
+    depends_on:
+      - mongo
+      - redis
+    ports:
+      - "80:80"
+    volumes:
+      - ./sharelatex-data:/var/lib/sharelatex
+    environment:
+      SHARELATEX_MONGO_URL: mongodb://mongo/sharelatex
+      SHARELATEX_REDIS_HOST: redis
+      REDIS_HOST: redis
+      SHARELATEX_APP_NAME: Overleaf Community Edition
+      SHARELATEX_NAV_TITLE: Overleaf Community Edition
+      SHARELATEX_ADMIN_EMAIL: ${ADMIN_EMAIL}
+      SHARELATEX_SESSION_SECRET: ${SESSION_SECRET}
+
+  mongo:
+    image: mongo:4.4
+    container_name: mongo
+    restart: always
+    volumes:
+      - ./mongo-data:/data/db
+
+  redis:
+    image: redis:6
+    container_name: redis
+    restart: always
+    volumes:
+      - ./redis-data:/data

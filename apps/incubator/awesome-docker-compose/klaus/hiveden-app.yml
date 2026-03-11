@@ -3,8 +3,9 @@ id: klaus
 category: git-server
 name: Klaus
 version: latest
-tagline: Simple, easy-to-set-up Git web viewer that Just Works.
-description: Simple, easy-to-set-up Git web viewer that Just Works.
+tagline: Instantly view your Git repositories in a web browser.
+description: Instantly view your Git repositories in a web browser. Get started easily
+  with Docker or pip. Features syntax highlighting, Markdown rendering, and code navigation.
 developer: jonashaag
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://klausdemo.lophus.org/
+website: https://github.com/jonashaag/klaus?utm_source=awesome-docker-compose.com
 repo: https://github.com/jonashaag/klaus
 support: https://github.com/jonashaag/klaus#running-with-docker

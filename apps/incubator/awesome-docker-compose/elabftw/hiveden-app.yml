@@ -3,11 +3,10 @@ id: elabftw
 category: cms
 name: eLabFTW
 version: latest
-tagline: Online lab notebook for research labs.
-description: "Online lab notebook for research labs. Store experiments, use a database\
-  \ to find reagents or protocols, use trusted timestamping to legally timestamp an\
-  \ experiment, export as pdf or zip archive, share with collaborators\xE2\x80\xA6\
-  ."
+tagline: Document experiments, manage lab resources, and schedule equipment with a
+  secure, open-source electronic lab notebook d...
+description: Document experiments, manage lab resources, and schedule equipment with
+  a secure, open-source electronic lab notebook designed for scientific collaboration.
 developer: elabftw
 dependencies: []
 gallery: []
@@ -16,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.elabftw.net/
+website: https://www.elabftw.net?utm_source=awesome-docker-compose.com
 repo: https://github.com/elabftw/elabftw
-support: https://doc.elabftw.net/install.html
+support: https://doc.elabftw.net/docs/category/installation

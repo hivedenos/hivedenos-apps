@@ -1,0 +1,16 @@
+services:
+  kodi-headless:
+    image: matthuisman/kodi-headless
+    container_name: kodi-headless
+    restart: always
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+    volumes:
+      - ./config:/config
+      - ./media:/media
+    ports:
+      - 8080:8080
+      - 9090:9090
+      - 9777:9777/udp

@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: portkey
-category: personal-dashboards
-name: portkey
+category: personal-dashboard
+name: Portkey
 version: latest
-tagline: A simple web portal that can act as startup page and shows a collection of
-  links/urls.
-description: A simple web portal that can act as startup page and shows a collection
-  of links/urls. Also supports adding custom pages. Everything with one config file.
+tagline: Create a simple, self-hosted startup page for your links.
+description: Create a simple, self-hosted startup page for your links. Display link
+  collections, add custom pages, and manage it all with one configuration file.
 developer: kodehat
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://demo.portkey.page/
+website: https://demo.portkey.page?utm_source=awesome-docker-compose.com
 repo: https://github.com/kodehat/portkey
 support: https://github.com/kodehat/portkey#docker

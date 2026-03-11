@@ -1,5 +1,3 @@
-version: '3.7'
- 
 services:
   cosmos-server:
     image: azukaar/cosmos-server:latest
@@ -7,9 +5,13 @@ services:
     hostname: cosmos-server
     restart: always
     privileged: true
+    ports:
+      - "80:80"
+      - "443:443"
+      - "4242:4242/udp"
+    environment:
+      - TZ=${TZ}
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket
-      - /:/mnt/host
-      - /var/lib/cosmos:/config
-    network_mode: host
+      - ./config:/config
+      - /:/mnt/host:ro

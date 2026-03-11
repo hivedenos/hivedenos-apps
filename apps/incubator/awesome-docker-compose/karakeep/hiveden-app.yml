@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: karakeep
-category: bookmarks-managers
+category: bookmark-manager
 name: Karakeep
-version: -release}
-tagline: A self-hostable bookmark-everything app (links, notes and images) with AI-based
-  automatic tagging and full text search.
-description: A self-hostable bookmark-everything app (links, notes and images) with
-  AI-based automatic tagging and full text search.
+version: latest
+tagline: Quickly save any content online.
+description: Quickly save any content online. This tool uses AI to automatically tag
+  your links, notes, and images, making everything instantly searchable.
 developer: karakeep-app
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://karakeep.app/
+website: https://karakeep.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/karakeep-app/karakeep
-support: https://docs.karakeep.app/Installation/docker
+support: https://docs.karakeep.app/installation/docker/

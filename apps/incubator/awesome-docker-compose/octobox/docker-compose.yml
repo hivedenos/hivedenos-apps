@@ -1,42 +1,45 @@
-version: '3'
- 
 services:
-  app:
-    image: octoboxio/octobox:latest
-    ports:
-      - 
+  db:
+    image: postgres:13-alpine
+    restart: unless-stopped
     environment:
-      - RAILS_ENV=development
-      - GITHUB_CLIENT_ID=${GITHUB_CLIENT_ID}
-      - GITHUB_CLIENT_SECRET=${GITHUB_CLIENT_SECRET}
-      - OCTOBOX_DATABASE_NAME=postgres
-      - OCTOBOX_DATABASE_USERNAME=postgres
-      - OCTOBOX_DATABASE_PASSWORD=development
-      - OCTOBOX_DATABASE_HOST=database.service.octobox.internal
-      - REDIS_URL=redis://redis.service.octobox.internal
-    networks:
-      - internal
-    depends_on:
-      - database.service.octobox.internal
-      - redis.service.octobox.internal
- 
-  database.service.octobox.internal:
-    image: postgres:16-alpine
+      POSTGRES_USER: octobox
+      POSTGRES_DB: octobox
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
-      - pg_data:/var/lib/postgresql/data
-    networks:
-      - internal
+      - ./db-data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:6-alpine
+    restart: unless-stopped
+    volumes:
+      - ./redis-data:/data
+
+  web:
+    image: octobox/octobox:latest
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
     environment:
-      - POSTGRES_PASSWORD=development
- 
-  redis.service.octobox.internal:
-    image: redis:7-alpine
-    networks:
-      - internal
- 
-volumes:
-  pg_data:
- 
-networks:
-  internal:
-    driver: bridge
+      DATABASE_URL: postgres://octobox:${POSTGRES_PASSWORD}@db:5432/octobox
+      REDIS_URL: redis://redis:6379/0
+      GITHUB_CLIENT_ID: ${GITHUB_CLIENT_ID}
+      GITHUB_CLIENT_SECRET: ${GITHUB_CLIENT_SECRET}
+      SECRET_KEY_BASE: ${SECRET_KEY_BASE}
+    depends_on:
+      - db
+      - redis
+
+  worker:
+    image: octobox/octobox:latest
+    restart: unless-stopped
+    command: bundle exec sidekiq
+    environment:
+      DATABASE_URL: postgres://octobox:${POSTGRES_PASSWORD}@db:5432/octobox
+      REDIS_URL: redis://redis:6379/0
+      GITHUB_CLIENT_ID: ${GITHUB_CLIENT_ID}
+      GITHUB_CLIENT_SECRET: ${GITHUB_CLIENT_SECRET}
+      SECRET_KEY_BASE: ${SECRET_KEY_BASE}
+    depends_on:
+      - db
+      - redis

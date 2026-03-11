@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: organizr
-category: personal-dashboards
+category: personal-dashboard
 name: Organizr
 version: latest
-tagline: Organizr aims to be your one stop shop for your Servers Frontend.
-description: Organizr aims to be your one stop shop for your Servers Frontend.
+tagline: Organize all your HTPC and homelab services into a single, easy-to-use webpage.
+description: Organize all your HTPC and homelab services into a single, easy-to-use
+  webpage. Manage user access, customize tabs, and access everything from one interface.
 developer: causefx
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/personal-dashboards/organizr
+website: https://github.com/causefx/Organizr?utm_source=awesome-docker-compose.com
 repo: https://github.com/causefx/Organizr
 support: https://github.com/causefx/Organizr

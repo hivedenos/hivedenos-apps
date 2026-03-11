@@ -1,21 +1,33 @@
-version: 
- 
 services:
-  icingadb:
-    image: icinga/icingadb
-    container_name: icingadb
-    networks:
-      - icinga
-    restart: always
+  db:
+    image: mariadb:10.11
     environment:
-      - ICINGADB_REDIS_HOST=redis-icingadb
-      - ICINGADB_REDIS_PORT=6379
-      - ICINGADB_REDIS_PASSWORD=123456
-      - ICINGADB_DATABASE_HOST=mariadb-icingadb
-      - ICINGADB_DATABASE_PORT=3306
-      - ICINGADB_DATABASE_DATABASE=icingadb
-      - ICINGADB_DATABASE_USER=icingadb
-      - ICINGADB_DATABASE_PASSWORD=123456
-networks:
-  icinga:
-    external: true
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: icingadb
+      MYSQL_USER: icingadb
+      MYSQL_PASSWORD: ${ICINGADB_DATABASE_PASSWORD}
+    volumes:
+      - ./db-data:/var/lib/mysql
+    restart: unless-stopped
+
+  redis:
+    image: redis:7
+    command: redis-server --requirepass ${REDIS_PASSWORD}
+    volumes:
+      - ./redis-data:/data
+    restart: unless-stopped
+
+  icingadb:
+    image: icinga/icingadb:latest
+    environment:
+      ICINGADB_DATABASE_TYPE: mysql
+      ICINGADB_DATABASE_HOST: db
+      ICINGADB_DATABASE_USER: icingadb
+      ICINGADB_DATABASE_PASSWORD: ${ICINGADB_DATABASE_PASSWORD}
+      ICINGADB_DATABASE_NAME: icingadb
+      ICINGADB_REDIS_HOST: redis
+      ICINGADB_REDIS_PASSWORD: ${REDIS_PASSWORD}
+    depends_on:
+      - db
+      - redis
+    restart: unless-stopped

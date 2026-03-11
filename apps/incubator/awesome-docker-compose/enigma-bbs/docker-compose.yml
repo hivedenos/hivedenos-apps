@@ -1,16 +1,18 @@
-version: 
 services:
   enigma-bbs:
-    container_name: ENiGMABBS
     image: enigmabbs/enigma-bbs:latest
-    ports:
-      - 8888:8888
-    volumes:
-      - $(pwd)/config:/enigma-bbs/config
-      - $(pwd)/db:/enigma-bbs/db
-      - $(pwd)/logs:/enigma-bbs/logs
-      - $(pwd)/filebase:/enigma-bbs/filebase
-      - $(pwd)/art:/enigma-bbs/art
-      - $(pwd)/mods:/enigma-bbs/mods
-      - $(pwd)/mail:/mail
+    container_name: enigma-bbs
     restart: unless-stopped
+    ports:
+      - "8888:8888" # Telnet
+      - "8889:8889" # SSH
+      - "8080:8080" # HTTP
+      - "8443:8443" # HTTPS
+    volumes:
+      - ./config:/enigma-bbs/config
+      - ./data/db:/enigma-bbs/db
+      - ./data/filebase:/enigma-bbs/filebase
+      - ./data/art:/enigma-bbs/art
+      - ./data/logs:/enigma-bbs/logs
+      - ./data/mods:/enigma-bbs/mods
+      - ./data/mail:/enigma-bbs/mail

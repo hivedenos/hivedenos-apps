@@ -1,11 +1,8 @@
-version: 
 services:
   plik:
-    image: rootgg/plik:latest
-    container_name: plik
-    volumes:
-      - ./plikd.cfg:/home/plik/server/plikd.cfg
-      - ./data:/data
+    image: rootgg/plik
+    restart: unless-stopped
     ports:
-      - 8080:8080   
-    restart: 
+      - "8080:8080"
+    volumes:
+      - ./data:/home/plik/server/files

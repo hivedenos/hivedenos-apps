@@ -1,0 +1,21 @@
+manifestVersion: 1.1
+id: checkmate
+category: network-monitoring
+name: Checkmate
+version: latest
+tagline: Get real-time insights into your infrastructure with this open source monitoring
+  platform.
+description: Get real-time insights into your infrastructure with this open source
+  monitoring platform. Track websites, servers, Docker containers, and more with instant
+  alerts.
+developer: bluewave-labs
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://checkmate.so?utm_source=awesome-docker-compose.com
+repo: https://github.com/bluewave-labs/Checkmate
+support: https://docs.checkmate.so/checkmate-2.1/users-guide/quickstart

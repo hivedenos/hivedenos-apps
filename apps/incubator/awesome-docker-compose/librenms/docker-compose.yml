@@ -1,41 +1,30 @@
-version: '3.9'
- 
-name: librenms
- 
 services:
   db:
-    image: mariadb:10
+    image: mariadb:10.11
     container_name: librenms_db
     command:
-      - 
-      - 
-      - 
-      - 
-      - 
-    volumes:
-      - 
+      - "mysqld"
+      - "--innodb-file-per-table=1"
+      - "--lower-case-table-names=0"
+      - "--character-set-server=utf8mb4"
+      - "--collation-server=utf8mb4_unicode_ci"
     environment:
-      - 
-      - 
-      - 
-      - 
-      - 
+      - TZ=UTC
+      - MARIADB_RANDOM_ROOT_PASSWORD=yes
+      - MARIADB_DATABASE=librenms
+      - MARIADB_USER=librenms
+      - MARIADB_PASSWORD=${MYSQL_PASSWORD}
+    volumes:
+      - ./db-data:/var/lib/mysql
     restart: always
- 
+
   redis:
     image: redis:7.2-alpine
     container_name: librenms_redis
     environment:
-      - 
+      - TZ=UTC
     restart: always
- 
-  msmtpd:
-    image: crazymax/msmtpd:latest
-    container_name: librenms_msmtpd
-    env_file:
-      - 
-    restart: always
- 
+
   librenms:
     image: librenms/librenms:latest
     container_name: librenms
@@ -44,28 +33,24 @@ services:
       - NET_ADMIN
       - NET_RAW
     ports:
-      - target: 8000
-        published: 8000
-        protocol: tcp
+      - "8000:8000"
+    environment:
+      - TZ=UTC
+      - PUID=1000
+      - PGID=1000
+      - DB_HOST=db
+      - DB_NAME=librenms
+      - DB_USER=librenms
+      - DB_PASSWORD=${MYSQL_PASSWORD}
+      - DB_TIMEOUT=60
+      - REDIS_HOST=redis
+    volumes:
+      - ./librenms-data:/data
+    restart: always
     depends_on:
       - db
       - redis
-      - msmtpd
-    volumes:
-      - 
-    env_file:
-      - 
-    environment:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-    restart: always
- 
+
   dispatcher:
     image: librenms/librenms:latest
     container_name: librenms_dispatcher
@@ -76,23 +61,22 @@ services:
     depends_on:
       - librenms
       - redis
-    volumes:
-      - 
-    env_file:
-      - 
     environment:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
+      - TZ=UTC
+      - PUID=1000
+      - PGID=1000
+      - DB_HOST=db
+      - DB_NAME=librenms
+      - DB_USER=librenms
+      - DB_PASSWORD=${MYSQL_PASSWORD}
+      - DB_TIMEOUT=60
+      - REDIS_HOST=redis
+      - DISPATCHER_NODE_ID=dispatcher1
+      - SIDECAR_DISPATCHER=1
+    volumes:
+      - ./librenms-data:/data
     restart: always
- 
+
   syslogng:
     image: librenms/librenms:latest
     container_name: librenms_syslogng
@@ -104,28 +88,23 @@ services:
       - librenms
       - redis
     ports:
-      - target: 514
-        published: 514
-        protocol: tcp
-      - target: 514
-        published: 514
-        protocol: udp
-    volumes:
-      - 
-    env_file:
-      - 
+      - "514:514/tcp"
+      - "514:514/udp"
     environment:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
+      - TZ=UTC
+      - PUID=1000
+      - PGID=1000
+      - DB_HOST=db
+      - DB_NAME=librenms
+      - DB_USER=librenms
+      - DB_PASSWORD=${MYSQL_PASSWORD}
+      - DB_TIMEOUT=60
+      - REDIS_HOST=redis
+      - SIDECAR_SYSLOGNG=1
+    volumes:
+      - ./librenms-data:/data
     restart: always
- 
+
   snmptrapd:
     image: librenms/librenms:latest
     container_name: librenms_snmptrapd
@@ -137,24 +116,19 @@ services:
       - librenms
       - redis
     ports:
-      - target: 162
-        published: 162
-        protocol: tcp
-      - target: 162
-        published: 162
-        protocol: udp
-    volumes:
-      - 
-    env_file:
-      - 
+      - "162:162/tcp"
+      - "162:162/udp"
     environment:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
+      - TZ=UTC
+      - PUID=1000
+      - PGID=1000
+      - DB_HOST=db
+      - DB_NAME=librenms
+      - DB_USER=librenms
+      - DB_PASSWORD=${MYSQL_PASSWORD}
+      - DB_TIMEOUT=60
+      - REDIS_HOST=redis
+      - SIDECAR_SNMPTRAPD=1
+    volumes:
+      - ./librenms-data:/data
     restart: always

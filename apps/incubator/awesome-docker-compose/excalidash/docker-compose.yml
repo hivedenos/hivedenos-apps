@@ -1,31 +1,24 @@
 services:
-  backend:
-    image: zimengxiong/excalidash-backend:latest
-    container_name: excalidash-backend
-    environment:
-      - DATABASE_URL=file:/app/prisma/dev.db
-      - PORT=8000
-      - NODE_ENV=production
-    volumes:
-      - backend-data:/app/prisma
-    networks:
-      - excalidash-network
+  excalidash:
+    image: ghcr.io/zimengxiong/excalidash:latest
+    container_name: excalidash
     restart: unless-stopped
- 
-  frontend:
-    image: zimengxiong/excalidash-frontend:latest
-    container_name: excalidash-frontend
     ports:
-      - 
+      - 3000:3000
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
+      - NEXTAUTH_SECRET=${NEXTAUTH_SECRET}
+      - NEXTAUTH_URL=http://localhost:3000
     depends_on:
-      - backend
-    networks:
-      - excalidash-network
+      - db
+
+  db:
+    image: postgres:15-alpine
+    container_name: excalidash-db
     restart: unless-stopped
- 
-networks:
-  excalidash-network:
-    driver: bridge
- 
-volumes:
-  backend-data:
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    volumes:
+      - ./data/db:/var/lib/postgresql/data

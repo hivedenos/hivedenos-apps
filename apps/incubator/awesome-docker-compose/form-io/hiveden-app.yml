@@ -1,0 +1,19 @@
+manifestVersion: 1.1
+id: form-io
+category: api-management
+name: Form.io
+version: '4.4'
+tagline: Create complex, self-hosted forms and APIs with a drag-and-drop builder.
+description: Create complex, self-hosted forms and APIs with a drag-and-drop builder.
+  Maintain full data control and governance within your own enterprise environment.
+developer: formio
+dependencies: []
+gallery: []
+path: /
+defaultUsername: ''
+deterministicPassword: false
+torOnly: false
+submitter: Hiveden
+website: https://form.io?utm_source=awesome-docker-compose.com
+repo: https://github.com/formio/formio
+support: https://github.com/formio/formio#run-with-docker-compose

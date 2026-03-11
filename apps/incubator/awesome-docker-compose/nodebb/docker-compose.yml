@@ -1,27 +1,35 @@
-version: 
 services:
   nodebb:
-    user: 0:0
-    image: elestio/nodebb:${SOFTWARE_VERSION_TAG}
-    restart: always
+    image: ghcr.io/nodebb/nodebb
+    restart: unless-stopped
+    ports:
+      - "4567:4567"
     environment:
-      URL: 
-      DATABASE: 
-      DB_NAME: 
-      DB_HOST: 
-      DB_PORT: 
+      - url=http://localhost:4567
+      - secret=${NODEBB_SECRET}
+      - database=mongo
+      - mongo__host=mongo
+      - mongo__port=27017
+      - mongo__username=${MONGO_USERNAME}
+      - mongo__password=${MONGO_PASSWORD}
+      - mongo__database=${MONGO_DATABASE}
+      - mongo__authSource=admin
+      # Admin setup variables (used on first run if config is missing)
+      - admin__username=${ADMIN_USERNAME}
+      - admin__password=${ADMIN_PASSWORD}
+      - admin__email=${ADMIN_EMAIL}
     volumes:
-      - ./nodebb-files:/usr/src/app/public/uploads
-      # - ./nodebb-config/config.json:/usr/src/app/config.json
-      - ./entrypoint.sh:/usr/src/app/entrypoint.sh
-    ports:
-      - 
- 
-  redis:
-    image: redis
-    restart: always
-    command: redis-server --appendonly yes --loglevel warning --requirepass ${REDIS_PASSWORD}
+      - ./nodebb-data/uploads:/usr/src/app/public/uploads
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:5.0
+    restart: unless-stopped
+    command: --wiredTigerCacheSizeGB 0.5
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD}
+      MONGO_INITDB_DATABASE: ${MONGO_DATABASE}
     volumes:
-      - ./nodebb-data:/data
-    ports:
-      - 
+      - ./mongo-data:/data/db

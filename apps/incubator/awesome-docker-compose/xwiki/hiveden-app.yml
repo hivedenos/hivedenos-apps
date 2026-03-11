@@ -1,12 +1,11 @@
 manifestVersion: 1.1
 id: xwiki
-category: wikis
+category: wiki
 name: XWiki
-version: latest
-tagline: Second generation wiki that allows the user to extend its functionalities
-  with a powerful extension-based architecture.
-description: Second generation wiki that allows the user to extend its functionalities
-  with a powerful extension-based architecture.
+version: lts-mysql-tomcat
+tagline: Secure your web applications against automated attacks.
+description: Secure your web applications against automated attacks. Filter out malicious
+  traffic, prevent DDoS attempts, and ensure real users get fast access to your site.
 developer: xwiki
 dependencies: []
 gallery: []
@@ -15,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.xwiki.org/
+website: https://www.xwiki.org?utm_source=awesome-docker-compose.com
 repo: https://github.com/xwiki/xwiki-platform
 support: https://github.com/xwiki/xwiki-docker

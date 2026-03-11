@@ -1,6 +1,9 @@
-version: "3.8"
-
 services:
   vod2pod-rss:
-    image: alpine
+    image: madiele/vod2pod-rss:latest
+    container_name: vod2pod-rss
+    ports:
+      - "8080:8080"
+    environment:
+      - TZ=Etc/UTC
     restart: unless-stopped

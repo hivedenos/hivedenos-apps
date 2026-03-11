@@ -3,11 +3,9 @@ id: viseron
 category: video-surveillance
 name: Viseron
 version: latest
-tagline: Self-hosted, local-only NVR and AI Computer Vision software.
-description: Self-hosted, local-only NVR and AI Computer Vision software. With features
-  such as object detection, motion detection, face recognition and more, it gives
-  you the power to keep an eye on your home, office or any other place you want to
-  monitor.
+tagline: Deploy a self-hosted, local-only NVR and AI computer vision platform.
+description: Deploy a self-hosted, local-only NVR and AI computer vision platform.
+  Easily customize components and use hardware acceleration for optimal performance.
 developer: roflcoopter
 dependencies: []
 gallery: []
@@ -16,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://viseron.netlify.app/
+website: https://viseron.netlify.app?utm_source=awesome-docker-compose.com
 repo: https://github.com/roflcoopter/viseron
 support: https://viseron.netlify.app/docs/documentation/installation

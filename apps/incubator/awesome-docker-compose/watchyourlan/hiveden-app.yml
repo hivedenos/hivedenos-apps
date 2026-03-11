@@ -2,9 +2,11 @@ manifestVersion: 1.1
 id: watchyourlan
 category: ip-and-domain
 name: WatchYourLAN
-version: v2
-tagline: A lightweight network IP scanner with web GUI.
-description: A lightweight network IP scanner with web GUI.
+version: latest
+tagline: Scan your local network to discover connected devices.
+description: Scan your local network to discover connected devices. Receive instant
+  notifications for new hosts, track online/offline history, and visualize data in
+  Grafana.
 developer: aceberg
 dependencies: []
 gallery: []
@@ -13,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/ip-and-domain/watchyourlan
+website: https://github.com/aceberg/WatchYourLAN?utm_source=awesome-docker-compose.com
 repo: https://github.com/aceberg/WatchYourLAN
 support: https://github.com/aceberg/WatchYourLAN#quick-start

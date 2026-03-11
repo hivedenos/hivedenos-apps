@@ -1,10 +1,11 @@
 manifestVersion: 1.1
 id: gossa
-category: file-transfer-web-based-file-managers
-name: Gossa
+category: storage-file-transfer
+name: gossa
 version: latest
-tagline: Gossa is a light and simple webserver for your files.
-description: Gossa is a light and simple webserver for your files.
+tagline: Manage and share multimedia files using a fast, dependency-free server.
+description: Manage and share multimedia files using a fast, dependency-free server.
+  Enjoy drag-and-drop uploads, video streaming, and a highly responsive web interface.
 developer: pldubouilh
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://awesome-docker-compose.com/apps/file-transfer---web-based-file-managers/gossa
+website: https://github.com/pldubouilh/gossa?utm_source=awesome-docker-compose.com
 repo: https://github.com/pldubouilh/gossa
 support: https://github.com/pldubouilh/gossa#fancier-setups

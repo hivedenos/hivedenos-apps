@@ -3,8 +3,9 @@ id: universal-media-server
 category: media-server
 name: Universal Media Server
 version: latest
-tagline: Universal Media Server is a DLNA, UPnP and HTTP/S Media Server.
-description: Universal Media Server is a DLNA, UPnP and HTTP/S Media Server.
+tagline: Stream videos, music, and photos to any device on your home network.
+description: Stream videos, music, and photos to any device on your home network.
+  Enjoy instant access, dynamic metadata, and secure, private media sharing.
 developer: UniversalMediaServer
 dependencies: []
 gallery: []
@@ -13,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.universalmediaserver.com/
+website: https://www.universalmediaserver.com?utm_source=awesome-docker-compose.com
 repo: https://github.com/UniversalMediaServer/UniversalMediaServer
-support: https://support.universalmediaserver.com/installation/docker
+support: https://support.universalmediaserver.com/installation/docker/
