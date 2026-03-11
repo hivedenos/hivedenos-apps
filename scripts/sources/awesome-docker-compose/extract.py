@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 import argparse
+import hashlib
 import json
 import re
 import sys
 from collections import Counter
 from datetime import datetime, timezone
+from html import unescape
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, Iterable, List, Optional, Tuple
 from urllib.parse import quote, unquote, urljoin, urlparse
 from urllib.request import Request, urlopen
 
@@ -41,10 +43,231 @@ def normalize_channel(channel: str) -> str:
 
 
 def extract_build_id(home_html: str) -> Optional[str]:
-    match = re.search(r'"buildId":"([^"]+)"', home_html)
+    for pattern in (
+        r'"buildId":"([^"]+)"',
+        r'"buildId"\s*:\s*"([^"]+)"',
+        r'/_next/static/([^"/]+)/_buildManifest\.js',
+    ):
+        match = re.search(pattern, home_html)
+        if match:
+            return match.group(1)
+    return None
+
+
+def extract_source_revision(home_html: str) -> str:
+    build_id = extract_build_id(home_html)
+    if build_id:
+        return build_id
+
+    digest = hashlib.sha256(home_html.encode("utf-8")).hexdigest()
+    return f"html-{digest[:16]}"
+
+
+def strip_tags(fragment: str) -> str:
+    return re.sub(r"<[^>]+>", "", fragment)
+
+
+def normalize_whitespace(text: str) -> str:
+    return re.sub(r"\s+", " ", unescape(text)).strip()
+
+
+def extract_anchor_links(page_html: str) -> List[Tuple[str, str]]:
+    links: List[Tuple[str, str]] = []
+    for href, inner_html in re.findall(
+        r'<a\b[^>]*href="([^"]+)"[^>]*>(.*?)</a>',
+        page_html,
+        re.S,
+    ):
+        label = normalize_whitespace(strip_tags(inner_html))
+        links.append((unescape(href), label))
+    return links
+
+
+def find_link_by_label(links: Iterable[Tuple[str, str]], pattern: str) -> Optional[str]:
+    matcher = re.compile(pattern)
+    for href, label in links:
+        if matcher.fullmatch(label):
+            return href
+    return None
+
+
+def extract_list_page_count(home_html: str) -> int:
+    pages = [int(page) for page in re.findall(r'href="/\?page=(\d+)"', home_html)]
+    if not pages:
+        return 1
+    return max(pages)
+
+
+def extract_routes_from_list_page(list_html: str) -> List[str]:
+    routes: List[str] = []
+    seen: set[str] = set()
+    for route in re.findall(r'<h3[^>]*>\s*<a href="(/[^"?#]+)"', list_html):
+        if route in seen:
+            continue
+        if route in {"/", "/about", "/blog", "/categories", "/submit", "/tags"}:
+            continue
+        seen.add(route)
+        routes.append(route)
+    return routes
+
+
+def extract_title_from_html(page_html: str) -> str:
+    match = re.search(r"<h1[^>]*>(.*?)</h1>", page_html, re.S)
+    if match:
+        title = normalize_whitespace(strip_tags(match.group(1)))
+        if title:
+            return title
+
+    match = re.search(r"<title>(.*?)</title>", page_html, re.S)
+    if not match:
+        return "Untitled App"
+
+    title = normalize_whitespace(strip_tags(match.group(1)))
+    title = re.sub(r"\s+[–-]\s+Awesome Docker Compose$", "", title)
+    title = title.split(":", 1)[0].strip()
+    return title or "Untitled App"
+
+
+def extract_description_from_html(page_html: str) -> str:
+    match = re.search(r'<meta name="description" content="([^"]*)"', page_html)
+    if match:
+        return normalize_whitespace(match.group(1))
+
+    match = re.search(r"<h2[^>]*>(.*?)</h2>", page_html, re.S)
+    if not match:
+        return ""
+    return normalize_whitespace(strip_tags(match.group(1)))
+
+
+def extract_category_slug_from_html(page_html: str) -> str:
+    match = re.search(r'href="/categories/([^"]+)"', page_html)
+    if not match:
+        return ""
+    return slugify(unescape(match.group(1)))
+
+
+def extract_compose_from_html(page_html: str) -> Optional[str]:
+    match = re.search(
+        r"<h3[^>]*>\s*docker-compose\.yml\s*</h3>.*?<pre[^>]*><code>(.*?)</code></pre>",
+        page_html,
+        re.S | re.I,
+    )
     if not match:
         return None
-    return match.group(1)
+
+    code_html = match.group(1)
+    compose = unescape(strip_tags(code_html))
+    compose = compose.replace("\r\n", "\n").replace("\r", "\n")
+    compose = compose.strip("\n")
+    if not compose:
+        return None
+    return compose + "\n"
+
+
+def extract_sitemap_locs(sitemap_xml: str) -> List[str]:
+    return [unescape(loc).strip() for loc in re.findall(r"<loc>(.*?)</loc>", sitemap_xml)]
+
+
+def discover_routes_from_sitemap(base_url: str) -> Tuple[List[str], str]:
+    sitemap_url = urljoin(base_url + "/", "sitemap.xml")
+    sitemap_xml = fetch_text(sitemap_url)
+    locs = extract_sitemap_locs(sitemap_xml)
+
+    tools_sitemap_url = next(
+        (loc for loc in locs if loc.rstrip("/").endswith("/sitemap/tools.xml")),
+        None,
+    )
+    tools_sitemap_xml = fetch_text(tools_sitemap_url) if tools_sitemap_url else sitemap_xml
+
+    base_netloc = urlparse(base_url).netloc.lower()
+    routes: List[str] = []
+    seen: set[str] = set()
+    for loc in extract_sitemap_locs(tools_sitemap_xml):
+        parsed = urlparse(loc)
+        if parsed.netloc and parsed.netloc.lower() != base_netloc:
+            continue
+
+        route = parsed.path or "/"
+        if route == "/" or route.startswith("/sitemap/"):
+            continue
+
+        if route in seen:
+            continue
+        seen.add(route)
+        routes.append(route)
+
+    return routes, extract_source_revision(tools_sitemap_xml)
+
+
+def discover_routes_from_listing_pages(base_url: str, home_html: str) -> List[str]:
+    routes: List[str] = []
+    seen: set[str] = set()
+
+    def add_routes(list_html: str) -> None:
+        for route in extract_routes_from_list_page(list_html):
+            if route in seen:
+                continue
+            seen.add(route)
+            routes.append(route)
+
+    add_routes(home_html)
+    page_count = extract_list_page_count(home_html)
+    for page in range(2, page_count + 1):
+        list_html = fetch_text(f"{base_url}/?page={page}")
+        add_routes(list_html)
+
+    return routes
+
+
+def extract_app_from_html(base_url: str, route: str, page_html: str) -> dict:
+    links = extract_anchor_links(page_html)
+
+    website = normalize_url(find_link_by_label(links, r"Visit .+"), base_url)
+    github = normalize_url(find_link_by_label(links, r"View Repository"), base_url)
+    config = normalize_url(find_link_by_label(links, r"Configuration"), base_url)
+    docker_hub = normalize_url(find_link_by_label(links, r"View on .+"), base_url)
+
+    title = extract_title_from_html(page_html)
+    description = extract_description_from_html(page_html)
+    category_slug = extract_category_slug_from_html(page_html)
+
+    base_id = slugify(route.strip("/"))
+    compose = extract_compose_from_html(page_html)
+    if not compose:
+        compose = build_fallback_compose(base_id, "", docker_hub)
+        compose_status = "fallback"
+    else:
+        compose, compose_status = sanitize_compose(base_id, compose, docker_hub)
+
+    route_url = urljoin(base_url + "/", route.lstrip("/"))
+    if not website:
+        website = route_url
+    repo = github or config or route_url
+    support = config or github or route_url
+    developer = github_owner(github) or "Awesome Docker Compose"
+    version = extract_image_version(compose)
+
+    if not description:
+        description = title
+    tagline = first_sentence(description) or title
+
+    return {
+        "route": route,
+        "route_url": route_url,
+        "base_id": base_id,
+        "category_slug": category_slug,
+        "title": title,
+        "description": description,
+        "tagline": tagline,
+        "compose": compose,
+        "version": version,
+        "developer": developer,
+        "website": website,
+        "repo": repo,
+        "support": support,
+        "docker_hub": docker_hub,
+        "compose_status": compose_status,
+    }
 
 
 def parse_route_chunks(manifest_js: str) -> Dict[str, str]:
@@ -427,83 +650,39 @@ def main() -> int:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     home_html = fetch_text(base_url + "/")
-    build_id = extract_build_id(home_html)
-    if not build_id:
-        raise RuntimeError("Could not determine Next.js build id")
+    source_revision = extract_source_revision(home_html)
+    route_source = "sitemap"
+    routes: List[str] = []
 
-    manifest_url = f"{base_url}/_next/static/{build_id}/_buildManifest.js"
-    manifest_js = fetch_text(manifest_url)
+    try:
+        routes, source_revision = discover_routes_from_sitemap(base_url)
+    except Exception:
+        routes = []
 
-    route_to_chunk = parse_route_chunks(manifest_js)
-    if not route_to_chunk:
-        raise RuntimeError("No app routes found in build manifest")
+    if not routes:
+        routes = discover_routes_from_listing_pages(base_url, home_html)
+        route_source = "listing-pages"
+
+    if not routes:
+        build_id = extract_build_id(home_html)
+        if build_id:
+            manifest_url = f"{base_url}/_next/static/{build_id}/_buildManifest.js"
+            manifest_js = fetch_text(manifest_url)
+            route_to_chunk = parse_route_chunks(manifest_js)
+            routes = sorted(route_to_chunk.keys())
+            route_source = "legacy-build-manifest"
+
+    if not routes:
+        raise RuntimeError("Could not discover app routes from sitemap or fallback paths")
 
     extracted: List[dict] = []
     compose_status_counts: Counter[str] = Counter()
-    for route, chunk_path in sorted(route_to_chunk.items()):
-        route_segments = [unquote(seg) for seg in route.strip("/").split("/")]
-        if len(route_segments) < 3:
-            continue
-
-        category_parts = route_segments[1:-1]
-        app_slug = route_segments[-1]
-        category_slug = slugify("-".join(category_parts))
-        base_id = slugify(app_slug)
-        if not base_id:
-            continue
-
-        normalized_chunk_path = quote(chunk_path.strip(), safe="/")
-        chunk_url = urljoin(base_url + "/", "_next/" + normalized_chunk_path)
-        chunk_js = fetch_text(chunk_url)
-
-        resources = extract_resources(chunk_js)
-        website = normalize_url(resources.get("Website"), base_url)
-        github = normalize_url(resources.get("GitHub"), base_url)
-        config = normalize_url(resources.get("Configuration"), base_url)
-        docker_hub = normalize_url(resources.get("Docker Hub"), base_url)
-
-        title = extract_title(chunk_js)
-        description = extract_description(chunk_js)
-        compose = extract_compose(chunk_js)
-        if not compose:
-            compose = build_fallback_compose(base_id, "", docker_hub)
-            compose_status = "fallback"
-        else:
-            compose, compose_status = sanitize_compose(base_id, compose, docker_hub)
-        compose_status_counts[compose_status] += 1
-
-        route_url = urljoin(base_url + "/", route.lstrip("/"))
-        if not website:
-            website = route_url
-        repo = github or config or route_url
-        support = config or github or route_url
-        developer = github_owner(github) or "Awesome Docker Compose"
-        version = extract_image_version(compose)
-
-        if not description:
-            description = title
-        tagline = first_sentence(description) or title
-
-        extracted.append(
-            {
-                "route": route,
-                "route_url": route_url,
-                "base_id": base_id,
-                "category_slug": category_slug,
-                "title": title,
-                "description": description,
-                "tagline": tagline,
-                "compose": compose,
-                "version": version,
-                "developer": developer,
-                "website": website,
-                "repo": repo,
-                "support": support,
-                "docker_hub": docker_hub,
-                "channel": channel,
-                "compose_status": compose_status,
-            }
-        )
+    for route in routes:
+        page_html = fetch_text(urljoin(base_url + "/", route.lstrip("/")))
+        app_data = extract_app_from_html(base_url, route, page_html)
+        app_data["channel"] = channel
+        extracted.append(app_data)
+        compose_status_counts[app_data["compose_status"]] += 1
 
     choose_ids(extracted)
 
@@ -511,12 +690,14 @@ def main() -> int:
         write_app(out_dir / app_data["id"], app_data)
 
     commit_path = Path(args.commit_file)
-    commit_path.write_text(build_id + "\n", encoding="utf-8")
+    commit_path.write_text(source_revision + "\n", encoding="utf-8")
 
     stats = {
         "generated_at": datetime.now(tz=timezone.utc).isoformat(),
         "base_url": base_url,
-        "build_id": build_id,
+        "build_id": source_revision,
+        "source_revision": source_revision,
+        "route_source": route_source,
         "total_apps": len(extracted),
         "compose_status_counts": dict(compose_status_counts),
     }
