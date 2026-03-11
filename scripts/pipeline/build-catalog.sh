@@ -21,7 +21,22 @@ jq -n \
   --slurpfile apps "$MERGED_JSON" \
   '
   ($apps[0] // []) as $all_apps
-  | (reduce $channel_order[] as $ch ({}; .[$ch] = ($all_apps | map(select((.channel // "stable") == $ch)))) ) as $apps_by_channel
+  | ([ $all_apps[] | select((.channel // "stable") != "incubator") | .id ] | unique) as $non_incubator_ids
+  | (
+      reduce $channel_order[] as $ch (
+        {};
+        .[$ch] = (
+          $all_apps
+          | map(select((.channel // "stable") == $ch))
+          | if $ch == "incubator" then
+              map(. as $app | select(($non_incubator_ids | index($app.id)) | not))
+            else
+              .
+            end
+        )
+      )
+    ) as $apps_by_channel
+  | ([ $apps_by_channel[] | .[] ]) as $visible_apps
   | (reduce $channel_order[] as $ch ({}; .[$ch] = {
       total_apps: ($apps_by_channel[$ch] | length),
       warning: ($channel_defs[$ch].warning // null)
@@ -32,7 +47,7 @@ jq -n \
       generated_at: $generated_at,
       default_channel: $default_channel,
       total_apps: ($default_apps | length),
-      total_apps_all_channels: ($all_apps | length),
+      total_apps_all_channels: ($visible_apps | length),
       channels: $channels,
       apps: $default_apps,
       apps_by_channel: $apps_by_channel

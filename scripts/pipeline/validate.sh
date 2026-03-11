@@ -112,6 +112,14 @@ if [[ "$incubator_count" != "$incubator_unique_count" ]]; then
   exit 1
 fi
 
+if ! jq -e '
+  ([.apps_by_channel | to_entries[] | select(.key != "incubator") | .value[] | .id] | unique) as $non_incubator_ids
+  | ([.apps_by_channel.incubator[]? | .id] | all(.[]; ($non_incubator_ids | index(.) | not)))
+' "$catalog_file" >/dev/null; then
+  echo "Incubator channel contains app IDs that already exist in a non-incubator channel" >&2
+  exit 1
+fi
+
 while IFS= read -r app_path; do
   if [[ ! -d "$ROOT_DIR/$app_path" ]]; then
     echo "Missing app directory: $app_path" >&2
