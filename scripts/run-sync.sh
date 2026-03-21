@@ -16,6 +16,45 @@ ingest_source_channel="$(jq -r '.channels.ingest_source_channel // "incubator"' 
 work_base="$(mktemp -d)"
 trap 'rm -rf "$work_base"' EXIT
 
+sync_source() {
+  local source_id="$1"
+  local source_cfg="$2"
+  local source_type="$3"
+  local source_work_dir="$work_base/$source_id"
+  local repo_dir
+  local commit_sha
+  local apps_list_file="$source_work_dir/apps.list"
+  local normalized_json="$source_work_dir/normalized.json"
+
+  mkdir -p "$source_work_dir"
+
+  case "$source_type" in
+    umbrel)
+      log_info "Syncing source: $source_id"
+      repo_dir="$($ROOT_DIR/scripts/sources/umbrel/fetch.sh "$ROOT_DIR" "$source_cfg" "$source_work_dir" | tail -n 1)" || return 1
+      commit_sha="$(cat "$source_work_dir/source_commit.txt")" || return 1
+
+      "$ROOT_DIR/scripts/sources/umbrel/discover.sh" "$repo_dir" "$apps_list_file" || return 1
+      "$ROOT_DIR/scripts/sources/umbrel/normalize.sh" "$repo_dir" "$source_cfg" "$apps_list_file" "$commit_sha" "$normalized_json" || return 1
+      ;;
+    awesome)
+      log_info "Syncing source: $source_id"
+      repo_dir="$($ROOT_DIR/scripts/sources/awesome-docker-compose/fetch.sh "$ROOT_DIR" "$source_cfg" "$source_work_dir" | tail -n 1)" || return 1
+      commit_sha="$(cat "$source_work_dir/source_commit.txt")" || return 1
+
+      "$ROOT_DIR/scripts/sources/awesome-docker-compose/discover.sh" "$repo_dir" "$apps_list_file" || return 1
+      "$ROOT_DIR/scripts/sources/awesome-docker-compose/normalize.sh" "$repo_dir" "$source_cfg" "$apps_list_file" "$commit_sha" "$normalized_json" || return 1
+      ;;
+    *)
+      log_error "Unsupported source type: $source_type"
+      return 1
+      ;;
+  esac
+
+  "$ROOT_DIR/scripts/pipeline/apply-channel-overrides.sh" "$ROOT_DIR" "$source_id" "$normalized_json" || return 1
+  "$ROOT_DIR/scripts/pipeline/write-repo.sh" "$ROOT_DIR" "$source_id" "$repo_dir" "$apps_list_file" "$normalized_json" "$commit_sha" || return 1
+}
+
 if [[ ! -f "$channel_overrides_file" ]]; then
   jq -n '{version: "1.0.0", overrides: []}' >"$channel_overrides_file"
 fi
@@ -38,58 +77,29 @@ metadata_path="$ROOT_DIR/$metadata_rel"
 catalog_dir="$(dirname "$catalog_path")"
 metadata_dir="$(dirname "$metadata_path")"
 
-# Always start from a clean slate for generated outputs.
 incubator_apps_root="$apps_root/incubator"
-log_info "Cleaning generated incubator app directory"
-rm -rf "$incubator_apps_root"
-rm -rf "$sources_root"
 mkdir -p "$sources_root"
 mkdir -p "$incubator_apps_root"
 mkdir -p "$catalog_dir" "$metadata_dir"
 rm -f "$catalog_path" "$metadata_path"
+
+failed_sources=()
 
 for source_id in "${source_ids[@]}"; do
   source_cfg="$(jq -c --arg id "$source_id" '.sources[] | select(.id == $id)' "$sources_file")"
   source_cfg="$(printf '%s' "$source_cfg" | jq -c --arg channel "$ingest_source_channel" '. + {channel: (.channel // $channel)}')"
   source_type="$(printf '%s' "$source_cfg" | jq -r '.type')"
 
-  source_work_dir="$work_base/$source_id"
-  mkdir -p "$source_work_dir"
-
-  case "$source_type" in
-    umbrel)
-      log_info "Syncing source: $source_id"
-      repo_dir="$($ROOT_DIR/scripts/sources/umbrel/fetch.sh "$ROOT_DIR" "$source_cfg" "$source_work_dir" | tail -n 1)"
-      commit_sha="$(cat "$source_work_dir/source_commit.txt")"
-
-      apps_list_file="$source_work_dir/apps.list"
-      normalized_json="$source_work_dir/normalized.json"
-
-      "$ROOT_DIR/scripts/sources/umbrel/discover.sh" "$repo_dir" "$apps_list_file"
-      "$ROOT_DIR/scripts/sources/umbrel/normalize.sh" "$repo_dir" "$source_cfg" "$apps_list_file" "$commit_sha" "$normalized_json"
-      "$ROOT_DIR/scripts/pipeline/apply-channel-overrides.sh" "$ROOT_DIR" "$source_id" "$normalized_json"
-      "$ROOT_DIR/scripts/pipeline/write-repo.sh" "$ROOT_DIR" "$source_id" "$repo_dir" "$apps_list_file" "$normalized_json" "$commit_sha"
-      ;;
-    awesome)
-      log_info "Syncing source: $source_id"
-      repo_dir="$($ROOT_DIR/scripts/sources/awesome-docker-compose/fetch.sh "$ROOT_DIR" "$source_cfg" "$source_work_dir" | tail -n 1)"
-      commit_sha="$(cat "$source_work_dir/source_commit.txt")"
-
-      apps_list_file="$source_work_dir/apps.list"
-      normalized_json="$source_work_dir/normalized.json"
-
-      "$ROOT_DIR/scripts/sources/awesome-docker-compose/discover.sh" "$repo_dir" "$apps_list_file"
-      "$ROOT_DIR/scripts/sources/awesome-docker-compose/normalize.sh" "$repo_dir" "$source_cfg" "$apps_list_file" "$commit_sha" "$normalized_json"
-      "$ROOT_DIR/scripts/pipeline/apply-channel-overrides.sh" "$ROOT_DIR" "$source_id" "$normalized_json"
-      "$ROOT_DIR/scripts/pipeline/write-repo.sh" "$ROOT_DIR" "$source_id" "$repo_dir" "$apps_list_file" "$normalized_json" "$commit_sha"
-      ;;
-    *)
-      log_error "Unsupported source type: $source_type"
-      exit 1
-      ;;
-  esac
-
+  if ! sync_source "$source_id" "$source_cfg" "$source_type"; then
+    log_warn "Failed to sync source '$source_id'; keeping previously downloaded apps and metadata if available"
+    failed_sources+=("$source_id")
+    continue
+  fi
 done
+
+if [[ ${#failed_sources[@]} -gt 0 ]]; then
+  log_warn "Completed with source sync failures: ${failed_sources[*]}"
+fi
 
 gallery_work_dir="$work_base/gallery-assets"
 mkdir -p "$gallery_work_dir"

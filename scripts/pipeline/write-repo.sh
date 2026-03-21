@@ -12,15 +12,22 @@ source_dir="$ROOT_DIR/data/sources/$SOURCE_ID"
 apps_out="$source_dir/apps"
 apps_root_rel="$(jq -r '.output.apps_root // "apps"' "$ROOT_DIR/config/pipeline.json")"
 apps_root="$ROOT_DIR/$apps_root_rel"
-mkdir -p "$apps_out"
+mkdir -p "$source_dir"
 mkdir -p "$apps_root"
 
-# Replace source mirror atomically.
-rm -rf "$apps_out"
-mkdir -p "$apps_out"
+apps_out_tmp="$(mktemp -d "$source_dir/apps.tmp.XXXXXX")"
+normalized_tmp="$(mktemp "$source_dir/normalized.json.tmp.XXXXXX")"
+metadata_tmp="$(mktemp "$source_dir/metadata.json.tmp.XXXXXX")"
 
 mapping_ndjson="$(mktemp)"
 declare -A planned_targets=()
+
+cleanup() {
+  rm -rf "$apps_out_tmp"
+  rm -f "$normalized_tmp" "$metadata_tmp" "$mapping_ndjson"
+}
+
+trap cleanup EXIT
 
 source_marker_filename=".hivedenos-source-id"
 
@@ -44,7 +51,7 @@ while IFS= read -r app_dir; do
     app_channel="incubator"
   fi
 
-  rsync -a --delete "$app_dir/" "$apps_out/$app_name/"
+  rsync -a --delete "$app_dir/" "$apps_out_tmp/$app_name/"
 
   if [[ "$app_channel" == "incubator" ]]; then
     target_rel="$apps_root_rel/incubator/$SOURCE_ID/$app_name"
@@ -102,8 +109,7 @@ done < <(find "$apps_root" -type f -name "$source_marker_filename" 2>/dev/null)
 mapping_obj="$(jq -s 'map({(.id): .repository_path}) | add // {}' "$mapping_ndjson")"
 jq --argjson path_map "$mapping_obj" \
   'map(. + {repository_path: ($path_map[.id] // .repository_path // ("apps/" + .id))})' \
-  "$NORMALIZED_JSON" >"$source_dir/normalized.json"
-rm -f "$mapping_ndjson"
+  "$NORMALIZED_JSON" >"$normalized_tmp"
 
 app_count="$(jq 'length' "$NORMALIZED_JSON")"
 source_repo_url="$(jq -r --arg id "$SOURCE_ID" '.sources[] | select(.id == $id) | .repo_url' "$ROOT_DIR/config/sources.json")"
@@ -120,4 +126,12 @@ jq -n \
     commit: $commit,
     total_apps: $total_apps,
     generated_at: $generated_at
-  }' >"$source_dir/metadata.json"
+  }' >"$metadata_tmp"
+
+rm -rf "$apps_out"
+mv "$apps_out_tmp" "$apps_out"
+mv "$normalized_tmp" "$source_dir/normalized.json"
+mv "$metadata_tmp" "$source_dir/metadata.json"
+
+trap - EXIT
+cleanup
