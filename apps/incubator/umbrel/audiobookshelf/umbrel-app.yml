@@ -3,7 +3,7 @@ id: audiobookshelf
 name: Audiobookshelf
 tagline: Audiobook and podcast server
 category: media
-version: "2.32.1"
+version: "2.33.1"
 port: 13378
 description: >-
   Features:
@@ -62,11 +62,9 @@ defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
   Bug fixes:
-    - Fixed server crash when matching with Audible provider
-
-
-  Improvements:
-    - Various translation updates for multiple languages
+    - Fixed API keys not respecting user enabled/disabled flag
+    - Fixed podcast episode updates to sanitize HTML in subtitles
+    - Fixed playlist and collection endpoints to strip HTML tags from names
 
 
   Full release notes can be found at https://github.com/advplyr/audiobookshelf/releases

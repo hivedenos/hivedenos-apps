@@ -2,7 +2,7 @@ manifestVersion: 1
 id: ghostfolio
 category: finance
 name: Ghostfolio
-version: "2.248.0"
+version: "2.250.0"
 tagline: Manage your wealth like a boss
 description: >-
   Ghostfolio is a privacy-first, open source dashboard for your personal finances.
@@ -34,9 +34,10 @@ deterministicPassword: false
 torOnly: false
 releaseNotes: >-
   This release includes improvements and bug fixes:
-    - Added support for column sorting in the data providers section of the admin control panel
-    - Included asset profile data in portfolio holdings and the public page
-    - Fixed an issue in the FIRE calculator to correctly calculate the projected total amount
+    - Added support for specific calendar year date ranges on the portfolio activities page
+    - Consolidated sign-out logic to unify cookie, state and token clearance
+    - Fixed an issue with thousand separator detection for the de-CH locale
+    - Improved language localization for Polish
 
 
   Full release notes are found at https://github.com/ghostfolio/ghostfolio/releases

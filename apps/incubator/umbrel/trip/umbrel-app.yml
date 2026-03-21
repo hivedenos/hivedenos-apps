@@ -3,7 +3,7 @@ id: trip
 name: Trip
 tagline: Minimalist Map Tracker and Trip Planner
 category: files
-version: "1.41.1"
+version: "1.43.0"
 port: 8980
 description: >-
   🗺️ TRIP is a self-hostable minimalist Map tracker and Trip planner to visualize your points of interest (POI) and organize your next adventure details.
@@ -23,9 +23,19 @@ support: https://github.com/itskovacs/trip/issues
 submitter: itskovacs
 submission: https://github.com/getumbrel/umbrel-apps/pull/3830
 releaseNotes: >-
+  New Features:
+    - Added full server backups via the admin UI
+    - The first registered user is now automatically granted admin rights
+    - Orphaned images are automatically removed on startup
+
+  UI/UX Improvements:
+    - Unplanned markers are now dimmed when a specific day is highlighted in trips
+    - Updated backups styling in settings
+    - Unified textarea appearance
+
   Bug Fixes:
-    - Fixed Trip notes on dark theme
-    - Fixed "Not Found" toast on trips
+    - Resolved all scrolling issues
+    - Fixed printing on iOS and iPadOS
 
 
   Full release notes are found at https://github.com/itskovacs/trip/releases

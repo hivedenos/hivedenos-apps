@@ -7,7 +7,7 @@ services:
       APP_PORT: 3000
 
   server:
-    image: awinterstein/habitica-server:5.46.1@sha256:895cb41b8d31bc22301a3e1cbfda46d6133ad87ca03469abb20173924878919b
+    image: awinterstein/habitica-server:5.46.4@sha256:f5c5ffd92043b3577b82c0e70b12f178ffdd4dd8be308d77f8e47396ce6502dc
     restart: on-failure
     depends_on:
       - mongo
