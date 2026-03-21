@@ -67,6 +67,7 @@ for source_id in "${source_ids[@]}"; do
 
       "$ROOT_DIR/scripts/sources/umbrel/discover.sh" "$repo_dir" "$apps_list_file"
       "$ROOT_DIR/scripts/sources/umbrel/normalize.sh" "$repo_dir" "$source_cfg" "$apps_list_file" "$commit_sha" "$normalized_json"
+      "$ROOT_DIR/scripts/pipeline/apply-channel-overrides.sh" "$ROOT_DIR" "$source_id" "$normalized_json"
       "$ROOT_DIR/scripts/pipeline/write-repo.sh" "$ROOT_DIR" "$source_id" "$repo_dir" "$apps_list_file" "$normalized_json" "$commit_sha"
       ;;
     awesome)
@@ -79,6 +80,7 @@ for source_id in "${source_ids[@]}"; do
 
       "$ROOT_DIR/scripts/sources/awesome-docker-compose/discover.sh" "$repo_dir" "$apps_list_file"
       "$ROOT_DIR/scripts/sources/awesome-docker-compose/normalize.sh" "$repo_dir" "$source_cfg" "$apps_list_file" "$commit_sha" "$normalized_json"
+      "$ROOT_DIR/scripts/pipeline/apply-channel-overrides.sh" "$ROOT_DIR" "$source_id" "$normalized_json"
       "$ROOT_DIR/scripts/pipeline/write-repo.sh" "$ROOT_DIR" "$source_id" "$repo_dir" "$apps_list_file" "$normalized_json" "$commit_sha"
       ;;
     *)

@@ -114,7 +114,7 @@ fi
 
 if ! jq -e '
   ([.apps_by_channel | to_entries[] | select(.key != "incubator") | .value[] | .id] | unique) as $non_incubator_ids
-  | ([.apps_by_channel.incubator[]? | .id] | all(.[]; ($non_incubator_ids | index(.) | not)))
+  | ([.apps_by_channel.incubator[]? | .id] | all(.[]; . as $id | ($non_incubator_ids | index($id) | not)))
 ' "$catalog_file" >/dev/null; then
   echo "Incubator channel contains app IDs that already exist in a non-incubator channel" >&2
   exit 1
