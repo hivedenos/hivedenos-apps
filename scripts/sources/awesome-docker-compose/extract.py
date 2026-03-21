@@ -165,7 +165,9 @@ def extract_compose_from_html(page_html: str) -> Optional[str]:
 
 
 def extract_sitemap_locs(sitemap_xml: str) -> List[str]:
-    return [unescape(loc).strip() for loc in re.findall(r"<loc>(.*?)</loc>", sitemap_xml)]
+    return [
+        unescape(loc).strip() for loc in re.findall(r"<loc>(.*?)</loc>", sitemap_xml)
+    ]
 
 
 def discover_routes_from_sitemap(base_url: str) -> Tuple[List[str], str]:
@@ -177,7 +179,9 @@ def discover_routes_from_sitemap(base_url: str) -> Tuple[List[str], str]:
         (loc for loc in locs if loc.rstrip("/").endswith("/sitemap/tools.xml")),
         None,
     )
-    tools_sitemap_xml = fetch_text(tools_sitemap_url) if tools_sitemap_url else sitemap_xml
+    tools_sitemap_xml = (
+        fetch_text(tools_sitemap_url) if tools_sitemap_url else sitemap_xml
+    )
 
     base_netloc = urlparse(base_url).netloc.lower()
     routes: List[str] = []
@@ -673,7 +677,9 @@ def main() -> int:
             route_source = "legacy-build-manifest"
 
     if not routes:
-        raise RuntimeError("Could not discover app routes from sitemap or fallback paths")
+        raise RuntimeError(
+            "Could not discover app routes from sitemap or fallback paths"
+        )
 
     extracted: List[dict] = []
     compose_status_counts: Counter[str] = Counter()
@@ -713,5 +719,7 @@ if __name__ == "__main__":
     try:
         raise SystemExit(main())
     except Exception as exc:
-        print(f"[ERROR] {exc}", file=sys.stderr)
-        raise
+        print(
+            f"[ERROR] Awesome Docker Compose extraction failed: {exc}", file=sys.stderr
+        )
+        raise SystemExit(1)
