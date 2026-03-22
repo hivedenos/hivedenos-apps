@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://dozzle.dev?utm_source=awesome-docker-compose.com
+website: https://dozzle.dev?utm_source=localhost
 repo: https://github.com/amir20/dozzle
 support: https://dozzle.dev/guide/getting-started

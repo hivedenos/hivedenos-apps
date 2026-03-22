@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://traduora.co?utm_source=awesome-docker-compose.com
+website: https://traduora.co?utm_source=localhost
 repo: https://github.com/ever-co/ever-traduora
 support: https://docs.traduora.co/docs/deployment

@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://tinyfilemanager.github.io?utm_source=awesome-docker-compose.com
+website: https://tinyfilemanager.github.io?utm_source=localhost
 repo: https://github.com/prasathmani/tinyfilemanager
 support: https://github.com/prasathmani/tinyfilemanager/wiki/Deploy-by-Docker

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docs.wabarc.eu.org?utm_source=awesome-docker-compose.com
+website: https://docs.wabarc.eu.org?utm_source=localhost
 repo: https://github.com/wabarc/wayback
 support: https://docs.wabarc.eu.org/deployment/

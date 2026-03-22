@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://rsshub.app?utm_source=awesome-docker-compose.com
+website: https://rsshub.app?utm_source=localhost
 repo: https://github.com/DIYgod/RSSHub
 support: https://github.com/DIYgod/RSSHub/blob/master/docker-compose.yml

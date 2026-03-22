@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.haproxy.org?utm_source=awesome-docker-compose.com
+website: https://www.haproxy.org?utm_source=localhost
 repo: https://git.haproxy.org/
 support: https://hub.docker.com/r/bitnami/haproxy

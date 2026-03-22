@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/nymanjens/piga?utm_source=awesome-docker-compose.com
+website: https://github.com/nymanjens/piga?utm_source=localhost
 repo: https://github.com/nymanjens/piga
 support: https://github.com/nymanjens/piga#installation-with-docker

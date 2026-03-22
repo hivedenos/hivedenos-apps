@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.tinymediamanager.org?utm_source=awesome-docker-compose.com
+website: https://www.tinymediamanager.org?utm_source=localhost
 repo: https://gitlab.com/tinyMediaManager/tinyMediaManager
 support: https://www.tinymediamanager.org/docs/docker

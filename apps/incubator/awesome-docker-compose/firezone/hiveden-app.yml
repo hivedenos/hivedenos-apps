@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.firezone.dev?utm_source=awesome-docker-compose.com
+website: https://www.firezone.dev?utm_source=localhost
 repo: https://github.com/firezone/firezone
 support: https://github.com/firezone/firezone/blob/main/docker-compose.yml

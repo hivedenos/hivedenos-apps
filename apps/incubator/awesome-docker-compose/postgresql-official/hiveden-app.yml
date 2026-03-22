@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.postgresql.org?utm_source=awesome-docker-compose.com
+website: https://www.postgresql.org?utm_source=localhost
 repo: https://github.com/docker-library/postgres
 support: https://github.com/docker-library/postgres

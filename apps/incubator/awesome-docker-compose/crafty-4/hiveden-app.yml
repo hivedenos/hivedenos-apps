@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://craftycontrol.com?utm_source=awesome-docker-compose.com
+website: https://craftycontrol.com?utm_source=localhost
 repo: https://gitlab.com/crafty-controller/crafty-4
 support: https://docs.craftycontrol.com/pages/getting-started/installation/docker/

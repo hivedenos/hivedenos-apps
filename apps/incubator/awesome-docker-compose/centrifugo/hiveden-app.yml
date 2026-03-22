@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://centrifugal.dev?utm_source=awesome-docker-compose.com
+website: https://centrifugal.dev?utm_source=localhost
 repo: https://github.com/centrifugal/centrifugo
 support: https://centrifugal.dev/docs/getting-started/installation

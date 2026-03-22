@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://kitchenowl.org?utm_source=awesome-docker-compose.com
+website: https://kitchenowl.org?utm_source=localhost
 repo: https://github.com/TomBursch/kitchenowl
 support: https://docs.kitchenowl.org/latest/self-hosting/

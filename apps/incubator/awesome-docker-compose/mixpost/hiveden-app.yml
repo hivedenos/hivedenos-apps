@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://mixpost.app?utm_source=awesome-docker-compose.com
+website: https://mixpost.app?utm_source=localhost
 repo: https://github.com/inovector/mixpost
 support: https://docs.mixpost.app/lite/installation/docker/

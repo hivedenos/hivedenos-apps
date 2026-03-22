@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://teedy.io?utm_source=awesome-docker-compose.com
+website: https://teedy.io?utm_source=localhost
 repo: https://github.com/sismics/docs
 support: https://github.com/sismics/docs#install-with-docker

@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/jmberesford/retrom?utm_source=awesome-docker-compose.com
+website: https://github.com/jmberesford/retrom?utm_source=localhost
 repo: https://github.com/jmberesford/retrom
 support: https://github.com/JMBeresford/retrom/wiki/Installation

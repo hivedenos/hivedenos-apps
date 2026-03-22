@@ -16,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://maybe.co?utm_source=awesome-docker-compose.com
+website: https://maybe.co?utm_source=localhost
 repo: https://github.com/maybe-finance/maybe
 support: https://github.com/maybe-finance/maybe/blob/main/docs/hosting/docker.md

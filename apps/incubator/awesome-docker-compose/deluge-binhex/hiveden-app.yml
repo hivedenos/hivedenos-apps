@@ -16,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://deluge-torrent.org?utm_source=awesome-docker-compose.com
+website: https://deluge-torrent.org?utm_source=localhost
 repo: https://github.com/binhex/arch-delugevpn
 support: https://github.com/binhex/arch-delugevpn

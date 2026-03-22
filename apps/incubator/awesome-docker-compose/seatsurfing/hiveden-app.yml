@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://seatsurfing.io?utm_source=awesome-docker-compose.com
+website: https://seatsurfing.io?utm_source=localhost
 repo: https://github.com/seatsurfing/seatsurfing
 support: https://seatsurfing.io/docs/self-hosted/docker

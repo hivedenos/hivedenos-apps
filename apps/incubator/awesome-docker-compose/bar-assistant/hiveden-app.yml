@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://barassistant.app?utm_source=awesome-docker-compose.com
+website: https://barassistant.app?utm_source=localhost
 repo: https://github.com/karlomikus/bar-assistant
 support: https://docs.barassistant.app/setup/

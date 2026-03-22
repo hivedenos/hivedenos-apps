@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://convos.chat?utm_source=awesome-docker-compose.com
+website: https://convos.chat?utm_source=localhost
 repo: https://github.com/convos-chat/convos
 support: https://convos.chat/doc/start

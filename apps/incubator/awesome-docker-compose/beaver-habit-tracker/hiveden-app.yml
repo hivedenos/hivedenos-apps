@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://beaverhabits.com?utm_source=awesome-docker-compose.com
+website: https://beaverhabits.com?utm_source=localhost
 repo: https://github.com/daya0576/beaverhabits
 support: https://github.com/daya0576/beaverhabits#self-hosting

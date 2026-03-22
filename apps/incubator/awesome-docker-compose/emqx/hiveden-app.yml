@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.emqx.com?utm_source=awesome-docker-compose.com
+website: https://www.emqx.com?utm_source=localhost
 repo: https://github.com/emqx/emqx
 support: https://docs.emqx.com/en/emqx/latest/deploy/install-docker.html

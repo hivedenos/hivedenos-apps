@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/crocodilestick/Calibre-Web-Automated?utm_source=awesome-docker-compose.com
+website: https://github.com/crocodilestick/Calibre-Web-Automated?utm_source=localhost
 repo: https://github.com/crocodilestick/Calibre-Web-Automated
 support: https://github.com/crocodilestick/Calibre-Web-Automated#using-docker-compose-recommended

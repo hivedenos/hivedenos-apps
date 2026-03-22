@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.openproject.org?utm_source=awesome-docker-compose.com
+website: https://www.openproject.org?utm_source=localhost
 repo: https://github.com/opf/openproject
 support: https://github.com/opf/openproject-docker-compose

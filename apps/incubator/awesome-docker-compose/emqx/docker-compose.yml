@@ -10,7 +10,7 @@ services:
       - "8883:8883"      # MQTT SSL
       - "18083:18083"    # Dashboard
     environment:
-      EMQX_NODE__NAME: "emqx@node1.emqx.io"
+      EMQX_NODE__NAME: "[email protected]"
       EMQX_NODE__COOKIE: "${EMQX_NODE_COOKIE}"
       EMQX_DASHBOARD__DEFAULT_USERNAME: "admin"
       EMQX_DASHBOARD__DEFAULT_PASSWORD: "${EMQX_DASHBOARD_PASSWORD}"

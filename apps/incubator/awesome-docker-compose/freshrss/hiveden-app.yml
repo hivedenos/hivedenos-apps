@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://freshrss.org?utm_source=awesome-docker-compose.com
+website: https://freshrss.org?utm_source=localhost
 repo: https://github.com/FreshRSS/FreshRSS
 support: https://github.com/FreshRSS/FreshRSS/tree/edge/Docker

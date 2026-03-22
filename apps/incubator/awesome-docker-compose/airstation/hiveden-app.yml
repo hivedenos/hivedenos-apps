@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://radio.yurace.pro?utm_source=awesome-docker-compose.com
+website: https://radio.yurace.pro?utm_source=localhost
 repo: https://github.com/cheatsnake/airstation
 support: https://github.com/cheatsnake/airstation/blob/master/docs/installation.md

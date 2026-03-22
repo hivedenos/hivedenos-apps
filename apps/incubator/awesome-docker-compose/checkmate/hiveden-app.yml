@@ -16,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://checkmate.so?utm_source=awesome-docker-compose.com
+website: https://checkmate.so?utm_source=localhost
 repo: https://github.com/bluewave-labs/Checkmate
 support: https://docs.checkmate.so/checkmate-2.1/users-guide/quickstart

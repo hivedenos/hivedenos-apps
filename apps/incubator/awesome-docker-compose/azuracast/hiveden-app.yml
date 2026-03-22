@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.azuracast.com?utm_source=awesome-docker-compose.com
+website: https://www.azuracast.com?utm_source=localhost
 repo: https://github.com/azuracast/azuracast
 support: https://www.azuracast.com/docs/getting-started/installation/

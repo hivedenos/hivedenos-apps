@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://kopia.io?utm_source=awesome-docker-compose.com
+website: https://kopia.io?utm_source=localhost
 repo: https://github.com/kopia/kopia
 support: https://kopia.io/docs/installation/#docker-images

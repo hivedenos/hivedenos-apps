@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://pypi.org/project/whoogle-search?utm_source=awesome-docker-compose.com
+website: https://pypi.org/project/whoogle-search?utm_source=localhost
 repo: https://github.com/benbusby/whoogle-search
 support: https://github.com/benbusby/whoogle-search#manual-docker

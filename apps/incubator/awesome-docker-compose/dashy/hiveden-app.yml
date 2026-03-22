@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://dashy.to?utm_source=awesome-docker-compose.com
+website: https://dashy.to?utm_source=localhost
 repo: https://github.com/lissy93/dashy
 support: https://dashy.to/docs/deployment/#using-docker-compose

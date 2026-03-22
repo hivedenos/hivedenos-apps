@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.elkarbackup.org?utm_source=awesome-docker-compose.com
+website: https://www.elkarbackup.org?utm_source=localhost
 repo: https://github.com/elkarbackup/elkarbackup
 support: https://docs.elkarbackup.org/docs/installation.html#docker

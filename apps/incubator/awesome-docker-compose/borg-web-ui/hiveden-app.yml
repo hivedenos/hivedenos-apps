@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://karanhudia.github.io/borg-ui?utm_source=awesome-docker-compose.com
+website: https://karanhudia.github.io/borg-ui?utm_source=localhost
 repo: https://github.com/karanhudia/borg-ui
 support: https://karanhudia.github.io/borg-ui/configuration

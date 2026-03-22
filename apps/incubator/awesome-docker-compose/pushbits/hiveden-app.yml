@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://pushbits.github.io?utm_source=awesome-docker-compose.com
+website: https://pushbits.github.io?utm_source=localhost
 repo: https://github.com/pushbits/server
 support: https://pushbits.github.io/docs/

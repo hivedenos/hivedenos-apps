@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.getontracks.org?utm_source=awesome-docker-compose.com
+website: https://www.getontracks.org?utm_source=localhost
 repo: https://github.com/TracksApp/tracks
 support: https://github.com/TracksApp/tracks/blob/v2.7.1/doc/installation.md

@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://nxs-backup.io?utm_source=awesome-docker-compose.com
+website: https://nxs-backup.io?utm_source=localhost
 repo: https://github.com/nixys/nxs-backup
 support: https://github.com/nixys/nxs-backup#docker-compose

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://zipline.diced.sh?utm_source=awesome-docker-compose.com
+website: https://zipline.diced.sh?utm_source=localhost
 repo: https://github.com/diced/zipline
 support: https://github.com/diced/zipline#usage

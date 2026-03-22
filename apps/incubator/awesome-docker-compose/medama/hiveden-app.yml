@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://oss.medama.io?utm_source=awesome-docker-compose.com
+website: https://oss.medama.io?utm_source=localhost
 repo: https://github.com/medama-io/medama
 support: https://oss.medama.io/deployment/docker

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://filesharing.webinno.fr?utm_source=awesome-docker-compose.com
+website: https://filesharing.webinno.fr?utm_source=localhost
 repo: https://github.com/axeloz/filesharing
 support: https://github.com/axeloz/filesharing#installation

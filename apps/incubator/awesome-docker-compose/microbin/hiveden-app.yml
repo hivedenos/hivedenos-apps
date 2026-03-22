@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://microbin.eu?utm_source=awesome-docker-compose.com
+website: https://microbin.eu?utm_source=localhost
 repo: https://github.com/szabodanika/microbin
 support: https://github.com/szabodanika/microbin/blob/master/compose.yaml

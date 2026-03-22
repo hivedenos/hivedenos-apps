@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://neko.m1k1o.net?utm_source=awesome-docker-compose.com
+website: https://neko.m1k1o.net?utm_source=localhost
 repo: https://github.com/m1k1o/neko
 support: https://neko.m1k1o.net/docs/v3/quick-start

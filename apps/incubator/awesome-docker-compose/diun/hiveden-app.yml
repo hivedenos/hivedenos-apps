@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://crazymax.dev/diun?utm_source=awesome-docker-compose.com
+website: https://crazymax.dev/diun?utm_source=localhost
 repo: https://github.com/crazy-max/diun
 support: https://crazymax.dev/diun/install/docker/

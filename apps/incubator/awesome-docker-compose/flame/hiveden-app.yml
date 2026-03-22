@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/pawelmalak/flame?utm_source=awesome-docker-compose.com
+website: https://github.com/pawelmalak/flame?utm_source=localhost
 repo: https://github.com/pawelmalak/flame
 support: https://github.com/pawelmalak/flame#installation

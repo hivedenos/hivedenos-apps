@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://triliumnotes.org?utm_source=awesome-docker-compose.com
+website: https://triliumnotes.org?utm_source=localhost
 repo: https://github.com/TriliumNext/Trilium
 support: https://docs.triliumnotes.org/user-guide/setup/server/installation/docker

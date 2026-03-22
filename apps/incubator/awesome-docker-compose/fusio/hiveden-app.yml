@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.fusio-project.org?utm_source=awesome-docker-compose.com
+website: https://www.fusio-project.org?utm_source=localhost
 repo: https://github.com/apioo/fusio
 support: https://docs.fusio-project.org/docs/installation/docker

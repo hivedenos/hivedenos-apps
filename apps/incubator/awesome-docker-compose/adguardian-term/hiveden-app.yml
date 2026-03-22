@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://adguardian.as93.net?utm_source=awesome-docker-compose.com
+website: https://adguardian.as93.net?utm_source=localhost
 repo: https://github.com/lissy93/AdGuardian-Term
 support: https://github.com/lissy93/AdGuardian-Term#docker

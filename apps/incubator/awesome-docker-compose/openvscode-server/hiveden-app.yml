@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/gitpod-io/openvscode-server?utm_source=awesome-docker-compose.com
+website: https://github.com/gitpod-io/openvscode-server?utm_source=localhost
 repo: https://github.com/gitpod-io/openvscode-server
 support: https://github.com/gitpod-io/openvscode-server#docker

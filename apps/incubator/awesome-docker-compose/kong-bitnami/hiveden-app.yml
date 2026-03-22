@@ -16,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://konghq.com/products/kong-gateway?utm_source=awesome-docker-compose.com
+website: https://konghq.com/products/kong-gateway?utm_source=localhost
 repo: https://github.com/Kong/kong
 support: https://hub.docker.com/r/bitnami/kong

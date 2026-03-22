@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://openspeedtest.com?utm_source=awesome-docker-compose.com
+website: https://openspeedtest.com?utm_source=localhost
 repo: https://github.com/openspeedtest/Speed-Test
 support: https://github.com/openspeedtest/Speed-Test#self-hosted-on-premise--docker-imagesource-code

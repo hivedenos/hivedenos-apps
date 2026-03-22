@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://heimdall.site?utm_source=awesome-docker-compose.com
+website: https://heimdall.site?utm_source=localhost
 repo: https://github.com/linuxserver/Heimdall
 support: https://github.com/linuxserver/Heimdall

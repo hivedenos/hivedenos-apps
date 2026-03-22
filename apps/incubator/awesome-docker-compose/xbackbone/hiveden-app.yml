@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://xbackbone.app?utm_source=awesome-docker-compose.com
+website: https://xbackbone.app?utm_source=localhost
 repo: https://github.com/SergiX44/XBackBone
 support: https://github.com/linuxserver/docker-xbackbone

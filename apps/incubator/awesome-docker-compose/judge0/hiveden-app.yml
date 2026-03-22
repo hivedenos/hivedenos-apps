@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://judge0.com?utm_source=awesome-docker-compose.com
+website: https://judge0.com?utm_source=localhost
 repo: https://github.com/judge0/judge0
 support: https://github.com/judge0/judge0/blob/master/CHANGELOG.md#deployment-procedure

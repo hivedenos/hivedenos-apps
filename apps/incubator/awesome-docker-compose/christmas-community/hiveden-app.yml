@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/Wingysam/Christmas-Community?utm_source=awesome-docker-compose.com
+website: https://github.com/Wingysam/Christmas-Community?utm_source=localhost
 repo: https://github.com/Wingysam/Christmas-Community
 support: https://github.com/Wingysam/Christmas-Community#docker-compose

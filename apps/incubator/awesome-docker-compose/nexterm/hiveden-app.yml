@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://nexterm.dev?utm_source=awesome-docker-compose.com
+website: https://nexterm.dev?utm_source=localhost
 repo: https://github.com/gnmyt/Nexterm
 support: https://docs.nexterm.dev/installation

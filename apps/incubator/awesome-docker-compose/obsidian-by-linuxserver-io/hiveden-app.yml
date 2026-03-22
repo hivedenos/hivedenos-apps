@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://obsidian.md?utm_source=awesome-docker-compose.com
+website: https://obsidian.md?utm_source=localhost
 repo: https://github.com/linuxserver/docker-obsidian
 support: https://github.com/linuxserver/docker-obsidian

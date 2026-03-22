@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://ipcheck.ing?utm_source=awesome-docker-compose.com
+website: https://ipcheck.ing?utm_source=localhost
 repo: https://github.com/jason5ng32/MyIP
 support: https://github.com/jason5ng32/MyIP#using-docker

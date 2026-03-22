@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://jitsi.org/jitsi-meet?utm_source=awesome-docker-compose.com
+website: https://jitsi.org/jitsi-meet?utm_source=localhost
 repo: https://github.com/jitsi/jitsi-meet
 support: https://github.com/jitsi/docker-jitsi-meet

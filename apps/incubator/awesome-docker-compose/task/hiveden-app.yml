@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/ovh/utask?utm_source=awesome-docker-compose.com
+website: https://github.com/ovh/utask?utm_source=localhost
 repo: https://github.com/ovh/utask
 support: https://github.com/ovh/utask#running-with-docker-compose

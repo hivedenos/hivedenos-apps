@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://donetick.com?utm_source=awesome-docker-compose.com
+website: https://donetick.com?utm_source=localhost
 repo: https://github.com/donetick/donetick
 support: https://github.com/donetick/donetick#using-docker-compose

@@ -120,7 +120,7 @@ services:
       - |
         mkdir -p /opt/airflow/dags /opt/airflow/logs /opt/airflow/plugins /opt/airflow/config
         chown -R "${AIRFLOW_UID:-50000}:0" /opt/airflow/dags /opt/airflow/logs /opt/airflow/plugins /opt/airflow/config
-        runuser -u airflow -- bash -c "airflow db migrate && airflow users create --role Admin --username $${_AIRFLOW_WWW_USER_USERNAME} --password $${_AIRFLOW_WWW_USER_PASSWORD} --email admin@example.com --firstname admin --lastname admin"
+        runuser -u airflow -- bash -c "airflow db migrate && airflow users create --role Admin --username $${_AIRFLOW_WWW_USER_USERNAME} --password $${_AIRFLOW_WWW_USER_PASSWORD} --email [email protected] --firstname admin --lastname admin"
     environment:
       <<: *airflow-common-env
       _AIRFLOW_WWW_USER_USERNAME: ${_AIRFLOW_WWW_USER_USERNAME}

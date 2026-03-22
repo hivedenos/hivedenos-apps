@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://headscale.net?utm_source=awesome-docker-compose.com
+website: https://headscale.net?utm_source=localhost
 repo: https://github.com/juanfont/headscale
 support: https://headscale.net/stable/setup/install/container/

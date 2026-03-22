@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://tt-rss.org?utm_source=awesome-docker-compose.com
+website: https://tt-rss.org?utm_source=localhost
 repo: https://github.com/tt-rss/tt-rss
 support: https://tt-rss.org/docs/Installation-Guide.html#docker-composeyml

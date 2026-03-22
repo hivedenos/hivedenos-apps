@@ -16,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://openrouteservice.org?utm_source=awesome-docker-compose.com
+website: https://openrouteservice.org?utm_source=localhost
 repo: https://github.com/GIScience/openrouteservice
 support: https://giscience.github.io/openrouteservice/run-instance/running-with-docker

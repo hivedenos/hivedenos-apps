@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://coolify.io?utm_source=awesome-docker-compose.com
+website: https://coolify.io?utm_source=localhost
 repo: https://github.com/coollabsio/coolify
 support: https://github.com/coollabsio/coolify/blob/v4.x/docker-compose.prod.yml

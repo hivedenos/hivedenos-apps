@@ -29,7 +29,7 @@ services:
       PS_INSTALL_AUTO: 1
       PS_DEV_MODE: 0
       PS_DOMAIN: localhost:8080
-      ADMIN_MAIL: demo@prestashop.com
+      ADMIN_MAIL: [email protected]
       ADMIN_PASSWD: ${ADMIN_PASSWORD}
     volumes:
       - ./data/html:/var/www/html

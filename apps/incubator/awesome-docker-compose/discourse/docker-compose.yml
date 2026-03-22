@@ -34,7 +34,7 @@ services:
       - DISCOURSE_HOST=localhost
       - DISCOURSE_USERNAME=admin
       - DISCOURSE_PASSWORD=${DISCOURSE_ADMIN_PASSWORD}
-      - DISCOURSE_EMAIL=admin@example.com
+      - [email protected]
     volumes:
       - ./data/discourse:/bitnami/discourse
     depends_on:

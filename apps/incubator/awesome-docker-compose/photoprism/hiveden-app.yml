@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.photoprism.app?utm_source=awesome-docker-compose.com
+website: https://www.photoprism.app?utm_source=localhost
 repo: https://github.com/photoprism/photoprism
 support: https://docs.photoprism.app/getting-started/docker-compose/

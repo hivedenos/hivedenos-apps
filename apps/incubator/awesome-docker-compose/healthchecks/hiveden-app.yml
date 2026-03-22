@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://healthchecks.io?utm_source=awesome-docker-compose.com
+website: https://healthchecks.io?utm_source=localhost
 repo: https://github.com/healthchecks/healthchecks
 support: https://github.com/healthchecks/healthchecks#docker-image

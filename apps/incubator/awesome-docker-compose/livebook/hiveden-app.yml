@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://livebook.dev?utm_source=awesome-docker-compose.com
+website: https://livebook.dev?utm_source=localhost
 repo: https://github.com/livebook-dev/livebook
 support: https://github.com/livebook-dev/livebook#installation

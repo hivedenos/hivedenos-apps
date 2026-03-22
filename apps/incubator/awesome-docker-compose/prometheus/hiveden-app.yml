@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://prometheus.io?utm_source=awesome-docker-compose.com
+website: https://prometheus.io?utm_source=localhost
 repo: https://github.com/prometheus/prometheus
 support: https://prometheus.io/docs/prometheus/latest/installation/

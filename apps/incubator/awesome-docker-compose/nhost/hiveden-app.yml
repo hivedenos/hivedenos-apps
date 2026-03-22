@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://nhost.io?utm_source=awesome-docker-compose.com
+website: https://nhost.io?utm_source=localhost
 repo: https://github.com/nhost/nhost
 support: https://github.com/nhost/nhost/tree/main/examples/docker-compose

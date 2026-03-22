@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://omnitools.app?utm_source=awesome-docker-compose.com
+website: https://omnitools.app?utm_source=localhost
 repo: https://github.com/iib0011/omni-tools
 support: https://github.com/iib0011/omni-tools#self-hostrun

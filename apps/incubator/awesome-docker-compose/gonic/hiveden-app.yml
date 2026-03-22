@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/sentriz/gonic?utm_source=awesome-docker-compose.com
+website: https://github.com/sentriz/gonic?utm_source=localhost
 repo: https://github.com/sentriz/gonic
 support: https://github.com/sentriz/gonic/wiki/installation#with-docker

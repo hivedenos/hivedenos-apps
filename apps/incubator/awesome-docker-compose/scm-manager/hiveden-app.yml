@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://scm-manager.org?utm_source=awesome-docker-compose.com
+website: https://scm-manager.org?utm_source=localhost
 repo: https://github.com/scm-manager/scm-manager
 support: https://scm-manager.org/docs/latest/en/installation/docker/

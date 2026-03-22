@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://mailcow.email?utm_source=awesome-docker-compose.com
+website: https://mailcow.email?utm_source=localhost
 repo: https://github.com/mailcow/mailcow-dockerized
 support: https://docs.mailcow.email/getstarted/install/

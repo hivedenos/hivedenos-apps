@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://nuskooler.github.io/enigma-bbs?utm_source=awesome-docker-compose.com
+website: https://nuskooler.github.io/enigma-bbs?utm_source=localhost
 repo: https://github.com/NuSkooler/enigma-bbs
 support: https://nuskooler.github.io/enigma-bbs/installation/docker.html

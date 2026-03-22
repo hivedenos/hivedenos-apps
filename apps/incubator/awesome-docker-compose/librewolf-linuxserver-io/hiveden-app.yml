@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://librewolf.net?utm_source=awesome-docker-compose.com
+website: https://librewolf.net?utm_source=localhost
 repo: https://codeberg.org/librewolf
 support: https://github.com/linuxserver/docker-librewolf

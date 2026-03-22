@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.lazywarden.com?utm_source=awesome-docker-compose.com
+website: https://www.lazywarden.com?utm_source=localhost
 repo: https://github.com/querylab/lazywarden
 support: https://github.com/querylab/lazywarden#-docker-compose

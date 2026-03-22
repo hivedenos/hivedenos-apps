@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.tagspaces.org?utm_source=awesome-docker-compose.com
+website: https://www.tagspaces.org?utm_source=localhost
 repo: https://github.com/tagspaces/tagspaces
 support: https://docs.tagspaces.org/tutorials/tagspaces-web-docker/

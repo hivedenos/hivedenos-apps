@@ -16,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://lancache.net?utm_source=awesome-docker-compose.com
+website: https://lancache.net?utm_source=localhost
 repo: https://github.com/lancachenet/monolithic
 support: https://github.com/lancachenet/docker-compose

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://rocker-project.org?utm_source=awesome-docker-compose.com
+website: https://rocker-project.org?utm_source=localhost
 repo: https://github.com/rocker-org/rocker
 support: https://rocker-project.org/images/

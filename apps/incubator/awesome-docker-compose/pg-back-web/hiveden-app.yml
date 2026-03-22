@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/eduardolat/pgbackweb?utm_source=awesome-docker-compose.com
+website: https://github.com/eduardolat/pgbackweb?utm_source=localhost
 repo: https://github.com/eduardolat/pgbackweb
 support: https://github.com/eduardolat/pgbackweb#installation

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://kener.ing?utm_source=awesome-docker-compose.com
+website: https://kener.ing?utm_source=localhost
 repo: https://github.com/rajnandan1/kener
 support: https://kener.ing/docs/deployment

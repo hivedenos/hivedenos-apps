@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.samba.org?utm_source=awesome-docker-compose.com
+website: https://www.samba.org?utm_source=localhost
 repo: https://github.com/crazy-max/docker-samba
 support: https://github.com/crazy-max/docker-samba

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://nebula.defined.net/docs?utm_source=awesome-docker-compose.com
+website: https://nebula.defined.net/docs?utm_source=localhost
 repo: https://github.com/slackhq/nebula
 support: https://hub.docker.com/r/nebulaoss/nebula

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://simonwep.github.io/ocular?utm_source=awesome-docker-compose.com
+website: https://simonwep.github.io/ocular?utm_source=localhost
 repo: https://github.com/simonwep/ocular
 support: https://simonwep.github.io/ocular/pages/deploy.html

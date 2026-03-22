@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/bakito/adguardhome-sync?utm_source=awesome-docker-compose.com
+website: https://github.com/bakito/adguardhome-sync?utm_source=localhost
 repo: https://github.com/bakito/adguardhome-sync
 support: https://github.com/bakito/adguardhome-sync#docker-compose

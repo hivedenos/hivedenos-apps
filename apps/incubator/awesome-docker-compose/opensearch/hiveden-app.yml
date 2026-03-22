@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://opensearch.org?utm_source=awesome-docker-compose.com
+website: https://opensearch.org?utm_source=localhost
 repo: https://github.com/opensearch-project/OpenSearch
 support: https://docs.opensearch.org/latest/install-and-configure/install-opensearch/docker/

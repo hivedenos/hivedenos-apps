@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.getdnote.com?utm_source=awesome-docker-compose.com
+website: https://www.getdnote.com?utm_source=localhost
 repo: https://github.com/dnote/dnote
 support: https://github.com/dnote/dnote#server-optional

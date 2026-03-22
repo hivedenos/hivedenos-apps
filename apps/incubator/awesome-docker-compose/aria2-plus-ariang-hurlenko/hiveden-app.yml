@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/hurlenko/aria2-ariang-docker?utm_source=awesome-docker-compose.com
+website: https://github.com/hurlenko/aria2-ariang-docker?utm_source=localhost
 repo: https://github.com/hurlenko/aria2-ariang-docker
 support: https://github.com/hurlenko/aria2-ariang-docker#usage

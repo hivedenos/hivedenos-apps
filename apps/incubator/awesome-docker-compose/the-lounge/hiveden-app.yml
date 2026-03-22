@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://thelounge.chat?utm_source=awesome-docker-compose.com
+website: https://thelounge.chat?utm_source=localhost
 repo: https://github.com/thelounge/thelounge
 support: https://thelounge.chat/docs/install-and-upgrade#docker

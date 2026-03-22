@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://beszel.dev?utm_source=awesome-docker-compose.com
+website: https://beszel.dev?utm_source=localhost
 repo: https://github.com/henrygd/beszel
 support: https://github.com/henrygd/beszel#installation

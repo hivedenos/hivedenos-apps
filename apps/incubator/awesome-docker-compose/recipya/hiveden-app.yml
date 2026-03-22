@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://old.recipya.ca?utm_source=awesome-docker-compose.com
+website: https://old.recipya.ca?utm_source=localhost
 repo: https://github.com/reaper47/recipya
 support: https://old.recipya.ca/docs/installation/docker/

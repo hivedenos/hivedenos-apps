@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.luanti.org?utm_source=awesome-docker-compose.com
+website: https://www.luanti.org?utm_source=localhost
 repo: https://github.com/luanti-org/luanti
 support: https://github.com/luanti-org/luanti/blob/master/doc/docker_server.md

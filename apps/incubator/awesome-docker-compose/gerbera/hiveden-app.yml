@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://gerbera.io?utm_source=awesome-docker-compose.com
+website: https://gerbera.io?utm_source=localhost
 repo: https://github.com/gerbera/gerbera
 support: https://github.com/gerbera/gerbera/blob/master/README.Docker.md

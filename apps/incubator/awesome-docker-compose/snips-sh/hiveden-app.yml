@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://snips.sh?utm_source=awesome-docker-compose.com
+website: https://snips.sh?utm_source=localhost
 repo: https://github.com/robherley/snips.sh
 support: https://github.com/robherley/snips.sh/blob/main/docs/self-hosting.md

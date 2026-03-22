@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.pinepods.online?utm_source=awesome-docker-compose.com
+website: https://www.pinepods.online?utm_source=localhost
 repo: https://github.com/madeofpendletonwool/PinePods
 support: https://www.pinepods.online/docs/intro

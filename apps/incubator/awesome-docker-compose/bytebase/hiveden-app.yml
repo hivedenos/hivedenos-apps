@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.bytebase.com?utm_source=awesome-docker-compose.com
+website: https://www.bytebase.com?utm_source=localhost
 repo: https://github.com/bytebase/bytebase
 support: https://docs.bytebase.com/get-started/self-host/deploy-with-docker

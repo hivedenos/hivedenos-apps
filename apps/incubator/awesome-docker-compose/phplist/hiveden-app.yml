@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.phplist.org?utm_source=awesome-docker-compose.com
+website: https://www.phplist.org?utm_source=localhost
 repo: https://github.com/phpList/phplist3
 support: https://github.com/phpList/phplist-docker

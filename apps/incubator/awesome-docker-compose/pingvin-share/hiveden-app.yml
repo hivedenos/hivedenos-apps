@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://pingvin-share.dev.eliasschneider.com?utm_source=awesome-docker-compose.com
+website: https://pingvin-share.dev.eliasschneider.com?utm_source=localhost
 repo: https://github.com/stonith404/pingvin-share
 support: https://stonith404.github.io/pingvin-share/setup/installation/

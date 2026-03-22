@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://ente.io?utm_source=awesome-docker-compose.com
+website: https://ente.io?utm_source=localhost
 repo: https://github.com/ente-io/ente
 support: https://github.com/ente-io/ente/blob/main/docs/docs/self-hosting/index.md

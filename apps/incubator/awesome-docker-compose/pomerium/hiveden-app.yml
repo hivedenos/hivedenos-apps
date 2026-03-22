@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.pomerium.com?utm_source=awesome-docker-compose.com
+website: https://www.pomerium.com?utm_source=localhost
 repo: https://github.com/pomerium/pomerium
 support: https://www.pomerium.com/docs/get-started/quickstart

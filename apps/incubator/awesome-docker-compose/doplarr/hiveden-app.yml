@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://kiranshila.github.io/Doplarr?utm_source=awesome-docker-compose.com
+website: https://kiranshila.github.io/Doplarr?utm_source=localhost
 repo: https://github.com/kiranshila/Doplarr
 support: https://kiranshila.github.io/Doplarr/#/installation

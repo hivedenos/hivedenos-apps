@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.accent.reviews?utm_source=awesome-docker-compose.com
+website: https://www.accent.reviews?utm_source=localhost
 repo: https://github.com/mirego/accent
 support: https://www.accent.reviews/guides/deploy/

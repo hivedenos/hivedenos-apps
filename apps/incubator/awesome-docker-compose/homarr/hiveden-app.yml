@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://homarr.dev?utm_source=awesome-docker-compose.com
+website: https://homarr.dev?utm_source=localhost
 repo: https://github.com/ajnart/homarr
 support: https://homarr.dev/docs/getting-started/installation/docker

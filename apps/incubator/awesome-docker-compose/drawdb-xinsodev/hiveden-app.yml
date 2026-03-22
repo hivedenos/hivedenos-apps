@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.drawdb.app?utm_source=awesome-docker-compose.com
+website: https://www.drawdb.app?utm_source=localhost
 repo: https://github.com/drawdb-io/drawdb
 support: https://hub.docker.com/r/xinsodev/drawdb

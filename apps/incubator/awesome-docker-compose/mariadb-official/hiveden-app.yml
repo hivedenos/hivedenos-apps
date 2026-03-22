@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://mariadb.org?utm_source=awesome-docker-compose.com
+website: https://mariadb.org?utm_source=localhost
 repo: https://github.com/MariaDB/mariadb-docker
 support: https://github.com/MariaDB/mariadb-docker

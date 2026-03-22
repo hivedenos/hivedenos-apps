@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://wger.de?utm_source=awesome-docker-compose.com
+website: https://wger.de?utm_source=localhost
 repo: https://github.com/wger-project/wger
 support: https://wger.readthedocs.io/en/latest/production/docker.html

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://languagetool.org?utm_source=awesome-docker-compose.com
+website: https://languagetool.org?utm_source=localhost
 repo: https://github.com/languagetool-org/languagetool
 support: https://github.com/meyayl/docker-languagetool

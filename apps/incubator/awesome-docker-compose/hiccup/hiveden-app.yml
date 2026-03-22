@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/ashwin-pc/hiccup?utm_source=awesome-docker-compose.com
+website: https://github.com/ashwin-pc/hiccup?utm_source=localhost
 repo: https://github.com/ashwin-pc/hiccup
 support: https://github.com/ashwin-pc/hiccup#docker

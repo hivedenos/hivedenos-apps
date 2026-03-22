@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://rust-lang.github.io/mdBook?utm_source=awesome-docker-compose.com
+website: https://rust-lang.github.io/mdBook?utm_source=localhost
 repo: https://github.com/rust-lang/mdBook
 support: https://github.com/allfunc/docker-mdbook

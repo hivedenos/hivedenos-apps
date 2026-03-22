@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://seaweedfs.com?utm_source=awesome-docker-compose.com
+website: https://seaweedfs.com?utm_source=localhost
 repo: https://github.com/seaweedfs/seaweedfs
 support: https://github.com/seaweedfs/seaweedfs/blob/master/docker/seaweedfs-compose.yml

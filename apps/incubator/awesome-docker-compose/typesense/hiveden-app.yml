@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://typesense.org?utm_source=awesome-docker-compose.com
+website: https://typesense.org?utm_source=localhost
 repo: https://github.com/typesense/typesense
 support: https://typesense.org/docs/guide/install-typesense.html

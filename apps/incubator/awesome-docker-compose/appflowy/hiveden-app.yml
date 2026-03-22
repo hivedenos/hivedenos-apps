@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://appflowy.com?utm_source=awesome-docker-compose.com
+website: https://appflowy.com?utm_source=localhost
 repo: https://github.com/AppFlowy-IO/appflowy
 support: https://docs.appflowy.io/docs/appflowy/install-appflowy/installation-methods/installing-with-docker

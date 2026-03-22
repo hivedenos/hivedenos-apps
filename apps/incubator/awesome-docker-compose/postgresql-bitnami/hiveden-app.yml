@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/bitnami/containers/tree/main/bitnami/postgresql?utm_source=awesome-docker-compose.com
+website: https://github.com/bitnami/containers/tree/main/bitnami/postgresql?utm_source=localhost
 repo: https://awesome-docker-compose.com/postgresql-bitnami
 support: https://awesome-docker-compose.com/postgresql-bitnami

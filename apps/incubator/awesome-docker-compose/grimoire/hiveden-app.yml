@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://grimoire.pro?utm_source=awesome-docker-compose.com
+website: https://grimoire.pro?utm_source=localhost
 repo: https://github.com/goniszewski/grimoire
 support: https://grimoire.pro/docs/getting-started/quick-start/

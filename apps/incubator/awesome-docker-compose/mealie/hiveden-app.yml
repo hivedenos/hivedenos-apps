@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://mealie.io?utm_source=awesome-docker-compose.com
+website: https://mealie.io?utm_source=localhost
 repo: https://github.com/mealie-recipes/mealie
 support: https://docs.mealie.io/documentation/getting-started/installation/installation-checklist/

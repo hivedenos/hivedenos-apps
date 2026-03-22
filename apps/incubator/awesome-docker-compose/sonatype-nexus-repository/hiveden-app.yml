@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.sonatype.com/products/sonatype-nexus-repository?utm_source=awesome-docker-compose.com
+website: https://www.sonatype.com/products/sonatype-nexus-repository?utm_source=localhost
 repo: https://github.com/sonatype/docker-nexus3
 support: https://github.com/sonatype/docker-nexus3/blob/main/docker-compose.yml

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://notemark.docs.enchantedcode.co.uk?utm_source=awesome-docker-compose.com
+website: https://notemark.docs.enchantedcode.co.uk?utm_source=localhost
 repo: https://github.com/enchant97/note-mark
 support: https://notemark.docs.enchantedcode.co.uk/docs/setup/install/

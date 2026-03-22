@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://gokapi.readthedocs.io?utm_source=awesome-docker-compose.com
+website: https://gokapi.readthedocs.io?utm_source=localhost
 repo: https://github.com/Forceu/gokapi
 support: https://gokapi.readthedocs.io/en/latest/setup.html

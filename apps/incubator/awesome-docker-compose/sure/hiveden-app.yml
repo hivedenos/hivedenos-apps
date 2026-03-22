@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://sure.am?utm_source=awesome-docker-compose.com
+website: https://sure.am?utm_source=localhost
 repo: https://github.com/we-promise/sure
 support: https://github.com/we-promise/sure/blob/main/docs/hosting/docker.md

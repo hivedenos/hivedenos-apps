@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/nicotsx/zerobyte?utm_source=awesome-docker-compose.com
+website: https://github.com/nicotsx/zerobyte?utm_source=localhost
 repo: https://github.com/nicotsx/zerobyte
 support: https://github.com/nicotsx/zerobyte#installation

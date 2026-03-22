@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://claper.co?utm_source=awesome-docker-compose.com
+website: https://claper.co?utm_source=localhost
 repo: https://github.com/ClaperCo/Claper
 support: https://github.com/ClaperCo/Claper/blob/dev/docker-compose.yml

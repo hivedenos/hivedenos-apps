@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://manticoresearch.com?utm_source=awesome-docker-compose.com
+website: https://manticoresearch.com?utm_source=localhost
 repo: https://github.com/manticoresoftware/manticoresearch
 support: https://github.com/manticoresoftware/docker

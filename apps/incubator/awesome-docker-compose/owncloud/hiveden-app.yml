@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://owncloud.com?utm_source=awesome-docker-compose.com
+website: https://owncloud.com?utm_source=localhost
 repo: https://github.com/owncloud/core
 support: https://doc.owncloud.com/server/10.15/admin_manual/installation/docker/

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://solr.apache.org?utm_source=awesome-docker-compose.com
+website: https://solr.apache.org?utm_source=localhost
 repo: https://github.com/apache/solr
 support: https://solr.apache.org/guide/solr/latest/deployment-guide/solr-in-docker.html

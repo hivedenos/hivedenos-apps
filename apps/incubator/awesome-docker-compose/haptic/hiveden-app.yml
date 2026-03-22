@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.haptic.md?utm_source=awesome-docker-compose.com
+website: https://www.haptic.md?utm_source=localhost
 repo: https://github.com/chroxify/haptic
 support: https://github.com/chroxify/haptic#docker

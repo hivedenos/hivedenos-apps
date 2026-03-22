@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://mailu.io?utm_source=awesome-docker-compose.com
+website: https://mailu.io?utm_source=localhost
 repo: https://github.com/mailu/mailu
 support: https://setup.mailu.io

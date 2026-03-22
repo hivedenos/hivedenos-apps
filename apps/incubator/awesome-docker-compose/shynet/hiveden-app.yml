@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/milesmcc/shynet?utm_source=awesome-docker-compose.com
+website: https://github.com/milesmcc/shynet?utm_source=localhost
 repo: https://github.com/milesmcc/shynet
 support: https://github.com/milesmcc/shynet/blob/master/GUIDE.md

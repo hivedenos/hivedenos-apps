@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/blackcandy-org/blackcandy?utm_source=awesome-docker-compose.com
+website: https://github.com/blackcandy-org/blackcandy?utm_source=localhost
 repo: https://github.com/blackcandy-org/blackcandy
 support: https://github.com/blackcandy-org/blackcandy#installation

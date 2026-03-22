@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://komga.org?utm_source=awesome-docker-compose.com
+website: https://komga.org?utm_source=localhost
 repo: https://github.com/gotson/komga
 support: https://komga.org/docs/installation/docker/

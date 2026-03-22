@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/immense/Remotely?utm_source=awesome-docker-compose.com
+website: https://github.com/immense/Remotely?utm_source=localhost
 repo: https://github.com/immense/Remotely
 support: https://github.com/immense/Remotely#quickstart

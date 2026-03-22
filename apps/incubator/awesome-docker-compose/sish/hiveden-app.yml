@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docs.ssi.sh?utm_source=awesome-docker-compose.com
+website: https://docs.ssi.sh?utm_source=localhost
 repo: https://github.com/antoniomika/sish
 support: https://docs.ssi.sh/getting-started

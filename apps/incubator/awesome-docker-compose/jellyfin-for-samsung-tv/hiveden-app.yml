@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/Georift/install-jellyfin-tizen?utm_source=awesome-docker-compose.com
+website: https://github.com/Georift/install-jellyfin-tizen?utm_source=localhost
 repo: https://github.com/Georift/install-jellyfin-tizen
 support: https://github.com/Georift/install-jellyfin-tizen#install-jellyfin

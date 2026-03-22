@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.authelia.com?utm_source=awesome-docker-compose.com
+website: https://www.authelia.com?utm_source=localhost
 repo: https://github.com/authelia/authelia
 support: https://www.authelia.com/integration/deployment/docker/

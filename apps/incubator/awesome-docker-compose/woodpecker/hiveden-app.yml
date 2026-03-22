@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://woodpecker-ci.org?utm_source=awesome-docker-compose.com
+website: https://woodpecker-ci.org?utm_source=localhost
 repo: https://github.com/woodpecker-ci/woodpecker
 support: https://woodpecker-ci.org/docs/administration/installation/docker-compose

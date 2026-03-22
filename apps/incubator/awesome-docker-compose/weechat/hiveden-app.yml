@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://weechat.org?utm_source=awesome-docker-compose.com
+website: https://weechat.org?utm_source=localhost
 repo: https://github.com/weechat/weechat
 support: https://github.com/weechat/weechat-container

@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://koito.io?utm_source=awesome-docker-compose.com
+website: https://koito.io?utm_source=localhost
 repo: https://github.com/gabehf/Koito
 support: https://koito.io/reference/configuration/

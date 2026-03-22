@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://formbricks.com?utm_source=awesome-docker-compose.com
+website: https://formbricks.com?utm_source=localhost
 repo: https://github.com/formbricks/formbricks
 support: https://formbricks.com/docs/self-hosting/setup/docker

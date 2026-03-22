@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://homer-demo.netlify.app?utm_source=awesome-docker-compose.com
+website: https://homer-demo.netlify.app?utm_source=localhost
 repo: https://github.com/bastienwirtz/homer
 support: https://github.com/bastienwirtz/homer#getting-started

@@ -16,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://sickchill.github.io?utm_source=awesome-docker-compose.com
+website: https://sickchill.github.io?utm_source=localhost
 repo: https://github.com/SickChill/sickchill
 support: https://github.com/SickChill/SickChill/wiki/Docker

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://standardnotes.com?utm_source=awesome-docker-compose.com
+website: https://standardnotes.com?utm_source=localhost
 repo: https://github.com/standardnotes/app
 support: https://github.com/standardnotes/server

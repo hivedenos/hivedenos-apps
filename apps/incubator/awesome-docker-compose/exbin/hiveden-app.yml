@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/m1dnight/exbin?utm_source=awesome-docker-compose.com
+website: https://github.com/m1dnight/exbin?utm_source=localhost
 repo: https://github.com/m1dnight/exbin
 support: https://github.com/m1dnight/exbin#installation

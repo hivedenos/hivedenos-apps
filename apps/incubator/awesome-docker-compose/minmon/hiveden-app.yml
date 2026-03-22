@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/flo-at/minmon?utm_source=awesome-docker-compose.com
+website: https://github.com/flo-at/minmon?utm_source=localhost
 repo: https://github.com/flo-at/minmon
 support: https://github.com/flo-at/minmon#docker-image

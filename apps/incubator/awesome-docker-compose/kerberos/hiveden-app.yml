@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://kerberos.io?utm_source=awesome-docker-compose.com
+website: https://kerberos.io?utm_source=localhost
 repo: https://github.com/kerberos-io/agent
 support: https://github.com/kerberos-io/agent/tree/master/deployments/docker

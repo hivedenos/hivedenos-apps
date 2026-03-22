@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://squidfunk.github.io/mkdocs-material?utm_source=awesome-docker-compose.com
+website: https://squidfunk.github.io/mkdocs-material?utm_source=localhost
 repo: https://github.com/squidfunk/mkdocs-material
 support: https://squidfunk.github.io/mkdocs-material/getting-started/

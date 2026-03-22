@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://swingmx.com?utm_source=awesome-docker-compose.com
+website: https://swingmx.com?utm_source=localhost
 repo: https://github.com/swingmx/swingmusic
 support: https://swingmx.com/guide/getting-started.html

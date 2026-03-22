@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://speedtest-tracker.dev?utm_source=awesome-docker-compose.com
+website: https://speedtest-tracker.dev?utm_source=localhost
 repo: https://github.com/alexjustesen/speedtest-tracker
 support: https://docs.speedtest-tracker.dev/getting-started/installation/using-docker-compose

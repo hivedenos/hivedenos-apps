@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://onedev.io?utm_source=awesome-docker-compose.com
+website: https://onedev.io?utm_source=localhost
 repo: https://github.com/theonedev/onedev
 support: https://docs.onedev.io/

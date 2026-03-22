@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://zotregistry.dev?utm_source=awesome-docker-compose.com
+website: https://zotregistry.dev?utm_source=localhost
 repo: https://github.com/project-zot/zot
 support: https://zotregistry.dev/v2.1.0/admin-guide/admin-getting-started/

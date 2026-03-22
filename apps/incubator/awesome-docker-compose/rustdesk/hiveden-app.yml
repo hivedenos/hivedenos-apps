@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://rustdesk.com?utm_source=awesome-docker-compose.com
+website: https://rustdesk.com?utm_source=localhost
 repo: https://github.com/rustdesk/rustdesk-server
 support: https://rustdesk.com/docs/en/self-host/rustdesk-server-oss/docker/

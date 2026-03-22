@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://nicolargo.github.io/glances?utm_source=awesome-docker-compose.com
+website: https://nicolargo.github.io/glances?utm_source=localhost
 repo: https://github.com/nicolargo/glances
 support: https://github.com/nicolargo/glances#docker-the-cloudy-way

@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://containrrr.dev/watchtower?utm_source=awesome-docker-compose.com
+website: https://containrrr.dev/watchtower?utm_source=localhost
 repo: https://github.com/containrrr/watchtower
 support: https://github.com/containrrr/watchtower#quick-start

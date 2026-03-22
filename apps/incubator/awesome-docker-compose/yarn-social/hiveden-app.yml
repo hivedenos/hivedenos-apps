@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://yarn.social?utm_source=awesome-docker-compose.com
+website: https://yarn.social?utm_source=localhost
 repo: https://git.mills.io/yarnsocial/yarn
 support: https://git.mills.io/yarnsocial/yarn#deploy-with-docker

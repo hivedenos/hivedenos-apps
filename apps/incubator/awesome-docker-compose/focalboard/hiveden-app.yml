@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.focalboard.com?utm_source=awesome-docker-compose.com
+website: https://www.focalboard.com?utm_source=localhost
 repo: https://github.com/mattermost-community/focalboard
 support: https://www.focalboard.com/download/personal-edition/docker/

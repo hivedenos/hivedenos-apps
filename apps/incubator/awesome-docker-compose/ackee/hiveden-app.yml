@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://ackee.electerious.com?utm_source=awesome-docker-compose.com
+website: https://ackee.electerious.com?utm_source=localhost
 repo: https://github.com/electerious/Ackee
 support: https://github.com/electerious/Ackee/blob/master/docs/Get%20started.md#with-docker-compose

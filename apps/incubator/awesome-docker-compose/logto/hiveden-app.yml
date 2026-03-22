@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://logto.io?utm_source=awesome-docker-compose.com
+website: https://logto.io?utm_source=localhost
 repo: https://github.com/logto-io/logto
 support: https://docs.logto.io/logto-oss/get-started-with-oss

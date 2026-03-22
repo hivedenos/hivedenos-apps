@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://sosse.io?utm_source=awesome-docker-compose.com
+website: https://sosse.io?utm_source=localhost
 repo: https://github.com/biolds/sosse
 support: https://sosse.readthedocs.io/en/stable/install/docker.html

@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://fileshelter-demo.poupon.dev?utm_source=awesome-docker-compose.com
+website: https://fileshelter-demo.poupon.dev?utm_source=localhost
 repo: https://github.com/epoupon/fileshelter
 support: https://github.com/epoupon/fileshelter/blob/master/INSTALL.md

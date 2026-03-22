@@ -16,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.reviewboard.org?utm_source=awesome-docker-compose.com
+website: https://www.reviewboard.org?utm_source=localhost
 repo: https://github.com/reviewboard/reviewboard
 support: https://www.reviewboard.org/docs/manual/latest/admin/installation/docker/

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://castopod.org?utm_source=awesome-docker-compose.com
+website: https://castopod.org?utm_source=localhost
 repo: https://github.com/ad-aures/castopod
 support: https://docs.castopod.org/main/en/getting-started/docker/

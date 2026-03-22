@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://linkding.link?utm_source=awesome-docker-compose.com
+website: https://linkding.link?utm_source=localhost
 repo: https://github.com/sissbruecker/linkding
 support: https://github.com/sissbruecker/linkding#installation

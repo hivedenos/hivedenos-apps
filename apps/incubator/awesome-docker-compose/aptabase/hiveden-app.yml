@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://aptabase.com?utm_source=awesome-docker-compose.com
+website: https://aptabase.com?utm_source=localhost
 repo: https://github.com/aptabase/aptabase
 support: https://github.com/aptabase/self-hosting

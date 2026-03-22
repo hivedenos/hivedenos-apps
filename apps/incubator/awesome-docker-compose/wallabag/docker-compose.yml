@@ -13,7 +13,7 @@ services:
       - SYMFONY__ENV__MAILER_HOST=127.0.0.1
       - SYMFONY__ENV__MAILER_USER=~
       - SYMFONY__ENV__MAILER_PASSWORD=~
-      - SYMFONY__ENV__FROM_EMAIL=wallabag@example.com
+      - [email protected]
       - SYMFONY__ENV__DOMAIN_NAME=http://localhost:8080
       - SYMFONY__ENV__SERVER_NAME="My Wallabag Instance"
       - SYMFONY__ENV__SECRET=${SECRET_KEY}

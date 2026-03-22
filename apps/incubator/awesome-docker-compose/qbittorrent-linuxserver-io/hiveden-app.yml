@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.qbittorrent.org?utm_source=awesome-docker-compose.com
+website: https://www.qbittorrent.org?utm_source=localhost
 repo: https://github.com/linuxserver/docker-qbittorrent
 support: https://github.com/linuxserver/docker-qbittorrent

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://archivy.github.io?utm_source=awesome-docker-compose.com
+website: https://archivy.github.io?utm_source=localhost
 repo: https://github.com/archivy/archivy
 support: https://github.com/archivy/archivy-docker

@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://teamspeak.com?utm_source=awesome-docker-compose.com
+website: https://teamspeak.com?utm_source=localhost
 repo: https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images
 support: https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images

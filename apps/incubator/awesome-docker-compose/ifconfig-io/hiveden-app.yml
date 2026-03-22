@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://ifconfig.io?utm_source=awesome-docker-compose.com
+website: https://ifconfig.io?utm_source=localhost
 repo: https://github.com/georgyo/ifconfig.io
 support: https://github.com/georgyo/ifconfig.io#deployment

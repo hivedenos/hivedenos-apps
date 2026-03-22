@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/vrtmrz/obsidian-livesync?utm_source=awesome-docker-compose.com
+website: https://github.com/vrtmrz/obsidian-livesync?utm_source=localhost
 repo: https://github.com/vrtmrz/obsidian-livesync
 support: https://github.com/vrtmrz/obsidian-livesync/blob/main/docs/setup_own_server.md

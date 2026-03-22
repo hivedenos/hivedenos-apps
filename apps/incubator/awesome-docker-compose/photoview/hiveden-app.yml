@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://photoview.github.io?utm_source=awesome-docker-compose.com
+website: https://photoview.github.io?utm_source=localhost
 repo: https://github.com/photoview/photoview
 support: https://photoview.github.io/en/docs/getting-started/

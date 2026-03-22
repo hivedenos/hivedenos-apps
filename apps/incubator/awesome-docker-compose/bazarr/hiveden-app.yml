@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.bazarr.media?utm_source=awesome-docker-compose.com
+website: https://www.bazarr.media?utm_source=localhost
 repo: https://github.com/morpheus65535/bazarr
 support: https://github.com/linuxserver/docker-bazarr

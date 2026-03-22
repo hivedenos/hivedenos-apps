@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://webthings.io?utm_source=awesome-docker-compose.com
+website: https://webthings.io?utm_source=localhost
 repo: https://github.com/WebThingsIO/gateway
 support: https://webthings.io/docs/gateway/installation/

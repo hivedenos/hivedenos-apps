@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://dockge.kuma.pet?utm_source=awesome-docker-compose.com
+website: https://dockge.kuma.pet?utm_source=localhost
 repo: https://github.com/louislam/dockge
 support: https://github.com/louislam/dockge#-how-to-install

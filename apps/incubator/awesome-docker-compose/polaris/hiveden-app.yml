@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://demo.polaris.stream?utm_source=awesome-docker-compose.com
+website: https://demo.polaris.stream?utm_source=localhost
 repo: https://github.com/agersant/polaris
 support: https://github.com/ogarcia/docker-polaris

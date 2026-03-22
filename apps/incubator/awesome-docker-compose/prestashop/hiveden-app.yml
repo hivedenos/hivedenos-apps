@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://prestashop.com?utm_source=awesome-docker-compose.com
+website: https://prestashop.com?utm_source=localhost
 repo: https://github.com/PrestaShop/PrestaShop
 support: https://devdocs.prestashop-project.org/9/basics/installation/environments/docker/

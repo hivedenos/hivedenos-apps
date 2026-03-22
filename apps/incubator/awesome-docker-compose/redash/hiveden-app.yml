@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://redash.io?utm_source=awesome-docker-compose.com
+website: https://redash.io?utm_source=localhost
 repo: https://github.com/getredash/redash
 support: https://redash.io/help/open-source/setup/#docker

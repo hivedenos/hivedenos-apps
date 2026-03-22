@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docs.bracketapp.nl?utm_source=awesome-docker-compose.com
+website: https://docs.bracketapp.nl?utm_source=localhost
 repo: https://github.com/evroon/bracket
 support: https://docs.bracketapp.nl/docs/deployment/docker/

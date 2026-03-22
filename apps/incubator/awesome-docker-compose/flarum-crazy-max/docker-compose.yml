@@ -16,7 +16,7 @@ services:
       - FLARUM_TITLE=My Forum
       - FLARUM_ADMIN_USER=admin
       - FLARUM_ADMIN_PASS=${FLARUM_ADMIN_PASS}
-      - FLARUM_ADMIN_EMAIL=admin@example.com
+      - [email protected]
     volumes:
       - ./data:/data
     depends_on:

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://atomicdata.dev?utm_source=awesome-docker-compose.com
+website: https://atomicdata.dev?utm_source=localhost
 repo: https://github.com/ontola/atomic-server
 support: https://github.com/ontola/atomic-server/blob/develop/docker-compose.yml

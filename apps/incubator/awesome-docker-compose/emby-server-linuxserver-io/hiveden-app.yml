@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://emby.media?utm_source=awesome-docker-compose.com
+website: https://emby.media?utm_source=localhost
 repo: https://github.com/MediaBrowser/Emby
 support: https://github.com/linuxserver/docker-emby

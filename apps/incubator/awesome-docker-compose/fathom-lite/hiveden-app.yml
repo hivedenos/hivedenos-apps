@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://usefathom.com?utm_source=awesome-docker-compose.com
+website: https://usefathom.com?utm_source=localhost
 repo: https://github.com/usefathom/fathom
 support: https://github.com/usefathom/fathom/blob/master/docker-compose.yml

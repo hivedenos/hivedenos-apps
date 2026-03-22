@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.meilisearch.com?utm_source=awesome-docker-compose.com
+website: https://www.meilisearch.com?utm_source=localhost
 repo: https://github.com/meilisearch/meilisearch
 support: https://www.meilisearch.com/docs/guides/misc/docker

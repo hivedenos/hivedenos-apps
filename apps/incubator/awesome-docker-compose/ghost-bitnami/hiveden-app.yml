@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://ghost.org?utm_source=awesome-docker-compose.com
+website: https://ghost.org?utm_source=localhost
 repo: https://awesome-docker-compose.com/ghost-bitnami
 support: https://awesome-docker-compose.com/ghost-bitnami

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://notepad.mx?utm_source=awesome-docker-compose.com
+website: https://notepad.mx?utm_source=localhost
 repo: https://github.com/Athlon1600/notepad
 support: https://github.com/Athlon1600/notepad#whale2-deploy-using-docker

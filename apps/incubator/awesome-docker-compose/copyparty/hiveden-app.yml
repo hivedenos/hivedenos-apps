@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://a.ocv.me/pub/demo?utm_source=awesome-docker-compose.com
+website: https://a.ocv.me/pub/demo?utm_source=localhost
 repo: https://github.com/9001/copyparty
 support: https://github.com/9001/copyparty/tree/hovudstraum/scripts/docker

@@ -16,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://ntfy.sh?utm_source=awesome-docker-compose.com
+website: https://ntfy.sh?utm_source=localhost
 repo: https://github.com/binwiederhier/ntfy
 support: https://docs.ntfy.sh/install/#docker

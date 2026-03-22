@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.atheos.io?utm_source=awesome-docker-compose.com
+website: https://www.atheos.io?utm_source=localhost
 repo: https://github.com/Atheos/Atheos
 support: https://hub.docker.com/r/hlsiira/atheos

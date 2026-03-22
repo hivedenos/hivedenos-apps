@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://fess.codelibs.org?utm_source=awesome-docker-compose.com
+website: https://fess.codelibs.org?utm_source=localhost
 repo: https://github.com/codelibs/fess
 support: https://github.com/codelibs/docker-fess

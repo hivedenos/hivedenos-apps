@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://anycable.io?utm_source=awesome-docker-compose.com
+website: https://anycable.io?utm_source=localhost
 repo: https://github.com/anycable/anycable
 support: https://docs.anycable.io/deployment/docker

@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.keila.io?utm_source=awesome-docker-compose.com
+website: https://www.keila.io?utm_source=localhost
 repo: https://github.com/pentacent/keila
 support: https://www.keila.io/docs/installation

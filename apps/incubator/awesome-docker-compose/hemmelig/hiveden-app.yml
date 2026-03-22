@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://hemmelig.app?utm_source=awesome-docker-compose.com
+website: https://hemmelig.app?utm_source=localhost
 repo: https://github.com/HemmeligOrg/Hemmelig.app
 support: https://github.com/HemmeligOrg/Hemmelig.app

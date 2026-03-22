@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.appsmith.com?utm_source=awesome-docker-compose.com
+website: https://www.appsmith.com?utm_source=localhost
 repo: https://github.com/appsmithorg/appsmith
 support: https://docs.appsmith.com/getting-started/setup/installation-guides/docker

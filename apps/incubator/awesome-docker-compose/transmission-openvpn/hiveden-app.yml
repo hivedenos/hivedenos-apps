@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://haugene.github.io/docker-transmission-openvpn?utm_source=awesome-docker-compose.com
+website: https://haugene.github.io/docker-transmission-openvpn?utm_source=localhost
 repo: https://github.com/haugene/docker-transmission-openvpn
 support: https://haugene.github.io/docker-transmission-openvpn/run-container/

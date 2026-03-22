@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.cypht.org?utm_source=awesome-docker-compose.com
+website: https://www.cypht.org?utm_source=localhost
 repo: https://github.com/cypht-org/cypht
 support: https://github.com/cypht-org/cypht/blob/master/docker/DOCKERHUB-README.md

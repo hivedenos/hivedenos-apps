@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://psi.cx/2017/psitransfer?utm_source=awesome-docker-compose.com
+website: https://psi.cx/2017/psitransfer?utm_source=localhost
 repo: https://github.com/psi-4ward/psitransfer
 support: https://github.com/psi-4ward/psitransfer#quickstart

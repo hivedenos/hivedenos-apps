@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.localstack.cloud?utm_source=awesome-docker-compose.com
+website: https://www.localstack.cloud?utm_source=localhost
 repo: https://github.com/localstack/localstack
 support: https://docs.localstack.cloud/aws/getting-started/installation/#docker-compose

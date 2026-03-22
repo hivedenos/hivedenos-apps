@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://itskovacs-trip.netlify.app?utm_source=awesome-docker-compose.com
+website: https://itskovacs-trip.netlify.app?utm_source=localhost
 repo: https://github.com/itskovacs/trip
 support: https://itskovacs.github.io/trip/docs/getting-started/deploy

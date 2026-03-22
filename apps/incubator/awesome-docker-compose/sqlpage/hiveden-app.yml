@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://sql-page.com?utm_source=awesome-docker-compose.com
+website: https://sql-page.com?utm_source=localhost
 repo: https://github.com/sqlpage/SQLPage
 support: https://github.com/sqlpage/SQLPage#with-docker

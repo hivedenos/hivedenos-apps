@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://txt.dc09.xyz?utm_source=awesome-docker-compose.com
+website: https://txt.dc09.xyz?utm_source=localhost
 repo: https://github.com/TempoWorks/txtdot
 support: https://github.com/TempoWorks/txtdot/blob/main/docker-compose.yml

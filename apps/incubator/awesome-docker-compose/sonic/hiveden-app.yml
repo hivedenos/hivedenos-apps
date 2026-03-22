@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/valeriansaliou/sonic?utm_source=awesome-docker-compose.com
+website: https://github.com/valeriansaliou/sonic?utm_source=localhost
 repo: https://github.com/valeriansaliou/sonic
 support: https://github.com/valeriansaliou/sonic#installation

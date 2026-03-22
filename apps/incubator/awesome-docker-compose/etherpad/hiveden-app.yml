@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://etherpad.org?utm_source=awesome-docker-compose.com
+website: https://etherpad.org?utm_source=localhost
 repo: https://github.com/ether/etherpad-lite
 support: https://github.com/ether/etherpad-lite/blob/develop/doc/docker.adoc

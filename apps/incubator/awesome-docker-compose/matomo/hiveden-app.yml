@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://matomo.org?utm_source=awesome-docker-compose.com
+website: https://matomo.org?utm_source=localhost
 repo: https://github.com/matomo-org/matomo
 support: https://github.com/matomo-org/docker

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://dockhand.pro?utm_source=awesome-docker-compose.com
+website: https://dockhand.pro?utm_source=localhost
 repo: https://github.com/Finsys/dockhand
 support: https://dockhand.pro/manual/

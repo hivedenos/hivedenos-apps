@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docs.2fauth.app?utm_source=awesome-docker-compose.com
+website: https://docs.2fauth.app?utm_source=localhost
 repo: https://github.com/Bubka/2FAuth
 support: https://docs.2fauth.app/getting-started/installation/docker/docker-compose/

@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://inventree.org?utm_source=awesome-docker-compose.com
+website: https://inventree.org?utm_source=localhost
 repo: https://github.com/inventree/InvenTree
 support: https://docs.inventree.org/en/latest/start/docker_install/

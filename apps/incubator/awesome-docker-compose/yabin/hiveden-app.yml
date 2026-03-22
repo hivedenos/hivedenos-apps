@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://bin.sohamsen.me?utm_source=awesome-docker-compose.com
+website: https://bin.sohamsen.me?utm_source=localhost
 repo: https://github.com/Yureien/YABin
 support: https://github.com/Yureien/YABin#how-to-host

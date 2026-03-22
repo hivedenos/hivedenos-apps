@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://getinput.co?utm_source=awesome-docker-compose.com
+website: https://getinput.co?utm_source=localhost
 repo: https://github.com/deck9/input
 support: https://github.com/deck9/input#production-deployment

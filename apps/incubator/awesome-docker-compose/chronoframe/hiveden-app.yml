@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://chronoframe.bh8.ga?utm_source=awesome-docker-compose.com
+website: https://chronoframe.bh8.ga?utm_source=localhost
 repo: https://github.com/HoshinoSuzumi/chronoframe
 support: https://chronoframe.bh8.ga/guide/getting-started.html

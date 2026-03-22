@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://ihatemoney.org?utm_source=awesome-docker-compose.com
+website: https://ihatemoney.org?utm_source=localhost
 repo: https://github.com/spiral-project/ihatemoney
 support: https://ihatemoney.readthedocs.io/en/latest/index.html

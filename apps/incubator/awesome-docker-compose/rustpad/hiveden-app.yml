@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://rustpad.io?utm_source=awesome-docker-compose.com
+website: https://rustpad.io?utm_source=localhost
 repo: https://github.com/ekzhang/rustpad
 support: https://github.com/ekzhang/rustpad#deployment

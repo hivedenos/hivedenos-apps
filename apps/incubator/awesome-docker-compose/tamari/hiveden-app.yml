@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://tamariapp.com?utm_source=awesome-docker-compose.com
+website: https://tamariapp.com?utm_source=localhost
 repo: https://github.com/alexbates/Tamari
 support: https://tamariapp.com/docs/install-with-docker/

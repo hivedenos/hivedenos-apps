@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://taiga.io?utm_source=awesome-docker-compose.com
+website: https://taiga.io?utm_source=localhost
 repo: https://github.com/taigaio/taiga-docker
 support: https://community.taiga.io/t/taiga-30min-setup/170

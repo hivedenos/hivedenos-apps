@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://frigate.video?utm_source=awesome-docker-compose.com
+website: https://frigate.video?utm_source=localhost
 repo: https://github.com/blakeblackshear/frigate
 support: https://docs.frigate.video/frigate/installation/#docker

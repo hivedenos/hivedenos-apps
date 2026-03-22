@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://homebox.software?utm_source=awesome-docker-compose.com
+website: https://homebox.software?utm_source=localhost
 repo: https://github.com/sysadminsmedia/homebox
 support: https://homebox.software/en/quick-start/install/

@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://ihexxa.github.io/quickshare.site?utm_source=awesome-docker-compose.com
+website: https://ihexxa.github.io/quickshare.site?utm_source=localhost
 repo: https://github.com/ihexxa/quickshare
 support: https://github.com/ihexxa/quickshare#quick-start

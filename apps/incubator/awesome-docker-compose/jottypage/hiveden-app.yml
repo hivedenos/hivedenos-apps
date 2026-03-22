@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://jotty.page?utm_source=awesome-docker-compose.com
+website: https://jotty.page?utm_source=localhost
 repo: https://github.com/fccview/jotty
 support: https://github.com/fccview/jotty/blob/main/howto/DOCKER.md

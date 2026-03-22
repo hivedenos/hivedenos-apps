@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://mindsdb.com?utm_source=awesome-docker-compose.com
+website: https://mindsdb.com?utm_source=localhost
 repo: https://github.com/mindsdb/mindsdb
 support: https://docs.mindsdb.com/setup/self-hosted/docker

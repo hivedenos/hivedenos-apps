@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://thingsboard.io?utm_source=awesome-docker-compose.com
+website: https://thingsboard.io?utm_source=localhost
 repo: https://github.com/thingsboard/thingsboard
 support: https://thingsboard.io/docs/user-guide/install/docker/

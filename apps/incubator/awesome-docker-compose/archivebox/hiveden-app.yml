@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://archivebox.io?utm_source=awesome-docker-compose.com
+website: https://archivebox.io?utm_source=localhost
 repo: https://github.com/ArchiveBox/ArchiveBox
 support: https://github.com/ArchiveBox/ArchiveBox/blob/dev/docker-compose.yml

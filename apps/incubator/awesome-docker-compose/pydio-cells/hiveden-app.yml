@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.pydio.com?utm_source=awesome-docker-compose.com
+website: https://www.pydio.com?utm_source=localhost
 repo: https://github.com/pydio/cells
 support: https://docs.pydio.com/cells-v4/admin-guide/quick-start/cells-installation/docker/

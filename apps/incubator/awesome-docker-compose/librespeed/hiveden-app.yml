@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://librespeed.org?utm_source=awesome-docker-compose.com
+website: https://librespeed.org?utm_source=localhost
 repo: https://github.com/librespeed/speedtest
 support: https://github.com/librespeed/speedtest/blob/master/doc_docker.md

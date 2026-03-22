@@ -16,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://changedetection.io?utm_source=awesome-docker-compose.com
+website: https://changedetection.io?utm_source=localhost
 repo: https://github.com/dgtlmoon/changedetection.io
 support: https://github.com/dgtlmoon/changedetection.io#installation

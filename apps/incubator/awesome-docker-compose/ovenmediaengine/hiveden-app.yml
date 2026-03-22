@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://space.ovenplayer.com?utm_source=awesome-docker-compose.com
+website: https://space.ovenplayer.com?utm_source=localhost
 repo: https://github.com/OvenMediaLabs/OvenMediaEngine
 support: https://docs.ovenmediaengine.com/getting-started/getting-started-with-docker

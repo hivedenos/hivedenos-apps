@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://about.gitlab.com?utm_source=awesome-docker-compose.com
+website: https://about.gitlab.com?utm_source=localhost
 repo: https://gitlab.com/gitlab-org/gitlab-foss
 support: https://github.com/sameersbn/docker-gitlab

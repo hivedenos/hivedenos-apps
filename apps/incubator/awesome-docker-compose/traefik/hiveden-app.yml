@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://traefik.io/traefik?utm_source=awesome-docker-compose.com
+website: https://traefik.io/traefik?utm_source=localhost
 repo: https://github.com/traefik/traefik
 support: https://doc.traefik.io/traefik/getting-started/install-traefik/

@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://newsblur.com?utm_source=awesome-docker-compose.com
+website: https://newsblur.com?utm_source=localhost
 repo: https://github.com/samuelclay/NewsBlur
 support: https://github.com/samuelclay/NewsBlur/blob/main/docker-compose.yml

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://webportal.docs.enchantedcode.co.uk?utm_source=awesome-docker-compose.com
+website: https://webportal.docs.enchantedcode.co.uk?utm_source=localhost
 repo: https://github.com/enchant97/web-portal
 support: https://webportal.docs.enchantedcode.co.uk/users/install/

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://traggo.net?utm_source=awesome-docker-compose.com
+website: https://traggo.net?utm_source=localhost
 repo: https://github.com/traggo/server
 support: https://traggo.net/install/

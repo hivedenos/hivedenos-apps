@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.pdfding.com?utm_source=awesome-docker-compose.com
+website: https://www.pdfding.com?utm_source=localhost
 repo: https://github.com/mrmn2/PdfDing
 support: https://docs.pdfding.com/getting_started/compose/

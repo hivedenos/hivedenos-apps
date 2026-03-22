@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://pretix.eu?utm_source=awesome-docker-compose.com
+website: https://pretix.eu?utm_source=localhost
 repo: https://github.com/pretix/pretix
 support: https://docs.pretix.eu/self-hosting/installation/docker_smallscale/

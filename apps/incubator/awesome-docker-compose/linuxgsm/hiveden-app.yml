@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://linuxgsm.com?utm_source=awesome-docker-compose.com
+website: https://linuxgsm.com?utm_source=localhost
 repo: https://github.com/GameServerManagers/LinuxGSM
 support: https://github.com/GameServerManagers/docker-gameserver

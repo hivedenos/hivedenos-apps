@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://dokku.com?utm_source=awesome-docker-compose.com
+website: https://dokku.com?utm_source=localhost
 repo: https://github.com/dokku/dokku
 support: https://dokku.com/docs/getting-started/install/docker/

@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://mautic.org?utm_source=awesome-docker-compose.com
+website: https://mautic.org?utm_source=localhost
 repo: https://github.com/mautic/mautic
 support: https://github.com/mautic/mautic

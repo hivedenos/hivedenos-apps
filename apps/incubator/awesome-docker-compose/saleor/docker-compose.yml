@@ -22,7 +22,7 @@ services:
       - EMAIL_URL=smtp://mailpit:1025
       - CELERY_BROKER_URL=redis://redis:6379/1
       - DEFAULT_CHANNEL_SLUG=default-channel
-      - DEFAULT_FROM_EMAIL=noreply@example.com
+      - [email protected]
     command: python manage.py runserver 0.0.0.0:8000
 
   dashboard:

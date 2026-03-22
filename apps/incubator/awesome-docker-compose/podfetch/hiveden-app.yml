@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://podfetch-docs.samtv.fyi?utm_source=awesome-docker-compose.com
+website: https://podfetch-docs.samtv.fyi?utm_source=localhost
 repo: https://github.com/SamTV12345/PodFetch
 support: https://podfetch-docs.samtv.fyi/Installation.html

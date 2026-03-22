@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/khairul169/garage-webui?utm_source=awesome-docker-compose.com
+website: https://github.com/khairul169/garage-webui?utm_source=localhost
 repo: https://github.com/khairul169/garage-webui
 support: https://github.com/khairul169/garage-webui#docker-compose

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://weblate.org?utm_source=awesome-docker-compose.com
+website: https://weblate.org?utm_source=localhost
 repo: https://github.com/WeblateOrg/weblate
 support: https://docs.weblate.org/en/latest/admin/install/docker.html

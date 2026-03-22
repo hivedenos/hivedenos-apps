@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docspell.org?utm_source=awesome-docker-compose.com
+website: https://docspell.org?utm_source=localhost
 repo: https://github.com/eikek/docspell
 support: https://docspell.org/docs/install/docker/

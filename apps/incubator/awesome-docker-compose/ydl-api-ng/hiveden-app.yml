@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/Totonyus/ydl_api_ng?utm_source=awesome-docker-compose.com
+website: https://github.com/Totonyus/ydl_api_ng?utm_source=localhost
 repo: https://github.com/Totonyus/ydl_api_ng
 support: https://github.com/Totonyus/ydl_api_ng#installation

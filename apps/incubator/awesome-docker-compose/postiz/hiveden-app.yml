@@ -16,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://postiz.com?utm_source=awesome-docker-compose.com
+website: https://postiz.com?utm_source=localhost
 repo: https://github.com/gitroomhq/postiz-app
 support: https://docs.postiz.com/installation/docker-compose

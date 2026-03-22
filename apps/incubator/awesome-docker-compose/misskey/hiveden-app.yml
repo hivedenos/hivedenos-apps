@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://misskey-hub.net?utm_source=awesome-docker-compose.com
+website: https://misskey-hub.net?utm_source=localhost
 repo: https://github.com/misskey-dev/misskey
 support: https://misskey-hub.net/en/docs/for-admin/install/guides/docker/

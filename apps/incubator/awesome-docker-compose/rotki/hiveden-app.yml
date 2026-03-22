@@ -16,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://rotki.com?utm_source=awesome-docker-compose.com
+website: https://rotki.com?utm_source=localhost
 repo: https://github.com/rotki/rotki
 support: https://docs.rotki.com/requirement-and-installation/packaged-binaries.html#docker-compose

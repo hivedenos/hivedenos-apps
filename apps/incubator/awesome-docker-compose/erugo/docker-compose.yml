@@ -23,10 +23,10 @@ services:
       MAIL_MAILER: smtp
       MAIL_HOST: smtp.example.com
       MAIL_PORT: 587
-      MAIL_USERNAME: user@example.com
+      MAIL_USERNAME: [email protected]
       MAIL_PASSWORD: ${MAIL_PASSWORD}
       MAIL_ENCRYPTION: tls
-      MAIL_FROM_ADDRESS: no-reply@example.com
+      MAIL_FROM_ADDRESS: [email protected]
       MAIL_FROM_NAME: Erugo
     volumes:
       - ./storage:/var/www/html/storage/app/public

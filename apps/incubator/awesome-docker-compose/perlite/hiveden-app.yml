@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://perlite.secure77.de?utm_source=awesome-docker-compose.com
+website: https://perlite.secure77.de?utm_source=localhost
 repo: https://github.com/secure-77/Perlite
 support: https://github.com/secure-77/Perlite/wiki/02---Setup-Docker

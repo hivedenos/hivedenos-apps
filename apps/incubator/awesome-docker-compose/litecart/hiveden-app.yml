@@ -16,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/shurco/litecart?utm_source=awesome-docker-compose.com
+website: https://github.com/shurco/litecart?utm_source=localhost
 repo: https://github.com/shurco/litecart
 support: https://github.com/shurco/litecart#run-using-docker

@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://clearflask.com?utm_source=awesome-docker-compose.com
+website: https://clearflask.com?utm_source=localhost
 repo: https://github.com/clearflask/clearflask
 support: https://github.com/clearflask/clearflask/blob/master/clearflask-release/src/main/docker/compose/docker-compose.self-host.yml

@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://alf.io?utm_source=awesome-docker-compose.com
+website: https://alf.io?utm_source=localhost
 repo: https://github.com/alfio-event/alf.io
 support: https://github.com/alfio-event/alf.io/blob/main/docker-compose.yml

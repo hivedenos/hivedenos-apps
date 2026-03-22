@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://shaarli.readthedocs.io?utm_source=awesome-docker-compose.com
+website: https://shaarli.readthedocs.io?utm_source=localhost
 repo: https://github.com/shaarli/Shaarli
 support: https://shaarli.readthedocs.io/en/master/Docker.html

@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://0xerr0r.github.io/blocky/latest?utm_source=awesome-docker-compose.com
+website: https://0xerr0r.github.io/blocky/latest?utm_source=localhost
 repo: https://github.com/0xERR0R/blocky
 support: https://0xerr0r.github.io/blocky/latest/installation/

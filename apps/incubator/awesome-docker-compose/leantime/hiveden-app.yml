@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://leantime.io?utm_source=awesome-docker-compose.com
+website: https://leantime.io?utm_source=localhost
 repo: https://github.com/leantime/leantime
 support: https://github.com/leantime/leantime#production-installation-via-docker

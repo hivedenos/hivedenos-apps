@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://trudesk.io?utm_source=awesome-docker-compose.com
+website: https://trudesk.io?utm_source=localhost
 repo: https://github.com/polonel/trudesk
 support: https://docs.trudesk.io/v1.2/getting-started/deployment/docker-deployment/

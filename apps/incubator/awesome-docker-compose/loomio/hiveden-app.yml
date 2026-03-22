@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.loomio.com?utm_source=awesome-docker-compose.com
+website: https://www.loomio.com?utm_source=localhost
 repo: https://github.com/loomio/loomio
 support: https://github.com/loomio/loomio-deploy

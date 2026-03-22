@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://workout.lol?utm_source=awesome-docker-compose.com
+website: https://workout.lol?utm_source=localhost
 repo: https://github.com/workout-lol/workout-lol
 support: https://github.com/workout-lol/workout-lol/blob/main/docker/docker-compose.yml

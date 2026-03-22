@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://kiwix.org/en/applications?utm_source=awesome-docker-compose.com
+website: https://kiwix.org/en/applications?utm_source=localhost
 repo: https://github.com/kiwix/kiwix-tools
 support: https://github.com/kiwix/kiwix-tools/tree/main/docker

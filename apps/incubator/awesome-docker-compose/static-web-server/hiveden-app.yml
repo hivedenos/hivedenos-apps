@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://static-web-server.net?utm_source=awesome-docker-compose.com
+website: https://static-web-server.net?utm_source=localhost
 repo: https://github.com/static-web-server/static-web-server
 support: https://static-web-server.net/features/docker/

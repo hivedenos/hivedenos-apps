@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://damselfly.info?utm_source=awesome-docker-compose.com
+website: https://damselfly.info?utm_source=localhost
 repo: https://github.com/webreaper/damselfly
 support: https://github.com/Webreaper/Damselfly/blob/master/docs/Installation.md

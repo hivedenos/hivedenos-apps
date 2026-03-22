@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://gatus.io?utm_source=awesome-docker-compose.com
+website: https://gatus.io?utm_source=localhost
 repo: https://github.com/TwiN/gatus
 support: https://github.com/TwiN/gatus#deployment

@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://bitmagnet.io?utm_source=awesome-docker-compose.com
+website: https://bitmagnet.io?utm_source=localhost
 repo: https://github.com/bitmagnet-io/bitmagnet
 support: https://bitmagnet.io/setup/installation.html

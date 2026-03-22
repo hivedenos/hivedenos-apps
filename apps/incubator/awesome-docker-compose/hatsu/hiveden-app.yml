@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://hatsu.cli.rs?utm_source=awesome-docker-compose.com
+website: https://hatsu.cli.rs?utm_source=localhost
 repo: https://github.com/importantimport/hatsu
 support: https://hatsu.cli.rs/admins/install-docker.html

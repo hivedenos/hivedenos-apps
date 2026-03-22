@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://rallly.co?utm_source=awesome-docker-compose.com
+website: https://rallly.co?utm_source=localhost
 repo: https://github.com/lukevella/rallly
 support: https://support.rallly.co/self-hosting/installation/docker#docker

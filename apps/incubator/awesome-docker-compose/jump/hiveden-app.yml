@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://jumpdemo.daledavies.co.uk?utm_source=awesome-docker-compose.com
+website: https://jumpdemo.daledavies.co.uk?utm_source=localhost
 repo: https://github.com/daledavies/jump
 support: https://github.com/daledavies/jump#installation

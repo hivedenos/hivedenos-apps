@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/iam4x/bobarr?utm_source=awesome-docker-compose.com
+website: https://github.com/iam4x/bobarr?utm_source=localhost
 repo: https://github.com/iam4x/bobarr
 support: https://github.com/iam4x/bobarr#setup

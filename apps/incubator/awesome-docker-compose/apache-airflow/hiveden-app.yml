@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://airflow.apache.org?utm_source=awesome-docker-compose.com
+website: https://airflow.apache.org?utm_source=localhost
 repo: https://github.com/apache/airflow
 support: https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html

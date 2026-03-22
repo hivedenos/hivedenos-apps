@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.home-assistant.io?utm_source=awesome-docker-compose.com
+website: https://www.home-assistant.io?utm_source=localhost
 repo: https://github.com/home-assistant/core
 support: https://www.home-assistant.io/installation/

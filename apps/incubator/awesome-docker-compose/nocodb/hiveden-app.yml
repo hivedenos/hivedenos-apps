@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.nocodb.com?utm_source=awesome-docker-compose.com
+website: https://www.nocodb.com?utm_source=localhost
 repo: https://github.com/nocodb/nocodb
 support: https://github.com/nocodb/nocodb#docker-with-sqlite

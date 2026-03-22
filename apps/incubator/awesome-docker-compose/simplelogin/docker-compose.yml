@@ -35,8 +35,8 @@ services:
       - GNUPG_HOME=/sl-data/gnupg
       - URL=http://localhost:7777
       - EMAIL_DOMAIN=my-domain.com
-      - SUPPORT_EMAIL=support@my-domain.com
-      - ADMIN_EMAIL=admin@my-domain.com
+      - [email protected]
+      - [email protected]
     depends_on:
       sl-db:
         condition: service_healthy

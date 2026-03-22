@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.getgrist.com?utm_source=awesome-docker-compose.com
+website: https://www.getgrist.com?utm_source=localhost
 repo: https://github.com/gristlabs/grist-core
 support: https://github.com/gristlabs/grist-core#using-grist

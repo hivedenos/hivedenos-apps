@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://vinyl-cache.org?utm_source=awesome-docker-compose.com
+website: https://vinyl-cache.org?utm_source=localhost
 repo: https://github.com/varnishcache/varnish-cache
 support: https://github.com/wodby/varnish

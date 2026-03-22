@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docs.part-db.de?utm_source=awesome-docker-compose.com
+website: https://docs.part-db.de?utm_source=localhost
 repo: https://github.com/Part-DB/Part-DB-server
 support: https://docs.part-db.de/installation/installation_docker.html

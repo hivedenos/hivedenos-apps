@@ -169,8 +169,8 @@ services:
       ## provider. Emails are used to confirm user registrations & invitations. Look below
       ## how the mailcatch service is configured.
 
-      PENPOT_SMTP_DEFAULT_FROM: no-reply@example.com
-      PENPOT_SMTP_DEFAULT_REPLY_TO: no-reply@example.com
+      PENPOT_SMTP_DEFAULT_FROM: [email protected]
+      PENPOT_SMTP_DEFAULT_REPLY_TO: [email protected]
       PENPOT_SMTP_HOST: penpot-mailcatch
       PENPOT_SMTP_PORT: 1025
       PENPOT_SMTP_USERNAME:

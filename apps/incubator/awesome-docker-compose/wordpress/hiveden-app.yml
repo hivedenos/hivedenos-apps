@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://wordpress.org?utm_source=awesome-docker-compose.com
+website: https://wordpress.org?utm_source=localhost
 repo: https://awesome-docker-compose.com/wordpress
 support: https://awesome-docker-compose.com/wordpress

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docs.kinto-storage.org?utm_source=awesome-docker-compose.com
+website: https://docs.kinto-storage.org?utm_source=localhost
 repo: https://github.com/Kinto/kinto
 support: https://docs.kinto-storage.org/en/stable/tutorials/install.html#using-docker

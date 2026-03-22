@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://paaster.io?utm_source=awesome-docker-compose.com
+website: https://paaster.io?utm_source=localhost
 repo: https://github.com/WardPearce/paaster
 support: https://github.com/WardPearce/paaster#deployment

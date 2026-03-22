@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.tuleap.com?utm_source=awesome-docker-compose.com
+website: https://www.tuleap.com?utm_source=localhost
 repo: https://github.com/Enalean/tuleap
 support: https://docs.tuleap.com/installation-guide/docker/introduction.html

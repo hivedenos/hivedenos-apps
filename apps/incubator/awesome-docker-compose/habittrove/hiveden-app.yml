@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://demo.habittrove.com?utm_source=awesome-docker-compose.com
+website: https://demo.habittrove.com?utm_source=localhost
 repo: https://github.com/dohsimpson/HabitTrove
 support: https://github.com/dohsimpson/HabitTrove#docker-deployment

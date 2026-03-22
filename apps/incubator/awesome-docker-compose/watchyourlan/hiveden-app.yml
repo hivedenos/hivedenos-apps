@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/aceberg/WatchYourLAN?utm_source=awesome-docker-compose.com
+website: https://github.com/aceberg/WatchYourLAN?utm_source=localhost
 repo: https://github.com/aceberg/WatchYourLAN
 support: https://github.com/aceberg/WatchYourLAN#quick-start

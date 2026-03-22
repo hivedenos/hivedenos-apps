@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://foxxmd.github.io/multi-scrobbler?utm_source=awesome-docker-compose.com
+website: https://foxxmd.github.io/multi-scrobbler?utm_source=localhost
 repo: https://github.com/FoxxMD/multi-scrobbler
 support: https://foxxmd.github.io/multi-scrobbler/installation/#docker

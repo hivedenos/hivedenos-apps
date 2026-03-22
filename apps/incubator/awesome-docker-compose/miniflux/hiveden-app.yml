@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://miniflux.app?utm_source=awesome-docker-compose.com
+website: https://miniflux.app?utm_source=localhost
 repo: https://github.com/miniflux/v2
 support: https://miniflux.app/docs/docker.html

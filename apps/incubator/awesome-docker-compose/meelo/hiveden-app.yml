@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://arthi-chaud.github.io/Meelo?utm_source=awesome-docker-compose.com
+website: https://arthi-chaud.github.io/Meelo?utm_source=localhost
 repo: https://github.com/Arthi-chaud/Meelo
 support: https://arthi-chaud.github.io/Meelo/setup/tldr/

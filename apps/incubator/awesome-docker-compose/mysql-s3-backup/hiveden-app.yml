@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/Angatar/mysql-s3-backup?utm_source=awesome-docker-compose.com
+website: https://github.com/Angatar/mysql-s3-backup?utm_source=localhost
 repo: https://github.com/Angatar/mysql-s3-backup
 support: https://github.com/Angatar/mysql-s3-backup#basic-usage

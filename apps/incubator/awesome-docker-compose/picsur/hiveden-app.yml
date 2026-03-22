@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/CaramelFur/Picsur?utm_source=awesome-docker-compose.com
+website: https://github.com/CaramelFur/Picsur?utm_source=localhost
 repo: https://github.com/CaramelFur/Picsur
 support: https://github.com/CaramelFur/Picsur#running-your-own-instance

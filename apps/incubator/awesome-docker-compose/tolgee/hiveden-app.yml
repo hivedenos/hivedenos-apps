@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://tolgee.io?utm_source=awesome-docker-compose.com
+website: https://tolgee.io?utm_source=localhost
 repo: https://github.com/tolgee/tolgee-platform
 support: https://docs.tolgee.io/platform/self_hosting/running_with_docker

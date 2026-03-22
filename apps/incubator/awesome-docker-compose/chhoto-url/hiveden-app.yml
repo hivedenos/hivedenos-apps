@@ -16,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/SinTan1729/chhoto-url?utm_source=awesome-docker-compose.com
+website: https://github.com/SinTan1729/chhoto-url?utm_source=localhost
 repo: https://github.com/SinTan1729/chhoto-url
 support: https://github.com/SinTan1729/chhoto-url/blob/main/INSTALLATION.md

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://lidarr.audio?utm_source=awesome-docker-compose.com
+website: https://lidarr.audio?utm_source=localhost
 repo: https://github.com/Lidarr/Lidarr
 support: https://github.com/linuxserver/docker-lidarr

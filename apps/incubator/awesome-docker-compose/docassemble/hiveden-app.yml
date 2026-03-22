@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docassemble.org?utm_source=awesome-docker-compose.com
+website: https://docassemble.org?utm_source=localhost
 repo: https://github.com/jhpyle/docassemble
 support: https://docassemble.org/docs/docker.html

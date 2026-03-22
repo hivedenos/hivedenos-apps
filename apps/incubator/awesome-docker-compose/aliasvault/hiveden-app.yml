@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.aliasvault.net?utm_source=awesome-docker-compose.com
+website: https://www.aliasvault.net?utm_source=localhost
 repo: https://github.com/aliasvault/aliasvault
 support: https://docs.aliasvault.net/installation/docker-compose/

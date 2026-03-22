@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://hedgedoc.org?utm_source=awesome-docker-compose.com
+website: https://hedgedoc.org?utm_source=localhost
 repo: https://github.com/linuxserver/docker-hedgedoc
 support: https://github.com/linuxserver/docker-hedgedoc

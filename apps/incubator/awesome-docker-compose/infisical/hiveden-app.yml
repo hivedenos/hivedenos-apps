@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://infisical.com?utm_source=awesome-docker-compose.com
+website: https://infisical.com?utm_source=localhost
 repo: https://github.com/Infisical/infisical
 support: https://infisical.com/docs/self-hosting/deployment-options/docker-compose

@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://dawarich.app?utm_source=awesome-docker-compose.com
+website: https://dawarich.app?utm_source=localhost
 repo: https://github.com/Freika/dawarich
 support: https://dawarich.app/docs/self-hosting/introduction/

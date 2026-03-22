@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://huly.io?utm_source=awesome-docker-compose.com
+website: https://huly.io?utm_source=localhost
 repo: https://github.com/hcengineering/platform
 support: https://github.com/hcengineering/huly-selfhost

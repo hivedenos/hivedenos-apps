@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://cobalt.tools?utm_source=awesome-docker-compose.com
+website: https://cobalt.tools?utm_source=localhost
 repo: https://github.com/imputnet/cobalt
 support: https://github.com/imputnet/cobalt/blob/main/docs/run-an-instance.md

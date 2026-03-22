@@ -16,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://padloc.app?utm_source=awesome-docker-compose.com
+website: https://padloc.app?utm_source=localhost
 repo: https://github.com/padloc/padloc
 support: https://github.com/padloc/padloc/tree/main/docs/examples/hosting/docker

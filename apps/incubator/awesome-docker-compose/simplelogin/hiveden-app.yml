@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://simplelogin.io?utm_source=awesome-docker-compose.com
+website: https://simplelogin.io?utm_source=localhost
 repo: https://github.com/simple-login/app
 support: https://github.com/simple-login/app#run-simplelogin-docker-containers

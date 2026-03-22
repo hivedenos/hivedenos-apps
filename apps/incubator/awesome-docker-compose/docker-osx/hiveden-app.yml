@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/sickcodes/Docker-OSX?utm_source=awesome-docker-compose.com
+website: https://github.com/sickcodes/Docker-OSX?utm_source=localhost
 repo: https://github.com/sickcodes/Docker-OSX
 support: https://github.com/sickcodes/Docker-OSX#quick-start-docker-osx

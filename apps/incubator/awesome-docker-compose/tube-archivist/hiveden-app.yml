@@ -16,6 +16,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://tubearchivist.com?utm_source=awesome-docker-compose.com
+website: https://tubearchivist.com?utm_source=localhost
 repo: https://github.com/tubearchivist/tubearchivist
 support: https://github.com/tubearchivist/tubearchivist#installing

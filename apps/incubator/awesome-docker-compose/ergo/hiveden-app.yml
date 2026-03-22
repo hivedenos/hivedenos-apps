@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://ergo.chat?utm_source=awesome-docker-compose.com
+website: https://ergo.chat?utm_source=localhost
 repo: https://github.com/ergochat/ergo
 support: https://github.com/ergochat/ergo/blob/master/distrib/docker/README.md

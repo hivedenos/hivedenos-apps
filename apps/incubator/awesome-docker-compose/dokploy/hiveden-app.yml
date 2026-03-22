@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://dokploy.com?utm_source=awesome-docker-compose.com
+website: https://dokploy.com?utm_source=localhost
 repo: https://github.com/Dokploy/dokploy
 support: https://docs.dokploy.com/docs/core/installation

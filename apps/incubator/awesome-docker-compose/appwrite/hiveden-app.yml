@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://appwrite.io?utm_source=awesome-docker-compose.com
+website: https://appwrite.io?utm_source=localhost
 repo: https://github.com/appwrite/appwrite
 support: https://github.com/appwrite/appwrite#installation

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.stirling.com?utm_source=awesome-docker-compose.com
+website: https://www.stirling.com?utm_source=localhost
 repo: https://github.com/Stirling-Tools/Stirling-PDF
 support: https://github.com/Stirling-Tools/Stirling-PDF#quick-start

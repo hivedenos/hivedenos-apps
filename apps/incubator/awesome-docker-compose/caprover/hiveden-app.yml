@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://caprover.com?utm_source=awesome-docker-compose.com
+website: https://caprover.com?utm_source=localhost
 repo: https://github.com/caprover/caprover
 support: https://caprover.com/docs/get-started.html

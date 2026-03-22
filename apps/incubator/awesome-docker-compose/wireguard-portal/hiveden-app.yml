@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://wgportal.org?utm_source=awesome-docker-compose.com
+website: https://wgportal.org?utm_source=localhost
 repo: https://github.com/h44z/wg-portal
 support: https://wgportal.org/latest/documentation/getting-started/docker/

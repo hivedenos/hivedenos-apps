@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://actualbudget.org?utm_source=awesome-docker-compose.com
+website: https://actualbudget.org?utm_source=localhost
 repo: https://github.com/actualbudget/actual
 support: https://actualbudget.org/docs/install/docker

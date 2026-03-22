@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/ncarlier/feedpushr?utm_source=awesome-docker-compose.com
+website: https://github.com/ncarlier/feedpushr?utm_source=localhost
 repo: https://github.com/ncarlier/feedpushr
 support: https://github.com/ncarlier/feedpushr#installation

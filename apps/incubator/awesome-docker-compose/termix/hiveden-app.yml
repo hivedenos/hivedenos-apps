@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://termix.site?utm_source=awesome-docker-compose.com
+website: https://termix.site?utm_source=localhost
 repo: https://github.com/Termix-SSH/Termix
 support: https://docs.termix.site/install/server/docker

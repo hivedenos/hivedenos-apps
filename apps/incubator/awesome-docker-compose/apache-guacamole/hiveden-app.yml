@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://guacamole.apache.org?utm_source=awesome-docker-compose.com
+website: https://guacamole.apache.org?utm_source=localhost
 repo: https://github.com/apache/guacamole-server
 support: https://guacamole.incubator.apache.org/doc/gug/guacamole-docker.html

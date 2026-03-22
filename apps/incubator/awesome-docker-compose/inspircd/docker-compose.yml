@@ -16,5 +16,5 @@ services:
       - INSP_SID=${INSP_SID}
       - INSP_ADMIN_NAME=Admin
       - INSP_ADMIN_NICK=Admin
-      - INSP_ADMIN_EMAIL=admin@example.com
+      - [email protected]
     restart: unless-stopped

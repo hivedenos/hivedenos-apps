@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.wikidocs.app?utm_source=awesome-docker-compose.com
+website: https://www.wikidocs.app?utm_source=localhost
 repo: https://github.com/Zavy86/WikiDocs
 support: https://www.wikidocs.app/setup

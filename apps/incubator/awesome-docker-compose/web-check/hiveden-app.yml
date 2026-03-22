@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://web-check.xyz?utm_source=awesome-docker-compose.com
+website: https://web-check.xyz?utm_source=localhost
 repo: https://github.com/lissy93/web-check
 support: https://github.com/lissy93/web-check#configuring

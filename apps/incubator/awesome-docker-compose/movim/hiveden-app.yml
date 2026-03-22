@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://movim.eu?utm_source=awesome-docker-compose.com
+website: https://movim.eu?utm_source=localhost
 repo: https://github.com/movim/movim
 support: https://github.com/movim/movim/blob/master/podman-compose.yml

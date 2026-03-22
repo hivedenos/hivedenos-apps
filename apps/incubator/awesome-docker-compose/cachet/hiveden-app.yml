@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://cachethq.io?utm_source=awesome-docker-compose.com
+website: https://cachethq.io?utm_source=localhost
 repo: https://github.com/cachethq/cachet
 support: https://docs.cachethq.io/v2.x/installation/docker

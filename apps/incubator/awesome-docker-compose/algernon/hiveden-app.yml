@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://algernon.roboticoverlords.org?utm_source=awesome-docker-compose.com
+website: https://algernon.roboticoverlords.org?utm_source=localhost
 repo: https://github.com/xyproto/algernon
 support: https://github.com/xyproto/algernon#docker

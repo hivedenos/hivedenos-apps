@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://plone.org?utm_source=awesome-docker-compose.com
+website: https://plone.org?utm_source=localhost
 repo: https://github.com/plone/Products.CMFPlone
 support: https://6.docs.plone.org/install/containers/index.html

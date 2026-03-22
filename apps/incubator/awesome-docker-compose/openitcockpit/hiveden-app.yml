@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://openitcockpit.io?utm_source=awesome-docker-compose.com
+website: https://openitcockpit.io?utm_source=localhost
 repo: https://github.com/openITCOCKPIT/openITCOCKPIT
 support: https://docs.openitcockpit.io/en/installation/docker/

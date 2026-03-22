@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docs.wizarr.dev?utm_source=awesome-docker-compose.com
+website: https://docs.wizarr.dev?utm_source=localhost
 repo: https://github.com/Wizarrrr/wizarr
 support: https://docs.wizarr.dev/getting-started/installation

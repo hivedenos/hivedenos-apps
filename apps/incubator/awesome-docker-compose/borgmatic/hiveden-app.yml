@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://torsion.org/borgmatic?utm_source=awesome-docker-compose.com
+website: https://torsion.org/borgmatic?utm_source=localhost
 repo: https://github.com/borgmatic-collective/borgmatic
 support: https://github.com/borgmatic-collective/docker-borgmatic

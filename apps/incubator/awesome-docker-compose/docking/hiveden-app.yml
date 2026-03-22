@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docking.shipsaas.tech?utm_source=awesome-docker-compose.com
+website: https://docking.shipsaas.tech?utm_source=localhost
 repo: https://github.com/shipsaas/docking
 support: https://docking.shipsaas.tech/deployment/docker

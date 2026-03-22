@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://romm.app?utm_source=awesome-docker-compose.com
+website: https://romm.app?utm_source=localhost
 repo: https://github.com/rommapp/romm
 support: https://docs.romm.app/latest/Getting-Started/Quick-Start-Guide/#build

@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://blog.slucas.fr/projects/calibre-opds-php-server?utm_source=awesome-docker-compose.com
+website: https://blog.slucas.fr/projects/calibre-opds-php-server?utm_source=localhost
 repo: https://github.com/mikespub-org/seblucas-cops
 support: https://github.com/linuxserver/docker-cops

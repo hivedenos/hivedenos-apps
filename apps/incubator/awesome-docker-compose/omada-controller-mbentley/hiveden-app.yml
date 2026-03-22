@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://support.omadanetworks.com/us/product/omada-software-controller?utm_source=awesome-docker-compose.com
+website: https://support.omadanetworks.com/us/product/omada-software-controller?utm_source=localhost
 repo: https://github.com/mbentley/docker-omada-controller
 support: https://github.com/mbentley/docker-omada-controller#using-docker-compose

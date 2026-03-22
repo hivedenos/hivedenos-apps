@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.getoutline.com?utm_source=awesome-docker-compose.com
+website: https://www.getoutline.com?utm_source=localhost
 repo: https://github.com/outline/outline
 support: https://docs.getoutline.com/s/hosting/doc/docker-7pfeLP5a8t

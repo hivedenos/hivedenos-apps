@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://heyform.net?utm_source=awesome-docker-compose.com
+website: https://heyform.net?utm_source=localhost
 repo: https://github.com/heyform/heyform
 support: https://docs.heyform.net/open-source/self-hosting

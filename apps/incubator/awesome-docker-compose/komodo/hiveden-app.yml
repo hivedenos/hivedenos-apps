@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://komo.do?utm_source=awesome-docker-compose.com
+website: https://komo.do?utm_source=localhost
 repo: https://github.com/moghtech/komodo
 support: https://komo.do/docs/setup

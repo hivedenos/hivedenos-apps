@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://gladysassistant.com?utm_source=awesome-docker-compose.com
+website: https://gladysassistant.com?utm_source=localhost
 repo: https://github.com/GladysAssistant/Gladys
 support: https://gladysassistant.com/docs/installation/docker-compose/

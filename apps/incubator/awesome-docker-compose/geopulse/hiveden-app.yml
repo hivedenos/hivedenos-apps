@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://tess1o.github.io/geopulse?utm_source=awesome-docker-compose.com
+website: https://tess1o.github.io/geopulse?utm_source=localhost
 repo: https://github.com/tess1o/geopulse
 support: https://tess1o.github.io/geopulse/docs/getting-started/deployment/docker-compose

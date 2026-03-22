@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://gitlab.com/cyber5k/mistborn?utm_source=awesome-docker-compose.com
+website: https://gitlab.com/cyber5k/mistborn?utm_source=localhost
 repo: https://gitlab.com/cyber5k/mistborn
 support: https://gitlab.com/cyber5k/mistborn#installation

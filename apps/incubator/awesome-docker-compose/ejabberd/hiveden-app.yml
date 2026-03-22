@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://www.ejabberd.im?utm_source=awesome-docker-compose.com
+website: https://www.ejabberd.im?utm_source=localhost
 repo: https://github.com/processone/ejabberd
 support: https://docs.ejabberd.im/admin/install/

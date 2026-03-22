@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://wallosapp.com?utm_source=awesome-docker-compose.com
+website: https://wallosapp.com?utm_source=localhost
 repo: https://github.com/ellite/Wallos
 support: https://github.com/ellite/Wallos#docker-1

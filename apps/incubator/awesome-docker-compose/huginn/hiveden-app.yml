@@ -15,6 +15,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://github.com/huginn/huginn?utm_source=awesome-docker-compose.com
+website: https://github.com/huginn/huginn?utm_source=localhost
 repo: https://github.com/huginn/huginn
 support: https://github.com/huginn/huginn/blob/master/doc/docker/install.md

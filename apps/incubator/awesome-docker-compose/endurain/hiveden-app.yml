@@ -14,6 +14,6 @@ defaultUsername: ''
 deterministicPassword: false
 torOnly: false
 submitter: Hiveden
-website: https://docs.endurain.com?utm_source=awesome-docker-compose.com
+website: https://docs.endurain.com?utm_source=localhost
 repo: https://github.com/endurain-project/endurain
 support: https://docs.endurain.com/getting-started/getting-started/
