@@ -7,7 +7,7 @@ services:
       APP_PORT: 4096
 
   app:
-    image: ghcr.io/anomalyco/opencode:1.15.3@sha256:873e3acd6f6b9c53a3f42579d488a5af7e7df1d1adf88ffa69cbb94a5238f305
+    image: ghcr.io/anomalyco/opencode:1.15.5@sha256:645067bd70cb3abf9487732bf162e40b6204ff817edd27c6807ccaedb6724bdf
     command: ["web", "--hostname", "0.0.0.0", "--port", "4096"]
     restart: on-failure
     user: "1000:1000"
