@@ -2,7 +2,7 @@ manifestVersion: 1.1
 id: localai
 category: ai
 name: LocalAI
-version: "v4.3.1"
+version: "v4.3.4"
 tagline: Drop-in OpenAI replacement
 description: >-
   LocalAI is the free, Open Source OpenAI alternative. LocalAI act as a drop-in replacement REST API that's compatible with OpenAI API specifications for local inferencing.
@@ -18,10 +18,10 @@ releaseNotes: >-
   If you installed a backend in a LocalAI version before backend persistence was added, you may need to reinstall it once after updating.
 
 
-  This release fixes Kokoro backend build compatibility and updates inference backend components, including llama.cpp and ik_llama.cpp.
+  This release fixes TurboQuant backend compatibility with upstream-only gRPC server fields.
 
 
-  Full release notes can be found at https://github.com/mudler/LocalAI/releases/tag/v4.3.1
+  Full release notes can be found at https://github.com/mudler/LocalAI/releases/tag/v4.3.4
 backupIgnore:
   - data/models/*
   - data/backends/*
