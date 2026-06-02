@@ -7,7 +7,7 @@ services:
       APP_PORT: 3000
 
   web:
-    image: ghcr.io/dotcoocoo/hermitstash:1.11.20@sha256:a192b4c0ec311e2c57782f08eb90f0c9fca99b652d6cd8467a7f2a4c507f0705
+    image: ghcr.io/dotcoocoo/hermitstash:1.11.28@sha256:9486f9334ee8cc685e06521ab05c92cc297a6762ef9a7def786207c428df4289
     user: "1000:1000"
     init: true
     restart: on-failure
