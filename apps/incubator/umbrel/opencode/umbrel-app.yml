@@ -3,7 +3,7 @@ id: opencode
 name: OpenCode
 tagline: The open source AI coding agent
 category: ai
-version: "1.17.9"
+version: "1.17.11"
 port: 4096
 description: >-
   OpenCode is an open source AI coding agent designed to enhance your development
@@ -33,13 +33,16 @@ gallery:
   - 3.jpg
   - 4.jpg
 releaseNotes: >-
-  This update fixes several agent and provider issues, including configured step limits now ending with a final text response instead of failing mid-run, Devstral model detection with mixed-case provider IDs, and custom headers for Copilot model requests.
+  This update adds session snapshots and revert controls so you can roll a session back to an earlier message, including file changes.
 
 
-  It also adds high and max thinking variants for GLM-5.2 across supported providers, improves prompt caching for follow-up messages, and fixes when the TUI shows the background subagent shortcut.
+  It also improves the desktop app with Chrome-style tab shortcuts, draggable tabs, a clearer empty home state, improved session navigation, and better archived-session handling.
 
 
-  Full release notes can be found at https://github.com/anomalyco/opencode/releases/tag/v1.17.9
+  Other fixes keep MCP OAuth URLs visible for manual sign-in, preserve prompt drafts on the correct project server, and keep session tabs, provider dialogs, todo docks, and notifications tied to the right session.
+
+
+  Full release notes can be found at https://github.com/anomalyco/opencode/releases/tag/v1.17.11
 dependencies: []
 submitter: besoeasy
 submission: https://github.com/getumbrel/umbrel-apps/pull/4718
