@@ -7,7 +7,7 @@ services:
       APP_PORT: 3000
 
   web:
-    image: ghcr.io/ulsklyc/yuvomi:1.22.1@sha256:60c0859f20951e21f41a3703098a16a5878998736ef5af5fdf1318d0f5149d8a
+    image: ghcr.io/ulsklyc/yuvomi:1.24.0@sha256:cfec0f4d1c3d450b1d3192ee17c246b30fcdc35bed8fc0a92ac9439456144dc6
     restart: on-failure
     stop_grace_period: 1m
     # No `user:` override: the image entrypoint starts as root only to chown the
