@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-24T05:03:15Z",
-  "total_apps": 1158,
-  "catalog_sha256": "1027d0435aafad1e16d794d1199ab566175538c10f258341e9707d38d88aee20",
+  "generated_at": "2026-07-25T05:00:06Z",
+  "total_apps": 1160,
+  "catalog_sha256": "30f2d5f770a291bbc4e92fc3cbb3dc063936377dbd6442847051bbeb6a474e79",
   "channels": {
     "stable": {
       "total_apps": 1,
@@ -16,7 +16,7 @@
       "warning": "Experimental builds. APIs and behavior may change without notice."
     },
     "incubator": {
-      "total_apps": 1157,
+      "total_apps": 1159,
       "warning": "Candidate apps from external sources under evaluation."
     }
   },
@@ -24,16 +24,16 @@
     {
       "id": "awesome-docker-compose",
       "repo": "https://awesome-docker-compose.com",
-      "commit": "html-5a5c94a807fe4e12",
+      "commit": "html-6a2360d973b7ae9e",
       "total_apps": 770,
-      "generated_at": "2026-07-24T05:02:07Z"
+      "generated_at": "2026-07-25T04:58:56Z"
     },
     {
       "id": "umbrel",
       "repo": "https://github.com/getumbrel/umbrel-apps.git",
-      "commit": "ce5e24358ce909f50f8a83528aa93f8ab82f5d5a",
-      "total_apps": 389,
-      "generated_at": "2026-07-24T04:57:11Z"
+      "commit": "e3fdfc8f9384407c534daca1c37dd53409bfc843",
+      "total_apps": 391,
+      "generated_at": "2026-07-25T04:52:47Z"
     }
   ]
 }
