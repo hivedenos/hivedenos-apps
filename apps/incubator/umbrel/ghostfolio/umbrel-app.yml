@@ -2,7 +2,7 @@ manifestVersion: 1
 id: ghostfolio
 category: finance
 name: Ghostfolio
-version: "3.32.0"
+version: "3.35.0"
 tagline: Manage your wealth like a boss
 description: >-
   Ghostfolio is a privacy-first, open source dashboard for your personal finances.
@@ -34,12 +34,13 @@ deterministicPassword: false
 torOnly: false
 releaseNotes: >-
   This release includes improvements and fixes:
-    - Upgraded the treemap chart integration used for allocation visualizations
-    - Improved handling of cash positions in allocation, analysis, and portfolio holding views
-    - Fixed an exception when fetching holding details for cash positions
-    - Improved access-management errors when granting access to a user that does not exist
+    - Portfolio summaries now show cash and holdings as part of total assets
+    - Performance and FIRE calculations now include cash more accurately
+    - Account tags are now generally available
+    - Added a loading indicator when sharing a portfolio
+    - Fixed onboarding activity links and several API exceptions
 
 
-  Full release notes can be found at https://github.com/ghostfolio/ghostfolio/releases/tag/3.32.0
+  Full release notes can be found at https://github.com/ghostfolio/ghostfolio/releases/tag/3.35.0
 submitter: BeauAgst
 submission: https://github.com/getumbrel/umbrel-apps/pull/396

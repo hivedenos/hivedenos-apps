@@ -3,7 +3,7 @@ id: poznote
 name: Poznote
 tagline: A powerful app for taking notes
 category: files
-version: "6.38.0"
+version: "6.43.0"
 port: 8389
 description: >-
   📝 Poznote is a clean and focused application designed to help users capture, structure, and refine information in a flexible workspace. It combines a rich text editor with Markdown formatting to support both quick jotting and long form writing, allowing thoughts to grow and change without friction.
@@ -28,15 +28,16 @@ gallery:
   - 3.jpg
   - 4.jpg
 releaseNotes: |-
-  Poznote 6.38.0 adds display font options and improves account preferences:
+  Poznote 6.43.0 adds safer API editing, more account controls, and UI customization improvements:
 
-  - Choose the main interface font from Settings, with Inter still the default and options for system and common browser fonts.
-  - Display preferences such as theme, font size, and icon scale are now stored per user on multi-user instances.
-  - The password change modal has clearer translated UI elements, and password change timestamps now use the user's timezone.
+  - REST API and MCP note updates can now use version tokens to prevent overwriting concurrent changes.
+  - Manage profile details, new-account email notifications, account deletion, and richer user/storage tables.
+  - Customize the command menu shortcut, dashboard/settings elements, icons, and Markdown table formatting.
+  - Fixed public share routing, stale public-note assets, SSO account matching collisions, formatted web-content pastes, and horizontal-rule rendering in callouts.
 
   If you're updating from before Poznote 6.21.0, existing Excalidraw diagrams may need to be opened, slightly modified, and saved again before their generated images match the current dark/light theme.
 
-  Full release notes can be found at https://github.com/timothepoznanski/poznote/releases/tag/6.38.0
+  Full release notes can be found at https://github.com/timothepoznanski/poznote/releases/tag/6.43.0
 dependencies: []
 path: "/login.php"
 defaultUsername: "admin_change_me"
