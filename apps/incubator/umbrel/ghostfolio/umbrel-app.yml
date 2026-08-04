@@ -2,7 +2,7 @@ manifestVersion: 1
 id: ghostfolio
 category: finance
 name: Ghostfolio
-version: "3.38.0"
+version: "3.41.0"
 tagline: Manage your wealth like a boss
 description: >-
   Ghostfolio is a privacy-first, open source dashboard for your personal finances.
@@ -34,15 +34,14 @@ deterministicPassword: false
 torOnly: false
 releaseNotes: >-
   This release includes improvements and fixes:
-    - Added date range filter support to exports and portfolio activities
-    - Improved mobile tab styling in account, holding, and asset profile dialogs
-    - Improved search handling and property caching performance
+    - Added account platform support to activity imports
+    - Added experimental stock split management for asset profiles
+    - Improved admin control panel usability by avoiding page reloads for common actions
     - Improved German localization
-    - Fixed calendar year ranges for negative UTC offsets
-    - Fixed activity deletion to respect activity type and date range filters
-    - Fixed portfolio analysis rules for portfolios with no holdings
+    - Fixed portfolio snapshot computation race conditions and retry loops
+    - Fixed the loading state in the admin user detail dialog
 
 
-  Full release notes can be found at https://github.com/ghostfolio/ghostfolio/releases/tag/3.38.0
+  Full release notes can be found at https://github.com/ghostfolio/ghostfolio/releases/tag/3.41.0
 submitter: BeauAgst
 submission: https://github.com/getumbrel/umbrel-apps/pull/396
