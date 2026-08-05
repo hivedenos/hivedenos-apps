@@ -2,7 +2,7 @@ manifestVersion: 1
 id: yuvomi
 category: files
 name: Yuvomi
-version: "1.73.2"
+version: "1.77.0"
 tagline: Self-hosted family planner — calendar, tasks, shopping, meals & budget
 description: >-
   Yuvomi is a self-hosted, privacy-focused family planner that bundles everything
@@ -51,23 +51,24 @@ description: >-
   Open Yuvomi from your Umbrel dashboard and create the first account — that
   account becomes the family admin and can invite the rest of the household.
 releaseNotes: >-
-  Tasks can now use tags, including bulk tag edits, tag filters, search, CalDAV
-  reminder-list category sync, and MCP visibility fixes for private tasks.
+  Loans can now track whether your household borrowed or lent money, optionally
+  assign installments to an account, and book borrowed-money repayments as
+  expenses so mortgage-style payments no longer inflate the monthly balance.
 
-  Calendar appointments, tasks, and contacts now open in read-only detail views
-  before editing, with clearer recurrence, reminder, phone, email, address, and
-  organization details.
+  CalDAV reminder sync now handles task-only collections correctly: reminder
+  lists are discovered on their own, task collections are no longer offered as
+  event calendars, and existing accounts clean up those task lists on the next
+  sync.
 
-  Recipes can now mirror from a self-hosted Mealie instance, while Yuvomi keeps
-  mirrored recipes read-only and preserves meal-plan links when Mealie updates
-  them.
+  New Zealand dollar support is available in household, subscription, and
+  split-expense settings, and housekeeping task/report actions now show their
+  icons immediately after list updates.
 
-  CalDAV reminder sync, birthday/housekeeping external calendar updates,
-  language handling, theme/accessibility behavior, form confirmations, and
-  mobile add buttons receive fixes and improvements.
+  The installer now keeps the full start log visible before offering retry when
+  setup fails.
 
   Full release notes are available at
-  https://github.com/ulsklyc/yuvomi/compare/v1.67.0...v1.73.2
+  https://github.com/ulsklyc/yuvomi/compare/v1.75.6...v1.77.0
 
 backupIgnore:
   - data/app/yuvomi.db.plaintext-backup*
