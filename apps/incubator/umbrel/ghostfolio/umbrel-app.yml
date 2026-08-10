@@ -2,7 +2,7 @@ manifestVersion: 1
 id: ghostfolio
 category: finance
 name: Ghostfolio
-version: "3.44.0"
+version: "3.46.0"
 tagline: Manage your wealth like a boss
 description: >-
   Ghostfolio is a privacy-first, open source dashboard for your personal finances.
@@ -34,12 +34,14 @@ deterministicPassword: false
 torOnly: false
 releaseNotes: >-
   This release includes improvements and fixes:
-    - Added a live preview for date and number formatting in user settings
-    - Added country flags to the currency selector and platform logos to transfer cash-balance account selectors
-    - Improved the create watchlist item dialog by focusing the search field automatically
-    - Fixed impersonation-mode values in charts, tables, the investment timeline, and the FIRE calculator
+    - Added automatic Draft tags for activities dated in the future
+    - Extended Draft tags to custom asset profile buy activities
+    - Updated account activity counts to include draft activities
+    - Fixed account dividend and interest totals by excluding draft activities
+    - Improved German localization and upgraded bull-board
+    - Fixed unknown country names in Financial Modeling Prep and Trackinsight data
 
 
-  Full release notes can be found at https://github.com/ghostfolio/ghostfolio/releases/tag/3.44.0
+  Full release notes can be found at https://github.com/ghostfolio/ghostfolio/releases/tag/3.46.0
 submitter: BeauAgst
 submission: https://github.com/getumbrel/umbrel-apps/pull/396
