@@ -2,7 +2,7 @@ manifestVersion: 1
 id: mailflow
 category: networking
 name: MailFlow
-version: "3.0.0"
+version: "3.1.3"
 tagline: Unified self-hosted webmail client
 description: >-
   MailFlow is a self-hosted unified webmail client. Connect multiple IMAP/SMTP
@@ -14,21 +14,20 @@ description: >-
   multiple themes, user management, SSO/OIDC support, and Microsoft 365 OAuth2
   support.
 releaseNotes: >-
-  MailFlow 3.0.0 adds a new plugin system, with GTD moved into the first bundled
-  plugin and per-user plugin controls in Settings.
+  MailFlow 3.1.3 improves Gmail and multi-account reliability.
 
 
-  This release adds Windows XP and Windows Classic retro themes, plus detached
-  message windows for opening multiple messages in movable, resizable desktop
-  windows.
+  Sent-message import now self-heals for some Gmail accounts where a saved folder
+  mapping pointed at a non-selectable parent folder.
 
 
-  Attachment downloads now handle non-ASCII filenames correctly, and sent-mail
-  copies use CRLF line endings for better compatibility with strict IMAP servers.
+  Startup connection bursts across multiple accounts on the same provider are now
+  smoothed out, and IPv4 fallback avoids extra retries when a mail server is
+  refusing connections because of provider limits.
 
 
-  The GTD plugin migration is automatic for existing users, with no manual upgrade
-  steps required.
+  This release also continues improving duplicate-message cleanup in unified
+  message lists.
 developer: maathimself
 website: https://mailflow.sh
 repo: https://github.com/maathimself/mailflow
