@@ -7,7 +7,7 @@ services:
       APP_PORT: 80
 
   app:
-    image: ghcr.io/timothepoznanski/poznote:6.81.5@sha256:965788dacd29b37517772a1cd18ce54d259383152e3256179a75ee92cda3cf66
+    image: ghcr.io/timothepoznanski/poznote:6.86.0@sha256:182664fe1ca0d62988cbd644b4ef29b486ea8647d6cfdf5c790cae7c26446f57
     restart: on-failure
     environment:
       SQLITE_DATABASE: /var/www/html/data/database/poznote.db
@@ -23,7 +23,7 @@ services:
       start_period: 10s
 
   mcp:
-    image: ghcr.io/timothepoznanski/poznote-mcp:6.81.5@sha256:17973420216920828b5eb0a67eff4edc6e2a2de9793785c6b04c0a52386c07a8
+    image: ghcr.io/timothepoznanski/poznote-mcp:6.86.0@sha256:0404b8f4212d96915465487154805fbca79b6f69c09791729e8b307763960cfe
     restart: on-failure
     environment:
       POZNOTE_API_URL: http://poznote_app_1:80/api/v1
