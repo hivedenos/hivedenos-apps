@@ -5,7 +5,7 @@ storage:
 name: Gitea Mirror
 tagline: Mirror your GitHub repositories to a Gitea instance automatically
 category: developer
-version: "3.36.2"
+version: "3.38.1"
 port: 4322
 description: >-
   Gitea Mirror automatically mirrors your GitHub repositories to a self-hosted Gitea instance. It supports mirroring public and private repositories, organizations, starred repos, issues, wikis, and pull requests.
@@ -44,16 +44,21 @@ defaultUsername: ""
 defaultPassword: ""
 dependencies: []
 releaseNotes: >-
-  This update fixes several scheduling, organization, and destination display issues in Gitea Mirror.
+  This update fixes multiple security issues and adds release mirroring for Gitea and Forgejo sources.
 
 
   Key highlights:
-    - Fixed the automation card so it shows the schedule that is actually running, including interval-based schedules from existing configuration.
-    - Ignoring an organization now also ignores its repositories until the organization is included again.
-    - Fixed organization cards incorrectly saying Gitea when the destination is Forgejo.
+    - Fixed unauthenticated connection-test endpoints that could make server-side requests to user-supplied URLs.
+    - Closed email sign-up after the first account exists unless `AUTH_ALLOW_SIGNUP=true` is explicitly set.
+    - Scoped SSO provider management to the user who created each provider, and stopped returning OIDC client secrets from the API.
+    - Hardened user-supplied notification and discovery URLs against link-local/cloud-metadata requests and redirects while keeping private-network mirroring supported.
+    - Added release mirroring for Gitea and Forgejo sources, including Codeberg.
 
 
-  Upgrade notes: existing configurations are not touched. New configurations now start with scheduling off unless `SCHEDULE_ENABLED=true`, `SCHEDULE_INTERVAL`, or `GITEA_MIRROR_INTERVAL` enables it.
+  Upgrade notes: if your instance has more than one account, rotate the OIDC client secrets of configured SSO providers after updating.
+
+
+  If you're updating from a version older than 3.36.2, Gitea Mirror also includes scheduling, organization ignore/include, and destination display fixes. Existing configurations are not touched. New configurations start with scheduling off unless `SCHEDULE_ENABLED=true`, `SCHEDULE_INTERVAL`, or `GITEA_MIRROR_INTERVAL` enables it.
 
 
   If you're updating from a version older than 3.36.1, Gitea Mirror also includes fixes for duplicate release assets, organization destination overrides, crash recovery, duplicate source-row scheduling/import behavior, and progress checkpoint handling.
@@ -68,5 +73,5 @@ releaseNotes: >-
   If you're updating from a version older than 3.17 and use OAuth provider clients registered in Gitea Mirror, rotate the client secret for each client after upgrading because OAuth application secrets are stored hashed after migration.
 
 
-  Full release notes can be found at https://github.com/RayLabsHQ/gitea-mirror/releases/tag/v3.36.2
+  Full release notes can be found at https://github.com/RayLabsHQ/gitea-mirror/releases/tag/v3.38.1
 path: ""

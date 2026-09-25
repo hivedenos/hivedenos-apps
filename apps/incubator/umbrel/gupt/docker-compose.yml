@@ -7,7 +7,7 @@ services:
       APP_PORT: 8000
 
   web:
-    image: ghcr.io/besoeasy/gupt:5.0.0@sha256:9ea6b33563edf83cca28b40142d6b379058ae4fff0095bd382a3d2e224ec1a81
+    image: ghcr.io/besoeasy/gupt:5.0.9@sha256:5738fde2b3c9c6f8af800544fc401f8e9c7134add824bc5992e712dba21f214b
     user: "1000:1000"
     restart: on-failure
     stop_grace_period: 1m
