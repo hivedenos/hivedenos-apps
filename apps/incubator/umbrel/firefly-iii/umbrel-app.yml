@@ -2,7 +2,7 @@ manifestVersion: 1.1
 id: firefly-iii
 category: finance
 name: Firefly III
-version: "6.7.4"
+version: "6.7.6"
 tagline: Your personal finance manager
 description: >-
   Firefly III is a manager for your personal finances. It is self-hosted and open source. This means that it's free, it has no ads and no tracking.
@@ -47,12 +47,9 @@ path: ""
 deterministicPassword: false
 torOnly: false
 releaseNotes: >-
-  Firefly III v6.7.4 improves fonts and adds limited sorting options for account lists.
+  Firefly III v6.7.6 fixes OAuth redirects that could break due to a function call error.
 
 
-  This update also fixes oversized report PDFs, subscription pages with attachments returning 500 errors, running-balance calculations, and reconciliation undo actions returning 405 errors.
-
-
-  Full release notes can be found at https://github.com/firefly-iii/firefly-iii/releases/tag/v6.7.4
+  Full release notes can be found at https://github.com/firefly-iii/firefly-iii/releases/tag/v6.7.6
 submitter: Umbrel
 submission: https://github.com/getumbrel/umbrel-apps/pull/378
