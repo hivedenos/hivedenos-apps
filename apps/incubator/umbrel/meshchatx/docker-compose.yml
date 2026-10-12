@@ -7,7 +7,7 @@ services:
       APP_PORT: 8000
 
   web:
-    image: ghcr.io/quad4-software/meshchatx:4.10.2@sha256:bd76322a65075e54228090701327bf6136abfc22f16aabfa21592c242a25eb2f
+    image: ghcr.io/quad4-software/meshchatx:4.10.7@sha256:051f8169e0b2950327fbe19327b946f48085b9c91f82bf13e617d13a9591685b
     restart: on-failure
     user: "1000:1000"
     ulimits:

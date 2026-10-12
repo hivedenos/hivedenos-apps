@@ -5,7 +5,7 @@ storage:
 name: Ollama
 tagline: Self-host open source AI models like DeepSeek-R1, Llama, and more
 category: ai
-version: "0.40.0"
+version: "0.40.3"
 port: 11434
 description: >-
   Ollama allows you to download and run advanced AI models directly on your own hardware. Self-hosting AI models ensures full control over your data and protects your privacy.
@@ -43,9 +43,9 @@ permissions:
   - GPU
 releaseNotes: >-
   Key highlights in this release:
-    - Models run on MLX by default on supported Apple Silicon devices.
-    - Adds new MLX-supported models including gemma4, qwen3.6, qwen3.5, Nimble, tev1, clef, and clef-flash.
-    - Adds MLX support for the embeddinggemma-2 embedding model.
+    - Removes unnecessary warnings when launching Claude connectors.
+    - Removes unnecessary service-tier warnings when launching Codex.
+    - Pauses background model upgrades to improve embedding and request performance.
 
 
   Full release notes are available at https://github.com/ollama/ollama/releases/

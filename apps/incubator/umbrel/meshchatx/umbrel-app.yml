@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 name: MeshChatX
 category: social
-version: "4.10.2"
+version: "4.10.7"
 port: 8985
 tagline: The future of off-grid communication. Secure, decentralized, and unstoppable
 description: >-
@@ -38,13 +38,16 @@ gallery:
   - 4.jpg
   - 5.jpg
 releaseNotes: >-
-  This update fixes several messaging, Contacts, Maps, NomadNet, and Network Visualiser issues. Failed outbound messages are now saved for retry instead of being dropped, privacy-mode map CSP handling preserves user-configured tile/search endpoints, and page translation/rendering and image-heavy media serving are more reliable.
+  This update improves Traffic tools with high-traffic warnings, active transfer progress, and clearer upload/download chart hover details.
 
 
-  It also improves desktop popout crash isolation, telemetry backoff for unreachable peers, contact address sharing, theme switch visibility, and Android Bluetooth RNode interface setup.
+  It also fixes Relay Chat delivery status after restarts/reconnects, room receipt handling, reconnect path-request backoff, and related send-budget logging.
 
 
-  Full release notes can be found at https://github.com/Quad4-Software/MeshChatX/releases/tag/v4.10.2
+  Additional fixes include safer minimum intervals for auto announce/file-sync settings, profile display-name clearing, multi-line NomadNet form submission, and remote-execute listener address handling.
+
+
+  Full release notes can be found at https://github.com/Quad4-Software/MeshChatX/releases/tag/v4.10.7
 dependencies: []
 permissions: []
 path: ""
