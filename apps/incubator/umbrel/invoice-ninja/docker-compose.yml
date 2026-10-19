@@ -21,7 +21,7 @@ services:
       - app
 
   app:
-    image: invoiceninja/invoiceninja-debian:5.13.47@sha256:a930729a1d6626e78f593539b0ab3f834a93f489d55fe7b855cf163721c4bcac
+    image: invoiceninja/invoiceninja-debian:5.13.49@sha256:2a20a8a526bdf9be602c1f5f1a66206ad80914972a62bd9d683f7cecfd4f34db
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data/public:/var/www/html/public
