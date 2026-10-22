@@ -10,7 +10,7 @@ services:
   app:
     # currently does not work properly rootless
     #user: "1000:1000"
-    image: kimai/kimai2:2.70.0@sha256:e0a98b329fccef0aa006b4ae3ef3d01e0fe88c7bb0d64aea6742412e34b7265d
+    image: kimai/kimai2:2.70.2@sha256:0db3af96f0da12c6b74428508d306a8c0e3692d8592300d4849b634c59e2986a
     volumes:
       - ${APP_DATA_DIR}/data/app:/opt/kimai/var/data
       - ${APP_DATA_DIR}/data/app/plugins:/opt/kimai/var/plugins

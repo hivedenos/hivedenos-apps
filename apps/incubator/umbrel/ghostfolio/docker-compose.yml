@@ -7,7 +7,7 @@ services:
       APP_PORT: 3334
 
   server:
-    image: ghostfolio/ghostfolio:3.88.0@sha256:256c524a6116d3b7879938b5d60884f1016c4dc04abf869532f71c5aade981db
+    image: ghostfolio/ghostfolio:3.90.0@sha256:2b1d72e6e2f8a8246cad22105944712654a1cf1773b0d712f1127e2079f854d7
     init: true
     restart: on-failure
     stop_grace_period: 1m
