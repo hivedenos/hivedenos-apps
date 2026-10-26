@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_WHITELIST: "/api/* /dl/*"
 
   server:
-    image: linuxserver/jackett:0.24.2900@sha256:d1b82a9c5bbaea44284a550af739bd838749b72f15b10ef61b6c9d9d1b2f1ed7
+    image: linuxserver/jackett:0.24.2910@sha256:19d90927b95397f2d1364e4999e11456abdbbb382b54cd765fc3b3da24d7088b
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data:/config
