@@ -2,7 +2,7 @@ manifestVersion: 1.1
 id: invoice-ninja
 category: finance
 name: Invoice Ninja
-version: "5.13.50"
+version: "5.13.52"
 tagline: We'll help with the invoicing
 description: >-
   Invoicing, Quotes, Expenses, Tasks.
@@ -21,10 +21,14 @@ gallery:
 - 3.jpg
 path: ''
 releaseNotes: >-
-  This update fixes scheduled tasks, recurring reminders, and the activity feed, and improves API reliability.
+  This update includes fixes for invoices and payments:
+
+  - Fixes payment references in EPC QR codes.
+  - Improves loading of invoices with payment details.
+  - Fixes month calculations in recurring invoice text.
 
 
-  Full release notes are available at https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.50
+  Full release notes are available at https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.52
 deterministicPassword: true
 defaultUsername: admin@example.com
 submitter: Umbrel

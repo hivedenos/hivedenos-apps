@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: media
 name: ErsatzTV Legacy
-version: "26.11.5"
+version: "26.11.6"
 tagline: Build your own live TV channels
 description: >-
   ErsatzTV Legacy transforms your personal media library into custom live TV channels with IPTV, XMLTV guide data, channel scheduling, and browser playback.
@@ -18,9 +18,21 @@ description: >-
 
   This package uses the ErsatzTV Legacy release stream, which upstream continues to maintain for security updates while ErsatzTV Next remains an experimental rewrite.
 releaseNotes: >-
-  Fixes a startup crash when running as a non-root user or with a read-only root filesystem. ErsatzTV now uses a lock file in its configuration folder to prevent multiple instances from sharing the same configuration.
+  This update improves channel playback and media library accuracy.
 
-  Full release notes can be found at https://github.com/ErsatzTV/legacy/releases/tag/v26.11.5
+
+  - Improves hardware-accelerated playback, including VAAPI tone mapping and HEVC encoding, and fixes several QSV and AMD playback issues.
+
+  - Fixes selection of embedded text subtitles and incorrect stream aspect ratios.
+
+  - Fixes aspect ratio detection for newly scanned local media. Run a deep scan to correct existing items.
+
+  - Fixes Trakt-generated playlists so they match items correctly and remove entries no longer in the Trakt list.
+
+  - Uses your configured background image for offline and error streams in the Next engine.
+
+
+  Full release notes can be found at https://github.com/ErsatzTV/legacy/releases/tag/v26.11.6
 developer: ErsatzTV
 website: https://ersatztv.org
 dependencies: []

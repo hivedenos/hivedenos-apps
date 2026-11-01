@@ -5,7 +5,7 @@ storage:
 name: Foldergram
 tagline: A private Instagram-style feed for your memories
 category: files
-version: "1.2.2-patch.1"
+version: "1.3.0"
 port: 4141
 description: >-
   Foldergram turns a collection of photos and videos into a clean, modern media gallery. It scans folders, organizes the discovered media, and presents everything in a visual interface designed for browsing, rediscovering, and managing personal image and video collections.
@@ -31,7 +31,17 @@ gallery:
   - 4.webp
   - 5.webp
 releaseNotes: >-
-  This update adds support for new storage management and configuration options being introduced with umbrelOS 2.0.
+  ⚠️ Back up your library database before updating. If you have folders named "carousels", review the migration choice in Settings → General Settings, then run Scan Library to apply your chosen folder behavior.
+
+
+  - Browse folder-based Carousel posts with multiple photos and videos.
+  - Share individual folders with expiring links or passwords and read-only access.
+  - Exclude folders from your library using .nofoldergram marker files.
+  - Added German translations and improved video previews and mobile media viewing.
+  - Improved scan reliability, deletion recovery, and Docker runtime security.
+
+
+  Full release notes: https://github.com/foldergram/foldergram/releases/tag/v1.3.0
 dependencies: []
 path: ""
 defaultUsername: ""

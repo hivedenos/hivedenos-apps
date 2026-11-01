@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: files
 name: Memos
-version: "0.31.0"
+version: "0.31.0-patch.1"
 tagline: Easily capture and share your great thoughts
 description: >-
   A privacy-first, lightweight note-taking service.
@@ -20,19 +20,14 @@ description: >-
 
   - RESTful API for third-party services. Embrace the power of integration and unleash new possibilities with our RESTful API support.
 releaseNotes: >-
-  This update adds Spaces for collaborative memo organization, Calendar and Map views, reusable saved Views, and export/import tools for moving memos between Memos instances.
+  This update includes important security improvements. We recommend updating as soon as possible.
 
 
-  It also improves writing, search, attachments, navigation, interface polish, security hardening, and administration controls.
+  If you're updating from before v0.31.0, instance administrators can read and manage individual private and Space-only memos, although list views still apply audience filtering. Existing Shortcuts are migrated to Views; integrations using the old Shortcut API need to use the new View operations. RSS feed support has been removed.
 
 
-  Important upgrade notes:
-    - Instance administrators can now read and manage individual private and Space-only memos, although list views still apply audience filtering
-    - Existing Shortcuts are migrated to Views; integrations using the old Shortcut API need to move to the new View operations
-    - RSS feed support has been removed
+  Full upstream release notes: https://github.com/usememos/memos/releases/tag/v0.31.0
 
-
-  Full release notes are available at https://github.com/usememos/memos/releases/tag/v0.31.0
 developer: Memos
 website: https://www.usememos.com/
 dependencies: []

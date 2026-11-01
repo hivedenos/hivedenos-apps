@@ -7,7 +7,7 @@ services:
       APP_PORT: 3000
 
   server:
-    image: linuxserver/mstream:6.32.0@sha256:eb29e3f5565fac0cd6a36a54bc5fbbe6ab0e3b25c0ae88488cbaa7861ebed27b
+    image: linuxserver/mstream:6.32.1@sha256:aa3da8578195a97c7bb0caa5051b0c66ea318c12d753f711a2b35db0f139f724
     restart: on-failure
     environment:
       - PUID=1000

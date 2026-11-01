@@ -2,7 +2,7 @@ manifestVersion: 1.1
 id: lightning
 category: bitcoin
 name: Lightning Node
-version: "0.21.5-beta.rc1-patch.1"
+version: "0.21.6-beta"
 tagline: Run your personal Lightning Network node
 description: >-
   Run your personal Lightning Network node, and join the future of Bitcoin today.
@@ -22,19 +22,16 @@ description: >-
 
   An official app from Umbrel.
 releaseNotes: >-
-  We recommend updating as soon as possible. This update refreshes Lightning Node’s runtime and dependencies. It includes LND v0.21.5-beta.rc1, unchanged from the previous app release.
+  We recommend updating as soon as possible. LND now disables Multipath TCP (MPTCP) listeners by default, mitigating the demonstrated exploit path through LND for the Linux kernel vulnerability CVE-2026-98432.
 
 
-  Previous release — important LND update
+  This is a mitigation, not a kernel fix. Other services are not protected by this app update. Follow upstream's guidance to disable MPTCP on the host and install a patched kernel as soon as one is available.
 
 
-  The previous release upgraded LND to v0.21.5-beta.rc1, the release candidate recommended by upstream for an important security fix.
+  This update also includes the final LND 0.21.5 fixes for channel fees, wallet synchronization, and database reliability.
 
 
-  It also improves channel handling, fee estimation, wallet synchronization, and database reliability.
-
-
-  Full LND release notes: https://github.com/lightningnetwork/lnd/blob/v0.21.5-beta.rc1/docs/release-notes/release-notes-0.21.5.md
+  Full release notes can be found at https://github.com/lightningnetwork/lnd/releases/tag/v0.21.6-beta
 developer: Umbrel
 website: https://umbrel.com
 dependencies:

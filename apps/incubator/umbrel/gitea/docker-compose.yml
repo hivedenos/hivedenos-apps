@@ -17,6 +17,7 @@ services:
       - ${APP_DATA_DIR}/data/gitea/data:/var/lib/gitea
       - ${APP_DATA_DIR}/data/gitea/config:/etc/gitea
     environment:
+      GODEBUG: "multipathtcp=0"
       GITEA__security__INSTALL_LOCK: "true"
       GITEA__server__DOMAIN: "${APP_DOMAIN}"
       GITEA__server__HTTP_PORT: 8085

@@ -7,7 +7,7 @@ services:
       APP_PORT: 8000
 
   downtify:
-    image: ghcr.io/henriquesebastiao/downtify:3.8.0@sha256:6cf5e879fa522a0328e92af2b432bc578ebd94f78279eeb03099f4b3673ab08c
+    image: ghcr.io/henriquesebastiao/downtify:3.8.1@sha256:1cee6d2335fdc441bcfb453a113f165459bbcb6e4d9d84c40f9158af14eac8ea
     stop_grace_period: 1m
     volumes:
       - ${UMBREL_ROOT}/data/storage/downloads/downtify:/downloads

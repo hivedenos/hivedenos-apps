@@ -10,6 +10,7 @@ services:
   ollama:
     image: ollama/ollama:0.40.13@sha256:b2f0122c476bc9fe7ce679d8bb4bd555351e25e2554eefb156f61cb0a89cf429
     environment:
+      GODEBUG: "multipathtcp=0"
       OLLAMA_ORIGINS: "*"
       OLLAMA_CONTEXT_LENGTH: 8192
       OLLAMA_VULKAN: "1"

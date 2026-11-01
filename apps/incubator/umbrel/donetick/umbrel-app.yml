@@ -5,7 +5,7 @@ storage:
 name: Donetick
 tagline: An intelligent way to organize tasks and chores
 category: files
-version: "0.1.83"
+version: "0.1.85"
 port: 8121
 description: >-
   Donetick is an open-source task management application designed to streamline the organization of household chores and other recurring responsibilities. It provides a flexible system for assigning tasks to multiple users, using various selection strategies such as random allocation or assignment based on the fewest completed tasks. Tasks can be scheduled with customizable recurrence patterns, making it easy to manage both daily routines and less frequent responsibilities.
@@ -34,17 +34,19 @@ releaseNotes: >-
   This update improves account security. You may need to sign in to Donetick again after updating.
 
 
-  This update fixes task management and household collaboration.
+  This update adds new ways to organize projects and improves task sharing and notifications.
 
 
-  - Restore task scheduling, delegation, completion actions, and approval notifications affected by the previous release.
+  - View projects as boards or lists.
 
-  - Improve private-project task access and assignment handling.
+  - Keep labels and filters private or share them with your household.
 
-  - Allow household members with edit access to remove task labels added by another member.
+  - Customize notification preferences and receive daily or weekly digests.
+
+  - Improve task permission handling and assignment details.
 
 
-  Full release notes can be found at https://github.com/donetick/donetick/releases/tag/v0.1.83
+  Full release notes can be found at https://github.com/donetick/donetick/releases/tag/v0.1.85
 dependencies: []
 path: ""
 defaultUsername: ""

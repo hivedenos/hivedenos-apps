@@ -5,7 +5,7 @@ storage:
 name: Gitea Mirror
 tagline: Mirror your GitHub repositories to a Gitea instance automatically
 category: developer
-version: "3.49.0"
+version: "3.51.0"
 port: 4322
 description: >-
   Gitea Mirror automatically mirrors your GitHub repositories to a self-hosted Gitea instance. It supports mirroring public and private repositories, organizations, starred repos, issues, wikis, and pull requests.
@@ -47,9 +47,15 @@ releaseNotes: >-
   ⚠️ Back up your Gitea or Forgejo instance and review release limits and filters before upgrading. The next sync can delete older releases: retention and release filters now inspect all destination releases, not just the newest 30. Previously untrimmed releases beyond your limit or excluded by your filters will be removed.
 
   Key highlights:
-    - Optionally remove attachments from older mirrored releases to reclaim storage. The new "Remove old release assets" setting is off by default; enabling it deletes destination attachments beyond each repository's asset limit, but keeps release notes and tags.
-    - Fix the Activity Log failing to load after a sync records a release-filter warning.
-    - Sort repository owner, organization, and activity name filters alphabetically regardless of case.
+    - Get an Activity Log warning when Gitea or Forgejo has not run a requested mirror sync for over an hour, with guidance for checking its mirror queue. Sync-error notifications can also alert you, at most once every six hours.
+    - Dashboard repository and recent activity lists adapt to the screen height.
+    - Organization cards keep their destination and source buttons visible on large screens.
+
+  The stalled-sync check covers syncs requested by Gitea Mirror, not mirrors running only on Gitea's own schedule.
+
+  If you're updating from a version older than 3.50.0, you can also filter GitHub issues by state, optionally skip comments or media, and filter repositories by destination owner. Disabling media removes it from mirrored issue bodies on their next sync; existing comments keep their media.
+
+  If you're updating from a version older than 3.49.0, you can also optionally remove attachments from older mirrored releases to reclaim storage. This setting is off by default; enabling it deletes attachments beyond each repository's asset limit while keeping release notes and tags. The Activity Log also loads correctly after release-filter warnings.
 
   If you're updating from a version older than 3.48.0, you can also refresh storage sizes on demand, navigate between cached pages, and browse large lists more smoothly. Release retention and filters now inspect every destination release, and authenticated MCP tools include a security fix for oversized lists.
 
@@ -75,5 +81,5 @@ releaseNotes: >-
 
   If you're updating from a version older than 3.17 and use OAuth provider clients registered in Gitea Mirror, rotate the client secret for each client after upgrading because OAuth application secrets are stored hashed after migration.
 
-  Full release notes can be found at https://github.com/RayLabsHQ/gitea-mirror/releases/tag/v3.49.0
+  Full release notes can be found at https://github.com/RayLabsHQ/gitea-mirror/releases/tag/v3.51.0
 path: ""
