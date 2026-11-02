@@ -22,16 +22,13 @@ description: >-
 
   An official app from Umbrel.
 releaseNotes: >-
-  We recommend updating as soon as possible. LND now disables Multipath TCP (MPTCP) listeners by default, mitigating the demonstrated exploit path through LND for the Linux kernel vulnerability CVE-2026-98432.
+  This update improves security by disabling Multipath TCP (MPTCP) listeners in LND by default. We recommend updating as soon as possible.
 
 
-  This is a mitigation, not a kernel fix. Other services are not protected by this app update. Follow upstream's guidance to disable MPTCP on the host and install a patched kernel as soon as one is available.
+  It also includes fixes for channel fees, wallet synchronization, and database reliability.
 
 
-  This update also includes the final LND 0.21.5 fixes for channel fees, wallet synchronization, and database reliability.
-
-
-  Full release notes can be found at https://github.com/lightningnetwork/lnd/releases/tag/v0.21.6-beta
+  Full release notes: https://github.com/lightningnetwork/lnd/releases/tag/v0.21.6-beta
 developer: Umbrel
 website: https://umbrel.com
 dependencies:
