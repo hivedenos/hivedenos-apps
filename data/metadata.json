@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-09T08:53:29Z",
+  "generated_at": "2026-11-10T09:01:54Z",
   "total_apps": 1165,
-  "catalog_sha256": "3a50ed598c11b183d73ae99d791a7a2e2ef323e22736c5845905533705ea8282",
+  "catalog_sha256": "5cbdc06a2e678c77feabbfeca829735073de42690388bff539ce5854d2e75e00",
   "channels": {
     "stable": {
       "total_apps": 1,
@@ -24,16 +24,16 @@
     {
       "id": "awesome-docker-compose",
       "repo": "https://awesome-docker-compose.com",
-      "commit": "html-f5a89b585ac8dc15",
+      "commit": "html-b6350d49f290006f",
       "total_apps": 770,
-      "generated_at": "2026-11-09T08:51:57Z"
+      "generated_at": "2026-11-10T09:00:28Z"
     },
     {
       "id": "umbrel",
       "repo": "https://github.com/getumbrel/umbrel-apps.git",
-      "commit": "091299452560b2def133616059be38478d04fe9a",
+      "commit": "6ab03b7b9c5ea75af904c037452a72c01bf13216",
       "total_apps": 396,
-      "generated_at": "2026-11-09T08:46:49Z"
+      "generated_at": "2026-11-10T08:54:16Z"
     }
   ]
 }
